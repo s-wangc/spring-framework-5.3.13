@@ -66,7 +66,7 @@ public interface JavaMailSender extends MailSender {
 	 * Create a new JavaMail MimeMessage for the underlying JavaMail Session
 	 * of this sender. Needs to be called to create MimeMessage instances
 	 * that can be prepared by the client and passed to send(MimeMessage).
-	 * @return the new MimeMessage instance
+	 * @return 新MimeMessage实例
 	 * @see #send(MimeMessage)
 	 * @see #send(MimeMessage[])
 	 */
@@ -76,7 +76,7 @@ public interface JavaMailSender extends MailSender {
 	 * Create a new JavaMail MimeMessage for the underlying JavaMail Session
 	 * of this sender, using the given input stream as the message source.
 	 * @param contentStream the raw MIME input stream for the message
-	 * @return the new MimeMessage instance
+	 * @return 新MimeMessage实例
 	 * @throws org.springframework.mail.MailParseException
 	 * in case of message creation failure
 	*/

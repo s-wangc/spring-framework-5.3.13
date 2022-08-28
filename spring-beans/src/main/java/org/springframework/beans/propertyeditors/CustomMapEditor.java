@@ -124,7 +124,7 @@ public class CustomMapEditor extends PropertyEditorSupport {
 	 * initial capacity (if supported by the Map type).
 	 * @param mapType a sub-interface of Map
 	 * @param initialCapacity the initial capacity
-	 * @return the new Map instance
+	 * @return 新Map实例
 	 */
 	@SuppressWarnings({"rawtypes", "unchecked"})
 	protected Map<Object, Object> createMap(Class<? extends Map> mapType, int initialCapacity) {

@@ -133,7 +133,7 @@ public interface AutowireCapableBeanFactory extends BeanFactory {
 	 * It does <i>not</i> imply traditional by-name or by-type autowiring of properties;
 	 * use {@link #createBean(Class, int, boolean)} for those purposes.
 	 * @param beanClass the class of the bean to create
-	 * @return the new bean instance
+	 * @return 新bean实例
 	 * @throws BeansException if instantiation or wiring failed
 	 */
 	<T> T createBean(Class<T> beanClass) throws BeansException;
@@ -184,7 +184,7 @@ public interface AutowireCapableBeanFactory extends BeanFactory {
 	 * @param autowireMode by name or type, using the constants in this interface
 	 * @param dependencyCheck whether to perform a dependency check for objects
 	 * (not applicable to autowiring a constructor, thus ignored there)
-	 * @return the new bean instance
+	 * @return 新bean实例
 	 * @throws BeansException if instantiation or wiring failed
 	 * @see #AUTOWIRE_NO
 	 * @see #AUTOWIRE_BY_NAME
@@ -208,7 +208,7 @@ public interface AutowireCapableBeanFactory extends BeanFactory {
 	 * @param dependencyCheck whether to perform a dependency check for object
 	 * references in the bean instance (not applicable to autowiring a constructor,
 	 * thus ignored there)
-	 * @return the new bean instance
+	 * @return 新bean实例
 	 * @throws BeansException if instantiation or wiring failed
 	 * @see #AUTOWIRE_NO
 	 * @see #AUTOWIRE_BY_NAME

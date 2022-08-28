@@ -62,7 +62,7 @@ public class ColumnMapRowMapper implements RowMapper<Map<String, Object>> {
 	 * <p>By default, a linked case-insensitive Map will be created.
 	 * @param columnCount the column count, to be used as initial
 	 * capacity for the Map
-	 * @return the new Map instance
+	 * @return 新Map实例
 	 * @see org.springframework.util.LinkedCaseInsensitiveMap
 	 */
 	protected Map<String, Object> createColumnMap(int columnCount) {

@@ -207,7 +207,7 @@ public interface LobHandler {
 	 * Create a new {@link LobCreator} instance, i.e. a session for creating BLOBs
 	 * and CLOBs. Needs to be closed after the created LOBs are not needed anymore -
 	 * typically after statement execution or transaction completion.
-	 * @return the new LobCreator instance
+	 * @return 新LobCreator实例
 	 * @see LobCreator#close()
 	 */
 	LobCreator getLobCreator();

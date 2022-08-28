@@ -67,7 +67,7 @@ public abstract class JdbcDaoSupport extends DaoSupport {
 	 * <p>Can be overridden in subclasses to provide a JdbcTemplate instance
 	 * with different configuration, or a custom JdbcTemplate subclass.
 	 * @param dataSource the JDBC DataSource to create a JdbcTemplate for
-	 * @return the new JdbcTemplate instance
+	 * @return 新JdbcTemplate实例
 	 * @see #setDataSource
 	 */
 	protected JdbcTemplate createJdbcTemplate(DataSource dataSource) {

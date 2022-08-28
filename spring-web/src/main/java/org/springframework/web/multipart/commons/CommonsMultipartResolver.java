@@ -135,7 +135,7 @@ public class CommonsMultipartResolver extends CommonsFileUploadSupport
 	 * Initialize the underlying {@code org.apache.commons.fileupload.servlet.ServletFileUpload}
 	 * instance. Can be overridden to use a custom subclass, e.g. for testing purposes.
 	 * @param fileItemFactory the Commons FileItemFactory to use
-	 * @return the new ServletFileUpload instance
+	 * @return 新ServletFileUpload实例
 	 */
 	@Override
 	protected FileUpload newFileUpload(FileItemFactory fileItemFactory) {

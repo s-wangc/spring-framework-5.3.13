@@ -77,7 +77,7 @@ public abstract class HibernateDaoSupport extends DaoSupport {
 	 * <p>Can be overridden in subclasses to provide a HibernateTemplate instance
 	 * with different configuration, or a custom HibernateTemplate subclass.
 	 * @param sessionFactory the Hibernate SessionFactory to create a HibernateTemplate for
-	 * @return the new HibernateTemplate instance
+	 * @return 新HibernateTemplate实例
 	 * @see #setSessionFactory
 	 */
 	protected HibernateTemplate createHibernateTemplate(SessionFactory sessionFactory) {

@@ -421,7 +421,7 @@ public class RequestContext {
 	 * "defaultHtmlEscape" setting.
 	 * @param path the bean and property path for which values and errors will
 	 * be resolved (e.g. "person.age")
-	 * @return the new BindStatus instance
+	 * @return 新BindStatus实例
 	 * @throws IllegalStateException if no corresponding Errors object found
 	 */
 	public BindStatus getBindStatus(String path) throws IllegalStateException {
@@ -434,7 +434,7 @@ public class RequestContext {
 	 * @param path the bean and property path for which values and errors will
 	 * be resolved (e.g. "person.age")
 	 * @param htmlEscape create a BindStatus with automatic HTML escaping?
-	 * @return the new BindStatus instance
+	 * @return 新BindStatus实例
 	 * @throws IllegalStateException if no corresponding Errors object found
 	 */
 	public BindStatus getBindStatus(String path, boolean htmlEscape) throws IllegalStateException {

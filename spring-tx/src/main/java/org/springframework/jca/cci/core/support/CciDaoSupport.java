@@ -66,7 +66,7 @@ public abstract class CciDaoSupport extends DaoSupport {
 	 * <p>Can be overridden in subclasses to provide a CciTemplate instance
 	 * with different configuration, or a custom CciTemplate subclass.
 	 * @param connectionFactory the CCI ConnectionFactory to create a CciTemplate for
-	 * @return the new CciTemplate instance
+	 * @return 新CciTemplate实例
 	 * @see #setConnectionFactory(javax.resource.cci.ConnectionFactory)
 	 */
 	protected org.springframework.jca.cci.core.CciTemplate createCciTemplate(ConnectionFactory connectionFactory) {

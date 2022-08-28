@@ -148,7 +148,7 @@ public class CustomCollectionEditor extends PropertyEditorSupport {
 	 * initial capacity (if supported by the Collection type).
 	 * @param collectionType a sub-interface of Collection
 	 * @param initialCapacity the initial capacity
-	 * @return the new Collection instance
+	 * @return 新Collection实例
 	 */
 	@SuppressWarnings({"rawtypes", "unchecked"})
 	protected Collection<Object> createCollection(Class<? extends Collection> collectionType, int initialCapacity) {

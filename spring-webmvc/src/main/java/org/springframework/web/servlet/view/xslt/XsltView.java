@@ -199,7 +199,7 @@ public class XsltView extends AbstractUrlBasedView {
 	 * specified class will be called instead.
 	 * <p>可以在子类中重写.
 	 * @param transformerFactoryClass the specified factory class (if any)
-	 * @return the new TransactionFactory instance
+	 * @return 新TransactionFactory实例
 	 * @see #setTransformerFactoryClass
 	 * @see #getTransformerFactory()
 	 */

@@ -199,7 +199,7 @@ public abstract class CommonsFileUploadSupport {
 	 * Factory method for a Commons DiskFileItemFactory instance.
 	 * <p>Default implementation returns a standard DiskFileItemFactory.
 	 * Can be overridden to use a custom subclass, e.g. for testing purposes.
-	 * @return the new DiskFileItemFactory instance
+	 * @return 新DiskFileItemFactory实例
 	 */
 	protected DiskFileItemFactory newFileItemFactory() {
 		return new DiskFileItemFactory();
