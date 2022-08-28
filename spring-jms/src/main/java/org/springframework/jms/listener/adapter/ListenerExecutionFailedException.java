@@ -30,7 +30,7 @@ public class ListenerExecutionFailedException extends JmsException {
 
 	/**
 	 * Constructor for ListenerExecutionFailedException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the exception thrown by the listener method
 	 */
 	public ListenerExecutionFailedException(String msg, Throwable cause) {

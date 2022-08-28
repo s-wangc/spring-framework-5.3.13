@@ -637,7 +637,7 @@ public abstract class AbstractJmsListeningContainer extends JmsDestinationAccess
 
 		/**
 		 * 创建一个新的SharedConnectionNotInitializedException.
-		 * @param msg the detail message
+		 * @param msg 详细信息
 		 */
 		protected SharedConnectionNotInitializedException(String msg) {
 			super(msg);

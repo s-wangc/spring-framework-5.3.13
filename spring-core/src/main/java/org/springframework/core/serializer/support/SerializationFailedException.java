@@ -33,7 +33,7 @@ public class SerializationFailedException extends NestedRuntimeException {
 
 	/**
 	 * Construct a {@code SerializationException} with the specified detail message.
-	 * @param message the detail message
+	 * @param message 详细信息
 	 */
 	public SerializationFailedException(String message) {
 		super(message);
@@ -42,7 +42,7 @@ public class SerializationFailedException extends NestedRuntimeException {
 	/**
 	 * Construct a {@code SerializationException} with the specified detail message
 	 * and nested exception.
-	 * @param message the detail message
+	 * @param message 详细信息
 	 * @param cause the nested exception
 	 */
 	public SerializationFailedException(String message, Throwable cause) {

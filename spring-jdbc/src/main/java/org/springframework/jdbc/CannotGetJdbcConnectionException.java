@@ -32,7 +32,7 @@ public class CannotGetJdbcConnectionException extends DataAccessResourceFailureE
 
 	/**
 	 * Constructor for CannotGetJdbcConnectionException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @since 5.0
 	 */
 	public CannotGetJdbcConnectionException(String msg) {
@@ -41,7 +41,7 @@ public class CannotGetJdbcConnectionException extends DataAccessResourceFailureE
 
 	/**
 	 * Constructor for CannotGetJdbcConnectionException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param ex the root cause SQLException
 	 */
 	public CannotGetJdbcConnectionException(String msg, @Nullable SQLException ex) {

@@ -31,7 +31,7 @@ public class SchedulingException extends NestedRuntimeException {
 
 	/**
 	 * Constructor for SchedulingException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public SchedulingException(String msg) {
 		super(msg);
@@ -39,7 +39,7 @@ public class SchedulingException extends NestedRuntimeException {
 
 	/**
 	 * Constructor for SchedulingException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause (usually from using a underlying
 	 * scheduling API such as Quartz)
 	 */

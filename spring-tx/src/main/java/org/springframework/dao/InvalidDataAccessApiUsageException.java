@@ -30,7 +30,7 @@ public class InvalidDataAccessApiUsageException extends NonTransientDataAccessEx
 
 	/**
 	 * Constructor for InvalidDataAccessApiUsageException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public InvalidDataAccessApiUsageException(String msg) {
 		super(msg);
@@ -38,7 +38,7 @@ public class InvalidDataAccessApiUsageException extends NonTransientDataAccessEx
 
 	/**
 	 * Constructor for InvalidDataAccessApiUsageException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause from the data access API in use
 	 */
 	public InvalidDataAccessApiUsageException(String msg, Throwable cause) {

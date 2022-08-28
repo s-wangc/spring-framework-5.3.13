@@ -41,7 +41,7 @@ public class NotReadablePropertyException extends InvalidPropertyException {
 	 * 创建一个新的NotReadablePropertyException.
 	 * @param beanClass the offending bean class
 	 * @param propertyName the offending property
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public NotReadablePropertyException(Class<?> beanClass, String propertyName, String msg) {
 		super(beanClass, propertyName, msg);
@@ -51,7 +51,7 @@ public class NotReadablePropertyException extends InvalidPropertyException {
 	 * 创建一个新的NotReadablePropertyException.
 	 * @param beanClass the offending bean class
 	 * @param propertyName the offending property
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause 根本原因
 	 * @since 4.0.9
 	 */

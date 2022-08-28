@@ -39,7 +39,7 @@ public class ObjectRetrievalFailureException extends DataRetrievalFailureExcepti
 	/**
 	 * Create a general ObjectRetrievalFailureException with the given message,
 	 * without any information on the affected object.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the source exception
 	 */
 	public ObjectRetrievalFailureException(String msg, Throwable cause) {
@@ -65,7 +65,7 @@ public class ObjectRetrievalFailureException extends DataRetrievalFailureExcepti
 	 * with the given explicit message and exception.
 	 * @param persistentClass the persistent class
 	 * @param identifier the ID of the object that should have been retrieved
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the source exception
 	 */
 	public ObjectRetrievalFailureException(
@@ -93,7 +93,7 @@ public class ObjectRetrievalFailureException extends DataRetrievalFailureExcepti
 	 * with the given explicit message and exception.
 	 * @param persistentClassName the name of the persistent class
 	 * @param identifier the ID of the object that should have been retrieved
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the source exception
 	 */
 	public ObjectRetrievalFailureException(

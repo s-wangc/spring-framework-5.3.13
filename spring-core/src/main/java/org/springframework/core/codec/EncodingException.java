@@ -33,7 +33,7 @@ public class EncodingException extends CodecException {
 
 	/**
 	 * 创建一个新的EncodingException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public EncodingException(String msg) {
 		super(msg);
@@ -41,7 +41,7 @@ public class EncodingException extends CodecException {
 
 	/**
 	 * 创建一个新的EncodingException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause root cause for the exception, if any
 	 */
 	public EncodingException(String msg, @Nullable Throwable cause) {

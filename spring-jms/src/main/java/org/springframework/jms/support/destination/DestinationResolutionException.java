@@ -31,7 +31,7 @@ public class DestinationResolutionException extends JmsException {
 
 	/**
 	 * 创建一个新的DestinationResolutionException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public DestinationResolutionException(String msg) {
 		super(msg);
@@ -39,7 +39,7 @@ public class DestinationResolutionException extends JmsException {
 
 	/**
 	 * 创建一个新的DestinationResolutionException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause (if any)
 	 */
 	public DestinationResolutionException(String msg, @Nullable Throwable cause) {

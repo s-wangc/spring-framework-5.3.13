@@ -31,7 +31,7 @@ public class HttpMessageConversionException extends NestedRuntimeException {
 
 	/**
 	 * 创建一个新的HttpMessageConversionException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public HttpMessageConversionException(String msg) {
 		super(msg);
@@ -39,7 +39,7 @@ public class HttpMessageConversionException extends NestedRuntimeException {
 
 	/**
 	 * 创建一个新的HttpMessageConversionException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause (if any)
 	 */
 	public HttpMessageConversionException(String msg, @Nullable Throwable cause) {

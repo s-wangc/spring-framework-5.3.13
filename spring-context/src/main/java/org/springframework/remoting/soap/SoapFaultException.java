@@ -34,7 +34,7 @@ public abstract class SoapFaultException extends RemoteInvocationFailureExceptio
 
 	/**
 	 * Constructor for SoapFaultException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause from the SOAP API in use
 	 */
 	protected SoapFaultException(String msg, Throwable cause) {

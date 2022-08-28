@@ -43,7 +43,7 @@ public class BeanInstantiationException extends FatalBeanException {
 	/**
 	 * 创建一个新的BeanInstantiationException.
 	 * @param beanClass the offending bean class
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public BeanInstantiationException(Class<?> beanClass, String msg) {
 		this(beanClass, msg, null);
@@ -52,7 +52,7 @@ public class BeanInstantiationException extends FatalBeanException {
 	/**
 	 * 创建一个新的BeanInstantiationException.
 	 * @param beanClass the offending bean class
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause 根本原因
 	 */
 	public BeanInstantiationException(Class<?> beanClass, String msg, @Nullable Throwable cause) {
@@ -65,7 +65,7 @@ public class BeanInstantiationException extends FatalBeanException {
 	/**
 	 * 创建一个新的BeanInstantiationException.
 	 * @param constructor the offending constructor
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause 根本原因
 	 * @since 4.3
 	 */
@@ -80,7 +80,7 @@ public class BeanInstantiationException extends FatalBeanException {
 	 * 创建一个新的BeanInstantiationException.
 	 * @param constructingMethod the delegate for bean construction purposes
 	 * (typically, but not necessarily, a static factory method)
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause 根本原因
 	 * @since 4.3
 	 */

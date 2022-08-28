@@ -28,7 +28,7 @@ public class TransactionSuspensionNotSupportedException extends CannotCreateTran
 
 	/**
 	 * Constructor for TransactionSuspensionNotSupportedException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public TransactionSuspensionNotSupportedException(String msg) {
 		super(msg);
@@ -36,7 +36,7 @@ public class TransactionSuspensionNotSupportedException extends CannotCreateTran
 
 	/**
 	 * Constructor for TransactionSuspensionNotSupportedException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause from the transaction API in use
 	 */
 	public TransactionSuspensionNotSupportedException(String msg, Throwable cause) {

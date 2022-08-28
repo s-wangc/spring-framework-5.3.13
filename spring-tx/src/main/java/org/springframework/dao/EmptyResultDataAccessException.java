@@ -37,7 +37,7 @@ public class EmptyResultDataAccessException extends IncorrectResultSizeDataAcces
 
 	/**
 	 * Constructor for EmptyResultDataAccessException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param expectedSize the expected result size
 	 */
 	public EmptyResultDataAccessException(String msg, int expectedSize) {
@@ -46,7 +46,7 @@ public class EmptyResultDataAccessException extends IncorrectResultSizeDataAcces
 
 	/**
 	 * Constructor for EmptyResultDataAccessException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param expectedSize the expected result size
 	 * @param ex the wrapped exception
 	 */

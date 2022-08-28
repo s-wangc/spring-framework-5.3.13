@@ -54,7 +54,7 @@ public class RemoteAccessException extends NestedRuntimeException {
 
 	/**
 	 * Constructor for RemoteAccessException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public RemoteAccessException(String msg) {
 		super(msg);
@@ -62,7 +62,7 @@ public class RemoteAccessException extends NestedRuntimeException {
 
 	/**
 	 * Constructor for RemoteAccessException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause (usually from using an underlying
 	 * remoting API such as RMI)
 	 */

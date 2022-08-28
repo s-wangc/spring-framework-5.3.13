@@ -32,7 +32,7 @@ public class InvocationFailureException extends JmxException {
 	/**
 	 * Create a new {@code InvocationFailureException} with the supplied
 	 * error message.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public InvocationFailureException(String msg) {
 		super(msg);
@@ -41,7 +41,7 @@ public class InvocationFailureException extends JmxException {
 	/**
 	 * Create a new {@code InvocationFailureException} with the
 	 * specified error message and root cause.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause 根本原因
 	 */
 	public InvocationFailureException(String msg, Throwable cause) {

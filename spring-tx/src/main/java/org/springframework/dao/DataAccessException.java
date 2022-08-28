@@ -41,7 +41,7 @@ public abstract class DataAccessException extends NestedRuntimeException {
 
 	/**
 	 * Constructor for DataAccessException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public DataAccessException(String msg) {
 		super(msg);
@@ -49,7 +49,7 @@ public abstract class DataAccessException extends NestedRuntimeException {
 
 	/**
 	 * Constructor for DataAccessException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause (usually from using a underlying
 	 * data access API such as JDBC)
 	 */

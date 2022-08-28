@@ -49,7 +49,7 @@ public class NotWritablePropertyException extends InvalidPropertyException {
 	 * 创建一个新的NotWritablePropertyException.
 	 * @param beanClass the offending bean class
 	 * @param propertyName the offending property name
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public NotWritablePropertyException(Class<?> beanClass, String propertyName, String msg) {
 		super(beanClass, propertyName, msg);
@@ -60,7 +60,7 @@ public class NotWritablePropertyException extends InvalidPropertyException {
 	 * 创建一个新的NotWritablePropertyException.
 	 * @param beanClass the offending bean class
 	 * @param propertyName the offending property name
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause 根本原因
 	 */
 	public NotWritablePropertyException(Class<?> beanClass, String propertyName, String msg, Throwable cause) {
@@ -72,7 +72,7 @@ public class NotWritablePropertyException extends InvalidPropertyException {
 	 * 创建一个新的NotWritablePropertyException.
 	 * @param beanClass the offending bean class
 	 * @param propertyName the offending property name
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param possibleMatches suggestions for actual bean property names
 	 * that closely match the invalid property name
 	 */

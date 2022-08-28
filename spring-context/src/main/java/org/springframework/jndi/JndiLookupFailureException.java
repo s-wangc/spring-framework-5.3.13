@@ -35,7 +35,7 @@ public class JndiLookupFailureException extends NestedRuntimeException {
 	/**
 	 * Construct a new JndiLookupFailureException,
 	 * wrapping the given JNDI NamingException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the NamingException root cause
 	 */
 	public JndiLookupFailureException(String msg, NamingException cause) {

@@ -39,7 +39,7 @@ public class ObjectOptimisticLockingFailureException extends OptimisticLockingFa
 	/**
 	 * Create a general ObjectOptimisticLockingFailureException with the given message,
 	 * without any information on the affected object.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the source exception
 	 */
 	public ObjectOptimisticLockingFailureException(String msg, Throwable cause) {
@@ -78,7 +78,7 @@ public class ObjectOptimisticLockingFailureException extends OptimisticLockingFa
 	 * with the given explicit message.
 	 * @param persistentClass the persistent class
 	 * @param identifier the ID of the object for which the locking failed
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the source exception
 	 */
 	public ObjectOptimisticLockingFailureException(
@@ -119,7 +119,7 @@ public class ObjectOptimisticLockingFailureException extends OptimisticLockingFa
 	 * with the given explicit message.
 	 * @param persistentClassName the name of the persistent class
 	 * @param identifier the ID of the object for which the locking failed
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the source exception
 	 */
 	public ObjectOptimisticLockingFailureException(

@@ -33,7 +33,7 @@ public class OptimisticLockingFailureException extends ConcurrencyFailureExcepti
 
 	/**
 	 * Constructor for OptimisticLockingFailureException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public OptimisticLockingFailureException(String msg) {
 		super(msg);
@@ -41,7 +41,7 @@ public class OptimisticLockingFailureException extends ConcurrencyFailureExcepti
 
 	/**
 	 * Constructor for OptimisticLockingFailureException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause from the data access API in use
 	 */
 	public OptimisticLockingFailureException(String msg, @Nullable Throwable cause) {

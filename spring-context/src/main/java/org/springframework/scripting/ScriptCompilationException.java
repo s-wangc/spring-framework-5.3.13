@@ -34,7 +34,7 @@ public class ScriptCompilationException extends NestedRuntimeException {
 
 	/**
 	 * Constructor for ScriptCompilationException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public ScriptCompilationException(String msg) {
 		super(msg);
@@ -43,7 +43,7 @@ public class ScriptCompilationException extends NestedRuntimeException {
 
 	/**
 	 * Constructor for ScriptCompilationException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause (usually from using an underlying script compiler API)
 	 */
 	public ScriptCompilationException(String msg, Throwable cause) {
@@ -54,7 +54,7 @@ public class ScriptCompilationException extends NestedRuntimeException {
 	/**
 	 * Constructor for ScriptCompilationException.
 	 * @param scriptSource the source for the offending script
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @since 4.2
 	 */
 	public ScriptCompilationException(ScriptSource scriptSource, String msg) {
@@ -75,7 +75,7 @@ public class ScriptCompilationException extends NestedRuntimeException {
 	/**
 	 * Constructor for ScriptCompilationException.
 	 * @param scriptSource the source for the offending script
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause (usually from using an underlying script compiler API)
 	 */
 	public ScriptCompilationException(ScriptSource scriptSource, String msg, Throwable cause) {

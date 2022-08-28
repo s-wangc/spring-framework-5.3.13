@@ -30,7 +30,7 @@ public class RemoteInvocationFailureException extends RemoteAccessException {
 
 	/**
 	 * Constructor for RemoteInvocationFailureException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause from the remoting API in use
 	 */
 	public RemoteInvocationFailureException(String msg, Throwable cause) {

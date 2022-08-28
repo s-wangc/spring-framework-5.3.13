@@ -37,7 +37,7 @@ public abstract class PropertyAccessException extends BeansException {
 	/**
 	 * 创建一个新的PropertyAccessException.
 	 * @param propertyChangeEvent the PropertyChangeEvent that resulted in the problem
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause 根本原因
 	 */
 	public PropertyAccessException(PropertyChangeEvent propertyChangeEvent, String msg, @Nullable Throwable cause) {
@@ -47,7 +47,7 @@ public abstract class PropertyAccessException extends BeansException {
 
 	/**
 	 * Create a new PropertyAccessException without PropertyChangeEvent.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause 根本原因
 	 */
 	public PropertyAccessException(String msg, @Nullable Throwable cause) {

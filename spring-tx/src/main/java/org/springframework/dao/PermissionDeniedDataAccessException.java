@@ -28,7 +28,7 @@ public class PermissionDeniedDataAccessException extends NonTransientDataAccessE
 
 	/**
 	 * Constructor for PermissionDeniedDataAccessException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause from the underlying data access API,
 	 * such as JDBC
 	 */

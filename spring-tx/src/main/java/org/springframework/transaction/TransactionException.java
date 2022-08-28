@@ -29,7 +29,7 @@ public abstract class TransactionException extends NestedRuntimeException {
 
 	/**
 	 * Constructor for TransactionException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public TransactionException(String msg) {
 		super(msg);
@@ -37,7 +37,7 @@ public abstract class TransactionException extends NestedRuntimeException {
 
 	/**
 	 * Constructor for TransactionException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause from the transaction API in use
 	 */
 	public TransactionException(String msg, Throwable cause) {

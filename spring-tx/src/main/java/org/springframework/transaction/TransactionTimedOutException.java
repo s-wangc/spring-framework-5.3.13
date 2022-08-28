@@ -47,7 +47,7 @@ public class TransactionTimedOutException extends TransactionException {
 
 	/**
 	 * Constructor for TransactionTimedOutException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public TransactionTimedOutException(String msg) {
 		super(msg);
@@ -55,7 +55,7 @@ public class TransactionTimedOutException extends TransactionException {
 
 	/**
 	 * Constructor for TransactionTimedOutException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause from the transaction API in use
 	 */
 	public TransactionTimedOutException(String msg, Throwable cause) {

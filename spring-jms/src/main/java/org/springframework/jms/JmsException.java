@@ -34,7 +34,7 @@ public abstract class JmsException extends NestedRuntimeException {
 
 	/**
 	 * Constructor that takes a message.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public JmsException(String msg) {
 		super(msg);
@@ -42,7 +42,7 @@ public abstract class JmsException extends NestedRuntimeException {
 
 	/**
 	 * Constructor that takes a message and a root cause.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the cause of the exception. This argument is generally
 	 * expected to be a proper subclass of {@link javax.jms.JMSException},
 	 * but can also be a JNDI NamingException or the like.

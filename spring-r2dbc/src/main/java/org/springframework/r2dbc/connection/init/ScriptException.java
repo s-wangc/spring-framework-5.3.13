@@ -32,7 +32,7 @@ public abstract class ScriptException extends DataAccessException {
 
 	/**
 	 * 创建一个新的{@code ScriptException}.
-	 * @param message the detail message
+	 * @param message 详细信息
 	 */
 	public ScriptException(String message) {
 		super(message);
@@ -40,7 +40,7 @@ public abstract class ScriptException extends DataAccessException {
 
 	/**
 	 * 创建一个新的{@code ScriptException}.
-	 * @param message the detail message
+	 * @param message 详细信息
 	 * @param cause 根本原因
 	 */
 	public ScriptException(String message, @Nullable Throwable cause) {

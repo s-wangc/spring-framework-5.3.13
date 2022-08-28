@@ -38,7 +38,7 @@ public class UncategorizedR2dbcException extends UncategorizedDataAccessExceptio
 
 	/**
 	 * Constructor for {@code UncategorizedSQLException}.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param sql the offending SQL statement
 	 * @param ex the exception thrown by underlying data access API
 	 */

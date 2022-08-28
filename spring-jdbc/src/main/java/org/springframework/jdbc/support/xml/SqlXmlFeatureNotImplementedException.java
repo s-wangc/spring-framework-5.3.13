@@ -30,7 +30,7 @@ public class SqlXmlFeatureNotImplementedException extends InvalidDataAccessApiUs
 
 	/**
 	 * Constructor for SqlXmlFeatureNotImplementedException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public SqlXmlFeatureNotImplementedException(String msg) {
 		super(msg);
@@ -38,7 +38,7 @@ public class SqlXmlFeatureNotImplementedException extends InvalidDataAccessApiUs
 
 	/**
 	 * Constructor for SqlXmlFeatureNotImplementedException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause from the data access API in use
 	 */
 	public SqlXmlFeatureNotImplementedException(String msg, Throwable cause) {

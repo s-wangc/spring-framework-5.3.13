@@ -41,7 +41,7 @@ public class UnsatisfiedDependencyException extends BeanCreationException {
 	 * @param resourceDescription description of the resource that the bean definition came from
 	 * @param beanName the name of the bean requested
 	 * @param propertyName the name of the bean property that couldn't be satisfied
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public UnsatisfiedDependencyException(
 			@Nullable String resourceDescription, @Nullable String beanName, String propertyName, String msg) {
@@ -71,7 +71,7 @@ public class UnsatisfiedDependencyException extends BeanCreationException {
 	 * @param resourceDescription description of the resource that the bean definition came from
 	 * @param beanName the name of the bean requested
 	 * @param injectionPoint the injection point (field or method/constructor parameter)
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @since 4.3
 	 */
 	public UnsatisfiedDependencyException(

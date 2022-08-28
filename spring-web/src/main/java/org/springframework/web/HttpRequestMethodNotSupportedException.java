@@ -55,7 +55,7 @@ public class HttpRequestMethodNotSupportedException extends ServletException {
 	/**
 	 * 创建一个新的HttpRequestMethodNotSupportedException.
 	 * @param method the unsupported HTTP request method
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public HttpRequestMethodNotSupportedException(String method, String msg) {
 		this(method, null, msg);
@@ -83,7 +83,7 @@ public class HttpRequestMethodNotSupportedException extends ServletException {
 	 * 创建一个新的HttpRequestMethodNotSupportedException.
 	 * @param method the unsupported HTTP request method
 	 * @param supportedMethods the actually supported HTTP methods
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public HttpRequestMethodNotSupportedException(String method, @Nullable String[] supportedMethods, String msg) {
 		super(msg);

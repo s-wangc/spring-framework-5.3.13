@@ -56,7 +56,7 @@ public class IncorrectResultSizeDataAccessException extends DataRetrievalFailure
 
 	/**
 	 * Constructor for IncorrectResultSizeDataAccessException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param expectedSize the expected result size
 	 */
 	public IncorrectResultSizeDataAccessException(String msg, int expectedSize) {
@@ -67,7 +67,7 @@ public class IncorrectResultSizeDataAccessException extends DataRetrievalFailure
 
 	/**
 	 * Constructor for IncorrectResultSizeDataAccessException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param expectedSize the expected result size
 	 * @param ex the wrapped exception
 	 */
@@ -79,7 +79,7 @@ public class IncorrectResultSizeDataAccessException extends DataRetrievalFailure
 
 	/**
 	 * Constructor for IncorrectResultSizeDataAccessException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param expectedSize the expected result size
 	 * @param actualSize the actual result size (or -1 if unknown)
 	 */
@@ -91,7 +91,7 @@ public class IncorrectResultSizeDataAccessException extends DataRetrievalFailure
 
 	/**
 	 * Constructor for IncorrectResultSizeDataAccessException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param expectedSize the expected result size
 	 * @param actualSize the actual result size (or -1 if unknown)
 	 * @param ex the wrapped exception

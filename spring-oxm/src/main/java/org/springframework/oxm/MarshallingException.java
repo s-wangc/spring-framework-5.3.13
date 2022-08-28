@@ -30,7 +30,7 @@ public abstract class MarshallingException extends XmlMappingException {
 
 	/**
 	 * Construct a {@code MarshallingException} with the specified detail message.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	protected MarshallingException(String msg) {
 		super(msg);
@@ -39,7 +39,7 @@ public abstract class MarshallingException extends XmlMappingException {
 	/**
 	 * Construct a {@code MarshallingException} with the specified detail message
 	 * and nested exception.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the nested exception
 	 */
 	protected MarshallingException(String msg, Throwable cause) {

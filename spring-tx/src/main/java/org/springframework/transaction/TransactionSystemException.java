@@ -35,7 +35,7 @@ public class TransactionSystemException extends TransactionException {
 
 	/**
 	 * Constructor for TransactionSystemException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public TransactionSystemException(String msg) {
 		super(msg);
@@ -43,7 +43,7 @@ public class TransactionSystemException extends TransactionException {
 
 	/**
 	 * Constructor for TransactionSystemException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause from the transaction API in use
 	 */
 	public TransactionSystemException(String msg, Throwable cause) {

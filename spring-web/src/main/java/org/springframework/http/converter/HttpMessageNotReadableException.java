@@ -37,7 +37,7 @@ public class HttpMessageNotReadableException extends HttpMessageConversionExcept
 
 	/**
 	 * 创建一个新的HttpMessageNotReadableException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @deprecated as of 5.1, in favor of {@link #HttpMessageNotReadableException(String, HttpInputMessage)}
 	 */
 	@Deprecated
@@ -48,7 +48,7 @@ public class HttpMessageNotReadableException extends HttpMessageConversionExcept
 
 	/**
 	 * 创建一个新的HttpMessageNotReadableException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause (if any)
 	 * @deprecated as of 5.1, in favor of {@link #HttpMessageNotReadableException(String, Throwable, HttpInputMessage)}
 	 */
@@ -60,7 +60,7 @@ public class HttpMessageNotReadableException extends HttpMessageConversionExcept
 
 	/**
 	 * 创建一个新的HttpMessageNotReadableException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param httpInputMessage the original HTTP message
 	 * @since 5.1
 	 */
@@ -71,7 +71,7 @@ public class HttpMessageNotReadableException extends HttpMessageConversionExcept
 
 	/**
 	 * 创建一个新的HttpMessageNotReadableException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause (if any)
 	 * @param httpInputMessage the original HTTP message
 	 * @since 5.1

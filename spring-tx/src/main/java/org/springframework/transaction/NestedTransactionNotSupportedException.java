@@ -28,7 +28,7 @@ public class NestedTransactionNotSupportedException extends CannotCreateTransact
 
 	/**
 	 * Constructor for NestedTransactionNotSupportedException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public NestedTransactionNotSupportedException(String msg) {
 		super(msg);
@@ -36,7 +36,7 @@ public class NestedTransactionNotSupportedException extends CannotCreateTransact
 
 	/**
 	 * Constructor for NestedTransactionNotSupportedException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause from the transaction API in use
 	 */
 	public NestedTransactionNotSupportedException(String msg, Throwable cause) {

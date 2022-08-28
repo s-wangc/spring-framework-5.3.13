@@ -29,7 +29,7 @@ public class TransientDataAccessResourceException extends TransientDataAccessExc
 
 	/**
 	 * Constructor for TransientDataAccessResourceException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public TransientDataAccessResourceException(String msg) {
 		super(msg);
@@ -37,7 +37,7 @@ public class TransientDataAccessResourceException extends TransientDataAccessExc
 
 	/**
 	 * Constructor for TransientDataAccessResourceException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause from the data access API in use
 	 */
 	public TransientDataAccessResourceException(String msg, Throwable cause) {

@@ -29,7 +29,7 @@ public class UnableToRegisterMBeanException extends MBeanExportException {
 	/**
 	 * Create a new {@code UnableToRegisterMBeanException} with the
 	 * specified error message.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public UnableToRegisterMBeanException(String msg) {
 		super(msg);
@@ -38,7 +38,7 @@ public class UnableToRegisterMBeanException extends MBeanExportException {
 	/**
 	 * Create a new {@code UnableToRegisterMBeanException} with the
 	 * specified error message and root cause.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root caus
 	 */
 	public UnableToRegisterMBeanException(String msg, Throwable cause) {

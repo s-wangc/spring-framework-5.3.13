@@ -780,7 +780,7 @@ public class AspectJAdviceParameterNameDiscoverer implements ParameterNameDiscov
 
 		/**
 		 * Construct a new AmbiguousBindingException with the specified message.
-		 * @param msg the detail message
+		 * @param msg 详细信息
 		 */
 		public AmbiguousBindingException(String msg) {
 			super(msg);

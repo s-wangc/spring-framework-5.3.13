@@ -46,7 +46,7 @@ public class BeanCreationException extends FatalBeanException {
 
 	/**
 	 * 创建一个新的BeanCreationException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public BeanCreationException(String msg) {
 		super(msg);
@@ -56,7 +56,7 @@ public class BeanCreationException extends FatalBeanException {
 
 	/**
 	 * 创建一个新的BeanCreationException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause 根本原因
 	 */
 	public BeanCreationException(String msg, Throwable cause) {
@@ -68,7 +68,7 @@ public class BeanCreationException extends FatalBeanException {
 	/**
 	 * 创建一个新的BeanCreationException.
 	 * @param beanName the name of the bean requested
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public BeanCreationException(String beanName, String msg) {
 		super("Error creating bean with name '" + beanName + "': " + msg);
@@ -79,7 +79,7 @@ public class BeanCreationException extends FatalBeanException {
 	/**
 	 * 创建一个新的BeanCreationException.
 	 * @param beanName the name of the bean requested
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause 根本原因
 	 */
 	public BeanCreationException(String beanName, String msg, Throwable cause) {
@@ -92,7 +92,7 @@ public class BeanCreationException extends FatalBeanException {
 	 * @param resourceDescription description of the resource
 	 * that the bean definition came from
 	 * @param beanName the name of the bean requested
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public BeanCreationException(@Nullable String resourceDescription, @Nullable String beanName, String msg) {
 		super("Error creating bean with name '" + beanName + "'" +
@@ -107,7 +107,7 @@ public class BeanCreationException extends FatalBeanException {
 	 * @param resourceDescription description of the resource
 	 * that the bean definition came from
 	 * @param beanName the name of the bean requested
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause 根本原因
 	 */
 	public BeanCreationException(@Nullable String resourceDescription, String beanName, String msg, Throwable cause) {

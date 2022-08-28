@@ -34,7 +34,7 @@ public class UnableToSendNotificationException extends JmxException {
 	/**
 	 * Create a new instance of the {@link UnableToSendNotificationException}
 	 * class with the specified error message.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public UnableToSendNotificationException(String msg) {
 		super(msg);
@@ -43,7 +43,7 @@ public class UnableToSendNotificationException extends JmxException {
 	/**
 	 * Create a new instance of the {@link UnableToSendNotificationException}
 	 * with the specified error message and root cause.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause 根本原因
 	 */
 	public UnableToSendNotificationException(String msg, Throwable cause) {

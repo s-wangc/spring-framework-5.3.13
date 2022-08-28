@@ -47,7 +47,7 @@ public class IncorrectResultSetColumnCountException extends DataRetrievalFailure
 
 	/**
 	 * Constructor for IncorrectResultCountDataAccessException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param expectedCount the expected column count
 	 * @param actualCount the actual column count
 	 */

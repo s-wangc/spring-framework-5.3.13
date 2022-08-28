@@ -97,7 +97,7 @@ public final class BindMarkersFactoryResolver {
 
 		/**
 		 * Constructor for NoBindMarkersFactoryException.
-		 * @param msg the detail message
+		 * @param msg 详细信息
 		 */
 		public NoBindMarkersFactoryException(String msg) {
 			super(msg);

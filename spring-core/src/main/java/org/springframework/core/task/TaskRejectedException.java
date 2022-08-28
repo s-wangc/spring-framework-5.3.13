@@ -33,7 +33,7 @@ public class TaskRejectedException extends RejectedExecutionException {
 	/**
 	 * Create a new {@code TaskRejectedException}
 	 * with the specified detail message and no root cause.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public TaskRejectedException(String msg) {
 		super(msg);
@@ -42,7 +42,7 @@ public class TaskRejectedException extends RejectedExecutionException {
 	/**
 	 * Create a new {@code TaskRejectedException}
 	 * with the specified detail message and the given root cause.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause (usually from using an underlying
 	 * API such as the {@code java.util.concurrent} package)
 	 * @see java.util.concurrent.RejectedExecutionException

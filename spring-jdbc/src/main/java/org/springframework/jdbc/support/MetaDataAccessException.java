@@ -33,7 +33,7 @@ public class MetaDataAccessException extends NestedCheckedException {
 
 	/**
 	 * Constructor for MetaDataAccessException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public MetaDataAccessException(String msg) {
 		super(msg);
@@ -41,7 +41,7 @@ public class MetaDataAccessException extends NestedCheckedException {
 
 	/**
 	 * Constructor for MetaDataAccessException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause from the data access API in use
 	 */
 	public MetaDataAccessException(String msg, Throwable cause) {

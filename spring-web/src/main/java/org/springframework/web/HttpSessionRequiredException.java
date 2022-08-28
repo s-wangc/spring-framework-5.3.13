@@ -35,7 +35,7 @@ public class HttpSessionRequiredException extends ServletException {
 
 	/**
 	 * 创建一个新的HttpSessionRequiredException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public HttpSessionRequiredException(String msg) {
 		super(msg);
@@ -44,7 +44,7 @@ public class HttpSessionRequiredException extends ServletException {
 
 	/**
 	 * 创建一个新的HttpSessionRequiredException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param expectedAttribute the name of the expected session attribute
 	 * @since 4.3
 	 */

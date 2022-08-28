@@ -32,7 +32,7 @@ public class MessageConversionException extends JmsException {
 
 	/**
 	 * 创建一个新的MessageConversionException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public MessageConversionException(String msg) {
 		super(msg);
@@ -40,7 +40,7 @@ public class MessageConversionException extends JmsException {
 
 	/**
 	 * 创建一个新的MessageConversionException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause (if any)
 	 */
 	public MessageConversionException(String msg, @Nullable Throwable cause) {

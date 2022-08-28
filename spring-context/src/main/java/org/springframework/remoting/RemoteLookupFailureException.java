@@ -28,7 +28,7 @@ public class RemoteLookupFailureException extends RemoteAccessException {
 
 	/**
 	 * Constructor for RemoteLookupFailureException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public RemoteLookupFailureException(String msg) {
 		super(msg);

@@ -35,7 +35,7 @@ public class MailAuthenticationException extends MailException {
 
 	/**
 	 * Constructor for MailAuthenticationException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause from the mail API in use
 	 */
 	public MailAuthenticationException(String msg, Throwable cause) {

@@ -33,7 +33,7 @@ public class SynchedLocalTransactionFailedException extends JmsException {
 
 	/**
 	 * 创建一个新的SynchedLocalTransactionFailedException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause 根本原因
 	 */
 	public SynchedLocalTransactionFailedException(String msg, JMSException cause) {

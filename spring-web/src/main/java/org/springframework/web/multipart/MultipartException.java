@@ -33,7 +33,7 @@ public class MultipartException extends NestedRuntimeException {
 
 	/**
 	 * Constructor for MultipartException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 */
 	public MultipartException(String msg) {
 		super(msg);
@@ -41,7 +41,7 @@ public class MultipartException extends NestedRuntimeException {
 
 	/**
 	 * Constructor for MultipartException.
-	 * @param msg the detail message
+	 * @param msg 详细信息
 	 * @param cause the root cause from the multipart parsing API in use
 	 */
 	public MultipartException(String msg, @Nullable Throwable cause) {
