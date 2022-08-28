@@ -29,7 +29,7 @@ public class BeanCreationNotAllowedException extends BeanCreationException {
 
 	/**
 	 * 创建一个新的BeanCreationNotAllowedException.
-	 * @param beanName the name of the bean requested
+	 * @param beanName 请求的bean的名称
 	 * @param msg 详细信息
 	 */
 	public BeanCreationNotAllowedException(String beanName, String msg) {

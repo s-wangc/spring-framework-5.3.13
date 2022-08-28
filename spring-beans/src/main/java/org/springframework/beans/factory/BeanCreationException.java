@@ -67,7 +67,7 @@ public class BeanCreationException extends FatalBeanException {
 
 	/**
 	 * 创建一个新的BeanCreationException.
-	 * @param beanName the name of the bean requested
+	 * @param beanName 请求的bean的名称
 	 * @param msg 详细信息
 	 */
 	public BeanCreationException(String beanName, String msg) {
@@ -78,7 +78,7 @@ public class BeanCreationException extends FatalBeanException {
 
 	/**
 	 * 创建一个新的BeanCreationException.
-	 * @param beanName the name of the bean requested
+	 * @param beanName 请求的bean的名称
 	 * @param msg 详细信息
 	 * @param cause 根本原因
 	 */
@@ -91,7 +91,7 @@ public class BeanCreationException extends FatalBeanException {
 	 * 创建一个新的BeanCreationException.
 	 * @param resourceDescription description of the resource
 	 * that the bean definition came from
-	 * @param beanName the name of the bean requested
+	 * @param beanName 请求的bean的名称
 	 * @param msg 详细信息
 	 */
 	public BeanCreationException(@Nullable String resourceDescription, @Nullable String beanName, String msg) {
@@ -106,7 +106,7 @@ public class BeanCreationException extends FatalBeanException {
 	 * 创建一个新的BeanCreationException.
 	 * @param resourceDescription description of the resource
 	 * that the bean definition came from
-	 * @param beanName the name of the bean requested
+	 * @param beanName 请求的bean的名称
 	 * @param msg 详细信息
 	 * @param cause 根本原因
 	 */

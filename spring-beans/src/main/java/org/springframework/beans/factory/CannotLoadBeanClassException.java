@@ -42,7 +42,7 @@ public class CannotLoadBeanClassException extends FatalBeanException {
 	 * 创建一个新的CannotLoadBeanClassException.
 	 * @param resourceDescription description of the resource
 	 * that the bean definition came from
-	 * @param beanName the name of the bean requested
+	 * @param beanName 请求的bean的名称
 	 * @param beanClassName the name of the bean class
 	 * @param cause 根本原因
 	 */
@@ -60,7 +60,7 @@ public class CannotLoadBeanClassException extends FatalBeanException {
 	 * 创建一个新的CannotLoadBeanClassException.
 	 * @param resourceDescription description of the resource
 	 * that the bean definition came from
-	 * @param beanName the name of the bean requested
+	 * @param beanName 请求的bean的名称
 	 * @param beanClassName the name of the bean class
 	 * @param cause 根本原因
 	 */

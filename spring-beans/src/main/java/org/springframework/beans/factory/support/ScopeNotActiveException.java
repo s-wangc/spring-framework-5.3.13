@@ -33,7 +33,7 @@ public class ScopeNotActiveException extends BeanCreationException {
 
 	/**
 	 * 创建一个新的ScopeNotActiveException.
-	 * @param beanName the name of the bean requested
+	 * @param beanName 请求的bean的名称
 	 * @param scopeName the name of the target scope
 	 * @param cause the root cause, typically from {@link org.springframework.beans.factory.config.Scope#get}
 	 */

@@ -39,7 +39,7 @@ public class UnsatisfiedDependencyException extends BeanCreationException {
 	/**
 	 * 创建一个新的UnsatisfiedDependencyException.
 	 * @param resourceDescription description of the resource that the bean definition came from
-	 * @param beanName the name of the bean requested
+	 * @param beanName 请求的bean的名称
 	 * @param propertyName the name of the bean property that couldn't be satisfied
 	 * @param msg 详细信息
 	 */
@@ -55,7 +55,7 @@ public class UnsatisfiedDependencyException extends BeanCreationException {
 	/**
 	 * 创建一个新的UnsatisfiedDependencyException.
 	 * @param resourceDescription description of the resource that the bean definition came from
-	 * @param beanName the name of the bean requested
+	 * @param beanName 请求的bean的名称
 	 * @param propertyName the name of the bean property that couldn't be satisfied
 	 * @param ex the bean creation exception that indicated the unsatisfied dependency
 	 */
@@ -69,7 +69,7 @@ public class UnsatisfiedDependencyException extends BeanCreationException {
 	/**
 	 * 创建一个新的UnsatisfiedDependencyException.
 	 * @param resourceDescription description of the resource that the bean definition came from
-	 * @param beanName the name of the bean requested
+	 * @param beanName 请求的bean的名称
 	 * @param injectionPoint the injection point (field or method/constructor parameter)
 	 * @param msg 详细信息
 	 * @since 4.3
@@ -86,7 +86,7 @@ public class UnsatisfiedDependencyException extends BeanCreationException {
 	/**
 	 * 创建一个新的UnsatisfiedDependencyException.
 	 * @param resourceDescription description of the resource that the bean definition came from
-	 * @param beanName the name of the bean requested
+	 * @param beanName 请求的bean的名称
 	 * @param injectionPoint the injection point (field or method/constructor parameter)
 	 * @param ex the bean creation exception that indicated the unsatisfied dependency
 	 * @since 4.3

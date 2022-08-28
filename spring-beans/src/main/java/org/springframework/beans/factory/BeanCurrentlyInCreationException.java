@@ -29,7 +29,7 @@ public class BeanCurrentlyInCreationException extends BeanCreationException {
 	/**
 	 * Create a new BeanCurrentlyInCreationException,
 	 * with a default error message that indicates a circular reference.
-	 * @param beanName the name of the bean requested
+	 * @param beanName 请求的bean的名称
 	 */
 	public BeanCurrentlyInCreationException(String beanName) {
 		super(beanName,
@@ -38,7 +38,7 @@ public class BeanCurrentlyInCreationException extends BeanCreationException {
 
 	/**
 	 * 创建一个新的BeanCurrentlyInCreationException.
-	 * @param beanName the name of the bean requested
+	 * @param beanName 请求的bean的名称
 	 * @param msg 详细信息
 	 */
 	public BeanCurrentlyInCreationException(String beanName, String msg) {

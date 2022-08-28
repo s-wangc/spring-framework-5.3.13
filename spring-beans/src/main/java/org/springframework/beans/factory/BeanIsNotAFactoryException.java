@@ -30,7 +30,7 @@ public class BeanIsNotAFactoryException extends BeanNotOfRequiredTypeException {
 
 	/**
 	 * 创建一个新的BeanIsNotAFactoryException.
-	 * @param name the name of the bean requested
+	 * @param name 请求的bean的名称
 	 * @param actualType the actual type returned, which did not match
 	 * the expected type
 	 */

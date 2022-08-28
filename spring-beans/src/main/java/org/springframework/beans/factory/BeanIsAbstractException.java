@@ -29,7 +29,7 @@ public class BeanIsAbstractException extends BeanCreationException {
 
 	/**
 	 * 创建一个新的BeanIsAbstractException.
-	 * @param beanName the name of the bean requested
+	 * @param beanName 请求的bean的名称
 	 */
 	public BeanIsAbstractException(String beanName) {
 		super(beanName, "Bean definition is abstract");
