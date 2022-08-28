@@ -37,7 +37,7 @@ public interface DestructionAwareBeanPostProcessor extends BeanPostProcessor {
 	 * lifecycle for. This is usually the case for singletons and scoped beans.
 	 * @param bean the bean instance to be destroyed
 	 * @param beanName the name of the bean
-	 * @throws org.springframework.beans.BeansException in case of errors
+	 * @throws org.springframework.beans.BeansException 如果出现错误
 	 * @see org.springframework.beans.factory.DisposableBean#destroy()
 	 * @see org.springframework.beans.factory.support.AbstractBeanDefinition#setDestroyMethodName(String)
 	 */

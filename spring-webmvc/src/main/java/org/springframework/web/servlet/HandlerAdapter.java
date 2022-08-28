@@ -72,7 +72,7 @@ public interface HandlerAdapter {
 	 * returned {@code true}.
 	 * @return a ModelAndView object with the name of the view and the required
 	 * model data, or {@code null} if the request has been handled directly
-	 * @throws Exception in case of errors
+	 * @throws Exception 如果出现错误
 	 */
 	@Nullable
 	ModelAndView handle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception;

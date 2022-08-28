@@ -53,7 +53,7 @@ public interface WebRequestInterceptor {
 	 * <p>Allows for preparing context resources (such as a Hibernate Session)
 	 * and expose them as request attributes or as thread-local objects.
 	 * @param request the current web request
-	 * @throws Exception in case of errors
+	 * @throws Exception 如果出现错误
 	 */
 	void preHandle(WebRequest request) throws Exception;
 
@@ -66,7 +66,7 @@ public interface WebRequestInterceptor {
 	 * @param model the map of model objects that will be exposed to the view
 	 * (may be {@code null}). Can be used to analyze the exposed model
 	 * and/or to add further model attributes, if desired.
-	 * @throws Exception in case of errors
+	 * @throws Exception 如果出现错误
 	 */
 	void postHandle(WebRequest request, @Nullable ModelMap model) throws Exception;
 
@@ -78,7 +78,7 @@ public interface WebRequestInterceptor {
 	 * method has successfully completed!
 	 * @param request the current web request
 	 * @param ex exception thrown on handler execution, if any
-	 * @throws Exception in case of errors
+	 * @throws Exception 如果出现错误
 	 */
 	void afterCompletion(WebRequest request, @Nullable Exception ex) throws Exception;
 

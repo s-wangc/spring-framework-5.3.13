@@ -190,7 +190,7 @@ public abstract class AbstractNamedValueMethodArgumentResolver implements Handle
 	 * @param message the current request
 	 * @param name the name of the value being resolved
 	 * @return the resolved argument. May be {@code null}
-	 * @throws Exception in case of errors
+	 * @throws Exception 如果出现错误
 	 */
 	@Nullable
 	protected abstract Object resolveArgumentInternal(MethodParameter parameter, Message<?> message, String name)

@@ -74,7 +74,7 @@ public interface CallableProcessingInterceptor {
 	 * <p>默认实现为空.
 	 * @param request the current request
 	 * @param task the task for the current async request
-	 * @throws Exception in case of errors
+	 * @throws Exception 如果出现错误
 	 */
 	default <T> void beforeConcurrentHandling(NativeWebRequest request, Callable<T> task) throws Exception {
 	}
@@ -86,7 +86,7 @@ public interface CallableProcessingInterceptor {
 	 * <p>默认实现为空.
 	 * @param request the current request
 	 * @param task the task for the current async request
-	 * @throws Exception in case of errors
+	 * @throws Exception 如果出现错误
 	 */
 	default <T> void preProcess(NativeWebRequest request, Callable<T> task) throws Exception {
 	}
@@ -101,7 +101,7 @@ public interface CallableProcessingInterceptor {
 	 * @param task the task for the current async request
 	 * @param concurrentResult the result of concurrent processing, which could
 	 * be a {@link Throwable} if the {@code Callable} raised an exception
-	 * @throws Exception in case of errors
+	 * @throws Exception 如果出现错误
 	 */
 	default <T> void postProcess(NativeWebRequest request, Callable<T> task,
 			Object concurrentResult) throws Exception {
@@ -118,7 +118,7 @@ public interface CallableProcessingInterceptor {
 	 * @return a concurrent result value; if the value is anything other than
 	 * {@link #RESULT_NONE} or {@link #RESPONSE_HANDLED}, concurrent processing
 	 * is resumed and subsequent interceptors are not invoked
-	 * @throws Exception in case of errors
+	 * @throws Exception 如果出现错误
 	 */
 	default <T> Object handleTimeout(NativeWebRequest request, Callable<T> task) throws Exception {
 		return RESULT_NONE;
@@ -136,7 +136,7 @@ public interface CallableProcessingInterceptor {
 	 * @return a concurrent result value; if the value is anything other than
 	 * {@link #RESULT_NONE} or {@link #RESPONSE_HANDLED}, concurrent processing
 	 * is resumed and subsequent interceptors are not invoked
-	 * @throws Exception in case of errors
+	 * @throws Exception 如果出现错误
 	 * @since 5.0
 	 */
 	default <T> Object handleError(NativeWebRequest request, Callable<T> task, Throwable t) throws Exception {
@@ -149,7 +149,7 @@ public interface CallableProcessingInterceptor {
 	 * <p>默认实现为空.
 	 * @param request the current request
 	 * @param task the task for the current async request
-	 * @throws Exception in case of errors
+	 * @throws Exception 如果出现错误
 	 */
 	default <T> void afterCompletion(NativeWebRequest request, Callable<T> task) throws Exception {
 	}

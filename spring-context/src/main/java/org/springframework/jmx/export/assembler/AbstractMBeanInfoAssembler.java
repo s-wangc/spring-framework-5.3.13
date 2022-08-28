@@ -51,7 +51,7 @@ public abstract class AbstractMBeanInfoAssembler implements MBeanInfoAssembler {
 	 * @param managedBean the bean that will be exposed (might be an AOP proxy)
 	 * @param beanKey the key associated with the managed bean
 	 * @return the populated ModelMBeanInfo instance
-	 * @throws JMException in case of errors
+	 * @throws JMException 如果出现错误
 	 * @see #getDescription(Object, String)
 	 * @see #getAttributeInfo(Object, String)
 	 * @see #getConstructorInfo(Object, String)
@@ -126,7 +126,7 @@ public abstract class AbstractMBeanInfoAssembler implements MBeanInfoAssembler {
 	 * @param beanKey the key associated with the MBean in the beans map
 	 * of the {@code MBeanExporter}
 	 * @return the MBean description
-	 * @throws JMException in case of errors
+	 * @throws JMException 如果出现错误
 	 */
 	protected String getClassName(Object managedBean, String beanKey) throws JMException {
 		return getTargetClass(managedBean).getName();
@@ -139,7 +139,7 @@ public abstract class AbstractMBeanInfoAssembler implements MBeanInfoAssembler {
 	 * @param managedBean the bean instance (might be an AOP proxy)
 	 * @param beanKey the key associated with the MBean in the beans map
 	 * of the {@code MBeanExporter}
-	 * @throws JMException in case of errors
+	 * @throws JMException 如果出现错误
 	 */
 	protected String getDescription(Object managedBean, String beanKey) throws JMException {
 		String targetClassName = getTargetClass(managedBean).getName();
@@ -158,7 +158,7 @@ public abstract class AbstractMBeanInfoAssembler implements MBeanInfoAssembler {
 	 * @param managedBean the bean instance (might be an AOP proxy)
 	 * @param beanKey the key associated with the MBean in the beans map
 	 * of the {@code MBeanExporter}
-	 * @throws JMException in case of errors
+	 * @throws JMException 如果出现错误
 	 */
 	protected void populateMBeanDescriptor(Descriptor descriptor, Object managedBean, String beanKey)
 			throws JMException {
@@ -173,7 +173,7 @@ public abstract class AbstractMBeanInfoAssembler implements MBeanInfoAssembler {
 	 * @param beanKey the key associated with the MBean in the beans map
 	 * of the {@code MBeanExporter}
 	 * @return the constructor metadata
-	 * @throws JMException in case of errors
+	 * @throws JMException 如果出现错误
 	 */
 	protected ModelMBeanConstructorInfo[] getConstructorInfo(Object managedBean, String beanKey)
 			throws JMException {
@@ -189,7 +189,7 @@ public abstract class AbstractMBeanInfoAssembler implements MBeanInfoAssembler {
 	 * @param beanKey the key associated with the MBean in the beans map
 	 * of the {@code MBeanExporter}
 	 * @return the notification metadata
-	 * @throws JMException in case of errors
+	 * @throws JMException 如果出现错误
 	 */
 	protected ModelMBeanNotificationInfo[] getNotificationInfo(Object managedBean, String beanKey)
 			throws JMException {
@@ -205,7 +205,7 @@ public abstract class AbstractMBeanInfoAssembler implements MBeanInfoAssembler {
 	 * @param beanKey the key associated with the MBean in the beans map
 	 * of the {@code MBeanExporter}
 	 * @return the attribute metadata
-	 * @throws JMException in case of errors
+	 * @throws JMException 如果出现错误
 	 */
 	protected abstract ModelMBeanAttributeInfo[] getAttributeInfo(Object managedBean, String beanKey)
 			throws JMException;
@@ -218,7 +218,7 @@ public abstract class AbstractMBeanInfoAssembler implements MBeanInfoAssembler {
 	 * @param beanKey the key associated with the MBean in the beans map
 	 * of the {@code MBeanExporter}
 	 * @return the operation metadata
-	 * @throws JMException in case of errors
+	 * @throws JMException 如果出现错误
 	 */
 	protected abstract ModelMBeanOperationInfo[] getOperationInfo(Object managedBean, String beanKey)
 			throws JMException;

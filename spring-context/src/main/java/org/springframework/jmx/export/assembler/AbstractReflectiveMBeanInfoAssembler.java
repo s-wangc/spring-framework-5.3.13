@@ -292,7 +292,7 @@ public abstract class AbstractReflectiveMBeanInfoAssembler extends AbstractMBean
 	 * @param beanKey the key associated with the MBean in the beans map
 	 * of the {@code MBeanExporter}
 	 * @return the attribute metadata
-	 * @throws JMException in case of errors
+	 * @throws JMException 如果出现错误
 	 * @see #populateAttributeDescriptor
 	 */
 	@Override

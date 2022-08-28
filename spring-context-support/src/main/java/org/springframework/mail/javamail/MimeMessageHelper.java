@@ -751,7 +751,7 @@ public class MimeMessageHelper {
 	 * Set the priority ("X-Priority" header) of the message.
 	 * @param priority the priority value;
 	 * typically between 1 (highest) and 5 (lowest)
-	 * @throws MessagingException in case of errors
+	 * @throws MessagingException 如果出现错误
 	 */
 	public void setPriority(int priority) throws MessagingException {
 		this.mimeMessage.setHeader(HEADER_PRIORITY, Integer.toString(priority));
@@ -760,7 +760,7 @@ public class MimeMessageHelper {
 	/**
 	 * Set the sent-date of the message.
 	 * @param sentDate the date to set (never {@code null})
-	 * @throws MessagingException in case of errors
+	 * @throws MessagingException 如果出现错误
 	 */
 	public void setSentDate(Date sentDate) throws MessagingException {
 		Assert.notNull(sentDate, "Sent date must not be null");
@@ -770,7 +770,7 @@ public class MimeMessageHelper {
 	/**
 	 * Set the subject of the message, using the correct encoding.
 	 * @param subject the subject text
-	 * @throws MessagingException in case of errors
+	 * @throws MessagingException 如果出现错误
 	 */
 	public void setSubject(String subject) throws MessagingException {
 		Assert.notNull(subject, "Subject must not be null");
@@ -790,7 +790,7 @@ public class MimeMessageHelper {
 	 * <p><b>NOTE:</b> Invoke {@link #addInline} <i>after</i> {@code setText};
 	 * else, mail readers might not be able to resolve inline references correctly.
 	 * @param text the text for the message
-	 * @throws MessagingException in case of errors
+	 * @throws MessagingException 如果出现错误
 	 */
 	public void setText(String text) throws MessagingException {
 		setText(text, false);
@@ -805,7 +805,7 @@ public class MimeMessageHelper {
 	 * @param text the text for the message
 	 * @param html whether to apply content type "text/html" for an
 	 * HTML mail, using default content type ("text/plain") else
-	 * @throws MessagingException in case of errors
+	 * @throws MessagingException 如果出现错误
 	 */
 	public void setText(String text, boolean html) throws MessagingException {
 		Assert.notNull(text, "Text must not be null");
@@ -831,7 +831,7 @@ public class MimeMessageHelper {
 	 * else, mail readers might not be able to resolve inline references correctly.
 	 * @param plainText the plain text for the message
 	 * @param htmlText the HTML text for the message
-	 * @throws MessagingException in case of errors
+	 * @throws MessagingException 如果出现错误
 	 */
 	public void setText(String plainText, String htmlText) throws MessagingException {
 		Assert.notNull(plainText, "Plain text must not be null");
@@ -900,7 +900,7 @@ public class MimeMessageHelper {
 	 * Can be referenced in HTML source via src="cid:myId" expressions.
 	 * @param dataSource the {@code javax.activation.DataSource} to take
 	 * the content from, determining the InputStream and the content type
-	 * @throws MessagingException in case of errors
+	 * @throws MessagingException 如果出现错误
 	 * @see #addInline(String, java.io.File)
 	 * @see #addInline(String, org.springframework.core.io.Resource)
 	 */
@@ -926,7 +926,7 @@ public class MimeMessageHelper {
 	 * in the body part, surrounded by angle brackets: e.g. "myId" &rarr; "&lt;myId&gt;".
 	 * Can be referenced in HTML source via src="cid:myId" expressions.
 	 * @param file the File resource to take the content from
-	 * @throws MessagingException in case of errors
+	 * @throws MessagingException 如果出现错误
 	 * @see #setText
 	 * @see #addInline(String, org.springframework.core.io.Resource)
 	 * @see #addInline(String, javax.activation.DataSource)
@@ -953,7 +953,7 @@ public class MimeMessageHelper {
 	 * in the body part, surrounded by angle brackets: e.g. "myId" &rarr; "&lt;myId&gt;".
 	 * Can be referenced in HTML source via src="cid:myId" expressions.
 	 * @param resource the resource to take the content from
-	 * @throws MessagingException in case of errors
+	 * @throws MessagingException 如果出现错误
 	 * @see #setText
 	 * @see #addInline(String, java.io.File)
 	 * @see #addInline(String, javax.activation.DataSource)
@@ -980,7 +980,7 @@ public class MimeMessageHelper {
 	 * Can be referenced in HTML source via src="cid:myId" expressions.
 	 * @param inputStreamSource the resource to take the content from
 	 * @param contentType the content type to use for the element
-	 * @throws MessagingException in case of errors
+	 * @throws MessagingException 如果出现错误
 	 * @see #setText
 	 * @see #getFileTypeMap
 	 * @see #addInline(String, org.springframework.core.io.Resource)
@@ -1009,7 +1009,7 @@ public class MimeMessageHelper {
 	 * appear in the mail (the content type will be determined by this)
 	 * @param dataSource the {@code javax.activation.DataSource} to take
 	 * the content from, determining the InputStream and the content type
-	 * @throws MessagingException in case of errors
+	 * @throws MessagingException 如果出现错误
 	 * @see #addAttachment(String, org.springframework.core.io.InputStreamSource)
 	 * @see #addAttachment(String, java.io.File)
 	 */
@@ -1038,7 +1038,7 @@ public class MimeMessageHelper {
 	 * @param attachmentFilename the name of the attachment as it will
 	 * appear in the mail
 	 * @param file the File resource to take the content from
-	 * @throws MessagingException in case of errors
+	 * @throws MessagingException 如果出现错误
 	 * @see #addAttachment(String, org.springframework.core.io.InputStreamSource)
 	 * @see #addAttachment(String, javax.activation.DataSource)
 	 */
@@ -1062,7 +1062,7 @@ public class MimeMessageHelper {
 	 * appear in the mail
 	 * @param inputStreamSource the resource to take the content from
 	 * (all of Spring's Resource implementations can be passed in here)
-	 * @throws MessagingException in case of errors
+	 * @throws MessagingException 如果出现错误
 	 * @see #addAttachment(String, java.io.File)
 	 * @see #addAttachment(String, javax.activation.DataSource)
 	 * @see org.springframework.core.io.Resource
@@ -1085,7 +1085,7 @@ public class MimeMessageHelper {
 	 * @param inputStreamSource the resource to take the content from
 	 * (all of Spring's Resource implementations can be passed in here)
 	 * @param contentType the content type to use for the element
-	 * @throws MessagingException in case of errors
+	 * @throws MessagingException 如果出现错误
 	 * @see #addAttachment(String, java.io.File)
 	 * @see #addAttachment(String, javax.activation.DataSource)
 	 * @see org.springframework.core.io.Resource

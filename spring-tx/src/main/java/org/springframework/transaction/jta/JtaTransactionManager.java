@@ -640,7 +640,7 @@ public class JtaTransactionManager extends AbstractPlatformTransactionManager
 	 * Only called if no "userTransaction" or "userTransactionName" specified.
 	 * <p>The default implementation simply returns {@code null}.
 	 * @return the JTA UserTransaction handle to use, or {@code null} if none found
-	 * @throws TransactionSystemException in case of errors
+	 * @throws TransactionSystemException 如果出现错误
 	 * @see #setUserTransaction
 	 * @see #setUserTransactionName
 	 */
@@ -654,7 +654,7 @@ public class JtaTransactionManager extends AbstractPlatformTransactionManager
 	 * Only called if no "transactionManager" or "transactionManagerName" specified.
 	 * <p>The default implementation simply returns {@code null}.
 	 * @return the JTA TransactionManager handle to use, or {@code null} if none found
-	 * @throws TransactionSystemException in case of errors
+	 * @throws TransactionSystemException 如果出现错误
 	 * @see #setTransactionManager
 	 * @see #setTransactionManagerName
 	 */
@@ -669,7 +669,7 @@ public class JtaTransactionManager extends AbstractPlatformTransactionManager
 	 * <p>The default implementation simply returns {@code null}.
 	 * @return the JTA TransactionSynchronizationRegistry handle to use,
 	 * or {@code null} if none found
-	 * @throws TransactionSystemException in case of errors
+	 * @throws TransactionSystemException 如果出现错误
 	 */
 	@Nullable
 	protected TransactionSynchronizationRegistry retrieveTransactionSynchronizationRegistry() throws TransactionSystemException {
@@ -747,7 +747,7 @@ public class JtaTransactionManager extends AbstractPlatformTransactionManager
 	 * @param tm the JTA TransactionManager object
 	 * @return the JTA TransactionSynchronizationRegistry handle to use,
 	 * or {@code null} if none found
-	 * @throws TransactionSystemException in case of errors
+	 * @throws TransactionSystemException 如果出现错误
 	 */
 	@Nullable
 	protected TransactionSynchronizationRegistry findTransactionSynchronizationRegistry(

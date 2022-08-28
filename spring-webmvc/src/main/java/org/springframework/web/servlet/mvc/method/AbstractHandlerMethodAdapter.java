@@ -95,7 +95,7 @@ public abstract class AbstractHandlerMethodAdapter extends WebContentGenerator i
 	 * {@link #supportsInternal(HandlerMethod)} this interface, which must have returned {@code true}.
 	 * @return a ModelAndView object with the name of the view and the required model data,
 	 * or {@code null} if the request has been handled directly
-	 * @throws Exception in case of errors
+	 * @throws Exception 如果出现错误
 	 */
 	@Nullable
 	protected abstract ModelAndView handleInternal(HttpServletRequest request,

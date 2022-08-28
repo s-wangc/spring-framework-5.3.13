@@ -182,7 +182,7 @@ public abstract class OncePerRequestFilter extends GenericFilterBean {
 	 * <p>The default implementation always returns {@code false}.
 	 * @param request current HTTP request
 	 * @return whether the given request should <i>not</i> be filtered
-	 * @throws ServletException in case of errors
+	 * @throws ServletException 如果出现错误
 	 */
 	protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
 		return false;

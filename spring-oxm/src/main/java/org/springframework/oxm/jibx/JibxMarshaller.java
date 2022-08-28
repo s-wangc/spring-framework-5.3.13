@@ -456,7 +456,7 @@ public class JibxMarshaller extends AbstractMarshaller implements InitializingBe
 	/**
 	 * Create a new {@code IMarshallingContext}, configured with the correct indentation.
 	 * @return the created marshalling context
-	 * @throws JiBXException in case of errors
+	 * @throws JiBXException 如果出现错误
 	 */
 	protected IMarshallingContext createMarshallingContext() throws JiBXException {
 		Assert.state(this.bindingFactory != null, "JibxMarshaller not initialized");
@@ -468,7 +468,7 @@ public class JibxMarshaller extends AbstractMarshaller implements InitializingBe
 	/**
 	 * Create a new {@code IUnmarshallingContext}.
 	 * @return the created unmarshalling context
-	 * @throws JiBXException in case of errors
+	 * @throws JiBXException 如果出现错误
 	 */
 	protected IUnmarshallingContext createUnmarshallingContext() throws JiBXException {
 		Assert.state(this.bindingFactory != null, "JibxMarshaller not initialized");

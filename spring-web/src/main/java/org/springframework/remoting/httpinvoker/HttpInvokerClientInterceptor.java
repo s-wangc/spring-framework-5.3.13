@@ -183,7 +183,7 @@ public class HttpInvokerClientInterceptor extends RemoteInvocationBasedAccessor
 	 * @param originalInvocation the original MethodInvocation (can e.g. be cast
 	 * to the ProxyMethodInvocation interface for accessing user attributes)
 	 * @return the RemoteInvocationResult object
-	 * @throws Exception in case of errors
+	 * @throws Exception 如果出现错误
 	 */
 	protected RemoteInvocationResult executeRequest(
 			RemoteInvocation invocation, MethodInvocation originalInvocation) throws Exception {

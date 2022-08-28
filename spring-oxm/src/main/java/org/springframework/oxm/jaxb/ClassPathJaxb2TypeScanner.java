@@ -75,7 +75,7 @@ class ClassPathJaxb2TypeScanner {
 
 	/**
 	 * Scan the packages for classes marked with JAXB2 annotations.
-	 * @throws UncategorizedMappingException in case of errors
+	 * @throws UncategorizedMappingException 如果出现错误
 	 */
 	public Class<?>[] scanPackages() throws UncategorizedMappingException {
 		try {

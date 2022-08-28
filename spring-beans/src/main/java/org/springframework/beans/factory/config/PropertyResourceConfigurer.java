@@ -146,7 +146,7 @@ public abstract class PropertyResourceConfigurer extends PropertiesLoaderSupport
 	 * Apply the given Properties to the given BeanFactory.
 	 * @param beanFactory the BeanFactory used by the application context
 	 * @param props the Properties to apply
-	 * @throws org.springframework.beans.BeansException in case of errors
+	 * @throws org.springframework.beans.BeansException 如果出现错误
 	 */
 	protected abstract void processProperties(ConfigurableListableBeanFactory beanFactory, Properties props)
 			throws BeansException;

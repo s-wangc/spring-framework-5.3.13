@@ -206,7 +206,7 @@ public abstract class AbstractNamedValueMethodArgumentResolver implements Handle
 	 * (pre-nested in case of a {@link java.util.Optional} declaration)
 	 * @param request the current request
 	 * @return the resolved argument (may be {@code null})
-	 * @throws Exception in case of errors
+	 * @throws Exception 如果出现错误
 	 */
 	@Nullable
 	protected abstract Object resolveName(String name, MethodParameter parameter, NativeWebRequest request)

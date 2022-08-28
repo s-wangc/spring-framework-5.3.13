@@ -92,7 +92,7 @@ public interface HandlerInterceptor {
 	 * @return {@code true} if the execution chain should proceed with the
 	 * next interceptor or the handler itself. Else, DispatcherServlet assumes
 	 * that this interceptor has already dealt with the response itself.
-	 * @throws Exception in case of errors
+	 * @throws Exception 如果出现错误
 	 */
 	default boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
@@ -119,7 +119,7 @@ public interface HandlerInterceptor {
 	 * execution, for type and/or instance examination
 	 * @param modelAndView the {@code ModelAndView} that the handler returned
 	 * (can also be {@code null})
-	 * @throws Exception in case of errors
+	 * @throws Exception 如果出现错误
 	 */
 	default void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
 			@Nullable ModelAndView modelAndView) throws Exception {
@@ -144,7 +144,7 @@ public interface HandlerInterceptor {
 	 * execution, for type and/or instance examination
 	 * @param ex any exception thrown on handler execution, if any; this does not
 	 * include exceptions that have been handled through an exception resolver
-	 * @throws Exception in case of errors
+	 * @throws Exception 如果出现错误
 	 */
 	default void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler,
 			@Nullable Exception ex) throws Exception {

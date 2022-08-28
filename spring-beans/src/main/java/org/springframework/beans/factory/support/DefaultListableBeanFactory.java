@@ -1536,7 +1536,7 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 	 * @param descriptor the descriptor of the dependency to resolve
 	 * @return a Map of candidate names and candidate instances that match
 	 * the required type (never {@code null})
-	 * @throws BeansException in case of errors
+	 * @throws BeansException 如果出现错误
 	 * @see #autowireByType
 	 * @see #autowireConstructor
 	 */

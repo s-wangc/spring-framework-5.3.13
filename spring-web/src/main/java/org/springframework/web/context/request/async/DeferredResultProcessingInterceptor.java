@@ -48,7 +48,7 @@ public interface DeferredResultProcessingInterceptor {
 	 * to the start of concurrent processing with the given {@code DeferredResult}.
 	 * @param request the current request
 	 * @param deferredResult the DeferredResult for the current request
-	 * @throws Exception in case of errors
+	 * @throws Exception 如果出现错误
 	 */
 	default <T> void beforeConcurrentHandling(NativeWebRequest request, DeferredResult<T> deferredResult)
 			throws Exception {
@@ -62,7 +62,7 @@ public interface DeferredResultProcessingInterceptor {
 	 * the time of its creation or by another thread.
 	 * @param request the current request
 	 * @param deferredResult the DeferredResult for the current request
-	 * @throws Exception in case of errors
+	 * @throws Exception 如果出现错误
 	 */
 	default <T> void preProcess(NativeWebRequest request, DeferredResult<T> deferredResult)
 			throws Exception {
@@ -79,7 +79,7 @@ public interface DeferredResultProcessingInterceptor {
 	 * @param request the current request
 	 * @param deferredResult the DeferredResult for the current request
 	 * @param concurrentResult the result to which the {@code DeferredResult}
-	 * @throws Exception in case of errors
+	 * @throws Exception 如果出现错误
 	 */
 	default <T> void postProcess(NativeWebRequest request, DeferredResult<T> deferredResult,
 			Object concurrentResult) throws Exception {
@@ -96,7 +96,7 @@ public interface DeferredResultProcessingInterceptor {
 	 * subsequent interceptors are not invoked
 	 * @return {@code true} if processing should continue, or {@code false} if
 	 * other interceptors should not be invoked
-	 * @throws Exception in case of errors
+	 * @throws Exception 如果出现错误
 	 */
 	default <T> boolean handleTimeout(NativeWebRequest request, DeferredResult<T> deferredResult)
 			throws Exception {
@@ -116,7 +116,7 @@ public interface DeferredResultProcessingInterceptor {
 	 * @param t the error that occurred while request processing
 	 * @return {@code true} if error handling should continue, or {@code false} if
 	 * other interceptors should by bypassed and not be invoked
-	 * @throws Exception in case of errors
+	 * @throws Exception 如果出现错误
 	 */
 	default <T> boolean handleError(NativeWebRequest request, DeferredResult<T> deferredResult,
 			Throwable t) throws Exception {
@@ -130,7 +130,7 @@ public interface DeferredResultProcessingInterceptor {
 	 * detecting that a {@code DeferredResult} instance is no longer usable.
 	 * @param request the current request
 	 * @param deferredResult the DeferredResult for the current request
-	 * @throws Exception in case of errors
+	 * @throws Exception 如果出现错误
 	 */
 	default <T> void afterCompletion(NativeWebRequest request, DeferredResult<T> deferredResult)
 			throws Exception {

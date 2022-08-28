@@ -467,7 +467,7 @@ public abstract class AbstractHandlerMethodMapping<T> extends AbstractHandlerMap
 	 * @param mappings all registered mappings
 	 * @param lookupPath mapping lookup path within the current servlet mapping
 	 * @param request the current request
-	 * @throws ServletException in case of errors
+	 * @throws ServletException 如果出现错误
 	 */
 	@Nullable
 	protected HandlerMethod handleNoMatch(Set<T> mappings, String lookupPath, HttpServletRequest request)

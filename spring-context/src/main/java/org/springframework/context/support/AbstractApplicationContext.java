@@ -849,7 +849,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 	 * Template method which can be overridden to add context-specific refresh work.
 	 * Called on initialization of special beans, before instantiation of singletons.
 	 * <p>This implementation is empty.
-	 * @throws BeansException in case of errors
+	 * @throws BeansException 如果出现错误
 	 * @see #refresh()
 	 */
 	protected void onRefresh() throws BeansException {

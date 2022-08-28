@@ -119,7 +119,7 @@ public interface Controller {
 	 * @param request current HTTP request
 	 * @param response current HTTP response
 	 * @return a ModelAndView to render, or {@code null} if handled directly
-	 * @throws Exception in case of errors
+	 * @throws Exception 如果出现错误
 	 */
 	@Nullable
 	ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception;
