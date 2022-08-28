@@ -880,7 +880,7 @@ public abstract class AbstractMessageListenerContainer extends AbstractJmsListen
 	 * <p>The default implementation logs the exception at warn level,
 	 * not propagating it to the JMS provider &mdash; assuming that all handling of
 	 * acknowledgement and/or transactions is done by this listener container.
-	 * This can be overridden in subclasses.
+	 * 这可以在子类中重写.
 	 * @param ex the exception to handle
 	 */
 	protected void handleListenerException(Throwable ex) {

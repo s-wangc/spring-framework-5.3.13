@@ -511,7 +511,7 @@ public class RedirectView extends AbstractUrlBasedView implements SmartView {
 	 * as a query property.
 	 * <p>The default implementation considers Strings and primitives
 	 * as eligible, and also arrays and Collections/Iterables with
-	 * corresponding elements. This can be overridden in subclasses.
+	 * corresponding elements. 这可以在子类中重写.
 	 * @param key the key of the model element
 	 * @param value the value of the model element
 	 * @return whether the element is eligible as query property
@@ -555,7 +555,7 @@ public class RedirectView extends AbstractUrlBasedView implements SmartView {
 	 * Determine whether the given model element value is eligible for exposure.
 	 * <p>The default implementation considers primitives, strings, numbers, dates,
 	 * URIs, URLs etc as eligible, according to {@link BeanUtils#isSimpleValueType}.
-	 * This can be overridden in subclasses.
+	 * 这可以在子类中重写.
 	 * @param value the model element value
 	 * @return whether the element value is eligible
 	 * @see BeanUtils#isSimpleValueType

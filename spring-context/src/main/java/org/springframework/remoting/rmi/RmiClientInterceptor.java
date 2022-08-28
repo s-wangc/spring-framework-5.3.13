@@ -170,7 +170,7 @@ public class RmiClientInterceptor extends RemoteInvocationBasedAccessor
 	 * <p>Called on interceptor initialization if "cacheStub" is "true";
 	 * else called for each invocation by {@link #getStub()}.
 	 * <p>The default implementation looks up the service URL via
-	 * {@code java.rmi.Naming}. This can be overridden in subclasses.
+	 * {@code java.rmi.Naming}. 这可以在子类中重写.
 	 * @return the RMI stub to store in this interceptor
 	 * @throws RemoteLookupFailureException if RMI stub creation failed
 	 * @see #setCacheStub
