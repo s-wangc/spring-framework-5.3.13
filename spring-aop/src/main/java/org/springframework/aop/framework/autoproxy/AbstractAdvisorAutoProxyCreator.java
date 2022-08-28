@@ -159,7 +159,7 @@ public abstract class AbstractAdvisorAutoProxyCreator extends AbstractAutoProxyC
 	/**
 	 * Extension hook that subclasses can override to register additional Advisors,
 	 * given the sorted Advisors obtained to date.
-	 * <p>The default implementation is empty.
+	 * <p>默认实现为空.
 	 * <p>Typically used to add Advisors that expose contextual information
 	 * required by some of the later advisors.
 	 * @param candidateAdvisors the Advisors that have already been identified as

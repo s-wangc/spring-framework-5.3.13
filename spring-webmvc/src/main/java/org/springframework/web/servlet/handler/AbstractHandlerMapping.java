@@ -386,7 +386,7 @@ public abstract class AbstractHandlerMapping extends WebApplicationObjectSupport
 	 * given the configured interceptors (see {@link #setInterceptors}).
 	 * <p>Will be invoked before {@link #initInterceptors()} adapts the specified
 	 * interceptors into {@link HandlerInterceptor} instances.
-	 * <p>The default implementation is empty.
+	 * <p>默认实现为空.
 	 * @param interceptors the configured interceptor List (never {@code null}), allowing
 	 * to add further interceptors before as well as after the existing interceptors
 	 */

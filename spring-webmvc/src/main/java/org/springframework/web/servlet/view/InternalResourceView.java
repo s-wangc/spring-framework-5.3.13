@@ -176,7 +176,7 @@ public class InternalResourceView extends AbstractUrlBasedView {
 	 * Expose helpers unique to each rendering operation. This is necessary so that
 	 * different rendering operations can't overwrite each other's contexts etc.
 	 * <p>Called by {@link #renderMergedOutputModel(Map, HttpServletRequest, HttpServletResponse)}.
-	 * The default implementation is empty. This method can be overridden to add
+	 * 默认实现为空. This method can be overridden to add
 	 * custom helpers as request attributes.
 	 * @param request current HTTP request
 	 * @throws Exception if there's a fatal error while we're adding attributes

@@ -203,7 +203,7 @@ public class ContentCachingRequestWrapper extends HttpServletRequestWrapper {
 	/**
 	 * Template method for handling a content overflow: specifically, a request
 	 * body being read that exceeds the specified content cache limit.
-	 * <p>The default implementation is empty. Subclasses may override this to
+	 * <p>默认实现为空. Subclasses may override this to
 	 * throw a payload-too-large exception or the like.
 	 * @param contentCacheLimit the maximum number of bytes to cache per request
 	 * which has just been exceeded

@@ -188,7 +188,7 @@ public class MethodInvokingJobDetailFactoryBean extends ArgumentConvertingMethod
 
 	/**
 	 * Callback for post-processing the JobDetail to be exposed by this FactoryBean.
-	 * <p>The default implementation is empty. Can be overridden in subclasses.
+	 * <p>默认实现为空. Can be overridden in subclasses.
 	 * @param jobDetail the JobDetail prepared by this FactoryBean
 	 */
 	protected void postProcessJobDetail(JobDetail jobDetail) {

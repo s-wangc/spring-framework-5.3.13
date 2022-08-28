@@ -1108,7 +1108,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 
 	/**
 	 * Template method which can be overridden to add context-specific shutdown work.
-	 * The default implementation is empty.
+	 * 默认实现为空.
 	 * <p>Called at the end of {@link #doClose}'s shutdown procedure, after
 	 * this context's BeanFactory has been closed. If custom shutdown logic
 	 * needs to execute while the BeanFactory is still active, override

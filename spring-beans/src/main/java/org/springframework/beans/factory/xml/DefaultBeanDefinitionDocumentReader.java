@@ -324,7 +324,7 @@ public class DefaultBeanDefinitionDocumentReader implements BeanDefinitionDocume
 	 * Allow the XML to be extensible by processing any custom element types first,
 	 * before we start to process the bean definitions. This method is a natural
 	 * extension point for any other custom pre-processing of the XML.
-	 * <p>The default implementation is empty. Subclasses can override this method to
+	 * <p>默认实现为空. Subclasses can override this method to
 	 * convert custom elements into standard Spring bean definitions, for example.
 	 * Implementors have access to the parser's bean definition reader and the
 	 * underlying XML resource, through the corresponding accessors.
@@ -337,7 +337,7 @@ public class DefaultBeanDefinitionDocumentReader implements BeanDefinitionDocume
 	 * Allow the XML to be extensible by processing any custom element types last,
 	 * after we finished processing the bean definitions. This method is a natural
 	 * extension point for any other custom post-processing of the XML.
-	 * <p>The default implementation is empty. Subclasses can override this method to
+	 * <p>默认实现为空. Subclasses can override this method to
 	 * convert custom elements into standard Spring bean definitions, for example.
 	 * Implementors have access to the parser's bean definition reader and the
 	 * underlying XML resource, through the corresponding accessors.

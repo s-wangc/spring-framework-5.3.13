@@ -138,7 +138,7 @@ public class SettableListenableFuture<T> implements ListenableFuture<T> {
 	 * Subclasses can override this method to implement interruption of the future's
 	 * computation. The method is invoked automatically by a successful call to
 	 * {@link #cancel(boolean) cancel(true)}.
-	 * <p>The default implementation is empty.
+	 * <p>默认实现为空.
 	 */
 	protected void interruptTask() {
 	}

@@ -391,7 +391,7 @@ public class LocalContainerEntityManagerFactoryBean extends AbstractEntityManage
 	/**
 	 * Hook method allowing subclasses to customize the EntityManagerFactory
 	 * after its creation via the PersistenceProvider.
-	 * <p>The default implementation is empty.
+	 * <p>默认实现为空.
 	 * @param emf the newly created EntityManagerFactory we are working with
 	 * @param pui the PersistenceUnitInfo used to configure the EntityManagerFactory
 	 * @see javax.persistence.spi.PersistenceProvider#createContainerEntityManagerFactory

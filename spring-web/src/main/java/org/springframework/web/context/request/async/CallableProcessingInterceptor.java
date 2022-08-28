@@ -71,7 +71,7 @@ public interface CallableProcessingInterceptor {
 	 * {@link #preProcess(NativeWebRequest, Callable)}. Capturing the state of
 	 * Spring Security's SecurityContextHolder and migrating it to the new Thread
 	 * is a concrete example of where this is useful.
-	 * <p>The default implementation is empty.
+	 * <p>默认实现为空.
 	 * @param request the current request
 	 * @param task the task for the current async request
 	 * @throws Exception in case of errors
@@ -83,7 +83,7 @@ public interface CallableProcessingInterceptor {
 	 * Invoked <em>after</em> the start of concurrent handling in the async
 	 * thread in which the {@code Callable} is executed and <em>before</em> the
 	 * actual invocation of the {@code Callable}.
-	 * <p>The default implementation is empty.
+	 * <p>默认实现为空.
 	 * @param request the current request
 	 * @param task the task for the current async request
 	 * @throws Exception in case of errors
@@ -96,7 +96,7 @@ public interface CallableProcessingInterceptor {
 	 * async thread in which the {@code Callable} is executed. This method may
 	 * be invoked later than {@code afterTimeout} or {@code afterCompletion}
 	 * depending on when the {@code Callable} finishes processing.
-	 * <p>The default implementation is empty.
+	 * <p>默认实现为空.
 	 * @param request the current request
 	 * @param task the task for the current async request
 	 * @param concurrentResult the result of concurrent processing, which could
@@ -146,7 +146,7 @@ public interface CallableProcessingInterceptor {
 	/**
 	 * Invoked from a container thread when async processing completes for any
 	 * reason including timeout or network error.
-	 * <p>The default implementation is empty.
+	 * <p>默认实现为空.
 	 * @param request the current request
 	 * @param task the task for the current async request
 	 * @throws Exception in case of errors

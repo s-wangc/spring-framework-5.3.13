@@ -242,7 +242,7 @@ public abstract class AbstractFactoryBean<T>
 	/**
 	 * Callback for destroying a singleton instance. Subclasses may
 	 * override this to destroy the previously created instance.
-	 * <p>The default implementation is empty.
+	 * <p>默认实现为空.
 	 * @param instance the singleton instance, as returned by
 	 * {@link #createInstance()}
 	 * @throws Exception in case of shutdown errors

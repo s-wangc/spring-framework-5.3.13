@@ -631,7 +631,7 @@ public class XStreamMarshaller extends AbstractMarshaller implements BeanClassLo
 
 	/**
 	 * Template to allow for customizing the given {@link XStream}.
-	 * <p>The default implementation is empty.
+	 * <p>默认实现为空.
 	 * @param xstream the {@code XStream} instance
 	 */
 	protected void customizeXStream(XStream xstream) {

@@ -173,7 +173,7 @@ public class StandardBeanExpressionResolver implements BeanExpressionResolver {
 
 	/**
 	 * Template method for customizing the expression evaluation context.
-	 * <p>The default implementation is empty.
+	 * <p>默认实现为空.
 	 */
 	protected void customizeEvaluationContext(StandardEvaluationContext evalContext) {
 	}

@@ -92,7 +92,7 @@ public interface ImportBeanDefinitionRegistrar {
 	 * <p>Note that {@link BeanDefinitionRegistryPostProcessor} types may <em>not</em> be
 	 * registered here, due to lifecycle constraints related to {@code @Configuration}
 	 * class processing.
-	 * <p>The default implementation is empty.
+	 * <p>默认实现为空.
 	 * @param importingClassMetadata annotation metadata of the importing class
 	 * @param registry current bean definition registry
 	 */

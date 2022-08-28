@@ -449,7 +449,7 @@ public abstract class AbstractAdaptableMessageListener
 
 	/**
 	 * Post-process the given message producer before using it to send the response.
-	 * <p>The default implementation is empty.
+	 * <p>默认实现为空.
 	 * @param producer the JMS message producer that will be used to send the message
 	 * @param response the outgoing JMS message about to be sent
 	 * @throws JMSException if thrown by JMS API methods

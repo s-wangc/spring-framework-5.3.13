@@ -170,7 +170,7 @@ public abstract class AbstractJmsListeningContainer extends JmsDestinationAccess
 
 	/**
 	 * Validate the configuration of this container.
-	 * <p>The default implementation is empty. To be overridden in subclasses.
+	 * <p>默认实现为空. To be overridden in subclasses.
 	 */
 	protected void validateConfiguration() {
 	}

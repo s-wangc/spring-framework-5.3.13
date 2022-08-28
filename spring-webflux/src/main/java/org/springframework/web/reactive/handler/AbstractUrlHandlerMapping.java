@@ -174,7 +174,7 @@ public abstract class AbstractUrlHandlerMapping extends AbstractHandlerMapping {
 
 	/**
 	 * Validate the given handler against the current request.
-	 * <p>The default implementation is empty. Can be overridden in subclasses,
+	 * <p>默认实现为空. Can be overridden in subclasses,
 	 * for example to enforce specific preconditions expressed in URL mappings.
 	 * @param handler the handler object to validate
 	 * @param exchange current exchange

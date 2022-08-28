@@ -719,7 +719,7 @@ public abstract class FrameworkServlet extends HttpServletBean implements Applic
 	/**
 	 * Post-process the given WebApplicationContext before it is refreshed
 	 * and activated as context for this servlet.
-	 * <p>The default implementation is empty. {@code refresh()} will
+	 * <p>默认实现为空. {@code refresh()} will
 	 * be called automatically after this method returns.
 	 * <p>Note that this method is designed to allow subclasses to modify the application
 	 * context, while {@link #initWebApplicationContext} is designed to allow

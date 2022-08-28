@@ -287,7 +287,7 @@ public class BufferedImageHttpMessageConverter implements HttpMessageConverter<B
 	/**
 	 * Template method that allows for manipulating the {@link ImageReadParam}
 	 * before it is used to read an image.
-	 * <p>The default implementation is empty.
+	 * <p>默认实现为空.
 	 */
 	protected void process(ImageReadParam irp) {
 	}
@@ -295,7 +295,7 @@ public class BufferedImageHttpMessageConverter implements HttpMessageConverter<B
 	/**
 	 * Template method that allows for manipulating the {@link ImageWriteParam}
 	 * before it is used to write an image.
-	 * <p>The default implementation is empty.
+	 * <p>默认实现为空.
 	 */
 	protected void process(ImageWriteParam iwp) {
 	}

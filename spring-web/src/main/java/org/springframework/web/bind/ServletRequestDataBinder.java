@@ -121,7 +121,7 @@ public class ServletRequestDataBinder extends WebDataBinder {
 	/**
 	 * Extension point that subclasses can use to add extra bind values for a
 	 * request. Invoked before {@link #doBind(MutablePropertyValues)}.
-	 * The default implementation is empty.
+	 * 默认实现为空.
 	 * @param mpvs the property values that will be used for data binding
 	 * @param request the current request
 	 */

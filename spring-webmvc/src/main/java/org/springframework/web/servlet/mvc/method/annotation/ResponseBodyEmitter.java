@@ -162,7 +162,7 @@ public class ResponseBodyEmitter {
 	 * Invoked after the response is updated with the status code and headers,
 	 * if the ResponseBodyEmitter is wrapped in a ResponseEntity, but before the
 	 * response is committed, i.e. before the response body has been written to.
-	 * <p>The default implementation is empty.
+	 * <p>默认实现为空.
 	 */
 	protected void extendResponse(ServerHttpResponse outputMessage) {
 	}

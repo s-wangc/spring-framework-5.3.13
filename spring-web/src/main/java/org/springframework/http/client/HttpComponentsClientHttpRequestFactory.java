@@ -298,7 +298,7 @@ public class HttpComponentsClientHttpRequestFactory implements ClientHttpRequest
 	/**
 	 * Template method that allows for manipulating the {@link HttpUriRequest} before it is
 	 * returned as part of a {@link HttpComponentsClientHttpRequest}.
-	 * <p>The default implementation is empty.
+	 * <p>默认实现为空.
 	 * @param request the request to process
 	 */
 	protected void postProcessHttpRequest(HttpUriRequest request) {

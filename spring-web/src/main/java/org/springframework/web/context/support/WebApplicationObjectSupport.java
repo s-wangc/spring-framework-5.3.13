@@ -87,7 +87,7 @@ public abstract class WebApplicationObjectSupport extends ApplicationObjectSuppo
 	/**
 	 * Subclasses may override this for custom initialization based
 	 * on the ServletContext that this application object runs in.
-	 * <p>The default implementation is empty. Called by
+	 * <p>默认实现为空. Called by
 	 * {@link #initApplicationContext(org.springframework.context.ApplicationContext)}
 	 * as well as {@link #setServletContext(javax.servlet.ServletContext)}.
 	 * @param servletContext the ServletContext that this application object runs in

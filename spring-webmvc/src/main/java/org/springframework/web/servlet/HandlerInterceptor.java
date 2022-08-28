@@ -112,7 +112,7 @@ public interface HandlerInterceptor {
 	 * <p><strong>Note:</strong> special considerations apply for asynchronous
 	 * request processing. For more details see
 	 * {@link org.springframework.web.servlet.AsyncHandlerInterceptor}.
-	 * <p>The default implementation is empty.
+	 * <p>默认实现为空.
 	 * @param request current HTTP request
 	 * @param response current HTTP response
 	 * @param handler the handler (or {@link HandlerMethod}) that started asynchronous
@@ -137,7 +137,7 @@ public interface HandlerInterceptor {
 	 * <p><strong>Note:</strong> special considerations apply for asynchronous
 	 * request processing. For more details see
 	 * {@link org.springframework.web.servlet.AsyncHandlerInterceptor}.
-	 * <p>The default implementation is empty.
+	 * <p>默认实现为空.
 	 * @param request current HTTP request
 	 * @param response current HTTP response
 	 * @param handler the handler (or {@link HandlerMethod}) that started asynchronous
