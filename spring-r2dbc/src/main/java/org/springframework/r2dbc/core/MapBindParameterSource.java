@@ -55,7 +55,7 @@ class MapBindParameterSource implements BindParameterSource {
 
 	/**
 	 * Add a key-value pair to the {@link MapBindParameterSource}.
-	 * @param paramName the name of the parameter
+	 * @param paramName parameter的名称
 	 * @param value the parameter value to add (must not be {@code null})
 	 */
 	MapBindParameterSource addValue(String paramName, Object value) {

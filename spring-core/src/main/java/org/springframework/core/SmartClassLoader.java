@@ -81,7 +81,7 @@ public interface SmartClassLoader {
 	 * Note that the JDK 9+ {@code Lookup#defineClass} method does not support
 	 * a custom target class loader for the new definition; it rather always
 	 * defines the class in the same class loader as the lookup's context class.
-	 * @param name the name of the class
+	 * @param name class的名称
 	 * @param b the bytes defining the class
 	 * @param protectionDomain the protection domain for the class, if any
 	 * @return the newly created class

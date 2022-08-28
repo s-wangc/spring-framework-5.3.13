@@ -42,7 +42,7 @@ public class PrototypeAspectInstanceFactory extends BeanFactoryAspectInstanceFac
 	 * introspect to create AJType metadata using the type returned for the
 	 * given bean name from the BeanFactory.
 	 * @param beanFactory the BeanFactory to obtain instance(s) from
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 */
 	public PrototypeAspectInstanceFactory(BeanFactory beanFactory, String name) {
 		super(beanFactory, name);

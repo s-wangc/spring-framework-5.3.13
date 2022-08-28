@@ -64,7 +64,7 @@ public class NameMatchCacheOperationSource implements CacheOperationSource, Seri
 	 * Add an attribute for a cacheable method.
 	 * <p>Method names can be exact matches, or of the pattern "xxx*",
 	 * "*xxx" or "*xxx*" for matching multiple methods.
-	 * @param methodName the name of the method
+	 * @param methodName method的名称
 	 * @param ops operation associated with the method
 	 */
 	public void addCacheMethod(String methodName, Collection<CacheOperation> ops) {

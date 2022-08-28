@@ -32,7 +32,7 @@ abstract class FormatHelper {
 
 	/**
 	 * Produce a readable representation for a given method name with specified arguments.
-	 * @param name the name of the method
+	 * @param name method的名称
 	 * @param argumentTypes the types of the arguments to the method
 	 * @return a nicely formatted representation, e.g. {@code foo(String,int)}
 	 */

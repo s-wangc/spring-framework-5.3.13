@@ -971,7 +971,7 @@ The following table describes the properties `CookieLocaleResolver`:
 
 | `cookieName`
 | classname + LOCALE
-| The name of the cookie
+| cookie的名称
 
 | `cookieMaxAge`
 | Servlet container default

@@ -489,7 +489,7 @@ public class MockHttpServletResponse implements HttpServletResponse {
 	 * <p>As of Servlet 3.0, this method is also defined in {@link HttpServletResponse}.
 	 * As of Spring 3.1, it returns a stringified value for Servlet 3.0 compatibility.
 	 * Consider using {@link #getHeaderValue(String)} for raw Object access.
-	 * @param name the name of the header
+	 * @param name header的名称
 	 * @return the associated header value, or {@code null} if none
 	 */
 	@Override
@@ -504,7 +504,7 @@ public class MockHttpServletResponse implements HttpServletResponse {
 	 * <p>As of Servlet 3.0, this method is also defined in {@link HttpServletResponse}.
 	 * As of Spring 3.1, it returns a List of stringified values for Servlet 3.0 compatibility.
 	 * Consider using {@link #getHeaderValues(String)} for raw Object access.
-	 * @param name the name of the header
+	 * @param name header的名称
 	 * @return the associated header values, or an empty List if none
 	 */
 	@Override
@@ -521,7 +521,7 @@ public class MockHttpServletResponse implements HttpServletResponse {
 	/**
 	 * Return the primary value for the given header, if any.
 	 * <p>Will return the first value in case of multiple values.
-	 * @param name the name of the header
+	 * @param name header的名称
 	 * @return the associated header value, or {@code null} if none
 	 */
 	@Nullable
@@ -532,7 +532,7 @@ public class MockHttpServletResponse implements HttpServletResponse {
 
 	/**
 	 * Return all values for the given header as a List of value objects.
-	 * @param name the name of the header
+	 * @param name header的名称
 	 * @return the associated header values, or an empty List if none
 	 */
 	public List<Object> getHeaderValues(String name) {

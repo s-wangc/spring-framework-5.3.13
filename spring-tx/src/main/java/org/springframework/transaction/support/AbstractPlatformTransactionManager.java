@@ -131,7 +131,7 @@ public abstract class AbstractPlatformTransactionManager implements PlatformTran
 	/**
 	 * Set the transaction synchronization by the name of the corresponding constant
 	 * in this class, e.g. "SYNCHRONIZATION_ALWAYS".
-	 * @param constantName name of the constant
+	 * @param constantName constant的名称
 	 * @see #SYNCHRONIZATION_ALWAYS
 	 */
 	public final void setTransactionSynchronizationName(String constantName) {

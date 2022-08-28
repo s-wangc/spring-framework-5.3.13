@@ -124,7 +124,7 @@ public class ShadowingClassLoader extends DecoratingClassLoader {
 
 	/**
 	 * Determine whether the given class should be excluded from shadowing.
-	 * @param className the name of the class
+	 * @param className class的名称
 	 * @return whether the specified class should be shadowed
 	 */
 	private boolean shouldShadow(String className) {

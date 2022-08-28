@@ -647,7 +647,7 @@ public class MBeanClientInterceptor
 		/**
 		 * Create a new instance of {@code MethodCacheKey} with the supplied
 		 * method name and parameter list.
-		 * @param name the name of the method
+		 * @param name method的名称
 		 * @param parameterTypes the arguments in the method signature
 		 */
 		public MethodCacheKey(String name, @Nullable Class<?>[] parameterTypes) {

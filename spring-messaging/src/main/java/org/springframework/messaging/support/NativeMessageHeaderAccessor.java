@@ -146,7 +146,7 @@ public class NativeMessageHeaderAccessor extends MessageHeaderAccessor {
 
 	/**
 	 * Whether the native header map contains the give header name.
-	 * @param headerName the name of the header
+	 * @param headerName header的名称
 	 */
 	public boolean containsNativeHeader(String headerName) {
 		Map<String, List<String>> map = getNativeHeaders();
@@ -155,7 +155,7 @@ public class NativeMessageHeaderAccessor extends MessageHeaderAccessor {
 
 	/**
 	 * Return all values for the specified native header, if present.
-	 * @param headerName the name of the header
+	 * @param headerName header的名称
 	 * @return the associated values, or {@code null} if none
 	 */
 	@Nullable
@@ -166,7 +166,7 @@ public class NativeMessageHeaderAccessor extends MessageHeaderAccessor {
 
 	/**
 	 * Return the first value for the specified native header, if present.
-	 * @param headerName the name of the header
+	 * @param headerName header的名称
 	 * @return the associated value, or {@code null} if none
 	 */
 	@Nullable
@@ -236,7 +236,7 @@ public class NativeMessageHeaderAccessor extends MessageHeaderAccessor {
 	 * Add the specified native header value to existing values.
 	 * <p>In order for this to work, the accessor must be {@link #isMutable()
 	 * mutable}. See {@link MessageHeaderAccessor} for details.
-	 * @param name the name of the header
+	 * @param name header的名称
 	 * @param value the header value to set
 	 */
 	public void addNativeHeader(String name, @Nullable String value) {
@@ -269,7 +269,7 @@ public class NativeMessageHeaderAccessor extends MessageHeaderAccessor {
 	 * Remove the specified native header value replacing existing values.
 	 * <p>In order for this to work, the accessor must be {@link #isMutable()
 	 * mutable}. See {@link MessageHeaderAccessor} for details.
-	 * @param headerName the name of the header
+	 * @param headerName header的名称
 	 * @return the associated values, or {@code null} if the header was not present
 	 */
 	@Nullable
@@ -286,7 +286,7 @@ public class NativeMessageHeaderAccessor extends MessageHeaderAccessor {
 	/**
 	 * Return the first value for the specified native header,
 	 * or {@code null} if none.
-	 * @param headerName the name of the header
+	 * @param headerName header的名称
 	 * @param headers the headers map to introspect
 	 * @return the associated value, or {@code null} if none
 	 */

@@ -83,7 +83,7 @@ public class PropertyPlaceholderConfigurer extends PlaceholderConfigurerSupport 
 	/**
 	 * Set the system property mode by the name of the corresponding constant,
 	 * e.g. "SYSTEM_PROPERTIES_MODE_OVERRIDE".
-	 * @param constantName name of the constant
+	 * @param constantName constant的名称
 	 * @see #setSystemPropertiesMode
 	 */
 	public void setSystemPropertiesModeName(String constantName) throws IllegalArgumentException {

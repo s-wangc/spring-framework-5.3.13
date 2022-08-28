@@ -273,7 +273,7 @@ public class MessageHeaderAccessor {
 
 	/**
 	 * Retrieve the value for the header with the given name.
-	 * @param headerName the name of the header
+	 * @param headerName header的名称
 	 * @return the associated value, or {@code null} if none found
 	 */
 	@Nullable

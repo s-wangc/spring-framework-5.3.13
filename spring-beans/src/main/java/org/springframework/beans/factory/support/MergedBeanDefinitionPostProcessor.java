@@ -41,7 +41,7 @@ public interface MergedBeanDefinitionPostProcessor extends BeanPostProcessor {
 	 * Post-process the given merged bean definition for the specified bean.
 	 * @param beanDefinition the merged bean definition for the bean
 	 * @param beanType the actual type of the managed bean instance
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @see AbstractAutowireCapableBeanFactory#applyMergedBeanDefinitionPostProcessors
 	 */
 	void postProcessMergedBeanDefinition(RootBeanDefinition beanDefinition, Class<?> beanType, String beanName);
@@ -50,7 +50,7 @@ public interface MergedBeanDefinitionPostProcessor extends BeanPostProcessor {
 	 * A notification that the bean definition for the specified name has been reset,
 	 * and that this post-processor should clear any metadata for the affected bean.
 	 * <p>默认实现为空.
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @since 5.1
 	 * @see DefaultListableBeanFactory#resetBeanDefinition
 	 */

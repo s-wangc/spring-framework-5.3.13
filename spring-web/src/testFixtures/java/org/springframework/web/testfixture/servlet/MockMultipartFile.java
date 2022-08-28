@@ -53,7 +53,7 @@ public class MockMultipartFile implements MultipartFile {
 
 	/**
 	 * Create a new MockMultipartFile with the given content.
-	 * @param name the name of the file
+	 * @param name file的名称
 	 * @param content the content of the file
 	 */
 	public MockMultipartFile(String name, @Nullable byte[] content) {
@@ -62,7 +62,7 @@ public class MockMultipartFile implements MultipartFile {
 
 	/**
 	 * Create a new MockMultipartFile with the given content.
-	 * @param name the name of the file
+	 * @param name file的名称
 	 * @param contentStream the content of the file as stream
 	 * @throws IOException if reading from the stream failed
 	 */
@@ -72,7 +72,7 @@ public class MockMultipartFile implements MultipartFile {
 
 	/**
 	 * Create a new MockMultipartFile with the given content.
-	 * @param name the name of the file
+	 * @param name file的名称
 	 * @param originalFilename the original filename (as on the client's machine)
 	 * @param contentType the content type (if known)
 	 * @param content the content of the file
@@ -89,7 +89,7 @@ public class MockMultipartFile implements MultipartFile {
 
 	/**
 	 * Create a new MockMultipartFile with the given content.
-	 * @param name the name of the file
+	 * @param name file的名称
 	 * @param originalFilename the original filename (as on the client's machine)
 	 * @param contentType the content type (if known)
 	 * @param contentStream the content of the file as stream

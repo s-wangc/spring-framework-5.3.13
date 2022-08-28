@@ -49,7 +49,7 @@ public interface SimpleJdbcCallOperations {
 
 	/**
 	 * Optionally, specify the name of the schema that contins the stored procedure.
-	 * @param schemaName the name of the schema
+	 * @param schemaName schema的名称
 	 * @return the instance of this SimpleJdbcCall
 	 */
 	SimpleJdbcCallOperations withSchemaName(String schemaName);

@@ -186,7 +186,7 @@ public class MutablePropertyValues implements PropertyValues, Serializable {
 	 * a property name and a property value.
 	 * <p>Note: As of Spring 3.0, we recommend using the more concise
 	 * and chaining-capable variant {@link #add}.
-	 * @param propertyName name of the property
+	 * @param propertyName property的名称
 	 * @param propertyValue value of the property
 	 * @see #addPropertyValue(PropertyValue)
 	 */
@@ -197,7 +197,7 @@ public class MutablePropertyValues implements PropertyValues, Serializable {
 	/**
 	 * Add a PropertyValue object, replacing any existing one for the
 	 * corresponding property or getting merged with it (if applicable).
-	 * @param propertyName name of the property
+	 * @param propertyName property的名称
 	 * @param propertyValue value of the property
 	 * @return this in order to allow for adding multiple property values in a chain
 	 */
@@ -241,7 +241,7 @@ public class MutablePropertyValues implements PropertyValues, Serializable {
 
 	/**
 	 * Overloaded version of {@code removePropertyValue} that takes a property name.
-	 * @param propertyName name of the property
+	 * @param propertyName property的名称
 	 * @see #removePropertyValue(PropertyValue)
 	 */
 	public void removePropertyValue(String propertyName) {

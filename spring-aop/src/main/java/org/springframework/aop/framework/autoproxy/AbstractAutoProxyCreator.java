@@ -319,7 +319,7 @@ public abstract class AbstractAutoProxyCreator extends ProxyProcessorSupport
 	/**
 	 * Wrap the given bean if necessary, i.e. if it is eligible for being proxied.
 	 * @param bean the raw bean instance
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @param cacheKey the cache key for metadata access
 	 * @return a proxy wrapping the bean, or the raw bean instance as-is
 	 */
@@ -380,7 +380,7 @@ public abstract class AbstractAutoProxyCreator extends ProxyProcessorSupport
 	 * This implementation returns {@code false} unless the bean name indicates an
 	 * "original instance" according to {@code AutowireCapableBeanFactory} conventions.
 	 * @param beanClass the class of the bean
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @return whether to skip the given bean
 	 * @see org.springframework.beans.factory.config.AutowireCapableBeanFactory#ORIGINAL_INSTANCE_SUFFIX
 	 */
@@ -394,7 +394,7 @@ public abstract class AbstractAutoProxyCreator extends ProxyProcessorSupport
 	 * <p>This implementation uses the "customTargetSourceCreators" property.
 	 * Subclasses can override this method to use a different mechanism.
 	 * @param beanClass the class of the bean to create a TargetSource for
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @return a TargetSource for this bean
 	 * @see #setCustomTargetSourceCreators
 	 */
@@ -423,7 +423,7 @@ public abstract class AbstractAutoProxyCreator extends ProxyProcessorSupport
 	/**
 	 * Create an AOP proxy for the given bean.
 	 * @param beanClass the class of the bean
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @param specificInterceptors the set of interceptors that is
 	 * specific to this bean (may be empty, but not null)
 	 * @param targetSource the TargetSource for the proxy,
@@ -483,7 +483,7 @@ public abstract class AbstractAutoProxyCreator extends ProxyProcessorSupport
 	 * <p>Checks the {@link AutoProxyUtils#PRESERVE_TARGET_CLASS_ATTRIBUTE "preserveTargetClass" attribute}
 	 * of the corresponding bean definition.
 	 * @param beanClass the class of the bean
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @return whether the given bean should be proxied with its target class
 	 * @see AutoProxyUtils#shouldProxyTargetClass
 	 */
@@ -509,7 +509,7 @@ public abstract class AbstractAutoProxyCreator extends ProxyProcessorSupport
 	/**
 	 * Determine the advisors for the given bean, including the specific interceptors
 	 * as well as the common interceptor, all adapted to the Advisor interface.
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @param specificInterceptors the set of interceptors that is
 	 * specific to this bean (may be empty, but not null)
 	 * @return the list of Advisors for the given bean
@@ -581,7 +581,7 @@ public abstract class AbstractAutoProxyCreator extends ProxyProcessorSupport
 	 * Return whether the given bean is to be proxied, what additional
 	 * advices (e.g. AOP Alliance interceptors) and advisors to apply.
 	 * @param beanClass the class of the bean to advise
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @param customTargetSource the TargetSource returned by the
 	 * {@link #getCustomTargetSource} method: may be ignored.
 	 * Will be {@code null} if no custom target source is in use.

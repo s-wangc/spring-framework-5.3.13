@@ -68,7 +68,7 @@ public class SimpAttributes {
 
 	/**
 	 * Return the value for the attribute of the given name, if any.
-	 * @param name the name of the attribute
+	 * @param name attribute的名称
 	 * @return the current attribute value, or {@code null} if not found
 	 */
 	@Nullable
@@ -78,7 +78,7 @@ public class SimpAttributes {
 
 	/**
 	 * Set the value with the given name replacing an existing value (if any).
-	 * @param name the name of the attribute
+	 * @param name attribute的名称
 	 * @param value the value for the attribute
 	 */
 	public void setAttribute(String name, Object value) {
@@ -91,7 +91,7 @@ public class SimpAttributes {
 	 * attribute, if any. However it <i>does not</i> execute the callback.
 	 * It is assumed the removed object will continue to be used and destroyed
 	 * independently at the appropriate time.
-	 * @param name the name of the attribute
+	 * @param name attribute的名称
 	 */
 	public void removeAttribute(String name) {
 		this.attributes.remove(name);

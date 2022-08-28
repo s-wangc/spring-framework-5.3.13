@@ -57,7 +57,7 @@ public class WebSocketExtension {
 
 	/**
 	 * Create a WebSocketExtension with the given name.
-	 * @param name the name of the extension
+	 * @param name extension的名称
 	 */
 	public WebSocketExtension(String name) {
 		this(name, null);
@@ -65,7 +65,7 @@ public class WebSocketExtension {
 
 	/**
 	 * Create a WebSocketExtension with the given name and parameters.
-	 * @param name the name of the extension
+	 * @param name extension的名称
 	 * @param parameters the parameters
 	 */
 	public WebSocketExtension(String name, @Nullable Map<String, String> parameters) {

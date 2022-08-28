@@ -493,7 +493,7 @@ public abstract class BeanUtils {
 	/**
 	 * Retrieve the JavaBeans {@code PropertyDescriptors} for the given property.
 	 * @param clazz the Class to retrieve the PropertyDescriptor for
-	 * @param propertyName the name of the property
+	 * @param propertyName property的名称
 	 * @return the corresponding PropertyDescriptor, or {@code null} if none
 	 * @throws BeansException if PropertyDescriptor lookup fails
 	 */

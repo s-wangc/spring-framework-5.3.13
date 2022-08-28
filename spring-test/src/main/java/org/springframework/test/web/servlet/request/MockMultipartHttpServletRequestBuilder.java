@@ -85,7 +85,7 @@ public class MockMultipartHttpServletRequestBuilder extends MockHttpServletReque
 
 	/**
 	 * Create a new MockMultipartFile with the given content.
-	 * @param name the name of the file
+	 * @param name file的名称
 	 * @param content the content of the file
 	 */
 	public MockMultipartHttpServletRequestBuilder file(String name, byte[] content) {

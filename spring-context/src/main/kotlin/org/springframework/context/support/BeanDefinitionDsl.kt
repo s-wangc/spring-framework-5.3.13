@@ -154,7 +154,7 @@ open class BeanDefinitionDsl internal constructor (private val init: BeanDefinit
 	 * <p>The preferred constructor (Kotlin primary constructor and standard public constructors)
 	 * are evaluated for autowiring before falling back to default instantiation.
 	 *
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @param scope Override the target scope of this bean, specifying a new scope name.
 	 * @param isLazyInit Set whether this bean should be lazily initialized.
 	 * @param isPrimary Set whether this bean is a primary autowire candidate.
@@ -195,7 +195,7 @@ open class BeanDefinitionDsl internal constructor (private val init: BeanDefinit
 	/**
 	 * Declare a bean definition using the given supplier for obtaining a new instance.
 	 *
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @param scope Override the target scope of this bean, specifying a new scope name.
 	 * @param isLazyInit Set whether this bean should be lazily initialized.
 	 * @param isPrimary Set whether this bean is a primary autowire candidate.
@@ -241,7 +241,7 @@ open class BeanDefinitionDsl internal constructor (private val init: BeanDefinit
 	 * for obtaining a new instance.
 	 *
 	 * @param f the callable reference
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @param scope Override the target scope of this bean, specifying a new scope name.
 	 * @param isLazyInit Set whether this bean should be lazily initialized.
 	 * @param isPrimary Set whether this bean is a primary autowire candidate.
@@ -277,7 +277,7 @@ open class BeanDefinitionDsl internal constructor (private val init: BeanDefinit
 	 * autowired by type for obtaining a new instance.
 	 *
 	 * @param f the callable reference
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @param scope Override the target scope of this bean, specifying a new scope name.
 	 * @param isLazyInit Set whether this bean should be lazily initialized.
 	 * @param isPrimary Set whether this bean is a primary autowire candidate.
@@ -313,7 +313,7 @@ open class BeanDefinitionDsl internal constructor (private val init: BeanDefinit
 	 * autowired by type for obtaining a new instance.
 	 *
 	 * @param f the callable reference
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @param scope Override the target scope of this bean, specifying a new scope name.
 	 * @param isLazyInit Set whether this bean should be lazily initialized.
 	 * @param isPrimary Set whether this bean is a primary autowire candidate.
@@ -349,7 +349,7 @@ open class BeanDefinitionDsl internal constructor (private val init: BeanDefinit
 	 * autowired by type for obtaining a new instance.
 	 *
 	 * @param f the callable reference
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @param scope Override the target scope of this bean, specifying a new scope name.
 	 * @param isLazyInit Set whether this bean should be lazily initialized.
 	 * @param isPrimary Set whether this bean is a primary autowire candidate.
@@ -385,7 +385,7 @@ open class BeanDefinitionDsl internal constructor (private val init: BeanDefinit
 	 * autowired by type for obtaining a new instance.
 	 *
 	 * @param f the callable reference
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @param scope Override the target scope of this bean, specifying a new scope name.
 	 * @param isLazyInit Set whether this bean should be lazily initialized.
 	 * @param isPrimary Set whether this bean is a primary autowire candidate.
@@ -421,7 +421,7 @@ open class BeanDefinitionDsl internal constructor (private val init: BeanDefinit
 	 * autowired by type for obtaining a new instance.
 	 *
 	 * @param f the callable reference
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @param scope Override the target scope of this bean, specifying a new scope name.
 	 * @param isLazyInit Set whether this bean should be lazily initialized.
 	 * @param isPrimary Set whether this bean is a primary autowire candidate.
@@ -457,7 +457,7 @@ open class BeanDefinitionDsl internal constructor (private val init: BeanDefinit
 	 * autowired by type for obtaining a new instance.
 	 *
 	 * @param f the callable reference
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @param scope Override the target scope of this bean, specifying a new scope name.
 	 * @param isLazyInit Set whether this bean should be lazily initialized.
 	 * @param isPrimary Set whether this bean is a primary autowire candidate.
@@ -493,7 +493,7 @@ open class BeanDefinitionDsl internal constructor (private val init: BeanDefinit
 	 * autowired by type for obtaining a new instance.
 	 *
 	 * @param f the callable reference
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @param scope Override the target scope of this bean, specifying a new scope name.
 	 * @param isLazyInit Set whether this bean should be lazily initialized.
 	 * @param isPrimary Set whether this bean is a primary autowire candidate.
@@ -530,7 +530,7 @@ open class BeanDefinitionDsl internal constructor (private val init: BeanDefinit
 	 * autowired by type for obtaining a new instance.
 	 *
 	 * @param f the callable reference
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @param scope Override the target scope of this bean, specifying a new scope name.
 	 * @param isLazyInit Set whether this bean should be lazily initialized.
 	 * @param isPrimary Set whether this bean is a primary autowire candidate.
@@ -567,7 +567,7 @@ open class BeanDefinitionDsl internal constructor (private val init: BeanDefinit
 	 * autowired by type for obtaining a new instance.
 	 *
 	 * @param f the callable reference
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @param scope Override the target scope of this bean, specifying a new scope name.
 	 * @param isLazyInit Set whether this bean should be lazily initialized.
 	 * @param isPrimary Set whether this bean is a primary autowire candidate.
@@ -604,7 +604,7 @@ open class BeanDefinitionDsl internal constructor (private val init: BeanDefinit
 	 * autowired by type for obtaining a new instance.
 	 *
 	 * @param f the callable reference
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @param scope Override the target scope of this bean, specifying a new scope name.
 	 * @param isLazyInit Set whether this bean should be lazily initialized.
 	 * @param isPrimary Set whether this bean is a primary autowire candidate.
@@ -641,7 +641,7 @@ open class BeanDefinitionDsl internal constructor (private val init: BeanDefinit
 	 * autowired by type for obtaining a new instance.
 	 *
 	 * @param f the callable reference
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @param scope Override the target scope of this bean, specifying a new scope name.
 	 * @param isLazyInit Set whether this bean should be lazily initialized.
 	 * @param isPrimary Set whether this bean is a primary autowire candidate.
@@ -678,7 +678,7 @@ open class BeanDefinitionDsl internal constructor (private val init: BeanDefinit
 	 * autowired by type for obtaining a new instance.
 	 *
 	 * @param f the callable reference
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @param scope Override the target scope of this bean, specifying a new scope name.
 	 * @param isLazyInit Set whether this bean should be lazily initialized.
 	 * @param isPrimary Set whether this bean is a primary autowire candidate.
@@ -715,7 +715,7 @@ open class BeanDefinitionDsl internal constructor (private val init: BeanDefinit
 	 * autowired by type for obtaining a new instance.
 	 *
 	 * @param f the callable reference
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @param scope Override the target scope of this bean, specifying a new scope name.
 	 * @param isLazyInit Set whether this bean should be lazily initialized.
 	 * @param isPrimary Set whether this bean is a primary autowire candidate.
@@ -752,7 +752,7 @@ open class BeanDefinitionDsl internal constructor (private val init: BeanDefinit
 	 * autowired by type for obtaining a new instance.
 	 *
 	 * @param f the callable reference
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @param scope Override the target scope of this bean, specifying a new scope name.
 	 * @param isLazyInit Set whether this bean should be lazily initialized.
 	 * @param isPrimary Set whether this bean is a primary autowire candidate.
@@ -790,7 +790,7 @@ open class BeanDefinitionDsl internal constructor (private val init: BeanDefinit
 	 * autowired by type for obtaining a new instance.
 	 *
 	 * @param f the callable reference
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @param scope Override the target scope of this bean, specifying a new scope name.
 	 * @param isLazyInit Set whether this bean should be lazily initialized.
 	 * @param isPrimary Set whether this bean is a primary autowire candidate.
@@ -828,7 +828,7 @@ open class BeanDefinitionDsl internal constructor (private val init: BeanDefinit
 	 * autowired by type for obtaining a new instance.
 	 *
 	 * @param f the callable reference
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @param scope Override the target scope of this bean, specifying a new scope name.
 	 * @param isLazyInit Set whether this bean should be lazily initialized.
 	 * @param isPrimary Set whether this bean is a primary autowire candidate.
@@ -866,7 +866,7 @@ open class BeanDefinitionDsl internal constructor (private val init: BeanDefinit
 	 * autowired by type for obtaining a new instance.
 	 *
 	 * @param f the callable reference
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @param scope Override the target scope of this bean, specifying a new scope name.
 	 * @param isLazyInit Set whether this bean should be lazily initialized.
 	 * @param isPrimary Set whether this bean is a primary autowire candidate.
@@ -904,7 +904,7 @@ open class BeanDefinitionDsl internal constructor (private val init: BeanDefinit
 	 * autowired by type for obtaining a new instance.
 	 *
 	 * @param f the callable reference
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @param scope Override the target scope of this bean, specifying a new scope name.
 	 * @param isLazyInit Set whether this bean should be lazily initialized.
 	 * @param isPrimary Set whether this bean is a primary autowire candidate.
@@ -942,7 +942,7 @@ open class BeanDefinitionDsl internal constructor (private val init: BeanDefinit
 	 * autowired by type for obtaining a new instance.
 	 *
 	 * @param f the callable reference
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @param scope Override the target scope of this bean, specifying a new scope name.
 	 * @param isLazyInit Set whether this bean should be lazily initialized.
 	 * @param isPrimary Set whether this bean is a primary autowire candidate.
@@ -980,7 +980,7 @@ open class BeanDefinitionDsl internal constructor (private val init: BeanDefinit
 	 * autowired by type for obtaining a new instance.
 	 *
 	 * @param f the callable reference
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @param scope Override the target scope of this bean, specifying a new scope name.
 	 * @param isLazyInit Set whether this bean should be lazily initialized.
 	 * @param isPrimary Set whether this bean is a primary autowire candidate.
@@ -1018,7 +1018,7 @@ open class BeanDefinitionDsl internal constructor (private val init: BeanDefinit
 	 * autowired by type for obtaining a new instance.
 	 *
 	 * @param f the callable reference
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @param scope Override the target scope of this bean, specifying a new scope name.
 	 * @param isLazyInit Set whether this bean should be lazily initialized.
 	 * @param isPrimary Set whether this bean is a primary autowire candidate.
@@ -1057,7 +1057,7 @@ open class BeanDefinitionDsl internal constructor (private val init: BeanDefinit
 	 * autowired by type for obtaining a new instance.
 	 *
 	 * @param f the callable reference
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @param scope Override the target scope of this bean, specifying a new scope name.
 	 * @param isLazyInit Set whether this bean should be lazily initialized.
 	 * @param isPrimary Set whether this bean is a primary autowire candidate.

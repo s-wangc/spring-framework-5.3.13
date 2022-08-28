@@ -109,7 +109,7 @@ public class DefaultTransactionDefinition implements TransactionDefinition, Seri
 	/**
 	 * Set the propagation behavior by the name of the corresponding constant in
 	 * TransactionDefinition, e.g. "PROPAGATION_REQUIRED".
-	 * @param constantName name of the constant
+	 * @param constantName constant的名称
 	 * @throws IllegalArgumentException if the supplied value is not resolvable
 	 * to one of the {@code PROPAGATION_} constants or is {@code null}
 	 * @see #setPropagationBehavior
@@ -152,7 +152,7 @@ public class DefaultTransactionDefinition implements TransactionDefinition, Seri
 	/**
 	 * Set the isolation level by the name of the corresponding constant in
 	 * TransactionDefinition, e.g. "ISOLATION_DEFAULT".
-	 * @param constantName name of the constant
+	 * @param constantName constant的名称
 	 * @throws IllegalArgumentException if the supplied value is not resolvable
 	 * to one of the {@code ISOLATION_} constants or is {@code null}
 	 * @see #setIsolationLevel

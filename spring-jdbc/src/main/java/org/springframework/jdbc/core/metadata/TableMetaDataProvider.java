@@ -44,7 +44,7 @@ public interface TableMetaDataProvider {
 	 * @param databaseMetaData used to retrieve database specific information
 	 * @param catalogName name of catalog to use (or {@code null} if none)
 	 * @param schemaName name of schema name to use (or {@code null} if none)
-	 * @param tableName name of the table
+	 * @param tableName table的名称
 	 * @throws SQLException in case of initialization failure
 	 */
 	void initializeWithTableColumnMetaData(DatabaseMetaData databaseMetaData, @Nullable String catalogName,

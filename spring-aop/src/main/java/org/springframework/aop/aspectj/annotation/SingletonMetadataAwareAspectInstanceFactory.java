@@ -42,7 +42,7 @@ public class SingletonMetadataAwareAspectInstanceFactory extends SingletonAspect
 	/**
 	 * Create a new SingletonMetadataAwareAspectInstanceFactory for the given aspect.
 	 * @param aspectInstance the singleton aspect instance
-	 * @param aspectName the name of the aspect
+	 * @param aspectName aspect的名称
 	 */
 	public SingletonMetadataAwareAspectInstanceFactory(Object aspectInstance, String aspectName) {
 		super(aspectInstance);

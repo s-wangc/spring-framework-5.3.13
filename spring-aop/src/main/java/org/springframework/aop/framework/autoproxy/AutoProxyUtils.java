@@ -62,7 +62,7 @@ public abstract class AutoProxyUtils {
 	 * {@link #PRESERVE_TARGET_CLASS_ATTRIBUTE "preserveTargetClass" attribute}
 	 * of the corresponding bean definition.
 	 * @param beanFactory the containing ConfigurableListableBeanFactory
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @return whether the given bean should be proxied with its target class
 	 */
 	public static boolean shouldProxyTargetClass(
@@ -79,7 +79,7 @@ public abstract class AutoProxyUtils {
 	 * Determine the original target class for the specified bean, if possible,
 	 * otherwise falling back to a regular {@code getType} lookup.
 	 * @param beanFactory the containing ConfigurableListableBeanFactory
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @return the original target class as stored in the bean definition, if any
 	 * @since 4.2.3
 	 * @see org.springframework.beans.factory.BeanFactory#getType(String)
@@ -104,7 +104,7 @@ public abstract class AutoProxyUtils {
 	/**
 	 * Expose the given target class for the specified bean, if possible.
 	 * @param beanFactory the containing ConfigurableListableBeanFactory
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @param targetClass the corresponding target class
 	 * @since 4.2.3
 	 */
@@ -120,7 +120,7 @@ public abstract class AutoProxyUtils {
 	 * Determine whether the given bean name indicates an "original instance"
 	 * according to {@link AutowireCapableBeanFactory#ORIGINAL_INSTANCE_SUFFIX},
 	 * skipping any proxy attempts for it.
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @param beanClass the corresponding bean class
 	 * @since 5.1
 	 * @see AutowireCapableBeanFactory#ORIGINAL_INSTANCE_SUFFIX

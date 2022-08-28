@@ -299,7 +299,7 @@ public class ServletRequestAttributes extends AbstractRequestAttributes {
 	 * since its value cannot meaningfully change internally.
 	 * <p>The default implementation returns {@code true} for {@code String},
 	 * {@code Character}, {@code Boolean} and standard {@code Number} values.
-	 * @param name the name of the attribute
+	 * @param name attribute的名称
 	 * @param value the corresponding value to check
 	 * @return {@code true} if the value is to be considered as immutable for the
 	 * purposes of session attribute management; {@code false} otherwise

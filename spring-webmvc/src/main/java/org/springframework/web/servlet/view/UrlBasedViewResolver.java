@@ -599,7 +599,7 @@ public class UrlBasedViewResolver extends AbstractCachingViewResolver implements
 	/**
 	 * Apply the containing {@link ApplicationContext}'s lifecycle methods
 	 * to the given {@link View} instance, if such a context is available.
-	 * @param viewName the name of the view
+	 * @param viewName view的名称
 	 * @param view the freshly created View instance, pre-configured with
 	 * {@link AbstractUrlBasedView}'s properties
 	 * @return the {@link View} instance to use (either the original one

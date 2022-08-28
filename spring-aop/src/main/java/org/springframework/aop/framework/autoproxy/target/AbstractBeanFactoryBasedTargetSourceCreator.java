@@ -186,7 +186,7 @@ public abstract class AbstractBeanFactoryBasedTargetSourceCreator
 	 * on the AbstractPrototypeBasedTargetSource: This class' implementation of
 	 * {@code getTargetSource()} will do that.
 	 * @param beanClass the class of the bean to create a TargetSource for
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @return the AbstractPrototypeBasedTargetSource, or {@code null} if we don't match this
 	 */
 	@Nullable

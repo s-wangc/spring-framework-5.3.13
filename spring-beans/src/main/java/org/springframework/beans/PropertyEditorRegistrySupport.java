@@ -445,7 +445,7 @@ public class PropertyEditorRegistrySupport implements PropertyEditorRegistry {
 	/**
 	 * Guess the property type of the specified property from the registered
 	 * custom editors (provided that they were registered for a specific type).
-	 * @param propertyName the name of the property
+	 * @param propertyName property的名称
 	 * @return the property type, or {@code null} if not determinable
 	 */
 	@Nullable

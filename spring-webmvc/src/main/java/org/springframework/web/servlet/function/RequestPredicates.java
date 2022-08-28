@@ -359,7 +359,7 @@ public abstract class RequestPredicates {
 
 		/**
 		 * Receive notification of a parameter predicate.
-		 * @param name the name of the parameter
+		 * @param name parameter的名称
 		 * @param value the desired value of the parameter
 		 * @see RequestPredicates#param(String, String)
 		 */

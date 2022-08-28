@@ -211,7 +211,7 @@ public abstract class ReflectionUtils {
 	 * and no parameters. Searches all superclasses up to {@code Object}.
 	 * <p>Returns {@code null} if no {@link Method} can be found.
 	 * @param clazz the class to introspect
-	 * @param name the name of the method
+	 * @param name method的名称
 	 * @return the Method object, or {@code null} if none found
 	 */
 	@Nullable
@@ -224,7 +224,7 @@ public abstract class ReflectionUtils {
 	 * and parameter types. Searches all superclasses up to {@code Object}.
 	 * <p>Returns {@code null} if no {@link Method} can be found.
 	 * @param clazz the class to introspect
-	 * @param name the name of the method
+	 * @param name method的名称
 	 * @param paramTypes the parameter types of the method
 	 * (may be {@code null} to indicate any signature)
 	 * @return the Method object, or {@code null} if none found
@@ -581,7 +581,7 @@ public abstract class ReflectionUtils {
 	 * Attempt to find a {@link Field field} on the supplied {@link Class} with the
 	 * supplied {@code name}. Searches all superclasses up to {@link Object}.
 	 * @param clazz the class to introspect
-	 * @param name the name of the field
+	 * @param name field的名称
 	 * @return the corresponding Field object, or {@code null} if not found
 	 */
 	@Nullable

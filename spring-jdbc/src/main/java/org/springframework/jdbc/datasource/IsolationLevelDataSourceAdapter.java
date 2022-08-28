@@ -69,7 +69,7 @@ public class IsolationLevelDataSourceAdapter extends UserCredentialsDataSourceAd
 	 * <p>If not specified, the target DataSource's default will be used.
 	 * Note that a transaction-specific isolation value will always override
 	 * any isolation setting specified at the DataSource level.
-	 * @param constantName name of the constant
+	 * @param constantName constant的名称
 	 * @see org.springframework.transaction.TransactionDefinition#ISOLATION_READ_UNCOMMITTED
 	 * @see org.springframework.transaction.TransactionDefinition#ISOLATION_READ_COMMITTED
 	 * @see org.springframework.transaction.TransactionDefinition#ISOLATION_REPEATABLE_READ

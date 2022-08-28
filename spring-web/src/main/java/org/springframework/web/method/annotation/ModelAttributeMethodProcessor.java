@@ -393,7 +393,7 @@ public class ModelAttributeMethodProcessor implements HandlerMethodArgumentResol
 	 * @param binder the DataBinder to be used
 	 * @param parameter the method parameter declaration
 	 * @param targetType the target type
-	 * @param fieldName the name of the field
+	 * @param fieldName field的名称
 	 * @param value the candidate value
 	 * @since 5.1
 	 * @see #validateIfApplicable(WebDataBinder, MethodParameter)

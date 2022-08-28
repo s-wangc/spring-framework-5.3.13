@@ -47,7 +47,7 @@ public class CaffeineCache extends AbstractValueAdaptingCache {
 	/**
 	 * Create a {@link CaffeineCache} instance with the specified name and the
 	 * given internal {@link com.github.benmanes.caffeine.cache.Cache} to use.
-	 * @param name the name of the cache
+	 * @param name cache的名称
 	 * @param cache the backing Caffeine Cache instance
 	 */
 	public CaffeineCache(String name, com.github.benmanes.caffeine.cache.Cache<Object, Object> cache) {
@@ -57,7 +57,7 @@ public class CaffeineCache extends AbstractValueAdaptingCache {
 	/**
 	 * Create a {@link CaffeineCache} instance with the specified name and the
 	 * given internal {@link com.github.benmanes.caffeine.cache.Cache} to use.
-	 * @param name the name of the cache
+	 * @param name cache的名称
 	 * @param cache the backing Caffeine Cache instance
 	 * @param allowNullValues whether to accept and convert {@code null}
 	 * values for this cache

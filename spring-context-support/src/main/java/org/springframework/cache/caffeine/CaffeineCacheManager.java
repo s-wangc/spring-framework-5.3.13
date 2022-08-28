@@ -204,7 +204,7 @@ public class CaffeineCacheManager implements CacheManager {
 	 * <p>Note that any other caches, whether statically specified through
 	 * {@link #setCacheNames} or dynamically built on demand, still operate
 	 * with the common settings in the cache manager's configuration.
- 	 * @param name the name of the cache
+ 	 * @param name cache的名称
 	 * @param cache the custom Caffeine Cache instance to register
 	 * @since 5.2.8
 	 * @see #adaptCaffeineCache
@@ -217,7 +217,7 @@ public class CaffeineCacheManager implements CacheManager {
 	/**
 	 * Adapt the given new native Caffeine Cache instance to Spring's {@link Cache}
 	 * abstraction for the specified cache name.
-	 * @param name the name of the cache
+	 * @param name cache的名称
 	 * @param cache the native Caffeine Cache instance
 	 * @return the Spring CaffeineCache adapter (or a decorator thereof)
 	 * @since 5.2.8
@@ -234,7 +234,7 @@ public class CaffeineCacheManager implements CacheManager {
 	 * <p>Delegates to {@link #adaptCaffeineCache} as the adaptation method to
 	 * Spring's cache abstraction (allowing for centralized decoration etc),
 	 * passing in a freshly built native Caffeine Cache instance.
-	 * @param name the name of the cache
+	 * @param name cache的名称
 	 * @return the Spring CaffeineCache adapter (or a decorator thereof)
 	 * @see #adaptCaffeineCache
 	 * @see #createNativeCaffeineCache
@@ -246,7 +246,7 @@ public class CaffeineCacheManager implements CacheManager {
 	/**
 	 * Build a common Caffeine Cache instance for the specified cache name,
 	 * using the common Caffeine configuration specified on this cache manager.
-	 * @param name the name of the cache
+	 * @param name cache的名称
 	 * @return the native Caffeine Cache instance
 	 * @see #createCaffeineCache
 	 */

@@ -41,7 +41,7 @@ public abstract class StandardScriptUtils {
 	 * by name, delegating to {@link ScriptEngineManager#getEngineByName} but
 	 * throwing a descriptive exception if not found or if initialization failed.
 	 * @param scriptEngineManager 要使用的ScriptEngineManager
-	 * @param engineName the name of the engine
+	 * @param engineName engine的名称
 	 * @return a corresponding ScriptEngine (never {@code null})
 	 * @throws IllegalArgumentException if no matching engine has been found
 	 * @throws IllegalStateException if the desired engine failed to initialize

@@ -67,7 +67,7 @@ public class CustomScopeConfigurer implements BeanFactoryPostProcessor, BeanClas
 
 	/**
 	 * Add the given scope to this configurer's map of scopes.
-	 * @param scopeName the name of the scope
+	 * @param scopeName scope的名称
 	 * @param scope the scope implementation
 	 * @since 4.1.1
 	 */

@@ -44,7 +44,7 @@ public class BeanComponentDefinition extends BeanDefinitionHolder implements Com
 	/**
 	 * Create a new BeanComponentDefinition for the given bean.
 	 * @param beanDefinition the BeanDefinition
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 */
 	public BeanComponentDefinition(BeanDefinition beanDefinition, String beanName) {
 		this(new BeanDefinitionHolder(beanDefinition, beanName));
@@ -53,7 +53,7 @@ public class BeanComponentDefinition extends BeanDefinitionHolder implements Com
 	/**
 	 * Create a new BeanComponentDefinition for the given bean.
 	 * @param beanDefinition the BeanDefinition
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @param aliases alias names for the bean, or {@code null} if none
 	 */
 	public BeanComponentDefinition(BeanDefinition beanDefinition, String beanName, @Nullable String[] aliases) {

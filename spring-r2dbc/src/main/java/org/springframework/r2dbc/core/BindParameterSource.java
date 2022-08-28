@@ -38,14 +38,14 @@ interface BindParameterSource {
 
 	/**
 	 * Determine whether there is a value for the specified named parameter.
-	 * @param paramName the name of the parameter
+	 * @param paramName parameter的名称
 	 * @return {@code true} if there is a value defined; {@code false} otherwise
 	 */
 	boolean hasValue(String paramName);
 
 	/**
 	 * Return the parameter value for the requested named parameter.
-	 * @param paramName the name of the parameter
+	 * @param paramName parameter的名称
 	 * @return the value of the specified parameter (can be {@code null})
 	 * @throws IllegalArgumentException if there is no value
 	 * for the requested parameter
@@ -55,7 +55,7 @@ interface BindParameterSource {
 
 	/**
 	 * Determine the type for the specified named parameter.
-	 * @param paramName the name of the parameter
+	 * @param paramName parameter的名称
 	 * @return the type of the specified parameter, or
 	 * {@link Object#getClass()} if not known.
 	 */

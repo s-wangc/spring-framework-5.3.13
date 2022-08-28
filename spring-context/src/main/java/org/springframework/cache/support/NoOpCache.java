@@ -39,7 +39,7 @@ public class NoOpCache implements Cache {
 
 	/**
 	 * Create a {@link NoOpCache} instance with the specified name.
-	 * @param name the name of the cache
+	 * @param name cache的名称
 	 */
 	public NoOpCache(String name) {
 		Assert.notNull(name, "Cache name must not be null");

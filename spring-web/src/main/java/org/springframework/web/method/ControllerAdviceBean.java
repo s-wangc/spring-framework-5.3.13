@@ -100,7 +100,7 @@ public class ControllerAdviceBean implements Ordered {
 	/**
 	 * Create a {@code ControllerAdviceBean} using the given bean name and
 	 * {@code BeanFactory}.
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @param beanFactory a {@code BeanFactory} to retrieve the bean type initially
 	 * and later to resolve the actual bean
 	 */
@@ -112,7 +112,7 @@ public class ControllerAdviceBean implements Ordered {
 	 * Create a {@code ControllerAdviceBean} using the given bean name,
 	 * {@code BeanFactory}, and {@link ControllerAdvice @ControllerAdvice}
 	 * annotation.
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @param beanFactory a {@code BeanFactory} to retrieve the bean type initially
 	 * and later to resolve the actual bean
 	 * @param controllerAdvice the {@code @ControllerAdvice} annotation for the

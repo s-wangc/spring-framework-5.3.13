@@ -56,7 +56,7 @@ public class ConcurrentMapCache extends AbstractValueAdaptingCache {
 
 	/**
 	 * Create a new ConcurrentMapCache with the specified name.
-	 * @param name the name of the cache
+	 * @param name cache的名称
 	 */
 	public ConcurrentMapCache(String name) {
 		this(name, new ConcurrentHashMap<>(256), true);
@@ -64,7 +64,7 @@ public class ConcurrentMapCache extends AbstractValueAdaptingCache {
 
 	/**
 	 * Create a new ConcurrentMapCache with the specified name.
-	 * @param name the name of the cache
+	 * @param name cache的名称
 	 * @param allowNullValues whether to accept and convert {@code null}
 	 * values for this cache
 	 */
@@ -75,7 +75,7 @@ public class ConcurrentMapCache extends AbstractValueAdaptingCache {
 	/**
 	 * Create a new ConcurrentMapCache with the specified name and the
 	 * given internal {@link ConcurrentMap} to use.
-	 * @param name the name of the cache
+	 * @param name cache的名称
 	 * @param store the ConcurrentMap to use as an internal store
 	 * @param allowNullValues whether to allow {@code null} values
 	 * (adapting them to an internal null holder value)
@@ -89,7 +89,7 @@ public class ConcurrentMapCache extends AbstractValueAdaptingCache {
 	 * given internal {@link ConcurrentMap} to use. If the
 	 * {@link SerializationDelegate} is specified,
 	 * {@link #isStoreByValue() store-by-value} is enabled
-	 * @param name the name of the cache
+	 * @param name cache的名称
 	 * @param store the ConcurrentMap to use as an internal store
 	 * @param allowNullValues whether to allow {@code null} values
 	 * (adapting them to an internal null holder value)

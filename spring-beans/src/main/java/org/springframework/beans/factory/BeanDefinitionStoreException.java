@@ -84,7 +84,7 @@ public class BeanDefinitionStoreException extends FatalBeanException {
 	/**
 	 * 创建一个新的BeanDefinitionStoreException.
 	 * @param resourceDescription description of the resource that the bean definition came from
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @param msg the detail message (appended to an introductory message that indicates
 	 * the resource and the name of the bean)
 	 */
@@ -95,7 +95,7 @@ public class BeanDefinitionStoreException extends FatalBeanException {
 	/**
 	 * 创建一个新的BeanDefinitionStoreException.
 	 * @param resourceDescription description of the resource that the bean definition came from
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @param msg the detail message (appended to an introductory message that indicates
 	 * the resource and the name of the bean)
 	 * @param cause the root cause (may be {@code null})

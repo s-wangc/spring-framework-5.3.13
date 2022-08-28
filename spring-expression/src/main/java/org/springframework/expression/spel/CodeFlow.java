@@ -92,7 +92,7 @@ public class CodeFlow implements Opcodes {
 
 	/**
 	 * Construct a new {@code CodeFlow} for the given class.
-	 * @param className the name of the class
+	 * @param className class的名称
 	 * @param classWriter the corresponding ASM {@code ClassWriter}
 	 */
 	public CodeFlow(String className, ClassWriter classWriter) {

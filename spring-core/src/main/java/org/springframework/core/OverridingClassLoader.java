@@ -111,7 +111,7 @@ public class OverridingClassLoader extends DecoratingClassLoader {
 	 * Load the specified class for overriding purposes in this ClassLoader.
 	 * <p>The default implementation delegates to {@link #findLoadedClass},
 	 * {@link #loadBytesForClass} and {@link #defineClass}.
-	 * @param name the name of the class
+	 * @param name class的名称
 	 * @return the Class object, or {@code null} if no class defined for that name
 	 * @throws ClassNotFoundException if the class for the given name couldn't be loaded
 	 */
@@ -132,7 +132,7 @@ public class OverridingClassLoader extends DecoratingClassLoader {
 	 * to be turned into a Class object through a {@link #defineClass} call.
 	 * <p>The default implementation delegates to {@link #openStreamForClass}
 	 * and {@link #transformIfNecessary}.
-	 * @param name the name of the class
+	 * @param name class的名称
 	 * @return the byte content (with transformers already applied),
 	 * or {@code null} if no class defined for that name
 	 * @throws ClassNotFoundException if the class for the given name couldn't be loaded
@@ -158,7 +158,7 @@ public class OverridingClassLoader extends DecoratingClassLoader {
 	 * Open an InputStream for the specified class.
 	 * <p>The default implementation loads a standard class file through
 	 * the parent ClassLoader's {@code getResourceAsStream} method.
-	 * @param name the name of the class
+	 * @param name class的名称
 	 * @return the InputStream containing the byte code for the specified class
 	 */
 	@Nullable

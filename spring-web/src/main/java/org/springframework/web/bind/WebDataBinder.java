@@ -275,7 +275,7 @@ public class WebDataBinder extends DataBinder {
 	 * Determine an empty value for the specified field.
 	 * <p>The default implementation delegates to {@link #getEmptyValue(Class)}
 	 * if the field type is known, otherwise falls back to {@code null}.
-	 * @param field the name of the field
+	 * @param field field的名称
 	 * @param fieldType the type of the field
 	 * @return the empty value (for most fields: {@code null})
 	 */

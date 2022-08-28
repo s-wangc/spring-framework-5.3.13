@@ -105,7 +105,7 @@ public class BeanNameAutoProxyCreator extends AbstractAutoProxyCreator {
 	 * Determine if the bean name for the given bean class matches one of the names
 	 * in the configured list of supported names.
 	 * @param beanClass the class of the bean to advise
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @return {@code true} if the given bean name is supported
 	 * @see #setBeanNames(String...)
 	 */

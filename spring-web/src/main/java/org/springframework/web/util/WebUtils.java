@@ -536,7 +536,7 @@ public abstract class WebUtils {
 	/**
 	 * Expose the specified request attribute if not already present.
 	 * @param request current servlet request
-	 * @param name the name of the attribute
+	 * @param name attribute的名称
 	 * @param value the suggested value of the attribute
 	 */
 	private static void exposeRequestAttributeIfNotPresent(ServletRequest request, String name, Object value) {
@@ -591,7 +591,7 @@ public abstract class WebUtils {
 	 * either via a button (directly with name) or via an image (name + ".x" or
 	 * name + ".y").
 	 * @param request current HTTP request
-	 * @param name the name of the parameter
+	 * @param name parameter的名称
 	 * @return if the parameter was sent
 	 * @see #SUBMIT_IMAGE_SUFFIXES
 	 */

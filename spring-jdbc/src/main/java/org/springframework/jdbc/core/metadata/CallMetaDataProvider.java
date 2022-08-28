@@ -103,7 +103,7 @@ public interface CallMetaDataProvider {
 	/**
 	 * Create a default out parameter based on the provided meta-data.
 	 * This is used when no explicit parameter declaration has been made.
-	 * @param parameterName the name of the parameter
+	 * @param parameterName parameter的名称
 	 * @param meta meta-data used for this call
 	 * @return the configured SqlOutParameter
 	 */
@@ -112,7 +112,7 @@ public interface CallMetaDataProvider {
 	/**
 	 * Create a default in/out parameter based on the provided meta-data.
 	 * This is used when no explicit parameter declaration has been made.
-	 * @param parameterName the name of the parameter
+	 * @param parameterName parameter的名称
 	 * @param meta meta-data used for this call
 	 * @return the configured SqlInOutParameter
 	 */
@@ -121,7 +121,7 @@ public interface CallMetaDataProvider {
 	/**
 	 * Create a default in parameter based on the provided meta-data.
 	 * This is used when no explicit parameter declaration has been made.
-	 * @param parameterName the name of the parameter
+	 * @param parameterName parameter的名称
 	 * @param meta meta-data used for this call
 	 * @return the configured SqlParameter
 	 */

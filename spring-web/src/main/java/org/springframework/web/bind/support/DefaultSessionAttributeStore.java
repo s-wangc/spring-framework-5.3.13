@@ -78,7 +78,7 @@ public class DefaultSessionAttributeStore implements SessionAttributeStore {
 	 * <p>The default implementation simply prepends the configured
 	 * {@link #setAttributeNamePrefix "attributeNamePrefix"}, if any.
 	 * @param request the current request
-	 * @param attributeName the name of the attribute
+	 * @param attributeName attribute的名称
 	 * @return the attribute name in the backend session
 	 */
 	protected String getAttributeNameInSession(WebRequest request, String attributeName) {

@@ -56,7 +56,7 @@ public class MockFilterConfig implements FilterConfig {
 
 	/**
 	 * Create a new MockFilterConfig with a default {@link MockServletContext}.
-	 * @param filterName the name of the filter
+	 * @param filterName filter的名称
 	 */
 	public MockFilterConfig(String filterName) {
 		this(null, filterName);
@@ -73,7 +73,7 @@ public class MockFilterConfig implements FilterConfig {
 	/**
 	 * 创建一个新的MockFilterConfig.
 	 * @param servletContext the ServletContext that the servlet runs in
-	 * @param filterName the name of the filter
+	 * @param filterName filter的名称
 	 */
 	public MockFilterConfig(@Nullable ServletContext servletContext, String filterName) {
 		this.servletContext = (servletContext != null ? servletContext : new MockServletContext());

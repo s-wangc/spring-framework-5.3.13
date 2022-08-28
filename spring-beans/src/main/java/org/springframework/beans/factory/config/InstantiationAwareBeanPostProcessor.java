@@ -62,7 +62,7 @@ public interface InstantiationAwareBeanPostProcessor extends BeanPostProcessor {
 	 * to predict the type of the bean object that they are going to return here.
 	 * <p>The default implementation returns {@code null}.
 	 * @param beanClass the class of the bean to be instantiated
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @return the bean object to expose instead of a default instance of the target bean,
 	 * or {@code null} to proceed with default instantiation
 	 * @throws org.springframework.beans.BeansException 如果出现错误
@@ -82,7 +82,7 @@ public interface InstantiationAwareBeanPostProcessor extends BeanPostProcessor {
 	 * instance, right before Spring's autowiring kicks in.
 	 * <p>The default implementation returns {@code true}.
 	 * @param bean the bean instance created, with properties not having been set yet
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @return {@code true} if properties should be set on the bean; {@code false}
 	 * if property population should be skipped. Normal implementations should return {@code true}.
 	 * Returning {@code false} will also prevent any subsequent InstantiationAwareBeanPostProcessor
@@ -103,7 +103,7 @@ public interface InstantiationAwareBeanPostProcessor extends BeanPostProcessor {
 	 * the default implementation will return the given {@code pvs} as-is directly.
 	 * @param pvs the property values that the factory is about to apply (never {@code null})
 	 * @param bean the bean instance created, but whose properties have not yet been set
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @return the actual property values to apply to the given bean (can be the passed-in
 	 * PropertyValues instance), or {@code null} which proceeds with the existing properties
 	 * but specifically continues with a call to {@link #postProcessPropertyValues}
@@ -131,7 +131,7 @@ public interface InstantiationAwareBeanPostProcessor extends BeanPostProcessor {
 	 * @param pds the relevant property descriptors for the target bean (with ignored
 	 * dependency types - which the factory handles specifically - already filtered out)
 	 * @param bean the bean instance created, but whose properties have not yet been set
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @return the actual property values to apply to the given bean (can be the passed-in
 	 * PropertyValues instance), or {@code null} to skip property population
 	 * @throws org.springframework.beans.BeansException 如果出现错误

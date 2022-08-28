@@ -52,14 +52,14 @@ public interface SqlParameterSource {
 
 	/**
 	 * Determine whether there is a value for the specified named parameter.
-	 * @param paramName the name of the parameter
+	 * @param paramName parameter的名称
 	 * @return whether there is a value defined
 	 */
 	boolean hasValue(String paramName);
 
 	/**
 	 * Return the parameter value for the requested named parameter.
-	 * @param paramName the name of the parameter
+	 * @param paramName parameter的名称
 	 * @return the value of the specified parameter
 	 * @throws IllegalArgumentException if there is no value for the requested parameter
 	 */
@@ -68,7 +68,7 @@ public interface SqlParameterSource {
 
 	/**
 	 * Determine the SQL type for the specified named parameter.
-	 * @param paramName the name of the parameter
+	 * @param paramName parameter的名称
 	 * @return the SQL type of the specified parameter,
 	 * or {@code TYPE_UNKNOWN} if not known
 	 * @see #TYPE_UNKNOWN
@@ -79,7 +79,7 @@ public interface SqlParameterSource {
 
 	/**
 	 * Determine the type name for the specified named parameter.
-	 * @param paramName the name of the parameter
+	 * @param paramName parameter的名称
 	 * @return the type name of the specified parameter,
 	 * or {@code null} if not known
 	 */

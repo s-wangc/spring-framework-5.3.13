@@ -304,7 +304,7 @@ public interface HibernateOperations {
 	/**
 	 * Return an enabled Hibernate {@link Filter} for the given filter name.
 	 * The returned {@code Filter} instance can be used to set filter parameters.
-	 * @param filterName the name of the filter
+	 * @param filterName filter的名称
 	 * @return the enabled Hibernate {@code Filter} (either already
 	 * enabled or enabled on the fly by this operation)
 	 * @throws IllegalStateException if we are not running within a
@@ -693,7 +693,7 @@ public interface HibernateOperations {
 	 * Execute an HQL query, binding one value to a ":" named parameter
 	 * in the query string.
 	 * @param queryString a query expressed in Hibernate's query language
-	 * @param paramName the name of the parameter
+	 * @param paramName parameter的名称
 	 * @param value the value of the parameter
 	 * @return a {@link List} containing the results of the query execution
 	 * @throws DataAccessException in case of Hibernate errors

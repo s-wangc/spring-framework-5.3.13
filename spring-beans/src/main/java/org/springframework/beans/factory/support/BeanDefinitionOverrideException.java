@@ -40,7 +40,7 @@ public class BeanDefinitionOverrideException extends BeanDefinitionStoreExceptio
 
 	/**
 	 * Create a new BeanDefinitionOverrideException for the given new and existing definition.
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @param beanDefinition the newly registered bean definition
 	 * @param existingDefinition the existing bean definition for the same name
 	 */

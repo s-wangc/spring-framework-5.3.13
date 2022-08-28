@@ -34,7 +34,7 @@ public interface DataSourceLookup {
 
 	/**
 	 * Retrieve the DataSource identified by the given name.
-	 * @param dataSourceName the name of the DataSource
+	 * @param dataSourceName DataSource的名称
 	 * @return the DataSource (never {@code null})
 	 * @throws DataSourceLookupFailureException if the lookup failed
 	 */

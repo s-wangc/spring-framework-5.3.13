@@ -40,14 +40,14 @@ public interface SimpleJdbcInsertOperations {
 
 	/**
 	 * Specify the schema name, if any, to be used for the insert.
-	 * @param schemaName the name of the schema
+	 * @param schemaName schema的名称
 	 * @return the instance of this SimpleJdbcInsert
 	 */
 	SimpleJdbcInsertOperations withSchemaName(String schemaName);
 
 	/**
 	 * Specify the catalog name, if any, to be used for the insert.
-	 * @param catalogName the name of the catalog
+	 * @param catalogName catalog的名称
 	 * @return the instance of this SimpleJdbcInsert
 	 */
 	SimpleJdbcInsertOperations withCatalogName(String catalogName);

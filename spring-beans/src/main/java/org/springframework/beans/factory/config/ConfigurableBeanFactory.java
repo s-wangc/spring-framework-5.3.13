@@ -270,7 +270,7 @@ public interface ConfigurableBeanFactory extends HierarchicalBeanFactory, Single
 	 * Return the Scope implementation for the given scope name, if any.
 	 * <p>This will only return explicitly registered scopes.
 	 * Built-in scopes such as "singleton" and "prototype" won't be exposed.
-	 * @param scopeName the name of the scope
+	 * @param scopeName scope的名称
 	 * @return the registered Scope implementation, or {@code null} if none
 	 * @see #registerScope
 	 */
@@ -354,7 +354,7 @@ public interface ConfigurableBeanFactory extends HierarchicalBeanFactory, Single
 	/**
 	 * Explicitly control the current in-creation status of the specified bean.
 	 * For container-internal use only.
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @param inCreation whether the bean is currently in creation
 	 * @since 3.1
 	 */
@@ -362,7 +362,7 @@ public interface ConfigurableBeanFactory extends HierarchicalBeanFactory, Single
 
 	/**
 	 * Determine whether the specified bean is currently in creation.
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @return whether the bean is currently in creation
 	 * @since 2.5
 	 */
@@ -371,7 +371,7 @@ public interface ConfigurableBeanFactory extends HierarchicalBeanFactory, Single
 	/**
 	 * Register a dependent bean for the given bean,
 	 * to be destroyed before the given bean is destroyed.
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @param dependentBeanName the name of the dependent bean
 	 * @since 2.5
 	 */
@@ -379,7 +379,7 @@ public interface ConfigurableBeanFactory extends HierarchicalBeanFactory, Single
 
 	/**
 	 * Return the names of all beans which depend on the specified bean, if any.
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @return the array of dependent bean names, or an empty array if none
 	 * @since 2.5
 	 */
@@ -387,7 +387,7 @@ public interface ConfigurableBeanFactory extends HierarchicalBeanFactory, Single
 
 	/**
 	 * Return the names of all beans that the specified bean depends on, if any.
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @return the array of names of beans which the bean depends on,
 	 * or an empty array if none
 	 * @since 2.5

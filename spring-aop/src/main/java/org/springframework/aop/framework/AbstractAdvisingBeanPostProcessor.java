@@ -115,7 +115,7 @@ public abstract class AbstractAdvisingBeanPostProcessor extends ProxyProcessorSu
 	 * with the actual target class behind the existing proxy (as determined
 	 * by {@link AopUtils#getTargetClass(Object)}).
 	 * @param bean the bean instance
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @see #isEligible(Class)
 	 */
 	protected boolean isEligible(Object bean, String beanName) {

@@ -217,7 +217,7 @@ public class LiveBeansView implements LiveBeansViewMBean, ApplicationContextAwar
 	/**
 	 * Determine whether the specified bean is eligible for inclusion in the
 	 * LiveBeansView JSON snapshot.
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @param bd the corresponding bean definition
 	 * @param bf the containing bean factory
 	 * @return {@code true} if the bean is to be included; {@code false} otherwise

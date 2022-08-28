@@ -51,7 +51,7 @@ public interface SmartValidator extends Validator {
 	 * reporting the same validation errors as if the value would be bound to
 	 * the field on an instance of the target class.
 	 * @param targetType the target type
-	 * @param fieldName the name of the field
+	 * @param fieldName field的名称
 	 * @param value the candidate value
 	 * @param errors contextual state about the validation process
 	 * @param validationHints one or more hint objects to be passed to the validation engine

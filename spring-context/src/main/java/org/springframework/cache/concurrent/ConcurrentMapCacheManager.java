@@ -185,7 +185,7 @@ public class ConcurrentMapCacheManager implements CacheManager, BeanClassLoaderA
 
 	/**
 	 * Create a new ConcurrentMapCache instance for the specified cache name.
-	 * @param name the name of the cache
+	 * @param name cache的名称
 	 * @return the ConcurrentMapCache (or a decorator thereof)
 	 */
 	protected Cache createConcurrentMapCache(String name) {

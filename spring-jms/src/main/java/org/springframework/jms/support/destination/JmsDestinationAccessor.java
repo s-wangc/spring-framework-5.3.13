@@ -106,7 +106,7 @@ public abstract class JmsDestinationAccessor extends JmsAccessor {
 	 * Resolve the given destination name into a JMS {@link Destination},
 	 * via this accessor's {@link DestinationResolver}.
 	 * @param session the current JMS {@link Session}
-	 * @param destinationName the name of the destination
+	 * @param destinationName destination的名称
 	 * @return the located {@link Destination}
 	 * @throws javax.jms.JMSException if resolution failed
 	 * @see #setDestinationResolver

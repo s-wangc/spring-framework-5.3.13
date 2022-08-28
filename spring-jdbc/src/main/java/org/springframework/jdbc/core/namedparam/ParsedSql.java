@@ -59,7 +59,7 @@ public class ParsedSql {
 
 	/**
 	 * Add a named parameter parsed from this SQL statement.
-	 * @param parameterName the name of the parameter
+	 * @param parameterName parameter的名称
 	 * @param startIndex the start index in the original SQL String
 	 * @param endIndex the end index in the original SQL String
 	 */

@@ -306,7 +306,7 @@ public class JmsInvokerClientInterceptor implements MethodInterceptor, Initializ
 	 * Resolve the given queue name into a JMS {@link javax.jms.Queue},
 	 * via this accessor's {@link DestinationResolver}.
 	 * @param session the current JMS Session
-	 * @param queueName the name of the queue
+	 * @param queueName queue的名称
 	 * @return the located Queue
 	 * @throws JMSException if resolution failed
 	 * @see #setDestinationResolver

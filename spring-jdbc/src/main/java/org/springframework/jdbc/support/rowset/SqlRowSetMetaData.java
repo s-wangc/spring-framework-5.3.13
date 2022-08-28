@@ -137,7 +137,7 @@ public interface SqlRowSetMetaData {
 	 * Retrieve the name of the table that served as the source for the
 	 * specified column.
 	 * @param columnIndex the index of the column
-	 * @return the name of the table
+	 * @return table的名称
 	 * @see java.sql.ResultSetMetaData#getTableName(int)
 	 */
 	String getTableName(int columnIndex) throws InvalidResultSetAccessException;

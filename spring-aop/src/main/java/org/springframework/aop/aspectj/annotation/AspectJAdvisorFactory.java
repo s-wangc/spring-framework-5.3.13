@@ -75,7 +75,7 @@ public interface AspectJAdvisorFactory {
 	 * @param candidateAdviceMethod the candidate advice method
 	 * @param aspectInstanceFactory the aspect instance factory
 	 * @param declarationOrder the declaration order within the aspect
-	 * @param aspectName the name of the aspect
+	 * @param aspectName aspect的名称
 	 * @return {@code null} if the method is not an AspectJ advice method
 	 * or if it is a pointcut that will be used by other advice but will not
 	 * create a Spring advice in its own right
@@ -90,7 +90,7 @@ public interface AspectJAdvisorFactory {
 	 * @param expressionPointcut the AspectJ expression pointcut
 	 * @param aspectInstanceFactory the aspect instance factory
 	 * @param declarationOrder the declaration order within the aspect
-	 * @param aspectName the name of the aspect
+	 * @param aspectName aspect的名称
 	 * @return {@code null} if the method is not an AspectJ advice method
 	 * or if it is a pointcut that will be used by other advice but will not
 	 * create a Spring advice in its own right

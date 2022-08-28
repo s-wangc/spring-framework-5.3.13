@@ -60,7 +60,7 @@ public interface SqlRowSet extends Serializable {
 
 	/**
 	 * Map the given column label to its column index.
-	 * @param columnLabel the name of the column
+	 * @param columnLabel column的名称
 	 * @return the column index for the given column label
 	 * @see java.sql.ResultSet#findColumn(String)
 	 */

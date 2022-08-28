@@ -203,7 +203,7 @@ public class RequiredAnnotationBeanPostProcessor implements SmartInstantiationAw
 	/**
 	 * Build an exception message for the given list of invalid properties.
 	 * @param invalidProperties the list of names of invalid properties
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @return the exception message
 	 */
 	private String buildExceptionMessage(List<String> invalidProperties, String beanName) {

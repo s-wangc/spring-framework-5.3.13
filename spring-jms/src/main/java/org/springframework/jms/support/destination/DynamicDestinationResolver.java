@@ -39,7 +39,7 @@ public class DynamicDestinationResolver implements DestinationResolver {
 	/**
 	 * Resolve the specified destination name as a dynamic destination.
 	 * @param session the current JMS Session
-	 * @param destinationName the name of the destination
+	 * @param destinationName destination的名称
 	 * @param pubSubDomain {@code true} if the domain is pub-sub, {@code false} if P2P
 	 * @return the JMS destination (either a topic or a queue)
 	 * @throws javax.jms.JMSException if resolution failed

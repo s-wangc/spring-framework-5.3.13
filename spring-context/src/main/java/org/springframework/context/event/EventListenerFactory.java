@@ -38,7 +38,7 @@ public interface EventListenerFactory {
 
 	/**
 	 * Create an {@link ApplicationListener} for the specified method.
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @param type the target type of the instance
 	 * @param method the {@link EventListener} annotated method
 	 * @return an application listener, suitable to invoke the specified method

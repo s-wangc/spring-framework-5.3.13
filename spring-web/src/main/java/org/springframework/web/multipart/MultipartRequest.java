@@ -77,7 +77,7 @@ public interface MultipartRequest {
 
 	/**
 	 * Determine the content type of the specified request part.
-	 * @param paramOrFileName the name of the part
+	 * @param paramOrFileName part的名称
 	 * @return the associated content type, or {@code null} if not defined
 	 * @since 3.1
 	 */

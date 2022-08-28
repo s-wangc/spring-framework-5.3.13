@@ -90,7 +90,7 @@ public abstract class SqlParameterSourceUtils {
 	/**
 	 * Create a wrapped value if parameter has type information, plain object if not.
 	 * @param source the source of parameter values and type information
-	 * @param parameterName the name of the parameter
+	 * @param parameterName parameter的名称
 	 * @return the value object
 	 * @see SqlParameterValue
 	 */

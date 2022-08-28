@@ -83,7 +83,7 @@ class TypeConverterDelegate {
 
 	/**
 	 * Convert the value to the required type for the specified property.
-	 * @param propertyName name of the property
+	 * @param propertyName property的名称
 	 * @param oldValue the previous value, if available (may be {@code null})
 	 * @param newValue the proposed new value
 	 * @param requiredType the type we must convert to
@@ -101,7 +101,7 @@ class TypeConverterDelegate {
 	/**
 	 * Convert the value to the required type (if necessary from a String),
 	 * for the specified property.
-	 * @param propertyName name of the property
+	 * @param propertyName property的名称
 	 * @param oldValue the previous value, if available (may be {@code null})
 	 * @param newValue the proposed new value
 	 * @param requiredType the type we must convert to

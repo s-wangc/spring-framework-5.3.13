@@ -234,7 +234,7 @@ public abstract class ClassUtils {
 	 * for primitives (e.g. "int") and array class names (e.g. "String[]").
 	 * Furthermore, it is also capable of resolving nested class names in Java source
 	 * style (e.g. "java.lang.Thread.State" instead of "java.lang.Thread$State").
-	 * @param name the name of the Class
+	 * @param name Class的名称
 	 * @param classLoader the class loader to use
 	 * (may be {@code null}, which indicates the default class loader)
 	 * @return a class instance for the supplied name
@@ -305,7 +305,7 @@ public abstract class ClassUtils {
 	 * <p>This is effectively equivalent to the {@code forName}
 	 * method with the same arguments, with the only difference being
 	 * the exceptions thrown in case of class loading failure.
-	 * @param className the name of the Class
+	 * @param className Class的名称
 	 * @param classLoader the class loader to use
 	 * (may be {@code null}, which indicates the default class loader)
 	 * @return a class instance for the supplied name
@@ -908,7 +908,7 @@ public abstract class ClassUtils {
 	 * the class name, but component type class name + "[]" for arrays,
 	 * and an appended list of implemented interfaces for JDK proxies.
 	 * @param value the value to introspect
-	 * @return the qualified name of the class
+	 * @return the qualified class的名称
 	 */
 	@Nullable
 	public static String getDescriptiveType(@Nullable Object value) {
@@ -1022,7 +1022,7 @@ public abstract class ClassUtils {
 	 * Return the qualified name of the given class: usually simply
 	 * the class name, but component type class name + "[]" for arrays.
 	 * @param clazz the class
-	 * @return the qualified name of the class
+	 * @return the qualified class的名称
 	 */
 	public static String getQualifiedName(Class<?> clazz) {
 		Assert.notNull(clazz, "Class must not be null");
@@ -1033,7 +1033,7 @@ public abstract class ClassUtils {
 	 * Return the qualified name of the given method, consisting of
 	 * fully qualified interface/class name + "." + method name.
 	 * @param method the method
-	 * @return the qualified name of the method
+	 * @return the qualified method的名称
 	 */
 	public static String getQualifiedMethodName(Method method) {
 		return getQualifiedMethodName(method, null);
@@ -1045,7 +1045,7 @@ public abstract class ClassUtils {
 	 * @param method the method
 	 * @param clazz the clazz that the method is being invoked on
 	 * (may be {@code null} to indicate the method's declaring class)
-	 * @return the qualified name of the method
+	 * @return the qualified method的名称
 	 * @since 4.3.4
 	 */
 	public static String getQualifiedMethodName(Method method, @Nullable Class<?> clazz) {
@@ -1107,7 +1107,7 @@ public abstract class ClassUtils {
 	 * Determine whether the given class has a public method with the given signature.
 	 * <p>Essentially translates {@code NoSuchMethodException} to "false".
 	 * @param clazz the clazz to analyze
-	 * @param methodName the name of the method
+	 * @param methodName method的名称
 	 * @param paramTypes the parameter types of the method
 	 * @return whether the class has a corresponding method
 	 * @see Class#getMethod
@@ -1123,7 +1123,7 @@ public abstract class ClassUtils {
 	 * unique candidate, i.e. a single public method with the specified name.
 	 * <p>Essentially translates {@code NoSuchMethodException} to {@code IllegalStateException}.
 	 * @param clazz the clazz to analyze
-	 * @param methodName the name of the method
+	 * @param methodName method的名称
 	 * @param paramTypes the parameter types of the method
 	 * (may be {@code null} to indicate any signature)
 	 * @return the method (never {@code null})
@@ -1162,7 +1162,7 @@ public abstract class ClassUtils {
 	 * unique candidate, i.e. a single public method with the specified name.
 	 * <p>Essentially translates {@code NoSuchMethodException} to {@code null}.
 	 * @param clazz the clazz to analyze
-	 * @param methodName the name of the method
+	 * @param methodName method的名称
 	 * @param paramTypes the parameter types of the method
 	 * (may be {@code null} to indicate any signature)
 	 * @return the method, or {@code null} if not found
@@ -1188,7 +1188,7 @@ public abstract class ClassUtils {
 	 * Return the number of methods with a given name (with any argument types),
 	 * for the given class and/or its superclasses. Includes non-public methods.
 	 * @param clazz	the clazz to check
-	 * @param methodName the name of the method
+	 * @param methodName method的名称
 	 * @return the number of methods with the given name
 	 */
 	public static int getMethodCountForName(Class<?> clazz, String methodName) {
@@ -1216,7 +1216,7 @@ public abstract class ClassUtils {
 	 * methods with the supplied name (with any argument types)?
 	 * Includes non-public methods.
 	 * @param clazz	the clazz to check
-	 * @param methodName the name of the method
+	 * @param methodName method的名称
 	 * @return whether there is at least one method with the given name
 	 */
 	public static boolean hasAtLeastOneMethodWithName(Class<?> clazz, String methodName) {

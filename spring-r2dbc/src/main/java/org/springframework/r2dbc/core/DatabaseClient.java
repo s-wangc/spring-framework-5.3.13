@@ -172,14 +172,14 @@ public interface DatabaseClient extends ConnectionAccessor {
 
 		/**
 		 * Bind a non-{@code null} value to a parameter identified by its {@code name}.
-		 * @param name the name of the parameter
+		 * @param name parameter的名称
 		 * @param value the value to bind
 		 */
 		GenericExecuteSpec bind(String name, Object value);
 
 		/**
 		 * Bind a {@code null} value to a parameter identified by its {@code name}.
-		 * @param name the name of the parameter
+		 * @param name parameter的名称
 		 * @param type the parameter type
 		 */
 		GenericExecuteSpec bindNull(String name, Class<?> type);

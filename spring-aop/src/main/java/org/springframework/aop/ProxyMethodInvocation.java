@@ -72,14 +72,14 @@ public interface ProxyMethodInvocation extends MethodInvocation {
 	 * Add the specified user attribute with the given value to this invocation.
 	 * <p>Such attributes are not used within the AOP framework itself. They are
 	 * just kept as part of the invocation object, for use in special interceptors.
-	 * @param key the name of the attribute
+	 * @param key attribute的名称
 	 * @param value the value of the attribute, or {@code null} to reset it
 	 */
 	void setUserAttribute(String key, @Nullable Object value);
 
 	/**
 	 * Return the value of the specified user attribute.
-	 * @param key the name of the attribute
+	 * @param key attribute的名称
 	 * @return the value of the attribute, or {@code null} if not set
 	 * @see #setUserAttribute
 	 */

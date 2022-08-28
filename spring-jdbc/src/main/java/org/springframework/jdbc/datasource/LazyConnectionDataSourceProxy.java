@@ -141,7 +141,7 @@ public class LazyConnectionDataSourceProxy extends DelegatingDataSource {
 	/**
 	 * Set the default transaction isolation level by the name of the corresponding
 	 * constant in {@link java.sql.Connection}, e.g. "TRANSACTION_SERIALIZABLE".
-	 * @param constantName name of the constant
+	 * @param constantName constant的名称
 	 * @see #setDefaultTransactionIsolation
 	 * @see java.sql.Connection#TRANSACTION_READ_UNCOMMITTED
 	 * @see java.sql.Connection#TRANSACTION_READ_COMMITTED

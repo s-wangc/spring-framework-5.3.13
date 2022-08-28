@@ -209,7 +209,7 @@ public class ModelAndViewContainer {
 	/**
 	 * Programmatically register an attribute for which data binding should not occur,
 	 * not even for a subsequent {@code @ModelAttribute} declaration.
-	 * @param attributeName the name of the attribute
+	 * @param attributeName attribute的名称
 	 * @since 4.3
 	 */
 	public void setBindingDisabled(String attributeName) {
@@ -229,7 +229,7 @@ public class ModelAndViewContainer {
 	 * corresponding to an {@code @ModelAttribute(binding=true/false)} declaration.
 	 * <p>Note: While this flag will be taken into account by {@link #isBindingDisabled},
 	 * a hard {@link #setBindingDisabled} declaration will always override it.
-	 * @param attributeName the name of the attribute
+	 * @param attributeName attribute的名称
 	 * @since 4.3.13
 	 */
 	public void setBinding(String attributeName, boolean enabled) {

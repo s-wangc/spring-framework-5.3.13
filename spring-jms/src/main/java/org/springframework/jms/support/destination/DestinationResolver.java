@@ -48,7 +48,7 @@ public interface DestinationResolver {
 	 * or as dynamic destination.
 	 * @param session the current JMS Session
 	 * (may be {@code null} if the resolver implementation is able to work without it)
-	 * @param destinationName the name of the destination
+	 * @param destinationName destination的名称
 	 * @param pubSubDomain {@code true} if the domain is pub-sub, {@code false} if P2P
 	 * @return the JMS destination (either a topic or a queue)
 	 * @throws javax.jms.JMSException if the JMS Session failed to resolve the destination

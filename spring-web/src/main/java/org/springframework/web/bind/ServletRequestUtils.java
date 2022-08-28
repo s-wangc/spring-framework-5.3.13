@@ -50,7 +50,7 @@ public abstract class ServletRequestUtils {
 	 * Get an Integer parameter, or {@code null} if not present.
 	 * Throws an exception if it the parameter value isn't a number.
 	 * @param request current HTTP request
-	 * @param name the name of the parameter
+	 * @param name parameter的名称
 	 * @return the Integer value, or {@code null} if not present
 	 * @throws ServletRequestBindingException a subclass of ServletException,
 	 * so it doesn't need to be caught
@@ -69,7 +69,7 @@ public abstract class ServletRequestUtils {
 	 * Get an int parameter, with a fallback value. Never throws an exception.
 	 * Can pass a distinguished value as default to enable checks of whether it was supplied.
 	 * @param request current HTTP request
-	 * @param name the name of the parameter
+	 * @param name parameter的名称
 	 * @param defaultVal the default value to use as fallback
 	 */
 	public static int getIntParameter(ServletRequest request, String name, int defaultVal) {
@@ -101,7 +101,7 @@ public abstract class ServletRequestUtils {
 	/**
 	 * Get an int parameter, throwing an exception if it isn't found or isn't a number.
 	 * @param request current HTTP request
-	 * @param name the name of the parameter
+	 * @param name parameter的名称
 	 * @throws ServletRequestBindingException a subclass of ServletException,
 	 * so it doesn't need to be caught
 	 */
@@ -129,7 +129,7 @@ public abstract class ServletRequestUtils {
 	 * Get a Long parameter, or {@code null} if not present.
 	 * Throws an exception if it the parameter value isn't a number.
 	 * @param request current HTTP request
-	 * @param name the name of the parameter
+	 * @param name parameter的名称
 	 * @return the Long value, or {@code null} if not present
 	 * @throws ServletRequestBindingException a subclass of ServletException,
 	 * so it doesn't need to be caught
@@ -148,7 +148,7 @@ public abstract class ServletRequestUtils {
 	 * Get a long parameter, with a fallback value. Never throws an exception.
 	 * Can pass a distinguished value as default to enable checks of whether it was supplied.
 	 * @param request current HTTP request
-	 * @param name the name of the parameter
+	 * @param name parameter的名称
 	 * @param defaultVal the default value to use as fallback
 	 */
 	public static long getLongParameter(ServletRequest request, String name, long defaultVal) {
@@ -180,7 +180,7 @@ public abstract class ServletRequestUtils {
 	/**
 	 * Get a long parameter, throwing an exception if it isn't found or isn't a number.
 	 * @param request current HTTP request
-	 * @param name the name of the parameter
+	 * @param name parameter的名称
 	 * @throws ServletRequestBindingException a subclass of ServletException,
 	 * so it doesn't need to be caught
 	 */
@@ -208,7 +208,7 @@ public abstract class ServletRequestUtils {
 	 * Get a Float parameter, or {@code null} if not present.
 	 * Throws an exception if it the parameter value isn't a number.
 	 * @param request current HTTP request
-	 * @param name the name of the parameter
+	 * @param name parameter的名称
 	 * @return the Float value, or {@code null} if not present
 	 * @throws ServletRequestBindingException a subclass of ServletException,
 	 * so it doesn't need to be caught
@@ -227,7 +227,7 @@ public abstract class ServletRequestUtils {
 	 * Get a float parameter, with a fallback value. Never throws an exception.
 	 * Can pass a distinguished value as default to enable checks of whether it was supplied.
 	 * @param request current HTTP request
-	 * @param name the name of the parameter
+	 * @param name parameter的名称
 	 * @param defaultVal the default value to use as fallback
 	 */
 	public static float getFloatParameter(ServletRequest request, String name, float defaultVal) {
@@ -259,7 +259,7 @@ public abstract class ServletRequestUtils {
 	/**
 	 * Get a float parameter, throwing an exception if it isn't found or isn't a number.
 	 * @param request current HTTP request
-	 * @param name the name of the parameter
+	 * @param name parameter的名称
 	 * @throws ServletRequestBindingException a subclass of ServletException,
 	 * so it doesn't need to be caught
 	 */
@@ -287,7 +287,7 @@ public abstract class ServletRequestUtils {
 	 * Get a Double parameter, or {@code null} if not present.
 	 * Throws an exception if it the parameter value isn't a number.
 	 * @param request current HTTP request
-	 * @param name the name of the parameter
+	 * @param name parameter的名称
 	 * @return the Double value, or {@code null} if not present
 	 * @throws ServletRequestBindingException a subclass of ServletException,
 	 * so it doesn't need to be caught
@@ -306,7 +306,7 @@ public abstract class ServletRequestUtils {
 	 * Get a double parameter, with a fallback value. Never throws an exception.
 	 * Can pass a distinguished value as default to enable checks of whether it was supplied.
 	 * @param request current HTTP request
-	 * @param name the name of the parameter
+	 * @param name parameter的名称
 	 * @param defaultVal the default value to use as fallback
 	 */
 	public static double getDoubleParameter(ServletRequest request, String name, double defaultVal) {
@@ -338,7 +338,7 @@ public abstract class ServletRequestUtils {
 	/**
 	 * Get a double parameter, throwing an exception if it isn't found or isn't a number.
 	 * @param request current HTTP request
-	 * @param name the name of the parameter
+	 * @param name parameter的名称
 	 * @throws ServletRequestBindingException a subclass of ServletException,
 	 * so it doesn't need to be caught
 	 */
@@ -368,7 +368,7 @@ public abstract class ServletRequestUtils {
 	 * <p>Accepts "true", "on", "yes" (any case) and "1" as values for true;
 	 * treats every other non-empty value as false (i.e. parses leniently).
 	 * @param request current HTTP request
-	 * @param name the name of the parameter
+	 * @param name parameter的名称
 	 * @return the Boolean value, or {@code null} if not present
 	 * @throws ServletRequestBindingException a subclass of ServletException,
 	 * so it doesn't need to be caught
@@ -389,7 +389,7 @@ public abstract class ServletRequestUtils {
 	 * <p>Accepts "true", "on", "yes" (any case) and "1" as values for true;
 	 * treats every other non-empty value as false (i.e. parses leniently).
 	 * @param request current HTTP request
-	 * @param name the name of the parameter
+	 * @param name parameter的名称
 	 * @param defaultVal the default value to use as fallback
 	 */
 	public static boolean getBooleanParameter(ServletRequest request, String name, boolean defaultVal) {
@@ -426,7 +426,7 @@ public abstract class ServletRequestUtils {
 	 * <p>Accepts "true", "on", "yes" (any case) and "1" as values for true;
 	 * treats every other non-empty value as false (i.e. parses leniently).
 	 * @param request current HTTP request
-	 * @param name the name of the parameter
+	 * @param name parameter的名称
 	 * @throws ServletRequestBindingException a subclass of ServletException,
 	 * so it doesn't need to be caught
 	 */
@@ -442,7 +442,7 @@ public abstract class ServletRequestUtils {
 	 * <p>Accepts "true", "on", "yes" (any case) and "1" as values for true;
 	 * treats every other non-empty value as false (i.e. parses leniently).
 	 * @param request current HTTP request
-	 * @param name the name of the parameter
+	 * @param name parameter的名称
 	 * @throws ServletRequestBindingException a subclass of ServletException,
 	 * so it doesn't need to be caught
 	 */
@@ -456,7 +456,7 @@ public abstract class ServletRequestUtils {
 	/**
 	 * Get a String parameter, or {@code null} if not present.
 	 * @param request current HTTP request
-	 * @param name the name of the parameter
+	 * @param name parameter的名称
 	 * @return the String value, or {@code null} if not present
 	 * @throws ServletRequestBindingException a subclass of ServletException,
 	 * so it doesn't need to be caught
@@ -475,7 +475,7 @@ public abstract class ServletRequestUtils {
 	 * Get a String parameter, with a fallback value. Never throws an exception.
 	 * Can pass a distinguished value to default to enable checks of whether it was supplied.
 	 * @param request current HTTP request
-	 * @param name the name of the parameter
+	 * @param name parameter的名称
 	 * @param defaultVal the default value to use as fallback
 	 */
 	public static String getStringParameter(ServletRequest request, String name, String defaultVal) {
@@ -500,7 +500,7 @@ public abstract class ServletRequestUtils {
 	/**
 	 * Get a String parameter, throwing an exception if it isn't found.
 	 * @param request current HTTP request
-	 * @param name the name of the parameter
+	 * @param name parameter的名称
 	 * @throws ServletRequestBindingException a subclass of ServletException,
 	 * so it doesn't need to be caught
 	 */
@@ -513,7 +513,7 @@ public abstract class ServletRequestUtils {
 	/**
 	 * Get an array of String parameters, throwing an exception if not found.
 	 * @param request current HTTP request
-	 * @param name the name of the parameter
+	 * @param name parameter的名称
 	 * @throws ServletRequestBindingException a subclass of ServletException,
 	 * so it doesn't need to be caught
 	 */

@@ -38,7 +38,7 @@ public interface MessageCodesResolver {
 	 * Build message codes for the given error code and object name.
 	 * Used for building the codes list of an ObjectError.
 	 * @param errorCode the error code used for rejecting the object
-	 * @param objectName the name of the object
+	 * @param objectName object的名称
 	 * @return the message codes to use
 	 */
 	String[] resolveMessageCodes(String errorCode, String objectName);
@@ -47,7 +47,7 @@ public interface MessageCodesResolver {
 	 * Build message codes for the given error code and field specification.
 	 * Used for building the codes list of an FieldError.
 	 * @param errorCode the error code used for rejecting the value
-	 * @param objectName the name of the object
+	 * @param objectName object的名称
 	 * @param field the field name
 	 * @param fieldType the field type (may be {@code null} if not determinable)
 	 * @return the message codes to use

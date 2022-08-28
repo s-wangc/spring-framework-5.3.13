@@ -61,7 +61,7 @@ public interface RequestAttributes {
 
 	/**
 	 * Return the value for the scoped attribute of the given name, if any.
-	 * @param name the name of the attribute
+	 * @param name attribute的名称
 	 * @param scope the scope identifier
 	 * @return the current attribute value, or {@code null} if not found
 	 */
@@ -71,7 +71,7 @@ public interface RequestAttributes {
 	/**
 	 * Set the value for the scoped attribute of the given name,
 	 * replacing an existing value (if any).
-	 * @param name the name of the attribute
+	 * @param name attribute的名称
 	 * @param scope the scope identifier
 	 * @param value the value for the attribute
 	 */
@@ -83,7 +83,7 @@ public interface RequestAttributes {
 	 * callback for the specified attribute, if any. It does, however, <i>not</i>
 	 * need to <i>execute</i> a registered destruction callback in this case,
 	 * since the object will be destroyed by the caller (if appropriate).
-	 * @param name the name of the attribute
+	 * @param name attribute的名称
 	 * @param scope the scope identifier
 	 */
 	void removeAttribute(String name, int scope);

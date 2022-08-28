@@ -54,7 +54,7 @@ public abstract class AbstractSpringPreparerFactory implements PreparerFactory {
 	/**
 	 * Obtain a preparer instance for the given preparer name,
 	 * based on the given Spring WebApplicationContext.
-	 * @param name the name of the preparer
+	 * @param name preparer的名称
 	 * @param context the current Spring WebApplicationContext
 	 * @return the preparer instance
 	 * @throws TilesException in case of failure

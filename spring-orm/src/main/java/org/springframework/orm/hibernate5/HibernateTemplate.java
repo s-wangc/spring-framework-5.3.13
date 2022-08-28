@@ -1109,7 +1109,7 @@ public class HibernateTemplate implements HibernateOperations, InitializingBean 
 	/**
 	 * Apply the given name parameter to the given Query object.
 	 * @param queryObject the Query object
-	 * @param paramName the name of the parameter
+	 * @param paramName parameter的名称
 	 * @param value the value of the parameter
 	 * @throws HibernateException if thrown by the Query object
 	 */

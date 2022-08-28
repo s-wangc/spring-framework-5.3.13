@@ -36,7 +36,7 @@ public class NamedBeanHolder<T> implements NamedBean {
 
 	/**
 	 * Create a new holder for the given bean name plus instance.
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @param beanInstance the corresponding bean instance
 	 */
 	public NamedBeanHolder(String beanName, T beanInstance) {

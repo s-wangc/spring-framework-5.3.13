@@ -94,7 +94,7 @@ public class NameMatchTransactionAttributeSource
 	 * Add an attribute for a transactional method.
 	 * <p>Method names can be exact matches, or of the pattern "xxx*",
 	 * "*xxx", or "*xxx*" for matching multiple methods.
-	 * @param methodName the name of the method
+	 * @param methodName method的名称
 	 * @param attr attribute associated with the method
 	 */
 	public void addTransactionalMethod(String methodName, TransactionAttribute attr) {

@@ -60,7 +60,7 @@ public class MapSqlParameterSource extends AbstractSqlParameterSource {
 	/**
 	 * Create a new MapSqlParameterSource, with one value
 	 * comprised of the supplied arguments.
-	 * @param paramName the name of the parameter
+	 * @param paramName parameter的名称
 	 * @param value the value of the parameter
 	 * @see #addValue(String, Object)
 	 */
@@ -79,7 +79,7 @@ public class MapSqlParameterSource extends AbstractSqlParameterSource {
 
 	/**
 	 * Add a parameter to this parameter source.
-	 * @param paramName the name of the parameter
+	 * @param paramName parameter的名称
 	 * @param value the value of the parameter
 	 * @return a reference to this parameter source,
 	 * so it's possible to chain several calls together
@@ -95,7 +95,7 @@ public class MapSqlParameterSource extends AbstractSqlParameterSource {
 
 	/**
 	 * Add a parameter to this parameter source.
-	 * @param paramName the name of the parameter
+	 * @param paramName parameter的名称
 	 * @param value the value of the parameter
 	 * @param sqlType the SQL type of the parameter
 	 * @return a reference to this parameter source,
@@ -110,7 +110,7 @@ public class MapSqlParameterSource extends AbstractSqlParameterSource {
 
 	/**
 	 * Add a parameter to this parameter source.
-	 * @param paramName the name of the parameter
+	 * @param paramName parameter的名称
 	 * @param value the value of the parameter
 	 * @param sqlType the SQL type of the parameter
 	 * @param typeName the type name of the parameter

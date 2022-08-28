@@ -101,7 +101,7 @@ public interface ConfigurableListableBeanFactory
 	 * be castable to a more specific implementation type, if necessary.
 	 * <p><b>NOTE:</b> This method does <i>not</i> consider ancestor factories.
 	 * It is only meant for accessing local bean definitions of this factory.
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @return the registered BeanDefinition
 	 * @throws NoSuchBeanDefinitionException if there is no bean with the given name
 	 * defined in this factory

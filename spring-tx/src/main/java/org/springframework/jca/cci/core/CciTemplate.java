@@ -318,7 +318,7 @@ public class CciTemplate implements CciOperations {
 
 	/**
 	 * Create an indexed Record through the ConnectionFactory's RecordFactory.
-	 * @param name the name of the record
+	 * @param name record的名称
 	 * @return the Record
 	 * @throws DataAccessException if creation of the Record failed
 	 * @see #getRecordFactory(javax.resource.cci.ConnectionFactory)

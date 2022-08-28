@@ -36,7 +36,7 @@ public interface DestructionAwareBeanPostProcessor extends BeanPostProcessor {
 	 * callback will only apply to beans which the container fully manages the
 	 * lifecycle for. This is usually the case for singletons and scoped beans.
 	 * @param bean the bean instance to be destroyed
-	 * @param beanName the name of the bean
+	 * @param beanName bean的名称
 	 * @throws org.springframework.beans.BeansException 如果出现错误
 	 * @see org.springframework.beans.factory.DisposableBean#destroy()
 	 * @see org.springframework.beans.factory.support.AbstractBeanDefinition#setDestroyMethodName(String)

@@ -193,7 +193,7 @@ public final class SpelCompiler implements Opcodes {
 	 * because they anchor compiled classes in memory and prevent GC. If you have expressions
 	 * continually recompiling over time then by replacing the classloader periodically
 	 * at least some of the older variants can be garbage collected.
-	 * @param name the name of the class
+	 * @param name class的名称
 	 * @param bytes the bytecode for the class
 	 * @return the Class object for the compiled expression
 	 */

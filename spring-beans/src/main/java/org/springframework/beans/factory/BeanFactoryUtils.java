@@ -63,7 +63,7 @@ public abstract class BeanFactoryUtils {
 	/**
 	 * Return whether the given name is a factory dereference
 	 * (beginning with the factory dereference prefix).
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @return whether the given name is a factory dereference
 	 * @see BeanFactory#FACTORY_BEAN_PREFIX
 	 */
@@ -74,7 +74,7 @@ public abstract class BeanFactoryUtils {
 	/**
 	 * Return the actual bean name, stripping out the factory dereference
 	 * prefix (if any, also stripping repeated factory prefixes if found).
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @return the transformed name
 	 * @see BeanFactory#FACTORY_BEAN_PREFIX
 	 */
@@ -95,7 +95,7 @@ public abstract class BeanFactoryUtils {
 	/**
 	 * Return whether the given name is a bean name which has been generated
 	 * by the default naming strategy (containing a "#..." part).
-	 * @param name the name of the bean
+	 * @param name bean的名称
 	 * @return whether the given name is a generated bean name
 	 * @see #GENERATED_BEAN_NAME_SEPARATOR
 	 * @see org.springframework.beans.factory.support.BeanDefinitionReaderUtils#generateBeanName
