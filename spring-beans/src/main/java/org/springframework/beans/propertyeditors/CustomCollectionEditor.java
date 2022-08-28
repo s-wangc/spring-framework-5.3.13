@@ -175,7 +175,7 @@ public class CustomCollectionEditor extends PropertyEditorSupport {
 	/**
 	 * Return whether to always create a new Collection,
 	 * even if the type of the passed-in Collection already matches.
-	 * <p>Default is "false"; can be overridden to enforce creation of a
+	 * <p>默认值是"false"; can be overridden to enforce creation of a
 	 * new Collection, for example to convert elements in any case.
 	 * @see #convertElement
 	 */

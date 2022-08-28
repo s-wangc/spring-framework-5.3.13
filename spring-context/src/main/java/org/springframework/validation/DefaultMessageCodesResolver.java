@@ -107,7 +107,7 @@ public class DefaultMessageCodesResolver implements MessageCodesResolver, Serial
 
 	/**
 	 * Specify a prefix to be applied to any code built by this resolver.
-	 * <p>Default is none. Specify, for example, "validation." to get
+	 * <p>默认值是none. Specify, for example, "validation." to get
 	 * error codes like "validation.typeMismatch.name".
 	 */
 	public void setPrefix(@Nullable String prefix) {
@@ -124,7 +124,7 @@ public class DefaultMessageCodesResolver implements MessageCodesResolver, Serial
 
 	/**
 	 * Specify the format for message codes built by this resolver.
-	 * <p>The default is {@link Format#PREFIX_ERROR_CODE}.
+	 * <p>默认值是{@link Format#PREFIX_ERROR_CODE}.
 	 * @since 3.2
 	 * @see Format
 	 */

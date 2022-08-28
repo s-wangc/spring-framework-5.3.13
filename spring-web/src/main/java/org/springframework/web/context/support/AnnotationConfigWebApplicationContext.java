@@ -100,7 +100,7 @@ public class AnnotationConfigWebApplicationContext extends AbstractRefreshableWe
 	/**
 	 * Set a custom {@link BeanNameGenerator} for use with {@link AnnotatedBeanDefinitionReader}
 	 * and/or {@link ClassPathBeanDefinitionScanner}.
-	 * <p>Default is {@link org.springframework.context.annotation.AnnotationBeanNameGenerator}.
+	 * <p>默认值是{@link org.springframework.context.annotation.AnnotationBeanNameGenerator}.
 	 * @see AnnotatedBeanDefinitionReader#setBeanNameGenerator
 	 * @see ClassPathBeanDefinitionScanner#setBeanNameGenerator
 	 */

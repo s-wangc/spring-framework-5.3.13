@@ -92,7 +92,7 @@ public abstract class JmsAccessor implements InitializingBean {
 
 	/**
 	 * Set the transaction mode that is used when creating a JMS {@link Session}.
-	 * Default is "false".
+	 * 默认值是"false".
 	 * <p>Note that within a JTA transaction, the parameters passed to
 	 * {@code create(Queue/Topic)Session(boolean transacted, int acknowledgeMode)}
 	 * method are not taken into account. Depending on the Java EE transaction context,
@@ -139,7 +139,7 @@ public abstract class JmsAccessor implements InitializingBean {
 	/**
 	 * Set the JMS acknowledgement mode that is used when creating a JMS
 	 * {@link Session} to send a message.
-	 * <p>Default is {@link Session#AUTO_ACKNOWLEDGE}.
+	 * <p>默认值是{@link Session#AUTO_ACKNOWLEDGE}.
 	 * <p>Vendor-specific extensions to the acknowledgment mode can be set here as well.
 	 * <p>Note that inside an EJB, the parameters to the
 	 * {@code create(Queue/Topic)Session(boolean transacted, int acknowledgeMode)} method

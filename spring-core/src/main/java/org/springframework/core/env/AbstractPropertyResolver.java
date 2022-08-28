@@ -127,7 +127,7 @@ public abstract class AbstractPropertyResolver implements ConfigurablePropertyRe
 	 * resolution, i.e. that an exception will be thrown. A {@code true} value indicates
 	 * that unresolvable nested placeholders should be passed through in their unresolved
 	 * ${...} form.
-	 * <p>The default is {@code false}.
+	 * <p>默认值是{@code false}.
 	 * @since 3.2
 	 */
 	@Override

@@ -73,7 +73,7 @@ import org.springframework.web.util.TagUtils;
  * <td>false</td>
  * <td>true</td>
  * <td>Set JavaScript escaping for this tag, as a boolean value.
- * Default is false.</td>
+ * 默认值是false.</td>
  * </tr>
  * <tr>
  * <td>scope</td>
@@ -147,7 +147,7 @@ public class EvalTag extends HtmlEscapingAwareTag {
 
 	/**
 	 * Set JavaScript escaping for this tag, as boolean value.
-	 * Default is "false".
+	 * 默认值是"false".
 	 */
 	public void setJavaScriptEscape(boolean javaScriptEscape) throws JspException {
 		this.javaScriptEscape = javaScriptEscape;

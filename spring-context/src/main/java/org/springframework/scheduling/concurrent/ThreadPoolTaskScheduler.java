@@ -85,7 +85,7 @@ public class ThreadPoolTaskScheduler extends ExecutorConfigurationSupport
 
 	/**
 	 * Set the ScheduledExecutorService's pool size.
-	 * Default is 1.
+	 * 默认值是1.
 	 * <p><b>This setting can be modified at runtime, for example through JMX.</b>
 	 */
 	public void setPoolSize(int poolSize) {
@@ -98,7 +98,7 @@ public class ThreadPoolTaskScheduler extends ExecutorConfigurationSupport
 
 	/**
 	 * Set the remove-on-cancel mode on {@link ScheduledThreadPoolExecutor}.
-	 * <p>Default is {@code false}. If set to {@code true}, the target executor will be
+	 * <p>默认值是{@code false}. If set to {@code true}, the target executor will be
 	 * switched into remove-on-cancel mode (if possible).
 	 * <p><b>This setting can be modified at runtime, for example through JMX.</b>
 	 * @see ScheduledThreadPoolExecutor#setRemoveOnCancelPolicy
@@ -112,7 +112,7 @@ public class ThreadPoolTaskScheduler extends ExecutorConfigurationSupport
 
 	/**
 	 * Set whether to continue existing periodic tasks even when this executor has been shutdown.
-	 * <p>Default is {@code false}. If set to {@code true}, the target executor will be
+	 * <p>默认值是{@code false}. If set to {@code true}, the target executor will be
 	 * switched into continuing periodic tasks (if possible).
 	 * <p><b>This setting can be modified at runtime, for example through JMX.</b>
 	 * @since 5.3.9
@@ -127,7 +127,7 @@ public class ThreadPoolTaskScheduler extends ExecutorConfigurationSupport
 
 	/**
 	 * Set whether to execute existing delayed tasks even when this executor has been shutdown.
-	 * <p>Default is {@code true}. If set to {@code false}, the target executor will be
+	 * <p>默认值是{@code true}. If set to {@code false}, the target executor will be
 	 * switched into dropping remaining tasks (if possible).
 	 * <p><b>This setting can be modified at runtime, for example through JMX.</b>
 	 * @since 5.3.9

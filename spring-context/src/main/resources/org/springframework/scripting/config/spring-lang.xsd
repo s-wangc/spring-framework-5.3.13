@@ -127,7 +127,7 @@
 	The scope of this scripted bean: typically "singleton" (one shared instance,
 	which will be returned by all calls to getBean with the given id), or
 	"prototype" (independent instance resulting from each call to getBean).
-	Default is "singleton".
+	默认值是"singleton".
 
 	Singletons are most commonly used, and are ideal for multi-threaded
 	service objects. Further scopes, such as "request" or "session", might

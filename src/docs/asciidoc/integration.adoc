@@ -2900,7 +2900,7 @@ The following table describes the available configuration options for the JCA va
   a simple number indicating the maximum number (for example `5`) or a range indicating the
   lower as well as the upper limit (for example, `3-5`). Note that a specified minimum is only a
   hint and is typically ignored at runtime when you use a JCA listener container.
-  The default is 1.
+  默认值是1.
 
 | `prefetch`
 | The maximum number of messages to load into a single session. Note that raising this

@@ -208,7 +208,7 @@ public class FreeMarkerConfigurationFactory {
 
 	/**
 	 * Set the Spring ResourceLoader to use for loading FreeMarker template files.
-	 * The default is DefaultResourceLoader. Will get overridden by the
+	 * 默认值是DefaultResourceLoader. Will get overridden by the
 	 * ApplicationContext if running in a context.
 	 * @see org.springframework.core.io.DefaultResourceLoader
 	 */
@@ -229,7 +229,7 @@ public class FreeMarkerConfigurationFactory {
 	 * <p>If this is enabled, FreeMarkerConfigurationFactory will try to resolve
 	 * the specified "templateLoaderPath" as file system resource (which will work
 	 * for expanded class path resources and ServletContext resources too).
-	 * <p>Default is "true". Turn this off to always load via SpringTemplateLoader
+	 * <p>默认值是"true". Turn this off to always load via SpringTemplateLoader
 	 * (i.e. as stream, without hot detection of template changes), which might
 	 * be necessary if some of your templates reside in an expanded classes
 	 * directory while others reside in jar files.

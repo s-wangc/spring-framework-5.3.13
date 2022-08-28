@@ -205,7 +205,7 @@ public class CronTriggerFactoryBean implements FactoryBean<CronTrigger>, BeanNam
 	/**
 	 * Set the misfire instruction via the name of the corresponding
 	 * constant in the {@link org.quartz.CronTrigger} class.
-	 * Default is {@code MISFIRE_INSTRUCTION_SMART_POLICY}.
+	 * 默认值是{@code MISFIRE_INSTRUCTION_SMART_POLICY}.
 	 * @see org.quartz.CronTrigger#MISFIRE_INSTRUCTION_FIRE_ONCE_NOW
 	 * @see org.quartz.CronTrigger#MISFIRE_INSTRUCTION_DO_NOTHING
 	 * @see org.quartz.Trigger#MISFIRE_INSTRUCTION_SMART_POLICY

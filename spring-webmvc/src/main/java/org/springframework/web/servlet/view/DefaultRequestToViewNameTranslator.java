@@ -100,7 +100,7 @@ public class DefaultRequestToViewNameTranslator implements RequestToViewNameTran
 
 	/**
 	 * Set whether or not leading slashes should be stripped from the URI when
-	 * generating the view name. Default is "true".
+	 * generating the view name. 默认值是"true".
 	 */
 	public void setStripLeadingSlash(boolean stripLeadingSlash) {
 		this.stripLeadingSlash = stripLeadingSlash;
@@ -108,7 +108,7 @@ public class DefaultRequestToViewNameTranslator implements RequestToViewNameTran
 
 	/**
 	 * Set whether or not trailing slashes should be stripped from the URI when
-	 * generating the view name. Default is "true".
+	 * generating the view name. 默认值是"true".
 	 */
 	public void setStripTrailingSlash(boolean stripTrailingSlash) {
 		this.stripTrailingSlash = stripTrailingSlash;
@@ -116,7 +116,7 @@ public class DefaultRequestToViewNameTranslator implements RequestToViewNameTran
 
 	/**
 	 * Set whether or not file extensions should be stripped from the URI when
-	 * generating the view name. Default is "true".
+	 * generating the view name. 默认值是"true".
 	 */
 	public void setStripExtension(boolean stripExtension) {
 		this.stripExtension = stripExtension;

@@ -48,7 +48,7 @@ public class CustomValidatorBean extends SpringValidatorAdapter implements Valid
 
 	/**
 	 * Set the ValidatorFactory to obtain the target Validator from.
-	 * <p>Default is {@link javax.validation.Validation#buildDefaultValidatorFactory()}.
+	 * <p>默认值是{@link javax.validation.Validation#buildDefaultValidatorFactory()}.
 	 */
 	public void setValidatorFactory(ValidatorFactory validatorFactory) {
 		this.validatorFactory = validatorFactory;

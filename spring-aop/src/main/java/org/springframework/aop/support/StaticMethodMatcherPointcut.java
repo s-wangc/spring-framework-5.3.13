@@ -25,7 +25,7 @@ import org.springframework.aop.Pointcut;
  * {@link MethodMatcher} interface but subclasses will want to be pointcuts.
  *
  * <p>The {@link #setClassFilter "classFilter"} property can be set to customize
- * {@link ClassFilter} behavior. The default is {@link ClassFilter#TRUE}.
+ * {@link ClassFilter} behavior. 默认值是{@link ClassFilter#TRUE}.
  *
  * @author Rod Johnson
  * @author Juergen Hoeller
@@ -37,7 +37,7 @@ public abstract class StaticMethodMatcherPointcut extends StaticMethodMatcher im
 
 	/**
 	 * Set the {@link ClassFilter} to use for this pointcut.
-	 * Default is {@link ClassFilter#TRUE}.
+	 * 默认值是{@link ClassFilter#TRUE}.
 	 */
 	public void setClassFilter(ClassFilter classFilter) {
 		this.classFilter = classFilter;

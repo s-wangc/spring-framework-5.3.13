@@ -135,7 +135,7 @@ public class DelegatingNavigationHandlerProxy extends NavigationHandler {
 
 	/**
 	 * Return the name of the target NavigationHandler bean in the BeanFactory.
-	 * Default is "jsfNavigationHandler".
+	 * 默认值是"jsfNavigationHandler".
 	 * @param facesContext the current JSF context
 	 * @return the name of the target bean
 	 */

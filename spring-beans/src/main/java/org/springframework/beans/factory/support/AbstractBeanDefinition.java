@@ -528,7 +528,7 @@ public abstract class AbstractBeanDefinition extends BeanMetadataAttributeAccess
 	/**
 	 * Set if this bean is "abstract", i.e. not meant to be instantiated itself but
 	 * rather just serving as parent for concrete child bean definitions.
-	 * <p>Default is "false". Specify true to tell the bean factory to not try to
+	 * <p>默认值是"false". Specify true to tell the bean factory to not try to
 	 * instantiate that particular bean in any case.
 	 */
 	public void setAbstract(boolean abstractFlag) {

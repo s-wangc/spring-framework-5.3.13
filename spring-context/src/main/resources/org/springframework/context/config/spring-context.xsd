@@ -279,7 +279,7 @@
 				<xsd:annotation>
 					<xsd:documentation><![CDATA[
 	Indicates whether automatic detection of classes annotated with @Component, @Repository, @Service,
-	or @Controller should be enabled. Default is "true".
+	or @Controller should be enabled. 默认值是"true".
 					]]></xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>
@@ -287,7 +287,7 @@
 				default="true">
 				<xsd:annotation>
 					<xsd:documentation><![CDATA[
-	Indicates whether the implicit annotation post-processors should be enabled. Default is "true".
+	Indicates whether the implicit annotation post-processors should be enabled. 默认值是"true".
 					]]></xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>

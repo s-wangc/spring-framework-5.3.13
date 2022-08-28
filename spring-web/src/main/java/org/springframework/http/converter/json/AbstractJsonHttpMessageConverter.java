@@ -66,7 +66,7 @@ public abstract class AbstractJsonHttpMessageConverter extends AbstractGenericHt
 
 
 	/**
-	 * Specify a custom prefix to use for JSON output. Default is none.
+	 * Specify a custom prefix to use for JSON output. 默认值是none.
 	 * @see #setPrefixJson
 	 */
 	public void setJsonPrefix(String jsonPrefix) {
@@ -75,7 +75,7 @@ public abstract class AbstractJsonHttpMessageConverter extends AbstractGenericHt
 
 	/**
 	 * Indicate whether the JSON output by this view should be prefixed with ")]}', ".
-	 * Default is {@code false}.
+	 * 默认值是{@code false}.
 	 * <p>Prefixing the JSON string in this manner is used to help prevent JSON
 	 * Hijacking. The prefix renders the string syntactically invalid as a script
 	 * so that it cannot be hijacked.

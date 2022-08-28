@@ -91,7 +91,7 @@ public class ResourceBundleViewResolver extends AbstractCachingViewResolver
 
 	/**
 	 * Set a single basename, following {@link java.util.ResourceBundle} conventions.
-	 * The default is "views".
+	 * 默认值是"views".
 	 * <p>{@code ResourceBundle} supports different locale suffixes. For example,
 	 * a base name of "views" might map to {@code ResourceBundle} files
 	 * "views", "views_en_au" and "views_de".

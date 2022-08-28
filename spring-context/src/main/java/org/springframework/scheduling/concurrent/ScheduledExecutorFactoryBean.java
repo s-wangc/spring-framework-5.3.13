@@ -91,7 +91,7 @@ public class ScheduledExecutorFactoryBean extends ExecutorConfigurationSupport
 
 	/**
 	 * Set the ScheduledExecutorService's pool size.
-	 * Default is 1.
+	 * 默认值是1.
 	 */
 	public void setPoolSize(int poolSize) {
 		Assert.isTrue(poolSize > 0, "'poolSize' must be 1 or higher");
@@ -112,7 +112,7 @@ public class ScheduledExecutorFactoryBean extends ExecutorConfigurationSupport
 
 	/**
 	 * Set the remove-on-cancel mode on {@link ScheduledThreadPoolExecutor}.
-	 * <p>Default is {@code false}. If set to {@code true}, the target executor will be
+	 * <p>默认值是{@code false}. If set to {@code true}, the target executor will be
 	 * switched into remove-on-cancel mode (if possible, with a soft fallback otherwise).
 	 */
 	public void setRemoveOnCancelPolicy(boolean removeOnCancelPolicy) {

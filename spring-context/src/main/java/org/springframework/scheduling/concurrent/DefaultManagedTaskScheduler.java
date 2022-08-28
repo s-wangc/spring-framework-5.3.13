@@ -66,7 +66,7 @@ public class DefaultManagedTaskScheduler extends ConcurrentTaskScheduler impleme
 	/**
 	 * Set whether the lookup occurs in a Java EE container, i.e. if the prefix
 	 * "java:comp/env/" needs to be added if the JNDI name doesn't already
-	 * contain it. PersistenceAnnotationBeanPostProcessor's default is "true".
+	 * contain it. PersistenceAnnotationBeanPostProcessor's 默认值是"true".
 	 * @see org.springframework.jndi.JndiLocatorSupport#setResourceRef
 	 */
 	public void setResourceRef(boolean resourceRef) {

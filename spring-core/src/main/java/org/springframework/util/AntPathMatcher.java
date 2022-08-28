@@ -130,7 +130,7 @@ public class AntPathMatcher implements PathMatcher {
 
 	/**
 	 * Specify whether to perform pattern matching in a case-sensitive fashion.
-	 * <p>Default is {@code true}. Switch this to {@code false} for case-insensitive matching.
+	 * <p>默认值是{@code true}. Switch this to {@code false} for case-insensitive matching.
 	 * @since 4.2
 	 */
 	public void setCaseSensitive(boolean caseSensitive) {
@@ -139,7 +139,7 @@ public class AntPathMatcher implements PathMatcher {
 
 	/**
 	 * Specify whether to trim tokenized paths and patterns.
-	 * <p>Default is {@code false}.
+	 * <p>默认值是{@code false}.
 	 */
 	public void setTrimTokens(boolean trimTokens) {
 		this.trimTokens = trimTokens;

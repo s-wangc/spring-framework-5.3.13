@@ -78,14 +78,14 @@ public class SimpleHttpServerFactoryBean implements FactoryBean<HttpServer>, Ini
 
 
 	/**
-	 * Specify the HTTP server's port. Default is 8080.
+	 * Specify the HTTP server's port. 默认值是8080.
 	 */
 	public void setPort(int port) {
 		this.port = port;
 	}
 
 	/**
-	 * Specify the HTTP server's hostname to bind to. Default is localhost;
+	 * Specify the HTTP server's hostname to bind to. 默认值是localhost;
 	 * can be overridden with a specific network address to bind to.
 	 */
 	public void setHostname(String hostname) {
@@ -102,7 +102,7 @@ public class SimpleHttpServerFactoryBean implements FactoryBean<HttpServer>, Ini
 
 	/**
 	 * Specify the number of seconds to wait until HTTP exchanges have
-	 * completed when shutting down the HTTP server. Default is 0.
+	 * completed when shutting down the HTTP server. 默认值是0.
 	 */
 	public void setShutdownDelay(int shutdownDelay) {
 		this.shutdownDelay = shutdownDelay;

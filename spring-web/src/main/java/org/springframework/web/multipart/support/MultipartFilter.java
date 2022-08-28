@@ -78,7 +78,7 @@ public class MultipartFilter extends OncePerRequestFilter {
 
 	/**
 	 * Set the bean name of the MultipartResolver to fetch from Spring's
-	 * root application context. Default is "filterMultipartResolver".
+	 * root application context. 默认值是"filterMultipartResolver".
 	 */
 	public void setMultipartResolverBeanName(String multipartResolverBeanName) {
 		this.multipartResolverBeanName = multipartResolverBeanName;

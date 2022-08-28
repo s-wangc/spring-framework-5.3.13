@@ -70,7 +70,7 @@ public class SimpleClientHttpRequestFactory implements ClientHttpRequestFactory,
 	/**
 	 * Indicate whether this request factory should buffer the
 	 * {@linkplain ClientHttpRequest#getBody() request body} internally.
-	 * <p>Default is {@code true}. When sending large amounts of data via POST or PUT,
+	 * <p>默认值是{@code true}. When sending large amounts of data via POST or PUT,
 	 * it is recommended to change this property to {@code false}, so as not to run
 	 * out of memory. This will result in a {@link ClientHttpRequest} that either
 	 * streams directly to the underlying {@link HttpURLConnection} (if the
@@ -119,7 +119,7 @@ public class SimpleClientHttpRequestFactory implements ClientHttpRequestFactory,
 
 	/**
 	 * Set if the underlying URLConnection can be set to 'output streaming' mode.
-	 * Default is {@code true}.
+	 * 默认值是{@code true}.
 	 * <p>When output streaming is enabled, authentication and redirection cannot be handled automatically.
 	 * If output streaming is disabled, the {@link HttpURLConnection#setFixedLengthStreamingMode} and
 	 * {@link HttpURLConnection#setChunkedStreamingMode} methods of the underlying connection will never

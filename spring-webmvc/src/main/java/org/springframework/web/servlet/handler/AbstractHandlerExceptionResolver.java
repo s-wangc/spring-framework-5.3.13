@@ -118,7 +118,7 @@ public abstract class AbstractHandlerExceptionResolver implements HandlerExcepti
 	/**
 	 * Specify whether to prevent HTTP response caching for any view resolved
 	 * by this exception resolver.
-	 * <p>Default is {@code false}. Switch this to {@code true} in order to
+	 * <p>默认值是{@code false}. Switch this to {@code true} in order to
 	 * automatically generate HTTP response headers that suppress response caching.
 	 */
 	public void setPreventResponseCaching(boolean preventResponseCaching) {

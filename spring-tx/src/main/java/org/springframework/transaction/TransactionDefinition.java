@@ -195,7 +195,7 @@ public interface TransactionDefinition {
 	 * Return the propagation behavior.
 	 * <p>Must return one of the {@code PROPAGATION_XXX} constants
 	 * defined on {@link TransactionDefinition this interface}.
-	 * <p>The default is {@link #PROPAGATION_REQUIRED}.
+	 * <p>默认值是{@link #PROPAGATION_REQUIRED}.
 	 * @return the propagation behavior
 	 * @see #PROPAGATION_REQUIRED
 	 * @see org.springframework.transaction.support.TransactionSynchronizationManager#isActualTransactionActive()
@@ -215,7 +215,7 @@ public interface TransactionDefinition {
 	 * "true" on your transaction manager if you'd like isolation level declarations
 	 * to get rejected when participating in an existing transaction with a different
 	 * isolation level.
-	 * <p>The default is {@link #ISOLATION_DEFAULT}. Note that a transaction manager
+	 * <p>默认值是{@link #ISOLATION_DEFAULT}. Note that a transaction manager
 	 * that does not support custom isolation levels will throw an exception when
 	 * given any other level than {@link #ISOLATION_DEFAULT}.
 	 * @return the isolation level
@@ -234,7 +234,7 @@ public interface TransactionDefinition {
 	 * transactions.
 	 * <p>Note that a transaction manager that does not support timeouts will throw
 	 * an exception when given any other timeout than {@link #TIMEOUT_DEFAULT}.
-	 * <p>The default is {@link #TIMEOUT_DEFAULT}.
+	 * <p>默认值是{@link #TIMEOUT_DEFAULT}.
 	 * @return the transaction timeout
 	 */
 	default int getTimeout() {

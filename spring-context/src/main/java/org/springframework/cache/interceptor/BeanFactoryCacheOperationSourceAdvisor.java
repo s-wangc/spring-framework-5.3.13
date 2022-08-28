@@ -54,7 +54,7 @@ public class BeanFactoryCacheOperationSourceAdvisor extends AbstractBeanFactoryP
 
 	/**
 	 * Set the {@link ClassFilter} to use for this pointcut.
-	 * Default is {@link ClassFilter#TRUE}.
+	 * 默认值是{@link ClassFilter#TRUE}.
 	 */
 	public void setClassFilter(ClassFilter classFilter) {
 		this.pointcut.setClassFilter(classFilter);

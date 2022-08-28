@@ -377,7 +377,7 @@ public class DataBinder implements PropertyEditorRegistry, TypeConverter {
 	/**
 	 * Set whether to ignore unknown fields, that is, whether to ignore bind
 	 * parameters that do not have corresponding fields in the target object.
-	 * <p>Default is "true". Turn this off to enforce that all bind parameters
+	 * <p>默认值是"true". Turn this off to enforce that all bind parameters
 	 * must have a matching field in the target object.
 	 * <p>Note that this setting only applies to <i>binding</i> operations
 	 * on this DataBinder, not to <i>retrieving</i> values via its
@@ -399,7 +399,7 @@ public class DataBinder implements PropertyEditorRegistry, TypeConverter {
 	 * Set whether to ignore invalid fields, that is, whether to ignore bind
 	 * parameters that have corresponding fields in the target object which are
 	 * not accessible (for example because of null values in the nested path).
-	 * <p>Default is "false". Turn this on to ignore bind parameters for
+	 * <p>默认值是"false". Turn this on to ignore bind parameters for
 	 * nested objects in non-existing parts of the target object graph.
 	 * <p>Note that this setting only applies to <i>binding</i> operations
 	 * on this DataBinder, not to <i>retrieving</i> values via its
@@ -442,7 +442,7 @@ public class DataBinder implements PropertyEditorRegistry, TypeConverter {
 	}
 
 	/**
-	 * Register fields that should <i>not</i> be allowed for binding. Default is none.
+	 * Register fields that should <i>not</i> be allowed for binding. 默认值是none.
 	 * Mark fields as disallowed for example to avoid unwanted modifications
 	 * by malicious users when binding HTTP request parameters.
 	 * <p>Supports "xxx*", "*xxx" and "*xxx*" patterns. More sophisticated matching

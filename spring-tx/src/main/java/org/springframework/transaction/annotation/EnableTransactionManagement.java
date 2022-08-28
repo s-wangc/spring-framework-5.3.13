@@ -178,7 +178,7 @@ public @interface EnableTransactionManagement {
 
 	/**
 	 * Indicate how transactional advice should be applied.
-	 * <p><b>The default is {@link AdviceMode#PROXY}.</b>
+	 * <p><b>默认值是{@link AdviceMode#PROXY}.</b>
 	 * Please note that proxy mode allows for interception of calls through the proxy
 	 * only. Local calls within the same class cannot get intercepted that way; an
 	 * {@link Transactional} annotation on such a method within a local call will be
@@ -191,7 +191,7 @@ public @interface EnableTransactionManagement {
 	/**
 	 * Indicate the ordering of the execution of the transaction advisor
 	 * when multiple advices are applied at a specific joinpoint.
-	 * <p>The default is {@link Ordered#LOWEST_PRECEDENCE}.
+	 * <p>默认值是{@link Ordered#LOWEST_PRECEDENCE}.
 	 */
 	int order() default Ordered.LOWEST_PRECEDENCE;
 

@@ -187,7 +187,7 @@ public abstract class SchedulerAccessor implements ResourceLoaderAware {
 
 	/**
 	 * Set the transaction manager to be used for registering jobs and triggers
-	 * that are defined by this SchedulerFactoryBean. Default is none; setting
+	 * that are defined by this SchedulerFactoryBean. 默认值是none; setting
 	 * this only makes sense when specifying a DataSource for the Scheduler.
 	 */
 	public void setTransactionManager(PlatformTransactionManager transactionManager) {

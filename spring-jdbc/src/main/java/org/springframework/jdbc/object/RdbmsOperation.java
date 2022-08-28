@@ -462,7 +462,7 @@ public abstract class RdbmsOperation implements InitializingBean {
 
 	/**
 	 * Return whether BLOB/CLOB parameters are supported for this kind of operation.
-	 * <p>The default is {@code true}.
+	 * <p>默认值是{@code true}.
 	 */
 	protected boolean supportsLobParameters() {
 		return true;
@@ -471,7 +471,7 @@ public abstract class RdbmsOperation implements InitializingBean {
 	/**
 	 * Return whether this operation accepts additional parameters that are
 	 * given but not actually used. Applies in particular to parameter Maps.
-	 * <p>The default is {@code false}.
+	 * <p>默认值是{@code false}.
 	 * @see StoredProcedure
 	 */
 	protected boolean allowsUnusedParameters() {

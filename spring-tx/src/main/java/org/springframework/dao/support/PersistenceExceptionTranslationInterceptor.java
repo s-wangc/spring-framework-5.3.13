@@ -98,7 +98,7 @@ public class PersistenceExceptionTranslationInterceptor
 	 * Specify whether to always translate the exception ("true"), or whether throw the
 	 * raw exception when declared, i.e. when the originating method signature's exception
 	 * declarations allow for the raw exception to be thrown ("false").
-	 * <p>Default is "false". Switch this flag to "true" in order to always translate
+	 * <p>默认值是"false". Switch this flag to "true" in order to always translate
 	 * applicable exceptions, independent from the originating method signature.
 	 * <p>Note that the originating method does not have to declare the specific exception.
 	 * Any base class will do as well, even {@code throws Exception}: As long as the

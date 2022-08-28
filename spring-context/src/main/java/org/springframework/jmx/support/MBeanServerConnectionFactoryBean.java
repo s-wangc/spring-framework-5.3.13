@@ -102,7 +102,7 @@ public class MBeanServerConnectionFactoryBean
 
 	/**
 	 * Set whether to connect to the server on startup.
-	 * <p>Default is {@code true}.
+	 * <p>默认值是{@code true}.
 	 * <p>Can be turned off to allow for late start of the JMX server.
 	 * In this case, the JMX connector will be fetched on first access.
 	 */

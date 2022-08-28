@@ -127,7 +127,7 @@ public abstract class PlaceholderConfigurerSupport extends PropertyResourceConfi
 
 	/**
 	 * Set the prefix that a placeholder string starts with.
-	 * The default is {@value #DEFAULT_PLACEHOLDER_PREFIX}.
+	 * 默认值是{@value #DEFAULT_PLACEHOLDER_PREFIX}.
 	 */
 	public void setPlaceholderPrefix(String placeholderPrefix) {
 		this.placeholderPrefix = placeholderPrefix;
@@ -135,7 +135,7 @@ public abstract class PlaceholderConfigurerSupport extends PropertyResourceConfi
 
 	/**
 	 * Set the suffix that a placeholder string ends with.
-	 * The default is {@value #DEFAULT_PLACEHOLDER_SUFFIX}.
+	 * 默认值是{@value #DEFAULT_PLACEHOLDER_SUFFIX}.
 	 */
 	public void setPlaceholderSuffix(String placeholderSuffix) {
 		this.placeholderSuffix = placeholderSuffix;
@@ -145,7 +145,7 @@ public abstract class PlaceholderConfigurerSupport extends PropertyResourceConfi
 	 * Specify the separating character between the placeholder variable
 	 * and the associated default value, or {@code null} if no such
 	 * special character should be processed as a value separator.
-	 * The default is {@value #DEFAULT_VALUE_SEPARATOR}.
+	 * 默认值是{@value #DEFAULT_VALUE_SEPARATOR}.
 	 */
 	public void setValueSeparator(@Nullable String valueSeparator) {
 		this.valueSeparator = valueSeparator;
@@ -154,7 +154,7 @@ public abstract class PlaceholderConfigurerSupport extends PropertyResourceConfi
 	/**
 	 * Specify whether to trim resolved values before applying them,
 	 * removing superfluous whitespace from the beginning and end.
-	 * <p>Default is {@code false}.
+	 * <p>默认值是{@code false}.
 	 * @since 4.3
 	 */
 	public void setTrimValues(boolean trimValues) {

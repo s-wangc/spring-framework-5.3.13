@@ -118,7 +118,7 @@ public interface ConfigurableBeanFactory extends HierarchicalBeanFactory, Single
 
 	/**
 	 * Set whether to cache bean metadata such as given bean definitions
-	 * (in merged fashion) and resolved bean classes. Default is on.
+	 * (in merged fashion) and resolved bean classes. 默认值是on.
 	 * <p>Turn this flag off to enable hot-refreshing of bean definition objects
 	 * and in particular bean classes. If this flag is off, any creation of a bean
 	 * instance will re-query the bean class loader for newly resolved classes.

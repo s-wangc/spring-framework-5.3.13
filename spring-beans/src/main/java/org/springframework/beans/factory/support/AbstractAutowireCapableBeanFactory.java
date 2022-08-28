@@ -142,7 +142,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 
 	/**
 	 * Dependency types to ignore on dependency check and autowire, as Set of
-	 * Class objects: for example, String. Default is none.
+	 * Class objects: for example, String. 默认值是none.
 	 */
 	private final Set<Class<?>> ignoredDependencyTypes = new HashSet<>();
 
@@ -197,7 +197,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 
 	/**
 	 * Set the instantiation strategy to use for creating bean instances.
-	 * Default is CglibSubclassingInstantiationStrategy.
+	 * 默认值是CglibSubclassingInstantiationStrategy.
 	 * @see CglibSubclassingInstantiationStrategy
 	 */
 	public void setInstantiationStrategy(InstantiationStrategy instantiationStrategy) {
@@ -236,7 +236,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	 * will receive a reference to another bean that is not fully initialized yet.
 	 * This can lead to subtle and not-so-subtle side effects on initialization;
 	 * it does work fine for many scenarios, though.
-	 * <p>Default is "true". Turn this off to throw an exception when encountering
+	 * <p>默认值是"true". Turn this off to throw an exception when encountering
 	 * a circular reference, disallowing them completely.
 	 * <p><b>NOTE:</b> It is generally recommended to not rely on circular references
 	 * between your beans. Refactor your application logic to have the two beans
@@ -284,7 +284,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 
 	/**
 	 * Ignore the given dependency type for autowiring:
-	 * for example, String. Default is none.
+	 * for example, String. 默认值是none.
 	 */
 	public void ignoreDependencyType(Class<?> type) {
 		this.ignoredDependencyTypes.add(type);

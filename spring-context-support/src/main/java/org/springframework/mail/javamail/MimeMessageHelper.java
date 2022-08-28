@@ -515,7 +515,7 @@ public class MimeMessageHelper {
 
 	/**
 	 * Set whether to validate all addresses which get passed to this helper.
-	 * <p>The default is {@code false}.
+	 * <p>默认值是{@code false}.
 	 * @see #validateAddress
 	 */
 	public void setValidateAddresses(boolean validateAddresses) {

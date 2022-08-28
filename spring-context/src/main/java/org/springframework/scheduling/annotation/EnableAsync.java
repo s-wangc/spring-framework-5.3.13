@@ -177,7 +177,7 @@ public @interface EnableAsync {
 	 * Indicate whether subclass-based (CGLIB) proxies are to be created as opposed
 	 * to standard Java interface-based proxies.
 	 * <p><strong>Applicable only if the {@link #mode} is set to {@link AdviceMode#PROXY}</strong>.
-	 * <p>The default is {@code false}.
+	 * <p>默认值是{@code false}.
 	 * <p>Note that setting this attribute to {@code true} will affect <em>all</em>
 	 * Spring-managed beans requiring proxying, not just those marked with {@code @Async}.
 	 * For example, other beans marked with Spring's {@code @Transactional} annotation
@@ -189,7 +189,7 @@ public @interface EnableAsync {
 
 	/**
 	 * Indicate how async advice should be applied.
-	 * <p><b>The default is {@link AdviceMode#PROXY}.</b>
+	 * <p><b>默认值是{@link AdviceMode#PROXY}.</b>
 	 * Please note that proxy mode allows for interception of calls through the proxy
 	 * only. Local calls within the same class cannot get intercepted that way; an
 	 * {@link Async} annotation on such a method within a local call will be ignored

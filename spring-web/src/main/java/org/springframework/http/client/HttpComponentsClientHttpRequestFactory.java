@@ -153,7 +153,7 @@ public class HttpComponentsClientHttpRequestFactory implements ClientHttpRequest
 
 	/**
 	 * Indicates whether this request factory should buffer the request body internally.
-	 * <p>Default is {@code true}. When sending large amounts of data via POST or PUT, it is
+	 * <p>默认值是{@code true}. When sending large amounts of data via POST or PUT, it is
 	 * recommended to change this property to {@code false}, so as not to run out of memory.
 	 * @since 4.0
 	 */

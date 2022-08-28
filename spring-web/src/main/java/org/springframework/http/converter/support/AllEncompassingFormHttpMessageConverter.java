@@ -42,7 +42,7 @@ public class AllEncompassingFormHttpMessageConverter extends FormHttpMessageConv
 	/**
 	 * Boolean flag controlled by a {@code spring.xml.ignore} system property that instructs Spring to
 	 * ignore XML, i.e. to not initialize the XML-related infrastructure.
-	 * <p>The default is "false".
+	 * <p>默认值是"false".
 	 */
 	private static final boolean shouldIgnoreXml = SpringProperties.getFlag("spring.xml.ignore");
 

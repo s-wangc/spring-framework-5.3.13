@@ -55,7 +55,7 @@ public class CurrencyStyleFormatter extends AbstractNumberFormatter {
 
 	/**
 	 * Specify the desired number of fraction digits.
-	 * Default is 2.
+	 * 默认值是2.
 	 */
 	public void setFractionDigits(int fractionDigits) {
 		this.fractionDigits = fractionDigits;
@@ -63,7 +63,7 @@ public class CurrencyStyleFormatter extends AbstractNumberFormatter {
 
 	/**
 	 * Specify the rounding mode to use for decimal parsing.
-	 * Default is {@link java.math.RoundingMode#UNNECESSARY}.
+	 * 默认值是{@link java.math.RoundingMode#UNNECESSARY}.
 	 */
 	public void setRoundingMode(RoundingMode roundingMode) {
 		this.roundingMode = roundingMode;

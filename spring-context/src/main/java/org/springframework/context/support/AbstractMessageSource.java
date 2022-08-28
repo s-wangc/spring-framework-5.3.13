@@ -105,7 +105,7 @@ public abstract class AbstractMessageSource extends MessageSourceSupport impleme
 	/**
 	 * Set whether to use the message code as default message instead of
 	 * throwing a NoSuchMessageException. Useful for development and debugging.
-	 * Default is "false".
+	 * 默认值是"false".
 	 * <p>Note: In case of a MessageSourceResolvable with multiple codes
 	 * (like a FieldError) and a MessageSource that has a parent MessageSource,
 	 * do <i>not</i> activate "useCodeAsDefaultMessage" in the <i>parent</i>:
@@ -126,7 +126,7 @@ public abstract class AbstractMessageSource extends MessageSourceSupport impleme
 	/**
 	 * Return whether to use the message code as default message instead of
 	 * throwing a NoSuchMessageException. Useful for development and debugging.
-	 * Default is "false".
+	 * 默认值是"false".
 	 * <p>Alternatively, consider overriding the {@link #getDefaultMessage}
 	 * method to return a custom fallback message for an unresolvable code.
 	 * @see #getDefaultMessage(String)

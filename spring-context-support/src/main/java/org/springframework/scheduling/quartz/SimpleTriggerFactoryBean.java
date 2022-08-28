@@ -193,7 +193,7 @@ public class SimpleTriggerFactoryBean implements FactoryBean<SimpleTrigger>, Bea
 	/**
 	 * Set the misfire instruction via the name of the corresponding
 	 * constant in the {@link org.quartz.SimpleTrigger} class.
-	 * Default is {@code MISFIRE_INSTRUCTION_SMART_POLICY}.
+	 * 默认值是{@code MISFIRE_INSTRUCTION_SMART_POLICY}.
 	 * @see org.quartz.SimpleTrigger#MISFIRE_INSTRUCTION_FIRE_NOW
 	 * @see org.quartz.SimpleTrigger#MISFIRE_INSTRUCTION_RESCHEDULE_NEXT_WITH_EXISTING_COUNT
 	 * @see org.quartz.SimpleTrigger#MISFIRE_INSTRUCTION_RESCHEDULE_NEXT_WITH_REMAINING_COUNT

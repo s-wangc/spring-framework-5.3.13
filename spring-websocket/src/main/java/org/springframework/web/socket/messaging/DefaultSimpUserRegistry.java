@@ -60,7 +60,7 @@ public class DefaultSimpUserRegistry implements SimpUserRegistry, SmartApplicati
 
 	/**
 	 * Specify the order value for this registry.
-	 * <p>Default is {@link Ordered#LOWEST_PRECEDENCE}.
+	 * <p>默认值是{@link Ordered#LOWEST_PRECEDENCE}.
 	 * @since 5.0.8
 	 */
 	public void setOrder(int order) {

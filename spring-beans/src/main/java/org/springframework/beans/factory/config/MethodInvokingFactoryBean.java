@@ -94,7 +94,7 @@ public class MethodInvokingFactoryBean extends MethodInvokingBean implements Fac
 
 	/**
 	 * Set if a singleton should be created, or a new object on each
-	 * {@link #getObject()} request otherwise. Default is "true".
+	 * {@link #getObject()} request otherwise. 默认值是"true".
 	 */
 	public void setSingleton(boolean singleton) {
 		this.singleton = singleton;

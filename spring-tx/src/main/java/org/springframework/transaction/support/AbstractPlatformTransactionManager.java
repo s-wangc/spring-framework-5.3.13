@@ -140,7 +140,7 @@ public abstract class AbstractPlatformTransactionManager implements PlatformTran
 
 	/**
 	 * Set when this transaction manager should activate the thread-bound
-	 * transaction synchronization support. Default is "always".
+	 * transaction synchronization support. 默认值是"always".
 	 * <p>Note that transaction synchronization isn't supported for
 	 * multiple concurrent transactions by different transaction managers.
 	 * Only one transaction manager is allowed to activate it at any time.
@@ -188,7 +188,7 @@ public abstract class AbstractPlatformTransactionManager implements PlatformTran
 	}
 
 	/**
-	 * Set whether nested transactions are allowed. Default is "false".
+	 * Set whether nested transactions are allowed. 默认值是"false".
 	 * <p>Typically initialized with an appropriate default by the
 	 * concrete transaction manager subclass.
 	 */
@@ -308,7 +308,7 @@ public abstract class AbstractPlatformTransactionManager implements PlatformTran
 	 * {@code doCommit} call. Typically not necessary and thus to be avoided,
 	 * as it can potentially override the commit exception with a subsequent
 	 * rollback exception.
-	 * <p>Default is "false".
+	 * <p>默认值是"false".
 	 * @see #doCommit
 	 * @see #doRollback
 	 */

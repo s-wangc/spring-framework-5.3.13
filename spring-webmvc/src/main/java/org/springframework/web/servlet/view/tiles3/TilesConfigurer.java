@@ -201,14 +201,14 @@ public class TilesConfigurer implements ServletContextAware, InitializingBean, D
 
 	/**
 	 * Set whether to check Tiles definition files for a refresh at runtime.
-	 * Default is "false".
+	 * 默认值是"false".
 	 */
 	public void setCheckRefresh(boolean checkRefresh) {
 		this.checkRefresh = checkRefresh;
 	}
 
 	/**
-	 * Set whether to validate the Tiles XML definitions. Default is "true".
+	 * Set whether to validate the Tiles XML definitions. 默认值是"true".
 	 */
 	public void setValidateDefinitions(boolean validateDefinitions) {
 		this.validateDefinitions = validateDefinitions;
@@ -252,7 +252,7 @@ public class TilesConfigurer implements ServletContextAware, InitializingBean, D
 
 	/**
 	 * Set whether to use a MutableTilesContainer (typically the CachingTilesContainer
-	 * implementation) for this application. Default is "false".
+	 * implementation) for this application. 默认值是"false".
 	 * @see org.apache.tiles.mgmt.MutableTilesContainer
 	 * @see org.apache.tiles.impl.mgmt.CachingTilesContainer
 	 */

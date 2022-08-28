@@ -96,7 +96,7 @@ public class JodaTimeFormatterRegistrar implements FormatterRegistrar {
 
 	/**
 	 * Set the default format style of Joda {@link LocalDate} objects.
-	 * Default is {@link DateTimeFormat#shortDate()}.
+	 * 默认值是{@link DateTimeFormat#shortDate()}.
 	 */
 	public void setDateStyle(String dateStyle) {
 		this.factories.get(Type.DATE).setStyle(dateStyle + "-");
@@ -104,7 +104,7 @@ public class JodaTimeFormatterRegistrar implements FormatterRegistrar {
 
 	/**
 	 * Set the default format style of Joda {@link LocalTime} objects.
-	 * Default is {@link DateTimeFormat#shortTime()}.
+	 * 默认值是{@link DateTimeFormat#shortTime()}.
 	 */
 	public void setTimeStyle(String timeStyle) {
 		this.factories.get(Type.TIME).setStyle("-" + timeStyle);
@@ -113,7 +113,7 @@ public class JodaTimeFormatterRegistrar implements FormatterRegistrar {
 	/**
 	 * Set the default format style of Joda {@link LocalDateTime} and {@link DateTime} objects,
 	 * as well as JDK {@link Date} and {@link Calendar} objects.
-	 * Default is {@link DateTimeFormat#shortDateTime()}.
+	 * 默认值是{@link DateTimeFormat#shortDateTime()}.
 	 */
 	public void setDateTimeStyle(String dateTimeStyle) {
 		this.factories.get(Type.DATE_TIME).setStyle(dateTimeStyle);

@@ -50,7 +50,7 @@ public abstract class JndiLocatorSupport extends JndiAccessor {
 	/**
 	 * Set whether the lookup occurs in a Java EE container, i.e. if the prefix
 	 * "java:comp/env/" needs to be added if the JNDI name doesn't already
-	 * contain it. Default is "false".
+	 * contain it. 默认值是"false".
 	 * <p>Note: Will only get applied if no other scheme (e.g. "java:") is given.
 	 */
 	public void setResourceRef(boolean resourceRef) {

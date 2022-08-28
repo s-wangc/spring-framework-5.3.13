@@ -253,7 +253,7 @@ public class PathMatchingResourcePatternResolver implements ResourcePatternResol
 
 	/**
 	 * Set the PathMatcher implementation to use for this
-	 * resource pattern resolver. Default is AntPathMatcher.
+	 * resource pattern resolver. 默认值是AntPathMatcher.
 	 * @see org.springframework.util.AntPathMatcher
 	 */
 	public void setPathMatcher(PathMatcher pathMatcher) {

@@ -236,7 +236,7 @@ public class HibernateTransactionManager extends AbstractPlatformTransactionMana
 
 	/**
 	 * Set whether to autodetect a JDBC DataSource used by the Hibernate SessionFactory,
-	 * if set via LocalSessionFactoryBean's {@code setDataSource}. Default is "true".
+	 * if set via LocalSessionFactoryBean's {@code setDataSource}. 默认值是"true".
 	 * <p>Can be turned off to deliberately ignore an available DataSource, in order
 	 * to not expose Hibernate transactions as JDBC transactions for that DataSource.
 	 * @see #setDataSource
@@ -250,7 +250,7 @@ public class HibernateTransactionManager extends AbstractPlatformTransactionMana
 	 * Hibernate Session, that is, whether to apply a transaction-specific
 	 * isolation level and/or the transaction's read-only flag to the underlying
 	 * JDBC Connection.
-	 * <p>Default is "true". If you turn this flag off, the transaction manager
+	 * <p>默认值是"true". If you turn this flag off, the transaction manager
 	 * will not support per-transaction isolation levels anymore. It will not
 	 * call {@code Connection.setReadOnly(true)} for read-only transactions
 	 * anymore either. If this flag is turned off, no cleanup of a JDBC Connection
@@ -265,7 +265,7 @@ public class HibernateTransactionManager extends AbstractPlatformTransactionMana
 	/**
 	 * Set whether to allow result access after completion, typically via Hibernate's
 	 * ScrollableResults mechanism.
-	 * <p>Default is "false". Turning this flag on enforces over-commit holdability on the
+	 * <p>默认值是"false". Turning this flag on enforces over-commit holdability on the
 	 * underlying JDBC Connection (if {@link #prepareConnection "prepareConnection"} is on)
 	 * and skips the disconnect-on-completion step.
 	 * @see Connection#setHoldability

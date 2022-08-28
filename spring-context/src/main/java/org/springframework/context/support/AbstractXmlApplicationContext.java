@@ -64,7 +64,7 @@ public abstract class AbstractXmlApplicationContext extends AbstractRefreshableC
 
 
 	/**
-	 * Set whether to use XML validation. Default is {@code true}.
+	 * Set whether to use XML validation. 默认值是{@code true}.
 	 */
 	public void setValidating(boolean validating) {
 		this.validating = validating;

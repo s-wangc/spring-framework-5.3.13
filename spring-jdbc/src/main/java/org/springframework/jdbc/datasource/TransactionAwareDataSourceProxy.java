@@ -97,7 +97,7 @@ public class TransactionAwareDataSourceProxy extends DelegatingDataSource {
 	/**
 	 * Specify whether to reobtain the target Connection for each operation
 	 * performed within a transaction.
-	 * <p>The default is "false". Specify "true" to reobtain transactional
+	 * <p>默认值是"false". Specify "true" to reobtain transactional
 	 * Connections for every call on the Connection proxy; this is advisable
 	 * on JBoss if you hold on to a Connection handle across transaction boundaries.
 	 * <p>The effect of this setting is similar to the

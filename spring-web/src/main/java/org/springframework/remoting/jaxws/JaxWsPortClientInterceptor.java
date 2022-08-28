@@ -307,7 +307,7 @@ public class JaxWsPortClientInterceptor extends LocalJaxWsServiceFactory
 
 	/**
 	 * Set whether to look up the JAX-WS service on startup.
-	 * <p>Default is "true". Turn this flag off to allow for late start
+	 * <p>默认值是"true". Turn this flag off to allow for late start
 	 * of the target server. In this case, the JAX-WS service will be
 	 * lazily fetched on first access.
 	 */

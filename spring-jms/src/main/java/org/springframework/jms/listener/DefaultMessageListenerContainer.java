@@ -326,7 +326,7 @@ public class DefaultMessageListenerContainer extends AbstractPollingMessageListe
 	}
 
 	/**
-	 * Specify the number of concurrent consumers to create. Default is 1.
+	 * Specify the number of concurrent consumers to create. 默认值是1.
 	 * <p>Specifying a higher value for this setting will increase the standard
 	 * level of scheduled concurrent consumers at runtime: This is effectively
 	 * the minimum number of concurrent consumers which will be scheduled
@@ -367,7 +367,7 @@ public class DefaultMessageListenerContainer extends AbstractPollingMessageListe
 	}
 
 	/**
-	 * Specify the maximum number of concurrent consumers to create. Default is 1.
+	 * Specify the maximum number of concurrent consumers to create. 默认值是1.
 	 * <p>If this setting is higher than "concurrentConsumers", the listener container
 	 * will dynamically schedule new consumers at runtime, provided that enough
 	 * incoming messages are encountered. Once the load goes down again, the number of

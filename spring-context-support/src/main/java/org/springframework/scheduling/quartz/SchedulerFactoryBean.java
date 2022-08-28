@@ -364,7 +364,7 @@ public class SchedulerFactoryBean extends SchedulerAccessor implements FactoryBe
 
 	/**
 	 * Set the key of an {@link ApplicationContext} reference to expose in the
-	 * SchedulerContext, for example "applicationContext". Default is none.
+	 * SchedulerContext, for example "applicationContext". 默认值是none.
 	 * Only applicable when running in a Spring ApplicationContext.
 	 * <p>Note: When using persistent Jobs whose JobDetail will be kept in the
 	 * database, do not put an ApplicationContext reference into the JobDataMap
@@ -403,7 +403,7 @@ public class SchedulerFactoryBean extends SchedulerAccessor implements FactoryBe
 
 	/**
 	 * Set whether to automatically start the scheduler after initialization.
-	 * <p>Default is "true"; set this to "false" to allow for manual startup.
+	 * <p>默认值是"true"; set this to "false" to allow for manual startup.
 	 */
 	public void setAutoStartup(boolean autoStartup) {
 		this.autoStartup = autoStartup;
@@ -465,7 +465,7 @@ public class SchedulerFactoryBean extends SchedulerAccessor implements FactoryBe
 
 	/**
 	 * Set whether to wait for running jobs to complete on shutdown.
-	 * <p>Default is "false". Switch this to "true" if you prefer
+	 * <p>默认值是"false". Switch this to "true" if you prefer
 	 * fully completed jobs at the expense of a longer shutdown phase.
 	 * @see org.quartz.Scheduler#shutdown(boolean)
 	 */

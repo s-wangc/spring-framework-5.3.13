@@ -88,7 +88,7 @@ public class OpenSessionInViewFilter extends OncePerRequestFilter {
 
 	/**
 	 * Set the bean name of the SessionFactory to fetch from Spring's
-	 * root application context. Default is "sessionFactory".
+	 * root application context. 默认值是"sessionFactory".
 	 * @see #DEFAULT_SESSION_FACTORY_BEAN_NAME
 	 */
 	public void setSessionFactoryBeanName(String sessionFactoryBeanName) {

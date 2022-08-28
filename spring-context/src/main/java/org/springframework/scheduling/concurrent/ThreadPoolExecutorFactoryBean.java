@@ -85,7 +85,7 @@ public class ThreadPoolExecutorFactoryBean extends ExecutorConfigurationSupport
 
 	/**
 	 * Set the ThreadPoolExecutor's core pool size.
-	 * Default is 1.
+	 * 默认值是1.
 	 */
 	public void setCorePoolSize(int corePoolSize) {
 		this.corePoolSize = corePoolSize;
@@ -93,7 +93,7 @@ public class ThreadPoolExecutorFactoryBean extends ExecutorConfigurationSupport
 
 	/**
 	 * Set the ThreadPoolExecutor's maximum pool size.
-	 * Default is {@code Integer.MAX_VALUE}.
+	 * 默认值是{@code Integer.MAX_VALUE}.
 	 */
 	public void setMaxPoolSize(int maxPoolSize) {
 		this.maxPoolSize = maxPoolSize;
@@ -101,7 +101,7 @@ public class ThreadPoolExecutorFactoryBean extends ExecutorConfigurationSupport
 
 	/**
 	 * Set the ThreadPoolExecutor's keep-alive seconds.
-	 * Default is 60.
+	 * 默认值是60.
 	 */
 	public void setKeepAliveSeconds(int keepAliveSeconds) {
 		this.keepAliveSeconds = keepAliveSeconds;
@@ -111,7 +111,7 @@ public class ThreadPoolExecutorFactoryBean extends ExecutorConfigurationSupport
 	 * Specify whether to allow core threads to time out. This enables dynamic
 	 * growing and shrinking even in combination with a non-zero queue (since
 	 * the max pool size will only grow once the queue is full).
-	 * <p>Default is "false".
+	 * <p>默认值是"false".
 	 * @see java.util.concurrent.ThreadPoolExecutor#allowCoreThreadTimeOut(boolean)
 	 */
 	public void setAllowCoreThreadTimeOut(boolean allowCoreThreadTimeOut) {
@@ -120,7 +120,7 @@ public class ThreadPoolExecutorFactoryBean extends ExecutorConfigurationSupport
 
 	/**
 	 * Set the capacity for the ThreadPoolExecutor's BlockingQueue.
-	 * Default is {@code Integer.MAX_VALUE}.
+	 * 默认值是{@code Integer.MAX_VALUE}.
 	 * <p>Any positive value will lead to a LinkedBlockingQueue instance;
 	 * any other value will lead to a SynchronousQueue instance.
 	 * @see java.util.concurrent.LinkedBlockingQueue

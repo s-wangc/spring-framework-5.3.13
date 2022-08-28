@@ -52,7 +52,7 @@ public interface TransactionalApplicationListener<E extends ApplicationEvent>
 
 	/**
 	 * Return the execution order within transaction synchronizations.
-	 * <p>Default is {@link Ordered#LOWEST_PRECEDENCE}.
+	 * <p>默认值是{@link Ordered#LOWEST_PRECEDENCE}.
 	 * @see org.springframework.transaction.support.TransactionSynchronization#getOrder()
 	 */
 	@Override

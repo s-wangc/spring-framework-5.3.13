@@ -56,7 +56,7 @@ public interface TransactionSynchronization extends Ordered, Flushable {
 
 	/**
 	 * Return the execution order for this transaction synchronization.
-	 * <p>Default is {@link Ordered#LOWEST_PRECEDENCE}.
+	 * <p>默认值是{@link Ordered#LOWEST_PRECEDENCE}.
 	 */
 	@Override
 	default int getOrder() {

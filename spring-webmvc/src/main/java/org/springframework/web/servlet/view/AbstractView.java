@@ -111,7 +111,7 @@ public abstract class AbstractView extends WebApplicationObjectSupport implement
 
 	/**
 	 * Set the name of the RequestContext attribute for this view.
-	 * Default is none.
+	 * 默认值是none.
 	 */
 	public void setRequestContextAttribute(@Nullable String requestContextAttribute) {
 		this.requestContextAttribute = requestContextAttribute;
@@ -252,7 +252,7 @@ public abstract class AbstractView extends WebApplicationObjectSupport implement
 	 * <p>This will make all such beans accessible in plain {@code ${...}}
 	 * expressions in a JSP 2.0 page, as well as in JSTL's {@code c:out}
 	 * value expressions.
-	 * <p>Default is "false". Switch this flag on to transparently expose all
+	 * <p>默认值是"false". Switch this flag on to transparently expose all
 	 * Spring beans in the request attribute namespace.
 	 * <p><b>NOTE:</b> Context beans will override any custom request or session
 	 * attributes of the same name that have been manually added. However, model

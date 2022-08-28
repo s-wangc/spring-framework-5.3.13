@@ -44,7 +44,7 @@ public abstract class JdbcAccessor implements InitializingBean {
 	/**
 	 * Boolean flag controlled by a {@code spring.xml.ignore} system property that instructs Spring to
 	 * ignore XML, i.e. to not initialize the XML-related infrastructure.
-	 * <p>The default is "false".
+	 * <p>默认值是"false".
 	 */
 	private static final boolean shouldIgnoreXml = SpringProperties.getFlag("spring.xml.ignore");
 
@@ -146,7 +146,7 @@ public abstract class JdbcAccessor implements InitializingBean {
 
 	/**
 	 * Set whether to lazily initialize the SQLExceptionTranslator for this accessor,
-	 * on first encounter of an SQLException. Default is "true"; can be switched to
+	 * on first encounter of an SQLException. 默认值是"true"; can be switched to
 	 * "false" for initialization on startup.
 	 * <p>Early initialization just applies if {@code afterPropertiesSet()} is called.
 	 * @see #getExceptionTranslator()

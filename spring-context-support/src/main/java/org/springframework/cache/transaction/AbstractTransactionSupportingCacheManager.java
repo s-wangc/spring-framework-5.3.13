@@ -37,7 +37,7 @@ public abstract class AbstractTransactionSupportingCacheManager extends Abstract
 
 	/**
 	 * Set whether this CacheManager should expose transaction-aware Cache objects.
-	 * <p>Default is "false". Set this to "true" to synchronize cache put/evict
+	 * <p>默认值是"false". Set this to "true" to synchronize cache put/evict
 	 * operations with ongoing Spring-managed transactions, performing the actual cache
 	 * put/evict operation only in the after-commit phase of a successful transaction.
 	 */

@@ -61,7 +61,7 @@ public class LocaleChangeInterceptor implements HandlerInterceptor {
 
 	/**
 	 * Set the name of the parameter that contains a locale specification
-	 * in a locale change request. Default is "locale".
+	 * in a locale change request. 默认值是"locale".
 	 */
 	public void setParamName(String paramName) {
 		this.paramName = paramName;

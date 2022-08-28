@@ -89,7 +89,7 @@ public abstract class ApplicationObjectSupport implements ApplicationContextAwar
 
 	/**
 	 * Determine whether this application object needs to run in an ApplicationContext.
-	 * <p>Default is "false". Can be overridden to enforce running in a context
+	 * <p>默认值是"false". Can be overridden to enforce running in a context
 	 * (i.e. to throw IllegalStateException on accessors if outside a context).
 	 * @see #getApplicationContext
 	 * @see #getMessageSourceAccessor

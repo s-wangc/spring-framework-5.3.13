@@ -48,7 +48,7 @@ public class PathPatternParser {
 	 * will also match request paths with a trailing slash. If set to
 	 * {@code false} a {@code PathPattern} will only match request paths with
 	 * a trailing slash.
-	 * <p>The default is {@code true}.
+	 * <p>默认值是{@code true}.
 	 */
 	public void setMatchOptionalTrailingSeparator(boolean matchOptionalTrailingSeparator) {
 		this.matchOptionalTrailingSeparator = matchOptionalTrailingSeparator;
@@ -63,7 +63,7 @@ public class PathPatternParser {
 
 	/**
 	 * Whether path pattern matching should be case-sensitive.
-	 * <p>The default is {@code true}.
+	 * <p>默认值是{@code true}.
 	 */
 	public void setCaseSensitive(boolean caseSensitive) {
 		this.caseSensitive = caseSensitive;

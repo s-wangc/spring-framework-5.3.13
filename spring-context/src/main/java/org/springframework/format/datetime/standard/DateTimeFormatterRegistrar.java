@@ -89,7 +89,7 @@ public class DateTimeFormatterRegistrar implements FormatterRegistrar {
 
 	/**
 	 * Set the default format style of {@link java.time.LocalDate} objects.
-	 * Default is {@link java.time.format.FormatStyle#SHORT}.
+	 * 默认值是{@link java.time.format.FormatStyle#SHORT}.
 	 */
 	public void setDateStyle(FormatStyle dateStyle) {
 		this.factories.get(Type.DATE).setDateStyle(dateStyle);
@@ -97,7 +97,7 @@ public class DateTimeFormatterRegistrar implements FormatterRegistrar {
 
 	/**
 	 * Set the default format style of {@link java.time.LocalTime} objects.
-	 * Default is {@link java.time.format.FormatStyle#SHORT}.
+	 * 默认值是{@link java.time.format.FormatStyle#SHORT}.
 	 */
 	public void setTimeStyle(FormatStyle timeStyle) {
 		this.factories.get(Type.TIME).setTimeStyle(timeStyle);
@@ -105,7 +105,7 @@ public class DateTimeFormatterRegistrar implements FormatterRegistrar {
 
 	/**
 	 * Set the default format style of {@link java.time.LocalDateTime} objects.
-	 * Default is {@link java.time.format.FormatStyle#SHORT}.
+	 * 默认值是{@link java.time.format.FormatStyle#SHORT}.
 	 */
 	public void setDateTimeStyle(FormatStyle dateTimeStyle) {
 		this.factories.get(Type.DATE_TIME).setDateTimeStyle(dateTimeStyle);

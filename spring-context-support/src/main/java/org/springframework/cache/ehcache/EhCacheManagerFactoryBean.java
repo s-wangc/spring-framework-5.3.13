@@ -93,7 +93,7 @@ public class EhCacheManagerFactoryBean implements FactoryBean<CacheManager>, Ini
 
 	/**
 	 * Set whether an existing EhCache CacheManager of the same name will be accepted
-	 * for this EhCacheManagerFactoryBean setup. Default is "false".
+	 * for this EhCacheManagerFactoryBean setup. 默认值是"false".
 	 * <p>Typically used in combination with {@link #setCacheManagerName "cacheManagerName"}
 	 * but will simply work with the default CacheManager name if none specified.
 	 * All references to the same CacheManager name (or the same default) in the

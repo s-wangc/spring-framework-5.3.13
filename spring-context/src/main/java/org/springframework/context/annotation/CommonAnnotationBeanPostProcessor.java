@@ -231,7 +231,7 @@ public class CommonAnnotationBeanPostProcessor extends InitDestroyAnnotationBean
 	 * still be checked first; if a bean of that name exists, it will be taken.
 	 * However, if no bean of that name exists, a by-type resolution of the
 	 * dependency will be attempted if this flag is "true".
-	 * <p>Default is "true". Switch this flag to "false" in order to enforce a
+	 * <p>默认值是"true". Switch this flag to "false" in order to enforce a
 	 * by-name lookup in all cases, throwing an exception in case of no name match.
 	 * @see org.springframework.beans.factory.config.AutowireCapableBeanFactory#resolveDependency
 	 */

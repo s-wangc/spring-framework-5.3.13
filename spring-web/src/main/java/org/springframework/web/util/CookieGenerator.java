@@ -138,7 +138,7 @@ public class CookieGenerator {
 	 * Set whether the cookie should only be sent using a secure protocol,
 	 * such as HTTPS (SSL). This is an indication to the receiving browser,
 	 * not processed by the HTTP server itself.
-	 * <p>Default is "false".
+	 * <p>默认值是"false".
 	 * @see javax.servlet.http.Cookie#setSecure
 	 */
 	public void setCookieSecure(boolean cookieSecure) {
@@ -155,7 +155,7 @@ public class CookieGenerator {
 
 	/**
 	 * Set whether the cookie is supposed to be marked with the "HttpOnly" attribute.
-	 * <p>Default is "false".
+	 * <p>默认值是"false".
 	 * @see javax.servlet.http.Cookie#setHttpOnly
 	 */
 	public void setCookieHttpOnly(boolean cookieHttpOnly) {

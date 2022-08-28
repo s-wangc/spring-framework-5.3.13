@@ -112,7 +112,7 @@ public abstract class AbstractJmsListeningContainer extends JmsDestinationAccess
 
 	/**
 	 * Set whether to automatically start the container after initialization.
-	 * <p>Default is "true"; set this to "false" to allow for manual startup
+	 * <p>默认值是"true"; set this to "false" to allow for manual startup
 	 * through the {@link #start()} method.
 	 */
 	public void setAutoStartup(boolean autoStartup) {

@@ -373,7 +373,7 @@ public class UrlBasedViewResolver extends AbstractCachingViewResolver implements
 	 * <p>This will make all such beans accessible in plain {@code ${...}}
 	 * expressions in a JSP 2.0 page, as well as in JSTL's {@code c:out}
 	 * value expressions.
-	 * <p>Default is "false".
+	 * <p>默认值是"false".
 	 * @see AbstractView#setExposeContextBeansAsAttributes
 	 */
 	public void setExposeContextBeansAsAttributes(boolean exposeContextBeansAsAttributes) {

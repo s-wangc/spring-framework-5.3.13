@@ -106,7 +106,7 @@ public abstract class AbstractView implements View, BeanNameAware, ApplicationCo
 	/**
 	 * Set the default charset for this view, used when the
 	 * {@linkplain #setSupportedMediaTypes(List) content type} does not contain one.
-	 * <p>Default is {@linkplain StandardCharsets#UTF_8 UTF 8}.
+	 * <p>默认值是{@linkplain StandardCharsets#UTF_8 UTF 8}.
 	 */
 	public void setDefaultCharset(Charset defaultCharset) {
 		Assert.notNull(defaultCharset, "'defaultCharset' must not be null");

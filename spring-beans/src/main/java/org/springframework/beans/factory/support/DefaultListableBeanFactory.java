@@ -230,7 +230,7 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 	 * Set whether it should be allowed to override bean definitions by registering
 	 * a different definition with the same name, automatically replacing the former.
 	 * If not, an exception will be thrown. This also applies to overriding aliases.
-	 * <p>Default is "true".
+	 * <p>默认值是"true".
 	 * @see #registerBeanDefinition
 	 */
 	public void setAllowBeanDefinitionOverriding(boolean allowBeanDefinitionOverriding) {
@@ -249,7 +249,7 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 	/**
 	 * Set whether the factory is allowed to eagerly load bean classes
 	 * even for bean definitions that are marked as "lazy-init".
-	 * <p>Default is "true". Turn this flag off to suppress class loading
+	 * <p>默认值是"true". Turn this flag off to suppress class loading
 	 * for lazy-init beans unless such a bean is explicitly requested.
 	 * In particular, by-type lookups will then simply ignore bean definitions
 	 * without resolved class name, instead of loading the bean classes on

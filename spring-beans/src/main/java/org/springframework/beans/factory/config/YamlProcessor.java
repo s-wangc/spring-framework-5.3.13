@@ -103,7 +103,7 @@ public abstract class YamlProcessor {
 	/**
 	 * Flag indicating that a document for which all the
 	 * {@link #setDocumentMatchers(DocumentMatcher...) document matchers} abstain will
-	 * nevertheless match. Default is {@code true}.
+	 * nevertheless match. 默认值是{@code true}.
 	 */
 	public void setMatchDefault(boolean matchDefault) {
 		this.matchDefault = matchDefault;
@@ -112,7 +112,7 @@ public abstract class YamlProcessor {
 	/**
 	 * Method to use for resolving resources. Each resource will be converted to a Map,
 	 * so this property is used to decide which map entries to keep in the final output
-	 * from this factory. Default is {@link ResolutionMethod#OVERRIDE}.
+	 * from this factory. 默认值是{@link ResolutionMethod#OVERRIDE}.
 	 */
 	public void setResolutionMethod(ResolutionMethod resolutionMethod) {
 		Assert.notNull(resolutionMethod, "ResolutionMethod must not be null");

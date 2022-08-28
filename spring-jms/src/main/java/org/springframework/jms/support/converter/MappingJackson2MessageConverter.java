@@ -136,7 +136,7 @@ public class MappingJackson2MessageConverter implements SmartMessageConverter, B
 	/**
 	 * Specify the name of the JMS message property that carries the encoding from
 	 * bytes to String and back is BytesMessage is used during the conversion process.
-	 * <p>Default is none. Setting this property is optional; if not set, UTF-8 will
+	 * <p>默认值是none. Setting this property is optional; if not set, UTF-8 will
 	 * be used for decoding any incoming bytes message.
 	 * @see #setEncoding
 	 */
@@ -147,7 +147,7 @@ public class MappingJackson2MessageConverter implements SmartMessageConverter, B
 	/**
 	 * Specify the name of the JMS message property that carries the type id for the
 	 * contained object: either a mapped id value or a raw Java class name.
-	 * <p>Default is none. <b>NOTE: This property needs to be set in order to allow
+	 * <p>默认值是none. <b>NOTE: This property needs to be set in order to allow
 	 * for converting from an incoming message to a Java object.</b>
 	 * @see #setTypeIdMappings
 	 */

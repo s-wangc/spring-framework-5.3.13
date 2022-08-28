@@ -63,7 +63,7 @@ public class RedirectViewControllerRegistration {
 	 * Whether to interpret a given redirect URL that starts with a slash ("/")
 	 * as relative to the current ServletContext, i.e. as relative to the web
 	 * application root.
-	 * <p>Default is {@code true}.
+	 * <p>默认值是{@code true}.
 	 */
 	public RedirectViewControllerRegistration setContextRelative(boolean contextRelative) {
 		this.redirectView.setContextRelative(contextRelative);
@@ -73,7 +73,7 @@ public class RedirectViewControllerRegistration {
 	/**
 	 * Whether to propagate the query parameters of the current request through
 	 * to the target redirect URL.
-	 * <p>Default is {@code false}.
+	 * <p>默认值是{@code false}.
 	 */
 	public RedirectViewControllerRegistration setKeepQueryParams(boolean propagate) {
 		this.redirectView.setPropagateQueryParams(propagate);

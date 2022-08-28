@@ -88,7 +88,7 @@ public class OpenEntityManagerInViewFilter extends OncePerRequestFilter {
 	/**
 	 * Set the bean name of the EntityManagerFactory to fetch from Spring's
 	 * root application context.
-	 * <p>Default is "entityManagerFactory". Note that this default only applies
+	 * <p>默认值是"entityManagerFactory". Note that this default only applies
 	 * when no "persistenceUnitName" param has been specified.
 	 * @see #setPersistenceUnitName
 	 * @see #DEFAULT_ENTITY_MANAGER_FACTORY_BEAN_NAME

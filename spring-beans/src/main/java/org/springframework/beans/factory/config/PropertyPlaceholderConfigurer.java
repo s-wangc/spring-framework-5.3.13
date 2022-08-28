@@ -111,7 +111,7 @@ public class PropertyPlaceholderConfigurer extends PlaceholderConfigurerSupport 
 	 * if no matching system property has been found. Only applied when
 	 * "systemPropertyMode" is active (i.e. "fallback" or "override"), right
 	 * after checking JVM system properties.
-	 * <p>Default is "true". Switch this setting off to never resolve placeholders
+	 * <p>默认值是"true". Switch this setting off to never resolve placeholders
 	 * against system environment variables. Note that it is generally recommended
 	 * to pass external values in as JVM system properties: This can easily be
 	 * achieved in a startup script, even for existing environment variables.

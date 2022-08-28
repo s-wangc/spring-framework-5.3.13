@@ -206,7 +206,7 @@ public class DefaultPersistenceUnitManager
 	}
 
 	/**
-	 * Specify the name of the default persistence unit, if any. Default is "default".
+	 * Specify the name of the default persistence unit, if any. 默认值是"default".
 	 * <p>Primarily applied to a scanned persistence unit without {@code persistence.xml}.
 	 * Also applicable to selecting a default unit from several persistence units available.
 	 * @see #setPackagesToScan
@@ -221,7 +221,7 @@ public class DefaultPersistenceUnitManager
 	 * instead of using JPA's standard scanning of jar files with {@code persistence.xml}
 	 * markers in them. In case of Spring-based scanning, no {@code persistence.xml}
 	 * is necessary; all you need to do is to specify base packages to search here.
-	 * <p>Default is none. Specify packages to search for autodetection of your entity
+	 * <p>默认值是none. Specify packages to search for autodetection of your entity
 	 * classes in the classpath. This is analogous to Spring's component-scan feature
 	 * ({@link org.springframework.context.annotation.ClassPathBeanDefinitionScanner}).
 	 * <p>Such package scanning defines a "default persistence unit" in Spring, which
@@ -707,7 +707,7 @@ public class DefaultPersistenceUnitManager
 
 	/**
 	 * Return whether an override of a same-named persistence unit is allowed.
-	 * <p>Default is {@code false}. May be overridden to return {@code true},
+	 * <p>默认值是{@code false}. May be overridden to return {@code true},
 	 * for example if {@link #postProcessPersistenceUnitInfo} is able to handle that case.
 	 */
 	protected boolean isPersistenceUnitOverrideAllowed() {

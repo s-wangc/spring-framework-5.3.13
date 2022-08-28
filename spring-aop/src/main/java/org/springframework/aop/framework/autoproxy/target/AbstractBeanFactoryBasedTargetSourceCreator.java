@@ -171,7 +171,7 @@ public abstract class AbstractBeanFactoryBasedTargetSourceCreator
 	/**
 	 * Return whether this TargetSourceCreator is prototype-based.
 	 * The scope of the target bean definition will be set accordingly.
-	 * <p>Default is "true".
+	 * <p>默认值是"true".
 	 * @see org.springframework.beans.factory.config.BeanDefinition#isSingleton()
 	 */
 	protected boolean isPrototypeBased() {

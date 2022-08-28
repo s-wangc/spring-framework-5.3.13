@@ -405,7 +405,7 @@ public abstract class FrameworkServlet extends HttpServletBean implements Applic
 
 	/**
 	 * Set whether to publish this servlet's context as a ServletContext attribute,
-	 * available to all objects in the web container. Default is "true".
+	 * available to all objects in the web container. 默认值是"true".
 	 * <p>This is especially handy during testing, although it is debatable whether
 	 * it's good practice to let other application objects access the context this way.
 	 */
@@ -415,7 +415,7 @@ public abstract class FrameworkServlet extends HttpServletBean implements Applic
 
 	/**
 	 * Set whether this servlet should publish a ServletRequestHandledEvent at the end
-	 * of each request. Default is "true"; can be turned off for a slight performance
+	 * of each request. 默认值是"true"; can be turned off for a slight performance
 	 * improvement, provided that no ApplicationListeners rely on such events.
 	 * @see org.springframework.web.context.support.ServletRequestHandledEvent
 	 */

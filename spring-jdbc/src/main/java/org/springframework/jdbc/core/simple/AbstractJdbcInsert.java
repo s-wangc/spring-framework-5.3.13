@@ -207,7 +207,7 @@ public abstract class AbstractJdbcInsert {
 
 	/**
 	 * Specify whether the parameter meta-data for the call should be used.
-	 * The default is {@code true}.
+	 * 默认值是{@code true}.
 	 */
 	public void setAccessTableColumnMetaData(boolean accessTableColumnMetaData) {
 		this.tableMetaDataContext.setAccessTableColumnMetaData(accessTableColumnMetaData);
@@ -215,7 +215,7 @@ public abstract class AbstractJdbcInsert {
 
 	/**
 	 * Specify whether the default for including synonyms should be changed.
-	 * The default is {@code false}.
+	 * 默认值是{@code false}.
 	 */
 	public void setOverrideIncludeSynonymsDefault(boolean override) {
 		this.tableMetaDataContext.setOverrideIncludeSynonymsDefault(override);

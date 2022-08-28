@@ -64,7 +64,7 @@ import org.springframework.web.util.WebUtils;
  * <p>As of Spring 5.0, this set of mocks is designed on a Servlet 4.0 baseline.
  *
  * <p>Compatible with Servlet 3.1 but can be configured to expose a specific version
- * through {@link #setMajorVersion}/{@link #setMinorVersion}; default is 3.1.
+ * through {@link #setMajorVersion}/{@link #setMinorVersion}; 默认值是3.1.
  * Note that Servlet 3.1 support is limited: servlet, filter and listener
  * registration methods are not supported; neither is JSP configuration.
  * We generally do not recommend to unit test your ServletContainerInitializers and

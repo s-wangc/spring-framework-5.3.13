@@ -224,7 +224,7 @@ public abstract class WebUtils {
 	/**
 	 * Set a system property to the web application root directory.
 	 * The key of the system property can be defined with the "webAppRootKey"
-	 * context-param in {@code web.xml}. Default is "webapp.root".
+	 * context-param in {@code web.xml}. 默认值是"webapp.root".
 	 * <p>Can be used for tools that support substitution with {@code System.getProperty}
 	 * values, like log4j's "${key}" syntax within log file locations.
 	 * @param servletContext the servlet context of the web application

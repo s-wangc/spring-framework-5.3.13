@@ -178,7 +178,7 @@ public class MBeanClientInterceptor
 
 	/**
 	 * Set the agent id of the {@code MBeanServer} to locate.
-	 * <p>Default is none. If specified, this will result in an
+	 * <p>默认值是none. If specified, this will result in an
 	 * attempt being made to locate the attendant MBeanServer, unless
 	 * the {@link #setServiceUrl "serviceUrl"} property has been set.
 	 * @see javax.management.MBeanServerFactory#findMBeanServer(String)
@@ -191,7 +191,7 @@ public class MBeanClientInterceptor
 	/**
 	 * Set whether or not the proxy should connect to the {@code MBeanServer}
 	 * at creation time ("true") or the first time it is invoked ("false").
-	 * Default is "true".
+	 * 默认值是"true".
 	 */
 	public void setConnectOnStartup(boolean connectOnStartup) {
 		this.connectOnStartup = connectOnStartup;
@@ -199,7 +199,7 @@ public class MBeanClientInterceptor
 
 	/**
 	 * Set whether to refresh the MBeanServer connection on connect failure.
-	 * Default is "false".
+	 * 默认值是"false".
 	 * <p>Can be turned on to allow for hot restart of the JMX server,
 	 * automatically reconnecting and retrying in case of an IOException.
 	 */

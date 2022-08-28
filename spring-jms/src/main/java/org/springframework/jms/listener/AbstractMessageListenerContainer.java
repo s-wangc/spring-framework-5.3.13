@@ -250,7 +250,7 @@ public abstract class AbstractMessageListenerContainer extends AbstractJmsListen
 
 	/**
 	 * Set the JMS message selector expression (or {@code null} if none).
-	 * Default is none.
+	 * 默认值是none.
 	 * <p>See the JMS specification for a detailed definition of selector expressions.
 	 * <p>Note: The message selector may be replaced at runtime, with the listener
 	 * container picking up the new selector value immediately (works e.g. with
@@ -337,7 +337,7 @@ public abstract class AbstractMessageListenerContainer extends AbstractJmsListen
 	/**
 	 * Set whether to make the subscription durable. The durable subscription name
 	 * to be used can be specified through the "subscriptionName" property.
-	 * <p>Default is "false". Set this to "true" to register a durable subscription,
+	 * <p>默认值是"false". Set this to "true" to register a durable subscription,
 	 * typically in combination with a "subscriptionName" value (unless
 	 * your message listener class name is good enough as subscription name).
 	 * <p>Only makes sense when listening to a topic (pub-sub domain),
@@ -362,7 +362,7 @@ public abstract class AbstractMessageListenerContainer extends AbstractJmsListen
 	/**
 	 * Set whether to make the subscription shared. The shared subscription name
 	 * to be used can be specified through the "subscriptionName" property.
-	 * <p>Default is "false". Set this to "true" to register a shared subscription,
+	 * <p>默认值是"false". Set this to "true" to register a shared subscription,
 	 * typically in combination with a "subscriptionName" value (unless
 	 * your message listener class name is good enough as subscription name).
 	 * Note that shared subscriptions may also be durable, so this flag can
@@ -447,7 +447,7 @@ public abstract class AbstractMessageListenerContainer extends AbstractJmsListen
 
 	/**
 	 * Set whether to inhibit the delivery of messages published by its own connection.
-	 * Default is "false".
+	 * 默认值是"false".
 	 * @since 4.1
 	 * @see javax.jms.Session#createConsumer(javax.jms.Destination, String, boolean)
 	 */

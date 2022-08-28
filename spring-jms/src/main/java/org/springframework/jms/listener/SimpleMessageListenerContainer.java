@@ -141,7 +141,7 @@ public class SimpleMessageListenerContainer extends AbstractMessageListenerConta
 	}
 
 	/**
-	 * Specify the number of concurrent consumers to create. Default is 1.
+	 * Specify the number of concurrent consumers to create. 默认值是1.
 	 * <p>Raising the number of concurrent consumers is recommendable in order
 	 * to scale the consumption of messages coming in from a queue. However,
 	 * note that any ordering guarantees are lost once multiple consumers are

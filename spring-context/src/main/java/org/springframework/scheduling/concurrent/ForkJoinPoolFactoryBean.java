@@ -67,7 +67,7 @@ public class ForkJoinPoolFactoryBean implements FactoryBean<ForkJoinPool>, Initi
 	}
 
 	/**
-	 * Specify the parallelism level. Default is {@link Runtime#availableProcessors()}.
+	 * Specify the parallelism level. 默认值是{@link Runtime#availableProcessors()}.
 	 */
 	public void setParallelism(int parallelism) {
 		this.parallelism = parallelism;
@@ -75,7 +75,7 @@ public class ForkJoinPoolFactoryBean implements FactoryBean<ForkJoinPool>, Initi
 
 	/**
 	 * Set the factory for creating new ForkJoinWorkerThreads.
-	 * Default is {@link ForkJoinPool#defaultForkJoinWorkerThreadFactory}.
+	 * 默认值是{@link ForkJoinPool#defaultForkJoinWorkerThreadFactory}.
 	 */
 	public void setThreadFactory(ForkJoinPool.ForkJoinWorkerThreadFactory threadFactory) {
 		this.threadFactory = threadFactory;
@@ -83,7 +83,7 @@ public class ForkJoinPoolFactoryBean implements FactoryBean<ForkJoinPool>, Initi
 
 	/**
 	 * Set the handler for internal worker threads that terminate due to unrecoverable errors
-	 * encountered while executing tasks. Default is none.
+	 * encountered while executing tasks. 默认值是none.
 	 */
 	public void setUncaughtExceptionHandler(Thread.UncaughtExceptionHandler uncaughtExceptionHandler) {
 		this.uncaughtExceptionHandler = uncaughtExceptionHandler;
@@ -93,7 +93,7 @@ public class ForkJoinPoolFactoryBean implements FactoryBean<ForkJoinPool>, Initi
 	 * Specify whether to establish a local first-in-first-out scheduling mode for forked tasks
 	 * that are never joined. This mode (asyncMode = {@code true}) may be more appropriate
 	 * than the default locally stack-based mode in applications in which worker threads only
-	 * process event-style asynchronous tasks. Default is {@code false}.
+	 * process event-style asynchronous tasks. 默认值是{@code false}.
 	 */
 	public void setAsyncMode(boolean asyncMode) {
 		this.asyncMode = asyncMode;

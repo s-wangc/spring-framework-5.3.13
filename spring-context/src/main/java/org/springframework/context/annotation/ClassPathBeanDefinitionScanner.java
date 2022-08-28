@@ -226,7 +226,7 @@ public class ClassPathBeanDefinitionScanner extends ClassPathScanningCandidateCo
 	/**
 	 * Specify the proxy behavior for non-singleton scoped beans.
 	 * Note that this will override any custom "scopeMetadataResolver" setting.
-	 * <p>The default is {@link ScopedProxyMode#NO}.
+	 * <p>默认值是{@link ScopedProxyMode#NO}.
 	 * @see #setScopeMetadataResolver
 	 */
 	public void setScopedProxyMode(ScopedProxyMode scopedProxyMode) {

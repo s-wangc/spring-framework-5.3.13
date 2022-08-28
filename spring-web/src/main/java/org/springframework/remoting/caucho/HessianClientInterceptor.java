@@ -96,7 +96,7 @@ public class HessianClientInterceptor extends UrlBasedRemoteAccessor implements 
 
 	/**
 	 * Set whether to send the Java collection type for each serialized
-	 * collection. Default is "true".
+	 * collection. 默认值是"true".
 	 */
 	public void setSendCollectionType(boolean sendCollectionType) {
 		this.proxyFactory.getSerializerFactory().setSendCollectionType(sendCollectionType);
@@ -104,7 +104,7 @@ public class HessianClientInterceptor extends UrlBasedRemoteAccessor implements 
 
 	/**
 	 * Set whether to allow non-serializable types as Hessian arguments
-	 * and return values. Default is "true".
+	 * and return values. 默认值是"true".
 	 */
 	public void setAllowNonSerializable(boolean allowNonSerializable) {
 		this.proxyFactory.getSerializerFactory().setAllowNonSerializable(allowNonSerializable);
@@ -112,7 +112,7 @@ public class HessianClientInterceptor extends UrlBasedRemoteAccessor implements 
 
 	/**
 	 * Set whether overloaded methods should be enabled for remote invocations.
-	 * Default is "false".
+	 * 默认值是"false".
 	 * @see com.caucho.hessian.client.HessianProxyFactory#setOverloadEnabled
 	 */
 	public void setOverloadEnabled(boolean overloadEnabled) {
@@ -121,7 +121,7 @@ public class HessianClientInterceptor extends UrlBasedRemoteAccessor implements 
 
 	/**
 	 * Set the username that this factory should use to access the remote service.
-	 * Default is none.
+	 * 默认值是none.
 	 * <p>The username will be sent by Hessian via HTTP Basic Authentication.
 	 * @see com.caucho.hessian.client.HessianProxyFactory#setUser
 	 */
@@ -131,7 +131,7 @@ public class HessianClientInterceptor extends UrlBasedRemoteAccessor implements 
 
 	/**
 	 * Set the password that this factory should use to access the remote service.
-	 * Default is none.
+	 * 默认值是none.
 	 * <p>The password will be sent by Hessian via HTTP Basic Authentication.
 	 * @see com.caucho.hessian.client.HessianProxyFactory#setPassword
 	 */
@@ -141,7 +141,7 @@ public class HessianClientInterceptor extends UrlBasedRemoteAccessor implements 
 
 	/**
 	 * Set whether Hessian's debug mode should be enabled.
-	 * Default is "false".
+	 * 默认值是"false".
 	 * @see com.caucho.hessian.client.HessianProxyFactory#setDebug
 	 */
 	public void setDebug(boolean debug) {
@@ -181,7 +181,7 @@ public class HessianClientInterceptor extends UrlBasedRemoteAccessor implements 
 
 	/**
 	 * Set whether version 2 of the Hessian protocol should be used for
-	 * parsing requests and replies. Default is "false".
+	 * parsing requests and replies. 默认值是"false".
 	 * @see com.caucho.hessian.client.HessianProxyFactory#setHessian2Request
 	 */
 	public void setHessian2(boolean hessian2) {
@@ -191,7 +191,7 @@ public class HessianClientInterceptor extends UrlBasedRemoteAccessor implements 
 
 	/**
 	 * Set whether version 2 of the Hessian protocol should be used for
-	 * parsing requests. Default is "false".
+	 * parsing requests. 默认值是"false".
 	 * @see com.caucho.hessian.client.HessianProxyFactory#setHessian2Request
 	 */
 	public void setHessian2Request(boolean hessian2) {
@@ -200,7 +200,7 @@ public class HessianClientInterceptor extends UrlBasedRemoteAccessor implements 
 
 	/**
 	 * Set whether version 2 of the Hessian protocol should be used for
-	 * parsing replies. Default is "false".
+	 * parsing replies. 默认值是"false".
 	 * @see com.caucho.hessian.client.HessianProxyFactory#setHessian2Reply
 	 */
 	public void setHessian2Reply(boolean hessian2) {

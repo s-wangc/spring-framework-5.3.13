@@ -86,7 +86,7 @@ public class DatabaseStartupValidator implements InitializingBean {
 
 	/**
 	 * Set the interval between validation runs (in seconds).
-	 * Default is {@value #DEFAULT_INTERVAL}.
+	 * 默认值是{@value #DEFAULT_INTERVAL}.
 	 */
 	public void setInterval(int interval) {
 		this.interval = interval;
@@ -94,7 +94,7 @@ public class DatabaseStartupValidator implements InitializingBean {
 
 	/**
 	 * Set the timeout (in seconds) after which a fatal exception
-	 * will be thrown. Default is {@value #DEFAULT_TIMEOUT}.
+	 * will be thrown. 默认值是{@value #DEFAULT_TIMEOUT}.
 	 */
 	public void setTimeout(int timeout) {
 		this.timeout = timeout;

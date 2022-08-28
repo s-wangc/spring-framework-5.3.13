@@ -108,7 +108,7 @@ public abstract class AbstractMessageEndpointFactory implements MessageEndpointF
 
 	/**
 	 * Specify the name of the transaction, if any.
-	 * <p>Default is none. A specified name will be passed on to the transaction
+	 * <p>默认值是none. A specified name will be passed on to the transaction
 	 * manager, allowing to identify the transaction in a transaction monitor.
 	 */
 	public void setTransactionName(String transactionName) {

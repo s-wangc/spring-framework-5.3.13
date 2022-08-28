@@ -100,7 +100,7 @@ public abstract class AbstractTraceInterceptor implements MethodInterceptor, Ser
 
 	/**
 	 * Set to "true" to have {@link #setUseDynamicLogger dynamic loggers} hide
-	 * proxy class names wherever possible. Default is "false".
+	 * proxy class names wherever possible. 默认值是"false".
 	 */
 	public void setHideProxyClassNames(boolean hideProxyClassNames) {
 		this.hideProxyClassNames = hideProxyClassNames;
@@ -108,7 +108,7 @@ public abstract class AbstractTraceInterceptor implements MethodInterceptor, Ser
 
 	/**
 	 * Set whether to pass an exception to the logger, suggesting inclusion
-	 * of its stack trace into the log. Default is "true"; set this to "false"
+	 * of its stack trace into the log. 默认值是"true"; set this to "false"
 	 * in order to reduce the log output to just the trace message (which may
 	 * include the exception class name and exception message, if applicable).
 	 * @since 4.3.10

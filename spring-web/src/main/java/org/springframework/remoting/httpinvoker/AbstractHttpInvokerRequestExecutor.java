@@ -100,7 +100,7 @@ public abstract class AbstractHttpInvokerRequestExecutor implements HttpInvokerR
 	/**
 	 * Set whether to accept GZIP encoding, that is, whether to
 	 * send the HTTP "Accept-Encoding" header with "gzip" as value.
-	 * <p>Default is "true". Turn this flag off if you do not want
+	 * <p>默认值是"true". Turn this flag off if you do not want
 	 * GZIP response compression even if enabled on the HTTP server.
 	 */
 	public void setAcceptGzipEncoding(boolean acceptGzipEncoding) {

@@ -80,7 +80,7 @@ public class SimpleServletPostProcessor implements
 	/**
 	 * Set whether to use the shared ServletConfig object passed in
 	 * through {@code setServletConfig}, if available.
-	 * <p>Default is "true". Turn this setting to "false" to pass in
+	 * <p>默认值是"true". Turn this setting to "false" to pass in
 	 * a mock ServletConfig object with the bean name as servlet name,
 	 * holding the current ServletContext.
 	 * @see #setServletConfig

@@ -104,25 +104,25 @@ public class PropertiesBeanDefinitionReader extends AbstractBeanDefinitionReader
 
 	/**
 	 * Special key to distinguish {@code owner.(scope)=prototype}.
-	 * Default is "true".
+	 * 默认值是"true".
 	 */
 	public static final String SCOPE_KEY = "(scope)";
 
 	/**
 	 * Special key to distinguish {@code owner.(singleton)=false}.
-	 * Default is "true".
+	 * 默认值是"true".
 	 */
 	public static final String SINGLETON_KEY = "(singleton)";
 
 	/**
 	 * Special key to distinguish {@code owner.(abstract)=true}
-	 * Default is "false".
+	 * 默认值是"false".
 	 */
 	public static final String ABSTRACT_KEY = "(abstract)";
 
 	/**
 	 * Special key to distinguish {@code owner.(lazy-init)=true}
-	 * Default is "false".
+	 * 默认值是"false".
 	 */
 	public static final String LAZY_INIT_KEY = "(lazy-init)";
 
@@ -187,7 +187,7 @@ public class PropertiesBeanDefinitionReader extends AbstractBeanDefinitionReader
 
 	/**
 	 * Set the PropertiesPersister to use for parsing properties files.
-	 * The default is ResourcePropertiesPersister.
+	 * 默认值是ResourcePropertiesPersister.
 	 * @see ResourcePropertiesPersister#INSTANCE
 	 */
 	public void setPropertiesPersister(@Nullable PropertiesPersister propertiesPersister) {

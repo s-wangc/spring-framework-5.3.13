@@ -93,7 +93,7 @@ public abstract class AbstractRefreshableApplicationContext extends AbstractAppl
 	/**
 	 * Set whether it should be allowed to override bean definitions by registering
 	 * a different definition with the same name, automatically replacing the former.
-	 * If not, an exception will be thrown. Default is "true".
+	 * If not, an exception will be thrown. 默认值是"true".
 	 * @see org.springframework.beans.factory.support.DefaultListableBeanFactory#setAllowBeanDefinitionOverriding
 	 */
 	public void setAllowBeanDefinitionOverriding(boolean allowBeanDefinitionOverriding) {
@@ -103,7 +103,7 @@ public abstract class AbstractRefreshableApplicationContext extends AbstractAppl
 	/**
 	 * Set whether to allow circular references between beans - and automatically
 	 * try to resolve them.
-	 * <p>Default is "true". Turn this off to throw an exception when encountering
+	 * <p>默认值是"true". Turn this off to throw an exception when encountering
 	 * a circular reference, disallowing them completely.
 	 * @see org.springframework.beans.factory.support.DefaultListableBeanFactory#setAllowCircularReferences
 	 */

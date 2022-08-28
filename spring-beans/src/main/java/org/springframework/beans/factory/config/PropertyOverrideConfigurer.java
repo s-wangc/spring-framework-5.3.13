@@ -89,7 +89,7 @@ public class PropertyOverrideConfigurer extends PropertyResourceConfigurer {
 	}
 
 	/**
-	 * Set whether to ignore invalid keys. Default is "false".
+	 * Set whether to ignore invalid keys. 默认值是"false".
 	 * <p>If you ignore invalid keys, keys that do not follow the 'beanName.property' format
 	 * (or refer to invalid bean names or properties) will just be logged at debug level.
 	 * This allows one to have arbitrary other keys in a properties file.

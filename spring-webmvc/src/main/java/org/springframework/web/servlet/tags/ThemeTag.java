@@ -78,7 +78,7 @@ import org.springframework.context.NoSuchMessageException;
  * <td>false</td>
  * <td>true</td>
  * <td>Set JavaScript escaping for this tag, as boolean value.
- * Default is false.</td>
+ * 默认值是false.</td>
  * </tr>
  * <tr>
  * <td>message</td>

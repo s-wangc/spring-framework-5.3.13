@@ -251,7 +251,7 @@ public class JmsTemplate extends JmsDestinationAccessor implements JmsOperations
 
 
 	/**
-	 * Set whether message IDs are enabled. Default is "true".
+	 * Set whether message IDs are enabled. 默认值是"true".
 	 * <p>This is only a hint to the JMS producer.
 	 * See the JMS javadocs for details.
 	 * @see javax.jms.MessageProducer#setDisableMessageID
@@ -268,7 +268,7 @@ public class JmsTemplate extends JmsDestinationAccessor implements JmsOperations
 	}
 
 	/**
-	 * Set whether message timestamps are enabled. Default is "true".
+	 * Set whether message timestamps are enabled. 默认值是"true".
 	 * <p>This is only a hint to the JMS producer.
 	 * See the JMS javadocs for details.
 	 * @see javax.jms.MessageProducer#setDisableMessageTimestamp
@@ -286,7 +286,7 @@ public class JmsTemplate extends JmsDestinationAccessor implements JmsOperations
 
 	/**
 	 * Set whether to inhibit the delivery of messages published by its own connection.
-	 * Default is "false".
+	 * 默认值是"false".
 	 * @see javax.jms.Session#createConsumer(javax.jms.Destination, String, boolean)
 	 */
 	public void setPubSubNoLocal(boolean pubSubNoLocal) {

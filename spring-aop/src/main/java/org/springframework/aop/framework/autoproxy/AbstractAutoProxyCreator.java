@@ -198,7 +198,7 @@ public abstract class AbstractAutoProxyCreator extends ProxyProcessorSupport
 
 	/**
 	 * Set whether the common interceptors should be applied before bean-specific ones.
-	 * Default is "true"; else, bean-specific interceptors will get applied first.
+	 * 默认值是"true"; else, bean-specific interceptors will get applied first.
 	 */
 	public void setApplyCommonInterceptorsFirst(boolean applyCommonInterceptorsFirst) {
 		this.applyCommonInterceptorsFirst = applyCommonInterceptorsFirst;
@@ -496,7 +496,7 @@ public abstract class AbstractAutoProxyCreator extends ProxyProcessorSupport
 	 * Return whether the Advisors returned by the subclass are pre-filtered
 	 * to match the bean's target class already, allowing the ClassFilter check
 	 * to be skipped when building advisors chains for AOP invocations.
-	 * <p>Default is {@code false}. Subclasses may override this if they
+	 * <p>默认值是{@code false}. Subclasses may override this if they
 	 * will always return pre-filtered Advisors.
 	 * @return whether the Advisors are pre-filtered
 	 * @see #getAdvicesAndAdvisorsForBean

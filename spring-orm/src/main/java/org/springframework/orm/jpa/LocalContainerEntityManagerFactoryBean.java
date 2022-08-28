@@ -165,7 +165,7 @@ public class LocalContainerEntityManagerFactoryBean extends AbstractEntityManage
 	 * instead of using JPA's standard scanning of jar files with {@code persistence.xml}
 	 * markers in them. In case of Spring-based scanning, no {@code persistence.xml}
 	 * is necessary; all you need to do is to specify base packages to search here.
-	 * <p>Default is none. Specify packages to search for autodetection of your entity
+	 * <p>默认值是none. Specify packages to search for autodetection of your entity
 	 * classes in the classpath. This is analogous to Spring's component-scan feature
 	 * ({@link org.springframework.context.annotation.ClassPathBeanDefinitionScanner}).
 	 * <p><b>Note: There may be limitations in comparison to regular JPA scanning.</b>

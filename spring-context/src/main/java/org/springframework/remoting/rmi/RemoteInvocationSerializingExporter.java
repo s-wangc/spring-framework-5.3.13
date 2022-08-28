@@ -82,7 +82,7 @@ public abstract class RemoteInvocationSerializingExporter extends RemoteInvocati
 
 	/**
 	 * Set whether to accept deserialization of proxy classes.
-	 * <p>Default is "true". May be deactivated as a security measure.
+	 * <p>默认值是"true". May be deactivated as a security measure.
 	 */
 	public void setAcceptProxyClasses(boolean acceptProxyClasses) {
 		this.acceptProxyClasses = acceptProxyClasses;

@@ -124,7 +124,7 @@ public class DefaultTransactionDefinition implements TransactionDefinition, Seri
 
 	/**
 	 * Set the propagation behavior. Must be one of the propagation constants
-	 * in the TransactionDefinition interface. Default is PROPAGATION_REQUIRED.
+	 * in the TransactionDefinition interface. 默认值是PROPAGATION_REQUIRED.
 	 * <p>Exclusively designed for use with {@link #PROPAGATION_REQUIRED} or
 	 * {@link #PROPAGATION_REQUIRES_NEW} since it only applies to newly started
 	 * transactions. Consider switching the "validateExistingTransactions" flag to
@@ -167,7 +167,7 @@ public class DefaultTransactionDefinition implements TransactionDefinition, Seri
 
 	/**
 	 * Set the isolation level. Must be one of the isolation constants
-	 * in the TransactionDefinition interface. Default is ISOLATION_DEFAULT.
+	 * in the TransactionDefinition interface. 默认值是ISOLATION_DEFAULT.
 	 * <p>Exclusively designed for use with {@link #PROPAGATION_REQUIRED} or
 	 * {@link #PROPAGATION_REQUIRES_NEW} since it only applies to newly started
 	 * transactions. Consider switching the "validateExistingTransactions" flag to
@@ -216,7 +216,7 @@ public class DefaultTransactionDefinition implements TransactionDefinition, Seri
 
 	/**
 	 * Set whether to optimize as read-only transaction.
-	 * Default is "false".
+	 * 默认值是"false".
 	 * <p>The read-only flag applies to any transaction context, whether backed
 	 * by an actual resource transaction ({@link #PROPAGATION_REQUIRED}/
 	 * {@link #PROPAGATION_REQUIRES_NEW}) or operating non-transactionally at
@@ -238,7 +238,7 @@ public class DefaultTransactionDefinition implements TransactionDefinition, Seri
 	}
 
 	/**
-	 * Set the name of this transaction. Default is none.
+	 * Set the name of this transaction. 默认值是none.
 	 * <p>This will be used as transaction name to be shown in a
 	 * transaction monitor, if applicable (for example, WebLogic's).
 	 */

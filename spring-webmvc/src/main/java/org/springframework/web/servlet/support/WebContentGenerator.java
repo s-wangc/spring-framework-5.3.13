@@ -306,7 +306,7 @@ public abstract class WebContentGenerator extends WebApplicationObjectSupport {
 	}
 
 	/**
-	 * Set whether to use the HTTP 1.1 cache-control header. Default is "true".
+	 * Set whether to use the HTTP 1.1 cache-control header. 默认值是"true".
 	 * <p>Note: Cache headers will only get applied if caching is enabled
 	 * (or explicitly prevented) for the current request.
 	 * @deprecated as of 4.2, since going forward, the HTTP 1.1 cache-control
@@ -328,7 +328,7 @@ public abstract class WebContentGenerator extends WebApplicationObjectSupport {
 
 	/**
 	 * Set whether to use the HTTP 1.1 cache-control header value "no-store"
-	 * when preventing caching. Default is "true".
+	 * when preventing caching. 默认值是"true".
 	 * @deprecated as of 4.2, in favor of {@link #setCacheControl}
 	 */
 	@Deprecated
@@ -350,7 +350,7 @@ public abstract class WebContentGenerator extends WebApplicationObjectSupport {
 	 * This may be useful with annotated controller methods, which can
 	 * programmatically do a last-modified calculation as described in
 	 * {@link org.springframework.web.context.request.WebRequest#checkNotModified(long)}.
-	 * <p>Default is "false".
+	 * <p>默认值是"false".
 	 * @deprecated as of 4.2, in favor of {@link #setCacheControl}
 	 */
 	@Deprecated

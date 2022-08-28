@@ -84,7 +84,7 @@ public class InternalResourceViewResolver extends UrlBasedViewResolver {
 
 	/**
 	 * Specify whether to always include the view rather than forward to it.
-	 * <p>Default is "false". Switch this flag on to enforce the use of a
+	 * <p>默认值是"false". Switch this flag on to enforce the use of a
 	 * Servlet include, even if a forward would be possible.
 	 * @see InternalResourceView#setAlwaysInclude
 	 */

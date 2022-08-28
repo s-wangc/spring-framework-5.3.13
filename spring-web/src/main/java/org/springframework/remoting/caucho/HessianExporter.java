@@ -88,7 +88,7 @@ public class HessianExporter extends RemoteExporter implements InitializingBean 
 
 	/**
 	 * Set whether to send the Java collection type for each serialized
-	 * collection. Default is "true".
+	 * collection. 默认值是"true".
 	 */
 	public void setSendCollectionType(boolean sendCollectionType) {
 		this.serializerFactory.setSendCollectionType(sendCollectionType);
@@ -96,7 +96,7 @@ public class HessianExporter extends RemoteExporter implements InitializingBean 
 
 	/**
 	 * Set whether to allow non-serializable types as Hessian arguments
-	 * and return values. Default is "true".
+	 * and return values. 默认值是"true".
 	 */
 	public void setAllowNonSerializable(boolean allowNonSerializable) {
 		this.serializerFactory.setAllowNonSerializable(allowNonSerializable);
@@ -112,7 +112,7 @@ public class HessianExporter extends RemoteExporter implements InitializingBean 
 
 	/**
 	 * Set whether Hessian's debug mode should be enabled, logging to
-	 * this exporter's Commons Logging log. Default is "false".
+	 * this exporter's Commons Logging log. 默认值是"false".
 	 * @see com.caucho.hessian.client.HessianProxyFactory#setDebug
 	 */
 	public void setDebug(boolean debug) {

@@ -93,7 +93,7 @@ public class SimpleHttpServerJaxWsServiceExporter extends AbstractJaxWsServiceEx
 	}
 
 	/**
-	 * Specify the HTTP server's port. Default is 8080.
+	 * Specify the HTTP server's port. 默认值是8080.
 	 * <p>Only applicable for a locally configured HTTP server.
 	 * Ignored when the {@link #setServer "server"} property has been specified.
 	 */
@@ -102,7 +102,7 @@ public class SimpleHttpServerJaxWsServiceExporter extends AbstractJaxWsServiceEx
 	}
 
 	/**
-	 * Specify the HTTP server's hostname to bind to. Default is localhost;
+	 * Specify the HTTP server's hostname to bind to. 默认值是localhost;
 	 * can be overridden with a specific network address to bind to.
 	 * <p>Only applicable for a locally configured HTTP server.
 	 * Ignored when the {@link #setServer "server"} property has been specified.
@@ -123,7 +123,7 @@ public class SimpleHttpServerJaxWsServiceExporter extends AbstractJaxWsServiceEx
 
 	/**
 	 * Specify the number of seconds to wait until HTTP exchanges have
-	 * completed when shutting down the HTTP server. Default is 0.
+	 * completed when shutting down the HTTP server. 默认值是0.
 	 * <p>Only applicable for a locally configured HTTP server.
 	 * Ignored when the {@link #setServer "server"} property has been specified.
 	 */

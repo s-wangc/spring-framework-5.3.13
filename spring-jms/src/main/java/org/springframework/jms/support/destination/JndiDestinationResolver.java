@@ -66,7 +66,7 @@ public class JndiDestinationResolver extends JndiLocatorSupport implements Cachi
 
 
 	/**
-	 * Set whether to cache resolved destinations. Default is "true".
+	 * Set whether to cache resolved destinations. 默认值是"true".
 	 * <p>This flag can be turned off to re-lookup a destination for each operation,
 	 * which allows for hot restarting of destinations. This is mainly useful
 	 * during development.
@@ -80,7 +80,7 @@ public class JndiDestinationResolver extends JndiLocatorSupport implements Cachi
 
 	/**
 	 * Set whether this resolver is supposed to create dynamic destinations
-	 * if the destination name is not found in JNDI. Default is "false".
+	 * if the destination name is not found in JNDI. 默认值是"false".
 	 * <p>Turn this flag on to enable transparent fallback to dynamic destinations.
 	 * @see #setDynamicDestinationResolver
 	 */

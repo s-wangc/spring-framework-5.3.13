@@ -84,7 +84,7 @@ public class TransactionalApplicationListenerAdapter<E extends ApplicationEvent>
 
 	/**
 	 * Specify the transaction phase to invoke the listener in.
-	 * <p>The default is {@link TransactionPhase#AFTER_COMMIT}.
+	 * <p>默认值是{@link TransactionPhase#AFTER_COMMIT}.
 	 */
 	public void setTransactionPhase(TransactionPhase transactionPhase) {
 		this.transactionPhase = transactionPhase;

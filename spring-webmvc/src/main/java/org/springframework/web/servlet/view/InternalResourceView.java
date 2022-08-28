@@ -100,7 +100,7 @@ public class InternalResourceView extends AbstractUrlBasedView {
 
 	/**
 	 * Specify whether to always include the view rather than forward to it.
-	 * <p>Default is "false". Switch this flag on to enforce the use of a
+	 * <p>默认值是"false". Switch this flag on to enforce the use of a
 	 * Servlet include, even if a forward would be possible.
 	 * @see javax.servlet.RequestDispatcher#forward
 	 * @see javax.servlet.RequestDispatcher#include
@@ -113,7 +113,7 @@ public class InternalResourceView extends AbstractUrlBasedView {
 	/**
 	 * Set whether to explicitly prevent dispatching back to the
 	 * current handler path.
-	 * <p>Default is "false". Switch this to "true" for convention-based
+	 * <p>默认值是"false". Switch this to "true" for convention-based
 	 * views where a dispatch back to the current handler path is a
 	 * definitive error.
 	 */

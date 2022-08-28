@@ -108,7 +108,7 @@ public class StopWatch {
 	 * <p>Set this to {@code false} when using a {@code StopWatch} for millions
 	 * of intervals; otherwise, the {@code TaskInfo} structure will consume
 	 * excessive memory.
-	 * <p>Default is {@code true}.
+	 * <p>默认值是{@code true}.
 	 */
 	public void setKeepTaskList(boolean keepTaskList) {
 		this.keepTaskList = keepTaskList;

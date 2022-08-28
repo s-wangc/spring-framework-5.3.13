@@ -118,7 +118,7 @@
 			<xsd:attribute name="pool-size" type="xsd:string" use="optional">
 				<xsd:annotation>
 					<xsd:documentation><![CDATA[
-	The size of the ScheduledExecutorService's thread pool. The default is 1.
+	The size of the ScheduledExecutorService's thread pool. 默认值是1.
 					]]></xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>

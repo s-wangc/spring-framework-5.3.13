@@ -83,7 +83,7 @@ public class JmsInvokerServiceExporter extends RemoteInvocationBasedExporter
 
 	/**
 	 * Set whether invalidly formatted messages should be discarded.
-	 * Default is "true".
+	 * 默认值是"true".
 	 * <p>Switch this flag to "false" to throw an exception back to the
 	 * listener container. This will typically lead to redelivery of
 	 * the message, which is usually undesirable - since the message

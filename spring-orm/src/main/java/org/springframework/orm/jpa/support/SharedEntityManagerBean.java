@@ -76,7 +76,7 @@ public class SharedEntityManagerBean extends EntityManagerFactoryAccessor
 
 	/**
 	 * Set whether to automatically join ongoing transactions (according
-	 * to the JPA 2.1 SynchronizationType rules). Default is "true".
+	 * to the JPA 2.1 SynchronizationType rules). 默认值是"true".
 	 */
 	public void setSynchronizedWithTransaction(boolean synchronizedWithTransaction) {
 		this.synchronizedWithTransaction = synchronizedWithTransaction;

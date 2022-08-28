@@ -80,7 +80,7 @@ public abstract class RemoteExporter extends RemotingSupport {
 	 * Set whether to register a RemoteInvocationTraceInterceptor for exported
 	 * services. Only applied when a subclass uses {@code getProxyForService}
 	 * for creating the proxy to expose.
-	 * <p>Default is "true". RemoteInvocationTraceInterceptor's most important value
+	 * <p>默认值是"true". RemoteInvocationTraceInterceptor's most important value
 	 * is that it logs exception stacktraces on the server, before propagating an
 	 * exception to the client. Note that RemoteInvocationTraceInterceptor will <i>not</i>
 	 * be registered by default if the "interceptors" property has been specified.

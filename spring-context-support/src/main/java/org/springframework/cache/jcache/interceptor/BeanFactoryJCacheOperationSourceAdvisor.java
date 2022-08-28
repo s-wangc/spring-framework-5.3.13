@@ -53,7 +53,7 @@ public class BeanFactoryJCacheOperationSourceAdvisor extends AbstractBeanFactory
 
 	/**
 	 * Set the {@link org.springframework.aop.ClassFilter} to use for this pointcut.
-	 * Default is {@link org.springframework.aop.ClassFilter#TRUE}.
+	 * 默认值是{@link org.springframework.aop.ClassFilter#TRUE}.
 	 */
 	public void setClassFilter(ClassFilter classFilter) {
 		this.pointcut.setClassFilter(classFilter);

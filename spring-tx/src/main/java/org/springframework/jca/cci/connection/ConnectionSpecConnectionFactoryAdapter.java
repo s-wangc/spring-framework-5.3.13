@@ -80,7 +80,7 @@ public class ConnectionSpecConnectionFactoryAdapter extends DelegatingConnection
 
 	/**
 	 * Set the ConnectionSpec that this adapter should use for retrieving Connections.
-	 * Default is none.
+	 * 默认值是none.
 	 */
 	public void setConnectionSpec(ConnectionSpec connectionSpec) {
 		this.connectionSpec = connectionSpec;

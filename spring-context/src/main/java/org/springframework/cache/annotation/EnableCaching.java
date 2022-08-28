@@ -174,7 +174,7 @@ public @interface EnableCaching {
 
 	/**
 	 * Indicate whether subclass-based (CGLIB) proxies are to be created as opposed
-	 * to standard Java interface-based proxies. The default is {@code false}. <strong>
+	 * to standard Java interface-based proxies. 默认值是{@code false}. <strong>
 	 * Applicable only if {@link #mode()} is set to {@link AdviceMode#PROXY}</strong>.
 	 * <p>Note that setting this attribute to {@code true} will affect <em>all</em>
 	 * Spring-managed beans requiring proxying, not just those marked with {@code @Cacheable}.
@@ -187,7 +187,7 @@ public @interface EnableCaching {
 
 	/**
 	 * Indicate how caching advice should be applied.
-	 * <p><b>The default is {@link AdviceMode#PROXY}.</b>
+	 * <p><b>默认值是{@link AdviceMode#PROXY}.</b>
 	 * Please note that proxy mode allows for interception of calls through the proxy
 	 * only. Local calls within the same class cannot get intercepted that way;
 	 * a caching annotation on such a method within a local call will be ignored
@@ -200,7 +200,7 @@ public @interface EnableCaching {
 	/**
 	 * Indicate the ordering of the execution of the caching advisor
 	 * when multiple advices are applied at a specific joinpoint.
-	 * <p>The default is {@link Ordered#LOWEST_PRECEDENCE}.
+	 * <p>默认值是{@link Ordered#LOWEST_PRECEDENCE}.
 	 */
 	int order() default Ordered.LOWEST_PRECEDENCE;
 

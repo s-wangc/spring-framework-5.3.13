@@ -207,7 +207,7 @@ public class SingleConnectionFactory implements ConnectionFactory, QueueConnecti
 	/**
 	 * Specify whether the single Connection should be reset (to be subsequently renewed)
 	 * when a JMSException is reported by the underlying Connection.
-	 * <p>Default is "false". Switch this to "true" to automatically trigger
+	 * <p>默认值是"false". Switch this to "true" to automatically trigger
 	 * recovery based on your JMS provider's exception notifications.
 	 * <p>Internally, this will lead to a special JMS ExceptionListener
 	 * (this SingleConnectionFactory itself) being registered with the

@@ -71,7 +71,7 @@ public class DefaultPointcutAdvisor extends AbstractGenericPointcutAdvisor imple
 
 	/**
 	 * Specify the pointcut targeting the advice.
-	 * <p>Default is {@code Pointcut.TRUE}.
+	 * <p>默认值是{@code Pointcut.TRUE}.
 	 * @see #setAdvice
 	 */
 	public void setPointcut(@Nullable Pointcut pointcut) {

@@ -164,7 +164,7 @@
 	The scope of this bean: typically "singleton" (one shared instance,
 	which will be returned by all calls to getBean() with the id),
 	or "prototype" (independent instance resulting from each call to
-	getBean(). Default is "singleton".
+	getBean(). 默认值是"singleton".
 
 	Singletons are most commonly used, and are ideal for multi-threaded
 	service objects. Further scopes, such as "request" or "session",
@@ -184,7 +184,7 @@
 <!--
 	Is this bean "abstract", i.e. not meant to be instantiated itself but
 	rather just serving as parent for concrete child bean definitions.
-	Default is "false". Specify "true" to tell the bean factory to not try to
+	默认值是"false". Specify "true" to tell the bean factory to not try to
 	instantiate that particular bean in any case.
 
 	Note: This attribute will not be inherited by child bean definitions.

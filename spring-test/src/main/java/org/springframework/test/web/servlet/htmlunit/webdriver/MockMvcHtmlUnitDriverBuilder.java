@@ -109,7 +109,7 @@ public class MockMvcHtmlUnitDriverBuilder extends MockMvcWebConnectionBuilderSup
 
 	/**
 	 * Specify whether JavaScript should be enabled.
-	 * <p>Default is {@code true}.
+	 * <p>默认值是{@code true}.
 	 * @param javascriptEnabled {@code true} if JavaScript should be enabled
 	 * @return this builder for further customizations
 	 * @see #build()

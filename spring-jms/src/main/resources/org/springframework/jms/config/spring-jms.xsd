@@ -147,7 +147,7 @@
 				<xsd:annotation>
 					<xsd:documentation><![CDATA[
 	A reference to the JMS ConnectionFactory bean.
-	Default is "connectionFactory".
+	默认值是"connectionFactory".
 					]]></xsd:documentation>
 					<xsd:appinfo>
 						<tool:annotation kind="ref">
@@ -280,7 +280,7 @@
 	The native JMS acknowledge mode: "auto", "client", "dups-ok" or "transacted".
 	A value of "transacted" effectively activates a locally transacted Session;
 	as alternative, specify an external "transaction-manager" via the corresponding
-	attribute. Default is "auto".
+	attribute. 默认值是"auto".
 					]]></xsd:documentation>
 				</xsd:annotation>
 				<xsd:simpleType>
@@ -313,7 +313,7 @@
 	Can either be a simple number indicating the maximum number (e.g. "5")
 	or a range indicating the lower as well as the upper limit (e.g. "3-5").
 	Note that a specified minimum is just a hint and might be ignored at runtime.
-	Default is 1; keep concurrency limited to 1 in case of a topic listener
+	默认值是1; keep concurrency limited to 1 in case of a topic listener
 	or if message ordering is important; consider raising it for general queues.
 					]]></xsd:documentation>
 				</xsd:annotation>
@@ -365,7 +365,7 @@
 					<xsd:documentation><![CDATA[
 	The lifecycle phase within which this container should start and stop. The lower
 	the value the earlier this container will start and the later it will stop. The
-	default is Integer.MAX_VALUE meaning the container will start as late as possible
+	默认值是Integer.MAX_VALUE meaning the container will start as late as possible
 	and stop as soon as possible.
 					]]></xsd:documentation>
 				</xsd:annotation>
@@ -407,7 +407,7 @@
 				<xsd:annotation>
 					<xsd:documentation><![CDATA[
 	A reference to the JCA ResourceAdapter bean for the JMS provider.
-	Default is "resourceAdapter".
+	默认值是"resourceAdapter".
 					]]></xsd:documentation>
 					<xsd:appinfo>
 						<tool:annotation kind="ref">
@@ -462,7 +462,7 @@
 				<xsd:annotation>
 					<xsd:documentation><![CDATA[
 	The JMS destination type for this listener: "queue", "topic" or "durableTopic".
-	Default is "queue".
+	默认值是"queue".
 					]]></xsd:documentation>
 				</xsd:annotation>
 				<xsd:simpleType>
@@ -501,7 +501,7 @@
 	The native JMS acknowledge mode: "auto", "client", "dups-ok" or "transacted".
 	A value of "transacted" effectively activates a locally transacted Session;
 	as alternative, specify an external "transaction-manager" via the corresponding
-	attribute. Default is "auto".
+	attribute. 默认值是"auto".
 					]]></xsd:documentation>
 				</xsd:annotation>
 				<xsd:simpleType>
@@ -532,7 +532,7 @@
 	Can either be a simple number indicating the maximum number (e.g. "5")
 	or a range indicating the lower as well as the upper limit (e.g. "3-5").
 	Note that a specified minimum is just a hint and will typically be ignored
-	at runtime when using a JCA listener container. Default is 1.
+	at runtime when using a JCA listener container. 默认值是1.
 					]]></xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>

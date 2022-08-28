@@ -178,7 +178,7 @@ public class ProxyFactoryBean extends ProxyCreatorSupport
 
 	/**
 	 * Set whether to autodetect proxy interfaces if none specified.
-	 * <p>Default is "true". Turn this flag off to create a CGLIB
+	 * <p>默认值是"true". Turn this flag off to create a CGLIB
 	 * proxy for the full target class if no interfaces specified.
 	 * @see #setProxyTargetClass
 	 */

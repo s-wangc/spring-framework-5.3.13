@@ -92,7 +92,7 @@ public class UrlBasedViewResolverRegistration {
 
 	/**
 	 * Specify the maximum number of entries for the view cache.
-	 * Default is 1024.
+	 * 默认值是1024.
 	 * @see org.springframework.web.servlet.view.UrlBasedViewResolver#setCache(boolean)
 	 */
 	public UrlBasedViewResolverRegistration cacheLimit(int cacheLimit) {

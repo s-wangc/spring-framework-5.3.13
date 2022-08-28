@@ -163,7 +163,7 @@ public class JmsListenerEndpointRegistrar implements BeanFactoryAware, Initializ
 		else {
 			throw new IllegalStateException("Could not resolve the " +
 					JmsListenerContainerFactory.class.getSimpleName() + " to use for [" +
-					descriptor.endpoint + "] no factory was given and no default is set.");
+					descriptor.endpoint + "] no factory was given and no 默认值是set.");
 		}
 	}
 

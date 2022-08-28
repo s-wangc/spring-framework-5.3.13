@@ -68,7 +68,7 @@ public class EventListenerMethodProcessor
 	/**
 	 * Boolean flag controlled by a {@code spring.spel.ignore} system property that instructs Spring to
 	 * ignore SpEL, i.e. to not initialize the SpEL infrastructure.
-	 * <p>The default is "false".
+	 * <p>默认值是"false".
 	 */
 	private static final boolean shouldIgnoreSpel = SpringProperties.getFlag("spring.spel.ignore");
 

@@ -143,7 +143,7 @@ public class FreeMarkerView extends AbstractUrlBasedView {
 	/**
 	 * Set whether to expose a {@link RequestContext} for use by Spring's macro
 	 * library, under the name {@value #SPRING_MACRO_REQUEST_CONTEXT_ATTRIBUTE}.
-	 * <p>Default is {@code true}.
+	 * <p>默认值是{@code true}.
 	 * <p>Needed for Spring's FreeMarker default macros. Note that this is
 	 * <i>not</i> required for templates that use HTML forms <i>unless</i> you
 	 * wish to take advantage of the Spring helper macros.

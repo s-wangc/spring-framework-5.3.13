@@ -71,7 +71,7 @@ public abstract class AbstractBindingResult extends AbstractErrors implements Bi
 
 	/**
 	 * Set the strategy to use for resolving errors into message codes.
-	 * Default is DefaultMessageCodesResolver.
+	 * 默认值是DefaultMessageCodesResolver.
 	 * @see DefaultMessageCodesResolver
 	 */
 	public void setMessageCodesResolver(MessageCodesResolver messageCodesResolver) {

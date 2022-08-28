@@ -209,7 +209,7 @@ public class DelegatingFilterProxy extends GenericFilterBean {
 	/**
 	 * Set whether to invoke the {@code Filter.init} and
 	 * {@code Filter.destroy} lifecycle methods on the target bean.
-	 * <p>Default is "false"; target beans usually rely on the Spring application
+	 * <p>默认值是"false"; target beans usually rely on the Spring application
 	 * context for managing their lifecycle. Setting this flag to "true" means
 	 * that the servlet container will control the lifecycle of the target
 	 * Filter, with this proxy delegating the corresponding calls.

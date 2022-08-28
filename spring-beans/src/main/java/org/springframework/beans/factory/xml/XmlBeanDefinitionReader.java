@@ -147,7 +147,7 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 
 
 	/**
-	 * Set whether to use XML validation. Default is {@code true}.
+	 * Set whether to use XML validation. 默认值是{@code true}.
 	 * <p>This method switches namespace awareness on if validation is turned off,
 	 * in order to still process schema namespaces properly in such a scenario.
 	 * @see #setValidationMode
@@ -185,7 +185,7 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 
 	/**
 	 * Set whether or not the XML parser should be XML namespace aware.
-	 * Default is "false".
+	 * 默认值是"false".
 	 * <p>This is typically not needed when schema validation is active.
 	 * However, without validation, this has to be switched to "true"
 	 * in order to properly process schema namespaces.
@@ -291,7 +291,7 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 	/**
 	 * Specify the {@link BeanDefinitionDocumentReader} implementation to use,
 	 * responsible for the actual reading of the XML bean definition document.
-	 * <p>The default is {@link DefaultBeanDefinitionDocumentReader}.
+	 * <p>默认值是{@link DefaultBeanDefinitionDocumentReader}.
 	 * @param documentReaderClass the desired BeanDefinitionDocumentReader implementation class
 	 */
 	public void setDocumentReaderClass(Class<? extends BeanDefinitionDocumentReader> documentReaderClass) {

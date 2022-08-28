@@ -95,7 +95,7 @@ public abstract class AbstractCachingViewResolver extends WebApplicationObjectSu
 
 	/**
 	 * Specify the maximum number of entries for the view cache.
-	 * Default is 1024.
+	 * 默认值是1024.
 	 */
 	public void setCacheLimit(int cacheLimit) {
 		this.cacheLimit = cacheLimit;

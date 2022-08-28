@@ -160,7 +160,7 @@ public class RmiServiceExporter extends RmiBasedExporter implements Initializing
 	/**
 	 * Set the host of the registry for the exported RMI service,
 	 * i.e. {@code rmi://HOST:port/name}
-	 * <p>Default is localhost.
+	 * <p>默认值是localhost.
 	 */
 	public void setRegistryHost(String registryHost) {
 		this.registryHost = registryHost;
@@ -205,7 +205,7 @@ public class RmiServiceExporter extends RmiBasedExporter implements Initializing
 	/**
 	 * Set whether to always create the registry in-process,
 	 * not attempting to locate an existing registry at the specified port.
-	 * <p>Default is "false". Switch this flag to "true" in order to avoid
+	 * <p>默认值是"false". Switch this flag to "true" in order to avoid
 	 * the overhead of locating an existing registry when you always
 	 * intend to create a new registry in any case.
 	 */

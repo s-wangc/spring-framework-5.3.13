@@ -112,7 +112,7 @@ public class ResourceBundleThemeSource implements HierarchicalThemeSource, BeanC
 	/**
 	 * Set whether to fall back to the system Locale if no files for a
 	 * specific Locale have been found.
-	 * <p>{@link ResourceBundleMessageSource}'s default is "true".
+	 * <p>{@link ResourceBundleMessageSource}'s 默认值是"true".
 	 * @since 4.2
 	 * @see ResourceBundleMessageSource#setFallbackToSystemLocale
 	 */

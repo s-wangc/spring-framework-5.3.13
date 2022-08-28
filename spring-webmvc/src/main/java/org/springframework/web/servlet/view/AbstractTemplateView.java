@@ -65,7 +65,7 @@ public abstract class AbstractTemplateView extends AbstractUrlBasedView {
 
 	/**
 	 * Set whether all request attributes should be added to the
-	 * model prior to merging with the template. Default is "false".
+	 * model prior to merging with the template. 默认值是"false".
 	 */
 	public void setExposeRequestAttributes(boolean exposeRequestAttributes) {
 		this.exposeRequestAttributes = exposeRequestAttributes;
@@ -83,7 +83,7 @@ public abstract class AbstractTemplateView extends AbstractUrlBasedView {
 
 	/**
 	 * Set whether all HttpSession attributes should be added to the
-	 * model prior to merging with the template. Default is "false".
+	 * model prior to merging with the template. 默认值是"false".
 	 */
 	public void setExposeSessionAttributes(boolean exposeSessionAttributes) {
 		this.exposeSessionAttributes = exposeSessionAttributes;
@@ -101,7 +101,7 @@ public abstract class AbstractTemplateView extends AbstractUrlBasedView {
 
 	/**
 	 * Set whether to expose a RequestContext for use by Spring's macro library,
-	 * under the name "springMacroRequestContext". Default is "true".
+	 * under the name "springMacroRequestContext". 默认值是"true".
 	 * <p>Currently needed for Spring's FreeMarker default macros.
 	 * Note that this is <i>not</i> required for templates that use HTML forms
 	 * <i>unless</i> you wish to take advantage of the Spring helper macros.

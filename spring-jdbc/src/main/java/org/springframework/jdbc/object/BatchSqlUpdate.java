@@ -127,7 +127,7 @@ public class BatchSqlUpdate extends SqlUpdate {
 	/**
 	 * Set whether to track the rows affected by batch updates performed
 	 * by this operation object.
-	 * <p>Default is "true". Turn this off to save the memory needed for
+	 * <p>默认值是"true". Turn this off to save the memory needed for
 	 * the list of row counts.
 	 * @see #getRowsAffected()
 	 */

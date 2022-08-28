@@ -132,7 +132,7 @@ public class CookieLocaleResolver extends CookieGenerator implements LocaleConte
 
 	/**
 	 * Specify whether to reject cookies with invalid content (e.g. invalid format).
-	 * <p>The default is {@code true}. Turn this off for lenient handling of parse
+	 * <p>默认值是{@code true}. Turn this off for lenient handling of parse
 	 * failures, falling back to the default locale and time zone in such a case.
 	 * @since 5.1.7
 	 * @see #setDefaultLocale

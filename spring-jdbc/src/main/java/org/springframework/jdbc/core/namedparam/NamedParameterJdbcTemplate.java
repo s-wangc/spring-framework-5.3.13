@@ -125,7 +125,7 @@ public class NamedParameterJdbcTemplate implements NamedParameterJdbcOperations 
 
 	/**
 	 * Specify the maximum number of entries for this template's SQL cache.
-	 * Default is 256. 0 indicates no caching, always parsing each statement.
+	 * 默认值是256. 0 indicates no caching, always parsing each statement.
 	 */
 	public void setCacheLimit(int cacheLimit) {
 		this.parsedSqlCache = new ConcurrentLruCache<>(cacheLimit, NamedParameterUtils::parseSqlStatement);

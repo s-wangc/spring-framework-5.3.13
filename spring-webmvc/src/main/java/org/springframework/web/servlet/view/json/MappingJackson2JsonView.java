@@ -89,7 +89,7 @@ public class MappingJackson2JsonView extends AbstractJackson2View {
 
 	/**
 	 * Specify a custom prefix to use for this view's JSON output.
-	 * Default is none.
+	 * 默认值是none.
 	 * @see #setPrefixJson
 	 */
 	public void setJsonPrefix(String jsonPrefix) {
@@ -98,7 +98,7 @@ public class MappingJackson2JsonView extends AbstractJackson2View {
 
 	/**
 	 * Indicates whether the JSON output by this view should be prefixed with <tt>")]}', "</tt>.
-	 * Default is {@code false}.
+	 * 默认值是{@code false}.
 	 * <p>Prefixing the JSON string in this manner is used to help prevent JSON Hijacking.
 	 * The prefix renders the string syntactically invalid as a script so that it cannot be hijacked.
 	 * This prefix should be stripped before parsing the string as JSON.
@@ -138,7 +138,7 @@ public class MappingJackson2JsonView extends AbstractJackson2View {
 	 * <p>The effect of setting this flag is similar to using
 	 * {@code MappingJackson2HttpMessageConverter} with an {@code @ResponseBody}
 	 * request-handling method.
-	 * <p>Default is {@code false}.
+	 * <p>默认值是{@code false}.
 	 */
 	public void setExtractValueFromSingleKeyModel(boolean extractValueFromSingleKeyModel) {
 		this.extractValueFromSingleKeyModel = extractValueFromSingleKeyModel;

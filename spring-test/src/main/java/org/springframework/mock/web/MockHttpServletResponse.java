@@ -140,7 +140,7 @@ public class MockHttpServletResponse implements HttpServletResponse {
 
 	/**
 	 * Set whether {@link #getOutputStream()} access is allowed.
-	 * <p>Default is {@code true}.
+	 * <p>默认值是{@code true}.
 	 */
 	public void setOutputStreamAccessAllowed(boolean outputStreamAccessAllowed) {
 		this.outputStreamAccessAllowed = outputStreamAccessAllowed;
@@ -155,7 +155,7 @@ public class MockHttpServletResponse implements HttpServletResponse {
 
 	/**
 	 * Set whether {@link #getWriter()} access is allowed.
-	 * <p>Default is {@code true}.
+	 * <p>默认值是{@code true}.
 	 */
 	public void setWriterAccessAllowed(boolean writerAccessAllowed) {
 		this.writerAccessAllowed = writerAccessAllowed;

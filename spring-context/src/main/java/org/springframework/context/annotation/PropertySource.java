@@ -201,7 +201,7 @@ public @interface PropertySource {
 	 * Indicate if a failure to find a {@link #value property resource} should be
 	 * ignored.
 	 * <p>{@code true} is appropriate if the properties file is completely optional.
-	 * <p>Default is {@code false}.
+	 * <p>默认值是{@code false}.
 	 * @since 4.0
 	 */
 	boolean ignoreResourceNotFound() default false;

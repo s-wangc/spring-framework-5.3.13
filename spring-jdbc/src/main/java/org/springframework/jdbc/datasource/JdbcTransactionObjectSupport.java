@@ -101,7 +101,7 @@ public abstract class JdbcTransactionObjectSupport implements SavepointManager, 
 
 	/**
 	 * Set the read-only status of this transaction.
-	 * The default is {@code false}.
+	 * 默认值是{@code false}.
 	 * @since 5.2.1
 	 */
 	public void setReadOnly(boolean readOnly) {
@@ -118,7 +118,7 @@ public abstract class JdbcTransactionObjectSupport implements SavepointManager, 
 
 	/**
 	 * Set whether savepoints are allowed within this transaction.
-	 * The default is {@code false}.
+	 * 默认值是{@code false}.
 	 */
 	public void setSavepointAllowed(boolean savepointAllowed) {
 		this.savepointAllowed = savepointAllowed;

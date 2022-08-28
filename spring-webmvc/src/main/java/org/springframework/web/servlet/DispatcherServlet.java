@@ -121,7 +121,7 @@ import org.springframework.web.util.WebUtils;
  * {@link org.springframework.web.multipart.MultipartResolver} implementation.
  * Implementations for Apache Commons FileUpload and Servlet 3 are included; the typical
  * choice is {@link org.springframework.web.multipart.commons.CommonsMultipartResolver}.
- * The MultipartResolver bean name is "multipartResolver"; default is none.
+ * The MultipartResolver bean name is "multipartResolver"; 默认值是none.
  *
  * <li>Its locale resolution strategy is determined by a {@link LocaleResolver}.
  * Out-of-the-box implementations work via HTTP accept header, cookie, or session.
@@ -412,7 +412,7 @@ public class DispatcherServlet extends FrameworkServlet {
 	/**
 	 * Set whether to detect all HandlerMapping beans in this servlet's context. Otherwise,
 	 * just a single bean with name "handlerMapping" will be expected.
-	 * <p>Default is "true". Turn this off if you want this servlet to use a single
+	 * <p>默认值是"true". Turn this off if you want this servlet to use a single
 	 * HandlerMapping, despite multiple HandlerMapping beans being defined in the context.
 	 */
 	public void setDetectAllHandlerMappings(boolean detectAllHandlerMappings) {
@@ -422,7 +422,7 @@ public class DispatcherServlet extends FrameworkServlet {
 	/**
 	 * Set whether to detect all HandlerAdapter beans in this servlet's context. Otherwise,
 	 * just a single bean with name "handlerAdapter" will be expected.
-	 * <p>Default is "true". Turn this off if you want this servlet to use a single
+	 * <p>默认值是"true". Turn this off if you want this servlet to use a single
 	 * HandlerAdapter, despite multiple HandlerAdapter beans being defined in the context.
 	 */
 	public void setDetectAllHandlerAdapters(boolean detectAllHandlerAdapters) {
@@ -432,7 +432,7 @@ public class DispatcherServlet extends FrameworkServlet {
 	/**
 	 * Set whether to detect all HandlerExceptionResolver beans in this servlet's context. Otherwise,
 	 * just a single bean with name "handlerExceptionResolver" will be expected.
-	 * <p>Default is "true". Turn this off if you want this servlet to use a single
+	 * <p>默认值是"true". Turn this off if you want this servlet to use a single
 	 * HandlerExceptionResolver, despite multiple HandlerExceptionResolver beans being defined in the context.
 	 */
 	public void setDetectAllHandlerExceptionResolvers(boolean detectAllHandlerExceptionResolvers) {
@@ -442,7 +442,7 @@ public class DispatcherServlet extends FrameworkServlet {
 	/**
 	 * Set whether to detect all ViewResolver beans in this servlet's context. Otherwise,
 	 * just a single bean with name "viewResolver" will be expected.
-	 * <p>Default is "true". Turn this off if you want this servlet to use a single
+	 * <p>默认值是"true". Turn this off if you want this servlet to use a single
 	 * ViewResolver, despite multiple ViewResolver beans being defined in the context.
 	 */
 	public void setDetectAllViewResolvers(boolean detectAllViewResolvers) {

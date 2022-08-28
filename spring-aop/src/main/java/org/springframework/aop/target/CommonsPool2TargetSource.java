@@ -98,7 +98,7 @@ public class CommonsPool2TargetSource extends AbstractPoolingTargetSource implem
 
 	/**
 	 * Set the maximum number of idle objects in the pool.
-	 * Default is 8.
+	 * 默认值是8.
 	 * @see GenericObjectPool#setMaxIdle
 	 */
 	public void setMaxIdle(int maxIdle) {
@@ -114,7 +114,7 @@ public class CommonsPool2TargetSource extends AbstractPoolingTargetSource implem
 
 	/**
 	 * Set the minimum number of idle objects in the pool.
-	 * Default is 0.
+	 * 默认值是0.
 	 * @see GenericObjectPool#setMinIdle
 	 */
 	public void setMinIdle(int minIdle) {

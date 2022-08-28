@@ -167,7 +167,7 @@ public class JobDetailFactoryBean
 
 	/**
 	 * Set the key of an ApplicationContext reference to expose in the JobDataMap,
-	 * for example "applicationContext". Default is none.
+	 * for example "applicationContext". 默认值是none.
 	 * Only applicable when running in a Spring ApplicationContext.
 	 * <p>In case of a QuartzJobBean, the reference will be applied to the Job
 	 * instance as bean property. An "applicationContext" attribute will correspond

@@ -44,7 +44,7 @@ public class ThemeChangeInterceptor implements HandlerInterceptor {
 
 	/**
 	 * Set the name of the parameter that contains a theme specification
-	 * in a theme change request. Default is "theme".
+	 * in a theme change request. 默认值是"theme".
 	 */
 	public void setParamName(String paramName) {
 		this.paramName = paramName;

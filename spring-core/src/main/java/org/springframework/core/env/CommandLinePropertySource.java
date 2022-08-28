@@ -236,7 +236,7 @@ public abstract class CommandLinePropertySource<T> extends EnumerablePropertySou
 
 	/**
 	 * Specify the name of the special "non-option arguments" property.
-	 * The default is {@value #DEFAULT_NON_OPTION_ARGS_PROPERTY_NAME}.
+	 * 默认值是{@value #DEFAULT_NON_OPTION_ARGS_PROPERTY_NAME}.
 	 */
 	public void setNonOptionArgsPropertyName(String nonOptionArgsPropertyName) {
 		this.nonOptionArgsPropertyName = nonOptionArgsPropertyName;

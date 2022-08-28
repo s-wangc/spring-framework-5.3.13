@@ -107,7 +107,7 @@ public class ThreadPoolTaskExecutor extends ExecutorConfigurationSupport
 
 	/**
 	 * Set the ThreadPoolExecutor's core pool size.
-	 * Default is 1.
+	 * 默认值是1.
 	 * <p><b>This setting can be modified at runtime, for example through JMX.</b>
 	 */
 	public void setCorePoolSize(int corePoolSize) {
@@ -130,7 +130,7 @@ public class ThreadPoolTaskExecutor extends ExecutorConfigurationSupport
 
 	/**
 	 * Set the ThreadPoolExecutor's maximum pool size.
-	 * Default is {@code Integer.MAX_VALUE}.
+	 * 默认值是{@code Integer.MAX_VALUE}.
 	 * <p><b>This setting can be modified at runtime, for example through JMX.</b>
 	 */
 	public void setMaxPoolSize(int maxPoolSize) {
@@ -153,7 +153,7 @@ public class ThreadPoolTaskExecutor extends ExecutorConfigurationSupport
 
 	/**
 	 * Set the ThreadPoolExecutor's keep-alive seconds.
-	 * Default is 60.
+	 * 默认值是60.
 	 * <p><b>This setting can be modified at runtime, for example through JMX.</b>
 	 */
 	public void setKeepAliveSeconds(int keepAliveSeconds) {
@@ -176,7 +176,7 @@ public class ThreadPoolTaskExecutor extends ExecutorConfigurationSupport
 
 	/**
 	 * Set the capacity for the ThreadPoolExecutor's BlockingQueue.
-	 * Default is {@code Integer.MAX_VALUE}.
+	 * 默认值是{@code Integer.MAX_VALUE}.
 	 * <p>Any positive value will lead to a LinkedBlockingQueue instance;
 	 * any other value will lead to a SynchronousQueue instance.
 	 * @see java.util.concurrent.LinkedBlockingQueue
@@ -190,7 +190,7 @@ public class ThreadPoolTaskExecutor extends ExecutorConfigurationSupport
 	 * Specify whether to allow core threads to time out. This enables dynamic
 	 * growing and shrinking even in combination with a non-zero queue (since
 	 * the max pool size will only grow once the queue is full).
-	 * <p>Default is "false".
+	 * <p>默认值是"false".
 	 * @see java.util.concurrent.ThreadPoolExecutor#allowCoreThreadTimeOut(boolean)
 	 */
 	public void setAllowCoreThreadTimeOut(boolean allowCoreThreadTimeOut) {

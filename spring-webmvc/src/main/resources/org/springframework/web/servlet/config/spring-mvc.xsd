@@ -87,7 +87,7 @@
 							<xsd:annotation>
 								<xsd:documentation><![CDATA[
 	The bean name of the PathMatcher implementation to use for matching URL paths against registered URL patterns.
-	Default is AntPathMatcher.
+	默认值是AntPathMatcher.
 								]]></xsd:documentation>
 							</xsd:annotation>
 						</xsd:attribute>
@@ -883,7 +883,7 @@
 					<xsd:documentation><![CDATA[
 	Whether to interpret a given redirect URL that starts with a slash ("/")
 	as relative to the current ServletContext, i.e. as relative to the web
-	application root. The default is "true".
+	application root. 默认值是"true".
 					]]></xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>
@@ -891,7 +891,7 @@
 				<xsd:annotation>
 					<xsd:documentation><![CDATA[
 	Whether to propagate the query parameters of the current request through
-	to the target redirect URL. The default is "false".
+	to the target redirect URL. 默认值是"false".
 					]]></xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>
@@ -1144,14 +1144,14 @@
 				<xsd:annotation>
 					<xsd:documentation><![CDATA[
 	Whether to check Tiles definition files for a refresh at runtime.
-	Default is "false".
+	默认值是"false".
 					]]></xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>
 			<xsd:attribute name="validate-definitions" type="xsd:boolean">
 				<xsd:annotation>
 					<xsd:documentation><![CDATA[
-	Whether to validate the Tiles XML definitions. Default is "true".
+	Whether to validate the Tiles XML definitions. 默认值是"true".
 					]]></xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>

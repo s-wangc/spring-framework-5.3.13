@@ -140,7 +140,7 @@ public abstract class AbstractResourceBasedMessageSource extends AbstractMessage
 
 	/**
 	 * Set whether to fall back to the system Locale if no files for a specific
-	 * Locale have been found. Default is "true"; if this is turned off, the only
+	 * Locale have been found. 默认值是"true"; if this is turned off, the only
 	 * fallback will be the default file (e.g. "messages.properties" for
 	 * basename "messages").
 	 * <p>Falling back to the system Locale is the default behavior of

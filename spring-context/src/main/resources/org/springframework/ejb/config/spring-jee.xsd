@@ -76,7 +76,7 @@
 	This is typically used for literal values in scenarios where the JNDI environment
 	might define specific config settings but those are not required to be present.
 
-	Default is none. Note: This is only supported for lookup on startup.
+	默认值是none. Note: This is only supported for lookup on startup.
 							]]></xsd:documentation>
 						</xsd:annotation>
 					</xsd:attribute>
@@ -86,7 +86,7 @@
 	Specify a default bean reference to fall back to if the JNDI lookup fails.
 	This might for example point to a local fallback DataSource.
 
-	Default is none. Note: This is only supported for lookup on startup.
+	默认值是none. Note: This is only supported for lookup on startup.
 							]]></xsd:documentation>
 						</xsd:annotation>
 					</xsd:attribute>

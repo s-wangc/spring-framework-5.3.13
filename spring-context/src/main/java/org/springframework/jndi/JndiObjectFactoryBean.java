@@ -122,7 +122,7 @@ public class JndiObjectFactoryBean extends JndiObjectLocator
 	}
 
 	/**
-	 * Set whether to look up the JNDI object on startup. Default is "true".
+	 * Set whether to look up the JNDI object on startup. 默认值是"true".
 	 * <p>Can be turned off to allow for late availability of the JNDI object.
 	 * In this case, the JNDI object will be fetched on first access.
 	 * <p>For a lazy lookup, a proxy interface needs to be specified.
@@ -135,7 +135,7 @@ public class JndiObjectFactoryBean extends JndiObjectLocator
 
 	/**
 	 * Set whether to cache the JNDI object once it has been located.
-	 * Default is "true".
+	 * 默认值是"true".
 	 * <p>Can be turned off to allow for hot redeployment of JNDI objects.
 	 * In this case, the JNDI object will be fetched for each invocation.
 	 * <p>For hot redeployment, a proxy interface needs to be specified.
@@ -161,7 +161,7 @@ public class JndiObjectFactoryBean extends JndiObjectLocator
 
 	/**
 	 * Specify a default object to fall back to if the JNDI lookup fails.
-	 * Default is none.
+	 * 默认值是none.
 	 * <p>This can be an arbitrary bean reference or literal value.
 	 * It is typically used for literal values in scenarios where the JNDI environment
 	 * might define specific config settings but those are not required to be present.

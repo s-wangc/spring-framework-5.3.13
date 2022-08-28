@@ -166,7 +166,7 @@ public class JavaMailSenderImpl implements JavaMailSender {
 	}
 
 	/**
-	 * Set the mail protocol. Default is "smtp".
+	 * Set the mail protocol. 默认值是"smtp".
 	 */
 	public void setProtocol(@Nullable String protocol) {
 		this.protocol = protocol;

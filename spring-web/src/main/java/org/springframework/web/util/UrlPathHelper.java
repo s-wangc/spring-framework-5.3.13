@@ -136,7 +136,7 @@ public class UrlPathHelper {
 
 	/**
 	 * Set if ";" (semicolon) content should be stripped from the request URI.
-	 * <p>Default is "true".
+	 * <p>默认值是"true".
 	 */
 	public void setRemoveSemicolonContent(boolean removeSemicolonContent) {
 		checkReadOnly();

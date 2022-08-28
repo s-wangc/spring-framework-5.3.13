@@ -108,7 +108,7 @@ public class NotificationListenerRegistrar extends NotificationListenerHolder
 
 	/**
 	 * Set the agent id of the {@code MBeanServer} to locate.
-	 * <p>Default is none. If specified, this will result in an
+	 * <p>默认值是none. If specified, this will result in an
 	 * attempt being made to locate the attendant MBeanServer, unless
 	 * the {@link #setServiceUrl "serviceUrl"} property has been set.
 	 * @see javax.management.MBeanServerFactory#findMBeanServer(String)

@@ -170,7 +170,7 @@ public abstract class AbstractJdbcCall {
 
 	/**
 	 * Specify whether this call is a function call.
-	 * The default is {@code false}.
+	 * 默认值是{@code false}.
 	 */
 	public void setFunction(boolean function) {
 		this.callMetaDataContext.setFunction(function);
@@ -185,7 +185,7 @@ public abstract class AbstractJdbcCall {
 
 	/**
 	 * Specify whether the call requires a return value.
-	 * The default is {@code false}.
+	 * 默认值是{@code false}.
 	 */
 	public void setReturnValueRequired(boolean returnValueRequired) {
 		this.callMetaDataContext.setReturnValueRequired(returnValueRequired);
@@ -200,7 +200,7 @@ public abstract class AbstractJdbcCall {
 
 	/**
 	 * Specify whether parameters should be bound by name.
-	 * The default is {@code false}.
+	 * 默认值是{@code false}.
 	 * @since 4.2
 	 */
 	public void setNamedBinding(boolean namedBinding) {
@@ -217,7 +217,7 @@ public abstract class AbstractJdbcCall {
 
 	/**
 	 * Specify whether the parameter meta-data for the call should be used.
-	 * The default is {@code true}.
+	 * 默认值是{@code true}.
 	 */
 	public void setAccessCallParameterMetaData(boolean accessCallParameterMetaData) {
 		this.callMetaDataContext.setAccessCallParameterMetaData(accessCallParameterMetaData);

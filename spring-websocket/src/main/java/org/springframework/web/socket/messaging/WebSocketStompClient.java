@@ -139,7 +139,7 @@ public class WebSocketStompClient extends StompClientSupport implements SmartLif
 	/**
 	 * Set whether to auto-start the contained WebSocketClient when the Spring
 	 * context has been refreshed.
-	 * <p>Default is "true".
+	 * <p>默认值是"true".
 	 */
 	public void setAutoStartup(boolean autoStartup) {
 		this.autoStartup = autoStartup;

@@ -72,7 +72,7 @@ public abstract class ViewResolverSupport implements Ordered {
 	/**
 	 * Set the default charset for this view, used when the
 	 * {@linkplain #setSupportedMediaTypes(List) content type} does not contain one.
-	 * Default is {@linkplain StandardCharsets#UTF_8 UTF 8}.
+	 * 默认值是{@linkplain StandardCharsets#UTF_8 UTF 8}.
 	 */
 	public void setDefaultCharset(Charset defaultCharset) {
 		Assert.notNull(defaultCharset, "Default Charset must not be null");

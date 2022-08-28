@@ -93,7 +93,7 @@ public class PeriodicTrigger implements Trigger {
 	/**
 	 * Specify the delay for the initial execution. It will be evaluated in
 	 * terms of this trigger's {@link TimeUnit}. If no time unit was explicitly
-	 * provided upon instantiation, the default is milliseconds.
+	 * provided upon instantiation, 默认值是milliseconds.
 	 */
 	public void setInitialDelay(long initialDelay) {
 		this.initialDelay = this.timeUnit.toMillis(initialDelay);

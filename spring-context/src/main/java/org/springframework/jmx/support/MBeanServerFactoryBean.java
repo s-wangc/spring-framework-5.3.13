@@ -76,7 +76,7 @@ public class MBeanServerFactoryBean implements FactoryBean<MBeanServer>, Initial
 	/**
 	 * Set whether or not the {@code MBeanServerFactoryBean} should attempt
 	 * to locate a running {@code MBeanServer} before creating one.
-	 * <p>Default is {@code false}.
+	 * <p>默认值是{@code false}.
 	 */
 	public void setLocateExistingServerIfPossible(boolean locateExistingServerIfPossible) {
 		this.locateExistingServerIfPossible = locateExistingServerIfPossible;
@@ -84,7 +84,7 @@ public class MBeanServerFactoryBean implements FactoryBean<MBeanServer>, Initial
 
 	/**
 	 * Set the agent id of the {@code MBeanServer} to locate.
-	 * <p>Default is none. If specified, this will result in an
+	 * <p>默认值是none. If specified, this will result in an
 	 * automatic attempt being made to locate the attendant MBeanServer,
 	 * and (importantly) if said MBeanServer cannot be located no
 	 * attempt will be made to create a new MBeanServer (and an
@@ -100,7 +100,7 @@ public class MBeanServerFactoryBean implements FactoryBean<MBeanServer>, Initial
 	 * Set the default domain to be used by the {@code MBeanServer},
 	 * to be passed to {@code MBeanServerFactory.createMBeanServer()}
 	 * or {@code MBeanServerFactory.findMBeanServer()}.
-	 * <p>Default is none.
+	 * <p>默认值是none.
 	 * @see javax.management.MBeanServerFactory#createMBeanServer(String)
 	 * @see javax.management.MBeanServerFactory#findMBeanServer(String)
 	 */
@@ -112,7 +112,7 @@ public class MBeanServerFactoryBean implements FactoryBean<MBeanServer>, Initial
 	 * Set whether to register the {@code MBeanServer} with the
 	 * {@code MBeanServerFactory}, making it available through
 	 * {@code MBeanServerFactory.findMBeanServer()}.
-	 * <p>Default is {@code true}.
+	 * <p>默认值是{@code true}.
 	 * @see javax.management.MBeanServerFactory#createMBeanServer
 	 * @see javax.management.MBeanServerFactory#findMBeanServer
 	 */

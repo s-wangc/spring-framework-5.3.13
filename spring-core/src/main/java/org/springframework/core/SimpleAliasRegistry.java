@@ -87,7 +87,7 @@ public class SimpleAliasRegistry implements AliasRegistry {
 
 	/**
 	 * Determine whether alias overriding is allowed.
-	 * <p>Default is {@code true}.
+	 * <p>默认值是{@code true}.
 	 */
 	protected boolean allowAliasOverriding() {
 		return true;

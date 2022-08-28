@@ -81,7 +81,7 @@ public class CustomizableThreadCreator implements Serializable {
 
 	/**
 	 * Set the priority of the threads that this factory creates.
-	 * Default is 5.
+	 * 默认值是5.
 	 * @see java.lang.Thread#NORM_PRIORITY
 	 */
 	public void setThreadPriority(int threadPriority) {

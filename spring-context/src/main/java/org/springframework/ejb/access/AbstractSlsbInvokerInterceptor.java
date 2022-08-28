@@ -66,7 +66,7 @@ public abstract class AbstractSlsbInvokerInterceptor extends JndiObjectLocator
 
 	/**
 	 * Set whether to look up the EJB home object on startup.
-	 * Default is "true".
+	 * 默认值是"true".
 	 * <p>Can be turned off to allow for late start of the EJB server.
 	 * In this case, the EJB home object will be fetched on first access.
 	 * @see #setCacheHome
@@ -77,7 +77,7 @@ public abstract class AbstractSlsbInvokerInterceptor extends JndiObjectLocator
 
 	/**
 	 * Set whether to cache the EJB home object once it has been located.
-	 * Default is "true".
+	 * 默认值是"true".
 	 * <p>Can be turned off to allow for hot restart of the EJB server.
 	 * In this case, the EJB home object will be fetched for each invocation.
 	 * @see #setLookupHomeOnStartup
@@ -176,7 +176,7 @@ public abstract class AbstractSlsbInvokerInterceptor extends JndiObjectLocator
 
 	/**
 	 * Return whether the cached EJB home object is potentially
-	 * subject to on-demand refreshing. Default is "false".
+	 * subject to on-demand refreshing. 默认值是"false".
 	 */
 	protected boolean isHomeRefreshable() {
 		return false;

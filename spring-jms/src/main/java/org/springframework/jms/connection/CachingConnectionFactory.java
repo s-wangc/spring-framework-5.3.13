@@ -145,7 +145,7 @@ public class CachingConnectionFactory extends SingleConnectionFactory {
 	/**
 	 * Specify whether to cache JMS MessageProducers per JMS Session instance
 	 * (more specifically: one MessageProducer per Destination and Session).
-	 * <p>Default is "true". Switch this to "false" in order to always
+	 * <p>默认值是"true". Switch this to "false" in order to always
 	 * recreate MessageProducers on demand.
 	 */
 	public void setCacheProducers(boolean cacheProducers) {
@@ -164,7 +164,7 @@ public class CachingConnectionFactory extends SingleConnectionFactory {
 	 * (more specifically: one MessageConsumer per Destination, selector String
 	 * and Session). Note that durable subscribers will only be cached until
 	 * logical closing of the Session handle.
-	 * <p>Default is "true". Switch this to "false" in order to always
+	 * <p>默认值是"true". Switch this to "false" in order to always
 	 * recreate MessageConsumers on demand.
 	 */
 	public void setCacheConsumers(boolean cacheConsumers) {

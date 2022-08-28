@@ -55,7 +55,7 @@ public class SimpleThreadPoolTaskExecutor extends SimpleThreadPool
 
 	/**
 	 * Set whether to wait for running jobs to complete on shutdown.
-	 * Default is "false".
+	 * 默认值是"false".
 	 * @see org.quartz.simpl.SimpleThreadPool#shutdown(boolean)
 	 */
 	public void setWaitForJobsToCompleteOnShutdown(boolean waitForJobsToCompleteOnShutdown) {

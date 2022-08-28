@@ -120,7 +120,7 @@ public class AnnotationConfigApplicationContext extends GenericApplicationContex
 	/**
 	 * Provide a custom {@link BeanNameGenerator} for use with {@link AnnotatedBeanDefinitionReader}
 	 * and/or {@link ClassPathBeanDefinitionScanner}, if any.
-	 * <p>Default is {@link AnnotationBeanNameGenerator}.
+	 * <p>默认值是{@link AnnotationBeanNameGenerator}.
 	 * <p>Any call to this method must occur prior to calls to {@link #register(Class...)}
 	 * and/or {@link #scan(String...)}.
 	 * @see AnnotatedBeanDefinitionReader#setBeanNameGenerator

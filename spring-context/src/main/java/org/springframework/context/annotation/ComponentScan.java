@@ -147,7 +147,7 @@ public @interface ComponentScan {
 
 	/**
 	 * Specify whether scanned beans should be registered for lazy initialization.
-	 * <p>Default is {@code false}; switch this to {@code true} when desired.
+	 * <p>默认值是{@code false}; switch this to {@code true} when desired.
 	 * @since 4.1
 	 */
 	boolean lazyInit() default false;
@@ -163,7 +163,7 @@ public @interface ComponentScan {
 
 		/**
 		 * The type of filter to use.
-		 * <p>Default is {@link FilterType#ANNOTATION}.
+		 * <p>默认值是{@link FilterType#ANNOTATION}.
 		 * @see #classes
 		 * @see #pattern
 		 */

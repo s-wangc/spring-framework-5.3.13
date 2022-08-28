@@ -98,7 +98,7 @@ public class SimpleMappingExceptionResolver extends AbstractHandlerExceptionReso
 	/**
 	 * Set the name of the default error view.
 	 * This view will be returned if no specific mapping was found.
-	 * <p>Default is none.
+	 * <p>默认值是none.
 	 */
 	public void setDefaultErrorView(String defaultErrorView) {
 		this.defaultErrorView = defaultErrorView;
@@ -155,7 +155,7 @@ public class SimpleMappingExceptionResolver extends AbstractHandlerExceptionReso
 
 	/**
 	 * Set the name of the model attribute as which the exception should be exposed.
-	 * Default is "exception".
+	 * 默认值是"exception".
 	 * <p>This can be either set to a different attribute name or to {@code null}
 	 * for not exposing an exception attribute at all.
 	 * @see #DEFAULT_EXCEPTION_ATTRIBUTE

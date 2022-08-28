@@ -45,7 +45,7 @@ public class NameMatchMethodPointcutAdvisor extends AbstractGenericPointcutAdvis
 
 	/**
 	 * Set the {@link ClassFilter} to use for this pointcut.
-	 * Default is {@link ClassFilter#TRUE}.
+	 * 默认值是{@link ClassFilter#TRUE}.
 	 * @see NameMatchMethodPointcut#setClassFilter
 	 */
 	public void setClassFilter(ClassFilter classFilter) {

@@ -104,7 +104,7 @@ public class DefaultSubscriptionRegistry extends AbstractSubscriptionRegistry {
 
 	/**
 	 * Specify the maximum number of entries for the resolved destination cache.
-	 * Default is 1024.
+	 * 默认值是1024.
 	 */
 	public void setCacheLimit(int cacheLimit) {
 		this.cacheLimit = cacheLimit;

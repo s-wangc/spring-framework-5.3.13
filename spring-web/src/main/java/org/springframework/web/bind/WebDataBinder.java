@@ -165,7 +165,7 @@ public class WebDataBinder extends DataBinder {
 	}
 
 	/**
-	 * Set whether to bind empty MultipartFile parameters. Default is "true".
+	 * Set whether to bind empty MultipartFile parameters. 默认值是"true".
 	 * <p>Turn this off if you want to keep an already bound MultipartFile
 	 * when the user resubmits the form without choosing a different file.
 	 * Else, the already bound MultipartFile will be replaced by an empty

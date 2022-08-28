@@ -148,7 +148,7 @@ public class CustomMapEditor extends PropertyEditorSupport {
 	/**
 	 * Return whether to always create a new Map,
 	 * even if the type of the passed-in Map already matches.
-	 * <p>Default is "false"; can be overridden to enforce creation of a
+	 * <p>默认值是"false"; can be overridden to enforce creation of a
 	 * new Map, for example to convert elements in any case.
 	 * @see #convertKey
 	 * @see #convertValue

@@ -50,7 +50,7 @@ public abstract class AbstractMonitoringInterceptor extends AbstractTraceInterce
 
 	/**
 	 * Set the text that will get appended to the trace data.
-	 * <p>Default is none.
+	 * <p>默认值是none.
 	 */
 	public void setPrefix(@Nullable String prefix) {
 		this.prefix = (prefix != null ? prefix : "");
@@ -65,7 +65,7 @@ public abstract class AbstractMonitoringInterceptor extends AbstractTraceInterce
 
 	/**
 	 * Set the text that will get prepended to the trace data.
-	 * <p>Default is none.
+	 * <p>默认值是none.
 	 */
 	public void setSuffix(@Nullable String suffix) {
 		this.suffix = (suffix != null ? suffix : "");

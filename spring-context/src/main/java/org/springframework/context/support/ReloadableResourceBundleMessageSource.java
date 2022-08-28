@@ -143,7 +143,7 @@ public class ReloadableResourceBundleMessageSource extends AbstractResourceBased
 
 	/**
 	 * Set the PropertiesPersister to use for parsing properties files.
-	 * <p>The default is ResourcePropertiesPersister.
+	 * <p>默认值是ResourcePropertiesPersister.
 	 * @see ResourcePropertiesPersister#INSTANCE
 	 */
 	public void setPropertiesPersister(@Nullable PropertiesPersister propertiesPersister) {

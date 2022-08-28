@@ -47,7 +47,7 @@ public class ProxyConfig implements Serializable {
 
 	/**
 	 * Set whether to proxy the target class directly, instead of just proxying
-	 * specific interfaces. Default is "false".
+	 * specific interfaces. 默认值是"false".
 	 * <p>Set this to "true" to force proxying for the TargetSource's exposed
 	 * target class. If that target class is an interface, a JDK proxy will be
 	 * created for the given interface. If that target class is any other class,
@@ -72,7 +72,7 @@ public class ProxyConfig implements Serializable {
 	 * Set whether proxies should perform aggressive optimizations.
 	 * The exact meaning of "aggressive optimizations" will differ
 	 * between proxies, but there is usually some tradeoff.
-	 * Default is "false".
+	 * 默认值是"false".
 	 * <p>With Spring's current proxy options, this flag effectively
 	 * enforces CGLIB proxies (similar to {@link #setProxyTargetClass})
 	 * but without any class validation checks (for final methods etc).
