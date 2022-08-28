@@ -32,7 +32,7 @@ public class SockJsTransportFailureException extends SockJsException {
 	/**
 	 * Constructor for SockJsTransportFailureException.
 	 * @param message the exception message
-	 * @param cause the root cause
+	 * @param cause 根本原因
 	 * @since 4.1.7
 	 */
 	public SockJsTransportFailureException(String message, @Nullable Throwable cause) {
@@ -43,7 +43,7 @@ public class SockJsTransportFailureException extends SockJsException {
 	 * Constructor for SockJsTransportFailureException.
 	 * @param message the exception message
 	 * @param sessionId the SockJS session id
-	 * @param cause the root cause
+	 * @param cause 根本原因
 	 */
 	public SockJsTransportFailureException(String message, String sessionId, @Nullable Throwable cause) {
 		super(message, sessionId, cause);

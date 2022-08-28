@@ -39,7 +39,7 @@ public class AopInvocationException extends NestedRuntimeException {
 	/**
 	 * Constructor for AopInvocationException.
 	 * @param msg the detail message
-	 * @param cause the root cause
+	 * @param cause 根本原因
 	 */
 	public AopInvocationException(String msg, Throwable cause) {
 		super(msg, cause);

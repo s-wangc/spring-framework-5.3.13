@@ -44,7 +44,7 @@ public class InvalidResultSetAccessException extends InvalidDataAccessResourceUs
 	 * Constructor for InvalidResultSetAccessException.
 	 * @param task name of current task
 	 * @param sql the offending SQL statement
-	 * @param ex the root cause
+	 * @param ex 根本原因
 	 */
 	public InvalidResultSetAccessException(String task, String sql, SQLException ex) {
 		super(task + "; invalid ResultSet access for SQL [" + sql + "]", ex);
@@ -53,7 +53,7 @@ public class InvalidResultSetAccessException extends InvalidDataAccessResourceUs
 
 	/**
 	 * Constructor for InvalidResultSetAccessException.
-	 * @param ex the root cause
+	 * @param ex 根本原因
 	 */
 	public InvalidResultSetAccessException(SQLException ex) {
 		super(ex.getMessage(), ex);

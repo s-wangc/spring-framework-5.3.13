@@ -39,7 +39,7 @@ public class ApplicationContextException extends FatalBeanException {
 	 * Create a new {@code ApplicationContextException}
 	 * with the specified detail message and the given root cause.
 	 * @param msg the detail message
-	 * @param cause the root cause
+	 * @param cause 根本原因
 	 */
 	public ApplicationContextException(String msg, Throwable cause) {
 		super(msg, cause);

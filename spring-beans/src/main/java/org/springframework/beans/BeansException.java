@@ -44,7 +44,7 @@ public abstract class BeansException extends NestedRuntimeException {
 	 * Create a new BeansException with the specified message
 	 * and root cause.
 	 * @param msg the detail message
-	 * @param cause the root cause
+	 * @param cause 根本原因
 	 */
 	public BeansException(@Nullable String msg, @Nullable Throwable cause) {
 		super(msg, cause);

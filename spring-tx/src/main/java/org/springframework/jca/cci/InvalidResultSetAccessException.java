@@ -40,7 +40,7 @@ public class InvalidResultSetAccessException extends InvalidDataAccessResourceUs
 	/**
 	 * Constructor for InvalidResultSetAccessException.
 	 * @param msg message
-	 * @param ex the root cause
+	 * @param ex 根本原因
 	 */
 	public InvalidResultSetAccessException(String msg, SQLException ex) {
 		super(ex.getMessage(), ex);

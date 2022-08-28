@@ -40,7 +40,7 @@ public class UncategorizedSQLException extends UncategorizedDataAccessException 
 	 * Constructor for UncategorizedSQLException.
 	 * @param task name of current task
 	 * @param sql the offending SQL statement
-	 * @param ex the root cause
+	 * @param ex 根本原因
 	 */
 	public UncategorizedSQLException(String task, @Nullable String sql, SQLException ex) {
 		super(task + "; uncategorized SQLException" + (sql != null ? " for SQL [" + sql + "]" : "") +

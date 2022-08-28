@@ -37,7 +37,7 @@ public abstract class NestedExceptionUtils {
 	/**
 	 * Build a message for the given base message and root cause.
 	 * @param message the base message
-	 * @param cause the root cause
+	 * @param cause 根本原因
 	 * @return the full exception message
 	 */
 	@Nullable

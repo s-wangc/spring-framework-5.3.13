@@ -38,7 +38,7 @@ public class EjbAccessException extends NestedRuntimeException {
 	/**
 	 * Constructor for EjbAccessException.
 	 * @param msg the detail message
-	 * @param cause the root cause
+	 * @param cause 根本原因
 	 */
 	public EjbAccessException(String msg, Throwable cause) {
 		super(msg, cause);

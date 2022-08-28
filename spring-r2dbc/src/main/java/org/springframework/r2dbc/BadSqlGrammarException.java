@@ -42,7 +42,7 @@ public class BadSqlGrammarException extends InvalidDataAccessResourceUsageExcept
 	 * Constructor for BadSqlGrammarException.
 	 * @param task name of current task
 	 * @param sql the offending SQL statement
-	 * @param ex the root cause
+	 * @param ex 根本原因
 	 */
 	public BadSqlGrammarException(String task, String sql, R2dbcException ex) {
 		super(task + "; bad SQL grammar [" + sql + "]", ex);

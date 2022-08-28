@@ -41,7 +41,7 @@ public abstract class ScriptException extends DataAccessException {
 	/**
 	 * 创建一个新的{@code ScriptException}.
 	 * @param message the detail message
-	 * @param cause the root cause
+	 * @param cause 根本原因
 	 */
 	public ScriptException(String message, @Nullable Throwable cause) {
 		super(message, cause);

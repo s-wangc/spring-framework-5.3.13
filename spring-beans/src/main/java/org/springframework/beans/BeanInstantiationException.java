@@ -53,7 +53,7 @@ public class BeanInstantiationException extends FatalBeanException {
 	 * 创建一个新的BeanInstantiationException.
 	 * @param beanClass the offending bean class
 	 * @param msg the detail message
-	 * @param cause the root cause
+	 * @param cause 根本原因
 	 */
 	public BeanInstantiationException(Class<?> beanClass, String msg, @Nullable Throwable cause) {
 		super("Failed to instantiate [" + beanClass.getName() + "]: " + msg, cause);
@@ -66,7 +66,7 @@ public class BeanInstantiationException extends FatalBeanException {
 	 * 创建一个新的BeanInstantiationException.
 	 * @param constructor the offending constructor
 	 * @param msg the detail message
-	 * @param cause the root cause
+	 * @param cause 根本原因
 	 * @since 4.3
 	 */
 	public BeanInstantiationException(Constructor<?> constructor, String msg, @Nullable Throwable cause) {
@@ -81,7 +81,7 @@ public class BeanInstantiationException extends FatalBeanException {
 	 * @param constructingMethod the delegate for bean construction purposes
 	 * (typically, but not necessarily, a static factory method)
 	 * @param msg the detail message
-	 * @param cause the root cause
+	 * @param cause 根本原因
 	 * @since 4.3
 	 */
 	public BeanInstantiationException(Method constructingMethod, String msg, @Nullable Throwable cause) {

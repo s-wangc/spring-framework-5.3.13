@@ -41,7 +41,7 @@ public class MBeanServerNotFoundException extends JmxException {
 	 * Create a new {@code MBeanServerNotFoundException} with the
 	 * specified error message and root cause.
 	 * @param msg the error message
-	 * @param cause the root cause
+	 * @param cause 根本原因
 	 */
 	public MBeanServerNotFoundException(String msg, Throwable cause) {
 		super(msg, cause);

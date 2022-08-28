@@ -39,7 +39,7 @@ public class FatalBeanException extends BeansException {
 	 * Create a new FatalBeanException with the specified message
 	 * and root cause.
 	 * @param msg the detail message
-	 * @param cause the root cause
+	 * @param cause 根本原因
 	 */
 	public FatalBeanException(String msg, @Nullable Throwable cause) {
 		super(msg, cause);

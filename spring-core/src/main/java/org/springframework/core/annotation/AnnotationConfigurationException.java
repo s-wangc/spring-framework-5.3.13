@@ -43,7 +43,7 @@ public class AnnotationConfigurationException extends NestedRuntimeException {
 	 * Construct a new {@code AnnotationConfigurationException} with the
 	 * supplied message and cause.
 	 * @param message the detail message
-	 * @param cause the root cause
+	 * @param cause 根本原因
 	 */
 	public AnnotationConfigurationException(String message, Throwable cause) {
 		super(message, cause);

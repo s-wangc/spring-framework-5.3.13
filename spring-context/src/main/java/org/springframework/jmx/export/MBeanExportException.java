@@ -41,7 +41,7 @@ public class MBeanExportException extends JmxException {
 	 * Create a new {@code MBeanExportException} with the
 	 * specified error message and root cause.
 	 * @param msg the detail message
-	 * @param cause the root cause
+	 * @param cause 根本原因
 	 */
 	public MBeanExportException(String msg, Throwable cause) {
 		super(msg, cause);

@@ -43,7 +43,7 @@ public class ServletRequestBindingException extends NestedServletException {
 	/**
 	 * Constructor for ServletRequestBindingException.
 	 * @param msg the detail message
-	 * @param cause the root cause
+	 * @param cause 根本原因
 	 */
 	public ServletRequestBindingException(String msg, Throwable cause) {
 		super(msg, cause);

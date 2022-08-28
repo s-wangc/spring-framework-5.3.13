@@ -53,7 +53,7 @@ public class NullValueInNestedPathException extends InvalidPropertyException {
 	 * @param beanClass the offending bean class
 	 * @param propertyName the offending property
 	 * @param msg the detail message
-	 * @param cause the root cause
+	 * @param cause 根本原因
 	 * @since 4.3.2
 	 */
 	public NullValueInNestedPathException(Class<?> beanClass, String propertyName, String msg, Throwable cause) {

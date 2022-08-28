@@ -35,7 +35,7 @@ public class SockJsException extends NestedRuntimeException {
 	/**
 	 * Constructor for SockJsException.
 	 * @param message the exception message
-	 * @param cause the root cause
+	 * @param cause 根本原因
 	 */
 	public SockJsException(String message, @Nullable Throwable cause) {
 		this(message, null, cause);
@@ -45,7 +45,7 @@ public class SockJsException extends NestedRuntimeException {
 	 * Constructor for SockJsException.
 	 * @param message the exception message
 	 * @param sessionId the SockJS session id
-	 * @param cause the root cause
+	 * @param cause 根本原因
 	 */
 	public SockJsException(String message, @Nullable String sessionId, @Nullable Throwable cause) {
 		super(message, cause);

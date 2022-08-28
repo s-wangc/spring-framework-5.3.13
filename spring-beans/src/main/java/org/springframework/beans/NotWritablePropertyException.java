@@ -61,7 +61,7 @@ public class NotWritablePropertyException extends InvalidPropertyException {
 	 * @param beanClass the offending bean class
 	 * @param propertyName the offending property name
 	 * @param msg the detail message
-	 * @param cause the root cause
+	 * @param cause 根本原因
 	 */
 	public NotWritablePropertyException(Class<?> beanClass, String propertyName, String msg, Throwable cause) {
 		super(beanClass, propertyName, msg, cause);

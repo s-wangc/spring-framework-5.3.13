@@ -57,7 +57,7 @@ public class BeanCreationException extends FatalBeanException {
 	/**
 	 * 创建一个新的BeanCreationException.
 	 * @param msg the detail message
-	 * @param cause the root cause
+	 * @param cause 根本原因
 	 */
 	public BeanCreationException(String msg, Throwable cause) {
 		super(msg, cause);
@@ -80,7 +80,7 @@ public class BeanCreationException extends FatalBeanException {
 	 * 创建一个新的BeanCreationException.
 	 * @param beanName the name of the bean requested
 	 * @param msg the detail message
-	 * @param cause the root cause
+	 * @param cause 根本原因
 	 */
 	public BeanCreationException(String beanName, String msg, Throwable cause) {
 		this(beanName, msg);
@@ -108,7 +108,7 @@ public class BeanCreationException extends FatalBeanException {
 	 * that the bean definition came from
 	 * @param beanName the name of the bean requested
 	 * @param msg the detail message
-	 * @param cause the root cause
+	 * @param cause 根本原因
 	 */
 	public BeanCreationException(@Nullable String resourceDescription, String beanName, String msg, Throwable cause) {
 		this(resourceDescription, beanName, msg);

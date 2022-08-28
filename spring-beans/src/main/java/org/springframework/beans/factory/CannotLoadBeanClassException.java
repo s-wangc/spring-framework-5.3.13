@@ -44,7 +44,7 @@ public class CannotLoadBeanClassException extends FatalBeanException {
 	 * that the bean definition came from
 	 * @param beanName the name of the bean requested
 	 * @param beanClassName the name of the bean class
-	 * @param cause the root cause
+	 * @param cause 根本原因
 	 */
 	public CannotLoadBeanClassException(@Nullable String resourceDescription, String beanName,
 			@Nullable String beanClassName, ClassNotFoundException cause) {
@@ -62,7 +62,7 @@ public class CannotLoadBeanClassException extends FatalBeanException {
 	 * that the bean definition came from
 	 * @param beanName the name of the bean requested
 	 * @param beanClassName the name of the bean class
-	 * @param cause the root cause
+	 * @param cause 根本原因
 	 */
 	public CannotLoadBeanClassException(@Nullable String resourceDescription, String beanName,
 			@Nullable String beanClassName, LinkageError cause) {
