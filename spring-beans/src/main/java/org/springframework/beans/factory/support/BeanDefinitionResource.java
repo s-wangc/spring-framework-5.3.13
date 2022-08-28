@@ -39,7 +39,7 @@ class BeanDefinitionResource extends AbstractResource {
 
 
 	/**
-	 * Create a new BeanDefinitionResource.
+	 * 创建一个新的BeanDefinitionResource.
 	 * @param beanDefinition the BeanDefinition object to wrap
 	 */
 	public BeanDefinitionResource(BeanDefinition beanDefinition) {

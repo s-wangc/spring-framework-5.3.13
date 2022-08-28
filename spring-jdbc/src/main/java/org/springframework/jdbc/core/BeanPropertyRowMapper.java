@@ -123,7 +123,7 @@ public class BeanPropertyRowMapper<T> implements RowMapper<T> {
 	}
 
 	/**
-	 * Create a new {@code BeanPropertyRowMapper}.
+	 * 创建一个新的{@code BeanPropertyRowMapper}.
 	 * @param mappedClass the class that each row should be mapped to
 	 * @param checkFullyPopulated whether we're strictly validating that
 	 * all bean properties have been mapped from corresponding database fields

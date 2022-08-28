@@ -84,7 +84,7 @@ public class ScheduledTimerListener {
 	}
 
 	/**
-	 * Create a new ScheduledTimerListener.
+	 * 创建一个新的ScheduledTimerListener.
 	 * @param timerListener the TimerListener to schedule
 	 * @param delay the delay before starting the task for the first time (ms)
 	 * @param period the period between repeated task executions (ms)
@@ -118,7 +118,7 @@ public class ScheduledTimerListener {
 	}
 
 	/**
-	 * Create a new ScheduledTimerListener.
+	 * 创建一个新的ScheduledTimerListener.
 	 * @param timerTask the Runnable to schedule as TimerListener
 	 * @param delay the delay before starting the task for the first time (ms)
 	 * @param period the period between repeated task executions (ms)

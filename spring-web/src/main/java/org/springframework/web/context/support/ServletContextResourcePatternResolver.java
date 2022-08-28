@@ -50,7 +50,7 @@ public class ServletContextResourcePatternResolver extends PathMatchingResourceP
 
 
 	/**
-	 * Create a new ServletContextResourcePatternResolver.
+	 * 创建一个新的ServletContextResourcePatternResolver.
 	 * @param servletContext the ServletContext to load resources with
 	 * @see ServletContextResourceLoader#ServletContextResourceLoader(javax.servlet.ServletContext)
 	 */
@@ -59,7 +59,7 @@ public class ServletContextResourcePatternResolver extends PathMatchingResourceP
 	}
 
 	/**
-	 * Create a new ServletContextResourcePatternResolver.
+	 * 创建一个新的ServletContextResourcePatternResolver.
 	 * @param resourceLoader the ResourceLoader to load root directories and
 	 * actual resources with
 	 */

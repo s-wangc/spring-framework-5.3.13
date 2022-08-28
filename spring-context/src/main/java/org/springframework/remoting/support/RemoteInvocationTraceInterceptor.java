@@ -52,14 +52,14 @@ public class RemoteInvocationTraceInterceptor implements MethodInterceptor {
 
 
 	/**
-	 * Create a new RemoteInvocationTraceInterceptor.
+	 * 创建一个新的RemoteInvocationTraceInterceptor.
 	 */
 	public RemoteInvocationTraceInterceptor() {
 		this.exporterNameClause = "";
 	}
 
 	/**
-	 * Create a new RemoteInvocationTraceInterceptor.
+	 * 创建一个新的RemoteInvocationTraceInterceptor.
 	 * @param exporterName the name of the remote exporter
 	 * (to be used as context information in log messages)
 	 */

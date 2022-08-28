@@ -30,7 +30,7 @@ import org.springframework.context.ApplicationContext;
 public class ContextStoppedEvent extends ApplicationContextEvent {
 
 	/**
-	 * Create a new ContextStoppedEvent.
+	 * 创建一个新的ContextStoppedEvent.
 	 * @param source the {@code ApplicationContext} that has been stopped
 	 * (must not be {@code null})
 	 */

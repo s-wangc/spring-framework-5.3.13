@@ -32,7 +32,7 @@ import org.springframework.jms.JmsException;
 public class SynchedLocalTransactionFailedException extends JmsException {
 
 	/**
-	 * Create a new SynchedLocalTransactionFailedException.
+	 * 创建一个新的SynchedLocalTransactionFailedException.
 	 * @param msg the detail message
 	 * @param cause the root cause
 	 */

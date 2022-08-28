@@ -55,7 +55,7 @@ public class PersistenceExceptionTranslationInterceptor
 
 
 	/**
-	 * Create a new PersistenceExceptionTranslationInterceptor.
+	 * 创建一个新的PersistenceExceptionTranslationInterceptor.
 	 * Needs to be configured with a PersistenceExceptionTranslator afterwards.
 	 * @see #setPersistenceExceptionTranslator
 	 */

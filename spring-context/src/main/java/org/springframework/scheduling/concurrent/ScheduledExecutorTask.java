@@ -84,7 +84,7 @@ public class ScheduledExecutorTask {
 	}
 
 	/**
-	 * Create a new ScheduledExecutorTask.
+	 * 创建一个新的ScheduledExecutorTask.
 	 * @param executorTask the Runnable to schedule
 	 * @param delay the delay before starting the task for the first time (ms)
 	 * @param period the period between repeated task executions (ms)

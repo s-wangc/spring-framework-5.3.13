@@ -34,7 +34,7 @@ public class CronTask extends TriggerTask {
 
 
 	/**
-	 * Create a new {@code CronTask}.
+	 * 创建一个新的{@code CronTask}.
 	 * @param runnable the underlying task to execute
 	 * @param expression the cron expression defining when the task should be executed
 	 */
@@ -43,7 +43,7 @@ public class CronTask extends TriggerTask {
 	}
 
 	/**
-	 * Create a new {@code CronTask}.
+	 * 创建一个新的{@code CronTask}.
 	 * @param runnable the underlying task to execute
 	 * @param cronTrigger the cron trigger defining when the task should be executed
 	 */

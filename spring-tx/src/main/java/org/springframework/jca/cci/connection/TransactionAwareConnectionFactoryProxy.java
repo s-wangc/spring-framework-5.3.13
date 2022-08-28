@@ -73,14 +73,14 @@ import org.springframework.lang.Nullable;
 public class TransactionAwareConnectionFactoryProxy extends DelegatingConnectionFactory {
 
 	/**
-	 * Create a new TransactionAwareConnectionFactoryProxy.
+	 * 创建一个新的TransactionAwareConnectionFactoryProxy.
 	 * @see #setTargetConnectionFactory
 	 */
 	public TransactionAwareConnectionFactoryProxy() {
 	}
 
 	/**
-	 * Create a new TransactionAwareConnectionFactoryProxy.
+	 * 创建一个新的TransactionAwareConnectionFactoryProxy.
 	 * @param targetConnectionFactory the target ConnectionFactory
 	 */
 	public TransactionAwareConnectionFactoryProxy(ConnectionFactory targetConnectionFactory) {

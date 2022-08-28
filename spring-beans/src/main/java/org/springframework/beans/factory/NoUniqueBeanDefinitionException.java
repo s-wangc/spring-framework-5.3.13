@@ -41,7 +41,7 @@ public class NoUniqueBeanDefinitionException extends NoSuchBeanDefinitionExcepti
 
 
 	/**
-	 * Create a new {@code NoUniqueBeanDefinitionException}.
+	 * 创建一个新的{@code NoUniqueBeanDefinitionException}.
 	 * @param type required type of the non-unique bean
 	 * @param numberOfBeansFound the number of matching beans
 	 * @param message detailed message describing the problem
@@ -53,7 +53,7 @@ public class NoUniqueBeanDefinitionException extends NoSuchBeanDefinitionExcepti
 	}
 
 	/**
-	 * Create a new {@code NoUniqueBeanDefinitionException}.
+	 * 创建一个新的{@code NoUniqueBeanDefinitionException}.
 	 * @param type required type of the non-unique bean
 	 * @param beanNamesFound the names of all matching beans (as a Collection)
 	 */
@@ -65,7 +65,7 @@ public class NoUniqueBeanDefinitionException extends NoSuchBeanDefinitionExcepti
 	}
 
 	/**
-	 * Create a new {@code NoUniqueBeanDefinitionException}.
+	 * 创建一个新的{@code NoUniqueBeanDefinitionException}.
 	 * @param type required type of the non-unique bean
 	 * @param beanNamesFound the names of all matching beans (as an array)
 	 */
@@ -74,7 +74,7 @@ public class NoUniqueBeanDefinitionException extends NoSuchBeanDefinitionExcepti
 	}
 
 	/**
-	 * Create a new {@code NoUniqueBeanDefinitionException}.
+	 * 创建一个新的{@code NoUniqueBeanDefinitionException}.
 	 * @param type required type of the non-unique bean
 	 * @param beanNamesFound the names of all matching beans (as a Collection)
 	 * @since 5.1
@@ -87,7 +87,7 @@ public class NoUniqueBeanDefinitionException extends NoSuchBeanDefinitionExcepti
 	}
 
 	/**
-	 * Create a new {@code NoUniqueBeanDefinitionException}.
+	 * 创建一个新的{@code NoUniqueBeanDefinitionException}.
 	 * @param type required type of the non-unique bean
 	 * @param beanNamesFound the names of all matching beans (as an array)
 	 * @since 5.1

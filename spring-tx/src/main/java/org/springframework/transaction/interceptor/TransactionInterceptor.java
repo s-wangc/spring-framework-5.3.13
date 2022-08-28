@@ -55,7 +55,7 @@ import org.springframework.transaction.TransactionManager;
 public class TransactionInterceptor extends TransactionAspectSupport implements MethodInterceptor, Serializable {
 
 	/**
-	 * Create a new TransactionInterceptor.
+	 * 创建一个新的TransactionInterceptor.
 	 * <p>Transaction manager and transaction attributes still need to be set.
 	 * @see #setTransactionManager
 	 * @see #setTransactionAttributes(java.util.Properties)
@@ -65,7 +65,7 @@ public class TransactionInterceptor extends TransactionAspectSupport implements 
 	}
 
 	/**
-	 * Create a new TransactionInterceptor.
+	 * 创建一个新的TransactionInterceptor.
 	 * @param ptm the default transaction manager to perform the actual transaction management
 	 * @param tas the attribute source to be used to find transaction attributes
 	 * @since 5.2.5
@@ -78,7 +78,7 @@ public class TransactionInterceptor extends TransactionAspectSupport implements 
 	}
 
 	/**
-	 * Create a new TransactionInterceptor.
+	 * 创建一个新的TransactionInterceptor.
 	 * @param ptm the default transaction manager to perform the actual transaction management
 	 * @param tas the attribute source to be used to find transaction attributes
 	 * @see #setTransactionManager
@@ -93,7 +93,7 @@ public class TransactionInterceptor extends TransactionAspectSupport implements 
 	}
 
 	/**
-	 * Create a new TransactionInterceptor.
+	 * 创建一个新的TransactionInterceptor.
 	 * @param ptm the default transaction manager to perform the actual transaction management
 	 * @param attributes the transaction attributes in properties format
 	 * @see #setTransactionManager

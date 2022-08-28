@@ -32,7 +32,7 @@ public class Task {
 
 
 	/**
-	 * Create a new {@code Task}.
+	 * 创建一个新的{@code Task}.
 	 * @param runnable the underlying task to execute
 	 */
 	public Task(Runnable runnable) {

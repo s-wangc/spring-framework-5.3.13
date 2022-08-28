@@ -38,7 +38,7 @@ public class DescriptiveResource extends AbstractResource {
 
 
 	/**
-	 * Create a new DescriptiveResource.
+	 * 创建一个新的DescriptiveResource.
 	 * @param description the resource description
 	 */
 	public DescriptiveResource(@Nullable String description) {

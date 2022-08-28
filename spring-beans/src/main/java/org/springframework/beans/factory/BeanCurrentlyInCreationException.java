@@ -37,7 +37,7 @@ public class BeanCurrentlyInCreationException extends BeanCreationException {
 	}
 
 	/**
-	 * Create a new BeanCurrentlyInCreationException.
+	 * 创建一个新的BeanCurrentlyInCreationException.
 	 * @param beanName the name of the bean requested
 	 * @param msg the detail message
 	 */

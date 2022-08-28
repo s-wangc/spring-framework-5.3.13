@@ -100,7 +100,7 @@ public class ReflectiveAspectJAdvisorFactory extends AbstractAspectJAdvisorFacto
 
 
 	/**
-	 * Create a new {@code ReflectiveAspectJAdvisorFactory}.
+	 * 创建一个新的{@code ReflectiveAspectJAdvisorFactory}.
 	 */
 	public ReflectiveAspectJAdvisorFactory() {
 		this(null);

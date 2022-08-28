@@ -35,7 +35,7 @@ import org.springframework.beans.factory.BeanDefinitionStoreException;
 public class XmlBeanDefinitionStoreException extends BeanDefinitionStoreException {
 
 	/**
-	 * Create a new XmlBeanDefinitionStoreException.
+	 * 创建一个新的XmlBeanDefinitionStoreException.
 	 * @param resourceDescription description of the resource that the bean definition came from
 	 * @param msg the detail message (used as exception message as-is)
 	 * @param cause the SAXException (typically a SAXParseException) root cause

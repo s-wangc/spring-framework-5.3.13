@@ -35,7 +35,7 @@ public abstract class PropertyAccessException extends BeansException {
 
 
 	/**
-	 * Create a new PropertyAccessException.
+	 * 创建一个新的PropertyAccessException.
 	 * @param propertyChangeEvent the PropertyChangeEvent that resulted in the problem
 	 * @param msg the detail message
 	 * @param cause the root cause

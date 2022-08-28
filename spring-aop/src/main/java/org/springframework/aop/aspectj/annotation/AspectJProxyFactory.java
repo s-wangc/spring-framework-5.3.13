@@ -56,13 +56,13 @@ public class AspectJProxyFactory extends ProxyCreatorSupport {
 
 
 	/**
-	 * Create a new AspectJProxyFactory.
+	 * 创建一个新的AspectJProxyFactory.
 	 */
 	public AspectJProxyFactory() {
 	}
 
 	/**
-	 * Create a new AspectJProxyFactory.
+	 * 创建一个新的AspectJProxyFactory.
 	 * <p>Will proxy all interfaces that the given target implements.
 	 * @param target the target object to be proxied
 	 */
@@ -73,7 +73,7 @@ public class AspectJProxyFactory extends ProxyCreatorSupport {
 	}
 
 	/**
-	 * Create a new {@code AspectJProxyFactory}.
+	 * 创建一个新的{@code AspectJProxyFactory}.
 	 * No target, only interfaces. Must add interceptors.
 	 */
 	public AspectJProxyFactory(Class<?>... interfaces) {

@@ -29,7 +29,7 @@ import org.springframework.context.ApplicationContext;
 public class ContextRefreshedEvent extends ApplicationContextEvent {
 
 	/**
-	 * Create a new ContextRefreshedEvent.
+	 * 创建一个新的ContextRefreshedEvent.
 	 * @param source the {@code ApplicationContext} that has been initialized
 	 * or refreshed (must not be {@code null})
 	 */

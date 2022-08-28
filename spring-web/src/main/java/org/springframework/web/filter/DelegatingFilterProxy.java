@@ -100,7 +100,7 @@ public class DelegatingFilterProxy extends GenericFilterBean {
 
 
 	/**
-	 * Create a new {@code DelegatingFilterProxy}. For traditional (pre-Servlet 3.0) use
+	 * 创建一个新的{@code DelegatingFilterProxy}. For traditional (pre-Servlet 3.0) use
 	 * in {@code web.xml}.
 	 * @see #setTargetBeanName(String)
 	 */

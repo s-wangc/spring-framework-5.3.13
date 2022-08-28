@@ -30,7 +30,7 @@ import org.springframework.test.context.TestContext;
 public abstract class TestContextEvent extends ApplicationEvent {
 
 	/**
-	 * Create a new {@code TestContextEvent}.
+	 * 创建一个新的{@code TestContextEvent}.
 	 * @param source the {@code TestContext} associated with this event
 	 * (must not be {@code null})
 	 */

@@ -63,7 +63,7 @@ public class MockFilterConfig implements FilterConfig {
 	}
 
 	/**
-	 * Create a new MockFilterConfig.
+	 * 创建一个新的MockFilterConfig.
 	 * @param servletContext the ServletContext that the servlet runs in
 	 */
 	public MockFilterConfig(@Nullable ServletContext servletContext) {
@@ -71,7 +71,7 @@ public class MockFilterConfig implements FilterConfig {
 	}
 
 	/**
-	 * Create a new MockFilterConfig.
+	 * 创建一个新的MockFilterConfig.
 	 * @param servletContext the ServletContext that the servlet runs in
 	 * @param filterName the name of the filter
 	 */

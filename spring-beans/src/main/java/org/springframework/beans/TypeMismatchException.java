@@ -48,7 +48,7 @@ public class TypeMismatchException extends PropertyAccessException {
 
 
 	/**
-	 * Create a new {@code TypeMismatchException}.
+	 * 创建一个新的{@code TypeMismatchException}.
 	 * @param propertyChangeEvent the PropertyChangeEvent that resulted in the problem
 	 * @param requiredType the required target type
 	 */
@@ -57,7 +57,7 @@ public class TypeMismatchException extends PropertyAccessException {
 	}
 
 	/**
-	 * Create a new {@code TypeMismatchException}.
+	 * 创建一个新的{@code TypeMismatchException}.
 	 * @param propertyChangeEvent the PropertyChangeEvent that resulted in the problem
 	 * @param requiredType the required target type (or {@code null} if not known)
 	 * @param cause the root cause (may be {@code null})

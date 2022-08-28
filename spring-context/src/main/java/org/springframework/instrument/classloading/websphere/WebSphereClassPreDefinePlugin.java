@@ -39,7 +39,7 @@ class WebSphereClassPreDefinePlugin implements InvocationHandler {
 
 
 	/**
-	 * Create a new {@link WebSphereClassPreDefinePlugin}.
+	 * 创建一个新的{@link WebSphereClassPreDefinePlugin}.
 	 * @param transformer the {@link ClassFileTransformer} to be adapted
 	 * (must not be {@code null})
 	 */

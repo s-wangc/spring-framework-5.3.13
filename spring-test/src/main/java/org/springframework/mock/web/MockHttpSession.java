@@ -83,7 +83,7 @@ public class MockHttpSession implements HttpSession {
 	}
 
 	/**
-	 * Create a new MockHttpSession.
+	 * 创建一个新的MockHttpSession.
 	 * @param servletContext the ServletContext that the session runs in
 	 */
 	public MockHttpSession(@Nullable ServletContext servletContext) {
@@ -91,7 +91,7 @@ public class MockHttpSession implements HttpSession {
 	}
 
 	/**
-	 * Create a new MockHttpSession.
+	 * 创建一个新的MockHttpSession.
 	 * @param servletContext the ServletContext that the session runs in
 	 * @param id a unique identifier for this session
 	 */

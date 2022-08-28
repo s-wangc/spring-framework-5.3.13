@@ -48,7 +48,7 @@ public class SpringTemplateLoader implements TemplateLoader {
 
 
 	/**
-	 * Create a new SpringTemplateLoader.
+	 * 创建一个新的SpringTemplateLoader.
 	 * @param resourceLoader the Spring ResourceLoader to use
 	 * @param templateLoaderPath the template loader path to use
 	 */

@@ -48,7 +48,7 @@ public class ByteArrayResource extends AbstractResource {
 
 
 	/**
-	 * Create a new {@code ByteArrayResource}.
+	 * 创建一个新的{@code ByteArrayResource}.
 	 * @param byteArray the byte array to wrap
 	 */
 	public ByteArrayResource(byte[] byteArray) {

@@ -37,7 +37,7 @@ public final class TemporalAccessorPrinter implements Printer<TemporalAccessor> 
 
 
 	/**
-	 * Create a new TemporalAccessorPrinter.
+	 * 创建一个新的TemporalAccessorPrinter.
 	 * @param formatter the base DateTimeFormatter instance
 	 */
 	public TemporalAccessorPrinter(DateTimeFormatter formatter) {

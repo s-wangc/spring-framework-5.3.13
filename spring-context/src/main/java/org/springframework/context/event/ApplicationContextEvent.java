@@ -29,7 +29,7 @@ import org.springframework.context.ApplicationEvent;
 public abstract class ApplicationContextEvent extends ApplicationEvent {
 
 	/**
-	 * Create a new ContextStartedEvent.
+	 * 创建一个新的ContextStartedEvent.
 	 * @param source the {@code ApplicationContext} that the event is raised for
 	 * (must not be {@code null})
 	 */

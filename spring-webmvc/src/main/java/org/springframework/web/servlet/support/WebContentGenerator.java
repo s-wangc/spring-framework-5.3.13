@@ -123,7 +123,7 @@ public abstract class WebContentGenerator extends WebApplicationObjectSupport {
 	}
 
 	/**
-	 * Create a new WebContentGenerator.
+	 * 创建一个新的WebContentGenerator.
 	 * @param restrictDefaultSupportedMethods {@code true} if this
 	 * generator should support HTTP methods GET, HEAD and POST by default,
 	 * or {@code false} if it should be unrestricted
@@ -139,7 +139,7 @@ public abstract class WebContentGenerator extends WebApplicationObjectSupport {
 	}
 
 	/**
-	 * Create a new WebContentGenerator.
+	 * 创建一个新的WebContentGenerator.
 	 * @param supportedMethods the supported HTTP methods for this content generator
 	 */
 	public WebContentGenerator(String... supportedMethods) {

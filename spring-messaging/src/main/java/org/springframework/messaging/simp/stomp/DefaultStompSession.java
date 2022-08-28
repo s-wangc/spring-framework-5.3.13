@@ -116,7 +116,7 @@ public class DefaultStompSession implements ConnectionHandlingStompSession {
 
 
 	/**
-	 * Create a new session.
+	 * 创建一个新的session.
 	 * @param sessionHandler the application handler for the session
 	 * @param connectHeaders headers for the STOMP CONNECT frame
 	 */

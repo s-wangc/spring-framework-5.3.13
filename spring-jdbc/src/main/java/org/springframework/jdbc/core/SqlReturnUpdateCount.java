@@ -29,7 +29,7 @@ import java.sql.Types;
 public class SqlReturnUpdateCount extends SqlParameter {
 
 	/**
-	 * Create a new SqlReturnUpdateCount.
+	 * 创建一个新的SqlReturnUpdateCount.
 	 * @param name the name of the parameter, as used in input and output maps
 	 */
 	public SqlReturnUpdateCount(String name) {

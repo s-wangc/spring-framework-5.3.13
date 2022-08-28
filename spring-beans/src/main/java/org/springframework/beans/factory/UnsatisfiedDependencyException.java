@@ -37,7 +37,7 @@ public class UnsatisfiedDependencyException extends BeanCreationException {
 
 
 	/**
-	 * Create a new UnsatisfiedDependencyException.
+	 * 创建一个新的UnsatisfiedDependencyException.
 	 * @param resourceDescription description of the resource that the bean definition came from
 	 * @param beanName the name of the bean requested
 	 * @param propertyName the name of the bean property that couldn't be satisfied
@@ -53,7 +53,7 @@ public class UnsatisfiedDependencyException extends BeanCreationException {
 	}
 
 	/**
-	 * Create a new UnsatisfiedDependencyException.
+	 * 创建一个新的UnsatisfiedDependencyException.
 	 * @param resourceDescription description of the resource that the bean definition came from
 	 * @param beanName the name of the bean requested
 	 * @param propertyName the name of the bean property that couldn't be satisfied
@@ -67,7 +67,7 @@ public class UnsatisfiedDependencyException extends BeanCreationException {
 	}
 
 	/**
-	 * Create a new UnsatisfiedDependencyException.
+	 * 创建一个新的UnsatisfiedDependencyException.
 	 * @param resourceDescription description of the resource that the bean definition came from
 	 * @param beanName the name of the bean requested
 	 * @param injectionPoint the injection point (field or method/constructor parameter)
@@ -84,7 +84,7 @@ public class UnsatisfiedDependencyException extends BeanCreationException {
 	}
 
 	/**
-	 * Create a new UnsatisfiedDependencyException.
+	 * 创建一个新的UnsatisfiedDependencyException.
 	 * @param resourceDescription description of the resource that the bean definition came from
 	 * @param beanName the name of the bean requested
 	 * @param injectionPoint the injection point (field or method/constructor parameter)

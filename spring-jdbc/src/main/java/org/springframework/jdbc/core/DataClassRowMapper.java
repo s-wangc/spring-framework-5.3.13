@@ -64,7 +64,7 @@ public class DataClassRowMapper<T> extends BeanPropertyRowMapper<T> {
 	}
 
 	/**
-	 * Create a new {@code DataClassRowMapper}.
+	 * 创建一个新的{@code DataClassRowMapper}.
 	 * @param mappedClass the class that each row should be mapped to
 	 */
 	public DataClassRowMapper(Class<T> mappedClass) {

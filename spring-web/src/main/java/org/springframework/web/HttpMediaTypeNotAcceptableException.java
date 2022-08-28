@@ -30,7 +30,7 @@ import org.springframework.http.MediaType;
 public class HttpMediaTypeNotAcceptableException extends HttpMediaTypeException {
 
 	/**
-	 * Create a new HttpMediaTypeNotAcceptableException.
+	 * 创建一个新的HttpMediaTypeNotAcceptableException.
 	 * @param message the exception message
 	 */
 	public HttpMediaTypeNotAcceptableException(String message) {
@@ -38,7 +38,7 @@ public class HttpMediaTypeNotAcceptableException extends HttpMediaTypeException 
 	}
 
 	/**
-	 * Create a new HttpMediaTypeNotSupportedException.
+	 * 创建一个新的HttpMediaTypeNotSupportedException.
 	 * @param supportedMediaTypes the list of supported media types
 	 */
 	public HttpMediaTypeNotAcceptableException(List<MediaType> supportedMediaTypes) {

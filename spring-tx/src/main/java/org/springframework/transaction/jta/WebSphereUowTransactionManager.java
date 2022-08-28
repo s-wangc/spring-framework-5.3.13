@@ -105,7 +105,7 @@ public class WebSphereUowTransactionManager extends JtaTransactionManager
 
 
 	/**
-	 * Create a new WebSphereUowTransactionManager.
+	 * 创建一个新的WebSphereUowTransactionManager.
 	 */
 	public WebSphereUowTransactionManager() {
 		setAutodetectTransactionManager(false);

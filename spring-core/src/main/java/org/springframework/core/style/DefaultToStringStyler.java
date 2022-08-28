@@ -37,7 +37,7 @@ public class DefaultToStringStyler implements ToStringStyler {
 
 
 	/**
-	 * Create a new DefaultToStringStyler.
+	 * 创建一个新的DefaultToStringStyler.
 	 * @param valueStyler the ValueStyler to use
 	 */
 	public DefaultToStringStyler(ValueStyler valueStyler) {

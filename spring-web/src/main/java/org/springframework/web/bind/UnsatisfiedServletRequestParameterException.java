@@ -43,7 +43,7 @@ public class UnsatisfiedServletRequestParameterException extends ServletRequestB
 
 
 	/**
-	 * Create a new UnsatisfiedServletRequestParameterException.
+	 * 创建一个新的UnsatisfiedServletRequestParameterException.
 	 * @param paramConditions the parameter conditions that have been violated
 	 * @param actualParams the actual parameter Map associated with the ServletRequest
 	 */
@@ -54,7 +54,7 @@ public class UnsatisfiedServletRequestParameterException extends ServletRequestB
 	}
 
 	/**
-	 * Create a new UnsatisfiedServletRequestParameterException.
+	 * 创建一个新的UnsatisfiedServletRequestParameterException.
 	 * @param paramConditions all sets of parameter conditions that have been violated
 	 * @param actualParams the actual parameter Map associated with the ServletRequest
 	 * @since 4.2

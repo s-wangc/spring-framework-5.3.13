@@ -57,7 +57,7 @@ public class ServletContextResource extends AbstractFileResolvingResource implem
 
 
 	/**
-	 * Create a new ServletContextResource.
+	 * 创建一个新的ServletContextResource.
 	 * <p>The Servlet spec requires that resource paths start with a slash,
 	 * even if many containers accept paths without leading slash too.
 	 * Consequently, the given path will be prepended with a slash if it

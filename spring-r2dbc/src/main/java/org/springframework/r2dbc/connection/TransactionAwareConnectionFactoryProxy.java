@@ -72,7 +72,7 @@ import org.springframework.util.ReflectionUtils;
 public class TransactionAwareConnectionFactoryProxy extends DelegatingConnectionFactory {
 
 	/**
-	 * Create a new {@link TransactionAwareConnectionFactoryProxy}.
+	 * 创建一个新的{@link TransactionAwareConnectionFactoryProxy}.
 	 * @param targetConnectionFactory the target {@link ConnectionFactory}
 	 */
 	public TransactionAwareConnectionFactoryProxy(ConnectionFactory targetConnectionFactory) {

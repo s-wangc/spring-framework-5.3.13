@@ -59,7 +59,7 @@ public class MockServletConfig implements ServletConfig {
 	}
 
 	/**
-	 * Create a new MockServletConfig.
+	 * 创建一个新的MockServletConfig.
 	 * @param servletContext the ServletContext that the servlet runs in
 	 */
 	public MockServletConfig(@Nullable ServletContext servletContext) {
@@ -67,7 +67,7 @@ public class MockServletConfig implements ServletConfig {
 	}
 
 	/**
-	 * Create a new MockServletConfig.
+	 * 创建一个新的MockServletConfig.
 	 * @param servletContext the ServletContext that the servlet runs in
 	 * @param servletName the name of the servlet
 	 */

@@ -36,13 +36,13 @@ import org.springframework.util.ClassUtils;
 public class ProxyFactory extends ProxyCreatorSupport {
 
 	/**
-	 * Create a new ProxyFactory.
+	 * 创建一个新的ProxyFactory.
 	 */
 	public ProxyFactory() {
 	}
 
 	/**
-	 * Create a new ProxyFactory.
+	 * 创建一个新的ProxyFactory.
 	 * <p>Will proxy all interfaces that the given target implements.
 	 * @param target the target object to be proxied
 	 */
@@ -52,7 +52,7 @@ public class ProxyFactory extends ProxyCreatorSupport {
 	}
 
 	/**
-	 * Create a new ProxyFactory.
+	 * 创建一个新的ProxyFactory.
 	 * <p>No target, only interfaces. Must add interceptors.
 	 * @param proxyInterfaces the interfaces that the proxy should implement
 	 */

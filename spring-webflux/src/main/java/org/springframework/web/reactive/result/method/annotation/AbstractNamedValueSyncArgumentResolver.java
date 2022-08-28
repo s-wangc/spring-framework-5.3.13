@@ -39,7 +39,7 @@ public abstract class AbstractNamedValueSyncArgumentResolver extends AbstractNam
 		implements SyncHandlerMethodArgumentResolver {
 
 	/**
-	 * Create a new {@link AbstractNamedValueSyncArgumentResolver}.
+	 * 创建一个新的{@link AbstractNamedValueSyncArgumentResolver}.
 	 * @param factory a bean factory to use for resolving {@code ${...}}
 	 * placeholder and {@code #{...}} SpEL expressions in default values;
 	 * or {@code null} if default values are not expected to have expressions

@@ -30,7 +30,7 @@ import org.springframework.lang.Nullable;
 public class DestinationResolutionException extends JmsException {
 
 	/**
-	 * Create a new DestinationResolutionException.
+	 * 创建一个新的DestinationResolutionException.
 	 * @param msg the detail message
 	 */
 	public DestinationResolutionException(String msg) {
@@ -38,7 +38,7 @@ public class DestinationResolutionException extends JmsException {
 	}
 
 	/**
-	 * Create a new DestinationResolutionException.
+	 * 创建一个新的DestinationResolutionException.
 	 * @param msg the detail message
 	 * @param cause the root cause (if any)
 	 */

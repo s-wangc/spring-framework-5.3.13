@@ -56,7 +56,7 @@ public class DefaultResourceLoader implements ResourceLoader {
 
 
 	/**
-	 * Create a new DefaultResourceLoader.
+	 * 创建一个新的DefaultResourceLoader.
 	 * <p>ClassLoader access will happen using the thread context class loader
 	 * at the time of actual resource access (since 5.3). For more control, pass
 	 * a specific ClassLoader to {@link #DefaultResourceLoader(ClassLoader)}.
@@ -66,7 +66,7 @@ public class DefaultResourceLoader implements ResourceLoader {
 	}
 
 	/**
-	 * Create a new DefaultResourceLoader.
+	 * 创建一个新的DefaultResourceLoader.
 	 * @param classLoader the ClassLoader to load class path resources with, or {@code null}
 	 * for using the thread context class loader at the time of actual resource access
 	 */

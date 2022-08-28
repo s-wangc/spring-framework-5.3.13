@@ -30,7 +30,7 @@ import org.springframework.web.server.WebSession;
 public interface WebSessionStore {
 
 	/**
-	 * Create a new WebSession.
+	 * 创建一个新的WebSession.
 	 * <p>Note that this does nothing more than create a new instance.
 	 * The session can later be started explicitly via {@link WebSession#start()}
 	 * or implicitly by adding attributes -- and then persisted via

@@ -62,7 +62,7 @@ public class SockJsHttpRequestHandler
 
 
 	/**
-	 * Create a new SockJsHttpRequestHandler.
+	 * 创建一个新的SockJsHttpRequestHandler.
 	 * @param sockJsService the SockJS service
 	 * @param webSocketHandler the websocket handler
 	 */

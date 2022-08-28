@@ -70,7 +70,7 @@ public class SimpleMailMessage implements MailMessage, Serializable {
 
 
 	/**
-	 * Create a new {@code SimpleMailMessage}.
+	 * 创建一个新的{@code SimpleMailMessage}.
 	 */
 	public SimpleMailMessage() {
 	}

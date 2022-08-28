@@ -43,7 +43,7 @@ public class NoSuchBeanDefinitionException extends BeansException {
 
 
 	/**
-	 * Create a new {@code NoSuchBeanDefinitionException}.
+	 * 创建一个新的{@code NoSuchBeanDefinitionException}.
 	 * @param name the name of the missing bean
 	 */
 	public NoSuchBeanDefinitionException(String name) {
@@ -53,7 +53,7 @@ public class NoSuchBeanDefinitionException extends BeansException {
 	}
 
 	/**
-	 * Create a new {@code NoSuchBeanDefinitionException}.
+	 * 创建一个新的{@code NoSuchBeanDefinitionException}.
 	 * @param name the name of the missing bean
 	 * @param message detailed message describing the problem
 	 */
@@ -64,7 +64,7 @@ public class NoSuchBeanDefinitionException extends BeansException {
 	}
 
 	/**
-	 * Create a new {@code NoSuchBeanDefinitionException}.
+	 * 创建一个新的{@code NoSuchBeanDefinitionException}.
 	 * @param type required type of the missing bean
 	 */
 	public NoSuchBeanDefinitionException(Class<?> type) {
@@ -72,7 +72,7 @@ public class NoSuchBeanDefinitionException extends BeansException {
 	}
 
 	/**
-	 * Create a new {@code NoSuchBeanDefinitionException}.
+	 * 创建一个新的{@code NoSuchBeanDefinitionException}.
 	 * @param type required type of the missing bean
 	 * @param message detailed message describing the problem
 	 */
@@ -81,7 +81,7 @@ public class NoSuchBeanDefinitionException extends BeansException {
 	}
 
 	/**
-	 * Create a new {@code NoSuchBeanDefinitionException}.
+	 * 创建一个新的{@code NoSuchBeanDefinitionException}.
 	 * @param type full type declaration of the missing bean
 	 * @since 4.3.4
 	 */
@@ -92,7 +92,7 @@ public class NoSuchBeanDefinitionException extends BeansException {
 	}
 
 	/**
-	 * Create a new {@code NoSuchBeanDefinitionException}.
+	 * 创建一个新的{@code NoSuchBeanDefinitionException}.
 	 * @param type full type declaration of the missing bean
 	 * @param message detailed message describing the problem
 	 * @since 4.3.4

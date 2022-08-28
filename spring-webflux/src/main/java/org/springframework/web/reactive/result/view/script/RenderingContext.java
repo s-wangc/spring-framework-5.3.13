@@ -41,7 +41,7 @@ public class RenderingContext {
 
 
 	/**
-	 * Create a new {@code RenderingContext}.
+	 * 创建一个新的{@code RenderingContext}.
 	 *
 	 * @param applicationContext the application context
 	 * @param locale the locale of the rendered template

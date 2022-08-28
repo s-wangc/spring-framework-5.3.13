@@ -30,7 +30,7 @@ import org.springframework.context.ApplicationContext;
 public class ContextStartedEvent extends ApplicationContextEvent {
 
 	/**
-	 * Create a new ContextStartedEvent.
+	 * 创建一个新的ContextStartedEvent.
 	 * @param source the {@code ApplicationContext} that has been started
 	 * (must not be {@code null})
 	 */

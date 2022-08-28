@@ -42,7 +42,7 @@ public class CompositeComponentDefinition extends AbstractComponentDefinition {
 
 
 	/**
-	 * Create a new CompositeComponentDefinition.
+	 * 创建一个新的CompositeComponentDefinition.
 	 * @param name the name of the composite component
 	 * @param source the source element that defines the root of the composite component
 	 */

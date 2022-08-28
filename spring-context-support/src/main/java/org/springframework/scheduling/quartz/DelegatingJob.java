@@ -41,7 +41,7 @@ public class DelegatingJob implements Job {
 
 
 	/**
-	 * Create a new DelegatingJob.
+	 * 创建一个新的DelegatingJob.
 	 * @param delegate the Runnable implementation to delegate to
 	 */
 	public DelegatingJob(Runnable delegate) {

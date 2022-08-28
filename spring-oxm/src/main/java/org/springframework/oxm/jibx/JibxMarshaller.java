@@ -466,7 +466,7 @@ public class JibxMarshaller extends AbstractMarshaller implements InitializingBe
 	}
 
 	/**
-	 * Create a new {@code IUnmarshallingContext}.
+	 * 创建一个新的{@code IUnmarshallingContext}.
 	 * @return the created unmarshalling context
 	 * @throws JiBXException 如果出现错误
 	 */

@@ -30,7 +30,7 @@ import org.springframework.lang.Nullable;
 public class ScriptParseException extends ScriptException {
 
 	/**
-	 * Create a new {@code ScriptParseException}.
+	 * 创建一个新的{@code ScriptParseException}.
 	 * @param message detailed message
 	 * @param resource the resource from which the SQL script was read
 	 */
@@ -39,7 +39,7 @@ public class ScriptParseException extends ScriptException {
 	}
 
 	/**
-	 * Create a new {@code ScriptParseException}.
+	 * 创建一个新的{@code ScriptParseException}.
 	 * @param message detailed message
 	 * @param resource the resource from which the SQL script was read
 	 * @param cause the underlying cause of the failure

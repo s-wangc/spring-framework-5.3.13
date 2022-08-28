@@ -40,7 +40,7 @@ public class ImportDefinition implements BeanMetadataElement {
 
 
 	/**
-	 * Create a new ImportDefinition.
+	 * 创建一个新的ImportDefinition.
 	 * @param importedResource the location of the imported resource
 	 */
 	public ImportDefinition(String importedResource) {
@@ -48,7 +48,7 @@ public class ImportDefinition implements BeanMetadataElement {
 	}
 
 	/**
-	 * Create a new ImportDefinition.
+	 * 创建一个新的ImportDefinition.
 	 * @param importedResource the location of the imported resource
 	 * @param source the source object (may be {@code null})
 	 */
@@ -57,7 +57,7 @@ public class ImportDefinition implements BeanMetadataElement {
 	}
 
 	/**
-	 * Create a new ImportDefinition.
+	 * 创建一个新的ImportDefinition.
 	 * @param importedResource the location of the imported resource
 	 * @param source the source object (may be {@code null})
 	 */

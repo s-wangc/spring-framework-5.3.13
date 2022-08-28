@@ -39,7 +39,7 @@ public class SqlOutParameter extends ResultSetSupportingSqlParameter {
 
 
 	/**
-	 * Create a new SqlOutParameter.
+	 * 创建一个新的SqlOutParameter.
 	 * @param name the name of the parameter, as used in input and output maps
 	 * @param sqlType the parameter SQL type according to {@code java.sql.Types}
 	 */
@@ -48,7 +48,7 @@ public class SqlOutParameter extends ResultSetSupportingSqlParameter {
 	}
 
 	/**
-	 * Create a new SqlOutParameter.
+	 * 创建一个新的SqlOutParameter.
 	 * @param name the name of the parameter, as used in input and output maps
 	 * @param sqlType the parameter SQL type according to {@code java.sql.Types}
 	 * @param scale the number of digits after the decimal point
@@ -59,7 +59,7 @@ public class SqlOutParameter extends ResultSetSupportingSqlParameter {
 	}
 
 	/**
-	 * Create a new SqlOutParameter.
+	 * 创建一个新的SqlOutParameter.
 	 * @param name the name of the parameter, as used in input and output maps
 	 * @param sqlType the parameter SQL type according to {@code java.sql.Types}
 	 * @param typeName the type name of the parameter (optional)
@@ -69,7 +69,7 @@ public class SqlOutParameter extends ResultSetSupportingSqlParameter {
 	}
 
 	/**
-	 * Create a new SqlOutParameter.
+	 * 创建一个新的SqlOutParameter.
 	 * @param name the name of the parameter, as used in input and output maps
 	 * @param sqlType the parameter SQL type according to {@code java.sql.Types}
 	 * @param typeName the type name of the parameter (optional)
@@ -81,7 +81,7 @@ public class SqlOutParameter extends ResultSetSupportingSqlParameter {
 	}
 
 	/**
-	 * Create a new SqlOutParameter.
+	 * 创建一个新的SqlOutParameter.
 	 * @param name the name of the parameter, as used in input and output maps
 	 * @param sqlType the parameter SQL type according to {@code java.sql.Types}
 	 * @param rse the {@link ResultSetExtractor} to use for parsing the {@link ResultSet}
@@ -91,7 +91,7 @@ public class SqlOutParameter extends ResultSetSupportingSqlParameter {
 	}
 
 	/**
-	 * Create a new SqlOutParameter.
+	 * 创建一个新的SqlOutParameter.
 	 * @param name the name of the parameter, as used in input and output maps
 	 * @param sqlType the parameter SQL type according to {@code java.sql.Types}
 	 * @param rch the {@link RowCallbackHandler} to use for parsing the {@link ResultSet}
@@ -101,7 +101,7 @@ public class SqlOutParameter extends ResultSetSupportingSqlParameter {
 	}
 
 	/**
-	 * Create a new SqlOutParameter.
+	 * 创建一个新的SqlOutParameter.
 	 * @param name the name of the parameter, as used in input and output maps
 	 * @param sqlType the parameter SQL type according to {@code java.sql.Types}
 	 * @param rm the {@link RowMapper} to use for parsing the {@link ResultSet}

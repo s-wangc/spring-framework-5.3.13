@@ -93,14 +93,14 @@ public class LazyConnectionDataSourceProxy extends DelegatingDataSource {
 
 
 	/**
-	 * Create a new LazyConnectionDataSourceProxy.
+	 * 创建一个新的LazyConnectionDataSourceProxy.
 	 * @see #setTargetDataSource
 	 */
 	public LazyConnectionDataSourceProxy() {
 	}
 
 	/**
-	 * Create a new LazyConnectionDataSourceProxy.
+	 * 创建一个新的LazyConnectionDataSourceProxy.
 	 * @param targetDataSource the target DataSource
 	 */
 	public LazyConnectionDataSourceProxy(DataSource targetDataSource) {

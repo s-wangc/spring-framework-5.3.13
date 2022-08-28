@@ -76,7 +76,7 @@ public class MutableSortDefinition implements SortDefinition, Serializable {
 	}
 
 	/**
-	 * Create a new MutableSortDefinition.
+	 * 创建一个新的MutableSortDefinition.
 	 * @param toggleAscendingOnSameProperty whether to toggle the ascending flag
 	 * if the same property gets set again (that is, {@code setProperty} gets
 	 * called with already set property name again).

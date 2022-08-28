@@ -30,7 +30,7 @@ package org.springframework.beans;
 public class NullValueInNestedPathException extends InvalidPropertyException {
 
 	/**
-	 * Create a new NullValueInNestedPathException.
+	 * 创建一个新的NullValueInNestedPathException.
 	 * @param beanClass the offending bean class
 	 * @param propertyName the offending property
 	 */
@@ -39,7 +39,7 @@ public class NullValueInNestedPathException extends InvalidPropertyException {
 	}
 
 	/**
-	 * Create a new NullValueInNestedPathException.
+	 * 创建一个新的NullValueInNestedPathException.
 	 * @param beanClass the offending bean class
 	 * @param propertyName the offending property
 	 * @param msg the detail message
@@ -49,7 +49,7 @@ public class NullValueInNestedPathException extends InvalidPropertyException {
 	}
 
 	/**
-	 * Create a new NullValueInNestedPathException.
+	 * 创建一个新的NullValueInNestedPathException.
 	 * @param beanClass the offending bean class
 	 * @param propertyName the offending property
 	 * @param msg the detail message

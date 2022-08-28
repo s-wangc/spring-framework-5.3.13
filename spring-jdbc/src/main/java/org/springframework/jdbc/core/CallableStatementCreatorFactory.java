@@ -137,7 +137,7 @@ public class CallableStatementCreatorFactory {
 		private Map<String, ?> inParameters;
 
 		/**
-		 * Create a new CallableStatementCreatorImpl.
+		 * 创建一个新的CallableStatementCreatorImpl.
 		 * @param inParamMapper the ParameterMapper implementation for mapping input parameters
 		 */
 		public CallableStatementCreatorImpl(ParameterMapper inParamMapper) {
@@ -145,7 +145,7 @@ public class CallableStatementCreatorFactory {
 		}
 
 		/**
-		 * Create a new CallableStatementCreatorImpl.
+		 * 创建一个新的CallableStatementCreatorImpl.
 		 * @param inParams list of SqlParameter objects
 		 */
 		public CallableStatementCreatorImpl(Map<String, ?> inParams) {

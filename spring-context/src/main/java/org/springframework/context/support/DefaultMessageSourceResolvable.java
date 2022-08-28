@@ -46,7 +46,7 @@ public class DefaultMessageSourceResolvable implements MessageSourceResolvable, 
 
 
 	/**
-	 * Create a new DefaultMessageSourceResolvable.
+	 * 创建一个新的DefaultMessageSourceResolvable.
 	 * @param code the code to be used to resolve this message
 	 */
 	public DefaultMessageSourceResolvable(String code) {
@@ -54,7 +54,7 @@ public class DefaultMessageSourceResolvable implements MessageSourceResolvable, 
 	}
 
 	/**
-	 * Create a new DefaultMessageSourceResolvable.
+	 * 创建一个新的DefaultMessageSourceResolvable.
 	 * @param codes the codes to be used to resolve this message
 	 */
 	public DefaultMessageSourceResolvable(String[] codes) {
@@ -62,7 +62,7 @@ public class DefaultMessageSourceResolvable implements MessageSourceResolvable, 
 	}
 
 	/**
-	 * Create a new DefaultMessageSourceResolvable.
+	 * 创建一个新的DefaultMessageSourceResolvable.
 	 * @param codes the codes to be used to resolve this message
 	 * @param defaultMessage the default message to be used to resolve this message
 	 */
@@ -71,7 +71,7 @@ public class DefaultMessageSourceResolvable implements MessageSourceResolvable, 
 	}
 
 	/**
-	 * Create a new DefaultMessageSourceResolvable.
+	 * 创建一个新的DefaultMessageSourceResolvable.
 	 * @param codes the codes to be used to resolve this message
 	 * @param arguments the array of arguments to be used to resolve this message
 	 */
@@ -80,7 +80,7 @@ public class DefaultMessageSourceResolvable implements MessageSourceResolvable, 
 	}
 
 	/**
-	 * Create a new DefaultMessageSourceResolvable.
+	 * 创建一个新的DefaultMessageSourceResolvable.
 	 * @param codes the codes to be used to resolve this message
 	 * @param arguments the array of arguments to be used to resolve this message
 	 * @param defaultMessage the default message to be used to resolve this message

@@ -79,7 +79,7 @@ public class AsyncExecutionInterceptor extends AsyncExecutionAspectSupport imple
 	}
 
 	/**
-	 * Create a new {@code AsyncExecutionInterceptor}.
+	 * 创建一个新的{@code AsyncExecutionInterceptor}.
 	 * @param defaultExecutor the {@link Executor} (typically a Spring {@link AsyncTaskExecutor}
 	 * or {@link java.util.concurrent.ExecutorService}) to delegate to;
 	 * as of 4.2.6, a local executor for this interceptor will be built otherwise

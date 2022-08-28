@@ -36,7 +36,7 @@ public final class MillisecondInstantPrinter implements Printer<Long> {
 
 
 	/**
-	 * Create a new ReadableInstantPrinter.
+	 * 创建一个新的ReadableInstantPrinter.
 	 * @param formatter the Joda DateTimeFormatter instance
 	 */
 	public MillisecondInstantPrinter(DateTimeFormatter formatter) {

@@ -35,7 +35,7 @@ package org.springframework.r2dbc.core.binding;
 public interface BindMarkers {
 
 	/**
-	 * Create a new {@link BindMarker}.
+	 * 创建一个新的{@link BindMarker}.
 	 */
 	BindMarker next();
 

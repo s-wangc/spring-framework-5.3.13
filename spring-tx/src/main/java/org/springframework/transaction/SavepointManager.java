@@ -37,7 +37,7 @@ package org.springframework.transaction;
 public interface SavepointManager {
 
 	/**
-	 * Create a new savepoint. You can roll back to a specific savepoint
+	 * 创建一个新的savepoint. You can roll back to a specific savepoint
 	 * via {@code rollbackToSavepoint}, and explicitly release a savepoint
 	 * that you don't need anymore via {@code releaseSavepoint}.
 	 * <p>Note that most transaction managers will automatically release

@@ -47,7 +47,7 @@ public class PersistenceExceptionTranslationAdvisor extends AbstractPointcutAdvi
 
 
 	/**
-	 * Create a new PersistenceExceptionTranslationAdvisor.
+	 * 创建一个新的PersistenceExceptionTranslationAdvisor.
 	 * @param persistenceExceptionTranslator the PersistenceExceptionTranslator to use
 	 * @param repositoryAnnotationType the annotation type to check for
 	 */
@@ -60,7 +60,7 @@ public class PersistenceExceptionTranslationAdvisor extends AbstractPointcutAdvi
 	}
 
 	/**
-	 * Create a new PersistenceExceptionTranslationAdvisor.
+	 * 创建一个新的PersistenceExceptionTranslationAdvisor.
 	 * @param beanFactory the ListableBeanFactory to obtaining all
 	 * PersistenceExceptionTranslators from
 	 * @param repositoryAnnotationType the annotation type to check for

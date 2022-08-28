@@ -38,7 +38,7 @@ public class BeanDefinitionStoreException extends FatalBeanException {
 
 
 	/**
-	 * Create a new BeanDefinitionStoreException.
+	 * 创建一个新的BeanDefinitionStoreException.
 	 * @param msg the detail message (used as exception message as-is)
 	 */
 	public BeanDefinitionStoreException(String msg) {
@@ -48,7 +48,7 @@ public class BeanDefinitionStoreException extends FatalBeanException {
 	}
 
 	/**
-	 * Create a new BeanDefinitionStoreException.
+	 * 创建一个新的BeanDefinitionStoreException.
 	 * @param msg the detail message (used as exception message as-is)
 	 * @param cause the root cause (may be {@code null})
 	 */
@@ -59,7 +59,7 @@ public class BeanDefinitionStoreException extends FatalBeanException {
 	}
 
 	/**
-	 * Create a new BeanDefinitionStoreException.
+	 * 创建一个新的BeanDefinitionStoreException.
 	 * @param resourceDescription description of the resource that the bean definition came from
 	 * @param msg the detail message (used as exception message as-is)
 	 */
@@ -70,7 +70,7 @@ public class BeanDefinitionStoreException extends FatalBeanException {
 	}
 
 	/**
-	 * Create a new BeanDefinitionStoreException.
+	 * 创建一个新的BeanDefinitionStoreException.
 	 * @param resourceDescription description of the resource that the bean definition came from
 	 * @param msg the detail message (used as exception message as-is)
 	 * @param cause the root cause (may be {@code null})
@@ -82,7 +82,7 @@ public class BeanDefinitionStoreException extends FatalBeanException {
 	}
 
 	/**
-	 * Create a new BeanDefinitionStoreException.
+	 * 创建一个新的BeanDefinitionStoreException.
 	 * @param resourceDescription description of the resource that the bean definition came from
 	 * @param beanName the name of the bean
 	 * @param msg the detail message (appended to an introductory message that indicates
@@ -93,7 +93,7 @@ public class BeanDefinitionStoreException extends FatalBeanException {
 	}
 
 	/**
-	 * Create a new BeanDefinitionStoreException.
+	 * 创建一个新的BeanDefinitionStoreException.
 	 * @param resourceDescription description of the resource that the bean definition came from
 	 * @param beanName the name of the bean
 	 * @param msg the detail message (appended to an introductory message that indicates

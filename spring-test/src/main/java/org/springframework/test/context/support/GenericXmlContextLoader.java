@@ -38,7 +38,7 @@ import org.springframework.util.ObjectUtils;
 public class GenericXmlContextLoader extends AbstractGenericContextLoader {
 
 	/**
-	 * Create a new {@link XmlBeanDefinitionReader}.
+	 * 创建一个新的{@link XmlBeanDefinitionReader}.
 	 * @return a new {@code XmlBeanDefinitionReader}
 	 */
 	@Override

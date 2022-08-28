@@ -75,7 +75,7 @@ public class InjectionMetadata {
 
 
 	/**
-	 * Create a new {@code InjectionMetadata instance}.
+	 * 创建一个新的{@code InjectionMetadata instance}.
 	 * <p>Preferably use {@link #forElements} for reusing the {@link #EMPTY}
 	 * instance in case of no elements.
 	 * @param targetClass the target class

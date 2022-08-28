@@ -32,7 +32,7 @@ import org.springframework.lang.Nullable;
 public class EncodingException extends CodecException {
 
 	/**
-	 * Create a new EncodingException.
+	 * 创建一个新的EncodingException.
 	 * @param msg the detail message
 	 */
 	public EncodingException(String msg) {
@@ -40,7 +40,7 @@ public class EncodingException extends CodecException {
 	}
 
 	/**
-	 * Create a new EncodingException.
+	 * 创建一个新的EncodingException.
 	 * @param msg the detail message
 	 * @param cause root cause for the exception, if any
 	 */

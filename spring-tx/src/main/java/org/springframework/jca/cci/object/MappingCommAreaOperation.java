@@ -39,7 +39,7 @@ import org.springframework.dao.DataRetrievalFailureException;
 public abstract class MappingCommAreaOperation extends MappingRecordOperation {
 
 	/**
-	 * Create a new MappingCommAreaQuery.
+	 * 创建一个新的MappingCommAreaQuery.
 	 * @see #setConnectionFactory
 	 * @see #setInteractionSpec
 	 */
@@ -47,7 +47,7 @@ public abstract class MappingCommAreaOperation extends MappingRecordOperation {
 	}
 
 	/**
-	 * Create a new MappingCommAreaQuery.
+	 * 创建一个新的MappingCommAreaQuery.
 	 * @param connectionFactory the ConnectionFactory to use to obtain connections
 	 * @param interactionSpec specification to configure the interaction
 	 */

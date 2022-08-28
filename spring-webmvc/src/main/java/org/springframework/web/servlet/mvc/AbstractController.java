@@ -107,7 +107,7 @@ public abstract class AbstractController extends WebContentGenerator implements 
 	}
 
 	/**
-	 * Create a new AbstractController.
+	 * 创建一个新的AbstractController.
 	 * @param restrictDefaultSupportedMethods {@code true} if this
 	 * controller should support HTTP methods GET, HEAD and POST by default,
 	 * or {@code false} if it should be unrestricted

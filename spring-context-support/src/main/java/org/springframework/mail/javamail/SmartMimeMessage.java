@@ -47,7 +47,7 @@ class SmartMimeMessage extends MimeMessage {
 
 
 	/**
-	 * Create a new SmartMimeMessage.
+	 * 创建一个新的SmartMimeMessage.
 	 * @param session the JavaMail Session to create the message for
 	 * @param defaultEncoding the default encoding, or {@code null} if none
 	 * @param defaultFileTypeMap the default FileTypeMap, or {@code null} if none

@@ -29,7 +29,7 @@ import org.springframework.lang.Nullable;
 public class HttpMessageNotWritableException extends HttpMessageConversionException {
 
 	/**
-	 * Create a new HttpMessageNotWritableException.
+	 * 创建一个新的HttpMessageNotWritableException.
 	 * @param msg the detail message
 	 */
 	public HttpMessageNotWritableException(String msg) {
@@ -37,7 +37,7 @@ public class HttpMessageNotWritableException extends HttpMessageConversionExcept
 	}
 
 	/**
-	 * Create a new HttpMessageNotWritableException.
+	 * 创建一个新的HttpMessageNotWritableException.
 	 * @param msg the detail message
 	 * @param cause the root cause (if any)
 	 */

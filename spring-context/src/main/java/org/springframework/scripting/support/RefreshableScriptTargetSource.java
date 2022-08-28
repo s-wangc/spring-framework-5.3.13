@@ -41,7 +41,7 @@ public class RefreshableScriptTargetSource extends BeanFactoryRefreshableTargetS
 
 
 	/**
-	 * Create a new RefreshableScriptTargetSource.
+	 * 创建一个新的RefreshableScriptTargetSource.
 	 * @param beanFactory the BeanFactory to fetch the scripted bean from
 	 * @param beanName the name of the target bean
 	 * @param scriptFactory the ScriptFactory to delegate to for determining

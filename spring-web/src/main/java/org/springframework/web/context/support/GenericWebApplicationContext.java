@@ -72,7 +72,7 @@ public class GenericWebApplicationContext extends GenericApplicationContext
 
 
 	/**
-	 * Create a new GenericWebApplicationContext.
+	 * 创建一个新的GenericWebApplicationContext.
 	 * @see #setServletContext
 	 * @see #registerBeanDefinition
 	 * @see #refresh

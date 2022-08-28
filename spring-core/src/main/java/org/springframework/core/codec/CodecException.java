@@ -31,7 +31,7 @@ import org.springframework.lang.Nullable;
 public class CodecException extends NestedRuntimeException {
 
 	/**
-	 * Create a new CodecException.
+	 * 创建一个新的CodecException.
 	 * @param msg the detail message
 	 */
 	public CodecException(String msg) {
@@ -39,7 +39,7 @@ public class CodecException extends NestedRuntimeException {
 	}
 
 	/**
-	 * Create a new CodecException.
+	 * 创建一个新的CodecException.
 	 * @param msg the detail message
 	 * @param cause root cause for the exception, if any
 	 */

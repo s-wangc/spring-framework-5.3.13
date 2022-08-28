@@ -37,7 +37,7 @@ public class DelegatingErrorHandlingRunnable implements Runnable {
 
 
 	/**
-	 * Create a new DelegatingErrorHandlingRunnable.
+	 * 创建一个新的DelegatingErrorHandlingRunnable.
 	 * @param delegate the Runnable implementation to delegate to
 	 * @param errorHandler the ErrorHandler for handling any exceptions
 	 */

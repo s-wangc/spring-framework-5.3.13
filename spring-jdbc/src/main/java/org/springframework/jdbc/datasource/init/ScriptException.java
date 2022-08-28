@@ -30,7 +30,7 @@ import org.springframework.lang.Nullable;
 public abstract class ScriptException extends DataAccessException {
 
 	/**
-	 * Create a new {@code ScriptException}.
+	 * 创建一个新的{@code ScriptException}.
 	 * @param message the detail message
 	 */
 	public ScriptException(String message) {
@@ -38,7 +38,7 @@ public abstract class ScriptException extends DataAccessException {
 	}
 
 	/**
-	 * Create a new {@code ScriptException}.
+	 * 创建一个新的{@code ScriptException}.
 	 * @param message the detail message
 	 * @param cause the root cause
 	 */

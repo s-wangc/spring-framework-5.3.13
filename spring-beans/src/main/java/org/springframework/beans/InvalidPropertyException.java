@@ -34,7 +34,7 @@ public class InvalidPropertyException extends FatalBeanException {
 
 
 	/**
-	 * Create a new InvalidPropertyException.
+	 * 创建一个新的InvalidPropertyException.
 	 * @param beanClass the offending bean class
 	 * @param propertyName the offending property
 	 * @param msg the detail message
@@ -44,7 +44,7 @@ public class InvalidPropertyException extends FatalBeanException {
 	}
 
 	/**
-	 * Create a new InvalidPropertyException.
+	 * 创建一个新的InvalidPropertyException.
 	 * @param beanClass the offending bean class
 	 * @param propertyName the offending property
 	 * @param msg the detail message

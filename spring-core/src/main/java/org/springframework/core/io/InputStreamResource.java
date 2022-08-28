@@ -52,7 +52,7 @@ public class InputStreamResource extends AbstractResource {
 
 
 	/**
-	 * Create a new InputStreamResource.
+	 * 创建一个新的InputStreamResource.
 	 * @param inputStream the InputStream to use
 	 */
 	public InputStreamResource(InputStream inputStream) {
@@ -60,7 +60,7 @@ public class InputStreamResource extends AbstractResource {
 	}
 
 	/**
-	 * Create a new InputStreamResource.
+	 * 创建一个新的InputStreamResource.
 	 * @param inputStream the InputStream to use
 	 * @param description where the InputStream comes from
 	 */

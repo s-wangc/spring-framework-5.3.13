@@ -41,7 +41,7 @@ public class SimpleBrokerRegistration extends AbstractBrokerRegistration {
 
 
 	/**
-	 * Create a new {@code SimpleBrokerRegistration}.
+	 * 创建一个新的{@code SimpleBrokerRegistration}.
 	 * @param clientInboundChannel the inbound channel
 	 * @param clientOutboundChannel the outbound channel
 	 * @param destinationPrefixes the destination prefixes

@@ -39,7 +39,7 @@ public class CannotLoadBeanClassException extends FatalBeanException {
 
 
 	/**
-	 * Create a new CannotLoadBeanClassException.
+	 * 创建一个新的CannotLoadBeanClassException.
 	 * @param resourceDescription description of the resource
 	 * that the bean definition came from
 	 * @param beanName the name of the bean requested
@@ -57,7 +57,7 @@ public class CannotLoadBeanClassException extends FatalBeanException {
 	}
 
 	/**
-	 * Create a new CannotLoadBeanClassException.
+	 * 创建一个新的CannotLoadBeanClassException.
 	 * @param resourceDescription description of the resource
 	 * that the bean definition came from
 	 * @param beanName the name of the bean requested

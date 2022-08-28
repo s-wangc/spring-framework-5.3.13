@@ -30,7 +30,7 @@ import org.springframework.lang.Nullable;
 public class HttpMessageConversionException extends NestedRuntimeException {
 
 	/**
-	 * Create a new HttpMessageConversionException.
+	 * 创建一个新的HttpMessageConversionException.
 	 * @param msg the detail message
 	 */
 	public HttpMessageConversionException(String msg) {
@@ -38,7 +38,7 @@ public class HttpMessageConversionException extends NestedRuntimeException {
 	}
 
 	/**
-	 * Create a new HttpMessageConversionException.
+	 * 创建一个新的HttpMessageConversionException.
 	 * @param msg the detail message
 	 * @param cause the root cause (if any)
 	 */

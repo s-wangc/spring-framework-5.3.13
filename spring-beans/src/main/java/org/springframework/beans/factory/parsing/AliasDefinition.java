@@ -38,7 +38,7 @@ public class AliasDefinition implements BeanMetadataElement {
 
 
 	/**
-	 * Create a new AliasDefinition.
+	 * 创建一个新的AliasDefinition.
 	 * @param beanName the canonical name of the bean
 	 * @param alias the alias registered for the bean
 	 */
@@ -47,7 +47,7 @@ public class AliasDefinition implements BeanMetadataElement {
 	}
 
 	/**
-	 * Create a new AliasDefinition.
+	 * 创建一个新的AliasDefinition.
 	 * @param beanName the canonical name of the bean
 	 * @param alias the alias registered for the bean
 	 * @param source the source object (may be {@code null})

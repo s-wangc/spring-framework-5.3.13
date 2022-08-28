@@ -28,7 +28,7 @@ package org.springframework.beans.factory;
 public class BeanIsAbstractException extends BeanCreationException {
 
 	/**
-	 * Create a new BeanIsAbstractException.
+	 * 创建一个新的BeanIsAbstractException.
 	 * @param beanName the name of the bean requested
 	 */
 	public BeanIsAbstractException(String beanName) {

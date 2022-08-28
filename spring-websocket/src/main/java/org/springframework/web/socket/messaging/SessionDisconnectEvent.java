@@ -42,7 +42,7 @@ public class SessionDisconnectEvent extends AbstractSubProtocolEvent {
 
 
 	/**
-	 * Create a new SessionDisconnectEvent.
+	 * 创建一个新的SessionDisconnectEvent.
 	 * @param source the component that published the event (never {@code null})
 	 * @param message the message (never {@code null})
 	 * @param sessionId the disconnect message
@@ -55,7 +55,7 @@ public class SessionDisconnectEvent extends AbstractSubProtocolEvent {
 	}
 
 	/**
-	 * Create a new SessionDisconnectEvent.
+	 * 创建一个新的SessionDisconnectEvent.
 	 * @param source the component that published the event (never {@code null})
 	 * @param message the message (never {@code null})
 	 * @param sessionId the disconnect message

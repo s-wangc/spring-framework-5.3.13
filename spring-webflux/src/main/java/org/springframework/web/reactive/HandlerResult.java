@@ -48,7 +48,7 @@ public class HandlerResult {
 
 
 	/**
-	 * Create a new {@code HandlerResult}.
+	 * 创建一个新的{@code HandlerResult}.
 	 * @param handler the handler that handled the request
 	 * @param returnValue the return value from the handler possibly {@code null}
 	 * @param returnType the return value type
@@ -58,7 +58,7 @@ public class HandlerResult {
 	}
 
 	/**
-	 * Create a new {@code HandlerResult}.
+	 * 创建一个新的{@code HandlerResult}.
 	 * @param handler the handler that handled the request
 	 * @param returnValue the return value from the handler possibly {@code null}
 	 * @param returnType the return value type

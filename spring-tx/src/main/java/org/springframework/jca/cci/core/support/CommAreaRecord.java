@@ -47,14 +47,14 @@ public class CommAreaRecord implements Record, Streamable {
 
 
 	/**
-	 * Create a new CommAreaRecord.
+	 * 创建一个新的CommAreaRecord.
 	 * @see #read(java.io.InputStream)
 	 */
 	public CommAreaRecord() {
 	}
 
 	/**
-	 * Create a new CommAreaRecord.
+	 * 创建一个新的CommAreaRecord.
 	 * @param bytes the bytes to fill the record with
 	 */
 	public CommAreaRecord(byte[] bytes) {

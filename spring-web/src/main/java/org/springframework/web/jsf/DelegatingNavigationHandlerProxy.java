@@ -84,13 +84,13 @@ public class DelegatingNavigationHandlerProxy extends NavigationHandler {
 
 
 	/**
-	 * Create a new DelegatingNavigationHandlerProxy.
+	 * 创建一个新的DelegatingNavigationHandlerProxy.
 	 */
 	public DelegatingNavigationHandlerProxy() {
 	}
 
 	/**
-	 * Create a new DelegatingNavigationHandlerProxy.
+	 * 创建一个新的DelegatingNavigationHandlerProxy.
 	 * @param originalNavigationHandler the original NavigationHandler
 	 */
 	public DelegatingNavigationHandlerProxy(NavigationHandler originalNavigationHandler) {

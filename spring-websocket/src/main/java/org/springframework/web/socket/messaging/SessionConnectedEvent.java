@@ -32,7 +32,7 @@ import org.springframework.messaging.Message;
 public class SessionConnectedEvent extends AbstractSubProtocolEvent {
 
 	/**
-	 * Create a new SessionConnectedEvent.
+	 * 创建一个新的SessionConnectedEvent.
 	 * @param source the component that published the event (never {@code null})
 	 * @param message the connected message (never {@code null})
 	 */

@@ -45,7 +45,7 @@ public class PropertyBatchUpdateException extends BeansException {
 
 
 	/**
-	 * Create a new PropertyBatchUpdateException.
+	 * 创建一个新的PropertyBatchUpdateException.
 	 * @param propertyAccessExceptions the List of PropertyAccessExceptions
 	 */
 	public PropertyBatchUpdateException(PropertyAccessException[] propertyAccessExceptions) {

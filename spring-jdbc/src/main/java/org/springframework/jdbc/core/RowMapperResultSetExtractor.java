@@ -66,7 +66,7 @@ public class RowMapperResultSetExtractor<T> implements ResultSetExtractor<List<T
 
 
 	/**
-	 * Create a new RowMapperResultSetExtractor.
+	 * 创建一个新的RowMapperResultSetExtractor.
 	 * @param rowMapper the RowMapper which creates an object for each row
 	 */
 	public RowMapperResultSetExtractor(RowMapper<T> rowMapper) {
@@ -74,7 +74,7 @@ public class RowMapperResultSetExtractor<T> implements ResultSetExtractor<List<T
 	}
 
 	/**
-	 * Create a new RowMapperResultSetExtractor.
+	 * 创建一个新的RowMapperResultSetExtractor.
 	 * @param rowMapper the RowMapper which creates an object for each row
 	 * @param rowsExpected the number of expected rows
 	 * (just used for optimized collection handling)

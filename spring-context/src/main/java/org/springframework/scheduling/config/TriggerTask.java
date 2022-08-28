@@ -34,7 +34,7 @@ public class TriggerTask extends Task {
 
 
 	/**
-	 * Create a new {@link TriggerTask}.
+	 * 创建一个新的{@link TriggerTask}.
 	 * @param runnable the underlying task to execute
 	 * @param trigger specifies when the task should be executed
 	 */

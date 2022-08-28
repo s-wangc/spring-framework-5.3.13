@@ -35,7 +35,7 @@ public class DelegatingServerHttpResponse implements ServerHttpResponse {
 	private final ServerHttpResponse delegate;
 
 	/**
-	 * Create a new {@code DelegatingServerHttpResponse}.
+	 * 创建一个新的{@code DelegatingServerHttpResponse}.
 	 * @param delegate the response to delegate to
 	 */
 	public DelegatingServerHttpResponse(ServerHttpResponse delegate) {

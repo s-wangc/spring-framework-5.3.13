@@ -36,7 +36,7 @@ public abstract class HttpMediaTypeException extends ServletException {
 
 
 	/**
-	 * Create a new HttpMediaTypeException.
+	 * 创建一个新的HttpMediaTypeException.
 	 * @param message the exception message
 	 */
 	protected HttpMediaTypeException(String message) {

@@ -55,7 +55,7 @@ public class BindingContext {
 
 
 	/**
-	 * Create a new {@code BindingContext}.
+	 * 创建一个新的{@code BindingContext}.
 	 */
 	public BindingContext() {
 		this(null);

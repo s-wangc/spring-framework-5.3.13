@@ -94,7 +94,7 @@ final class PersistenceUnitReader {
 
 
 	/**
-	 * Create a new PersistenceUnitReader.
+	 * 创建一个新的PersistenceUnitReader.
 	 * @param resourcePatternResolver the ResourcePatternResolver to use for loading resources
 	 * @param dataSourceLookup the DataSourceLookup to resolve DataSource names in
 	 * {@code persistence.xml} files against

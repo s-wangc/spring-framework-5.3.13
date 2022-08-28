@@ -29,7 +29,7 @@ package org.springframework.beans.factory;
 public class BeanIsNotAFactoryException extends BeanNotOfRequiredTypeException {
 
 	/**
-	 * Create a new BeanIsNotAFactoryException.
+	 * 创建一个新的BeanIsNotAFactoryException.
 	 * @param name the name of the bean requested
 	 * @param actualType the actual type returned, which did not match
 	 * the expected type

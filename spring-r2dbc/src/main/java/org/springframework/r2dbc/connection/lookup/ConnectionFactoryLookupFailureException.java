@@ -30,7 +30,7 @@ import org.springframework.dao.NonTransientDataAccessException;
 public class ConnectionFactoryLookupFailureException extends NonTransientDataAccessException {
 
 	/**
-	 * Create a new {@code ConnectionFactoryLookupFailureException}.
+	 * 创建一个新的{@code ConnectionFactoryLookupFailureException}.
 	 * @param msg the detail message
 	 */
 	public ConnectionFactoryLookupFailureException(String msg) {
@@ -38,7 +38,7 @@ public class ConnectionFactoryLookupFailureException extends NonTransientDataAcc
 	}
 
 	/**
-	 * Create a new {@code ConnectionFactoryLookupFailureException}.
+	 * 创建一个新的{@code ConnectionFactoryLookupFailureException}.
 	 * @param msg the detail message
 	 * @param cause the root cause
 	 */

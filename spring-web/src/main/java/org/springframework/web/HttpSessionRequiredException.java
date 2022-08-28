@@ -34,7 +34,7 @@ public class HttpSessionRequiredException extends ServletException {
 
 
 	/**
-	 * Create a new HttpSessionRequiredException.
+	 * 创建一个新的HttpSessionRequiredException.
 	 * @param msg the detail message
 	 */
 	public HttpSessionRequiredException(String msg) {
@@ -43,7 +43,7 @@ public class HttpSessionRequiredException extends ServletException {
 	}
 
 	/**
-	 * Create a new HttpSessionRequiredException.
+	 * 创建一个新的HttpSessionRequiredException.
 	 * @param msg the detail message
 	 * @param expectedAttribute the name of the expected session attribute
 	 * @since 4.3

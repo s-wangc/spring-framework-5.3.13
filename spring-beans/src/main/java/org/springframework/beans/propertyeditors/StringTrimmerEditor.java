@@ -39,7 +39,7 @@ public class StringTrimmerEditor extends PropertyEditorSupport {
 
 
 	/**
-	 * Create a new StringTrimmerEditor.
+	 * 创建一个新的StringTrimmerEditor.
 	 * @param emptyAsNull {@code true} if an empty String is to be
 	 * transformed into {@code null}
 	 */
@@ -49,7 +49,7 @@ public class StringTrimmerEditor extends PropertyEditorSupport {
 	}
 
 	/**
-	 * Create a new StringTrimmerEditor.
+	 * 创建一个新的StringTrimmerEditor.
 	 * @param charsToDelete a set of characters to delete, in addition to
 	 * trimming an input String. Useful for deleting unwanted line breaks:
 	 * e.g. "\r\n\f" will delete all new lines and line feeds in a String.

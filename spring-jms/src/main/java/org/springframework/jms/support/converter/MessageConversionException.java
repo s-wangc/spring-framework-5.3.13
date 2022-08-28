@@ -31,7 +31,7 @@ import org.springframework.lang.Nullable;
 public class MessageConversionException extends JmsException {
 
 	/**
-	 * Create a new MessageConversionException.
+	 * 创建一个新的MessageConversionException.
 	 * @param msg the detail message
 	 */
 	public MessageConversionException(String msg) {
@@ -39,7 +39,7 @@ public class MessageConversionException extends JmsException {
 	}
 
 	/**
-	 * Create a new MessageConversionException.
+	 * 创建一个新的MessageConversionException.
 	 * @param msg the detail message
 	 * @param cause the root cause (if any)
 	 */

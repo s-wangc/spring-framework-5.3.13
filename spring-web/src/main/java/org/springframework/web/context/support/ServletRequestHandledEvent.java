@@ -47,7 +47,7 @@ public class ServletRequestHandledEvent extends RequestHandledEvent {
 
 
 	/**
-	 * Create a new ServletRequestHandledEvent.
+	 * 创建一个新的ServletRequestHandledEvent.
 	 * @param source the component that published the event
 	 * @param requestUrl the URL of the request
 	 * @param clientAddress the IP address that the request came from
@@ -71,7 +71,7 @@ public class ServletRequestHandledEvent extends RequestHandledEvent {
 	}
 
 	/**
-	 * Create a new ServletRequestHandledEvent.
+	 * 创建一个新的ServletRequestHandledEvent.
 	 * @param source the component that published the event
 	 * @param requestUrl the URL of the request
 	 * @param clientAddress the IP address that the request came from
@@ -96,7 +96,7 @@ public class ServletRequestHandledEvent extends RequestHandledEvent {
 	}
 
 	/**
-	 * Create a new ServletRequestHandledEvent.
+	 * 创建一个新的ServletRequestHandledEvent.
 	 * @param source the component that published the event
 	 * @param requestUrl the URL of the request
 	 * @param clientAddress the IP address that the request came from

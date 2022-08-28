@@ -69,7 +69,7 @@ public class StompBrokerRelayRegistration extends AbstractBrokerRegistration {
 
 
 	/**
-	 * Create a new {@code StompBrokerRelayRegistration}.
+	 * 创建一个新的{@code StompBrokerRelayRegistration}.
 	 * @param clientInboundChannel the inbound channel
 	 * @param clientOutboundChannel the outbound channel
 	 * @param destinationPrefixes the destination prefixes

@@ -61,7 +61,7 @@ public class SingleColumnRowMapper<T> implements RowMapper<T> {
 	}
 
 	/**
-	 * Create a new {@code SingleColumnRowMapper}.
+	 * 创建一个新的{@code SingleColumnRowMapper}.
 	 * @param requiredType the type that each result object is expected to match
 	 */
 	public SingleColumnRowMapper(Class<T> requiredType) {

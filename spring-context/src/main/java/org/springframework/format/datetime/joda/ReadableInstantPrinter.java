@@ -37,7 +37,7 @@ public final class ReadableInstantPrinter implements Printer<ReadableInstant> {
 
 
 	/**
-	 * Create a new ReadableInstantPrinter.
+	 * 创建一个新的ReadableInstantPrinter.
 	 * @param formatter the Joda DateTimeFormatter instance
 	 */
 	public ReadableInstantPrinter(DateTimeFormatter formatter) {

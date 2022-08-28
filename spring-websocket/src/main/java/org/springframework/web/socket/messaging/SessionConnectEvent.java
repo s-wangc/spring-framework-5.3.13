@@ -36,7 +36,7 @@ import org.springframework.messaging.Message;
 public class SessionConnectEvent extends AbstractSubProtocolEvent {
 
 	/**
-	 * Create a new SessionConnectEvent.
+	 * 创建一个新的SessionConnectEvent.
 	 * @param source the component that published the event (never {@code null})
 	 * @param message the connect message
 	 */

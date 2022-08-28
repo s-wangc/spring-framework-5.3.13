@@ -34,7 +34,7 @@ public class NotWritablePropertyException extends InvalidPropertyException {
 
 
 	/**
-	 * Create a new NotWritablePropertyException.
+	 * 创建一个新的NotWritablePropertyException.
 	 * @param beanClass the offending bean class
 	 * @param propertyName the offending property name
 	 */
@@ -46,7 +46,7 @@ public class NotWritablePropertyException extends InvalidPropertyException {
 	}
 
 	/**
-	 * Create a new NotWritablePropertyException.
+	 * 创建一个新的NotWritablePropertyException.
 	 * @param beanClass the offending bean class
 	 * @param propertyName the offending property name
 	 * @param msg the detail message
@@ -57,7 +57,7 @@ public class NotWritablePropertyException extends InvalidPropertyException {
 	}
 
 	/**
-	 * Create a new NotWritablePropertyException.
+	 * 创建一个新的NotWritablePropertyException.
 	 * @param beanClass the offending bean class
 	 * @param propertyName the offending property name
 	 * @param msg the detail message
@@ -69,7 +69,7 @@ public class NotWritablePropertyException extends InvalidPropertyException {
 	}
 
 	/**
-	 * Create a new NotWritablePropertyException.
+	 * 创建一个新的NotWritablePropertyException.
 	 * @param beanClass the offending bean class
 	 * @param propertyName the offending property name
 	 * @param msg the detail message

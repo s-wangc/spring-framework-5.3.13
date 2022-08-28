@@ -52,7 +52,7 @@ final class TransactionContextHolder {
 	}
 
 	/**
-	 * Create a new {@link TransactionContext}.
+	 * 创建一个新的{@link TransactionContext}.
 	 */
 	TransactionContext createContext() {
 		TransactionContext context = this.transactionStack.peek();

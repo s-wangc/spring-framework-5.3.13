@@ -38,7 +38,7 @@ public class DelegatingTimerListener implements TimerListener {
 
 
 	/**
-	 * Create a new DelegatingTimerListener.
+	 * 创建一个新的DelegatingTimerListener.
 	 * @param runnable the Runnable implementation to delegate to
 	 */
 	public DelegatingTimerListener(Runnable runnable) {

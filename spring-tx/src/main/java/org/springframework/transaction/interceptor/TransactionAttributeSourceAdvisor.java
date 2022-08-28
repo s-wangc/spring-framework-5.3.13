@@ -53,13 +53,13 @@ public class TransactionAttributeSourceAdvisor extends AbstractPointcutAdvisor {
 
 
 	/**
-	 * Create a new TransactionAttributeSourceAdvisor.
+	 * 创建一个新的TransactionAttributeSourceAdvisor.
 	 */
 	public TransactionAttributeSourceAdvisor() {
 	}
 
 	/**
-	 * Create a new TransactionAttributeSourceAdvisor.
+	 * 创建一个新的TransactionAttributeSourceAdvisor.
 	 * @param interceptor the transaction interceptor to use for this advisor
 	 */
 	public TransactionAttributeSourceAdvisor(TransactionInterceptor interceptor) {

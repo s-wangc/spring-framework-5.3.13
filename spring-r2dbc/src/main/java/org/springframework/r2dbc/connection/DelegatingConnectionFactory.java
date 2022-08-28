@@ -42,7 +42,7 @@ public class DelegatingConnectionFactory implements ConnectionFactory, Wrapped<C
 
 
 	/**
-	 * Create a new DelegatingConnectionFactory.
+	 * 创建一个新的DelegatingConnectionFactory.
 	 * @param targetConnectionFactory the target ConnectionFactory
 	 */
 	public DelegatingConnectionFactory(ConnectionFactory targetConnectionFactory) {

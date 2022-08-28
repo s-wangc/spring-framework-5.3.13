@@ -28,7 +28,7 @@ package org.springframework.beans.factory;
 public class BeanCreationNotAllowedException extends BeanCreationException {
 
 	/**
-	 * Create a new BeanCreationNotAllowedException.
+	 * 创建一个新的BeanCreationNotAllowedException.
 	 * @param beanName the name of the bean requested
 	 * @param msg the detail message
 	 */

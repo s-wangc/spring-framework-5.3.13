@@ -73,7 +73,7 @@ public class LoadTimeWeaverAwareProcessor implements BeanPostProcessor, BeanFact
 	}
 
 	/**
-	 * Create a new {@code LoadTimeWeaverAwareProcessor}.
+	 * 创建一个新的{@code LoadTimeWeaverAwareProcessor}.
 	 * <p>The {@code LoadTimeWeaver} will be auto-retrieved from
 	 * the given {@link BeanFactory}, expecting a bean named
 	 * {@link ConfigurableApplicationContext#LOAD_TIME_WEAVER_BEAN_NAME "loadTimeWeaver"}.

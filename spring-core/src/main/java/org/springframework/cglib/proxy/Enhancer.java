@@ -237,7 +237,7 @@ public class Enhancer extends AbstractClassGenerator {
 	private boolean interceptDuringConstruction = true;
 
 	/**
-	 * Create a new <code>Enhancer</code>. A new <code>Enhancer</code>
+	 * 创建一个新的<code>Enhancer</code>. A new <code>Enhancer</code>
 	 * object should be used for each generated object, and should not
 	 * be shared across threads. To create additional instances of a
 	 * generated class, use the <code>Factory</code> interface.

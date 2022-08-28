@@ -27,7 +27,7 @@ package org.springframework.beans;
 public class NotReadablePropertyException extends InvalidPropertyException {
 
 	/**
-	 * Create a new NotReadablePropertyException.
+	 * 创建一个新的NotReadablePropertyException.
 	 * @param beanClass the offending bean class
 	 * @param propertyName the offending property
 	 */
@@ -38,7 +38,7 @@ public class NotReadablePropertyException extends InvalidPropertyException {
 	}
 
 	/**
-	 * Create a new NotReadablePropertyException.
+	 * 创建一个新的NotReadablePropertyException.
 	 * @param beanClass the offending bean class
 	 * @param propertyName the offending property
 	 * @param msg the detail message
@@ -48,7 +48,7 @@ public class NotReadablePropertyException extends InvalidPropertyException {
 	}
 
 	/**
-	 * Create a new NotReadablePropertyException.
+	 * 创建一个新的NotReadablePropertyException.
 	 * @param beanClass the offending bean class
 	 * @param propertyName the offending property
 	 * @param msg the detail message

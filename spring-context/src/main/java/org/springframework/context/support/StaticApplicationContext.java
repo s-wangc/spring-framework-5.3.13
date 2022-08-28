@@ -44,7 +44,7 @@ public class StaticApplicationContext extends GenericApplicationContext {
 
 
 	/**
-	 * Create a new StaticApplicationContext.
+	 * 创建一个新的StaticApplicationContext.
 	 * @see #registerSingleton
 	 * @see #registerPrototype
 	 * @see #registerBeanDefinition

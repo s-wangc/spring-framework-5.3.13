@@ -29,7 +29,7 @@ package org.springframework.r2dbc.connection.init;
 public class UncategorizedScriptException extends ScriptException {
 
 	/**
-	 * Create a new {@code UncategorizedScriptException}.
+	 * 创建一个新的{@code UncategorizedScriptException}.
 	 * @param message detailed message
 	 */
 	public UncategorizedScriptException(String message) {
@@ -37,7 +37,7 @@ public class UncategorizedScriptException extends ScriptException {
 	}
 
 	/**
-	 * Create a new {@code UncategorizedScriptException}.
+	 * 创建一个新的{@code UncategorizedScriptException}.
 	 * @param message detailed message
 	 * @param cause the root cause
 	 */

@@ -636,7 +636,7 @@ public abstract class AbstractJmsListeningContainer extends JmsDestinationAccess
 	public static class SharedConnectionNotInitializedException extends RuntimeException {
 
 		/**
-		 * Create a new SharedConnectionNotInitializedException.
+		 * 创建一个新的SharedConnectionNotInitializedException.
 		 * @param msg the detail message
 		 */
 		protected SharedConnectionNotInitializedException(String msg) {

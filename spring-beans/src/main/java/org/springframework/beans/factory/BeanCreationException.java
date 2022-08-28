@@ -45,7 +45,7 @@ public class BeanCreationException extends FatalBeanException {
 
 
 	/**
-	 * Create a new BeanCreationException.
+	 * 创建一个新的BeanCreationException.
 	 * @param msg the detail message
 	 */
 	public BeanCreationException(String msg) {
@@ -55,7 +55,7 @@ public class BeanCreationException extends FatalBeanException {
 	}
 
 	/**
-	 * Create a new BeanCreationException.
+	 * 创建一个新的BeanCreationException.
 	 * @param msg the detail message
 	 * @param cause the root cause
 	 */
@@ -66,7 +66,7 @@ public class BeanCreationException extends FatalBeanException {
 	}
 
 	/**
-	 * Create a new BeanCreationException.
+	 * 创建一个新的BeanCreationException.
 	 * @param beanName the name of the bean requested
 	 * @param msg the detail message
 	 */
@@ -77,7 +77,7 @@ public class BeanCreationException extends FatalBeanException {
 	}
 
 	/**
-	 * Create a new BeanCreationException.
+	 * 创建一个新的BeanCreationException.
 	 * @param beanName the name of the bean requested
 	 * @param msg the detail message
 	 * @param cause the root cause
@@ -88,7 +88,7 @@ public class BeanCreationException extends FatalBeanException {
 	}
 
 	/**
-	 * Create a new BeanCreationException.
+	 * 创建一个新的BeanCreationException.
 	 * @param resourceDescription description of the resource
 	 * that the bean definition came from
 	 * @param beanName the name of the bean requested
@@ -103,7 +103,7 @@ public class BeanCreationException extends FatalBeanException {
 	}
 
 	/**
-	 * Create a new BeanCreationException.
+	 * 创建一个新的BeanCreationException.
 	 * @param resourceDescription description of the resource
 	 * that the bean definition came from
 	 * @param beanName the name of the bean requested

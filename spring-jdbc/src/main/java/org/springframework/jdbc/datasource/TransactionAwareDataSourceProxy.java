@@ -80,14 +80,14 @@ public class TransactionAwareDataSourceProxy extends DelegatingDataSource {
 
 
 	/**
-	 * Create a new TransactionAwareDataSourceProxy.
+	 * 创建一个新的TransactionAwareDataSourceProxy.
 	 * @see #setTargetDataSource
 	 */
 	public TransactionAwareDataSourceProxy() {
 	}
 
 	/**
-	 * Create a new TransactionAwareDataSourceProxy.
+	 * 创建一个新的TransactionAwareDataSourceProxy.
 	 * @param targetDataSource the target DataSource
 	 */
 	public TransactionAwareDataSourceProxy(DataSource targetDataSource) {

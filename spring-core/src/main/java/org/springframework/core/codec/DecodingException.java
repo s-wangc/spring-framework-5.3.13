@@ -36,7 +36,7 @@ import org.springframework.lang.Nullable;
 public class DecodingException extends CodecException {
 
 	/**
-	 * Create a new DecodingException.
+	 * 创建一个新的DecodingException.
 	 * @param msg the detail message
 	 */
 	public DecodingException(String msg) {
@@ -44,7 +44,7 @@ public class DecodingException extends CodecException {
 	}
 
 	/**
-	 * Create a new DecodingException.
+	 * 创建一个新的DecodingException.
 	 * @param msg the detail message
 	 * @param cause root cause for the exception, if any
 	 */

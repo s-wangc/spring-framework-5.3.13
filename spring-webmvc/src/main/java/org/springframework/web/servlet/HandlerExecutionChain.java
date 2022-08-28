@@ -50,7 +50,7 @@ public class HandlerExecutionChain {
 
 
 	/**
-	 * Create a new HandlerExecutionChain.
+	 * 创建一个新的HandlerExecutionChain.
 	 * @param handler the handler object to execute
 	 */
 	public HandlerExecutionChain(Object handler) {
@@ -58,7 +58,7 @@ public class HandlerExecutionChain {
 	}
 
 	/**
-	 * Create a new HandlerExecutionChain.
+	 * 创建一个新的HandlerExecutionChain.
 	 * @param handler the handler object to execute
 	 * @param interceptors the array of interceptors to apply
 	 * (in the given order) before the handler itself executes
@@ -68,7 +68,7 @@ public class HandlerExecutionChain {
 	}
 
 	/**
-	 * Create a new HandlerExecutionChain.
+	 * 创建一个新的HandlerExecutionChain.
 	 * @param handler the handler object to execute
 	 * @param interceptorList the list of interceptors to apply
 	 * (in the given order) before the handler itself executes
