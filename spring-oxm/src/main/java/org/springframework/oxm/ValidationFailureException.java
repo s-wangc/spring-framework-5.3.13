@@ -37,7 +37,7 @@ public class ValidationFailureException extends XmlMappingException {
 	 * Construct a {@code ValidationFailureException} with the specified detail message
 	 * and nested exception.
 	 * @param msg 详细信息
-	 * @param cause the nested exception
+	 * @param cause 嵌套异常
 	 */
 	public ValidationFailureException(String msg, Throwable cause) {
 		super(msg, cause);

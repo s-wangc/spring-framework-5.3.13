@@ -60,7 +60,7 @@ public abstract class NestedCheckedException extends Exception {
 	 * Construct a {@code NestedCheckedException} with the specified detail message
 	 * and nested exception.
 	 * @param msg 详细信息
-	 * @param cause the nested exception
+	 * @param cause 嵌套异常
 	 */
 	public NestedCheckedException(@Nullable String msg, @Nullable Throwable cause) {
 		super(msg, cause);

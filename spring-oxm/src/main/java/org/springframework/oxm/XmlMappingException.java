@@ -39,7 +39,7 @@ public abstract class XmlMappingException extends NestedRuntimeException {
 	 * Construct an {@code XmlMappingException} with the specified detail message
 	 * and nested exception.
 	 * @param msg 详细信息
-	 * @param cause the nested exception
+	 * @param cause 嵌套异常
 	 */
 	public XmlMappingException(String msg, Throwable cause) {
 		super(msg, cause);

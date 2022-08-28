@@ -29,7 +29,7 @@ public class UncategorizedMappingException extends XmlMappingException {
 	 * Construct an {@code UncategorizedMappingException} with the specified detail message
 	 * and nested exception.
 	 * @param msg 详细信息
-	 * @param cause the nested exception
+	 * @param cause 嵌套异常
 	 */
 	public UncategorizedMappingException(String msg, Throwable cause) {
 		super(msg, cause);
