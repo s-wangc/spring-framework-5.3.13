@@ -189,8 +189,8 @@ public abstract class ExecutorConfigurationSupport extends CustomizableThreadFac
 	/**
 	 * Create the target {@link java.util.concurrent.ExecutorService} instance.
 	 * Called by {@code afterPropertiesSet}.
-	 * @param threadFactory the ThreadFactory to use
-	 * @param rejectedExecutionHandler the RejectedExecutionHandler to use
+	 * @param threadFactory 要使用的ThreadFactory
+	 * @param rejectedExecutionHandler 要使用的RejectedExecutionHandler
 	 * @return a new ExecutorService instance
 	 * @see #afterPropertiesSet()
 	 */

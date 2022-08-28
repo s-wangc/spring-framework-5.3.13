@@ -98,7 +98,7 @@ public class DeferredResult<T> {
 	 * Create a DeferredResult with a timeout value and a default result to use
 	 * in case of timeout.
 	 * @param timeoutValue timeout value in milliseconds (ignored if {@code null})
-	 * @param timeoutResult the result to use
+	 * @param timeoutResult 要使用的result
 	 */
 	public DeferredResult(@Nullable Long timeoutValue, Object timeoutResult) {
 		this.timeoutValue = timeoutValue;

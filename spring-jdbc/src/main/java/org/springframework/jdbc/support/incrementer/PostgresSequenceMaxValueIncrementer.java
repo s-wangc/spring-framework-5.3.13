@@ -39,7 +39,7 @@ public class PostgresSequenceMaxValueIncrementer extends AbstractSequenceMaxValu
 
 	/**
 	 * Convenience constructor.
-	 * @param dataSource the DataSource to use
+	 * @param dataSource 要使用的DataSource
 	 * @param incrementerName the name of the sequence/table to use
 	 */
 	public PostgresSequenceMaxValueIncrementer(DataSource dataSource, String incrementerName) {

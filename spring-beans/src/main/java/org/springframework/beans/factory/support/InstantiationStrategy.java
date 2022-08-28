@@ -56,7 +56,7 @@ public interface InstantiationStrategy {
 	 * The name can be {@code null} if we are autowiring a bean which doesn't
 	 * belong to the factory.
 	 * @param owner the owning BeanFactory
-	 * @param ctor the constructor to use
+	 * @param ctor 要使用的constructor
 	 * @param args the constructor arguments to apply
 	 * @return a bean instance for this bean definition
 	 * @throws BeansException if the instantiation attempt failed

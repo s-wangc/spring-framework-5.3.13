@@ -398,7 +398,7 @@ public class DispatcherServlet extends FrameworkServlet {
 	 * assumption that the user has performed these actions (or not) per their specific
 	 * needs.
 	 * <p>See {@link org.springframework.web.WebApplicationInitializer} for usage examples.
-	 * @param webApplicationContext the context to use
+	 * @param webApplicationContext 要使用的context
 	 * @see #initWebApplicationContext
 	 * @see #configureAndRefreshWebApplicationContext
 	 * @see org.springframework.web.WebApplicationInitializer

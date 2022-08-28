@@ -61,7 +61,7 @@ public class OkHttp3ClientHttpRequestFactory
 
 	/**
 	 * Create a factory with the given {@link OkHttpClient} instance.
-	 * @param client the client to use
+	 * @param client 要使用的client
 	 */
 	public OkHttp3ClientHttpRequestFactory(OkHttpClient client) {
 		Assert.notNull(client, "OkHttpClient must not be null");

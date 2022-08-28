@@ -53,7 +53,7 @@ public class InputStreamResource extends AbstractResource {
 
 	/**
 	 * 创建一个新的InputStreamResource.
-	 * @param inputStream the InputStream to use
+	 * @param inputStream 要使用的InputStream
 	 */
 	public InputStreamResource(InputStream inputStream) {
 		this(inputStream, "resource loaded through InputStream");
@@ -61,7 +61,7 @@ public class InputStreamResource extends AbstractResource {
 
 	/**
 	 * 创建一个新的InputStreamResource.
-	 * @param inputStream the InputStream to use
+	 * @param inputStream 要使用的InputStream
 	 * @param description where the InputStream comes from
 	 */
 	public InputStreamResource(InputStream inputStream, @Nullable String description) {

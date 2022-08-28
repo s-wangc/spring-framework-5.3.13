@@ -76,7 +76,7 @@ public interface SimpleJdbcCallOperations {
 	 * will be used to provide input values. This is different from the {@code StoredProcedure}
 	 * class which - for backwards compatibility reasons - allows input values to be provided
 	 * for parameters declared as {@code SqlOutParameter}.
-	 * @param sqlParameters the parameters to use
+	 * @param sqlParameters 要使用的parameters
 	 * @return the instance of this SimpleJdbcCall
 	 */
 	SimpleJdbcCallOperations declareParameters(SqlParameter... sqlParameters);

@@ -94,7 +94,7 @@ public abstract class AbstractJdbcCall {
 
 	/**
 	 * Constructor to be used when initializing using a {@link JdbcTemplate}.
-	 * @param jdbcTemplate the JdbcTemplate to use
+	 * @param jdbcTemplate 要使用的JdbcTemplate
 	 */
 	protected AbstractJdbcCall(JdbcTemplate jdbcTemplate) {
 		Assert.notNull(jdbcTemplate, "JdbcTemplate must not be null");

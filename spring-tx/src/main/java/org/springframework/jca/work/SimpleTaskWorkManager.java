@@ -133,7 +133,7 @@ public class SimpleTaskWorkManager implements WorkManager {
 
 	/**
 	 * Execute the given Work on the specified TaskExecutor.
-	 * @param taskExecutor the TaskExecutor to use
+	 * @param taskExecutor 要使用的TaskExecutor
 	 * @param work the Work to execute
 	 * @param startTimeout the time duration within which the Work is supposed to start
 	 * @param blockUntilStarted whether to block until the Work has started

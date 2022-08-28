@@ -68,7 +68,7 @@ public class HttpComponentsClientHttpConnector implements ClientHttpConnector, C
 
 	/**
 	 * Constructor with a pre-configured {@link CloseableHttpAsyncClient} instance.
-	 * @param client the client to use
+	 * @param client 要使用的client
 	 */
 	public HttpComponentsClientHttpConnector(CloseableHttpAsyncClient client) {
 		this(client, (method, uri) -> HttpClientContext.create());
@@ -78,7 +78,7 @@ public class HttpComponentsClientHttpConnector implements ClientHttpConnector, C
 	 * Constructor with a pre-configured {@link CloseableHttpAsyncClient} instance
 	 * and a {@link HttpClientContext} supplier lambda which is called before each request
 	 * and passed to the client.
-	 * @param client the client to use
+	 * @param client 要使用的client
 	 * @param contextProvider a {@link HttpClientContext} supplier
 	 */
 	public HttpComponentsClientHttpConnector(CloseableHttpAsyncClient client,

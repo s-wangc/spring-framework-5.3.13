@@ -413,7 +413,7 @@ public final class RequestMappingInfo implements RequestCondition<RequestMapping
 
 	/**
 	 * Create a new {@code RequestMappingInfo.Builder} with the given paths.
-	 * @param paths the paths to use
+	 * @param paths 要使用的paths
 	 */
 	public static Builder paths(String... paths) {
 		return new DefaultBuilder(paths);

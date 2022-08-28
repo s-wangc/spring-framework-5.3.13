@@ -74,7 +74,7 @@ public class AnnotationCacheOperationSource extends AbstractFallbackCacheOperati
 
 	/**
 	 * Create a custom AnnotationCacheOperationSource.
-	 * @param annotationParser the CacheAnnotationParser to use
+	 * @param annotationParser 要使用的CacheAnnotationParser
 	 */
 	public AnnotationCacheOperationSource(CacheAnnotationParser annotationParser) {
 		this.publicMethodsOnly = true;
@@ -84,7 +84,7 @@ public class AnnotationCacheOperationSource extends AbstractFallbackCacheOperati
 
 	/**
 	 * Create a custom AnnotationCacheOperationSource.
-	 * @param annotationParsers the CacheAnnotationParser to use
+	 * @param annotationParsers 要使用的CacheAnnotationParser
 	 */
 	public AnnotationCacheOperationSource(CacheAnnotationParser... annotationParsers) {
 		this.publicMethodsOnly = true;
@@ -94,7 +94,7 @@ public class AnnotationCacheOperationSource extends AbstractFallbackCacheOperati
 
 	/**
 	 * Create a custom AnnotationCacheOperationSource.
-	 * @param annotationParsers the CacheAnnotationParser to use
+	 * @param annotationParsers 要使用的CacheAnnotationParser
 	 */
 	public AnnotationCacheOperationSource(Set<CacheAnnotationParser> annotationParsers) {
 		this.publicMethodsOnly = true;
@@ -191,7 +191,7 @@ public class AnnotationCacheOperationSource extends AbstractFallbackCacheOperati
 
 		/**
 		 * Return the {@link CacheOperation} instance(s) provided by the specified parser.
-		 * @param parser the parser to use
+		 * @param parser 要使用的parser
 		 * @return the cache operations, or {@code null} if none found
 		 */
 		@Nullable

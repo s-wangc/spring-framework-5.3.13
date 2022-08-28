@@ -108,7 +108,7 @@ public class AnnotationTransactionAttributeSource extends AbstractFallbackTransa
 
 	/**
 	 * Create a custom AnnotationTransactionAttributeSource.
-	 * @param annotationParser the TransactionAnnotationParser to use
+	 * @param annotationParser 要使用的TransactionAnnotationParser
 	 */
 	public AnnotationTransactionAttributeSource(TransactionAnnotationParser annotationParser) {
 		this.publicMethodsOnly = true;
@@ -118,7 +118,7 @@ public class AnnotationTransactionAttributeSource extends AbstractFallbackTransa
 
 	/**
 	 * Create a custom AnnotationTransactionAttributeSource.
-	 * @param annotationParsers the TransactionAnnotationParsers to use
+	 * @param annotationParsers 要使用的TransactionAnnotationParsers
 	 */
 	public AnnotationTransactionAttributeSource(TransactionAnnotationParser... annotationParsers) {
 		this.publicMethodsOnly = true;
@@ -128,7 +128,7 @@ public class AnnotationTransactionAttributeSource extends AbstractFallbackTransa
 
 	/**
 	 * Create a custom AnnotationTransactionAttributeSource.
-	 * @param annotationParsers the TransactionAnnotationParsers to use
+	 * @param annotationParsers 要使用的TransactionAnnotationParsers
 	 */
 	public AnnotationTransactionAttributeSource(Set<TransactionAnnotationParser> annotationParsers) {
 		this.publicMethodsOnly = true;

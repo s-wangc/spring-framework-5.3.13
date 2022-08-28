@@ -57,7 +57,7 @@ public class TaskExecutorRegistration {
 	/**
 	 * Create a new {@code TaskExecutorRegistration} for a given
 	 * {@link ThreadPoolTaskExecutor}.
-	 * @param taskExecutor the executor to use
+	 * @param taskExecutor 要使用的executor
 	 */
 	public TaskExecutorRegistration(ThreadPoolTaskExecutor taskExecutor) {
 		Assert.notNull(taskExecutor, "ThreadPoolTaskExecutor must not be null");

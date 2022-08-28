@@ -203,7 +203,7 @@ public class OpenEntityManagerInViewFilter extends OncePerRequestFilter {
 	 * taking the current HTTP request as argument.
 	 * <p>The default implementation delegates to the {@code lookupEntityManagerFactory}
 	 * without arguments, caching the EntityManagerFactory reference once obtained.
-	 * @return the EntityManagerFactory to use
+	 * @return 要使用的EntityManagerFactory
 	 * @see #lookupEntityManagerFactory()
 	 */
 	protected EntityManagerFactory lookupEntityManagerFactory(HttpServletRequest request) {
@@ -219,7 +219,7 @@ public class OpenEntityManagerInViewFilter extends OncePerRequestFilter {
 	 * Look up the EntityManagerFactory that this filter should use.
 	 * <p>The default implementation looks for a bean with the specified name
 	 * in Spring's root application context.
-	 * @return the EntityManagerFactory to use
+	 * @return 要使用的EntityManagerFactory
 	 * @see #getEntityManagerFactoryBeanName
 	 */
 	protected EntityManagerFactory lookupEntityManagerFactory() {
@@ -241,7 +241,7 @@ public class OpenEntityManagerInViewFilter extends OncePerRequestFilter {
 	/**
 	 * Create a JPA EntityManager to be bound to a request.
 	 * <p>Can be overridden in subclasses.
-	 * @param emf the EntityManagerFactory to use
+	 * @param emf 要使用的EntityManagerFactory
 	 * @see javax.persistence.EntityManagerFactory#createEntityManager()
 	 */
 	protected EntityManager createEntityManager(EntityManagerFactory emf) {

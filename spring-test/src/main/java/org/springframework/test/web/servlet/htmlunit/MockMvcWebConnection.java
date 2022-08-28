@@ -90,7 +90,7 @@ public final class MockMvcWebConnection implements WebConnection {
 	 * with a "/" character and not end with a "/" character.
 	 * @param mockMvc the {@code MockMvc} instance to use (never {@code null})
 	 * @param webClient the {@link WebClient} to use (never {@code null})
-	 * @param contextPath the contextPath to use
+	 * @param contextPath 要使用的contextPath
 	 */
 	public MockMvcWebConnection(MockMvc mockMvc, WebClient webClient, @Nullable String contextPath) {
 		Assert.notNull(mockMvc, "MockMvc must not be null");

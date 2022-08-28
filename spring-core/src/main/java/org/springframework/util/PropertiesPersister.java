@@ -106,7 +106,7 @@ public interface PropertiesPersister {
 	 * given XML OutputStream.
 	 * @param props the Properties object to store
 	 * @param os the OutputStream to write to
-	 * @param encoding the encoding to use
+	 * @param encoding 要使用的encoding
 	 * @param header the description of the property list
 	 * @throws IOException 在I/O错误的情况下
 	 * @see java.util.Properties#storeToXML(java.io.OutputStream, String, String)

@@ -1021,7 +1021,7 @@ public interface JdbcOperations {
 	 * @param sql the SQL statement to execute.
 	 * @param batchArgs the List of Object arrays containing the batch of arguments for the query
 	 * @param batchSize batch size
-	 * @param pss the ParameterizedPreparedStatementSetter to use
+	 * @param pss 要使用的ParameterizedPreparedStatementSetter
 	 * @return an array containing for each batch another array containing the numbers of
 	 * rows affected by each update in the batch
 	 * (may also contain special JDBC-defined negative values for affected rows such as

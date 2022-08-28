@@ -107,7 +107,7 @@ public abstract class ExchangeFilterFunctions {
 	 * Variant of {@link #basicAuthentication(String, String)} that looks up
 	 * the {@link Credentials Credentials} in a
 	 * {@link #BASIC_AUTHENTICATION_CREDENTIALS_ATTRIBUTE request attribute}.
-	 * @return the filter to use
+	 * @return 要使用的filter
 	 * @see Credentials
 	 * @deprecated as of Spring 5.1 in favor of using
 	 * {@link HttpHeaders#setBasicAuth(String, String)} while building the request.

@@ -483,7 +483,7 @@ public interface WebTestClient {
 		 * replace them. That ensures multiple parties can contribute to codecs
 		 * configuration.
 		 * <p>By default this is set to {@link ExchangeStrategies#withDefaults()}.
-		 * @param strategies the strategies to use
+		 * @param strategies 要使用的strategies
 		 */
 		Builder exchangeStrategies(ExchangeStrategies strategies);
 
@@ -1025,7 +1025,7 @@ public interface WebTestClient {
 		 * <p>The XPath expression can be a parameterized string using
 		 * formatting specifiers as defined in {@link String#format}.
 		 * @param expression the XPath expression
-		 * @param namespaces the namespaces to use
+		 * @param namespaces 要使用的namespaces
 		 * @param args arguments to parameterize the expression
 		 * @since 5.1
 		 */

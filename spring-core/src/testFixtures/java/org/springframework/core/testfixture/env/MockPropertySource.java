@@ -69,7 +69,7 @@ public class MockPropertySource extends PropertiesPropertySource {
 	/**
 	 * Create a new {@code MockPropertySource} named {@value #MOCK_PROPERTIES_PROPERTY_SOURCE_NAME}
 	 * and backed by the given {@link Properties} object.
-	 * @param properties the properties to use
+	 * @param properties 要使用的properties
 	 */
 	public MockPropertySource(Properties properties) {
 		this(MOCK_PROPERTIES_PROPERTY_SOURCE_NAME, properties);
@@ -79,7 +79,7 @@ public class MockPropertySource extends PropertiesPropertySource {
 	 * Create a new {@code MockPropertySource} with the given name and backed by the given
 	 * {@link Properties} object
 	 * @param name the {@linkplain #getName() name} of the property source
-	 * @param properties the properties to use
+	 * @param properties 要使用的properties
 	 */
 	public MockPropertySource(String name, Properties properties) {
 		super(name, properties);

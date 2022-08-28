@@ -40,7 +40,7 @@ public class Db2LuwMaxValueIncrementer extends AbstractSequenceMaxValueIncrement
 
 	/**
 	 * Convenience constructor.
-	 * @param dataSource the DataSource to use
+	 * @param dataSource 要使用的DataSource
 	 * @param incrementerName the name of the sequence/table to use
 	 */
 	public Db2LuwMaxValueIncrementer(DataSource dataSource, String incrementerName) {

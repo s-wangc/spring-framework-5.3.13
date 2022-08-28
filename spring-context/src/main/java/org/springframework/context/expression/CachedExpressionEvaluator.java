@@ -76,7 +76,7 @@ public abstract class CachedExpressionEvaluator {
 	/**
 	 * Return the {@link Expression} for the specified SpEL value
 	 * <p>{@link #parseExpression(String) Parse the expression} if it hasn't been already.
-	 * @param cache the cache to use
+	 * @param cache 要使用的cache
 	 * @param elementKey the element on which the expression is defined
 	 * @param expression the expression to parse
 	 */

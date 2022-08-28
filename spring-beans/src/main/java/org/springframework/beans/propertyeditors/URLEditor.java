@@ -58,7 +58,7 @@ public class URLEditor extends PropertyEditorSupport {
 
 	/**
 	 * Create a new URLEditor, using the given ResourceEditor underneath.
-	 * @param resourceEditor the ResourceEditor to use
+	 * @param resourceEditor 要使用的ResourceEditor
 	 */
 	public URLEditor(ResourceEditor resourceEditor) {
 		Assert.notNull(resourceEditor, "ResourceEditor must not be null");

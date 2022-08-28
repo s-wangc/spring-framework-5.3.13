@@ -542,7 +542,7 @@ public final class RequestMappingInfo implements RequestCondition<RequestMapping
 
 	/**
 	 * Create a new {@code RequestMappingInfo.Builder} with the given paths.
-	 * @param paths the paths to use
+	 * @param paths 要使用的paths
 	 * @since 4.2
 	 */
 	public static Builder paths(String... paths) {

@@ -112,7 +112,7 @@ public class MBeanRegistrationSupport {
 	/**
 	 * The policy to use when attempting to register an MBean
 	 * under an {@link javax.management.ObjectName} that already exists.
-	 * @param registrationPolicy the policy to use
+	 * @param registrationPolicy 要使用的policy
 	 * @since 3.2
 	 */
 	public void setRegistrationPolicy(RegistrationPolicy registrationPolicy) {

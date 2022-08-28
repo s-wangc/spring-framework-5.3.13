@@ -277,7 +277,7 @@ public interface WebClient {
 		 * <p>By default this is set to
 		 * {@link org.springframework.http.client.reactive.ReactorClientHttpConnector
 		 * ReactorClientHttpConnector}.
-		 * @param connector the connector to use
+		 * @param connector 要使用的connector
 		 */
 		Builder clientConnector(ClientHttpConnector connector);
 
@@ -297,7 +297,7 @@ public interface WebClient {
 		 * replace them. That ensures multiple parties can contribute to codecs
 		 * configuration.
 		 * <p>By default this is set to {@link ExchangeStrategies#withDefaults()}.
-		 * @param strategies the strategies to use
+		 * @param strategies 要使用的strategies
 		 */
 		Builder exchangeStrategies(ExchangeStrategies strategies);
 

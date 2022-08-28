@@ -229,7 +229,7 @@ public class ModelAttributeMethodProcessor implements HandlerMethodArgumentResol
 	 * <p>Called from
 	 * {@link #createAttribute(String, MethodParameter, WebDataBinderFactory, NativeWebRequest)}
 	 * after constructor resolution.
-	 * @param ctor the constructor to use
+	 * @param ctor 要使用的constructor
 	 * @param attributeName the name of the attribute (never {@code null})
 	 * @param binderFactory for creating WebDataBinder instance
 	 * @param webRequest the current request

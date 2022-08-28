@@ -43,7 +43,7 @@ public class NettyDataBufferFactory implements DataBufferFactory {
 
 	/**
 	 * Create a new {@code NettyDataBufferFactory} based on the given factory.
-	 * @param byteBufAllocator the factory to use
+	 * @param byteBufAllocator 要使用的factory
 	 * @see io.netty.buffer.PooledByteBufAllocator
 	 * @see io.netty.buffer.UnpooledByteBufAllocator
 	 */

@@ -107,7 +107,7 @@ public class HandshakeWebSocketService implements WebSocketService, Lifecycle {
 
 	/**
 	 * Alternative constructor with the {@link RequestUpgradeStrategy} to use.
-	 * @param upgradeStrategy the strategy to use
+	 * @param upgradeStrategy 要使用的strategy
 	 */
 	public HandshakeWebSocketService(RequestUpgradeStrategy upgradeStrategy) {
 		Assert.notNull(upgradeStrategy, "RequestUpgradeStrategy is required");

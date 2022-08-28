@@ -52,7 +52,7 @@ public class LocalizedResourceHelper {
 
 	/**
 	 * Create a new LocalizedResourceHelper with the given ResourceLoader.
-	 * @param resourceLoader the ResourceLoader to use
+	 * @param resourceLoader 要使用的ResourceLoader
 	 */
 	public LocalizedResourceHelper(ResourceLoader resourceLoader) {
 		Assert.notNull(resourceLoader, "ResourceLoader must not be null");

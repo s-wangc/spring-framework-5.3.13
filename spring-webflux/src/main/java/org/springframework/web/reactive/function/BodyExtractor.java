@@ -39,7 +39,7 @@ public interface BodyExtractor<T, M extends ReactiveHttpInputMessage> {
 	/**
 	 * Extract from the given input message.
 	 * @param inputMessage the request to extract from
-	 * @param context the configuration to use
+	 * @param context 要使用的configuration
 	 * @return the extracted data
 	 */
 	T extract(M inputMessage, Context context);

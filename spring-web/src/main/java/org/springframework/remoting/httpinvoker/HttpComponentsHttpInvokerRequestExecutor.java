@@ -243,7 +243,7 @@ public class HttpComponentsHttpInvokerRequestExecutor extends AbstractHttpInvoke
 	 * local customizations of the instance, if any.
 	 * @param config the HTTP invoker configuration that specifies the
 	 * target service
-	 * @return the RequestConfig to use
+	 * @return 要使用的RequestConfig
 	 */
 	@Nullable
 	protected RequestConfig createRequestConfig(HttpInvokerClientConfiguration config) {

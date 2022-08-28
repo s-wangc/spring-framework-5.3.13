@@ -80,8 +80,8 @@ public class ResourceArrayPropertyEditor extends PropertyEditorSupport {
 	/**
 	 * Create a new ResourceArrayPropertyEditor with the given {@link ResourcePatternResolver}
 	 * and {@link PropertyResolver} (typically an {@link Environment}).
-	 * @param resourcePatternResolver the ResourcePatternResolver to use
-	 * @param propertyResolver the PropertyResolver to use
+	 * @param resourcePatternResolver 要使用的ResourcePatternResolver
+	 * @param propertyResolver 要使用的PropertyResolver
 	 */
 	public ResourceArrayPropertyEditor(
 			ResourcePatternResolver resourcePatternResolver, @Nullable PropertyResolver propertyResolver) {
@@ -92,8 +92,8 @@ public class ResourceArrayPropertyEditor extends PropertyEditorSupport {
 	/**
 	 * Create a new ResourceArrayPropertyEditor with the given {@link ResourcePatternResolver}
 	 * and {@link PropertyResolver} (typically an {@link Environment}).
-	 * @param resourcePatternResolver the ResourcePatternResolver to use
-	 * @param propertyResolver the PropertyResolver to use
+	 * @param resourcePatternResolver 要使用的ResourcePatternResolver
+	 * @param propertyResolver 要使用的PropertyResolver
 	 * @param ignoreUnresolvablePlaceholders whether to ignore unresolvable placeholders
 	 * if no corresponding system property could be found
 	 */

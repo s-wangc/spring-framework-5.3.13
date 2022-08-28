@@ -56,7 +56,7 @@ public class InputStreamEditor extends PropertyEditorSupport {
 
 	/**
 	 * Create a new InputStreamEditor, using the given ResourceEditor underneath.
-	 * @param resourceEditor the ResourceEditor to use
+	 * @param resourceEditor 要使用的ResourceEditor
 	 */
 	public InputStreamEditor(ResourceEditor resourceEditor) {
 		Assert.notNull(resourceEditor, "ResourceEditor must not be null");

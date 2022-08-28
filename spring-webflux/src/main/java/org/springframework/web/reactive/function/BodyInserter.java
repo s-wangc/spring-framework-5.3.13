@@ -41,7 +41,7 @@ public interface BodyInserter<T, M extends ReactiveHttpOutputMessage> {
 	/**
 	 * Insert into the given output message.
 	 * @param outputMessage the response to insert into
-	 * @param context the context to use
+	 * @param context 要使用的context
 	 * @return a {@code Mono} that indicates completion or error
 	 */
 	Mono<Void> insert(M outputMessage, Context context);

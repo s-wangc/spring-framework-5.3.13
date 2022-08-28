@@ -136,7 +136,7 @@ public class MultipartFilter extends OncePerRequestFilter {
 	 * taking the current HTTP request as argument.
 	 * <p>The default implementation delegates to the {@code lookupMultipartResolver}
 	 * without arguments.
-	 * @return the MultipartResolver to use
+	 * @return 要使用的MultipartResolver
 	 * @see #lookupMultipartResolver()
 	 */
 	protected MultipartResolver lookupMultipartResolver(HttpServletRequest request) {

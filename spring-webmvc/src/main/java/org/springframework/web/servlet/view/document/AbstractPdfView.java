@@ -176,7 +176,7 @@ public abstract class AbstractPdfView extends AbstractView {
 	 * will automatically get written to the response after this method returns.
 	 * @param model the model Map
 	 * @param document the iText Document to add elements to
-	 * @param writer the PdfWriter to use
+	 * @param writer 要使用的PdfWriter
 	 * @param request in case we need locale etc. Shouldn't look at attributes.
 	 * @param response in case we need to set cookies. Shouldn't write to it.
 	 * @throws Exception any exception that occurred during document building

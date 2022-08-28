@@ -45,8 +45,8 @@ public class BasicAuthenticationInterceptor implements ClientHttpRequestIntercep
 	/**
 	 * Create a new interceptor which adds Basic Authentication for the
 	 * given username and password.
-	 * @param username the username to use
-	 * @param password the password to use
+	 * @param username 要使用的username
+	 * @param password 要使用的password
 	 * @see HttpHeaders#setBasicAuth(String, String)
 	 * @see HttpHeaders#encodeBasicAuth(String, String, Charset)
 	 */
@@ -57,9 +57,9 @@ public class BasicAuthenticationInterceptor implements ClientHttpRequestIntercep
 	/**
 	 * Create a new interceptor which adds Basic Authentication for the
 	 * given username and password, encoded using the specified charset.
-	 * @param username the username to use
-	 * @param password the password to use
-	 * @param charset the charset to use
+	 * @param username 要使用的username
+	 * @param password 要使用的password
+	 * @param charset 要使用的charset
 	 * @see HttpHeaders#setBasicAuth(String, String, Charset)
 	 * @see HttpHeaders#encodeBasicAuth(String, String, Charset)
 	 */

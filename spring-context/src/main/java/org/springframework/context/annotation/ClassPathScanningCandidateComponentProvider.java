@@ -139,7 +139,7 @@ public class ClassPathScanningCandidateComponentProvider implements EnvironmentC
 	 * {@link Component @Component}, {@link Repository @Repository},
 	 * {@link Service @Service}, and {@link Controller @Controller}
 	 * stereotype annotations
-	 * @param environment the Environment to use
+	 * @param environment 要使用的Environment
 	 * @see #registerDefaultFilters()
 	 */
 	public ClassPathScanningCandidateComponentProvider(boolean useDefaultFilters, Environment environment) {
@@ -228,7 +228,7 @@ public class ClassPathScanningCandidateComponentProvider implements EnvironmentC
 	 * Set the Environment to use when resolving placeholders and evaluating
 	 * {@link Conditional @Conditional}-annotated component classes.
 	 * <p>The default is a {@link StandardEnvironment}.
-	 * @param environment the Environment to use
+	 * @param environment 要使用的Environment
 	 */
 	public void setEnvironment(Environment environment) {
 		Assert.notNull(environment, "Environment must not be null");

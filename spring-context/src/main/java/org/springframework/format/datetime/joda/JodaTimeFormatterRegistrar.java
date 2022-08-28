@@ -124,7 +124,7 @@ public class JodaTimeFormatterRegistrar implements FormatterRegistrar {
 	 * <p>This formatter will be used for the {@link LocalDate} type. When specified
 	 * the {@link #setDateStyle(String) dateStyle} and
 	 * {@link #setUseIsoFormat(boolean) useIsoFormat} properties will be ignored.
-	 * @param formatter the formatter to use
+	 * @param formatter 要使用的formatter
 	 * @since 3.2
 	 * @see #setTimeFormatter
 	 * @see #setDateTimeFormatter
@@ -138,7 +138,7 @@ public class JodaTimeFormatterRegistrar implements FormatterRegistrar {
 	 * <p>This formatter will be used for the {@link LocalTime} type. When specified
 	 * the {@link #setTimeStyle(String) timeStyle} and
 	 * {@link #setUseIsoFormat(boolean) useIsoFormat} properties will be ignored.
-	 * @param formatter the formatter to use
+	 * @param formatter 要使用的formatter
 	 * @since 3.2
 	 * @see #setDateFormatter
 	 * @see #setDateTimeFormatter
@@ -153,7 +153,7 @@ public class JodaTimeFormatterRegistrar implements FormatterRegistrar {
 	 * {@link Date} and {@link Calendar} types. When specified
 	 * the {@link #setDateTimeStyle(String) dateTimeStyle} and
 	 * {@link #setUseIsoFormat(boolean) useIsoFormat} properties will be ignored.
-	 * @param formatter the formatter to use
+	 * @param formatter 要使用的formatter
 	 * @since 3.2
 	 * @see #setDateFormatter
 	 * @see #setTimeFormatter

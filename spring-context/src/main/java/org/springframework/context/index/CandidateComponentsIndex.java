@@ -74,7 +74,7 @@ public class CandidateComponentsIndex {
 	/**
 	 * Return the candidate types that are associated with the specified stereotype.
 	 * @param basePackage the package to check for candidates
-	 * @param stereotype the stereotype to use
+	 * @param stereotype 要使用的stereotype
 	 * @return the candidate types associated with the specified {@code stereotype}
 	 * or an empty set if none has been found for the specified {@code basePackage}
 	 */

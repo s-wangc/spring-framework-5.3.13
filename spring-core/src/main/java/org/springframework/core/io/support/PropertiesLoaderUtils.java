@@ -85,7 +85,7 @@ public abstract class PropertiesLoaderUtils {
 	 * Actually load properties from the given EncodedResource into the given Properties instance.
 	 * @param props the Properties instance to load into
 	 * @param resource the resource to load from
-	 * @param persister the PropertiesPersister to use
+	 * @param persister 要使用的PropertiesPersister
 	 * @throws IOException 在I/O错误的情况下
 	 */
 	static void fillProperties(Properties props, EncodedResource resource, PropertiesPersister persister)

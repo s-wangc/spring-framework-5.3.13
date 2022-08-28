@@ -60,7 +60,7 @@ public class MarshallingSource extends SAXSource {
 
 	/**
 	 * Create a new {@code MarshallingSource} with the given marshaller and content.
-	 * @param marshaller the marshaller to use
+	 * @param marshaller 要使用的marshaller
 	 * @param content the object to be marshalled
 	 */
 	public MarshallingSource(Marshaller marshaller, Object content) {

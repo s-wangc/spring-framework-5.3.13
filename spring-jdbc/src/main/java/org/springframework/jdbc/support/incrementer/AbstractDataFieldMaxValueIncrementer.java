@@ -53,7 +53,7 @@ public abstract class AbstractDataFieldMaxValueIncrementer implements DataFieldM
 
 	/**
 	 * Convenience constructor.
-	 * @param dataSource the DataSource to use
+	 * @param dataSource 要使用的DataSource
 	 * @param incrementerName the name of the sequence/table to use
 	 */
 	public AbstractDataFieldMaxValueIncrementer(DataSource dataSource, String incrementerName) {

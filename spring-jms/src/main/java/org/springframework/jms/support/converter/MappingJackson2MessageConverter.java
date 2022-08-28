@@ -266,7 +266,7 @@ public class MappingJackson2MessageConverter implements SmartMessageConverter, B
 	 * Map the given object to a {@link TextMessage}.
 	 * @param object the object to be mapped
 	 * @param session current JMS session
-	 * @param objectWriter the writer to use
+	 * @param objectWriter 要使用的writer
 	 * @return the resulting message
 	 * @throws JMSException if thrown by JMS methods
 	 * @throws IOException 在I/O错误的情况下
@@ -285,7 +285,7 @@ public class MappingJackson2MessageConverter implements SmartMessageConverter, B
 	 * Map the given object to a {@link BytesMessage}.
 	 * @param object the object to be mapped
 	 * @param session current JMS session
-	 * @param objectWriter the writer to use
+	 * @param objectWriter 要使用的writer
 	 * @return the resulting message
 	 * @throws JMSException if thrown by JMS methods
 	 * @throws IOException 在I/O错误的情况下
@@ -322,7 +322,7 @@ public class MappingJackson2MessageConverter implements SmartMessageConverter, B
 	 * <p>The default implementation throws an {@link IllegalArgumentException}.
 	 * @param object the object to marshal
 	 * @param session the JMS Session
-	 * @param objectWriter the writer to use
+	 * @param objectWriter 要使用的writer
 	 * @param targetType the target message type (other than TEXT or BYTES)
 	 * @return the resulting message
 	 * @throws JMSException if thrown by JMS methods

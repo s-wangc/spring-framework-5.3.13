@@ -173,7 +173,7 @@ public class HttpWebHandlerAdapter extends WebHandlerDecorator implements HttpHa
 	 * Enable processing of forwarded headers, either extracting and removing,
 	 * or remove only.
 	 * <p>By default this is not set.
-	 * @param transformer the transformer to use
+	 * @param transformer 要使用的transformer
 	 * @since 5.1
 	 */
 	public void setForwardedHeaderTransformer(ForwardedHeaderTransformer transformer) {

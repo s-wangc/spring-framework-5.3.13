@@ -97,7 +97,7 @@ public interface ClientCodecConfigurer extends CodecConfigurer {
 		 * if you want to further customize the SSE decoder.
 		 * <p>Note that {@link #maxInMemorySize(int)}, if configured, will be
 		 * applied to the given decoder.
-		 * @param decoder the decoder to use
+		 * @param decoder 要使用的decoder
 		 */
 		void serverSentEventDecoder(Decoder<?> decoder);
 	}

@@ -209,7 +209,7 @@ public interface RSocketRequester extends Disposable {
 		 * <p>This is useful for changing the default settings, yet still allowing
 		 * further customizations via {@link #rsocketStrategies(Consumer)}.
 		 * If not set, defaults are obtained from {@link RSocketStrategies#builder()}.
-		 * @param strategies the strategies to use
+		 * @param strategies 要使用的strategies
 		 */
 		RSocketRequester.Builder rsocketStrategies(@Nullable RSocketStrategies strategies);
 

@@ -347,7 +347,7 @@ class TypeConverterDelegate {
 	 * @param newValue the proposed new value
 	 * @param requiredType the type we must convert to
 	 * (or {@code null} if not known, for example in case of a collection element)
-	 * @param editor the PropertyEditor to use
+	 * @param editor 要使用的PropertyEditor
 	 * @return the new value, possibly the result of type conversion
 	 * @throws IllegalArgumentException if type conversion failed
 	 */
@@ -413,7 +413,7 @@ class TypeConverterDelegate {
 	 * Convert the given text value using the given property editor.
 	 * @param oldValue the previous value, if available (may be {@code null})
 	 * @param newTextValue the proposed text value
-	 * @param editor the PropertyEditor to use
+	 * @param editor 要使用的PropertyEditor
 	 * @return the converted value
 	 */
 	private Object doConvertTextValue(@Nullable Object oldValue, String newTextValue, PropertyEditor editor) {

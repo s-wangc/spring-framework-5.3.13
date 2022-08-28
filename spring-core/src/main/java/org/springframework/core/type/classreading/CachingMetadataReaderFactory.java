@@ -57,7 +57,7 @@ public class CachingMetadataReaderFactory extends SimpleMetadataReaderFactory {
 	/**
 	 * Create a new CachingMetadataReaderFactory for the given {@link ClassLoader},
 	 * using a local resource cache.
-	 * @param classLoader the ClassLoader to use
+	 * @param classLoader 要使用的ClassLoader
 	 */
 	public CachingMetadataReaderFactory(@Nullable ClassLoader classLoader) {
 		super(classLoader);

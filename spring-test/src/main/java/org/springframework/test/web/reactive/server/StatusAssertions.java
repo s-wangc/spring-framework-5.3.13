@@ -199,7 +199,7 @@ public class StatusAssertions {
 
 	/**
 	 * Match the response status value with a Hamcrest matcher.
-	 * @param matcher the matcher to use
+	 * @param matcher 要使用的matcher
 	 * @since 5.1
 	 */
 	public WebTestClient.ResponseSpec value(Matcher<? super Integer> matcher) {
@@ -210,7 +210,7 @@ public class StatusAssertions {
 
 	/**
 	 * Consume the response status value as an integer.
-	 * @param consumer the consumer to use
+	 * @param consumer 要使用的consumer
 	 * @since 5.1
 	 */
 	public WebTestClient.ResponseSpec value(Consumer<Integer> consumer) {

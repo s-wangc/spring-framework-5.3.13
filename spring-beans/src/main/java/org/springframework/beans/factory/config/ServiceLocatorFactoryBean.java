@@ -278,7 +278,7 @@ public class ServiceLocatorFactoryBean implements FactoryBean<Object>, BeanFacto
 	 * following parameter types: {@code (String, Throwable)}
 	 * or {@code (Throwable)} or {@code (String)}.
 	 * @param exceptionClass the exception class
-	 * @return the constructor to use
+	 * @return 要使用的constructor
 	 * @see #setServiceLocatorExceptionClass
 	 */
 	@SuppressWarnings("unchecked")
@@ -308,7 +308,7 @@ public class ServiceLocatorFactoryBean implements FactoryBean<Object>, BeanFacto
 	 * Only called in case of a custom service locator exception.
 	 * <p>The default implementation can handle all variations of
 	 * message and exception arguments.
-	 * @param exceptionConstructor the constructor to use
+	 * @param exceptionConstructor 要使用的constructor
 	 * @param cause the cause of the service lookup failure
 	 * @return the service locator exception to throw
 	 * @see #setServiceLocatorExceptionClass

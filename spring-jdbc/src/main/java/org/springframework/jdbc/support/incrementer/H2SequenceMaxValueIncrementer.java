@@ -37,7 +37,7 @@ public class H2SequenceMaxValueIncrementer extends AbstractSequenceMaxValueIncre
 
 	/**
 	 * Convenience constructor.
-	 * @param dataSource the DataSource to use
+	 * @param dataSource 要使用的DataSource
 	 * @param incrementerName the name of the sequence/table to use
 	 */
 	public H2SequenceMaxValueIncrementer(DataSource dataSource, String incrementerName) {

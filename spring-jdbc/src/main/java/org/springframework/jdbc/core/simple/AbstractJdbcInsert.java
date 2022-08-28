@@ -99,7 +99,7 @@ public abstract class AbstractJdbcInsert {
 
 	/**
 	 * Constructor to be used when initializing using a {@link JdbcTemplate}.
-	 * @param jdbcTemplate the JdbcTemplate to use
+	 * @param jdbcTemplate 要使用的JdbcTemplate
 	 */
 	protected AbstractJdbcInsert(JdbcTemplate jdbcTemplate) {
 		Assert.notNull(jdbcTemplate, "JdbcTemplate must not be null");
@@ -509,7 +509,7 @@ public abstract class AbstractJdbcInsert {
 
 	/**
 	 * Create a PreparedStatement to be used for an insert operation with generated keys.
-	 * @param con the Connection to use
+	 * @param con 要使用的Connection
 	 * @return the PreparedStatement
 	 */
 	private PreparedStatement prepareStatementForGeneratedKeys(Connection con) throws SQLException {

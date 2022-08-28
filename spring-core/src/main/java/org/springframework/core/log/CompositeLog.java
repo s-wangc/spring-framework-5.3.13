@@ -51,7 +51,7 @@ final class CompositeLog implements Log {
 	/**
 	 * Constructor with list of loggers. For optimal performance, the constructor
 	 * checks and remembers which logger is on for each log category.
-	 * @param loggers the loggers to use
+	 * @param loggers 要使用的loggers
 	 */
 	public CompositeLog(List<Log> loggers) {
 		this.fatalLogger = initLogger(loggers, Log::isFatalEnabled);

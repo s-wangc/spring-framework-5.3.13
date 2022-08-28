@@ -134,7 +134,7 @@ public class ContentNegotiationManagerFactoryBean
 	 * <p><strong>Note:</strong> use of this method is mutually exclusive with
 	 * use of all other setters in this class which customize a default, fixed
 	 * set of strategies. See class level doc for more details.
-	 * @param strategies the strategies to use
+	 * @param strategies 要使用的strategies
 	 * @since 5.0
 	 */
 	public void setStrategies(@Nullable List<ContentNegotiationStrategy> strategies) {

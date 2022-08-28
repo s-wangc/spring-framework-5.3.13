@@ -183,8 +183,8 @@ public class UserCredentialsDataSourceAdapter extends DelegatingDataSource {
 	 * method of the target DataSource, passing in the specified user credentials.
 	 * If the specified username is empty, it will simply delegate to the standard
 	 * {@code getConnection()} method of the target DataSource.
-	 * @param username the username to use
-	 * @param password the password to use
+	 * @param username 要使用的username
+	 * @param password 要使用的password
 	 * @return the Connection
 	 * @see javax.sql.DataSource#getConnection(String, String)
 	 * @see javax.sql.DataSource#getConnection()

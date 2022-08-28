@@ -95,8 +95,8 @@ public class MarshallingMessageConverter implements MessageConverter, Initializi
 	/**
 	 * Construct a new {@code MarshallingMessageConverter} with the
 	 * given Marshaller and Unmarshaller.
-	 * @param marshaller the Marshaller to use
-	 * @param unmarshaller the Unmarshaller to use
+	 * @param marshaller 要使用的Marshaller
+	 * @param unmarshaller 要使用的Unmarshaller
 	 */
 	public MarshallingMessageConverter(Marshaller marshaller, Unmarshaller unmarshaller) {
 		Assert.notNull(marshaller, "Marshaller must not be null");
@@ -202,7 +202,7 @@ public class MarshallingMessageConverter implements MessageConverter, Initializi
 	 * Marshal the given object to a {@link TextMessage}.
 	 * @param object the object to be marshalled
 	 * @param session current JMS session
-	 * @param marshaller the marshaller to use
+	 * @param marshaller 要使用的marshaller
 	 * @return the resulting message
 	 * @throws JMSException if thrown by JMS methods
 	 * @throws IOException 在I/O错误的情况下
@@ -223,7 +223,7 @@ public class MarshallingMessageConverter implements MessageConverter, Initializi
 	 * Marshal the given object to a {@link BytesMessage}.
 	 * @param object the object to be marshalled
 	 * @param session current JMS session
-	 * @param marshaller the marshaller to use
+	 * @param marshaller 要使用的marshaller
 	 * @return the resulting message
 	 * @throws JMSException if thrown by JMS methods
 	 * @throws IOException 在I/O错误的情况下
@@ -249,7 +249,7 @@ public class MarshallingMessageConverter implements MessageConverter, Initializi
 	 * <p>The default implementation throws an {@link IllegalArgumentException}.
 	 * @param object the object to marshal
 	 * @param session the JMS session
-	 * @param marshaller the marshaller to use
+	 * @param marshaller 要使用的marshaller
 	 * @param targetType the target message type (other than TEXT or BYTES)
 	 * @return the resulting message
 	 * @throws JMSException if thrown by JMS methods
@@ -267,7 +267,7 @@ public class MarshallingMessageConverter implements MessageConverter, Initializi
 	/**
 	 * Unmarshal the given {@link TextMessage} into an object.
 	 * @param message the message
-	 * @param unmarshaller the unmarshaller to use
+	 * @param unmarshaller 要使用的unmarshaller
 	 * @return the unmarshalled object
 	 * @throws JMSException if thrown by JMS methods
 	 * @throws IOException 在I/O错误的情况下
@@ -284,7 +284,7 @@ public class MarshallingMessageConverter implements MessageConverter, Initializi
 	/**
 	 * Unmarshal the given {@link BytesMessage} into an object.
 	 * @param message the message
-	 * @param unmarshaller the unmarshaller to use
+	 * @param unmarshaller 要使用的unmarshaller
 	 * @return the unmarshalled object
 	 * @throws JMSException if thrown by JMS methods
 	 * @throws IOException 在I/O错误的情况下
@@ -307,7 +307,7 @@ public class MarshallingMessageConverter implements MessageConverter, Initializi
 	 * that is not a {@link TextMessage} or {@link BytesMessage}.
 	 * <p>The default implementation throws an {@link IllegalArgumentException}.
 	 * @param message the message
-	 * @param unmarshaller the unmarshaller to use
+	 * @param unmarshaller 要使用的unmarshaller
 	 * @return the unmarshalled object
 	 * @throws JMSException if thrown by JMS methods
 	 * @throws IOException 在I/O错误的情况下

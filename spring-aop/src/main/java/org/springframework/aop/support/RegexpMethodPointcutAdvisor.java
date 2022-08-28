@@ -66,7 +66,7 @@ public class RegexpMethodPointcutAdvisor extends AbstractGenericPointcutAdvisor 
 	/**
 	 * Create a RegexpMethodPointcutAdvisor for the given advice.
 	 * The pattern still needs to be specified afterwards.
-	 * @param advice the advice to use
+	 * @param advice 要使用的advice
 	 * @see #setPattern
 	 * @see #setPatterns
 	 */
@@ -76,8 +76,8 @@ public class RegexpMethodPointcutAdvisor extends AbstractGenericPointcutAdvisor 
 
 	/**
 	 * Create a RegexpMethodPointcutAdvisor for the given advice.
-	 * @param pattern the pattern to use
-	 * @param advice the advice to use
+	 * @param pattern 要使用的pattern
+	 * @param advice 要使用的advice
 	 */
 	public RegexpMethodPointcutAdvisor(String pattern, Advice advice) {
 		setPattern(pattern);
@@ -86,8 +86,8 @@ public class RegexpMethodPointcutAdvisor extends AbstractGenericPointcutAdvisor 
 
 	/**
 	 * Create a RegexpMethodPointcutAdvisor for the given advice.
-	 * @param patterns the patterns to use
-	 * @param advice the advice to use
+	 * @param patterns 要使用的patterns
+	 * @param advice 要使用的advice
 	 */
 	public RegexpMethodPointcutAdvisor(String[] patterns, Advice advice) {
 		setPatterns(patterns);

@@ -111,7 +111,7 @@ public interface JavaMailSender extends MailSender {
 	 * <p>Alternative way to prepare MimeMessage instances, instead of
 	 * {@link #createMimeMessage()} and {@link #send(MimeMessage)} calls.
 	 * Takes care of proper exception conversion.
-	 * @param mimeMessagePreparator the preparator to use
+	 * @param mimeMessagePreparator 要使用的preparator
 	 * @throws org.springframework.mail.MailPreparationException
 	 * in case of failure when preparing the message
 	 * @throws org.springframework.mail.MailParseException
@@ -128,7 +128,7 @@ public interface JavaMailSender extends MailSender {
 	 * <p>Alternative way to prepare MimeMessage instances, instead of
 	 * {@link #createMimeMessage()} and {@link #send(MimeMessage[])} calls.
 	 * Takes care of proper exception conversion.
-	 * @param mimeMessagePreparators the preparator to use
+	 * @param mimeMessagePreparators 要使用的preparator
 	 * @throws org.springframework.mail.MailPreparationException
 	 * in case of failure when preparing a message
 	 * @throws org.springframework.mail.MailParseException

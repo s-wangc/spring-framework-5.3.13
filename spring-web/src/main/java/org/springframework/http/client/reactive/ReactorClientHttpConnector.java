@@ -87,7 +87,7 @@ public class ReactorClientHttpConnector implements ClientHttpConnector {
 
 	/**
 	 * Constructor with a pre-configured {@code HttpClient} instance.
-	 * @param httpClient the client to use
+	 * @param httpClient 要使用的client
 	 * @since 5.1
 	 */
 	public ReactorClientHttpConnector(HttpClient httpClient) {

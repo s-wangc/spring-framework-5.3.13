@@ -108,7 +108,7 @@ public class Jaxb2XmlDecoder extends AbstractDecoder<Object> {
 
 	/**
 	 * Configure a processor function to customize Unmarshaller instances.
-	 * @param processor the function to use
+	 * @param processor 要使用的function
 	 * @since 5.1.3
 	 */
 	public void setUnmarshallerProcessor(Function<Unmarshaller, Unmarshaller> processor) {

@@ -409,7 +409,7 @@ public abstract class AbstractPollingMessageListenerContainer extends AbstractMe
 
 	/**
 	 * Receive a message from the given consumer.
-	 * @param consumer the MessageConsumer to use
+	 * @param consumer 要使用的MessageConsumer
 	 * @return the Message, or {@code null} if none
 	 * @throws JMSException if thrown by JMS methods
 	 */

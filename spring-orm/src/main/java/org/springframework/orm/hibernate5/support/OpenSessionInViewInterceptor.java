@@ -182,7 +182,7 @@ public class OpenSessionInViewInterceptor implements AsyncWebRequestInterceptor 
 	 * Open a Session for the SessionFactory that this interceptor uses.
 	 * <p>The default implementation delegates to the {@link SessionFactory#openSession}
 	 * method and sets the {@link Session}'s flush mode to "MANUAL".
-	 * @return the Session to use
+	 * @return 要使用的Session
 	 * @throws DataAccessResourceFailureException if the Session could not be created
 	 * @see FlushMode#MANUAL
 	 */

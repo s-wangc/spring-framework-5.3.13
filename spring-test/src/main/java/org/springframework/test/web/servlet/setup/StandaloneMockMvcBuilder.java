@@ -314,7 +314,7 @@ public class StandaloneMockMvcBuilder extends AbstractMockMvcBuilder<StandaloneM
 	 * Enable URL path matching with parsed
 	 * {@link org.springframework.web.util.pattern.PathPattern PathPatterns}
 	 * instead of String pattern matching with a {@link org.springframework.util.PathMatcher}.
-	 * @param parser the parser to use
+	 * @param parser 要使用的parser
 	 * @since 5.3
 	 */
 	public void setPatternParser(PathPatternParser parser) {

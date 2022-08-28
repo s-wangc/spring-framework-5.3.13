@@ -64,7 +64,7 @@ public final class MessageBuilder<T> {
 
 	/**
 	 * Set the message headers to use by providing a {@code MessageHeaderAccessor}.
-	 * @param accessor the headers to use
+	 * @param accessor 要使用的headers
 	 */
 	public MessageBuilder<T> setHeaders(MessageHeaderAccessor accessor) {
 		Assert.notNull(accessor, "MessageHeaderAccessor must not be null");

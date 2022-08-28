@@ -187,7 +187,7 @@ public abstract class AbstractRequestLoggingFilter extends OncePerRequestFilter 
 	 * Configure a predicate for selecting which headers should be logged if
 	 * {@link #setIncludeHeaders(boolean)} is set to {@code true}.
 	 * <p>By default this is not set in which case all headers are logged.
-	 * @param headerPredicate the predicate to use
+	 * @param headerPredicate 要使用的predicate
 	 * @since 5.2
 	 */
 	public void setHeaderPredicate(@Nullable Predicate<String> headerPredicate) {

@@ -51,7 +51,7 @@ public class ClassEditor extends PropertyEditorSupport {
 
 	/**
 	 * Create a default ClassEditor, using the given ClassLoader.
-	 * @param classLoader the ClassLoader to use
+	 * @param classLoader 要使用的ClassLoader
 	 * (or {@code null} for the thread context ClassLoader)
 	 */
 	public ClassEditor(@Nullable ClassLoader classLoader) {

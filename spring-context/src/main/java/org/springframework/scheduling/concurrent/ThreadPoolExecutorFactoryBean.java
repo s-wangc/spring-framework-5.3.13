@@ -168,9 +168,9 @@ public class ThreadPoolExecutorFactoryBean extends ExecutorConfigurationSupport
 	 * @param corePoolSize the specified core pool size
 	 * @param maxPoolSize the specified maximum pool size
 	 * @param keepAliveSeconds the specified keep-alive time in seconds
-	 * @param queue the BlockingQueue to use
-	 * @param threadFactory the ThreadFactory to use
-	 * @param rejectedExecutionHandler the RejectedExecutionHandler to use
+	 * @param queue 要使用的BlockingQueue
+	 * @param threadFactory 要使用的ThreadFactory
+	 * @param rejectedExecutionHandler 要使用的RejectedExecutionHandler
 	 * @return a new ThreadPoolExecutor instance
 	 * @see #afterPropertiesSet()
 	 */

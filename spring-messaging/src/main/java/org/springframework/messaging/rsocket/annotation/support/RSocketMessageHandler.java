@@ -195,7 +195,7 @@ public class RSocketMessageHandler extends MessageMappingMessageHandler {
 	 * <p>By default this is set to the
 	 * {@link org.springframework.messaging.rsocket.RSocketStrategies.Builder#metadataExtractor(MetadataExtractor)} defaults}
 	 * from {@code RSocketStrategies}.
-	 * @param extractor the extractor to use
+	 * @param extractor 要使用的extractor
 	 */
 	public void setMetadataExtractor(MetadataExtractor extractor) {
 		this.strategies = this.strategies.mutate().metadataExtractor(extractor).build();
@@ -242,7 +242,7 @@ public class RSocketMessageHandler extends MessageMappingMessageHandler {
 	 * Configure the default content type to use for data payloads if the
 	 * {@code SETUP} frame did not specify one.
 	 * <p>By default this is not set.
-	 * @param mimeType the MimeType to use
+	 * @param mimeType 要使用的MimeType
 	 */
 	public void setDefaultDataMimeType(@Nullable MimeType mimeType) {
 		this.defaultDataMimeType = mimeType;
@@ -261,7 +261,7 @@ public class RSocketMessageHandler extends MessageMappingMessageHandler {
 	 * Configure the default {@code MimeType} for payload data if the
 	 * {@code SETUP} frame did not specify one.
 	 * <p>By default this is set to {@code "message/x.rsocket.composite-metadata.v0"}
-	 * @param mimeType the MimeType to use
+	 * @param mimeType 要使用的MimeType
 	 */
 	public void setDefaultMetadataMimeType(MimeType mimeType) {
 		Assert.notNull(mimeType, "'metadataMimeType' is required");

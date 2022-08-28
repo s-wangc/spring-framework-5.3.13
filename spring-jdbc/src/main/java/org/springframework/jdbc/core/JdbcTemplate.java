@@ -1413,7 +1413,7 @@ public class JdbcTemplate extends JdbcAccessor implements JdbcOperations {
 
 	/**
 	 * Create a new RowMapper for reading columns as key-value pairs.
-	 * @return the RowMapper to use
+	 * @return 要使用的RowMapper
 	 * @see ColumnMapRowMapper
 	 */
 	protected RowMapper<Map<String, Object>> getColumnMapRowMapper() {
@@ -1423,7 +1423,7 @@ public class JdbcTemplate extends JdbcAccessor implements JdbcOperations {
 	/**
 	 * Create a new RowMapper for reading result objects from a single column.
 	 * @param requiredType the type that each result object is expected to match
-	 * @return the RowMapper to use
+	 * @return 要使用的RowMapper
 	 * @see SingleColumnRowMapper
 	 */
 	protected <T> RowMapper<T> getSingleColumnRowMapper(Class<T> requiredType) {

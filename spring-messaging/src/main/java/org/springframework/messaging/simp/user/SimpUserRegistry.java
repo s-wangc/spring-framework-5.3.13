@@ -52,7 +52,7 @@ public interface SimpUserRegistry {
 
 	/**
 	 * Find subscriptions with the given matcher.
-	 * @param matcher the matcher to use
+	 * @param matcher 要使用的matcher
 	 * @return a set of matching subscriptions, or an empty set if none
 	 */
 	Set<SimpSubscription> findSubscriptions(SimpSubscriptionMatcher matcher);

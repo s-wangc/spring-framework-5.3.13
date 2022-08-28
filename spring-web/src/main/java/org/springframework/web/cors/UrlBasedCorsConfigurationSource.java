@@ -79,7 +79,7 @@ public class UrlBasedCorsConfigurationSource implements CorsConfigurationSource 
 
 	/**
 	 * Constructor with a {@link PathPatternParser} to parse patterns with.
-	 * @param parser the parser to use
+	 * @param parser 要使用的parser
 	 * @since 5.3
 	 */
 	public UrlBasedCorsConfigurationSource(PathPatternParser parser) {
@@ -206,7 +206,7 @@ public class UrlBasedCorsConfigurationSource implements CorsConfigurationSource 
 	 * as well as class-level Javadoc for details on which one may in use.
 	 * Generally the syntax is largely the same with {@link PathPattern} more
 	 * tailored for web usage.
-	 * @param corsConfigurations the mappings to use
+	 * @param corsConfigurations 要使用的mappings
 	 * @see PathPattern
 	 * @see AntPathMatcher
 	 */

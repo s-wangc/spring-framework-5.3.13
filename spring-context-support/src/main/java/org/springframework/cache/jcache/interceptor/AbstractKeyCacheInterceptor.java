@@ -44,7 +44,7 @@ abstract class AbstractKeyCacheInterceptor<O extends AbstractJCacheKeyOperation<
 	/**
 	 * Generate a key for the specified invocation.
 	 * @param context the context of the invocation
-	 * @return the key to use
+	 * @return 要使用的key
 	 */
 	protected Object generateKey(CacheOperationInvocationContext<O> context) {
 		KeyGenerator keyGenerator = context.getOperation().getKeyGenerator();

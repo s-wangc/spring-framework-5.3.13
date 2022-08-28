@@ -48,7 +48,7 @@ public class PersistenceExceptionTranslationAdvisor extends AbstractPointcutAdvi
 
 	/**
 	 * 创建一个新的PersistenceExceptionTranslationAdvisor.
-	 * @param persistenceExceptionTranslator the PersistenceExceptionTranslator to use
+	 * @param persistenceExceptionTranslator 要使用的PersistenceExceptionTranslator
 	 * @param repositoryAnnotationType the annotation type to check for
 	 */
 	public PersistenceExceptionTranslationAdvisor(

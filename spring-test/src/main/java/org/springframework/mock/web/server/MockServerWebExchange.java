@@ -109,7 +109,7 @@ public final class MockServerWebExchange extends DefaultServerWebExchange {
 		 * Set the session to use for the exchange.
 		 * <p>This method is mutually exclusive with
 		 * {@link #sessionManager(WebSessionManager)}.
-		 * @param session the session to use
+		 * @param session 要使用的session
 		 * @see MockWebSession
 		 */
 		public Builder session(WebSession session) {

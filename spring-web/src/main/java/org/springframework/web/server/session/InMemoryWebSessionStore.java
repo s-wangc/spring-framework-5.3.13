@@ -84,7 +84,7 @@ public class InMemoryWebSessionStore implements WebSessionStore {
 	 * back in a test, e.g. {@code Clock.offset(clock, Duration.ofMinutes(-31))}
 	 * in order to simulate session expiration.
 	 * <p>By default this is {@code Clock.system(ZoneId.of("GMT"))}.
-	 * @param clock the clock to use
+	 * @param clock 要使用的clock
 	 */
 	public void setClock(Clock clock) {
 		Assert.notNull(clock, "Clock is required");

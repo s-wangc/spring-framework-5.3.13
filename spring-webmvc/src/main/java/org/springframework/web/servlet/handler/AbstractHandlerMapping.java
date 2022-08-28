@@ -154,7 +154,7 @@ public abstract class AbstractHandlerMapping extends WebApplicationObjectSupport
 	 * and used instead of String matching with {@code PathMatcher}.
 	 * </ul>
 	 * <p>By default this is not set.
-	 * @param patternParser the parser to use
+	 * @param patternParser 要使用的parser
 	 * @since 5.3
 	 */
 	public void setPatternParser(PathPatternParser patternParser) {

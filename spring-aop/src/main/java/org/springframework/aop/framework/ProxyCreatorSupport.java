@@ -49,7 +49,7 @@ public class ProxyCreatorSupport extends AdvisedSupport {
 
 	/**
 	 * 创建一个新的ProxyCreatorSupport实例.
-	 * @param aopProxyFactory the AopProxyFactory to use
+	 * @param aopProxyFactory 要使用的AopProxyFactory
 	 */
 	public ProxyCreatorSupport(AopProxyFactory aopProxyFactory) {
 		Assert.notNull(aopProxyFactory, "AopProxyFactory must not be null");

@@ -94,7 +94,7 @@ public class JettyRequestUpgradeStrategy implements RequestUpgradeStrategy, Serv
 	/**
 	 * A constructor accepting a {@link WebSocketPolicy} to be used when
 	 * creating the {@link WebSocketServerFactory} instance.
-	 * @param policy the policy to use
+	 * @param policy 要使用的policy
 	 * @since 4.3.5
 	 */
 	public JettyRequestUpgradeStrategy(WebSocketPolicy policy) {

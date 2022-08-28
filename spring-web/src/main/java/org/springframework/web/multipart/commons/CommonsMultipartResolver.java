@@ -100,7 +100,7 @@ public class CommonsMultipartResolver extends CommonsFileUploadSupport
 	/**
 	 * Constructor for standalone usage. Determines the servlet container's
 	 * temporary directory via the given ServletContext.
-	 * @param servletContext the ServletContext to use
+	 * @param servletContext 要使用的ServletContext
 	 */
 	public CommonsMultipartResolver(ServletContext servletContext) {
 		this();

@@ -87,7 +87,7 @@ public class WebAsyncTask<V> implements BeanFactoryAware {
 	/**
 	 * Create a {@code WebAsyncTask} with a timeout value, an executor instance, and a Callable.
 	 * @param timeout the timeout value in milliseconds; ignored if {@code null}
-	 * @param executor the executor to use
+	 * @param executor 要使用的executor
 	 * @param callable the callable for concurrent handling
 	 */
 	public WebAsyncTask(@Nullable Long timeout, AsyncTaskExecutor executor, Callable<V> callable) {

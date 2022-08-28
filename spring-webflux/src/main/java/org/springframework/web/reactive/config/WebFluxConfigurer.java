@@ -48,7 +48,7 @@ public interface WebFluxConfigurer {
 	/**
 	 * Configure how the content type requested for the response is resolved
 	 * when handling requests with annotated controllers.
-	 * @param builder for configuring the resolvers to use
+	 * @param builder for configuring 要使用的resolvers
 	 */
 	default void configureContentTypeResolver(RequestedContentTypeResolverBuilder builder) {
 	}

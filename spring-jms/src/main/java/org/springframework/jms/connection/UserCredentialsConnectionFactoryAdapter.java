@@ -176,8 +176,8 @@ public class UserCredentialsConnectionFactoryAdapter
 	 * method of the target ConnectionFactory, passing in the specified user credentials.
 	 * If the specified username is empty, it will simply delegate to the standard
 	 * {@code createConnection()} method of the target ConnectionFactory.
-	 * @param username the username to use
-	 * @param password the password to use
+	 * @param username 要使用的username
+	 * @param password 要使用的password
 	 * @return the Connection
 	 * @see javax.jms.ConnectionFactory#createConnection(String, String)
 	 * @see javax.jms.ConnectionFactory#createConnection()
@@ -222,8 +222,8 @@ public class UserCredentialsConnectionFactoryAdapter
 	 * method of the target QueueConnectionFactory, passing in the specified user credentials.
 	 * If the specified username is empty, it will simply delegate to the standard
 	 * {@code createQueueConnection()} method of the target ConnectionFactory.
-	 * @param username the username to use
-	 * @param password the password to use
+	 * @param username 要使用的username
+	 * @param password 要使用的password
 	 * @return the Connection
 	 * @see javax.jms.QueueConnectionFactory#createQueueConnection(String, String)
 	 * @see javax.jms.QueueConnectionFactory#createQueueConnection()
@@ -274,8 +274,8 @@ public class UserCredentialsConnectionFactoryAdapter
 	 * method of the target TopicConnectionFactory, passing in the specified user credentials.
 	 * If the specified username is empty, it will simply delegate to the standard
 	 * {@code createTopicConnection()} method of the target ConnectionFactory.
-	 * @param username the username to use
-	 * @param password the password to use
+	 * @param username 要使用的username
+	 * @param password 要使用的password
 	 * @return the Connection
 	 * @see javax.jms.TopicConnectionFactory#createTopicConnection(String, String)
 	 * @see javax.jms.TopicConnectionFactory#createTopicConnection()

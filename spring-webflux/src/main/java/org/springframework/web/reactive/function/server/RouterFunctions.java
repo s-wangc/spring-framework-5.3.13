@@ -222,7 +222,7 @@ public abstract class RouterFunctions {
 	 * {@link org.springframework.http.server.reactive.UndertowHttpHandlerAdapter}.</li>
 	 * </ul>
 	 * @param routerFunction the router function to convert
-	 * @param strategies the strategies to use
+	 * @param strategies 要使用的strategies
 	 * @return an http handler that handles HTTP request using the given router function
 	 */
 	public static HttpHandler toHttpHandler(RouterFunction<?> routerFunction, HandlerStrategies strategies) {
@@ -248,7 +248,7 @@ public abstract class RouterFunctions {
 	 * Convert the given {@linkplain RouterFunction router function} into a {@link WebHandler},
 	 * using the given strategies.
 	 * @param routerFunction the router function to convert
-	 * @param strategies the strategies to use
+	 * @param strategies 要使用的strategies
 	 * @return a web handler that handles web request using the given router function
 	 */
 	public static WebHandler toWebHandler(RouterFunction<?> routerFunction, HandlerStrategies strategies) {

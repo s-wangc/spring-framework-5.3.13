@@ -77,8 +77,8 @@ public class MarshallingHttpMessageConverter extends AbstractXmlHttpMessageConve
 	/**
 	 * Construct a new {@code MarshallingMessageConverter} with the given
 	 * {@code Marshaller} and {@code Unmarshaller}.
-	 * @param marshaller the Marshaller to use
-	 * @param unmarshaller the Unmarshaller to use
+	 * @param marshaller 要使用的Marshaller
+	 * @param unmarshaller 要使用的Unmarshaller
 	 */
 	public MarshallingHttpMessageConverter(Marshaller marshaller, Unmarshaller unmarshaller) {
 		Assert.notNull(marshaller, "Marshaller must not be null");

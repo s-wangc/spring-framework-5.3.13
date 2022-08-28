@@ -107,7 +107,7 @@ public class ReactorResourceFactory implements InitializingBean, DisposableBean 
 	 * <p>By default, {@code ConnectionProvider.elastic("http")} is used.
 	 * <p>Note that this option is ignored if {@code userGlobalResources=false} or
 	 * {@link #setConnectionProvider(ConnectionProvider)} is set.
-	 * @param supplier the supplier to use
+	 * @param supplier 要使用的supplier
 	 */
 	public void setConnectionProviderSupplier(Supplier<ConnectionProvider> supplier) {
 		this.connectionProviderSupplier = supplier;
@@ -136,7 +136,7 @@ public class ReactorResourceFactory implements InitializingBean, DisposableBean 
 	 * <p>By default, {@code LoopResources.create("reactor-http")} is used.
 	 * <p>Note that this option is ignored if {@code userGlobalResources=false} or
 	 * {@link #setLoopResources(LoopResources)} is set.
-	 * @param supplier the supplier to use
+	 * @param supplier 要使用的supplier
 	 */
 	public void setLoopResourcesSupplier(Supplier<LoopResources> supplier) {
 		this.loopResourcesSupplier = supplier;

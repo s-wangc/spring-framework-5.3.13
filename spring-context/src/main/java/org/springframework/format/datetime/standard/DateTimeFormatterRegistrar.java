@@ -116,7 +116,7 @@ public class DateTimeFormatterRegistrar implements FormatterRegistrar {
 	 * <p>This formatter will be used for the {@link LocalDate} type.
 	 * When specified, the {@link #setDateStyle dateStyle} and
 	 * {@link #setUseIsoFormat useIsoFormat} properties will be ignored.
-	 * @param formatter the formatter to use
+	 * @param formatter 要使用的formatter
 	 * @see #setTimeFormatter
 	 * @see #setDateTimeFormatter
 	 */
@@ -129,7 +129,7 @@ public class DateTimeFormatterRegistrar implements FormatterRegistrar {
 	 * <p>This formatter will be used for the {@link LocalTime} and {@link OffsetTime}
 	 * types. When specified, the {@link #setTimeStyle timeStyle} and
 	 * {@link #setUseIsoFormat useIsoFormat} properties will be ignored.
-	 * @param formatter the formatter to use
+	 * @param formatter 要使用的formatter
 	 * @see #setDateFormatter
 	 * @see #setDateTimeFormatter
 	 */
@@ -143,7 +143,7 @@ public class DateTimeFormatterRegistrar implements FormatterRegistrar {
 	 * and {@link OffsetDateTime} types. When specified, the
 	 * {@link #setDateTimeStyle dateTimeStyle} and
 	 * {@link #setUseIsoFormat useIsoFormat} properties will be ignored.
-	 * @param formatter the formatter to use
+	 * @param formatter 要使用的formatter
 	 * @see #setDateFormatter
 	 * @see #setTimeFormatter
 	 */

@@ -49,7 +49,7 @@ public class DefaultWebSessionManager implements WebSessionManager {
 	/**
 	 * Configure the id resolution strategy.
 	 * <p>By default an instance of {@link CookieWebSessionIdResolver}.
-	 * @param sessionIdResolver the resolver to use
+	 * @param sessionIdResolver 要使用的resolver
 	 */
 	public void setSessionIdResolver(WebSessionIdResolver sessionIdResolver) {
 		Assert.notNull(sessionIdResolver, "WebSessionIdResolver is required");

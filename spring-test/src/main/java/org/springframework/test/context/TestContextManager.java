@@ -128,7 +128,7 @@ public class TestContextManager {
 	 * {@link TestExecutionListener TestExecutionListeners}.
 	 * <p>Delegates to the supplied {@code TestContextBootstrapper} for building
 	 * the {@code TestContext} and retrieving the {@code TestExecutionListeners}.
-	 * @param testContextBootstrapper the bootstrapper to use
+	 * @param testContextBootstrapper 要使用的bootstrapper
 	 * @see TestContextBootstrapper#buildTestContext
 	 * @see TestContextBootstrapper#getTestExecutionListeners
 	 * @see #registerTestExecutionListeners

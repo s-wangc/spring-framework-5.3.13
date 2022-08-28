@@ -64,7 +64,7 @@ public class PathEditor extends PropertyEditorSupport {
 
 	/**
 	 * Create a new PathEditor, using the given ResourceEditor underneath.
-	 * @param resourceEditor the ResourceEditor to use
+	 * @param resourceEditor 要使用的ResourceEditor
 	 */
 	public PathEditor(ResourceEditor resourceEditor) {
 		Assert.notNull(resourceEditor, "ResourceEditor must not be null");

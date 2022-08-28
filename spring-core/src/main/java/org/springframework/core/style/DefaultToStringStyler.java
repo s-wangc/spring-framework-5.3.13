@@ -38,7 +38,7 @@ public class DefaultToStringStyler implements ToStringStyler {
 
 	/**
 	 * 创建一个新的DefaultToStringStyler.
-	 * @param valueStyler the ValueStyler to use
+	 * @param valueStyler 要使用的ValueStyler
 	 */
 	public DefaultToStringStyler(ValueStyler valueStyler) {
 		Assert.notNull(valueStyler, "ValueStyler must not be null");

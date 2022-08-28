@@ -50,7 +50,7 @@ public abstract class AbstractCacheResolver implements CacheResolver, Initializi
 
 	/**
 	 * Construct a new {@code AbstractCacheResolver} for the given {@link CacheManager}.
-	 * @param cacheManager the CacheManager to use
+	 * @param cacheManager 要使用的CacheManager
 	 */
 	protected AbstractCacheResolver(CacheManager cacheManager) {
 		this.cacheManager = cacheManager;

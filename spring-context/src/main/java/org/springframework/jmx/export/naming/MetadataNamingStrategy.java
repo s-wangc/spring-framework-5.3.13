@@ -70,7 +70,7 @@ public class MetadataNamingStrategy implements ObjectNamingStrategy, Initializin
 	/**
 	 * Create a new {@code MetadataNamingStrategy} for the given
 	 * {@code JmxAttributeSource}.
-	 * @param attributeSource the JmxAttributeSource to use
+	 * @param attributeSource 要使用的JmxAttributeSource
 	 */
 	public MetadataNamingStrategy(JmxAttributeSource attributeSource) {
 		Assert.notNull(attributeSource, "JmxAttributeSource must not be null");

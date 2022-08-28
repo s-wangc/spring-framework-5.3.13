@@ -48,7 +48,7 @@ public abstract class AbstractColumnMaxValueIncrementer extends AbstractDataFiel
 
 	/**
 	 * Convenience constructor.
-	 * @param dataSource the DataSource to use
+	 * @param dataSource 要使用的DataSource
 	 * @param incrementerName the name of the sequence/table to use
 	 * @param columnName the name of the column in the sequence table to use
 	 */

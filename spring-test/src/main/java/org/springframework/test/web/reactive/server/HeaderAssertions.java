@@ -143,7 +143,7 @@ public class HeaderAssertions {
 	/**
 	 * Assert the first value of the response header with a Hamcrest {@link Matcher}.
 	 * @param name the header name
-	 * @param matcher the matcher to use
+	 * @param matcher 要使用的matcher
 	 * @since 5.1
 	 */
 	public WebTestClient.ResponseSpec value(String name, Matcher<? super String> matcher) {
@@ -158,7 +158,7 @@ public class HeaderAssertions {
 	/**
 	 * Assert all values of the response header with a Hamcrest {@link Matcher}.
 	 * @param name the header name
-	 * @param matcher the matcher to use
+	 * @param matcher 要使用的matcher
 	 * @since 5.3
 	 */
 	public WebTestClient.ResponseSpec values(String name, Matcher<? super Iterable<String>> matcher) {
@@ -173,7 +173,7 @@ public class HeaderAssertions {
 	/**
 	 * Consume the first value of the named response header.
 	 * @param name the header name
-	 * @param consumer the consumer to use
+	 * @param consumer 要使用的consumer
 	 * @since 5.1
 	 */
 	public WebTestClient.ResponseSpec value(String name, Consumer<String> consumer) {
@@ -185,7 +185,7 @@ public class HeaderAssertions {
 	/**
 	 * Consume all values of the named response header.
 	 * @param name the header name
-	 * @param consumer the consumer to use
+	 * @param consumer 要使用的consumer
 	 * @since 5.3
 	 */
 	public WebTestClient.ResponseSpec values(String name, Consumer<List<String>> consumer) {

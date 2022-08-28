@@ -550,7 +550,7 @@ public abstract class AbstractMethodMessageHandler<T>
 	 * that finds exception handling methods based on some criteria, e.g. based
 	 * on the presence of {@code @MessageExceptionHandler}.
 	 * @param beanType the class in which an exception occurred during handling
-	 * @return the resolver to use
+	 * @return 要使用的resolver
 	 */
 	protected abstract AbstractExceptionHandlerMethodResolver createExceptionMethodResolverFor(Class<?> beanType);
 

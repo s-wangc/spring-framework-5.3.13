@@ -174,7 +174,7 @@ public class OpenSessionInViewFilter extends OncePerRequestFilter {
 	 * <p>The default implementation delegates to the {@link #lookupSessionFactory()}
 	 * variant without arguments.
 	 * @param request the current request
-	 * @return the SessionFactory to use
+	 * @return 要使用的SessionFactory
 	 */
 	protected SessionFactory lookupSessionFactory(HttpServletRequest request) {
 		return lookupSessionFactory();
@@ -184,7 +184,7 @@ public class OpenSessionInViewFilter extends OncePerRequestFilter {
 	 * Look up the SessionFactory that this filter should use.
 	 * <p>The default implementation looks for a bean with the specified name
 	 * in Spring's root application context.
-	 * @return the SessionFactory to use
+	 * @return 要使用的SessionFactory
 	 * @see #getSessionFactoryBeanName
 	 */
 	protected SessionFactory lookupSessionFactory() {
@@ -200,7 +200,7 @@ public class OpenSessionInViewFilter extends OncePerRequestFilter {
 	 * <p>The default implementation delegates to the {@link SessionFactory#openSession}
 	 * method and sets the {@link Session}'s flush mode to "MANUAL".
 	 * @param sessionFactory the SessionFactory that this filter uses
-	 * @return the Session to use
+	 * @return 要使用的Session
 	 * @throws DataAccessResourceFailureException if the Session could not be created
 	 * @see FlushMode#MANUAL
 	 */

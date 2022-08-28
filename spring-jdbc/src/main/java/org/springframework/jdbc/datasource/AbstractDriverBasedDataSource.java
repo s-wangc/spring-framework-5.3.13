@@ -184,7 +184,7 @@ public abstract class AbstractDriverBasedDataSource extends AbstractDataSource {
 	 * Build properties for the Driver, including the given username and password (if any),
 	 * and obtain a corresponding Connection.
 	 * @param username the name of the user
-	 * @param password the password to use
+	 * @param password 要使用的password
 	 * @return the obtained Connection
 	 * @throws SQLException in case of failure
 	 * @see java.sql.Driver#connect(String, java.util.Properties)

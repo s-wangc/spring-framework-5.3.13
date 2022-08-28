@@ -58,7 +58,7 @@ public class ContentNegotiationManager implements ContentNegotiationStrategy, Me
 	 * Create an instance with the given list of
 	 * {@code ContentNegotiationStrategy} strategies each of which may also be
 	 * an instance of {@code MediaTypeFileExtensionResolver}.
-	 * @param strategies the strategies to use
+	 * @param strategies 要使用的strategies
 	 */
 	public ContentNegotiationManager(ContentNegotiationStrategy... strategies) {
 		this(Arrays.asList(strategies));
@@ -67,7 +67,7 @@ public class ContentNegotiationManager implements ContentNegotiationStrategy, Me
 	/**
 	 * A collection-based alternative to
 	 * {@link #ContentNegotiationManager(ContentNegotiationStrategy...)}.
-	 * @param strategies the strategies to use
+	 * @param strategies 要使用的strategies
 	 * @since 3.2.2
 	 */
 	public ContentNegotiationManager(Collection<ContentNegotiationStrategy> strategies) {

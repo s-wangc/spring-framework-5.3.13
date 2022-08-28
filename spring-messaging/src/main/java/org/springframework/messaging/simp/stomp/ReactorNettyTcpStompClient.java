@@ -52,7 +52,7 @@ public class ReactorNettyTcpStompClient extends StompClientSupport {
 
 	/**
 	 * Create an instance with a pre-configured TCP client.
-	 * @param tcpClient the client to use
+	 * @param tcpClient 要使用的client
 	 */
 	public ReactorNettyTcpStompClient(TcpOperations<byte[]> tcpClient) {
 		Assert.notNull(tcpClient, "'tcpClient' is required");

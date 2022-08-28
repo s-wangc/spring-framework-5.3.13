@@ -55,7 +55,7 @@ public class SimpleMetadataReaderFactory implements MetadataReaderFactory {
 
 	/**
 	 * Create a new SimpleMetadataReaderFactory for the given class loader.
-	 * @param classLoader the ClassLoader to use
+	 * @param classLoader 要使用的ClassLoader
 	 */
 	public SimpleMetadataReaderFactory(@Nullable ClassLoader classLoader) {
 		this.resourceLoader =

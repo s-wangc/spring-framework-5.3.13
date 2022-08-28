@@ -190,8 +190,8 @@ public class ThreadPoolTaskScheduler extends ExecutorConfigurationSupport
 	 * <p>The default implementation creates a {@link ScheduledThreadPoolExecutor}.
 	 * Can be overridden in subclasses to provide custom {@link ScheduledExecutorService} instances.
 	 * @param poolSize the specified pool size
-	 * @param threadFactory the ThreadFactory to use
-	 * @param rejectedExecutionHandler the RejectedExecutionHandler to use
+	 * @param threadFactory 要使用的ThreadFactory
+	 * @param rejectedExecutionHandler 要使用的RejectedExecutionHandler
 	 * @return a new ScheduledExecutorService instance
 	 * @see #afterPropertiesSet()
 	 * @see java.util.concurrent.ScheduledThreadPoolExecutor

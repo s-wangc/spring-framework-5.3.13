@@ -110,7 +110,7 @@ public abstract class AbstractXmlApplicationContext extends AbstractRefreshableC
 	 * Load the bean definitions with the given XmlBeanDefinitionReader.
 	 * <p>The lifecycle of the bean factory is handled by the {@link #refreshBeanFactory}
 	 * method; hence this method is just supposed to load and/or register bean definitions.
-	 * @param reader the XmlBeanDefinitionReader to use
+	 * @param reader 要使用的XmlBeanDefinitionReader
 	 * @throws BeansException in case of bean registration errors
 	 * @throws IOException if the required XML document isn't found
 	 * @see #refreshBeanFactory

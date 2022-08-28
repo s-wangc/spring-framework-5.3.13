@@ -84,7 +84,7 @@ public class DefaultUserDestinationResolver implements UserDestinationResolver {
 	 * The prefix used to identify user destinations. Any destinations that do not
 	 * start with the given prefix are not be resolved.
 	 * <p>The default prefix is "/user/".
-	 * @param prefix the prefix to use
+	 * @param prefix 要使用的prefix
 	 */
 	public void setUserDestinationPrefix(String prefix) {
 		Assert.hasText(prefix, "Prefix must not be empty");

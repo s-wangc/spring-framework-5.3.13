@@ -43,7 +43,7 @@ public class SimpleCacheResolver extends AbstractCacheResolver {
 
 	/**
 	 * Construct a new {@code SimpleCacheResolver} for the given {@link CacheManager}.
-	 * @param cacheManager the CacheManager to use
+	 * @param cacheManager 要使用的CacheManager
 	 */
 	public SimpleCacheResolver(CacheManager cacheManager) {
 		super(cacheManager);

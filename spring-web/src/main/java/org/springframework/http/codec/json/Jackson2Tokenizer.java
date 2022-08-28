@@ -227,7 +227,7 @@ final class Jackson2Tokenizer {
 	/**
 	 * Tokenize the given {@code Flux<DataBuffer>} into {@code Flux<TokenBuffer>}.
 	 * @param dataBuffers the source data buffers
-	 * @param jsonFactory the factory to use
+	 * @param jsonFactory 要使用的factory
 	 * @param objectMapper the current mapper instance
 	 * @param tokenizeArrays if {@code true} and the "top level" JSON object is
 	 * an array, each element is returned individually immediately after it is received

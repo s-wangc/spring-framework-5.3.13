@@ -73,7 +73,7 @@ public class ComposablePointcut implements Pointcut, Serializable {
 	/**
 	 * Create a ComposablePointcut for the given ClassFilter,
 	 * with {@code MethodMatcher.TRUE}.
-	 * @param classFilter the ClassFilter to use
+	 * @param classFilter 要使用的ClassFilter
 	 */
 	public ComposablePointcut(ClassFilter classFilter) {
 		Assert.notNull(classFilter, "ClassFilter must not be null");
@@ -84,7 +84,7 @@ public class ComposablePointcut implements Pointcut, Serializable {
 	/**
 	 * Create a ComposablePointcut for the given MethodMatcher,
 	 * with {@code ClassFilter.TRUE}.
-	 * @param methodMatcher the MethodMatcher to use
+	 * @param methodMatcher 要使用的MethodMatcher
 	 */
 	public ComposablePointcut(MethodMatcher methodMatcher) {
 		Assert.notNull(methodMatcher, "MethodMatcher must not be null");
@@ -94,8 +94,8 @@ public class ComposablePointcut implements Pointcut, Serializable {
 
 	/**
 	 * Create a ComposablePointcut for the given ClassFilter and MethodMatcher.
-	 * @param classFilter the ClassFilter to use
-	 * @param methodMatcher the MethodMatcher to use
+	 * @param classFilter 要使用的ClassFilter
+	 * @param methodMatcher 要使用的MethodMatcher
 	 */
 	public ComposablePointcut(ClassFilter classFilter, MethodMatcher methodMatcher) {
 		Assert.notNull(classFilter, "ClassFilter must not be null");

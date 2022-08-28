@@ -71,7 +71,7 @@ public class Jaxb2XmlEncoder extends AbstractSingleValueEncoder<Object> {
 
 	/**
 	 * Configure a processor function to customize Marshaller instances.
-	 * @param processor the function to use
+	 * @param processor 要使用的function
 	 * @since 5.1.3
 	 */
 	public void setMarshallerProcessor(Function<Marshaller, Marshaller> processor) {

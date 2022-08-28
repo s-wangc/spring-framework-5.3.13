@@ -65,7 +65,7 @@ public class PersistenceExceptionTranslationInterceptor
 	/**
 	 * Create a new PersistenceExceptionTranslationInterceptor
 	 * for the given PersistenceExceptionTranslator.
-	 * @param pet the PersistenceExceptionTranslator to use
+	 * @param pet 要使用的PersistenceExceptionTranslator
 	 */
 	public PersistenceExceptionTranslationInterceptor(PersistenceExceptionTranslator pet) {
 		Assert.notNull(pet, "PersistenceExceptionTranslator must not be null");

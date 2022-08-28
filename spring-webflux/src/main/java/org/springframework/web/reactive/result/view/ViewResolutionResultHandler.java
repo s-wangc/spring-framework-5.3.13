@@ -95,7 +95,7 @@ public class ViewResolutionResultHandler extends HandlerResultHandlerSupport imp
 
 	/**
 	 * Basic constructor with a default {@link ReactiveAdapterRegistry}.
-	 * @param viewResolvers the resolver to use
+	 * @param viewResolvers 要使用的resolver
 	 * @param contentTypeResolver to determine the requested content type
 	 */
 	public ViewResolutionResultHandler(List<ViewResolver> viewResolvers,

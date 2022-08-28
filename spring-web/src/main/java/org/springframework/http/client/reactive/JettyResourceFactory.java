@@ -61,7 +61,7 @@ public class JettyResourceFactory implements InitializingBean, DisposableBean {
 	/**
 	 * Configure the {@link Executor} to use.
 	 * <p>By default, initialized with a {@link QueuedThreadPool}.
-	 * @param executor the executor to use
+	 * @param executor 要使用的executor
 	 */
 	public void setExecutor(@Nullable Executor executor) {
 		this.executor = executor;

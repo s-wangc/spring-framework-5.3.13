@@ -79,8 +79,8 @@ public abstract class AbstractLobCreatingPreparedStatementCallback implements Pr
 	/**
 	 * Set values on the given PreparedStatement, using the given
 	 * LobCreator for BLOB/CLOB arguments.
-	 * @param ps the PreparedStatement to use
-	 * @param lobCreator the LobCreator to use
+	 * @param ps 要使用的PreparedStatement
+	 * @param lobCreator 要使用的LobCreator
 	 * @throws SQLException if thrown by JDBC methods
 	 * @throws DataAccessException in case of custom exceptions
 	 */

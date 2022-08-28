@@ -162,7 +162,7 @@ public class ReactorNettyTcpClient<P> implements TcpOperations<P> {
 
 	/**
 	 * Set an alternative logger to use than the one based on the class name.
-	 * @param logger the logger to use
+	 * @param logger 要使用的logger
 	 * @since 5.1
 	 */
 	public void setLogger(Log logger) {

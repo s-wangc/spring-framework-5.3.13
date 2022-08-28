@@ -48,7 +48,7 @@ public abstract class AbstractSequenceMaxValueIncrementer extends AbstractDataFi
 
 	/**
 	 * Convenience constructor.
-	 * @param dataSource the DataSource to use
+	 * @param dataSource 要使用的DataSource
 	 * @param incrementerName the name of the sequence/table to use
 	 */
 	public AbstractSequenceMaxValueIncrementer(DataSource dataSource, String incrementerName) {

@@ -81,7 +81,7 @@ public interface HandlerAdapter {
 	 * Same contract as for HttpServlet's {@code getLastModified} method.
 	 * Can simply return -1 if there's no support in the handler class.
 	 * @param request current HTTP request
-	 * @param handler the handler to use
+	 * @param handler 要使用的handler
 	 * @return the lastModified value for the given handler
 	 * @deprecated as of 5.3.9 along with
 	 * {@link org.springframework.web.servlet.mvc.LastModified}.

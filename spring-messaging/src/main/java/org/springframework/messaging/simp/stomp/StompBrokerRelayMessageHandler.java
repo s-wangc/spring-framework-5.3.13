@@ -413,7 +413,7 @@ public class StompBrokerRelayMessageHandler extends AbstractBrokerMessageHandler
 	 * Configure the {@link TaskScheduler} to use to reset client-to-broker
 	 * message count in the current heartbeat period. For more details, see
 	 * {@link org.springframework.messaging.simp.config.StompBrokerRelayRegistration#setTaskScheduler(TaskScheduler)}.
-	 * @param taskScheduler the scheduler to use
+	 * @param taskScheduler 要使用的scheduler
 	 * @since 5.3
 	 */
 	public void setTaskScheduler(@Nullable TaskScheduler taskScheduler) {
