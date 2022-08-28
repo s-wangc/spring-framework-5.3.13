@@ -393,7 +393,7 @@ public abstract class AbstractJackson2HttpMessageConverter extends AbstractGener
 	/**
 	 * Determine the charset to use for JSON input.
 	 * <p>By default this is either the charset from the input {@code MediaType}
-	 * or otherwise falling back on {@code UTF-8}. Can be overridden in subclasses.
+	 * or otherwise falling back on {@code UTF-8}. 可以在子类中重写.
 	 * @param contentType the content type of the HTTP input message
 	 * @return 要使用的charset
 	 * @since 5.1.18

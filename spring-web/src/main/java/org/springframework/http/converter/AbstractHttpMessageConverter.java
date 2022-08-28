@@ -269,7 +269,7 @@ public abstract class AbstractHttpMessageConverter<T> implements HttpMessageConv
 	 * is invoked without a specified content type parameter.
 	 * <p>By default, this returns the first element of the
 	 * {@link #setSupportedMediaTypes(List) supportedMediaTypes} property, if any.
-	 * Can be overridden in subclasses.
+	 * 可以在子类中重写.
 	 * @param t the type to return the content type for
 	 * @return the content type, or {@code null} if not known
 	 */
@@ -282,7 +282,7 @@ public abstract class AbstractHttpMessageConverter<T> implements HttpMessageConv
 	/**
 	 * Returns the content length for the given type.
 	 * <p>By default, this returns {@code null}, meaning that the content length is unknown.
-	 * Can be overridden in subclasses.
+	 * 可以在子类中重写.
 	 * @param t the type to return the content length for
 	 * @return the content length, or {@code null} if not known
 	 */

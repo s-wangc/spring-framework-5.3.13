@@ -260,7 +260,7 @@ public abstract class AbstractMessageConverter implements SmartMessageConverter 
 	 * message headers or without a content type header.
 	 * <p>By default, this returns the first element of the
 	 * {@link #getSupportedMimeTypes() supportedMimeTypes}, if any.
-	 * Can be overridden in subclasses.
+	 * 可以在子类中重写.
 	 * @param payload the payload being converted to a message
 	 * @return the content type, or {@code null} if not known
 	 */

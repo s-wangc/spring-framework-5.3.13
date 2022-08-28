@@ -191,7 +191,7 @@ public class SingleConnectionFactory extends DelegatingConnectionFactory impleme
 
 	/**
 	 * Prepare the given Connection before it is exposed.
-	 * <p>默认实现为空. Can be overridden in subclasses.
+	 * <p>默认实现为空. 可以在子类中重写.
 	 * @param con the Connection to prepare
 	 */
 	protected void prepareConnection(Connection con) throws ResourceException {

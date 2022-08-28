@@ -197,7 +197,7 @@ public class XsltView extends AbstractUrlBasedView {
 	 * If a {@link #setTransformerFactoryClass "transformerFactoryClass"}
 	 * has been specified explicitly, the default constructor of the
 	 * specified class will be called instead.
-	 * <p>Can be overridden in subclasses.
+	 * <p>可以在子类中重写.
 	 * @param transformerFactoryClass the specified factory class (if any)
 	 * @return the new TransactionFactory instance
 	 * @see #setTransformerFactoryClass

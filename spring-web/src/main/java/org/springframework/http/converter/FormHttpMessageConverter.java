@@ -569,7 +569,7 @@ public class FormHttpMessageConverter implements HttpMessageConverter<MultiValue
 	 * Return the filename of the given multipart part. This value will be used for the
 	 * {@code Content-Disposition} header.
 	 * <p>The default implementation returns {@link Resource#getFilename()} if the part is a
-	 * {@code Resource}, and {@code null} in other cases. Can be overridden in subclasses.
+	 * {@code Resource}, and {@code null} in other cases. 可以在子类中重写.
 	 * @param part the part to determine the file name for
 	 * @return the filename, or {@code null} if not known
 	 */

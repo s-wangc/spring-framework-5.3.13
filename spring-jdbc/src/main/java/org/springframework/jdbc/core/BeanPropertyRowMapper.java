@@ -373,7 +373,7 @@ public class BeanPropertyRowMapper<T> implements RowMapper<T> {
 	 * Initialize the given BeanWrapper to be used for row mapping.
 	 * To be called for each row.
 	 * <p>The default implementation applies the configured {@link ConversionService},
-	 * if any. Can be overridden in subclasses.
+	 * if any. 可以在子类中重写.
 	 * @param bw the BeanWrapper to initialize
 	 * @see #getConversionService()
 	 * @see BeanWrapper#setConversionService

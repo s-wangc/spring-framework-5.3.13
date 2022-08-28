@@ -109,7 +109,7 @@ public class GroovyWebApplicationContext extends AbstractRefreshableWebApplicati
 	/**
 	 * Initialize the bean definition reader used for loading the bean
 	 * definitions of this context. Default implementation is empty.
-	 * <p>Can be overridden in subclasses.
+	 * <p>可以在子类中重写.
 	 * @param beanDefinitionReader the bean definition reader used by this context
 	 */
 	protected void initBeanDefinitionReader(GroovyBeanDefinitionReader beanDefinitionReader) {

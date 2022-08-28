@@ -339,7 +339,7 @@ public class SimpleMappingExceptionResolver extends AbstractHandlerExceptionReso
 	/**
 	 * Return a ModelAndView for the given view name and exception.
 	 * <p>The default implementation adds the specified exception attribute.
-	 * Can be overridden in subclasses.
+	 * 可以在子类中重写.
 	 * @param viewName the name of the error view
 	 * @param ex the exception that got thrown during handler execution
 	 * @return the ModelAndView instance

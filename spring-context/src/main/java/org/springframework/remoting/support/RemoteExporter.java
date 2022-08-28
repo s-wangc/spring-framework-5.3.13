@@ -174,7 +174,7 @@ public abstract class RemoteExporter extends RemotingSupport {
 	 * Return a short name for this exporter.
 	 * Used for tracing of remote invocations.
 	 * <p>Default is the unqualified class name (without package).
-	 * Can be overridden in subclasses.
+	 * 可以在子类中重写.
 	 * @see #getProxyForService
 	 * @see RemoteInvocationTraceInterceptor
 	 * @see org.springframework.util.ClassUtils#getShortName

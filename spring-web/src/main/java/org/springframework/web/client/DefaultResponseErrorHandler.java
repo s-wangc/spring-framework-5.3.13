@@ -66,7 +66,7 @@ public class DefaultResponseErrorHandler implements ResponseErrorHandler {
 	/**
 	 * Template method called from {@link #hasError(ClientHttpResponse)}.
 	 * <p>The default implementation checks {@link HttpStatus#isError()}.
-	 * Can be overridden in subclasses.
+	 * 可以在子类中重写.
 	 * @param statusCode the HTTP status code as enum value
 	 * @return {@code true} if the response indicates an error; {@code false} otherwise
 	 * @see HttpStatus#isError()
@@ -80,7 +80,7 @@ public class DefaultResponseErrorHandler implements ResponseErrorHandler {
 	 * <p>The default implementation checks if the given status code is
 	 * {@link org.springframework.http.HttpStatus.Series#CLIENT_ERROR CLIENT_ERROR} or
 	 * {@link org.springframework.http.HttpStatus.Series#SERVER_ERROR SERVER_ERROR}.
-	 * Can be overridden in subclasses.
+	 * 可以在子类中重写.
 	 * @param unknownStatusCode the HTTP status code as raw value
 	 * @return {@code true} if the response indicates an error; {@code false} otherwise
 	 * @since 4.3.21

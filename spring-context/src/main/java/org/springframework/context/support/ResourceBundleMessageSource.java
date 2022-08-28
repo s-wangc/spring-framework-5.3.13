@@ -351,7 +351,7 @@ public class ResourceBundleMessageSource extends AbstractResourceBasedMessageSou
 	 * <p>As of 4.2, the default implementation checks {@code containsKey}
 	 * before it attempts to call {@code getString} (which would require
 	 * catching {@code MissingResourceException} for key not found).
-	 * <p>Can be overridden in subclasses.
+	 * <p>可以在子类中重写.
 	 * @param bundle the ResourceBundle to perform the lookup in
 	 * @param key the key to look up
 	 * @return the associated value, or {@code null} if none

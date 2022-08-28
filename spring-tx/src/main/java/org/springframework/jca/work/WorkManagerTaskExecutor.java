@@ -202,7 +202,7 @@ public class WorkManagerTaskExecutor extends JndiLocatorSupport
 	 * Obtain a default WorkManager to delegate to.
 	 * Called if no explicit WorkManager or WorkManager JNDI name has been specified.
 	 * <p>The default implementation returns a {@link SimpleTaskWorkManager}.
-	 * Can be overridden in subclasses.
+	 * 可以在子类中重写.
 	 */
 	protected WorkManager getDefaultWorkManager() {
 		return new SimpleTaskWorkManager();

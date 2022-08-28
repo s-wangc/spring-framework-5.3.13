@@ -551,7 +551,7 @@ public abstract class FrameworkServlet extends HttpServletBean implements Applic
 	/**
 	 * Initialize and publish the WebApplicationContext for this servlet.
 	 * <p>Delegates to {@link #createWebApplicationContext} for actual creation
-	 * of the context. Can be overridden in subclasses.
+	 * of the context. 可以在子类中重写.
 	 * @return the WebApplicationContext instance
 	 * @see #FrameworkServlet(WebApplicationContext)
 	 * @see #setContextClass
@@ -639,7 +639,7 @@ public abstract class FrameworkServlet extends HttpServletBean implements Applic
 	 * or a {@link #setContextClass custom context class}, if set.
 	 * <p>This implementation expects custom contexts to implement the
 	 * {@link org.springframework.web.context.ConfigurableWebApplicationContext}
-	 * interface. Can be overridden in subclasses.
+	 * interface. 可以在子类中重写.
 	 * <p>Do not forget to register this servlet instance as application listener on the
 	 * created context (for triggering its {@link #onRefresh callback}, and to call
 	 * {@link org.springframework.context.ConfigurableApplicationContext#refresh()}
@@ -1150,7 +1150,7 @@ public abstract class FrameworkServlet extends HttpServletBean implements Applic
 	/**
 	 * Determine the username for the given request.
 	 * <p>The default implementation takes the name of the UserPrincipal, if any.
-	 * Can be overridden in subclasses.
+	 * 可以在子类中重写.
 	 * @param request current HTTP request
 	 * @return the username, or {@code null} if none found
 	 * @see javax.servlet.http.HttpServletRequest#getUserPrincipal()

@@ -80,7 +80,7 @@ public class ArgumentConvertingMethodInvoker extends MethodInvoker {
 	 * <p>Called if no explicit TypeConverter has been specified.
 	 * The default implementation builds a
 	 * {@link org.springframework.beans.SimpleTypeConverter}.
-	 * Can be overridden in subclasses.
+	 * 可以在子类中重写.
 	 */
 	protected TypeConverter getDefaultTypeConverter() {
 		return new SimpleTypeConverter();

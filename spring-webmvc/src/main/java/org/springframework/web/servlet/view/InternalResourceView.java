@@ -219,7 +219,7 @@ public class InternalResourceView extends AbstractUrlBasedView {
 	 * Obtain the RequestDispatcher to use for the forward/include.
 	 * <p>The default implementation simply calls
 	 * {@link HttpServletRequest#getRequestDispatcher(String)}.
-	 * Can be overridden in subclasses.
+	 * 可以在子类中重写.
 	 * @param request current HTTP request
 	 * @param path the target URL (as returned from {@link #prepareForRendering})
 	 * @return a corresponding RequestDispatcher

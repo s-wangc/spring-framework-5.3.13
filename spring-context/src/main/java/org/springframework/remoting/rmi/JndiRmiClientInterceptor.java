@@ -217,7 +217,7 @@ public class JndiRmiClientInterceptor extends JndiObjectLocator implements Metho
 	 * <p>Called on interceptor initialization if "cacheStub" is "true";
 	 * else called for each invocation by {@link #getStub()}.
 	 * <p>The default implementation retrieves the service from the
-	 * JNDI environment. This can be overridden in subclasses.
+	 * JNDI environment. This 可以在子类中重写.
 	 * @return the RMI stub to store in this interceptor
 	 * @throws RemoteLookupFailureException if RMI stub creation failed
 	 * @see #setCacheStub

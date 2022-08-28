@@ -101,7 +101,7 @@ public abstract class ApplicationObjectSupport implements ApplicationContextAwar
 	/**
 	 * Determine the context class that any context passed to
 	 * {@code setApplicationContext} must be an instance of.
-	 * Can be overridden in subclasses.
+	 * 可以在子类中重写.
 	 * @see #setApplicationContext
 	 */
 	protected Class<?> requiredContextClass() {

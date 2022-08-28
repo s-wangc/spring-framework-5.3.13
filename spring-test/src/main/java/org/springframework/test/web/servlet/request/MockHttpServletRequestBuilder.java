@@ -766,7 +766,7 @@ public class MockHttpServletRequestBuilder
 	/**
 	 * Create a new {@link MockHttpServletRequest} based on the supplied
 	 * {@code ServletContext}.
-	 * <p>Can be overridden in subclasses.
+	 * <p>可以在子类中重写.
 	 */
 	protected MockHttpServletRequest createServletRequest(ServletContext servletContext) {
 		return new MockHttpServletRequest(servletContext);

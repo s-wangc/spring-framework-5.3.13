@@ -69,7 +69,7 @@ public class MessageSourceAccessor {
 	 * Return the default locale to use if no explicit locale has been given.
 	 * <p>The default implementation returns the default locale passed into the
 	 * corresponding constructor, or LocaleContextHolder's locale as fallback.
-	 * Can be overridden in subclasses.
+	 * 可以在子类中重写.
 	 * @see #MessageSourceAccessor(org.springframework.context.MessageSource, java.util.Locale)
 	 * @see org.springframework.context.i18n.LocaleContextHolder#getLocale()
 	 */

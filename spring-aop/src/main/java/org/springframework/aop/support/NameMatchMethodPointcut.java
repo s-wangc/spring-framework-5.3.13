@@ -88,7 +88,7 @@ public class NameMatchMethodPointcut extends StaticMethodMatcherPointcut impleme
 	/**
 	 * Return if the given method name matches the mapped name.
 	 * <p>The default implementation checks for "xxx*", "*xxx" and "*xxx*" matches,
-	 * as well as direct equality. Can be overridden in subclasses.
+	 * as well as direct equality. 可以在子类中重写.
 	 * @param methodName class的method名称
 	 * @param mappedName the name in the descriptor
 	 * @return if the names match

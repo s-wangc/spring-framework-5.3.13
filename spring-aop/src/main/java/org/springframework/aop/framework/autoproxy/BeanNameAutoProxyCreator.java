@@ -140,7 +140,7 @@ public class BeanNameAutoProxyCreator extends AbstractAutoProxyCreator {
 	/**
 	 * Determine if the given bean name matches the mapped name.
 	 * <p>The default implementation checks for "xxx*", "*xxx" and "*xxx*" matches,
-	 * as well as direct equality. Can be overridden in subclasses.
+	 * as well as direct equality. 可以在子类中重写.
 	 * @param beanName the bean name to check
 	 * @param mappedName the name in the configured list of names
 	 * @return if the names match

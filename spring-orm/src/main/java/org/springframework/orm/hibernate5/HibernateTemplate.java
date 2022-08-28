@@ -1035,7 +1035,7 @@ public class HibernateTemplate implements HibernateOperations, InitializingBean 
 	/**
 	 * Check whether write operations are allowed on the given Session.
 	 * <p>Default implementation throws an InvalidDataAccessApiUsageException in
-	 * case of {@code FlushMode.MANUAL}. Can be overridden in subclasses.
+	 * case of {@code FlushMode.MANUAL}. 可以在子类中重写.
 	 * @param session current Hibernate Session
 	 * @throws InvalidDataAccessApiUsageException if write operations are not allowed
 	 * @see #setCheckWriteOperations

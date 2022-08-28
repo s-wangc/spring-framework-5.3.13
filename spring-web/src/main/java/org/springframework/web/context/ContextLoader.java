@@ -321,7 +321,7 @@ public class ContextLoader {
 	 * default context class or a custom context class if specified.
 	 * <p>This implementation expects custom contexts to implement the
 	 * {@link ConfigurableWebApplicationContext} interface.
-	 * Can be overridden in subclasses.
+	 * 可以在子类中重写.
 	 * <p>In addition, {@link #customizeContext} gets called prior to refreshing the
 	 * context, allowing subclasses to perform custom modifications to the context.
 	 * @param sc current servlet context

@@ -205,7 +205,7 @@ public class CommonsMultipartResolver extends CommonsFileUploadSupport
 
 	/**
 	 * Determine the encoding for the given request.
-	 * Can be overridden in subclasses.
+	 * 可以在子类中重写.
 	 * <p>The default implementation checks the request encoding,
 	 * falling back to the default encoding specified for this resolver.
 	 * @param request current HTTP request

@@ -337,7 +337,7 @@ public class PagedListHolder<E> implements Serializable {
 	 * Actually perform sorting of the given source list, according to
 	 * the given sort definition.
 	 * <p>The default implementation uses Spring's PropertyComparator.
-	 * Can be overridden in subclasses.
+	 * 可以在子类中重写.
 	 * @see PropertyComparator#sort(java.util.List, SortDefinition)
 	 */
 	protected void doSort(List<E> source, SortDefinition sort) {

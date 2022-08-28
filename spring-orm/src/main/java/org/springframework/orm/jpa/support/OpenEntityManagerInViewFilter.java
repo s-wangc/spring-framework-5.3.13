@@ -240,7 +240,7 @@ public class OpenEntityManagerInViewFilter extends OncePerRequestFilter {
 
 	/**
 	 * Create a JPA EntityManager to be bound to a request.
-	 * <p>Can be overridden in subclasses.
+	 * <p>可以在子类中重写.
 	 * @param emf 要使用的EntityManagerFactory
 	 * @see javax.persistence.EntityManagerFactory#createEntityManager()
 	 */

@@ -250,7 +250,7 @@ public class MBeanRegistrationSupport {
 	/**
 	 * Called when an MBean is registered under the given {@link ObjectName}. Allows
 	 * subclasses to perform additional processing when an MBean is registered.
-	 * <p>默认实现为空. Can be overridden in subclasses.
+	 * <p>默认实现为空. 可以在子类中重写.
 	 * @param objectName the actual {@link ObjectName} that the MBean was registered with
 	 */
 	protected void onRegister(ObjectName objectName) {
@@ -259,7 +259,7 @@ public class MBeanRegistrationSupport {
 	/**
 	 * Called when an MBean is unregistered under the given {@link ObjectName}. Allows
 	 * subclasses to perform additional processing when an MBean is unregistered.
-	 * <p>默认实现为空. Can be overridden in subclasses.
+	 * <p>默认实现为空. 可以在子类中重写.
 	 * @param objectName the {@link ObjectName} that the MBean was registered with
 	 */
 	protected void onUnregister(ObjectName objectName) {

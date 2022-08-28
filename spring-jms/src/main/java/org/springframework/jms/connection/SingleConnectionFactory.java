@@ -414,7 +414,7 @@ public class SingleConnectionFactory implements ConnectionFactory, QueueConnecti
 	/**
 	 * Prepare the given Connection before it is exposed.
 	 * <p>The default implementation applies ExceptionListener and client id.
-	 * Can be overridden in subclasses.
+	 * 可以在子类中重写.
 	 * @param con the Connection to prepare
 	 * @throws JMSException if thrown by JMS API methods
 	 * @see #setExceptionListener

@@ -906,7 +906,7 @@ public class DefaultMessageListenerContainer extends AbstractPollingMessageListe
 	 * Called for every such exception in every concurrent listener.
 	 * <p>The default implementation logs the exception at warn level
 	 * if not recovered yet, and at debug level if already recovered.
-	 * Can be overridden in subclasses.
+	 * 可以在子类中重写.
 	 * @param ex the exception to handle
 	 * @param alreadyRecovered whether a previously executing listener
 	 * already recovered from the present listener setup failure

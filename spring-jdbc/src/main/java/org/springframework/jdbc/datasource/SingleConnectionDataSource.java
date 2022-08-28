@@ -244,7 +244,7 @@ public class SingleConnectionDataSource extends DriverManagerDataSource implemen
 	/**
 	 * Prepare the given Connection before it is exposed.
 	 * <p>The default implementation applies the auto-commit flag, if necessary.
-	 * Can be overridden in subclasses.
+	 * 可以在子类中重写.
 	 * @param con the Connection to prepare
 	 * @see #setAutoCommit
 	 */

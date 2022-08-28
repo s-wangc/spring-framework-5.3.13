@@ -208,7 +208,7 @@ public abstract class AbstractCachingViewResolver extends WebApplicationObjectSu
 	/**
 	 * Return the cache key for the given view name and the given locale.
 	 * <p>Default is a String consisting of view name and locale suffix.
-	 * Can be overridden in subclasses.
+	 * 可以在子类中重写.
 	 * <p>Needs to respect the locale in general, as a different locale can
 	 * lead to a different view resource.
 	 */

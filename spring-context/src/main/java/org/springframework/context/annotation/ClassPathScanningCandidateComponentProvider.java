@@ -516,7 +516,7 @@ public class ClassPathScanningCandidateComponentProvider implements EnvironmentC
 	 * Determine whether the given bean definition qualifies as candidate.
 	 * <p>The default implementation checks whether the class is not an interface
 	 * and not dependent on an enclosing class.
-	 * <p>Can be overridden in subclasses.
+	 * <p>可以在子类中重写.
 	 * @param beanDefinition the bean definition to check
 	 * @return whether the bean definition qualifies as a candidate component
 	 */

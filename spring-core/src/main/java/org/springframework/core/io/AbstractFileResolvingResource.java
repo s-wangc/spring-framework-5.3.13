@@ -284,7 +284,7 @@ public abstract class AbstractFileResolvingResource extends AbstractResource {
 	 * {@link #exists()}, {@link #contentLength()} or {@link #lastModified()} call.
 	 * <p>Calls {@link ResourceUtils#useCachesIfNecessary(URLConnection)} and
 	 * delegates to {@link #customizeConnection(HttpURLConnection)} if possible.
-	 * Can be overridden in subclasses.
+	 * 可以在子类中重写.
 	 * @param con the URLConnection to customize
 	 * @throws IOException if thrown from URLConnection methods
 	 */
@@ -298,7 +298,7 @@ public abstract class AbstractFileResolvingResource extends AbstractResource {
 	/**
 	 * Customize the given {@link HttpURLConnection}, obtained in the course of an
 	 * {@link #exists()}, {@link #contentLength()} or {@link #lastModified()} call.
-	 * <p>Sets request method "HEAD" by default. Can be overridden in subclasses.
+	 * <p>Sets request method "HEAD" by default. 可以在子类中重写.
 	 * @param con the HttpURLConnection to customize
 	 * @throws IOException if thrown from HttpURLConnection methods
 	 */

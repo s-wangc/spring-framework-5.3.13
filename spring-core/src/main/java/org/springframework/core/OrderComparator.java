@@ -119,7 +119,7 @@ public class OrderComparator implements Comparator<Object> {
 	/**
 	 * Determine the order value for the given object.
 	 * <p>The default implementation checks against the {@link Ordered} interface
-	 * through delegating to {@link #findOrder}. Can be overridden in subclasses.
+	 * through delegating to {@link #findOrder}. 可以在子类中重写.
 	 * @param obj the object to check
 	 * @return the order value, or {@code Ordered.LOWEST_PRECEDENCE} as fallback
 	 */
@@ -136,7 +136,7 @@ public class OrderComparator implements Comparator<Object> {
 	/**
 	 * Find an order value indicated by the given object.
 	 * <p>The default implementation checks against the {@link Ordered} interface.
-	 * Can be overridden in subclasses.
+	 * 可以在子类中重写.
 	 * @param obj the object to check
 	 * @return the order value, or {@code null} if none found
 	 */
