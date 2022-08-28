@@ -134,7 +134,7 @@ public abstract class TimerManagerAccessor extends JndiLocatorSupport
 
 
 	//---------------------------------------------------------------------
-	// Implementation of Lifecycle interface
+	// Lifecycle接口的实现
 	//---------------------------------------------------------------------
 
 	/**
@@ -173,7 +173,7 @@ public abstract class TimerManagerAccessor extends JndiLocatorSupport
 
 
 	//---------------------------------------------------------------------
-	// Implementation of DisposableBean interface
+	// DisposableBean接口的实现
 	//---------------------------------------------------------------------
 
 	/**

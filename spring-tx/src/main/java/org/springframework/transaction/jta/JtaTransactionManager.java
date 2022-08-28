@@ -1198,7 +1198,7 @@ public class JtaTransactionManager extends AbstractPlatformTransactionManager
 
 
 	//---------------------------------------------------------------------
-	// Implementation of TransactionFactory interface
+	// TransactionFactory接口的实现
 	//---------------------------------------------------------------------
 
 	@Override

@@ -256,7 +256,7 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 
 
 	//---------------------------------------------------------------------
-	// Implementation of ConfigurableEnvironment interface
+	// ConfigurableEnvironment接口的实现
 	//---------------------------------------------------------------------
 
 	@Override
@@ -535,7 +535,7 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 
 
 	//---------------------------------------------------------------------
-	// Implementation of ConfigurablePropertyResolver interface
+	// ConfigurablePropertyResolver接口的实现
 	//---------------------------------------------------------------------
 
 	@Override
@@ -580,7 +580,7 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 
 
 	//---------------------------------------------------------------------
-	// Implementation of PropertyResolver interface
+	// PropertyResolver接口的实现
 	//---------------------------------------------------------------------
 
 	@Override

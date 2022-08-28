@@ -106,7 +106,7 @@ class StubWebApplicationContext implements WebApplicationContext {
 
 
 	//---------------------------------------------------------------------
-	// Implementation of ApplicationContext interface
+	// ApplicationContext接口的实现
 	//---------------------------------------------------------------------
 
 	@Override
@@ -154,7 +154,7 @@ class StubWebApplicationContext implements WebApplicationContext {
 
 
 	//---------------------------------------------------------------------
-	// Implementation of BeanFactory interface
+	// BeanFactory接口的实现
 	//---------------------------------------------------------------------
 
 	@Override
@@ -234,7 +234,7 @@ class StubWebApplicationContext implements WebApplicationContext {
 
 
 	//---------------------------------------------------------------------
-	// Implementation of ListableBeanFactory interface
+	// ListableBeanFactory接口的实现
 	//---------------------------------------------------------------------
 
 	@Override
@@ -316,7 +316,7 @@ class StubWebApplicationContext implements WebApplicationContext {
 
 
 	//---------------------------------------------------------------------
-	// Implementation of HierarchicalBeanFactory interface
+	// HierarchicalBeanFactory接口的实现
 	//---------------------------------------------------------------------
 
 	@Override
@@ -331,7 +331,7 @@ class StubWebApplicationContext implements WebApplicationContext {
 
 
 	//---------------------------------------------------------------------
-	// Implementation of MessageSource interface
+	// MessageSource接口的实现
 	//---------------------------------------------------------------------
 
 	@Override
@@ -351,7 +351,7 @@ class StubWebApplicationContext implements WebApplicationContext {
 
 
 	//---------------------------------------------------------------------
-	// Implementation of ResourceLoader interface
+	// ResourceLoader接口的实现
 	//---------------------------------------------------------------------
 
 	@Override

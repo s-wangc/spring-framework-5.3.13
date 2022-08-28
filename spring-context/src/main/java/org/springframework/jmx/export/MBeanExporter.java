@@ -456,7 +456,7 @@ public class MBeanExporter extends MBeanRegistrationSupport implements MBeanExpo
 
 
 	//---------------------------------------------------------------------
-	// Implementation of MBeanExportOperations interface
+	// MBeanExportOperations接口的实现
 	//---------------------------------------------------------------------
 
 	@Override

@@ -80,7 +80,7 @@ public class TimerManagerFactoryBean extends TimerManagerAccessor
 
 
 	//---------------------------------------------------------------------
-	// Implementation of InitializingBean interface
+	// InitializingBean接口的实现
 	//---------------------------------------------------------------------
 
 	@Override
@@ -112,7 +112,7 @@ public class TimerManagerFactoryBean extends TimerManagerAccessor
 
 
 	//---------------------------------------------------------------------
-	// Implementation of FactoryBean interface
+	// FactoryBean接口的实现
 	//---------------------------------------------------------------------
 
 	@Override
@@ -134,7 +134,7 @@ public class TimerManagerFactoryBean extends TimerManagerAccessor
 
 
 	//---------------------------------------------------------------------
-	// Implementation of DisposableBean interface
+	// DisposableBean接口的实现
 	//---------------------------------------------------------------------
 
 	/**

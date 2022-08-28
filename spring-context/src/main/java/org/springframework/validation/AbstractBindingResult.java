@@ -253,7 +253,7 @@ public abstract class AbstractBindingResult extends AbstractErrors implements Bi
 
 
 	//---------------------------------------------------------------------
-	// Implementation of BindingResult interface
+	// BindingResult接口的实现
 	//---------------------------------------------------------------------
 
 	/**

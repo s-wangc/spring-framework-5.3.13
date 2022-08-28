@@ -485,7 +485,7 @@ public class SchedulerFactoryBean extends SchedulerAccessor implements FactoryBe
 
 
 	//---------------------------------------------------------------------
-	// Implementation of InitializingBean interface
+	// InitializingBean接口的实现
 	//---------------------------------------------------------------------
 
 	@Override
@@ -763,7 +763,7 @@ public class SchedulerFactoryBean extends SchedulerAccessor implements FactoryBe
 
 
 	//---------------------------------------------------------------------
-	// Implementation of FactoryBean interface
+	// FactoryBean接口的实现
 	//---------------------------------------------------------------------
 
 	@Override
@@ -790,7 +790,7 @@ public class SchedulerFactoryBean extends SchedulerAccessor implements FactoryBe
 
 
 	//---------------------------------------------------------------------
-	// Implementation of SmartLifecycle interface
+	// SmartLifecycle接口的实现
 	//---------------------------------------------------------------------
 
 	@Override
@@ -832,7 +832,7 @@ public class SchedulerFactoryBean extends SchedulerAccessor implements FactoryBe
 
 
 	//---------------------------------------------------------------------
-	// Implementation of DisposableBean interface
+	// DisposableBean接口的实现
 	//---------------------------------------------------------------------
 
 	/**
