@@ -39,7 +39,7 @@ import org.springframework.util.Assert;
 public interface BindMarkersFactory {
 
 	/**
-	 * Create a new {@link BindMarkers} instance.
+	 * 创建一个新的{@link BindMarkers}实例.
 	 */
 	BindMarkers create();
 

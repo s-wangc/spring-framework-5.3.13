@@ -39,7 +39,7 @@ class CaptureVariablePathElement extends PathElement {
 
 
 	/**
-	 * Create a new {@link CaptureVariablePathElement} instance.
+	 * 创建一个新的{@link CaptureVariablePathElement}实例.
 	 * @param pos the position in the pattern of this capture element
 	 * @param captureDescriptor is of the form {AAAAA[:pattern]}
 	 */

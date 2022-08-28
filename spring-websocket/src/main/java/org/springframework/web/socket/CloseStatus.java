@@ -155,7 +155,7 @@ public final class CloseStatus implements Serializable {
 
 
 	/**
-	 * Create a new {@link CloseStatus} instance.
+	 * 创建一个新的{@link CloseStatus}实例.
 	 * @param code the status code
 	 */
 	public CloseStatus(int code) {
@@ -163,7 +163,7 @@ public final class CloseStatus implements Serializable {
 	}
 
 	/**
-	 * Create a new {@link CloseStatus} instance.
+	 * 创建一个新的{@link CloseStatus}实例.
 	 * @param code the status code
 	 * @param reason the reason
 	 */

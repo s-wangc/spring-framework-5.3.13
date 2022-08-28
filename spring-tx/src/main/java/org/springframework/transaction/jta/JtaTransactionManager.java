@@ -195,7 +195,7 @@ public class JtaTransactionManager extends AbstractPlatformTransactionManager
 	}
 
 	/**
-	 * Create a new JtaTransactionManager instance.
+	 * 创建一个新的JtaTransactionManager实例.
 	 * @param userTransaction the JTA UserTransaction to use as direct reference
 	 */
 	public JtaTransactionManager(UserTransaction userTransaction) {
@@ -205,7 +205,7 @@ public class JtaTransactionManager extends AbstractPlatformTransactionManager
 	}
 
 	/**
-	 * Create a new JtaTransactionManager instance.
+	 * 创建一个新的JtaTransactionManager实例.
 	 * @param userTransaction the JTA UserTransaction to use as direct reference
 	 * @param transactionManager the JTA TransactionManager to use as direct reference
 	 */
@@ -218,7 +218,7 @@ public class JtaTransactionManager extends AbstractPlatformTransactionManager
 	}
 
 	/**
-	 * Create a new JtaTransactionManager instance.
+	 * 创建一个新的JtaTransactionManager实例.
 	 * @param transactionManager the JTA TransactionManager to use as direct reference
 	 */
 	public JtaTransactionManager(TransactionManager transactionManager) {

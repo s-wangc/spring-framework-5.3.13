@@ -34,7 +34,7 @@ public class AspectEntry implements ParseState.Entry {
 
 
 	/**
-	 * Create a new {@code AspectEntry} instance.
+	 * 创建一个新的{@code AspectEntry}实例.
 	 * @param id the id of the aspect element
 	 * @param ref the bean name referenced by this aspect element
 	 */

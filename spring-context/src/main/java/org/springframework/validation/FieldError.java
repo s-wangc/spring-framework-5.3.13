@@ -44,7 +44,7 @@ public class FieldError extends ObjectError {
 
 
 	/**
-	 * Create a new FieldError instance.
+	 * 创建一个新的FieldError实例.
 	 * @param objectName the name of the affected object
 	 * @param field the affected field of the object
 	 * @param defaultMessage the default message to be used to resolve this message
@@ -54,7 +54,7 @@ public class FieldError extends ObjectError {
 	}
 
 	/**
-	 * Create a new FieldError instance.
+	 * 创建一个新的FieldError实例.
 	 * @param objectName the name of the affected object
 	 * @param field the affected field of the object
 	 * @param rejectedValue the rejected field value

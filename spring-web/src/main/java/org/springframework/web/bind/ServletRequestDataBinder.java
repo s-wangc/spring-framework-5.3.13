@@ -75,7 +75,7 @@ public class ServletRequestDataBinder extends WebDataBinder {
 	}
 
 	/**
-	 * Create a new ServletRequestDataBinder instance.
+	 * 创建一个新的ServletRequestDataBinder实例.
 	 * @param target the target object to bind onto (or {@code null}
 	 * if the binder is just used to convert a plain parameter value)
 	 * @param objectName the name of the target object

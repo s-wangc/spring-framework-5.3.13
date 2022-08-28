@@ -62,7 +62,7 @@ public class StandardServletEnvironment extends StandardEnvironment implements C
 
 
 	/**
-	 * Create a new {@code StandardServletEnvironment} instance.
+	 * 创建一个新的{@code StandardServletEnvironment}实例.
 	 */
 	public StandardServletEnvironment() {
 	}

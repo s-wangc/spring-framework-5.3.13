@@ -37,7 +37,7 @@ class CaptureTheRestPathElement extends PathElement {
 
 
 	/**
-	 * Create a new {@link CaptureTheRestPathElement} instance.
+	 * 创建一个新的{@link CaptureTheRestPathElement}实例.
 	 * @param pos position of the path element within the path pattern text
 	 * @param captureDescriptor a character array containing contents like '{' '*' 'a' 'b' '}'
 	 * @param separator the separator used in the path pattern

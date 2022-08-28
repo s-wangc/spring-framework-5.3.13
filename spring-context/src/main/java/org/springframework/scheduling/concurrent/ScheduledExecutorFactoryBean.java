@@ -174,7 +174,7 @@ public class ScheduledExecutorFactoryBean extends ExecutorConfigurationSupport
 	}
 
 	/**
-	 * Create a new {@link ScheduledExecutorService} instance.
+	 * 创建一个新的{@link ScheduledExecutorService}实例.
 	 * <p>The default implementation creates a {@link ScheduledThreadPoolExecutor}.
 	 * Can be overridden in subclasses to provide custom {@link ScheduledExecutorService} instances.
 	 * @param poolSize the specified pool size

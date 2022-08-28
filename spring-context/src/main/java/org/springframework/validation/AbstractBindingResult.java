@@ -60,7 +60,7 @@ public abstract class AbstractBindingResult extends AbstractErrors implements Bi
 
 
 	/**
-	 * Create a new AbstractBindingResult instance.
+	 * 创建一个新的AbstractBindingResult实例.
 	 * @param objectName the name of the target object
 	 * @see DefaultMessageCodesResolver
 	 */

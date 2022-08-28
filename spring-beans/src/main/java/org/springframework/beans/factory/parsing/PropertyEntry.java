@@ -30,7 +30,7 @@ public class PropertyEntry implements ParseState.Entry {
 
 
 	/**
-	 * Create a new {@code PropertyEntry} instance.
+	 * 创建一个新的{@code PropertyEntry}实例.
 	 * @param name the name of the JavaBean property represented by this instance
 	 */
 	public PropertyEntry(String name) {

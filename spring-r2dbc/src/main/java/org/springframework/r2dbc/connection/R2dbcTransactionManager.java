@@ -88,14 +88,14 @@ public class R2dbcTransactionManager extends AbstractReactiveTransactionManager 
 
 
 	/**
-	 * Create a new {@code R2dbcTransactionManager} instance.
+	 * 创建一个新的{@code R2dbcTransactionManager}实例.
 	 * A ConnectionFactory has to be set to be able to use it.
 	 * @see #setConnectionFactory
 	 */
 	public R2dbcTransactionManager() {}
 
 	/**
-	 * Create a new {@code R2dbcTransactionManager} instance.
+	 * 创建一个新的{@code R2dbcTransactionManager}实例.
 	 * @param connectionFactory the R2DBC ConnectionFactory to manage transactions for
 	 */
 	public R2dbcTransactionManager(ConnectionFactory connectionFactory) {

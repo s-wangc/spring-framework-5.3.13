@@ -74,7 +74,7 @@ public class CciLocalTransactionManager extends AbstractPlatformTransactionManag
 
 
 	/**
-	 * Create a new CciLocalTransactionManager instance.
+	 * 创建一个新的CciLocalTransactionManager实例.
 	 * A ConnectionFactory has to be set to be able to use it.
 	 * @see #setConnectionFactory
 	 */
@@ -82,7 +82,7 @@ public class CciLocalTransactionManager extends AbstractPlatformTransactionManag
 	}
 
 	/**
-	 * Create a new CciLocalTransactionManager instance.
+	 * 创建一个新的CciLocalTransactionManager实例.
 	 * @param connectionFactory the CCI ConnectionFactory to manage local transactions for
 	 */
 	public CciLocalTransactionManager(ConnectionFactory connectionFactory) {

@@ -64,7 +64,7 @@ public class PropertyValue extends BeanMetadataAttributeAccessor implements Seri
 
 
 	/**
-	 * Create a new PropertyValue instance.
+	 * 创建一个新的PropertyValue实例.
 	 * @param name the name of the property (never {@code null})
 	 * @param value the value of the property (possibly before type conversion)
 	 */

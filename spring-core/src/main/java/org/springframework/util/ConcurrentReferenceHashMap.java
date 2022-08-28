@@ -103,14 +103,14 @@ public class ConcurrentReferenceHashMap<K, V> extends AbstractMap<K, V> implemen
 
 
 	/**
-	 * Create a new {@code ConcurrentReferenceHashMap} instance.
+	 * 创建一个新的{@code ConcurrentReferenceHashMap}实例.
 	 */
 	public ConcurrentReferenceHashMap() {
 		this(DEFAULT_INITIAL_CAPACITY, DEFAULT_LOAD_FACTOR, DEFAULT_CONCURRENCY_LEVEL, DEFAULT_REFERENCE_TYPE);
 	}
 
 	/**
-	 * Create a new {@code ConcurrentReferenceHashMap} instance.
+	 * 创建一个新的{@code ConcurrentReferenceHashMap}实例.
 	 * @param initialCapacity the initial capacity of the map
 	 */
 	public ConcurrentReferenceHashMap(int initialCapacity) {
@@ -118,7 +118,7 @@ public class ConcurrentReferenceHashMap<K, V> extends AbstractMap<K, V> implemen
 	}
 
 	/**
-	 * Create a new {@code ConcurrentReferenceHashMap} instance.
+	 * 创建一个新的{@code ConcurrentReferenceHashMap}实例.
 	 * @param initialCapacity the initial capacity of the map
 	 * @param loadFactor the load factor. When the average number of references per table
 	 * exceeds this value resize will be attempted
@@ -128,7 +128,7 @@ public class ConcurrentReferenceHashMap<K, V> extends AbstractMap<K, V> implemen
 	}
 
 	/**
-	 * Create a new {@code ConcurrentReferenceHashMap} instance.
+	 * 创建一个新的{@code ConcurrentReferenceHashMap}实例.
 	 * @param initialCapacity the initial capacity of the map
 	 * @param concurrencyLevel the expected number of threads that will concurrently
 	 * write to the map
@@ -138,7 +138,7 @@ public class ConcurrentReferenceHashMap<K, V> extends AbstractMap<K, V> implemen
 	}
 
 	/**
-	 * Create a new {@code ConcurrentReferenceHashMap} instance.
+	 * 创建一个新的{@code ConcurrentReferenceHashMap}实例.
 	 * @param initialCapacity the initial capacity of the map
 	 * @param referenceType the reference type used for entries (soft or weak)
 	 */
@@ -147,7 +147,7 @@ public class ConcurrentReferenceHashMap<K, V> extends AbstractMap<K, V> implemen
 	}
 
 	/**
-	 * Create a new {@code ConcurrentReferenceHashMap} instance.
+	 * 创建一个新的{@code ConcurrentReferenceHashMap}实例.
 	 * @param initialCapacity the initial capacity of the map
 	 * @param loadFactor the load factor. When the average number of references per
 	 * table exceeds this value, resize will be attempted.
@@ -159,7 +159,7 @@ public class ConcurrentReferenceHashMap<K, V> extends AbstractMap<K, V> implemen
 	}
 
 	/**
-	 * Create a new {@code ConcurrentReferenceHashMap} instance.
+	 * 创建一个新的{@code ConcurrentReferenceHashMap}实例.
 	 * @param initialCapacity the initial capacity of the map
 	 * @param loadFactor the load factor. When the average number of references per
 	 * table exceeds this value, resize will be attempted.

@@ -68,7 +68,7 @@ public class ScopedProxyFactoryBean extends ProxyConfig
 
 
 	/**
-	 * Create a new ScopedProxyFactoryBean instance.
+	 * 创建一个新的ScopedProxyFactoryBean实例.
 	 */
 	public ScopedProxyFactoryBean() {
 		setProxyTargetClass(true);

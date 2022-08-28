@@ -66,7 +66,7 @@ public class DefaultTransactionStatus extends AbstractTransactionStatus {
 
 
 	/**
-	 * Create a new {@code DefaultTransactionStatus} instance.
+	 * 创建一个新的{@code DefaultTransactionStatus}实例.
 	 * @param transaction underlying transaction object that can hold state
 	 * for the internal transaction implementation
 	 * @param newTransaction if the transaction is new, otherwise participating

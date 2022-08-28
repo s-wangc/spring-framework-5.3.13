@@ -57,7 +57,7 @@ public class CharacterEditor extends PropertyEditorSupport {
 
 
 	/**
-	 * Create a new CharacterEditor instance.
+	 * 创建一个新的CharacterEditor实例.
 	 * <p>The "allowEmpty" parameter controls whether an empty String is to be
 	 * allowed in parsing, i.e. be interpreted as the {@code null} value when
 	 * {@link #setAsText(String) text is being converted}. If {@code false},

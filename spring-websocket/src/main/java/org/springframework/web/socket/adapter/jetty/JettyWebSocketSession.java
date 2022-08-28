@@ -84,7 +84,7 @@ public class JettyWebSocketSession extends AbstractWebSocketSession<Session> {
 
 
 	/**
-	 * Create a new {@link JettyWebSocketSession} instance.
+	 * 创建一个新的{@link JettyWebSocketSession}实例.
 	 * @param attributes the attributes from the HTTP handshake to associate with the WebSocket session
 	 */
 	public JettyWebSocketSession(Map<String, Object> attributes) {

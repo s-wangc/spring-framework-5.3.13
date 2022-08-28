@@ -37,7 +37,7 @@ import org.springframework.web.server.ServerWebExchange;
 public class ExpressionValueMethodArgumentResolver extends AbstractNamedValueSyncArgumentResolver {
 
 	/**
-	 * Create a new {@link ExpressionValueMethodArgumentResolver} instance.
+	 * 创建一个新的{@link ExpressionValueMethodArgumentResolver}实例.
 	 * @param factory a bean factory to use for resolving {@code ${...}}
 	 * placeholder and {@code #{...}} SpEL expressions in default values;
 	 * or {@code null} if default values are not expected to contain expressions

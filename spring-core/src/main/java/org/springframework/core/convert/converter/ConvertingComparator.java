@@ -43,7 +43,7 @@ public class ConvertingComparator<S, T> implements Comparator<S> {
 
 
 	/**
-	 * Create a new {@link ConvertingComparator} instance.
+	 * 创建一个新的{@link ConvertingComparator}实例.
 	 * @param converter the converter
 	 */
 	public ConvertingComparator(Converter<S, T> converter) {
@@ -51,7 +51,7 @@ public class ConvertingComparator<S, T> implements Comparator<S> {
 	}
 
 	/**
-	 * Create a new {@link ConvertingComparator} instance.
+	 * 创建一个新的{@link ConvertingComparator}实例.
 	 * @param comparator the underlying comparator used to compare the converted values
 	 * @param converter the converter
 	 */
@@ -63,7 +63,7 @@ public class ConvertingComparator<S, T> implements Comparator<S> {
 	}
 
 	/**
-	 * Create a new {@code ConvertingComparator} instance.
+	 * 创建一个新的{@code ConvertingComparator}实例.
 	 * @param comparator the underlying comparator
 	 * @param conversionService the conversion service
 	 * @param targetType the target type

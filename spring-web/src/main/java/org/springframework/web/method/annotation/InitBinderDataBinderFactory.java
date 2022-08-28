@@ -42,7 +42,7 @@ public class InitBinderDataBinderFactory extends DefaultDataBinderFactory {
 
 
 	/**
-	 * Create a new InitBinderDataBinderFactory instance.
+	 * 创建一个新的InitBinderDataBinderFactory实例.
 	 * @param binderMethods {@code @InitBinder} methods
 	 * @param initializer for global data binder initialization
 	 */

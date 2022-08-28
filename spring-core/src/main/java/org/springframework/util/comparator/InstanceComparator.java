@@ -42,7 +42,7 @@ public class InstanceComparator<T> implements Comparator<T> {
 
 
 	/**
-	 * Create a new {@link InstanceComparator} instance.
+	 * 创建一个新的{@link InstanceComparator}实例.
 	 * @param instanceOrder the ordered list of classes that should be used when comparing
 	 * objects. Classes earlier in the list will be given a higher priority.
 	 */

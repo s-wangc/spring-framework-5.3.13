@@ -60,7 +60,7 @@ public class GenericReactiveTransaction implements ReactiveTransaction {
 
 
 	/**
-	 * Create a new {@code DefaultReactiveTransactionStatus} instance.
+	 * 创建一个新的{@code DefaultReactiveTransactionStatus}实例.
 	 * @param transaction underlying transaction object that can hold state
 	 * for the internal transaction implementation
 	 * @param newTransaction if the transaction is new, otherwise participating

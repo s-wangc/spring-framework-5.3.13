@@ -30,7 +30,7 @@ public class QualifierEntry implements ParseState.Entry {
 
 
 	/**
-	 * Create a new {@code QualifierEntry} instance.
+	 * 创建一个新的{@code QualifierEntry}实例.
 	 * @param typeName the name of the qualifier type
 	 */
 	public QualifierEntry(String typeName) {

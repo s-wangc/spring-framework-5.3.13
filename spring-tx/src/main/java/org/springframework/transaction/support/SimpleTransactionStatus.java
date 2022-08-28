@@ -46,7 +46,7 @@ public class SimpleTransactionStatus extends AbstractTransactionStatus {
 	}
 
 	/**
-	 * Create a new {@code SimpleTransactionStatus} instance.
+	 * 创建一个新的{@code SimpleTransactionStatus}实例.
 	 * @param newTransaction whether to indicate a new transaction
 	 */
 	public SimpleTransactionStatus(boolean newTransaction) {

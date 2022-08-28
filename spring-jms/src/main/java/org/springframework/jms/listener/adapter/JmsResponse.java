@@ -61,7 +61,7 @@ public class JmsResponse<T> {
 
 
 	/**
-	 * Create a new {@link JmsResponse} instance.
+	 * 创建一个新的{@link JmsResponse}实例.
 	 * @param response the content of the result
 	 * @param destination the destination
 	 */

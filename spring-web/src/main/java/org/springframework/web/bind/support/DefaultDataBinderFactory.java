@@ -34,7 +34,7 @@ public class DefaultDataBinderFactory implements WebDataBinderFactory {
 
 
 	/**
-	 * Create a new {@code DefaultDataBinderFactory} instance.
+	 * 创建一个新的{@code DefaultDataBinderFactory}实例.
 	 * @param initializer for global data binder initialization
 	 * (or {@code null} if none)
 	 */

@@ -113,13 +113,13 @@ public class HibernateTemplate implements HibernateOperations, InitializingBean 
 
 
 	/**
-	 * Create a new HibernateTemplate instance.
+	 * 创建一个新的HibernateTemplate实例.
 	 */
 	public HibernateTemplate() {
 	}
 
 	/**
-	 * Create a new HibernateTemplate instance.
+	 * 创建一个新的HibernateTemplate实例.
 	 * @param sessionFactory the SessionFactory to create Sessions with
 	 */
 	public HibernateTemplate(SessionFactory sessionFactory) {

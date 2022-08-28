@@ -134,7 +134,7 @@ public class JpaTransactionManager extends AbstractPlatformTransactionManager
 
 
 	/**
-	 * Create a new JpaTransactionManager instance.
+	 * 创建一个新的JpaTransactionManager实例.
 	 * <p>An EntityManagerFactory has to be set to be able to use it.
 	 * @see #setEntityManagerFactory
 	 */
@@ -143,7 +143,7 @@ public class JpaTransactionManager extends AbstractPlatformTransactionManager
 	}
 
 	/**
-	 * Create a new JpaTransactionManager instance.
+	 * 创建一个新的JpaTransactionManager实例.
 	 * @param emf the EntityManagerFactory to manage transactions for
 	 */
 	public JpaTransactionManager(EntityManagerFactory emf) {

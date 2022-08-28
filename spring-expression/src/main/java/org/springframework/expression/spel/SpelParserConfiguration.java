@@ -63,7 +63,7 @@ public class SpelParserConfiguration {
 	}
 
 	/**
-	 * Create a new {@code SpelParserConfiguration} instance.
+	 * 创建一个新的{@code SpelParserConfiguration}实例.
 	 * @param compilerMode the compiler mode for the parser
 	 * @param compilerClassLoader the ClassLoader to use as the basis for expression compilation
 	 */
@@ -72,7 +72,7 @@ public class SpelParserConfiguration {
 	}
 
 	/**
-	 * Create a new {@code SpelParserConfiguration} instance.
+	 * 创建一个新的{@code SpelParserConfiguration}实例.
 	 * @param autoGrowNullReferences if null references should automatically grow
 	 * @param autoGrowCollections if collections should automatically grow
 	 * @see #SpelParserConfiguration(boolean, boolean, int)
@@ -82,7 +82,7 @@ public class SpelParserConfiguration {
 	}
 
 	/**
-	 * Create a new {@code SpelParserConfiguration} instance.
+	 * 创建一个新的{@code SpelParserConfiguration}实例.
 	 * @param autoGrowNullReferences if null references should automatically grow
 	 * @param autoGrowCollections if collections should automatically grow
 	 * @param maximumAutoGrowSize the maximum size that the collection can auto grow
@@ -92,7 +92,7 @@ public class SpelParserConfiguration {
 	}
 
 	/**
-	 * Create a new {@code SpelParserConfiguration} instance.
+	 * 创建一个新的{@code SpelParserConfiguration}实例.
 	 * @param compilerMode the compiler mode that parsers using this configuration object should use
 	 * @param compilerClassLoader the ClassLoader to use as the basis for expression compilation
 	 * @param autoGrowNullReferences if null references should automatically grow

@@ -68,7 +68,7 @@ public class JdbcTransactionManager extends DataSourceTransactionManager {
 
 
 	/**
-	 * Create a new JdbcTransactionManager instance.
+	 * 创建一个新的JdbcTransactionManager实例.
 	 * A DataSource has to be set to be able to use it.
 	 * @see #setDataSource
 	 */
@@ -77,7 +77,7 @@ public class JdbcTransactionManager extends DataSourceTransactionManager {
 	}
 
 	/**
-	 * Create a new JdbcTransactionManager instance.
+	 * 创建一个新的JdbcTransactionManager实例.
 	 * @param dataSource the JDBC DataSource to manage transactions for
 	 */
 	public JdbcTransactionManager(DataSource dataSource) {

@@ -51,7 +51,7 @@ class ConditionEvaluator {
 
 
 	/**
-	 * Create a new {@link ConditionEvaluator} instance.
+	 * 创建一个新的{@link ConditionEvaluator}实例.
 	 */
 	public ConditionEvaluator(@Nullable BeanDefinitionRegistry registry,
 			@Nullable Environment environment, @Nullable ResourceLoader resourceLoader) {

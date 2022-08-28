@@ -54,7 +54,7 @@ public class RequestPartServletServerHttpRequest extends ServletServerHttpReques
 
 
 	/**
-	 * Create a new {@code RequestPartServletServerHttpRequest} instance.
+	 * 创建一个新的{@code RequestPartServletServerHttpRequest}实例.
 	 * @param request the current servlet request
 	 * @param requestPartName the name of the part to adapt to the {@link ServerHttpRequest} contract
 	 * @throws MissingServletRequestPartException if the request part cannot be found

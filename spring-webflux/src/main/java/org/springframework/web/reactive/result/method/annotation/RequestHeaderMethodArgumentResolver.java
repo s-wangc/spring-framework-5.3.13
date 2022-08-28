@@ -48,7 +48,7 @@ import org.springframework.web.server.ServerWebInputException;
 public class RequestHeaderMethodArgumentResolver extends AbstractNamedValueSyncArgumentResolver {
 
 	/**
-	 * Create a new {@link RequestHeaderMethodArgumentResolver} instance.
+	 * 创建一个新的{@link RequestHeaderMethodArgumentResolver}实例.
 	 * @param factory a bean factory to use for resolving {@code ${...}}
 	 * placeholder and {@code #{...}} SpEL expressions in default values;
 	 * or {@code null} if default values are not expected to have expressions

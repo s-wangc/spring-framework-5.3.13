@@ -42,7 +42,7 @@ public class MapBindingResult extends AbstractBindingResult implements Serializa
 
 
 	/**
-	 * Create a new MapBindingResult instance.
+	 * 创建一个新的MapBindingResult实例.
 	 * @param target the target Map to bind onto
 	 * @param objectName the name of the target object
 	 */

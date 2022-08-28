@@ -832,7 +832,7 @@ public class MvcUriComponentsBuilder {
 		private final UriComponentsBuilder baseUrl;
 
 		/**
-		 * Create a new {@link MethodArgumentBuilder} instance.
+		 * 创建一个新的{@link MethodArgumentBuilder}实例.
 		 * @since 4.2
 		 */
 		public MethodArgumentBuilder(Class<?> controllerType, Method method) {
@@ -840,7 +840,7 @@ public class MvcUriComponentsBuilder {
 		}
 
 		/**
-		 * Create a new {@link MethodArgumentBuilder} instance.
+		 * 创建一个新的{@link MethodArgumentBuilder}实例.
 		 * @since 4.2
 		 */
 		public MethodArgumentBuilder(@Nullable UriComponentsBuilder baseUrl, Class<?> controllerType, Method method) {

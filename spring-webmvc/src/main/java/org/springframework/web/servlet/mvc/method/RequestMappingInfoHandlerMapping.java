@@ -446,7 +446,7 @@ public abstract class RequestMappingInfoHandlerMapping extends AbstractHandlerMe
 			private final boolean paramsMatch;
 
 			/**
-			 * Create a new {@link PartialMatch} instance.
+			 * 创建一个新的{@link PartialMatch}实例.
 			 * @param info the RequestMappingInfo that matches the URL path.
 			 * @param request the current request
 			 */

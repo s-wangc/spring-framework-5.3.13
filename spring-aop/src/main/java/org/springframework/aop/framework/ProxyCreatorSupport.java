@@ -41,14 +41,14 @@ public class ProxyCreatorSupport extends AdvisedSupport {
 
 
 	/**
-	 * Create a new ProxyCreatorSupport instance.
+	 * 创建一个新的ProxyCreatorSupport实例.
 	 */
 	public ProxyCreatorSupport() {
 		this.aopProxyFactory = new DefaultAopProxyFactory();
 	}
 
 	/**
-	 * Create a new ProxyCreatorSupport instance.
+	 * 创建一个新的ProxyCreatorSupport实例.
 	 * @param aopProxyFactory the AopProxyFactory to use
 	 */
 	public ProxyCreatorSupport(AopProxyFactory aopProxyFactory) {

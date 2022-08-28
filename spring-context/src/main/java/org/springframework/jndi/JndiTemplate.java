@@ -49,7 +49,7 @@ public class JndiTemplate {
 
 
 	/**
-	 * Create a new JndiTemplate instance.
+	 * 创建一个新的JndiTemplate实例.
 	 */
 	public JndiTemplate() {
 	}

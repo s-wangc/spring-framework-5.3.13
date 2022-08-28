@@ -97,7 +97,7 @@ public class ResponseBodyEmitter {
 
 
 	/**
-	 * Create a new ResponseBodyEmitter instance.
+	 * 创建一个新的ResponseBodyEmitter实例.
 	 */
 	public ResponseBodyEmitter() {
 		this.timeout = null;

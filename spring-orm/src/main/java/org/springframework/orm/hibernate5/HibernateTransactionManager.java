@@ -141,7 +141,7 @@ public class HibernateTransactionManager extends AbstractPlatformTransactionMana
 
 
 	/**
-	 * Create a new HibernateTransactionManager instance.
+	 * 创建一个新的HibernateTransactionManager实例.
 	 * A SessionFactory has to be set to be able to use it.
 	 * @see #setSessionFactory
 	 */
@@ -149,7 +149,7 @@ public class HibernateTransactionManager extends AbstractPlatformTransactionMana
 	}
 
 	/**
-	 * Create a new HibernateTransactionManager instance.
+	 * 创建一个新的HibernateTransactionManager实例.
 	 * @param sessionFactory the SessionFactory to manage transactions for
 	 */
 	public HibernateTransactionManager(SessionFactory sessionFactory) {

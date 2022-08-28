@@ -85,7 +85,7 @@ public class PagedListHolder<E> implements Serializable {
 
 
 	/**
-	 * Create a new holder instance.
+	 * 创建一个新的holder实例.
 	 * You'll need to set a source list to be able to use the holder.
 	 * @see #setSource
 	 */

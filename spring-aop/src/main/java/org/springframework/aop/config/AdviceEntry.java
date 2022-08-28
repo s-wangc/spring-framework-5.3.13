@@ -30,7 +30,7 @@ public class AdviceEntry implements ParseState.Entry {
 
 
 	/**
-	 * Create a new {@code AdviceEntry} instance.
+	 * 创建一个新的{@code AdviceEntry}实例.
 	 * @param kind the kind of advice represented by this entry (before, after, around)
 	 */
 	public AdviceEntry(String kind) {

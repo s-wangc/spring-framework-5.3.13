@@ -46,7 +46,7 @@ public class DirectFieldBindingResult extends AbstractPropertyBindingResult {
 
 
 	/**
-	 * Create a new DirectFieldBindingResult instance.
+	 * 创建一个新的DirectFieldBindingResult实例.
 	 * @param target the target object to bind onto
 	 * @param objectName the name of the target object
 	 */
@@ -55,7 +55,7 @@ public class DirectFieldBindingResult extends AbstractPropertyBindingResult {
 	}
 
 	/**
-	 * Create a new DirectFieldBindingResult instance.
+	 * 创建一个新的DirectFieldBindingResult实例.
 	 * @param target the target object to bind onto
 	 * @param objectName the name of the target object
 	 * @param autoGrowNestedPaths whether to "auto-grow" a nested path that contains a null value

@@ -48,7 +48,7 @@ public abstract class AbstractPropertyBindingResult extends AbstractBindingResul
 
 
 	/**
-	 * Create a new AbstractPropertyBindingResult instance.
+	 * 创建一个新的AbstractPropertyBindingResult实例.
 	 * @param objectName the name of the target object
 	 * @see DefaultMessageCodesResolver
 	 */

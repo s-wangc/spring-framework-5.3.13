@@ -63,13 +63,13 @@ public class DateTimeFormatterFactory {
 
 
 	/**
-	 * Create a new {@code DateTimeFormatterFactory} instance.
+	 * 创建一个新的{@code DateTimeFormatterFactory}实例.
 	 */
 	public DateTimeFormatterFactory() {
 	}
 
 	/**
-	 * Create a new {@code DateTimeFormatterFactory} instance.
+	 * 创建一个新的{@code DateTimeFormatterFactory}实例.
 	 * @param pattern the pattern to use to format date values
 	 */
 	public DateTimeFormatterFactory(String pattern) {

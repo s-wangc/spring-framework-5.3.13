@@ -49,7 +49,7 @@ public class SimpleKey implements Serializable {
 
 
 	/**
-	 * Create a new {@link SimpleKey} instance.
+	 * 创建一个新的{@link SimpleKey}实例.
 	 * @param elements the elements of the key
 	 */
 	public SimpleKey(Object... elements) {

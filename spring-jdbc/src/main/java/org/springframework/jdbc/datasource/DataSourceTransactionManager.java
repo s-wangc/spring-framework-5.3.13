@@ -124,7 +124,7 @@ public class DataSourceTransactionManager extends AbstractPlatformTransactionMan
 
 
 	/**
-	 * Create a new DataSourceTransactionManager instance.
+	 * 创建一个新的DataSourceTransactionManager实例.
 	 * A DataSource has to be set to be able to use it.
 	 * @see #setDataSource
 	 */
@@ -133,7 +133,7 @@ public class DataSourceTransactionManager extends AbstractPlatformTransactionMan
 	}
 
 	/**
-	 * Create a new DataSourceTransactionManager instance.
+	 * 创建一个新的DataSourceTransactionManager实例.
 	 * @param dataSource the JDBC DataSource to manage transactions for
 	 */
 	public DataSourceTransactionManager(DataSource dataSource) {

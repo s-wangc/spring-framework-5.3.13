@@ -46,7 +46,7 @@ class MetadataCollector {
 
 
 	/**
-	 * Create a new {@code MetadataProcessor} instance.
+	 * 创建一个新的{@code MetadataProcessor}实例.
 	 * @param processingEnvironment the processing environment of the build
 	 * @param previousMetadata any previous metadata or {@code null}
 	 */

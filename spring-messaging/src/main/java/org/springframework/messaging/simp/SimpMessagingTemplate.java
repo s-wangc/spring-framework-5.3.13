@@ -59,7 +59,7 @@ public class SimpMessagingTemplate extends AbstractMessageSendingTemplate<String
 
 
 	/**
-	 * Create a new {@link SimpMessagingTemplate} instance.
+	 * 创建一个新的{@link SimpMessagingTemplate}实例.
 	 * @param messageChannel the message channel (never {@code null})
 	 */
 	public SimpMessagingTemplate(MessageChannel messageChannel) {

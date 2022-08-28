@@ -39,7 +39,7 @@ public class BeanMetadataAttribute implements BeanMetadataElement {
 
 
 	/**
-	 * Create a new AttributeValue instance.
+	 * 创建一个新的AttributeValue实例.
 	 * @param name the name of the attribute (never {@code null})
 	 * @param value the value of the attribute (possibly before type conversion)
 	 */
