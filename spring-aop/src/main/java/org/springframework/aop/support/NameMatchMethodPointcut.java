@@ -89,7 +89,7 @@ public class NameMatchMethodPointcut extends StaticMethodMatcherPointcut impleme
 	 * Return if the given method name matches the mapped name.
 	 * <p>The default implementation checks for "xxx*", "*xxx" and "*xxx*" matches,
 	 * as well as direct equality. Can be overridden in subclasses.
-	 * @param methodName the method name of the class
+	 * @param methodName class的method名称
 	 * @param mappedName the name in the descriptor
 	 * @return if the names match
 	 * @see org.springframework.util.PatternMatchUtils#simpleMatch(String, String)

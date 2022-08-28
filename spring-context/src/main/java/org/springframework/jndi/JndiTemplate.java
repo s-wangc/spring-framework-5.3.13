@@ -144,7 +144,7 @@ public class JndiTemplate {
 
 	/**
 	 * Look up the object with the given name in the current JNDI context.
-	 * @param name the JNDI name of the object
+	 * @param name object的JNDI名称
 	 * @return object found (cannot be {@code null}; if a not so well-behaved
 	 * JNDI implementations returns null, a NamingException gets thrown)
 	 * @throws NamingException if there is no object with the given
@@ -164,7 +164,7 @@ public class JndiTemplate {
 
 	/**
 	 * Look up the object with the given name in the current JNDI context.
-	 * @param name the JNDI name of the object
+	 * @param name object的JNDI名称
 	 * @param requiredType type the JNDI object must match. Can be an interface or
 	 * superclass of the actual class, or {@code null} for any match. For example,
 	 * if the value is {@code Object.class}, this method will succeed whatever
@@ -185,7 +185,7 @@ public class JndiTemplate {
 
 	/**
 	 * Bind the given object to the current JNDI context, using the given name.
-	 * @param name the JNDI name of the object
+	 * @param name object的JNDI名称
 	 * @param object the object to bind
 	 * @throws NamingException thrown by JNDI, mostly name already bound
 	 */
@@ -202,7 +202,7 @@ public class JndiTemplate {
 	/**
 	 * Rebind the given object to the current JNDI context, using the given name.
 	 * Overwrites any existing binding.
-	 * @param name the JNDI name of the object
+	 * @param name object的JNDI名称
 	 * @param object the object to rebind
 	 * @throws NamingException thrown by JNDI
 	 */
@@ -218,7 +218,7 @@ public class JndiTemplate {
 
 	/**
 	 * Remove the binding for the given name from the current JNDI context.
-	 * @param name the JNDI name of the object
+	 * @param name object的JNDI名称
 	 * @throws NamingException thrown by JNDI, mostly name not found
 	 */
 	public void unbind(final String name) throws NamingException {

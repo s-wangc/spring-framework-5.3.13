@@ -113,7 +113,7 @@ public class MapSqlParameterSource extends AbstractSqlParameterSource {
 	 * @param paramName parameter的名称
 	 * @param value the value of the parameter
 	 * @param sqlType the SQL type of the parameter
-	 * @param typeName the type name of the parameter
+	 * @param typeName parameter的type名称
 	 * @return a reference to this parameter source,
 	 * so it's possible to chain several calls together
 	 */

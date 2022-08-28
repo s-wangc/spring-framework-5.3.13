@@ -45,7 +45,7 @@ public interface ToStringStyler {
 	/**
 	 * Style a field value as a string.
 	 * @param buffer the buffer to print to
-	 * @param fieldName the he name of the field
+	 * @param fieldName field的he名称
 	 * @param value the field value
 	 */
 	void styleField(StringBuilder buffer, String fieldName, @Nullable Object value);

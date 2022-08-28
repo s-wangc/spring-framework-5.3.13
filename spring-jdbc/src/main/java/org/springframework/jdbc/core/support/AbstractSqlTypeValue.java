@@ -70,7 +70,7 @@ public abstract class AbstractSqlTypeValue implements SqlTypeValue {
 	 * Create the type value to be passed into {@code PreparedStatement.setObject}.
 	 * @param con the JDBC Connection, if needed to create any database-specific objects
 	 * @param sqlType the SQL type of the parameter we are setting
-	 * @param typeName the type name of the parameter
+	 * @param typeName parameter的type名称
 	 * @return the type value
 	 * @throws SQLException if an SQLException is encountered setting
 	 * parameter values (that is, there's no need to catch SQLException)

@@ -31,7 +31,7 @@ public class AdvisorEntry implements ParseState.Entry {
 
 	/**
 	 * 创建一个新的{@code AdvisorEntry}实例.
-	 * @param name the bean name of the advisor
+	 * @param name advisor的bean名称
 	 */
 	public AdvisorEntry(String name) {
 		this.name = name;

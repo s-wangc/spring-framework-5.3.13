@@ -159,7 +159,7 @@ public class WebSphereUowTransactionManager extends JtaTransactionManager
 
 	/**
 	 * Look up the WebSphere UOWManager in JNDI via the configured name.
-	 * @param uowManagerName the JNDI name of the UOWManager
+	 * @param uowManagerName UOWManager的JNDI名称
 	 * @return the UOWManager object
 	 * @throws TransactionSystemException if the JNDI lookup failed
 	 * @see #setJndiTemplate

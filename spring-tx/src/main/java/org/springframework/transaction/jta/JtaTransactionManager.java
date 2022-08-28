@@ -568,7 +568,7 @@ public class JtaTransactionManager extends AbstractPlatformTransactionManager
 	 * Look up the JTA UserTransaction in JNDI via the configured name.
 	 * <p>Called by {@code afterPropertiesSet} if no direct UserTransaction reference was set.
 	 * Can be overridden in subclasses to provide a different UserTransaction object.
-	 * @param userTransactionName the JNDI name of the UserTransaction
+	 * @param userTransactionName UserTransaction的JNDI名称
 	 * @return the UserTransaction object
 	 * @throws TransactionSystemException if the JNDI lookup failed
 	 * @see #setJndiTemplate
@@ -592,7 +592,7 @@ public class JtaTransactionManager extends AbstractPlatformTransactionManager
 	 * Look up the JTA TransactionManager in JNDI via the configured name.
 	 * <p>Called by {@code afterPropertiesSet} if no direct TransactionManager reference was set.
 	 * Can be overridden in subclasses to provide a different TransactionManager object.
-	 * @param transactionManagerName the JNDI name of the TransactionManager
+	 * @param transactionManagerName TransactionManager的JNDI名称
 	 * @return the UserTransaction object
 	 * @throws TransactionSystemException if the JNDI lookup failed
 	 * @see #setJndiTemplate

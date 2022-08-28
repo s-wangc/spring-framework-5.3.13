@@ -59,7 +59,7 @@ public abstract class AbstractSqlParameterSource implements SqlParameterSource {
 	/**
 	 * Register an SQL type for the given parameter.
 	 * @param paramName parameter的名称
-	 * @param typeName the type name of the parameter
+	 * @param typeName parameter的type名称
 	 */
 	public void registerTypeName(String paramName, String typeName) {
 		Assert.notNull(paramName, "Parameter name must not be null");

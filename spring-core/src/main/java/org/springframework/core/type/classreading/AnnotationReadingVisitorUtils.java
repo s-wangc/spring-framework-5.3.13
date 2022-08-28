@@ -116,7 +116,7 @@ abstract class AnnotationReadingVisitorUtils {
 	 * annotation type name
 	 * @param metaAnnotationMap the map of meta annotation relationships,
 	 * keyed by annotation type name
-	 * @param annotationName the fully qualified class name of the annotation
+	 * @param annotationName the fully qualified annotation的class名称
 	 * type to look for
 	 * @return the merged annotation attributes, or {@code null} if no
 	 * matching annotation is present in the {@code attributesMap}
