@@ -34,7 +34,7 @@ import org.springframework.web.method.support.InvocableHandlerMethod;
 public class ServletRequestDataBinderFactory extends InitBinderDataBinderFactory {
 
 	/**
-	 * Create a new instance.
+	 * 创建一个新的实例.
 	 * @param binderMethods one or more {@code @InitBinder} methods
 	 * @param initializer provides global data binder initialization
 	 */

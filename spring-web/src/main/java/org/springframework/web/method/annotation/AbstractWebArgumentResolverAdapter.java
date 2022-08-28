@@ -55,7 +55,7 @@ public abstract class AbstractWebArgumentResolverAdapter implements HandlerMetho
 
 
 	/**
-	 * Create a new instance.
+	 * 创建一个新的实例.
 	 */
 	public AbstractWebArgumentResolverAdapter(WebArgumentResolver adaptee) {
 		Assert.notNull(adaptee, "'adaptee' must not be null");

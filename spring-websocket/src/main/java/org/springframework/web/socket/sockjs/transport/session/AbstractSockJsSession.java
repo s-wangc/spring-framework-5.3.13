@@ -118,7 +118,7 @@ public abstract class AbstractSockJsSession implements SockJsSession {
 
 
 	/**
-	 * Create a new instance.
+	 * 创建一个新的实例.
 	 * @param id the session ID
 	 * @param config the SockJS service configuration options
 	 * @param handler the recipient of SockJS messages

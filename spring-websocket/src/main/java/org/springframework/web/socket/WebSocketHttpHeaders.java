@@ -53,7 +53,7 @@ public class WebSocketHttpHeaders extends HttpHeaders {
 
 
 	/**
-	 * Create a new instance.
+	 * 创建一个新的实例.
 	 */
 	public WebSocketHttpHeaders() {
 		this(new HttpHeaders());

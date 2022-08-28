@@ -41,7 +41,7 @@ abstract class AbstractJCacheKeyOperation<A extends Annotation> extends Abstract
 
 
 	/**
-	 * Create a new instance.
+	 * 创建一个新的实例.
 	 * @param methodDetails the {@link CacheMethodDetails} related to the cached method
 	 * @param cacheResolver the cache resolver to resolve regular caches
 	 * @param keyGenerator the key generator to compute cache keys

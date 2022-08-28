@@ -63,7 +63,7 @@ public class ModelAndViewResolverMethodReturnValueHandler implements HandlerMeth
 
 
 	/**
-	 * Create a new instance.
+	 * 创建一个新的实例.
 	 */
 	public ModelAndViewResolverMethodReturnValueHandler(@Nullable List<ModelAndViewResolver> mavResolvers) {
 		this.mavResolvers = mavResolvers;
