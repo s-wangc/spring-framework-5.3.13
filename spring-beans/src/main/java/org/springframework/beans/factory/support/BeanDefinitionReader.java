@@ -86,7 +86,7 @@ public interface BeanDefinitionReader {
 	 * Load bean definitions from the specified resource.
 	 * @param resource the resource descriptor
 	 * @return the number of bean definitions found
-	 * @throws BeanDefinitionStoreException in case of loading or parsing errors
+	 * @throws BeanDefinitionStoreException 在加载或解析错误的情况下
 	 */
 	int loadBeanDefinitions(Resource resource) throws BeanDefinitionStoreException;
 
@@ -94,7 +94,7 @@ public interface BeanDefinitionReader {
 	 * Load bean definitions from the specified resources.
 	 * @param resources the resource descriptors
 	 * @return the number of bean definitions found
-	 * @throws BeanDefinitionStoreException in case of loading or parsing errors
+	 * @throws BeanDefinitionStoreException 在加载或解析错误的情况下
 	 */
 	int loadBeanDefinitions(Resource... resources) throws BeanDefinitionStoreException;
 
@@ -105,7 +105,7 @@ public interface BeanDefinitionReader {
 	 * @param location the resource location, to be loaded with the ResourceLoader
 	 * (or ResourcePatternResolver) of this bean definition reader
 	 * @return the number of bean definitions found
-	 * @throws BeanDefinitionStoreException in case of loading or parsing errors
+	 * @throws BeanDefinitionStoreException 在加载或解析错误的情况下
 	 * @see #getResourceLoader()
 	 * @see #loadBeanDefinitions(org.springframework.core.io.Resource)
 	 * @see #loadBeanDefinitions(org.springframework.core.io.Resource[])
@@ -117,7 +117,7 @@ public interface BeanDefinitionReader {
 	 * @param locations the resource locations, to be loaded with the ResourceLoader
 	 * (or ResourcePatternResolver) of this bean definition reader
 	 * @return the number of bean definitions found
-	 * @throws BeanDefinitionStoreException in case of loading or parsing errors
+	 * @throws BeanDefinitionStoreException 在加载或解析错误的情况下
 	 */
 	int loadBeanDefinitions(String... locations) throws BeanDefinitionStoreException;
 

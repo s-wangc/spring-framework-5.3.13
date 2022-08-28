@@ -303,7 +303,7 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 	 * Load bean definitions from the specified XML file.
 	 * @param resource the resource descriptor for the XML file
 	 * @return the number of bean definitions found
-	 * @throws BeanDefinitionStoreException in case of loading or parsing errors
+	 * @throws BeanDefinitionStoreException 在加载或解析错误的情况下
 	 */
 	@Override
 	public int loadBeanDefinitions(Resource resource) throws BeanDefinitionStoreException {
@@ -315,7 +315,7 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 	 * @param encodedResource the resource descriptor for the XML file,
 	 * allowing to specify an encoding to use for parsing the file
 	 * @return the number of bean definitions found
-	 * @throws BeanDefinitionStoreException in case of loading or parsing errors
+	 * @throws BeanDefinitionStoreException 在加载或解析错误的情况下
 	 */
 	public int loadBeanDefinitions(EncodedResource encodedResource) throws BeanDefinitionStoreException {
 		Assert.notNull(encodedResource, "EncodedResource must not be null");
@@ -353,7 +353,7 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 	 * Load bean definitions from the specified XML file.
 	 * @param inputSource the SAX InputSource to read from
 	 * @return the number of bean definitions found
-	 * @throws BeanDefinitionStoreException in case of loading or parsing errors
+	 * @throws BeanDefinitionStoreException 在加载或解析错误的情况下
 	 */
 	public int loadBeanDefinitions(InputSource inputSource) throws BeanDefinitionStoreException {
 		return loadBeanDefinitions(inputSource, "resource loaded through SAX InputSource");
@@ -365,7 +365,7 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 	 * @param resourceDescription a description of the resource
 	 * (can be {@code null} or empty)
 	 * @return the number of bean definitions found
-	 * @throws BeanDefinitionStoreException in case of loading or parsing errors
+	 * @throws BeanDefinitionStoreException 在加载或解析错误的情况下
 	 */
 	public int loadBeanDefinitions(InputSource inputSource, @Nullable String resourceDescription)
 			throws BeanDefinitionStoreException {
@@ -379,7 +379,7 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 	 * @param inputSource the SAX InputSource to read from
 	 * @param resource the resource descriptor for the XML file
 	 * @return the number of bean definitions found
-	 * @throws BeanDefinitionStoreException in case of loading or parsing errors
+	 * @throws BeanDefinitionStoreException 在加载或解析错误的情况下
 	 * @see #doLoadDocument
 	 * @see #registerBeanDefinitions
 	 */
