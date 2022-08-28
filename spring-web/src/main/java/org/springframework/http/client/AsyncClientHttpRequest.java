@@ -41,7 +41,7 @@ public interface AsyncClientHttpRequest extends HttpRequest, HttpOutputMessage {
 	 * Execute this request asynchronously, resulting in a Future handle.
 	 * {@link ClientHttpResponse} that can be read.
 	 * @return the future response result of the execution
-	 * @throws java.io.IOException in case of I/O errors
+	 * @throws java.io.IOException 在I/O错误的情况下
 	 */
 	ListenableFuture<ClientHttpResponse> executeAsync() throws IOException;
 

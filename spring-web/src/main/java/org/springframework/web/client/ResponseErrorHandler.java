@@ -37,7 +37,7 @@ public interface ResponseErrorHandler {
 	 * {@link ClientHttpResponse#getStatusCode() HttpStatus} of the response.
 	 * @param response the response to inspect
 	 * @return {@code true} if the response indicates an error; {@code false} otherwise
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	boolean hasError(ClientHttpResponse response) throws IOException;
 
@@ -46,7 +46,7 @@ public interface ResponseErrorHandler {
 	 * <p>This method is only called when {@link #hasError(ClientHttpResponse)}
 	 * has returned {@code true}.
 	 * @param response the response with the error
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	void handleError(ClientHttpResponse response) throws IOException;
 
@@ -56,7 +56,7 @@ public interface ResponseErrorHandler {
 	 * @param url the request URL
 	 * @param method the HTTP method
 	 * @param response the response with the error
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @since 5.0
 	 */
 	default void handleError(URI url, HttpMethod method, ClientHttpResponse response) throws IOException {

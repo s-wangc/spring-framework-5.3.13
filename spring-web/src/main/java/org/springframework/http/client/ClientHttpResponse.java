@@ -40,7 +40,7 @@ public interface ClientHttpResponse extends HttpInputMessage, Closeable {
 	 * <p>For status codes not supported by {@code HttpStatus}, use
 	 * {@link #getRawStatusCode()} instead.
 	 * @return the HTTP status as an HttpStatus enum value (never {@code null})
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @throws IllegalArgumentException in case of an unknown HTTP status code
 	 * @since #getRawStatusCode()
 	 * @see HttpStatus#valueOf(int)
@@ -51,7 +51,7 @@ public interface ClientHttpResponse extends HttpInputMessage, Closeable {
 	 * Get the HTTP status code (potentially non-standard and not
 	 * resolvable through the {@link HttpStatus} enum) as an integer.
 	 * @return the HTTP status as an integer value
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @since 3.1.1
 	 * @see #getStatusCode()
 	 * @see HttpStatus#resolve(int)
@@ -61,7 +61,7 @@ public interface ClientHttpResponse extends HttpInputMessage, Closeable {
 	/**
 	 * Get the HTTP status text of the response.
 	 * @return the HTTP status text
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	String getStatusText() throws IOException;
 

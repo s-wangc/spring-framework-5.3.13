@@ -177,7 +177,7 @@ public class DefaultResponseErrorHandler implements ResponseErrorHandler {
 	 * Determine the HTTP status of the given response.
 	 * @param response the response to inspect
 	 * @return the associated HTTP status
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @throws UnknownHttpStatusCodeException in case of an unknown status code
 	 * that cannot be represented with the {@link HttpStatus} enum
 	 * @since 4.3.8

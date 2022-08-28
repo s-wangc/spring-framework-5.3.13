@@ -304,7 +304,7 @@ public abstract class AbstractHttpMessageConverter<T> implements HttpMessageConv
 	 * @param clazz the type of object to return
 	 * @param inputMessage the HTTP input message to read from
 	 * @return the converted object
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @throws HttpMessageNotReadableException in case of conversion errors
 	 */
 	protected abstract T readInternal(Class<? extends T> clazz, HttpInputMessage inputMessage)
@@ -314,7 +314,7 @@ public abstract class AbstractHttpMessageConverter<T> implements HttpMessageConv
 	 * Abstract template method that writes the actual body. Invoked from {@link #write}.
 	 * @param t the object to write to the output message
 	 * @param outputMessage the HTTP output message to write to
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @throws HttpMessageNotWritableException in case of conversion errors
 	 */
 	protected abstract void writeInternal(T t, HttpOutputMessage outputMessage)

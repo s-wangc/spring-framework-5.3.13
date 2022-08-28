@@ -85,7 +85,7 @@ public interface HttpMessageConverter<T> {
 	 * {@link #canRead canRead} method of this interface, which must have returned {@code true}.
 	 * @param inputMessage the HTTP input message to read from
 	 * @return the converted object
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @throws HttpMessageNotReadableException in case of conversion errors
 	 */
 	T read(Class<? extends T> clazz, HttpInputMessage inputMessage)
@@ -100,7 +100,7 @@ public interface HttpMessageConverter<T> {
 	 * previously been passed to the {@link #canWrite canWrite} method of this interface, which must have
 	 * returned {@code true}.
 	 * @param outputMessage the message to write to
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @throws HttpMessageNotWritableException in case of conversion errors
 	 */
 	void write(T t, @Nullable MediaType contentType, HttpOutputMessage outputMessage)

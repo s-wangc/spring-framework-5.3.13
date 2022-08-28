@@ -181,7 +181,7 @@ public class SimpleClientHttpRequestFactory implements ClientHttpRequestFactory,
 	 * @param url the URL to open a connection to
 	 * @param proxy the proxy to use, may be {@code null}
 	 * @return the opened connection
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	protected HttpURLConnection openConnection(URL url, @Nullable Proxy proxy) throws IOException {
 		URLConnection urlConnection = (proxy != null ? url.openConnection(proxy) : url.openConnection());
@@ -197,7 +197,7 @@ public class SimpleClientHttpRequestFactory implements ClientHttpRequestFactory,
 	 * <p>The default implementation prepares the connection for input and output, and sets the HTTP method.
 	 * @param connection the connection to prepare
 	 * @param httpMethod the HTTP request method ({@code GET}, {@code POST}, etc.)
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	protected void prepareConnection(HttpURLConnection connection, String httpMethod) throws IOException {
 		if (this.connectTimeout >= 0) {

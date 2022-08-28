@@ -320,7 +320,7 @@ public abstract class ScriptUtils {
 	 * (typically "--")
 	 * @param blockCommentEndDelimiter the <em>end</em> block comment delimiter
 	 * @return a {@code String} containing the script lines
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	static String readScript(EncodedResource resource, @Nullable String separator,
 			String[] commentPrefixes, String blockCommentEndDelimiter) throws IOException {
@@ -344,7 +344,7 @@ public abstract class ScriptUtils {
 	 * @param separator the statement separator in the SQL script (typically ";")
 	 * @param blockCommentEndDelimiter the <em>end</em> block comment delimiter
 	 * @return a {@code String} containing the script lines
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @deprecated as of Spring Framework 5.2.16 with no plans for replacement.
 	 * This is an internal API and will likely be removed in Spring Framework 6.0.
 	 */
@@ -370,7 +370,7 @@ public abstract class ScriptUtils {
 	 * @param separator the statement separator in the SQL script (typically ";")
 	 * @param blockCommentEndDelimiter the <em>end</em> block comment delimiter
 	 * @return a {@code String} containing the script lines
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @since 5.2
 	 * @deprecated as of Spring Framework 5.2.16 with no plans for replacement.
 	 * This is an internal API and will likely be removed in Spring Framework 6.0.

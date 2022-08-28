@@ -205,7 +205,7 @@ public class MarshallingMessageConverter implements MessageConverter, Initializi
 	 * @param marshaller the marshaller to use
 	 * @return the resulting message
 	 * @throws JMSException if thrown by JMS methods
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @throws XmlMappingException in case of OXM mapping errors
 	 * @see Session#createTextMessage
 	 * @see Marshaller#marshal(Object, Result)
@@ -226,7 +226,7 @@ public class MarshallingMessageConverter implements MessageConverter, Initializi
 	 * @param marshaller the marshaller to use
 	 * @return the resulting message
 	 * @throws JMSException if thrown by JMS methods
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @throws XmlMappingException in case of OXM mapping errors
 	 * @see Session#createBytesMessage
 	 * @see Marshaller#marshal(Object, Result)
@@ -253,7 +253,7 @@ public class MarshallingMessageConverter implements MessageConverter, Initializi
 	 * @param targetType the target message type (other than TEXT or BYTES)
 	 * @return the resulting message
 	 * @throws JMSException if thrown by JMS methods
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @throws XmlMappingException in case of OXM mapping errors
 	 */
 	protected Message marshalToMessage(Object object, Session session, Marshaller marshaller, MessageType targetType)
@@ -270,7 +270,7 @@ public class MarshallingMessageConverter implements MessageConverter, Initializi
 	 * @param unmarshaller the unmarshaller to use
 	 * @return the unmarshalled object
 	 * @throws JMSException if thrown by JMS methods
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @throws XmlMappingException in case of OXM mapping errors
 	 * @see Unmarshaller#unmarshal(Source)
 	 */
@@ -287,7 +287,7 @@ public class MarshallingMessageConverter implements MessageConverter, Initializi
 	 * @param unmarshaller the unmarshaller to use
 	 * @return the unmarshalled object
 	 * @throws JMSException if thrown by JMS methods
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @throws XmlMappingException in case of OXM mapping errors
 	 * @see Unmarshaller#unmarshal(Source)
 	 */
@@ -310,7 +310,7 @@ public class MarshallingMessageConverter implements MessageConverter, Initializi
 	 * @param unmarshaller the unmarshaller to use
 	 * @return the unmarshalled object
 	 * @throws JMSException if thrown by JMS methods
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @throws XmlMappingException in case of OXM mapping errors
 	 */
 	protected Object unmarshalFromMessage(Message message, Unmarshaller unmarshaller)

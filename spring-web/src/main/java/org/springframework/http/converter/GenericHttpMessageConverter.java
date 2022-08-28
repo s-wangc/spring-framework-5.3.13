@@ -61,7 +61,7 @@ public interface GenericHttpMessageConverter<T> extends HttpMessageConverter<T> 
 	 * in which the target type appears in a method signature (can be {@code null})
 	 * @param inputMessage the HTTP input message to read from
 	 * @return the converted object
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @throws HttpMessageNotReadableException in case of conversion errors
 	 */
 	T read(Type type, @Nullable Class<?> contextClass, HttpInputMessage inputMessage)
@@ -96,7 +96,7 @@ public interface GenericHttpMessageConverter<T> extends HttpMessageConverter<T> 
 	 * {@link #canWrite canWrite} method of this interface, which must have returned
 	 * {@code true}.
 	 * @param outputMessage the message to write to
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @throws HttpMessageNotWritableException in case of conversion errors
 	 * @since 4.2
 	 */

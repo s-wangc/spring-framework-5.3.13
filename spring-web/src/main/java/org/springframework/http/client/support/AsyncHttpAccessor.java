@@ -76,7 +76,7 @@ public class AsyncHttpAccessor {
 	 * @param url the URL to connect to
 	 * @param method the HTTP method to execute (GET, POST, etc.)
 	 * @return the created request
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	protected org.springframework.http.client.AsyncClientHttpRequest createAsyncRequest(URI url, HttpMethod method)
 			throws IOException {

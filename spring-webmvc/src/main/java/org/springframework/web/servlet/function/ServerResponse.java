@@ -536,7 +536,7 @@ public interface ServerResponse {
 		 * <p>This convenience method has the same effect as
 		 * {@link #data(Object)}.
 		 * @param object the object to send
-		 * @throws IOException in case of I/O errors
+		 * @throws IOException 在I/O错误的情况下
 		 */
 		void send(Object object) throws IOException;
 
@@ -575,7 +575,7 @@ public interface ServerResponse {
 		 * be converted into JSON using
 		 * {@linkplain HttpMessageConverter message converters}.
 		 * @param object the object to send as data
-		 * @throws IOException in case of I/O errors
+		 * @throws IOException 在I/O错误的情况下
 		 */
 		void data(Object object) throws IOException;
 

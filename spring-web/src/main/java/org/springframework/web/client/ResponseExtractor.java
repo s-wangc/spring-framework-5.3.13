@@ -44,7 +44,7 @@ public interface ResponseExtractor<T> {
 	 * Extract data from the given {@code ClientHttpResponse} and return it.
 	 * @param response the HTTP response
 	 * @return the extracted data
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	@Nullable
 	T extractData(ClientHttpResponse response) throws IOException;

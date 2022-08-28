@@ -65,7 +65,7 @@ public interface AsyncClientHttpRequestInterceptor {
 	 * @param body the body of the request
 	 * @param execution the request execution
 	 * @return the response future
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	ListenableFuture<ClientHttpResponse> intercept(HttpRequest request, byte[] body,
 			AsyncClientHttpRequestExecution execution) throws IOException;

@@ -59,7 +59,7 @@ public interface ClientHttpRequestInterceptor {
 	 * @param body the body of the request
 	 * @param execution the request execution
 	 * @return the response
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	ClientHttpResponse intercept(HttpRequest request, byte[] body, ClientHttpRequestExecution execution)
 			throws IOException;

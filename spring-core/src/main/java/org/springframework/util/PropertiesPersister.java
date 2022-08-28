@@ -45,7 +45,7 @@ public interface PropertiesPersister {
 	 * Properties object.
 	 * @param props the Properties object to load into
 	 * @param is the InputStream to load from
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @see java.util.Properties#load
 	 */
 	void load(Properties props, InputStream is) throws IOException;
@@ -55,7 +55,7 @@ public interface PropertiesPersister {
 	 * Properties object.
 	 * @param props the Properties object to load into
 	 * @param reader the Reader to load from
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	void load(Properties props, Reader reader) throws IOException;
 
@@ -65,7 +65,7 @@ public interface PropertiesPersister {
 	 * @param props the Properties object to store
 	 * @param os the OutputStream to write to
 	 * @param header the description of the property list
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @see java.util.Properties#store
 	 */
 	void store(Properties props, OutputStream os, String header) throws IOException;
@@ -76,7 +76,7 @@ public interface PropertiesPersister {
 	 * @param props the Properties object to store
 	 * @param writer the Writer to write to
 	 * @param header the description of the property list
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	void store(Properties props, Writer writer, String header) throws IOException;
 
@@ -85,7 +85,7 @@ public interface PropertiesPersister {
 	 * given Properties object.
 	 * @param props the Properties object to load into
 	 * @param is the InputStream to load from
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @see java.util.Properties#loadFromXML(java.io.InputStream)
 	 */
 	void loadFromXml(Properties props, InputStream is) throws IOException;
@@ -96,7 +96,7 @@ public interface PropertiesPersister {
 	 * @param props the Properties object to store
 	 * @param os the OutputStream to write to
 	 * @param header the description of the property list
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @see java.util.Properties#storeToXML(java.io.OutputStream, String)
 	 */
 	void storeToXml(Properties props, OutputStream os, String header) throws IOException;
@@ -108,7 +108,7 @@ public interface PropertiesPersister {
 	 * @param os the OutputStream to write to
 	 * @param encoding the encoding to use
 	 * @param header the description of the property list
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @see java.util.Properties#storeToXML(java.io.OutputStream, String, String)
 	 */
 	void storeToXml(Properties props, OutputStream os, String header, String encoding) throws IOException;

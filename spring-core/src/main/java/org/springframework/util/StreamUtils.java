@@ -59,7 +59,7 @@ public abstract class StreamUtils {
 	 * <p>Leaves the stream open when done.
 	 * @param in the stream to copy from (may be {@code null} or empty)
 	 * @return the new byte array that has been copied to (possibly empty)
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	public static byte[] copyToByteArray(@Nullable InputStream in) throws IOException {
 		if (in == null) {
@@ -77,7 +77,7 @@ public abstract class StreamUtils {
 	 * @param in the InputStream to copy from (may be {@code null} or empty)
 	 * @param charset the {@link Charset} to use to decode the bytes
 	 * @return the String that has been copied to (possibly empty)
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	public static String copyToString(@Nullable InputStream in, Charset charset) throws IOException {
 		if (in == null) {
@@ -120,7 +120,7 @@ public abstract class StreamUtils {
 	 * <p>Leaves the stream open when done.
 	 * @param in the byte array to copy from
 	 * @param out the OutputStream to copy to
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	public static void copy(byte[] in, OutputStream out) throws IOException {
 		Assert.notNull(in, "No input byte array specified");
@@ -136,7 +136,7 @@ public abstract class StreamUtils {
 	 * @param in the String to copy from
 	 * @param charset the Charset
 	 * @param out the OutputStream to copy to
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	public static void copy(String in, Charset charset, OutputStream out) throws IOException {
 		Assert.notNull(in, "No input String specified");
@@ -154,7 +154,7 @@ public abstract class StreamUtils {
 	 * @param in the InputStream to copy from
 	 * @param out the OutputStream to copy to
 	 * @return the number of bytes copied
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	public static int copy(InputStream in, OutputStream out) throws IOException {
 		Assert.notNull(in, "No InputStream specified");
@@ -181,7 +181,7 @@ public abstract class StreamUtils {
 	 * @param start the position to start copying from
 	 * @param end the position to end copying
 	 * @return the number of bytes copied
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @since 4.3
 	 */
 	public static long copyRange(InputStream in, OutputStream out, long start, long end) throws IOException {
@@ -217,7 +217,7 @@ public abstract class StreamUtils {
 	 * <p>Leaves the InputStream open when done.
 	 * @param in the InputStream to drain
 	 * @return the number of bytes read
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @since 4.3
 	 */
 	public static int drain(InputStream in) throws IOException {

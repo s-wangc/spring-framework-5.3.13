@@ -62,7 +62,7 @@ public abstract class AbstractClientHttpRequestFactoryWrapper implements ClientH
 	 * @param httpMethod the HTTP method to execute
 	 * @param requestFactory the wrapped request factory
 	 * @return the created request
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	protected abstract ClientHttpRequest createRequest(
 			URI uri, HttpMethod httpMethod, ClientHttpRequestFactory requestFactory) throws IOException;

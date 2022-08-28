@@ -43,7 +43,7 @@ public interface AsyncClientHttpRequestExecution {
 	 * @param request the HTTP request, containing the HTTP method and headers
 	 * @param body the body of the request
 	 * @return a corresponding future handle
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	ListenableFuture<ClientHttpResponse> executeAsync(HttpRequest request, byte[] body) throws IOException;
 

@@ -309,7 +309,7 @@ public class PathMatchingResourcePatternResolver implements ResourcePatternResol
 	 * Delegates to {@link #doFindAllClassPathResources(String)}.
 	 * @param location the absolute path within the classpath
 	 * @return the result as Resource array
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @see java.lang.ClassLoader#getResources
 	 * @see #convertClassLoaderURL
 	 */
@@ -486,7 +486,7 @@ public class PathMatchingResourcePatternResolver implements ResourcePatternResol
 	 * and in the file system.
 	 * @param locationPattern the location pattern to match
 	 * @return the result as Resource array
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @see #doFindPathMatchingJarResources
 	 * @see #doFindPathMatchingFileResources
 	 * @see org.springframework.util.PathMatcher
@@ -583,7 +583,7 @@ public class PathMatchingResourcePatternResolver implements ResourcePatternResol
 	 * @param rootDirURL the pre-resolved root directory URL
 	 * @param subPattern the sub pattern to match (below the root directory)
 	 * @return a mutable Set of matching Resource instances
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @since 4.3
 	 * @see java.net.JarURLConnection
 	 * @see org.springframework.util.PathMatcher
@@ -691,7 +691,7 @@ public class PathMatchingResourcePatternResolver implements ResourcePatternResol
 	 * @param rootDirResource the root directory as Resource
 	 * @param subPattern the sub pattern to match (below the root directory)
 	 * @return a mutable Set of matching Resource instances
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @see #retrieveMatchingFiles
 	 * @see org.springframework.util.PathMatcher
 	 */
@@ -724,7 +724,7 @@ public class PathMatchingResourcePatternResolver implements ResourcePatternResol
 	 * @param rootDir the root directory in the file system
 	 * @param subPattern the sub pattern to match (below the root directory)
 	 * @return a mutable Set of matching Resource instances
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @see #retrieveMatchingFiles
 	 * @see org.springframework.util.PathMatcher
 	 */

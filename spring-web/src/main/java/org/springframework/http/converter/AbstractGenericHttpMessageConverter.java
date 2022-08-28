@@ -118,7 +118,7 @@ public abstract class AbstractGenericHttpMessageConverter<T> extends AbstractHtt
 	 * @param t the object to write to the output message
 	 * @param type the type of object to write (may be {@code null})
 	 * @param outputMessage the HTTP output message to write to
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @throws HttpMessageNotWritableException in case of conversion errors
 	 */
 	protected abstract void writeInternal(T t, @Nullable Type type, HttpOutputMessage outputMessage)

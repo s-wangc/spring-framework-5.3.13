@@ -73,7 +73,7 @@ public abstract class PropertiesLoaderUtils {
 	 * potentially defining a specific encoding for the properties file.
 	 * @param props the Properties instance to load into
 	 * @param resource the resource to load from
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	public static void fillProperties(Properties props, EncodedResource resource)
 			throws IOException {
@@ -86,7 +86,7 @@ public abstract class PropertiesLoaderUtils {
 	 * @param props the Properties instance to load into
 	 * @param resource the resource to load from
 	 * @param persister the PropertiesPersister to use
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	static void fillProperties(Properties props, EncodedResource resource, PropertiesPersister persister)
 			throws IOException {

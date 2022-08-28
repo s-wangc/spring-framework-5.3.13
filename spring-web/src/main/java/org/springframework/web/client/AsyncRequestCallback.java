@@ -41,7 +41,7 @@ public interface AsyncRequestCallback {
 	 * Does not need to care about closing the request or about handling errors:
 	 * this will all be handled by the {@code RestTemplate}.
 	 * @param request the active HTTP request
-	 * @throws java.io.IOException in case of I/O errors
+	 * @throws java.io.IOException 在I/O错误的情况下
 	 */
 	void doWithRequest(org.springframework.http.client.AsyncClientHttpRequest request) throws IOException;
 

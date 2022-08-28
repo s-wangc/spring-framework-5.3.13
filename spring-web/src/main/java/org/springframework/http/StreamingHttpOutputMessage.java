@@ -47,7 +47,7 @@ public interface StreamingHttpOutputMessage extends HttpOutputMessage {
 		/**
 		 * Write this body to the given {@link OutputStream}.
 		 * @param outputStream the output stream to write to
-		 * @throws IOException in case of I/O errors
+		 * @throws IOException 在I/O错误的情况下
 		 */
 		void writeTo(OutputStream outputStream) throws IOException;
 	}

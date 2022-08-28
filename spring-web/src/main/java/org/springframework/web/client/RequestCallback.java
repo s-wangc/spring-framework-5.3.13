@@ -45,7 +45,7 @@ public interface RequestCallback {
 	 * Does not need to care about closing the request or about handling errors:
 	 * this will all be handled by the {@code RestTemplate}.
 	 * @param request the active HTTP request
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	void doWithRequest(ClientHttpRequest request) throws IOException;
 

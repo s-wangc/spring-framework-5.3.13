@@ -55,7 +55,7 @@ class MessageBodyClientHttpResponseWrapper implements ClientHttpResponse {
 	 * <li>a {@code Content-Length} header of {@code 0}</li>
 	 * </ul>
 	 * @return {@code true} if the response has a message body, {@code false} otherwise
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	public boolean hasMessageBody() throws IOException {
 		HttpStatus status = HttpStatus.resolve(getRawStatusCode());
@@ -77,7 +77,7 @@ class MessageBodyClientHttpResponseWrapper implements ClientHttpResponse {
 	 * <li>otherwise it is not empty and the stream is reset to its start for further reading</li>
 	 * </ul>
 	 * @return {@code true} if the response has a zero-length message body, {@code false} otherwise
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	@SuppressWarnings("ConstantConditions")
 	public boolean hasEmptyMessageBody() throws IOException {

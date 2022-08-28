@@ -39,7 +39,7 @@ public interface ClientHttpRequestExecution {
 	 * @param request the request, containing method, URI, and headers
 	 * @param body the body of the request to execute
 	 * @return the response
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	ClientHttpResponse execute(HttpRequest request, byte[] body) throws IOException;
 

@@ -35,7 +35,7 @@ public interface RequestMatcher {
 	/**
 	 * Match the given request against specific expectations.
 	 * @param request the request to make assertions on
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @throws AssertionError if expectations are not met
 	 */
 	void match(ClientHttpRequest request) throws IOException, AssertionError;

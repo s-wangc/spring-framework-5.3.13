@@ -269,7 +269,7 @@ public class MappingJackson2MessageConverter implements SmartMessageConverter, B
 	 * @param objectWriter the writer to use
 	 * @return the resulting message
 	 * @throws JMSException if thrown by JMS methods
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @since 4.3
 	 * @see Session#createBytesMessage
 	 */
@@ -288,7 +288,7 @@ public class MappingJackson2MessageConverter implements SmartMessageConverter, B
 	 * @param objectWriter the writer to use
 	 * @return the resulting message
 	 * @throws JMSException if thrown by JMS methods
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @since 4.3
 	 * @see Session#createBytesMessage
 	 */
@@ -326,7 +326,7 @@ public class MappingJackson2MessageConverter implements SmartMessageConverter, B
 	 * @param targetType the target message type (other than TEXT or BYTES)
 	 * @return the resulting message
 	 * @throws JMSException if thrown by JMS methods
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	protected Message mapToMessage(Object object, Session session, ObjectWriter objectWriter, MessageType targetType)
 			throws JMSException, IOException {
@@ -378,7 +378,7 @@ public class MappingJackson2MessageConverter implements SmartMessageConverter, B
 	 * @param targetJavaType the target type
 	 * @return the message converted to an object
 	 * @throws JMSException if thrown by JMS
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	protected Object convertFromTextMessage(TextMessage message, JavaType targetJavaType)
 			throws JMSException, IOException {
@@ -393,7 +393,7 @@ public class MappingJackson2MessageConverter implements SmartMessageConverter, B
 	 * @param targetJavaType the target type
 	 * @return the message converted to an object
 	 * @throws JMSException if thrown by JMS
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	protected Object convertFromBytesMessage(BytesMessage message, JavaType targetJavaType)
 			throws JMSException, IOException {
@@ -428,7 +428,7 @@ public class MappingJackson2MessageConverter implements SmartMessageConverter, B
 	 * @param targetJavaType the target type
 	 * @return the message converted to an object
 	 * @throws JMSException if thrown by JMS
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	protected Object convertFromMessage(Message message, JavaType targetJavaType)
 			throws JMSException, IOException {

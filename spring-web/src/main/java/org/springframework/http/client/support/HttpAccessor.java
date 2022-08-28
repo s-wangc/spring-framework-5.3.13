@@ -116,7 +116,7 @@ public abstract class HttpAccessor {
 	 * @param url the URL to connect to
 	 * @param method the HTTP method to execute (GET, POST, etc)
 	 * @return the created request
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 * @see #getRequestFactory()
 	 * @see ClientHttpRequestFactory#createRequest(URI, HttpMethod)
 	 */

@@ -38,7 +38,7 @@ public interface ClientHttpRequestFactory {
 	 * @param uri the URI to create a request for
 	 * @param httpMethod the HTTP method to execute
 	 * @return the created request
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	ClientHttpRequest createRequest(URI uri, HttpMethod httpMethod) throws IOException;
 

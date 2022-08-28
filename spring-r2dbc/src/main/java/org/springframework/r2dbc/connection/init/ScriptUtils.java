@@ -312,7 +312,7 @@ public abstract class ScriptUtils {
 	 * to be processed
 	 * @param separator the statement separator in the SQL script (typically ";")
 	 * @return a {@code String} containing the script lines
-	 * @throws IOException in case of I/O errors
+	 * @throws IOException 在I/O错误的情况下
 	 */
 	private static String readScript(LineNumberReader lineNumberReader, @Nullable String separator) throws IOException {
 		StringBuilder scriptBuilder = new StringBuilder();
