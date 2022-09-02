@@ -342,7 +342,7 @@ public interface WebClient {
 
 	/**
 	 * Contract for specifying the URI for a request.
-	 * @param <S> a self reference to the spec type
+	 * @param <S> 对spec类型的自引用
 	 */
 	interface UriSpec<S extends RequestHeadersSpec<?>> {
 
@@ -382,7 +382,7 @@ public interface WebClient {
 
 	/**
 	 * Contract for specifying request headers leading up to the exchange.
-	 * @param <S> a self reference to the spec type
+	 * @param <S> 对spec类型的自引用
 	 */
 	interface RequestHeadersSpec<S extends RequestHeadersSpec<S>> {
 
@@ -915,7 +915,7 @@ public interface WebClient {
 
 	/**
 	 * Contract for specifying request headers and URI for a request.
-	 * @param <S> a self reference to the spec type
+	 * @param <S> 对spec类型的自引用
 	 */
 	interface RequestHeadersUriSpec<S extends RequestHeadersSpec<S>>
 			extends UriSpec<S>, RequestHeadersSpec<S> {

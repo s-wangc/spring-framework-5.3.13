@@ -393,7 +393,7 @@ public interface RSocketRequester extends Disposable {
 	/**
 	 * Spec for providing additional composite metadata entries.
 	 *
-	 * @param <S> a self reference to the spec type
+	 * @param <S> 对spec类型的自引用
 	 */
 	interface MetadataSpec<S extends MetadataSpec<S>> {
 

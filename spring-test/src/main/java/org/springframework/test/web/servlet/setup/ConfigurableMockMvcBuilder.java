@@ -32,7 +32,7 @@ import org.springframework.test.web.servlet.ResultMatcher;
  * @author Rossen Stoyanchev
  * @author Sam Brannen
  * @since 4.1
- * @param <B> a self reference to the builder type
+ * @param <B> 对builder类型的自引用
  */
 public interface ConfigurableMockMvcBuilder<B extends ConfigurableMockMvcBuilder<B>> extends MockMvcBuilder {
 

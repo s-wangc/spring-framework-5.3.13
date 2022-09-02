@@ -257,7 +257,7 @@ public interface WebTestClient {
 	/**
 	 * Base specification for setting up tests without a server.
 	 *
-	 * @param <B> a self reference to the builder type
+	 * @param <B> 对builder类型的自引用
 	 */
 	interface MockServerSpec<B extends MockServerSpec<B>> {
 
@@ -521,7 +521,7 @@ public interface WebTestClient {
 	/**
 	 * Specification for providing the URI of a request.
 	 *
-	 * @param <S> a self reference to the spec type
+	 * @param <S> 对spec类型的自引用
 	 */
 	interface UriSpec<S extends RequestHeadersSpec<?>> {
 
@@ -559,7 +559,7 @@ public interface WebTestClient {
 	/**
 	 * Specification for adding request headers and performing an exchange.
 	 *
-	 * @param <S> a self reference to the spec type
+	 * @param <S> 对spec类型的自引用
 	 */
 	interface RequestHeadersSpec<S extends RequestHeadersSpec<S>> {
 
@@ -766,7 +766,7 @@ public interface WebTestClient {
 	/**
 	 * Specification for providing request headers and the URI of a request.
 	 *
-	 * @param <S> a self reference to the spec type
+	 * @param <S> 对spec类型的自引用
 	 */
 	interface RequestHeadersUriSpec<S extends RequestHeadersSpec<S>> extends UriSpec<S>, RequestHeadersSpec<S> {
 	}
@@ -890,7 +890,7 @@ public interface WebTestClient {
 	/**
 	 * Spec for expectations on the response body decoded to a single Object.
 	 *
-	 * @param <S> a self reference to the spec type
+	 * @param <S> 对spec类型的自引用
 	 * @param <B> body类型
 	 */
 	interface BodySpec<B, S extends BodySpec<B, S>> {

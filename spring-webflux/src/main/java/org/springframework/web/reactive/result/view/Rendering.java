@@ -88,7 +88,7 @@ public interface Rendering {
 	/**
 	 * Defines a builder for {@link Rendering}.
 	 *
-	 * @param <B> a self reference to the builder type
+	 * @param <B> 对builder类型的自引用
 	 */
 	interface Builder<B extends Builder<B>> {
 

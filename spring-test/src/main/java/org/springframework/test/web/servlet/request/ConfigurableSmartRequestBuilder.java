@@ -24,7 +24,7 @@ import org.springframework.test.web.servlet.SmartRequestBuilder;
  *
  * @author Rossen Stoyanchev
  * @since 4.1
- * @param <B> a self reference to the builder type
+ * @param <B> 对builder类型的自引用
  */
 public interface ConfigurableSmartRequestBuilder<B extends ConfigurableSmartRequestBuilder<B>>
 		extends SmartRequestBuilder {

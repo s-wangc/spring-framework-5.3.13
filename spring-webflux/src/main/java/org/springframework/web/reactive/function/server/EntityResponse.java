@@ -128,7 +128,7 @@ public interface EntityResponse<T> extends ServerResponse {
 	/**
 	 * Defines a builder for {@code EntityResponse}.
 	 *
-	 * @param <T> a self reference to the builder type
+	 * @param <T> 对builder类型的自引用
 	 */
 	interface Builder<T> {
 

@@ -51,7 +51,7 @@ import org.springframework.web.context.WebApplicationContext;
  * @author Stephane Nicoll
  * @author Sam Brannen
  * @since 4.0
- * @param <B> a self reference to the builder type
+ * @param <B> 对builder类型的自引用
  */
 public abstract class AbstractMockMvcBuilder<B extends AbstractMockMvcBuilder<B>>
 		extends MockMvcBuilderSupport implements ConfigurableMockMvcBuilder<B> {

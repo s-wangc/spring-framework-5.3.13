@@ -52,7 +52,7 @@ import org.springframework.web.server.ServerWebExchange;
  * @author Arjen Poutsma
  * @author Juergen Hoeller
  * @since 5.0
- * @param <T> a self reference to the builder type
+ * @param <T> 对builder类型的自引用
  */
 class DefaultEntityResponseBuilder<T> implements EntityResponse.Builder<T> {
 

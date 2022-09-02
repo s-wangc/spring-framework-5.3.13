@@ -41,7 +41,7 @@ import org.springframework.web.context.WebApplicationContext;
  * @author Rob Winch
  * @author Sam Brannen
  * @since 4.2
- * @param <T> a self reference to the builder type
+ * @param <T> 对builder类型的自引用
  */
 public abstract class MockMvcWebConnectionBuilderSupport<T extends MockMvcWebConnectionBuilderSupport<T>> {
 
