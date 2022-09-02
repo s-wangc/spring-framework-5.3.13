@@ -47,7 +47,7 @@ public interface BeanFactoryAware extends Aware {
 	 * {@link InitializingBean#afterPropertiesSet()} or a custom init-method.
 	 * @param beanFactory owning BeanFactory (never {@code null}).
 	 * The bean can immediately call methods on the factory.
-	 * @throws BeansException in case of initialization errors
+	 * @throws BeansException 在初始化错误的情况下
 	 * @see BeanInitializationException
 	 */
 	void setBeanFactory(BeanFactory beanFactory) throws BeansException;

@@ -217,7 +217,7 @@ public class ResourceBundleViewResolver extends AbstractCachingViewResolver
 	 * <p>Synchronized because of access by parallel threads.
 	 * @param locale the target {@code Locale}
 	 * @return the View factory for the given Locale
-	 * @throws BeansException in case of initialization errors
+	 * @throws BeansException 在初始化错误的情况下
 	 */
 	protected synchronized BeanFactory initFactory(Locale locale) throws BeansException {
 		// Try to find cached factory for Locale:

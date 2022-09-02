@@ -116,7 +116,7 @@ public abstract class ApplicationObjectSupport implements ApplicationContextAwar
 	 * <p>The default implementation calls the overloaded {@link #initApplicationContext()}
 	 * method without ApplicationContext reference.
 	 * @param context the containing ApplicationContext
-	 * @throws ApplicationContextException in case of initialization errors
+	 * @throws ApplicationContextException 在初始化错误的情况下
 	 * @throws BeansException if thrown by ApplicationContext methods
 	 * @see #setApplicationContext
 	 */
@@ -128,7 +128,7 @@ public abstract class ApplicationObjectSupport implements ApplicationContextAwar
 	 * Subclasses can override this for custom initialization behavior.
 	 * <p>默认实现为空. Called by
 	 * {@link #initApplicationContext(org.springframework.context.ApplicationContext)}.
-	 * @throws ApplicationContextException in case of initialization errors
+	 * @throws ApplicationContextException 在初始化错误的情况下
 	 * @throws BeansException if thrown by ApplicationContext methods
 	 * @see #setApplicationContext
 	 */

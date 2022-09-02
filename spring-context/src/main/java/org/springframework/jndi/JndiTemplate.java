@@ -129,7 +129,7 @@ public class JndiTemplate {
 	 * <p>The default implementation use this template's environment settings.
 	 * Can be subclassed for custom contexts, e.g. for testing.
 	 * @return the initial Context instance
-	 * @throws NamingException in case of initialization errors
+	 * @throws NamingException 在初始化错误的情况下
 	 */
 	protected Context createInitialContext() throws NamingException {
 		Hashtable<?, ?> icEnv = null;

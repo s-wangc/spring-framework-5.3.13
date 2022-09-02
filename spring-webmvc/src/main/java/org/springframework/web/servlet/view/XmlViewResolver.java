@@ -133,7 +133,7 @@ public class XmlViewResolver extends AbstractCachingViewResolver
 	/**
 	 * Initialize the view bean factory from the XML file.
 	 * Synchronized because of access by parallel threads.
-	 * @throws BeansException in case of initialization errors
+	 * @throws BeansException 在初始化错误的情况下
 	 */
 	protected synchronized BeanFactory initFactory() throws BeansException {
 		if (this.cachedFactory != null) {
