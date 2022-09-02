@@ -1171,7 +1171,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	 * @param beanName bean的名称
 	 * @param mbd the bean definition for the bean
 	 * @param args explicit arguments to use for constructor or factory method invocation
-	 * @return a BeanWrapper for the new instance
+	 * @return 一个BeanWrapper的新实例
 	 * @see #obtainFromSupplier
 	 * @see #instantiateUsingFactoryMethod
 	 * @see #autowireConstructor
@@ -1236,7 +1236,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	 * Obtain a bean instance from the given supplier.
 	 * @param instanceSupplier the configured supplier
 	 * @param beanName the corresponding bean name
-	 * @return a BeanWrapper for the new instance
+	 * @return 一个BeanWrapper的新实例
 	 * @since 5.0
 	 * @see #getObjectForBeanInstance
 	 */
@@ -1312,7 +1312,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	 * Instantiate the given bean using its default constructor.
 	 * @param beanName bean的名称
 	 * @param mbd the bean definition for the bean
-	 * @return a BeanWrapper for the new instance
+	 * @return 一个BeanWrapper的新实例
 	 */
 	protected BeanWrapper instantiateBean(String beanName, RootBeanDefinition mbd) {
 		try {
@@ -1343,7 +1343,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	 * @param mbd the bean definition for the bean
 	 * @param explicitArgs argument values passed in programmatically via the getBean method,
 	 * or {@code null} if none (implying the use of constructor argument values from bean definition)
-	 * @return a BeanWrapper for the new instance
+	 * @return 一个BeanWrapper的新实例
 	 * @see #getBean(String, Object[])
 	 */
 	protected BeanWrapper instantiateUsingFactoryMethod(
@@ -1364,7 +1364,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	 * @param ctors the chosen candidate constructors
 	 * @param explicitArgs argument values passed in programmatically via the getBean method,
 	 * or {@code null} if none (implying the use of constructor argument values from bean definition)
-	 * @return a BeanWrapper for the new instance
+	 * @return 一个BeanWrapper的新实例
 	 */
 	protected BeanWrapper autowireConstructor(
 			String beanName, RootBeanDefinition mbd, @Nullable Constructor<?>[] ctors, @Nullable Object[] explicitArgs) {

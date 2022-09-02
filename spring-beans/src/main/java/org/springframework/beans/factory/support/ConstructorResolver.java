@@ -122,7 +122,7 @@ class ConstructorResolver {
 	 * @param chosenCtors chosen candidate constructors (or {@code null} if none)
 	 * @param explicitArgs argument values passed in programmatically via the getBean method,
 	 * or {@code null} if none (-> use constructor argument values from bean definition)
-	 * @return a BeanWrapper for the new instance
+	 * @return 一个BeanWrapper的新实例
 	 */
 	public BeanWrapper autowireConstructor(String beanName, RootBeanDefinition mbd,
 			@Nullable Constructor<?>[] chosenCtors, @Nullable Object[] explicitArgs) {
@@ -389,7 +389,7 @@ class ConstructorResolver {
 	 * @param mbd the merged bean definition for the bean
 	 * @param explicitArgs argument values passed in programmatically via the getBean
 	 * method, or {@code null} if none (-> use constructor argument values from bean definition)
-	 * @return a BeanWrapper for the new instance
+	 * @return 一个BeanWrapper的新实例
 	 */
 	public BeanWrapper instantiateUsingFactoryMethod(
 			String beanName, RootBeanDefinition mbd, @Nullable Object[] explicitArgs) {
