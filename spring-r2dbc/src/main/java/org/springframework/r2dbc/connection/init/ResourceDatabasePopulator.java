@@ -229,7 +229,7 @@ public class ResourceDatabasePopulator implements DatabasePopulator {
 
 	/**
 	 * Flag to indicate that all failures in SQL should be logged but not cause a failure.
-	 * <p>Defaults to {@code false}.
+	 * <p>默认值是{@code false}.
 	 * @param continueOnError {@code true} if script execution should continue on error
 	 */
 	public void setContinueOnError(boolean continueOnError) {
@@ -250,7 +250,7 @@ public class ResourceDatabasePopulator implements DatabasePopulator {
 
 	/**
 	 * Set the {@link DataBufferFactory} to use for {@link Resource} loading.
-	 * <p>Defaults to {@link DefaultDataBufferFactory}.
+	 * <p>默认值是{@link DefaultDataBufferFactory}.
 	 * @param dataBufferFactory the {@link DataBufferFactory} to use, must not be {@code null}
 	 */
 	public void setDataBufferFactory(DataBufferFactory dataBufferFactory) {

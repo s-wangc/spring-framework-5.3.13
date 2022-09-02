@@ -222,7 +222,7 @@ public class ResourceDatabasePopulator implements DatabasePopulator {
 
 	/**
 	 * Flag to indicate that all failures in SQL should be logged but not cause a failure.
-	 * <p>Defaults to {@code false}.
+	 * <p>默认值是{@code false}.
 	 * @param continueOnError {@code true} if script execution should continue on error
 	 */
 	public void setContinueOnError(boolean continueOnError) {

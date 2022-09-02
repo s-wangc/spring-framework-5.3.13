@@ -135,7 +135,7 @@ public @interface Sql {
 
 	/**
 	 * When the SQL scripts and statements should be executed.
-	 * <p>Defaults to {@link ExecutionPhase#BEFORE_TEST_METHOD BEFORE_TEST_METHOD}.
+	 * <p>默认值是{@link ExecutionPhase#BEFORE_TEST_METHOD BEFORE_TEST_METHOD}.
 	 */
 	ExecutionPhase executionPhase() default ExecutionPhase.BEFORE_TEST_METHOD;
 

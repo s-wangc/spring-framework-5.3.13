@@ -101,7 +101,7 @@ public class EmbeddedDatabaseFactory {
 
 	/**
 	 * Set the name of the database.
-	 * <p>Defaults to {@value #DEFAULT_DATABASE_NAME}.
+	 * <p>默认值是{@value #DEFAULT_DATABASE_NAME}.
 	 * <p>Will be overridden if the {@code generateUniqueDatabaseName} flag
 	 * has been set to {@code true}.
 	 * @param databaseName name of the embedded database
@@ -115,7 +115,7 @@ public class EmbeddedDatabaseFactory {
 	/**
 	 * Set the factory to use to create the {@link DataSource} instance that
 	 * connects to the embedded database.
-	 * <p>Defaults to {@link SimpleDriverDataSourceFactory}.
+	 * <p>默认值是{@link SimpleDriverDataSourceFactory}.
 	 */
 	public void setDataSourceFactory(DataSourceFactory dataSourceFactory) {
 		Assert.notNull(dataSourceFactory, "DataSourceFactory is required");
@@ -125,7 +125,7 @@ public class EmbeddedDatabaseFactory {
 	/**
 	 * Set the type of embedded database to use.
 	 * <p>Call this when you wish to configure one of the pre-supported types.
-	 * <p>Defaults to HSQL.
+	 * <p>默认值是HSQL.
 	 * @param type database类型
 	 */
 	public void setDatabaseType(EmbeddedDatabaseType type) {
@@ -143,7 +143,7 @@ public class EmbeddedDatabaseFactory {
 	/**
 	 * Set the strategy that will be used to initialize or populate the embedded
 	 * database.
-	 * <p>Defaults to {@code null}.
+	 * <p>默认值是{@code null}.
 	 */
 	public void setDatabasePopulator(DatabasePopulator populator) {
 		this.databasePopulator = populator;

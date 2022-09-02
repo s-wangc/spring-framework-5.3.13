@@ -249,7 +249,7 @@ public class EmbeddedDatabaseBuilder {
 	/**
 	 * Specify that all failures which occur while executing SQL scripts should
 	 * be logged but should not cause a failure.
-	 * <p>Defaults to {@code false}.
+	 * <p>默认值是{@code false}.
 	 * @param flag {@code true} if script execution should continue on error
 	 * @return {@code this}, to facilitate method chaining
 	 * @since 4.0.3

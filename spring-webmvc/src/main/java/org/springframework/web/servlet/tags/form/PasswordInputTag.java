@@ -209,7 +209,7 @@ import javax.servlet.jsp.JspException;
  * <td><p>showPassword</p></td>
  * <td><p>false</p></td>
  * <td><p>true</p></td>
- * <td><p>Is the password value to be shown? Defaults to false.</p></td>
+ * <td><p>Is the password value to be shown? 默认值是false.</p></td>
  * </tr>
  * <tr class="rowColor">
  * <td><p>size</p></td>

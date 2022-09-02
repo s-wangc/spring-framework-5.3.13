@@ -131,7 +131,7 @@ public interface DatabaseClient extends ConnectionAccessor {
 
 		/**
 		 * Configure whether to use named parameter expansion.
-		 * Defaults to {@code true}.
+		 * 默认值是{@code true}.
 		 * @param enabled {@code true} to use named parameter expansion;
 		 * {@code false} to disable named parameter expansion
 		 * @see NamedParameterExpander

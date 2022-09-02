@@ -70,7 +70,7 @@ public @interface Rollback {
 	 * after the test method has completed.
 	 * <p>If {@code true}, the transaction will be rolled back; otherwise,
 	 * the transaction will be committed.
-	 * <p>Defaults to {@code true}.
+	 * <p>默认值是{@code true}.
 	 */
 	boolean value() default true;
 

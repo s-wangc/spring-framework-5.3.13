@@ -170,7 +170,7 @@ public class DefaultPartHttpMessageReader extends LoggingCodecSupport implements
 	 * is streamed directly from the parsed input buffer stream, and not stored
 	 * in memory nor file.
 	 * When {@code false}, parts are backed by
-	 * in-memory and/or file storage. Defaults to {@code false}.
+	 * in-memory and/or file storage. 默认值是{@code false}.
 	 * <p><strong>NOTE</strong> that with streaming enabled, the
 	 * {@code Flux<Part>} that is produced by this message reader must be
 	 * consumed in the original order, i.e. the order of the HTTP message.

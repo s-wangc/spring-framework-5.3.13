@@ -90,7 +90,7 @@ public @interface DirtiesContext {
 	/**
 	 * The <i>mode</i> to use when a test method is annotated with
 	 * {@code @DirtiesContext}.
-	 * <p>Defaults to {@link MethodMode#AFTER_METHOD AFTER_METHOD}.
+	 * <p>默认值是{@link MethodMode#AFTER_METHOD AFTER_METHOD}.
 	 * <p>Setting the method mode on an annotated test class has no meaning.
 	 * For class-level control, use {@link #classMode} instead.
 	 * @since 4.2
@@ -100,7 +100,7 @@ public @interface DirtiesContext {
 	/**
 	 * The <i>mode</i> to use when a test class is annotated with
 	 * {@code @DirtiesContext}.
-	 * <p>Defaults to {@link ClassMode#AFTER_CLASS AFTER_CLASS}.
+	 * <p>默认值是{@link ClassMode#AFTER_CLASS AFTER_CLASS}.
 	 * <p>Setting the class mode on an annotated test method has no meaning.
 	 * For method-level control, use {@link #methodMode} instead.
 	 * @since 3.0
@@ -111,7 +111,7 @@ public @interface DirtiesContext {
 	 * The context cache clearing <em>mode</em> to use when a context is
 	 * configured as part of a hierarchy via
 	 * {@link org.springframework.test.context.ContextHierarchy @ContextHierarchy}.
-	 * <p>Defaults to {@link HierarchyMode#EXHAUSTIVE EXHAUSTIVE}.
+	 * <p>默认值是{@link HierarchyMode#EXHAUSTIVE EXHAUSTIVE}.
 	 * @since 3.2.2
 	 */
 	HierarchyMode hierarchyMode() default HierarchyMode.EXHAUSTIVE;

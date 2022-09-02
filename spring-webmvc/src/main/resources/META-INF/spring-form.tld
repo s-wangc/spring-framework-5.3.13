@@ -589,7 +589,7 @@
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
 		<attribute>
-			<description>Is the password value to be shown? Defaults to false.</description>
+			<description>Is the password value to be shown? 默认值是false.</description>
 			<name>showPassword</name>
 			<required>false</required>
 			<rtexprvalue>true</rtexprvalue>

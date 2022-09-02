@@ -202,7 +202,7 @@ public class RedirectView extends AbstractUrlBasedView implements SmartView {
 	/**
 	 * Set the {@code exposeModelAttributes} flag which denotes whether
 	 * or not model attributes should be exposed as HTTP query parameters.
-	 * <p>Defaults to {@code true}.
+	 * <p>默认值是{@code true}.
 	 */
 	public void setExposeModelAttributes(final boolean exposeModelAttributes) {
 		this.exposeModelAttributes = exposeModelAttributes;
@@ -231,7 +231,7 @@ public class RedirectView extends AbstractUrlBasedView implements SmartView {
 	 * Set this flag to {@code false} if the redirect URL contains open
 	 * and close curly braces "{", "}" and you don't want them interpreted
 	 * as URI variables.
-	 * <p>Defaults to {@code true}.
+	 * <p>默认值是{@code true}.
 	 */
 	public void setExpandUriTemplateVariables(boolean expandUriTemplateVariables) {
 		this.expandUriTemplateVariables = expandUriTemplateVariables;
@@ -240,7 +240,7 @@ public class RedirectView extends AbstractUrlBasedView implements SmartView {
 	/**
 	 * When set to {@code true} the query string of the current URL is appended
 	 * and thus propagated through to the redirected URL.
-	 * <p>Defaults to {@code false}.
+	 * <p>默认值是{@code false}.
 	 * @since 4.1
 	 */
 	public void setPropagateQueryParams(boolean propagateQueryParams) {

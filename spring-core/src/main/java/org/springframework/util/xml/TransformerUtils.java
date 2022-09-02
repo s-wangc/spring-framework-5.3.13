@@ -33,7 +33,7 @@ public abstract class TransformerUtils {
 
 	/**
 	 * The indent amount of characters if {@link #enableIndenting indenting is enabled}.
-	 * <p>Defaults to "2".
+	 * <p>默认值是"2".
 	 */
 	public static final int DEFAULT_INDENT_AMOUNT = 2;
 

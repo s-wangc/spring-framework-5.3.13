@@ -56,7 +56,7 @@ public @interface ApplicationScope {
 
 	/**
 	 * Alias for {@link Scope#proxyMode}.
-	 * <p>Defaults to {@link ScopedProxyMode#TARGET_CLASS}.
+	 * <p>默认值是{@link ScopedProxyMode#TARGET_CLASS}.
 	 */
 	@AliasFor(annotation = Scope.class)
 	ScopedProxyMode proxyMode() default ScopedProxyMode.TARGET_CLASS;

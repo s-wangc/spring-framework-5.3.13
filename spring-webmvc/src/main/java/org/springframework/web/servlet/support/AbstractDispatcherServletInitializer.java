@@ -108,7 +108,7 @@ public abstract class AbstractDispatcherServletInitializer extends AbstractConte
 
 	/**
 	 * Return the name under which the {@link DispatcherServlet} will be registered.
-	 * Defaults to {@link #DEFAULT_SERVLET_NAME}.
+	 * 默认值是{@link #DEFAULT_SERVLET_NAME}.
 	 * @see #registerDispatcherServlet(ServletContext)
 	 */
 	protected String getServletName() {

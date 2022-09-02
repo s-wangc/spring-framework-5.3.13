@@ -48,7 +48,7 @@ public class ProxyFactoryBean implements FactoryBean<Proxy>, InitializingBean {
 
 	/**
 	 * Set the proxy type.
-	 * <p>Defaults to {@link java.net.Proxy.Type#HTTP}.
+	 * <p>默认值是{@link java.net.Proxy.Type#HTTP}.
 	 */
 	public void setType(Proxy.Type type) {
 		this.type = type;

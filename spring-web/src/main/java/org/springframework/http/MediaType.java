@@ -526,7 +526,7 @@ public class MediaType extends MimeType implements Serializable {
 
 	/**
 	 * Return the quality factor, as indicated by a {@code q} parameter, if any.
-	 * Defaults to {@code 1.0}.
+	 * 默认值是{@code 1.0}.
 	 * @return the quality factor as double value
 	 */
 	public double getQualityValue() {

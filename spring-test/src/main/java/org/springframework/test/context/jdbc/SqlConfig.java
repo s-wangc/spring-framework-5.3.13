@@ -114,7 +114,7 @@ public @interface SqlConfig {
 	/**
 	 * The <em>mode</em> to use when determining whether SQL scripts should be
 	 * executed within a transaction.
-	 * <p>Defaults to {@link TransactionMode#DEFAULT DEFAULT}.
+	 * <p>默认值是{@link TransactionMode#DEFAULT DEFAULT}.
 	 * <p>Can be set to {@link TransactionMode#ISOLATED} to ensure that the SQL
 	 * scripts are executed in a new, isolated transaction that will be immediately
 	 * committed.
@@ -185,7 +185,7 @@ public @interface SqlConfig {
 	/**
 	 * The <em>mode</em> to use when an error is encountered while executing an
 	 * SQL statement.
-	 * <p>Defaults to {@link ErrorMode#DEFAULT DEFAULT}.
+	 * <p>默认值是{@link ErrorMode#DEFAULT DEFAULT}.
 	 * @see ErrorMode
 	 */
 	ErrorMode errorMode() default ErrorMode.DEFAULT;

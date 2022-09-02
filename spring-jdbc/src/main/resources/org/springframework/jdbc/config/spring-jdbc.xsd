@@ -66,7 +66,7 @@
 					<xsd:attribute name="type" type="databaseType" default="HSQL">
 						<xsd:annotation>
 							<xsd:documentation><![CDATA[
-			The type of embedded database to create, such as HSQL, H2 or Derby. Defaults to HSQL.
+			The type of embedded database to create, such as HSQL, H2 or Derby. 默认值是HSQL.
 							]]></xsd:documentation>
 						</xsd:annotation>
 					</xsd:attribute>
@@ -94,7 +94,7 @@
 			<xsd:attribute name="data-source" type="xsd:string" default="dataSource">
 				<xsd:annotation>
 					<xsd:documentation><![CDATA[
-			A reference to a data source that should be initialized. Defaults to "dataSource".
+			A reference to a data source that should be initialized. 默认值是"dataSource".
 					]]></xsd:documentation>
 					<xsd:appinfo>
 						<tool:annotation kind="ref"/>
