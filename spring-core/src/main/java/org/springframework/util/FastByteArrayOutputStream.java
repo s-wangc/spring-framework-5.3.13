@@ -237,7 +237,7 @@ public class FastByteArrayOutputStream extends OutputStream {
 
 	/**
 	 * Write the buffers content to the given OutputStream.
-	 * @param out the OutputStream to write to
+	 * @param out 要写入的OutputStream
 	 */
 	public void writeTo(OutputStream out) throws IOException {
 		Iterator<byte[]> it = this.buffers.iterator();

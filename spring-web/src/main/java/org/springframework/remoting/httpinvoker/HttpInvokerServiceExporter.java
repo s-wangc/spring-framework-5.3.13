@@ -158,7 +158,7 @@ public class HttpInvokerServiceExporter extends org.springframework.remoting.rmi
 	 * @param request current HTTP request
 	 * @param response current HTTP response
 	 * @param result the RemoteInvocationResult object
-	 * @param os the OutputStream to write to
+	 * @param os 要写入的OutputStream
 	 * @throws IOException in case of I/O failure
 	 * @see #decorateOutputStream
 	 * @see #doWriteRemoteInvocationResult

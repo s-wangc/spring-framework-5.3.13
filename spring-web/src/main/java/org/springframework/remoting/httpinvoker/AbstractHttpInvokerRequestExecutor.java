@@ -161,7 +161,7 @@ public abstract class AbstractHttpInvokerRequestExecutor implements HttpInvokerR
 	 * {@code doWriteRemoteInvocation} to actually write the object.
 	 * <p>Can be overridden for custom serialization of the invocation.
 	 * @param invocation the RemoteInvocation object
-	 * @param os the OutputStream to write to
+	 * @param os 要写入的OutputStream
 	 * @throws IOException if thrown by I/O methods
 	 * @see #decorateOutputStream
 	 * @see #doWriteRemoteInvocation

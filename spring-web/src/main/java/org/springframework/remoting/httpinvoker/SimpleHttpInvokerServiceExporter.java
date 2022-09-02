@@ -152,7 +152,7 @@ public class SimpleHttpInvokerServiceExporter extends org.springframework.remoti
 	 * <p>Can be overridden for custom serialization of the invocation.
 	 * @param exchange current HTTP request/response
 	 * @param result the RemoteInvocationResult object
-	 * @param os the OutputStream to write to
+	 * @param os 要写入的OutputStream
 	 * @throws java.io.IOException in case of I/O failure
 	 * @see #decorateOutputStream
 	 * @see #doWriteRemoteInvocationResult

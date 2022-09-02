@@ -155,7 +155,7 @@ public abstract class RemoteInvocationSerializingExporter extends RemoteInvocati
 	 * Create an ObjectOutputStream for the given OutputStream.
 	 * <p>The default implementation creates a plain
 	 * {@link java.io.ObjectOutputStream}.
-	 * @param os the OutputStream to write to
+	 * @param os 要写入的OutputStream
 	 * @return the new ObjectOutputStream instance to use
 	 * @throws java.io.IOException if creation of the ObjectOutputStream failed
 	 */

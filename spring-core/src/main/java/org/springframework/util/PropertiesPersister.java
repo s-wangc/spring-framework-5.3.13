@@ -63,7 +63,7 @@ public interface PropertiesPersister {
 	 * Write the contents of the given Properties object to the
 	 * given OutputStream.
 	 * @param props the Properties object to store
-	 * @param os the OutputStream to write to
+	 * @param os 要写入的OutputStream
 	 * @param header the description of the property list
 	 * @throws IOException 在I/O错误的情况下
 	 * @see java.util.Properties#store
@@ -94,7 +94,7 @@ public interface PropertiesPersister {
 	 * Write the contents of the given Properties object to the
 	 * given XML OutputStream.
 	 * @param props the Properties object to store
-	 * @param os the OutputStream to write to
+	 * @param os 要写入的OutputStream
 	 * @param header the description of the property list
 	 * @throws IOException 在I/O错误的情况下
 	 * @see java.util.Properties#storeToXML(java.io.OutputStream, String)
@@ -105,7 +105,7 @@ public interface PropertiesPersister {
 	 * Write the contents of the given Properties object to the
 	 * given XML OutputStream.
 	 * @param props the Properties object to store
-	 * @param os the OutputStream to write to
+	 * @param os 要写入的OutputStream
 	 * @param encoding 要使用的encoding
 	 * @param header the description of the property list
 	 * @throws IOException 在I/O错误的情况下
