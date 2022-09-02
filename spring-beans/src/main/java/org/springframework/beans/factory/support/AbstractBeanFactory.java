@@ -521,7 +521,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 * Internal extended variant of {@link #isTypeMatch(String, ResolvableType)}
 	 * to check whether the bean with the given name matches the specified type. Allow
 	 * additional constraints to be applied to ensure that beans are not created early.
-	 * @param name the name of the bean to query
+	 * @param name 要查询的bean的名称
 	 * @param typeToMatch the type to match against (as a
 	 * {@code ResolvableType})
 	 * @return {@code true} if the bean type matches, {@code false} if it
