@@ -174,8 +174,7 @@ public class AnnotationAttributes extends LinkedHashMap<String, Object> {
 	 * @param attributeName the name of the attribute to get;
 	 * never {@code null} or empty
 	 * @return the value
-	 * @throws IllegalArgumentException if the attribute does not exist or
-	 * if it is not of the expected type
+	 * @throws IllegalArgumentException 如果属性不存在, 或如果不是预期的类型
 	 */
 	public String getString(String attributeName) {
 		return getRequiredAttribute(attributeName, String.class);
@@ -190,8 +189,7 @@ public class AnnotationAttributes extends LinkedHashMap<String, Object> {
 	 * @param attributeName the name of the attribute to get;
 	 * never {@code null} or empty
 	 * @return the value
-	 * @throws IllegalArgumentException if the attribute does not exist or
-	 * if it is not of the expected type
+	 * @throws IllegalArgumentException 如果属性不存在, 或如果不是预期的类型
 	 */
 	public String[] getStringArray(String attributeName) {
 		return getRequiredAttribute(attributeName, String[].class);
@@ -202,8 +200,7 @@ public class AnnotationAttributes extends LinkedHashMap<String, Object> {
 	 * @param attributeName the name of the attribute to get;
 	 * never {@code null} or empty
 	 * @return the value
-	 * @throws IllegalArgumentException if the attribute does not exist or
-	 * if it is not of the expected type
+	 * @throws IllegalArgumentException 如果属性不存在, 或如果不是预期的类型
 	 */
 	public boolean getBoolean(String attributeName) {
 		return getRequiredAttribute(attributeName, Boolean.class);
@@ -214,8 +211,7 @@ public class AnnotationAttributes extends LinkedHashMap<String, Object> {
 	 * @param attributeName the name of the attribute to get;
 	 * never {@code null} or empty
 	 * @return the value
-	 * @throws IllegalArgumentException if the attribute does not exist or
-	 * if it is not of the expected type
+	 * @throws IllegalArgumentException 如果属性不存在, 或如果不是预期的类型
 	 */
 	@SuppressWarnings("unchecked")
 	public <N extends Number> N getNumber(String attributeName) {
@@ -227,8 +223,7 @@ public class AnnotationAttributes extends LinkedHashMap<String, Object> {
 	 * @param attributeName the name of the attribute to get;
 	 * never {@code null} or empty
 	 * @return the value
-	 * @throws IllegalArgumentException if the attribute does not exist or
-	 * if it is not of the expected type
+	 * @throws IllegalArgumentException 如果属性不存在, 或如果不是预期的类型
 	 */
 	@SuppressWarnings("unchecked")
 	public <E extends Enum<?>> E getEnum(String attributeName) {
@@ -240,8 +235,7 @@ public class AnnotationAttributes extends LinkedHashMap<String, Object> {
 	 * @param attributeName the name of the attribute to get;
 	 * never {@code null} or empty
 	 * @return the value
-	 * @throws IllegalArgumentException if the attribute does not exist or
-	 * if it is not of the expected type
+	 * @throws IllegalArgumentException 如果属性不存在, 或如果不是预期的类型
 	 */
 	@SuppressWarnings("unchecked")
 	public <T> Class<? extends T> getClass(String attributeName) {
@@ -256,8 +250,7 @@ public class AnnotationAttributes extends LinkedHashMap<String, Object> {
 	 * @param attributeName the name of the attribute to get;
 	 * never {@code null} or empty
 	 * @return the value
-	 * @throws IllegalArgumentException if the attribute does not exist or
-	 * if it is not of the expected type
+	 * @throws IllegalArgumentException 如果属性不存在, 或如果不是预期的类型
 	 */
 	public Class<?>[] getClassArray(String attributeName) {
 		return getRequiredAttribute(attributeName, Class[].class);
@@ -271,8 +264,7 @@ public class AnnotationAttributes extends LinkedHashMap<String, Object> {
 	 * @param attributeName the name of the attribute to get;
 	 * never {@code null} or empty
 	 * @return the {@code AnnotationAttributes}
-	 * @throws IllegalArgumentException if the attribute does not exist or
-	 * if it is not of the expected type
+	 * @throws IllegalArgumentException 如果属性不存在, 或如果不是预期的类型
 	 */
 	public AnnotationAttributes getAnnotation(String attributeName) {
 		return getRequiredAttribute(attributeName, AnnotationAttributes.class);
@@ -285,8 +277,7 @@ public class AnnotationAttributes extends LinkedHashMap<String, Object> {
 	 * never {@code null} or empty
 	 * @param annotationType the expected annotation type; never {@code null}
 	 * @return the annotation
-	 * @throws IllegalArgumentException if the attribute does not exist or
-	 * if it is not of the expected type
+	 * @throws IllegalArgumentException 如果属性不存在, 或如果不是预期的类型
 	 * @since 4.2
 	 */
 	public <A extends Annotation> A getAnnotation(String attributeName, Class<A> annotationType) {
@@ -304,8 +295,7 @@ public class AnnotationAttributes extends LinkedHashMap<String, Object> {
 	 * @param attributeName the name of the attribute to get;
 	 * never {@code null} or empty
 	 * @return the array of {@code AnnotationAttributes}
-	 * @throws IllegalArgumentException if the attribute does not exist or
-	 * if it is not of the expected type
+	 * @throws IllegalArgumentException 如果属性不存在, 或如果不是预期的类型
 	 */
 	public AnnotationAttributes[] getAnnotationArray(String attributeName) {
 		return getRequiredAttribute(attributeName, AnnotationAttributes[].class);
@@ -321,8 +311,7 @@ public class AnnotationAttributes extends LinkedHashMap<String, Object> {
 	 * never {@code null} or empty
 	 * @param annotationType the expected annotation type; never {@code null}
 	 * @return the annotation array
-	 * @throws IllegalArgumentException if the attribute does not exist or
-	 * if it is not of the expected type
+	 * @throws IllegalArgumentException 如果属性不存在, 或如果不是预期的类型
 	 * @since 4.2
 	 */
 	@SuppressWarnings("unchecked")
@@ -343,8 +332,7 @@ public class AnnotationAttributes extends LinkedHashMap<String, Object> {
 	 * never {@code null} or empty
 	 * @param expectedType the expected type; never {@code null}
 	 * @return the value
-	 * @throws IllegalArgumentException if the attribute does not exist or
-	 * if it is not of the expected type
+	 * @throws IllegalArgumentException 如果属性不存在, 或如果不是预期的类型
 	 */
 	@SuppressWarnings("unchecked")
 	private <T> T getRequiredAttribute(String attributeName, Class<T> expectedType) {
