@@ -23,7 +23,7 @@ import org.springframework.lang.Nullable;
  *
  * @author Sebastien Deleuze
  * @since 4.1
- * @param <T> the result type
+ * @param <T> result类型
  */
 @FunctionalInterface
 public interface SuccessCallback<T> {

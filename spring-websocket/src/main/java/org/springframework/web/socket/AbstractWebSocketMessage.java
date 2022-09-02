@@ -25,7 +25,7 @@ import org.springframework.util.ObjectUtils;
  *
  * @author Rossen Stoyanchev
  * @since 4.0
- * @param <T> the payload type
+ * @param <T> payload类型
  */
 public abstract class AbstractWebSocketMessage<T> implements WebSocketMessage<T> {
 

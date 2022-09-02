@@ -200,7 +200,7 @@ import org.springframework.util.StringUtils;
  *
  * @author Chris Beams
  * @since 3.1
- * @param <T> the source type
+ * @param <T> source类型
  * @see PropertySource
  * @see SimpleCommandLinePropertySource
  * @see JOptCommandLinePropertySource

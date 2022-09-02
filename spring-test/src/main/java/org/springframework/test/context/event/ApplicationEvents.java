@@ -61,7 +61,7 @@ public interface ApplicationEvents {
 	/**
 	 * Stream all application events or event payloads of the given type that
 	 * were fired during test execution.
-	 * @param <T> the event type
+	 * @param <T> event类型
 	 * @param type the type of events or payloads to stream; never {@code null}
 	 * @return a stream of all application events or event payloads of the
 	 * specified type

@@ -108,7 +108,7 @@ public class PreparedStatementCreatorFactory {
 
 	/**
 	 * Set whether to use prepared statements that return a specific type of ResultSet.
-	 * @param resultSetType the ResultSet type
+	 * @param resultSetType ResultSet类型
 	 * @see java.sql.ResultSet#TYPE_FORWARD_ONLY
 	 * @see java.sql.ResultSet#TYPE_SCROLL_INSENSITIVE
 	 * @see java.sql.ResultSet#TYPE_SCROLL_SENSITIVE

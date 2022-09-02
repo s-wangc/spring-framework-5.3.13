@@ -131,7 +131,7 @@ public final class ReactiveTypeDescriptor {
 
 	/**
 	 * Descriptor for a reactive type that can produce 0..N values.
-	 * @param type the reactive type
+	 * @param type reactive类型
 	 * @param emptySupplier a supplier of an empty-value instance of the reactive type
 	 */
 	public static ReactiveTypeDescriptor multiValue(Class<?> type, Supplier<?> emptySupplier) {
@@ -140,7 +140,7 @@ public final class ReactiveTypeDescriptor {
 
 	/**
 	 * Descriptor for a reactive type that can produce 0..1 values.
-	 * @param type the reactive type
+	 * @param type reactive类型
 	 * @param emptySupplier a supplier of an empty-value instance of the reactive type
 	 */
 	public static ReactiveTypeDescriptor singleOptionalValue(Class<?> type, Supplier<?> emptySupplier) {
@@ -149,7 +149,7 @@ public final class ReactiveTypeDescriptor {
 
 	/**
 	 * Descriptor for a reactive type that must produce 1 value to complete.
-	 * @param type the reactive type
+	 * @param type reactive类型
 	 */
 	public static ReactiveTypeDescriptor singleRequiredValue(Class<?> type) {
 		return new ReactiveTypeDescriptor(type, false, false, null);
@@ -157,7 +157,7 @@ public final class ReactiveTypeDescriptor {
 
 	/**
 	 * Descriptor for a reactive type that does not produce any values.
-	 * @param type the reactive type
+	 * @param type reactive类型
 	 * @param emptySupplier a supplier of an empty-value instance of the reactive type
 	 */
 	public static ReactiveTypeDescriptor noValue(Class<?> type, Supplier<?> emptySupplier) {
@@ -167,7 +167,7 @@ public final class ReactiveTypeDescriptor {
 	/**
 	 * The same as {@link #singleOptionalValue(Class, Supplier)} but for a
 	 * non-deferred, async type such as {@link java.util.concurrent.CompletableFuture}.
-	 * @param type the reactive type
+	 * @param type reactive类型
 	 * @param emptySupplier a supplier of an empty-value instance of the reactive type
 	 * @since 5.2.7
 	 */

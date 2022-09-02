@@ -91,7 +91,7 @@ public class MutableBindings extends Bindings {
 	/**
 	 * Bind a {@code NULL} value to {@link BindMarker}.
 	 * @param marker the {@link BindMarker} to bind to
-	 * @param valueType the value type
+	 * @param valueType value类型
 	 */
 	public MutableBindings bindNull(BindMarker marker, Class<?> valueType) {
 		Assert.notNull(marker, "BindMarker must not be null");
@@ -103,7 +103,7 @@ public class MutableBindings extends Bindings {
 	/**
 	 * Bind a {@code NULL} value and return the related {@link BindMarker}.
 	 * Increments {@link BindMarkers} state.
-	 * @param valueType the value type
+	 * @param valueType value类型
 	 */
 	public BindMarker bindNull(Class<?> valueType) {
 		Assert.notNull(valueType, "Value type must not be null");

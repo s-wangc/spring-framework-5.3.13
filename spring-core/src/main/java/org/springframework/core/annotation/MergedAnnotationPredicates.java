@@ -44,7 +44,7 @@ public abstract class MergedAnnotationPredicates {
 	 * Create a new {@link Predicate} that evaluates to {@code true} if the name of the
 	 * {@linkplain MergedAnnotation#getType() merged annotation type} is contained in
 	 * the specified array.
-	 * @param <A> the annotation type
+	 * @param <A> annotation类型
 	 * @param typeNames the names that should be matched
 	 * @return a {@link Predicate} to test the annotation type
 	 */
@@ -56,7 +56,7 @@ public abstract class MergedAnnotationPredicates {
 	 * Create a new {@link Predicate} that evaluates to {@code true} if the
 	 * {@linkplain MergedAnnotation#getType() merged annotation type} is contained in
 	 * the specified array.
-	 * @param <A> the annotation type
+	 * @param <A> annotation类型
 	 * @param types the types that should be matched
 	 * @return a {@link Predicate} to test the annotation type
 	 */
@@ -68,7 +68,7 @@ public abstract class MergedAnnotationPredicates {
 	 * Create a new {@link Predicate} that evaluates to {@code true} if the
 	 * {@linkplain MergedAnnotation#getType() merged annotation type} is contained in
 	 * the specified collection.
-	 * @param <A> the annotation type
+	 * @param <A> annotation类型
 	 * @param types the type names or classes that should be matched
 	 * @return a {@link Predicate} to test the annotation type
 	 */

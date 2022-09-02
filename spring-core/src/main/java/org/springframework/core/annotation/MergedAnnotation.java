@@ -55,7 +55,7 @@ import org.springframework.lang.Nullable;
  * @author Juergen Hoeller
  * @author Sam Brannen
  * @since 5.2
- * @param <A> the annotation type
+ * @param <A> annotation类型
  * @see MergedAnnotations
  * @see MergedAnnotationPredicates
  */
@@ -69,7 +69,7 @@ public interface MergedAnnotation<A extends Annotation> {
 
 	/**
 	 * Get the {@code Class} reference for the actual annotation type.
-	 * @return the annotation type
+	 * @return annotation类型
 	 */
 	Class<A> getType();
 
@@ -349,7 +349,7 @@ public interface MergedAnnotation<A extends Annotation> {
 	/**
 	 * Get a required enum attribute value from the annotation.
 	 * @param attributeName the attribute name
-	 * @param type the enum type
+	 * @param type enum类型
 	 * @return the value as a enum
 	 * @throws NoSuchElementException if there is no matching attribute
 	 */
@@ -358,7 +358,7 @@ public interface MergedAnnotation<A extends Annotation> {
 	/**
 	 * Get a required enum array attribute value from the annotation.
 	 * @param attributeName the attribute name
-	 * @param type the enum type
+	 * @param type enum类型
 	 * @return the value as a enum array
 	 * @throws NoSuchElementException if there is no matching attribute
 	 */
@@ -367,7 +367,7 @@ public interface MergedAnnotation<A extends Annotation> {
 	/**
 	 * Get a required annotation attribute value from the annotation.
 	 * @param attributeName the attribute name
-	 * @param type the annotation type
+	 * @param type annotation类型
 	 * @return the value as a {@link MergedAnnotation}
 	 * @throws NoSuchElementException if there is no matching attribute
 	 */
@@ -377,7 +377,7 @@ public interface MergedAnnotation<A extends Annotation> {
 	/**
 	 * Get a required annotation array attribute value from the annotation.
 	 * @param attributeName the attribute name
-	 * @param type the annotation type
+	 * @param type annotation类型
 	 * @return the value as a {@link MergedAnnotation} array
 	 * @throws NoSuchElementException if there is no matching attribute
 	 */
@@ -552,7 +552,7 @@ public interface MergedAnnotation<A extends Annotation> {
 	 * Create a new {@link MergedAnnotation} instance of the specified
 	 * annotation type. The resulting annotation will not have any attribute
 	 * values but may still be used to query default values.
-	 * @param annotationType the annotation type
+	 * @param annotationType annotation类型
 	 * @return a {@link MergedAnnotation} instance for the annotation
 	 */
 	static <A extends Annotation> MergedAnnotation<A> of(Class<A> annotationType) {
@@ -562,7 +562,7 @@ public interface MergedAnnotation<A extends Annotation> {
 	/**
 	 * Create a new {@link MergedAnnotation} instance of the specified
 	 * annotation type with attribute values supplied by a map.
-	 * @param annotationType the annotation type
+	 * @param annotationType annotation类型
 	 * @param attributes the annotation attributes or {@code null} if just default
 	 * values should be used
 	 * @return a {@link MergedAnnotation} instance for the annotation and attributes
@@ -580,7 +580,7 @@ public interface MergedAnnotation<A extends Annotation> {
 	 * @param source the source for the annotation. This source is used only for
 	 * information and logging. It does not need to <em>actually</em> contain
 	 * the specified annotations and it will not be searched.
-	 * @param annotationType the annotation type
+	 * @param annotationType annotation类型
 	 * @param attributes the annotation attributes or {@code null} if just default
 	 * values should be used
 	 * @return a {@link MergedAnnotation} instance for the annotation and attributes
@@ -598,7 +598,7 @@ public interface MergedAnnotation<A extends Annotation> {
 	 * @param source the source for the annotation. This source is used only for
 	 * information and logging. It does not need to <em>actually</em> contain
 	 * the specified annotations and it will not be searched.
-	 * @param annotationType the annotation type
+	 * @param annotationType annotation类型
 	 * @param attributes the annotation attributes or {@code null} if just default
 	 * values should be used
 	 * @return a {@link MergedAnnotation} instance for the annotation and attributes

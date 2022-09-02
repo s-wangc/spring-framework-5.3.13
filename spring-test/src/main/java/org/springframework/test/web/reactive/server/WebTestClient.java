@@ -674,7 +674,7 @@ public interface WebTestClient {
 		/**
 		 * Set the {@linkplain MediaType media type} of the body, as specified
 		 * by the {@code Content-Type} header.
-		 * @param contentType the content type
+		 * @param contentType content类型
 		 * @return the same instance
 		 * @see HttpHeaders#setContentType(MediaType)
 		 */
@@ -891,7 +891,7 @@ public interface WebTestClient {
 	 * Spec for expectations on the response body decoded to a single Object.
 	 *
 	 * @param <S> a self reference to the spec type
-	 * @param <B> the body type
+	 * @param <B> body类型
 	 */
 	interface BodySpec<B, S extends BodySpec<B, S>> {
 

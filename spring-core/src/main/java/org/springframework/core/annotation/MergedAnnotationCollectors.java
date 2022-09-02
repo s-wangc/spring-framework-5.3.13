@@ -56,7 +56,7 @@ public abstract class MergedAnnotationCollectors {
 	 * <p>The collector returned by this method is effectively equivalent to
 	 * {@code Collectors.mapping(MergedAnnotation::synthesize, Collectors.toCollection(LinkedHashSet::new))}
 	 * but avoids the creation of a composite collector.
-	 * @param <A> the annotation type
+	 * @param <A> annotation类型
 	 * @return a {@link Collector} which collects and synthesizes the
 	 * annotations into a {@link Set}
 	 */
@@ -69,7 +69,7 @@ public abstract class MergedAnnotationCollectors {
 	 * Create a new {@link Collector} that accumulates merged annotations to an
 	 * {@link Annotation} array containing {@linkplain MergedAnnotation#synthesize()
 	 * synthesized} versions.
-	 * @param <A> the annotation type
+	 * @param <A> annotation类型
 	 * @return a {@link Collector} which collects and synthesizes the
 	 * annotations into an {@code Annotation[]}
 	 * @see #toAnnotationArray(IntFunction)
@@ -82,7 +82,7 @@ public abstract class MergedAnnotationCollectors {
 	 * Create a new {@link Collector} that accumulates merged annotations to an
 	 * {@link Annotation} array containing {@linkplain MergedAnnotation#synthesize()
 	 * synthesized} versions.
-	 * @param <A> the annotation type
+	 * @param <A> annotation类型
 	 * @param <R> the resulting array type
 	 * @param generator a function which produces a new array of the desired
 	 * type and the provided length
@@ -102,7 +102,7 @@ public abstract class MergedAnnotationCollectors {
 	 * {@link MultiValueMap} with items {@linkplain MultiValueMap#add(Object, Object)
 	 * added} from each merged annotation
 	 * {@linkplain MergedAnnotation#asMap(Adapt...) as a map}.
-	 * @param <A> the annotation type
+	 * @param <A> annotation类型
 	 * @param adaptations the adaptations that should be applied to the annotation values
 	 * @return a {@link Collector} which collects and synthesizes the
 	 * annotations into a {@link LinkedMultiValueMap}
@@ -119,7 +119,7 @@ public abstract class MergedAnnotationCollectors {
 	 * {@link MultiValueMap} with items {@linkplain MultiValueMap#add(Object, Object)
 	 * added} from each merged annotation
 	 * {@linkplain MergedAnnotation#asMap(Adapt...) as a map}.
-	 * @param <A> the annotation type
+	 * @param <A> annotation类型
 	 * @param finisher the finisher function for the new {@link MultiValueMap}
 	 * @param adaptations the adaptations that should be applied to the annotation values
 	 * @return a {@link Collector} which collects and synthesizes the

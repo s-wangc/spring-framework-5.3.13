@@ -634,7 +634,7 @@ public interface WebClient {
 		/**
 		 * Set the {@linkplain MediaType media type} of the body, as specified
 		 * by the {@code Content-Type} header.
-		 * @param contentType the content type
+		 * @param contentType content类型
 		 * @return this builder
 		 * @see HttpHeaders#setContentType(MediaType)
 		 */

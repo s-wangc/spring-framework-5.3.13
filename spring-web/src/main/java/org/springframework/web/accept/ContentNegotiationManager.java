@@ -98,7 +98,7 @@ public class ContentNegotiationManager implements ContentNegotiationStrategy, Me
 
 	/**
 	 * Find a {@code ContentNegotiationStrategy} of the given type.
-	 * @param strategyType the strategy type
+	 * @param strategyType strategy类型
 	 * @return the first matching strategy, or {@code null} if none
 	 * @since 4.3
 	 */

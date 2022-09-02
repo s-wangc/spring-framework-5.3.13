@@ -34,7 +34,7 @@ import org.springframework.lang.Nullable;
  *
  * @author Juergen Hoeller
  * @since 4.3
- * @param <T> the object type
+ * @param <T> object类型
  * @see BeanFactory#getBeanProvider
  * @see org.springframework.beans.factory.annotation.Autowired
  */

@@ -24,7 +24,7 @@ import org.springframework.util.Assert;
  *
  * @author Juergen Hoeller
  * @since 4.3.3
- * @param <T> the bean type
+ * @param <T> bean类型
  * @see AutowireCapableBeanFactory#resolveNamedBean(Class)
  */
 public class NamedBeanHolder<T> implements NamedBean {

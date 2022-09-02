@@ -21,7 +21,7 @@ package org.springframework.web.socket;
  *
  * @author Rossen Stoyanchev
  * @since 4.0
- * @param <T> the payload type
+ * @param <T> payload类型
  */
 public interface WebSocketMessage<T> {
 

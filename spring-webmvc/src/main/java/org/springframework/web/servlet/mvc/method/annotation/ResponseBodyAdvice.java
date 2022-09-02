@@ -35,14 +35,14 @@ import org.springframework.lang.Nullable;
  *
  * @author Rossen Stoyanchev
  * @since 4.1
- * @param <T> the body type
+ * @param <T> body类型
  */
 public interface ResponseBodyAdvice<T> {
 
 	/**
 	 * Whether this component supports the given controller method return type
 	 * and the selected {@code HttpMessageConverter} type.
-	 * @param returnType the return type
+	 * @param returnType return类型
 	 * @param converterType the selected converter type
 	 * @return {@code true} if {@link #beforeBodyWrite} should be invoked;
 	 * {@code false} otherwise

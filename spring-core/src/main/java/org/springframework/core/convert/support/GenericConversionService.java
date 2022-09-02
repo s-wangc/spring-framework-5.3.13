@@ -202,7 +202,7 @@ public class GenericConversionService implements ConfigurableConversionService {
 	 * encapsulates the construction of the source type descriptor using
 	 * {@link TypeDescriptor#forObject(Object)}.
 	 * @param source the source object
-	 * @param targetType the target type
+	 * @param targetType target类型
 	 * @return the converted value
 	 * @throws ConversionException if a conversion exception occurred
 	 * @throws IllegalArgumentException if targetType is {@code null},
@@ -530,8 +530,8 @@ public class GenericConversionService implements ConfigurableConversionService {
 		 * Find a {@link GenericConverter} given a source and target type.
 		 * <p>This method will attempt to match all possible converters by working
 		 * through the class and interface hierarchy of the types.
-		 * @param sourceType the source type
-		 * @param targetType the target type
+		 * @param sourceType source类型
+		 * @param targetType target类型
 		 * @return a matching {@link GenericConverter}, or {@code null} if none found
 		 */
 		@Nullable

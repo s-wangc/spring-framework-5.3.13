@@ -26,7 +26,7 @@ import java.lang.reflect.Method;
  *
  * @author Stephane Nicoll
  * @since 4.1
- * @param <O> the operation type
+ * @param <O> operation类型
  */
 public interface CacheOperationInvocationContext<O extends BasicOperation> {
 

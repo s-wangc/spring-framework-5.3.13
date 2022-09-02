@@ -31,7 +31,7 @@ import org.springframework.lang.Nullable;
  * @author Arjen Poutsma
  * @author Juergen Hoeller
  * @since 5.3
- * @param <K> the key type
+ * @param <K> key类型
  * @param <V> the value element type
  * @see CollectionUtils#toMultiValueMap
  * @see LinkedMultiValueMap

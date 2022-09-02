@@ -22,7 +22,7 @@ package org.springframework.messaging;
  * @author Mark Fisher
  * @author Arjen Poutsma
  * @since 4.0
- * @param <T> the payload type
+ * @param <T> payload类型
  * @see org.springframework.messaging.support.MessageBuilder
  */
 public interface Message<T> {

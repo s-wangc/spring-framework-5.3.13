@@ -41,7 +41,7 @@ import org.springframework.lang.Nullable;
  * @author Rob Harrop
  * @author Juergen Hoeller
  * @since 2.0
- * @param <E> the element type
+ * @param <E> element类型
  */
 @SuppressWarnings("serial")
 public class AutoPopulatingList<E> implements List<E>, Serializable {
@@ -247,7 +247,7 @@ public class AutoPopulatingList<E> implements List<E>, Serializable {
 	 * Factory interface for creating elements for an index-based access
 	 * data structure such as a {@link java.util.List}.
 	 *
-	 * @param <E> the element type
+	 * @param <E> element类型
 	 */
 	@FunctionalInterface
 	public interface ElementFactory<E> {

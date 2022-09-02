@@ -162,7 +162,7 @@ public class ResolvableMethod {
 
 	/**
 	 * Find a unique argument matching the given type.
-	 * @param type the expected type
+	 * @param type expected类型
 	 * @param generics optional array of generic types
 	 */
 	public MethodParameter arg(Class<?> type, Class<?>... generics) {
@@ -171,7 +171,7 @@ public class ResolvableMethod {
 
 	/**
 	 * Find a unique argument matching the given type.
-	 * @param type the expected type
+	 * @param type expected类型
 	 * @param generic at least one generic type
 	 * @param generics optional array of generic types
 	 */
@@ -181,7 +181,7 @@ public class ResolvableMethod {
 
 	/**
 	 * Find a unique argument matching the given type.
-	 * @param type the expected type
+	 * @param type expected类型
 	 */
 	public MethodParameter arg(ResolvableType type) {
 		return new ArgResolver().arg(type);
@@ -344,7 +344,7 @@ public class ResolvableMethod {
 
 		/**
 		 * Filter on methods returning the given type.
-		 * @param returnType the return type
+		 * @param returnType return类型
 		 * @param generics optional array of generic types
 		 */
 		public Builder<T> returning(Class<?> returnType, Class<?>... generics) {
@@ -353,7 +353,7 @@ public class ResolvableMethod {
 
 		/**
 		 * Filter on methods returning the given type with generics.
-		 * @param returnType the return type
+		 * @param returnType return类型
 		 * @param generic at least one generic type
 		 * @param generics optional extra generic types
 		 */
@@ -363,7 +363,7 @@ public class ResolvableMethod {
 
 		/**
 		 * Filter on methods returning the given type.
-		 * @param returnType the return type
+		 * @param returnType return类型
 		 */
 		public Builder<T> returning(ResolvableType returnType) {
 			String expected = returnType.toString();
@@ -433,7 +433,7 @@ public class ResolvableMethod {
 		/**
 		 * Shortcut to the unique return type equivalent to:
 		 * <p>{@code returning(returnType).build().returnType()}
-		 * @param returnType the return type
+		 * @param returnType return类型
 		 * @param generics optional array of generic types
 		 */
 		public MethodParameter resolveReturnType(Class<?> returnType, Class<?>... generics) {
@@ -443,7 +443,7 @@ public class ResolvableMethod {
 		/**
 		 * Shortcut to the unique return type equivalent to:
 		 * <p>{@code returning(returnType).build().returnType()}
-		 * @param returnType the return type
+		 * @param returnType return类型
 		 * @param generic at least one generic type
 		 * @param generics optional extra generic types
 		 */
@@ -565,7 +565,7 @@ public class ResolvableMethod {
 
 		/**
 		 * Resolve the argument also matching to the given type.
-		 * @param type the expected type
+		 * @param type expected类型
 		 */
 		public MethodParameter arg(Class<?> type, Class<?>... generics) {
 			return arg(toResolvableType(type, generics));
@@ -573,7 +573,7 @@ public class ResolvableMethod {
 
 		/**
 		 * Resolve the argument also matching to the given type.
-		 * @param type the expected type
+		 * @param type expected类型
 		 */
 		public MethodParameter arg(Class<?> type, ResolvableType generic, ResolvableType... generics) {
 			return arg(toResolvableType(type, generic, generics));
@@ -581,7 +581,7 @@ public class ResolvableMethod {
 
 		/**
 		 * Resolve the argument also matching to the given type.
-		 * @param type the expected type
+		 * @param type expected类型
 		 */
 		public MethodParameter arg(ResolvableType type) {
 			this.filters.add(p -> type.toString().equals(ResolvableType.forMethodParameter(p).toString()));

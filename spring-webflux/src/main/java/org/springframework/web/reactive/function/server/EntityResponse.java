@@ -45,7 +45,7 @@ import org.springframework.web.reactive.function.BodyInserters;
  * @author Arjen Poutsma
  * @author Juergen Hoeller
  * @since 5.0
- * @param <T> the entity type
+ * @param <T> entity类型
  */
 public interface EntityResponse<T> extends ServerResponse {
 
@@ -273,7 +273,7 @@ public interface EntityResponse<T> extends ServerResponse {
 		/**
 		 * Set the {@linkplain MediaType media type} of the body, as specified by the
 		 * {@code Content-Type} header.
-		 * @param contentType the content type
+		 * @param contentType content类型
 		 * @return this builder
 		 * @see HttpHeaders#setContentType(MediaType)
 		 */

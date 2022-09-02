@@ -392,7 +392,7 @@ public class ModelAttributeMethodProcessor implements HandlerMethodArgumentResol
 	 * and custom annotations whose name starts with "Valid".
 	 * @param binder the DataBinder to be used
 	 * @param parameter the method parameter declaration
-	 * @param targetType the target type
+	 * @param targetType target类型
 	 * @param fieldName field的名称
 	 * @param value the candidate value
 	 * @since 5.1

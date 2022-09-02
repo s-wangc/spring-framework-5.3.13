@@ -40,7 +40,7 @@ import org.springframework.lang.Nullable;
  * @author Thierry Templier
  * @author Juergen Hoeller
  * @since 1.2
- * @param <T> the result type
+ * @param <T> result类型
  * @see CciTemplate#execute(javax.resource.cci.InteractionSpec, Record, RecordExtractor)
  * @see CciTemplate#execute(javax.resource.cci.InteractionSpec, RecordCreator, RecordExtractor)
  * @see javax.resource.cci.ResultSet

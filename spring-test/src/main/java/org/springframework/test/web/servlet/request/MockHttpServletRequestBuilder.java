@@ -296,7 +296,7 @@ public class MockHttpServletRequestBuilder
 	 * {@code application/x-www-form-urlencoded}, the content will be parsed
 	 * and used to populate the {@link #param(String, String...) request
 	 * parameters} map.
-	 * @param contentType the content type
+	 * @param contentType content类型
 	 */
 	public MockHttpServletRequestBuilder contentType(MediaType contentType) {
 		Assert.notNull(contentType, "'contentType' must not be null");
@@ -307,7 +307,7 @@ public class MockHttpServletRequestBuilder
 	/**
 	 * Set the 'Content-Type' header of the request as a raw String value,
 	 * possibly not even well formed (for testing purposes).
-	 * @param contentType the content type
+	 * @param contentType content类型
 	 * @since 4.1.2
 	 */
 	public MockHttpServletRequestBuilder contentType(String contentType) {

@@ -57,8 +57,8 @@ import org.springframework.lang.Nullable;
  * @author Phillip Webb
  * @author Juergen Hoeller
  * @since 3.2
- * @param <K> the key type
- * @param <V> the value type
+ * @param <K> key类型
+ * @param <V> value类型
  */
 public class ConcurrentReferenceHashMap<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> {
 
@@ -683,8 +683,8 @@ public class ConcurrentReferenceHashMap<K, V> extends AbstractMap<K, V> implemen
 	/**
 	 * A reference to an {@link Entry} contained in the map. Implementations are usually
 	 * wrappers around specific Java reference implementations (e.g., {@link SoftReference}).
-	 * @param <K> the key type
-	 * @param <V> the value type
+	 * @param <K> key类型
+	 * @param <V> value类型
 	 */
 	protected interface Reference<K, V> {
 
@@ -715,8 +715,8 @@ public class ConcurrentReferenceHashMap<K, V> extends AbstractMap<K, V> implemen
 
 	/**
 	 * A single map entry.
-	 * @param <K> the key type
-	 * @param <V> the value type
+	 * @param <K> key类型
+	 * @param <V> value类型
 	 */
 	protected static final class Entry<K, V> implements Map.Entry<K, V> {
 

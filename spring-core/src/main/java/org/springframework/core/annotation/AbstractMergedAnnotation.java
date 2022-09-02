@@ -31,7 +31,7 @@ import org.springframework.util.Assert;
  * @author Phillip Webb
  * @author Juergen Hoeller
  * @since 5.2
- * @param <A> the annotation type
+ * @param <A> annotation类型
  */
 abstract class AbstractMergedAnnotation<A extends Annotation> implements MergedAnnotation<A> {
 

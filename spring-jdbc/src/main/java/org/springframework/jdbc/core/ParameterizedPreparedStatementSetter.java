@@ -35,7 +35,7 @@ import java.sql.SQLException;
  * @author Nicolas Fabre
  * @author Thomas Risberg
  * @since 3.1
- * @param <T> the argument type
+ * @param <T> argument类型
  * @see JdbcTemplate#batchUpdate(String, java.util.Collection, int, ParameterizedPreparedStatementSetter)
  */
 @FunctionalInterface

@@ -22,7 +22,7 @@ package org.springframework.messaging.core;
  *
  * @author Mark Fisher
  * @since 4.0
- * @param <D> the destination type
+ * @param <D> destination类型
  */
 @FunctionalInterface
 public interface DestinationResolver<D> {

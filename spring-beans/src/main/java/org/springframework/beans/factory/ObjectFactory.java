@@ -33,7 +33,7 @@ import org.springframework.beans.BeansException;
  *
  * @author Colin Sampaleanu
  * @since 1.0.2
- * @param <T> the object type
+ * @param <T> object类型
  * @see FactoryBean
  */
 @FunctionalInterface

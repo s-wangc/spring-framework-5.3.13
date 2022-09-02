@@ -35,7 +35,7 @@ import org.springframework.util.Assert;
  * @author Mark Fisher
  * @author Rossen Stoyanchev
  * @since 4.0
- * @param <D> the destination type
+ * @param <D> destination类型
  */
 public abstract class AbstractDestinationResolvingMessagingTemplate<D> extends AbstractMessagingTemplate<D>
 		implements DestinationResolvingMessageSendingOperations<D>,

@@ -42,7 +42,7 @@ import org.springframework.lang.Nullable;
  *
  * @author Thomas Risberg
  * @author Juergen Hoeller
- * @param <T> the result type
+ * @param <T> result类型
  * @see JdbcTemplate
  * @see RowCallbackHandler
  * @see ResultSetExtractor

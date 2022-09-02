@@ -33,7 +33,7 @@ import org.springframework.cache.interceptor.CacheOperationInvocationContext;
  *
  * @author Stephane Nicoll
  * @since 4.1
- * @param <A> the annotation type
+ * @param <A> annotation类型
  */
 class DefaultCacheInvocationContext<A extends Annotation>
 		implements CacheInvocationContext<A>, CacheOperationInvocationContext<JCacheOperation<A>> {

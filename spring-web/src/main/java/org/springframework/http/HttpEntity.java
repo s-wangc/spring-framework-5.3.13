@@ -50,7 +50,7 @@ import org.springframework.util.ObjectUtils;
  * @author Arjen Poutsma
  * @author Juergen Hoeller
  * @since 3.0.2
- * @param <T> the body type
+ * @param <T> body类型
  * @see org.springframework.web.client.RestTemplate
  * @see #getBody()
  * @see #getHeaders()

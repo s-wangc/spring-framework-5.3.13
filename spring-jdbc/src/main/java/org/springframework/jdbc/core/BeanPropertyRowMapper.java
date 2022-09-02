@@ -74,7 +74,7 @@ import org.springframework.util.StringUtils;
  * @author Thomas Risberg
  * @author Juergen Hoeller
  * @since 2.5
- * @param <T> the result type
+ * @param <T> result类型
  * @see DataClassRowMapper
  */
 public class BeanPropertyRowMapper<T> implements RowMapper<T> {

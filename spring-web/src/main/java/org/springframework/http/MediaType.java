@@ -425,7 +425,7 @@ public class MediaType extends MimeType implements Serializable {
 	/**
 	 * Create a new {@code MediaType} for the given primary type.
 	 * <p>The {@linkplain #getSubtype() subtype} is set to "&#42;", parameters empty.
-	 * @param type the primary type
+	 * @param type primary类型
 	 * @throws IllegalArgumentException if any of the parameters contain illegal characters
 	 */
 	public MediaType(String type) {
@@ -435,7 +435,7 @@ public class MediaType extends MimeType implements Serializable {
 	/**
 	 * Create a new {@code MediaType} for the given primary type and subtype.
 	 * <p>The parameters are empty.
-	 * @param type the primary type
+	 * @param type primary类型
 	 * @param subtype the subtype
 	 * @throws IllegalArgumentException if any of the parameters contain illegal characters
 	 */
@@ -445,7 +445,7 @@ public class MediaType extends MimeType implements Serializable {
 
 	/**
 	 * Create a new {@code MediaType} for the given type, subtype, and character set.
-	 * @param type the primary type
+	 * @param type primary类型
 	 * @param subtype the subtype
 	 * @param charset the character set
 	 * @throws IllegalArgumentException if any of the parameters contain illegal characters
@@ -456,7 +456,7 @@ public class MediaType extends MimeType implements Serializable {
 
 	/**
 	 * Create a new {@code MediaType} for the given type, subtype, and quality value.
-	 * @param type the primary type
+	 * @param type primary类型
 	 * @param subtype the subtype
 	 * @param qualityValue the quality value
 	 * @throws IllegalArgumentException if any of the parameters contain illegal characters
@@ -490,7 +490,7 @@ public class MediaType extends MimeType implements Serializable {
 
 	/**
 	 * Create a new {@code MediaType} for the given type, subtype, and parameters.
-	 * @param type the primary type
+	 * @param type primary类型
 	 * @param subtype the subtype
 	 * @param parameters the parameters, may be {@code null}
 	 * @throws IllegalArgumentException if any of the parameters contain illegal characters
@@ -503,7 +503,7 @@ public class MediaType extends MimeType implements Serializable {
 	 * Create a new {@code MediaType} for the given {@link MimeType}.
 	 * The type, subtype and parameters information is copied and {@code MediaType}-specific
 	 * checks on parameters are performed.
-	 * @param mimeType the MIME type
+	 * @param mimeType MIME类型
 	 * @throws IllegalArgumentException if any of the parameters contain illegal characters
 	 * @since 5.3
 	 */
@@ -608,7 +608,7 @@ public class MediaType extends MimeType implements Serializable {
 	/**
 	 * Parse the given String into a single {@code MediaType}.
 	 * @param mediaType the string to parse
-	 * @return the media type
+	 * @return media类型
 	 * @throws InvalidMediaTypeException if the media type value cannot be parsed
 	 */
 	public static MediaType parseMediaType(String mediaType) {

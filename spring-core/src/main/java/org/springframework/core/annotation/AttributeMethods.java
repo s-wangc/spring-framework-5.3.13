@@ -242,7 +242,7 @@ final class AttributeMethods {
 
 	/**
 	 * Get the attribute methods for the given annotation type.
-	 * @param annotationType the annotation type
+	 * @param annotationType annotation类型
 	 * @return the attribute methods for the annotation type
 	 */
 	static AttributeMethods forAnnotationType(@Nullable Class<? extends Annotation> annotationType) {
@@ -289,7 +289,7 @@ final class AttributeMethods {
 	/**
 	 * Create a description for the given attribute method suitable to use in
 	 * exception messages and logs.
-	 * @param annotationType the annotation type
+	 * @param annotationType annotation类型
 	 * @param attributeName the attribute name
 	 * @return a description of the attribute
 	 */

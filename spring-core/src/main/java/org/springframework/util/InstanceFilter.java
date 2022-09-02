@@ -30,7 +30,7 @@ import org.springframework.lang.Nullable;
  *
  * @author Stephane Nicoll
  * @since 4.1
- * @param <T> the instance type
+ * @param <T> instance类型
  */
 public class InstanceFilter<T> {
 

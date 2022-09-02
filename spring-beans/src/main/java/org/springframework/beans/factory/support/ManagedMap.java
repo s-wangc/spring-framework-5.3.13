@@ -30,8 +30,8 @@ import org.springframework.lang.Nullable;
  * @author Juergen Hoeller
  * @author Rob Harrop
  * @since 27.05.2003
- * @param <K> the key type
- * @param <V> the value type
+ * @param <K> key类型
+ * @param <V> value类型
  */
 @SuppressWarnings("serial")
 public class ManagedMap<K, V> extends LinkedHashMap<K, V> implements Mergeable, BeanMetadataElement {

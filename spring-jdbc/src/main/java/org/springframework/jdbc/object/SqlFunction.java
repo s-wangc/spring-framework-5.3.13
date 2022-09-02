@@ -47,7 +47,7 @@ import org.springframework.lang.Nullable;
  * @author Rod Johnson
  * @author Juergen Hoeller
  * @author Jean-Pierre Pawlak
- * @param <T> the result type
+ * @param <T> result类型
  * @see StoredProcedure
  */
 public class SqlFunction<T> extends MappingSqlQuery<T> {

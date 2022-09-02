@@ -97,7 +97,7 @@ public abstract class AbstractDecoderTests<D extends Decoder<?>> extends Abstrac
 	 * @param input the input to be provided to the decoder
 	 * @param outputClass the desired output class
 	 * @param stepConsumer a consumer to {@linkplain StepVerifier verify} the output
-	 * @param <T> the output type
+	 * @param <T> output类型
 	 */
 	protected <T> void testDecodeAll(Publisher<DataBuffer> input, Class<? extends T> outputClass,
 			Consumer<StepVerifier.FirstStep<T>> stepConsumer) {
@@ -120,7 +120,7 @@ public abstract class AbstractDecoderTests<D extends Decoder<?>> extends Abstrac
 	 * @param stepConsumer a consumer to {@linkplain StepVerifier verify} the output
 	 * @param mimeType the mime type to use for decoding. May be {@code null}.
 	 * @param hints the hints used for decoding. May be {@code null}.
-	 * @param <T> the output type
+	 * @param <T> output类型
 	 */
 	protected <T> void testDecodeAll(Publisher<DataBuffer> input, ResolvableType outputType,
 			Consumer<StepVerifier.FirstStep<T>> stepConsumer,
@@ -151,7 +151,7 @@ public abstract class AbstractDecoderTests<D extends Decoder<?>> extends Abstrac
 	 * @param input the input to be provided to the decoder
 	 * @param outputClass the desired output class
 	 * @param stepConsumer a consumer to {@linkplain StepVerifier verify} the output
-	 * @param <T> the output type
+	 * @param <T> output类型
 	 */
 	protected <T> void testDecode(Publisher<DataBuffer> input, Class<? extends T> outputClass,
 			Consumer<StepVerifier.FirstStep<T>> stepConsumer) {
@@ -180,7 +180,7 @@ public abstract class AbstractDecoderTests<D extends Decoder<?>> extends Abstrac
 	 * @param stepConsumer a consumer to {@linkplain StepVerifier verify} the output
 	 * @param mimeType the mime type to use for decoding. May be {@code null}.
 	 * @param hints the hints used for decoding. May be {@code null}.
-	 * @param <T> the output type
+	 * @param <T> output类型
 	 */
 	@SuppressWarnings("unchecked")
 	protected <T> void testDecode(Publisher<DataBuffer> input, ResolvableType outputType,
@@ -261,7 +261,7 @@ public abstract class AbstractDecoderTests<D extends Decoder<?>> extends Abstrac
 	 * @param input the input to be provided to the decoder
 	 * @param outputClass the desired output class
 	 * @param stepConsumer a consumer to {@linkplain StepVerifier verify} the output
-	 * @param <T> the output type
+	 * @param <T> output类型
 	 */
 	protected <T> void testDecodeToMonoAll(Publisher<DataBuffer> input,
 			Class<? extends T> outputClass, Consumer<StepVerifier.FirstStep<T>> stepConsumer) {
@@ -284,7 +284,7 @@ public abstract class AbstractDecoderTests<D extends Decoder<?>> extends Abstrac
 	 * @param stepConsumer a consumer to {@linkplain StepVerifier verify} the output
 	 * @param mimeType the mime type to use for decoding. May be {@code null}.
 	 * @param hints the hints used for decoding. May be {@code null}.
-	 * @param <T> the output type
+	 * @param <T> output类型
 	 */
 	protected <T> void testDecodeToMonoAll(Publisher<DataBuffer> input, ResolvableType outputType,
 			Consumer<StepVerifier.FirstStep<T>> stepConsumer,
@@ -315,7 +315,7 @@ public abstract class AbstractDecoderTests<D extends Decoder<?>> extends Abstrac
 	 * @param input the input to be provided to the decoder
 	 * @param outputClass the desired output class
 	 * @param stepConsumer a consumer to {@linkplain StepVerifier verify} the output
-	 * @param <T> the output type
+	 * @param <T> output类型
 	 */
 	protected <T> void testDecodeToMono(Publisher<DataBuffer> input,
 			Class<? extends T> outputClass, Consumer<StepVerifier.FirstStep<T>> stepConsumer) {
@@ -344,7 +344,7 @@ public abstract class AbstractDecoderTests<D extends Decoder<?>> extends Abstrac
 	 * @param stepConsumer a consumer to {@linkplain StepVerifier verify} the output
 	 * @param mimeType the mime type to use for decoding. May be {@code null}.
 	 * @param hints the hints used for decoding. May be {@code null}.
-	 * @param <T> the output type
+	 * @param <T> output类型
 	 */
 	@SuppressWarnings("unchecked")
 	protected <T> void testDecodeToMono(Publisher<DataBuffer> input, ResolvableType outputType,

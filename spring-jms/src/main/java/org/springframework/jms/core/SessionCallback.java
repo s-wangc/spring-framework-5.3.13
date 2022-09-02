@@ -29,7 +29,7 @@ import org.springframework.lang.Nullable;
  *
  * @author Mark Pollack
  * @since 1.1
- * @param <T> the result type
+ * @param <T> result类型
  * @see JmsTemplate#execute(SessionCallback)
  */
 @FunctionalInterface

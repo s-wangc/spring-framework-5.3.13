@@ -31,7 +31,7 @@ import org.springframework.util.ObjectUtils;
  *
  * @author Mark Fisher
  * @since 4.0
- * @param <T> the payload type
+ * @param <T> payload类型
  * @see MessageBuilder
  */
 public class GenericMessage<T> implements Message<T>, Serializable {

@@ -40,7 +40,7 @@ import org.springframework.util.ObjectUtils;
  * @author Chris Beams
  * @author Juergen Hoeller
  * @since 3.1
- * @param <T> the source type
+ * @param <T> source类型
  */
 public abstract class EnumerablePropertySource<T> extends PropertySource<T> {
 

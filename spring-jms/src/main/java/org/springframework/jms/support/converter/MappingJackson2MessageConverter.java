@@ -375,7 +375,7 @@ public class MappingJackson2MessageConverter implements SmartMessageConverter, B
 	/**
 	 * Convert a TextMessage to a Java Object with the specified type.
 	 * @param message the input message
-	 * @param targetJavaType the target type
+	 * @param targetJavaType target类型
 	 * @return the message converted to an object
 	 * @throws JMSException if thrown by JMS
 	 * @throws IOException 在I/O错误的情况下
@@ -390,7 +390,7 @@ public class MappingJackson2MessageConverter implements SmartMessageConverter, B
 	/**
 	 * Convert a BytesMessage to a Java Object with the specified type.
 	 * @param message the input message
-	 * @param targetJavaType the target type
+	 * @param targetJavaType target类型
 	 * @return the message converted to an object
 	 * @throws JMSException if thrown by JMS
 	 * @throws IOException 在I/O错误的情况下
@@ -425,7 +425,7 @@ public class MappingJackson2MessageConverter implements SmartMessageConverter, B
 	 * {@link MessageType#BYTES}.
 	 * <p>The default implementation throws an {@link IllegalArgumentException}.
 	 * @param message the input message
-	 * @param targetJavaType the target type
+	 * @param targetJavaType target类型
 	 * @return the message converted to an object
 	 * @throws JMSException if thrown by JMS
 	 * @throws IOException 在I/O错误的情况下

@@ -29,7 +29,7 @@ import org.springframework.messaging.Message;
  * @author Rossen Stoyanchev
  * @author Stephane Nicoll
  * @since 4.0
- * @param <D> the destination type
+ * @param <D> destination类型
  */
 public abstract class AbstractMessagingTemplate<D> extends AbstractMessageReceivingTemplate<D>
 		implements MessageRequestReplyOperations<D> {

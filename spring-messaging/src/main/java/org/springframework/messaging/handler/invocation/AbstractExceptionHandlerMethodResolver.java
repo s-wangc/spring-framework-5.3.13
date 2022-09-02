@@ -114,7 +114,7 @@ public abstract class AbstractExceptionHandlerMethodResolver {
 	 * Find a {@link Method} to handle the given exception type. This can be
 	 * useful if an {@link Exception} instance is not available (e.g. for tools).
 	 * <p>Uses {@link ExceptionDepthComparator} if more than one match is found.
-	 * @param exceptionType the exception type
+	 * @param exceptionType exception类型
 	 * @return a Method to handle the exception, or {@code null} if none found
 	 * @since 4.3.1
 	 */

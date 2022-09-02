@@ -90,7 +90,7 @@ public abstract class AbstractEncoderTests<E extends Encoder<?>> extends Abstrac
 	 * @param input the input to be provided to the encoder
 	 * @param inputClass the input class
 	 * @param stepConsumer a consumer to {@linkplain StepVerifier verify} the output
-	 * @param <T> the output type
+	 * @param <T> output类型
 	 */
 	protected <T> void testEncodeAll(Publisher<? extends T> input, Class<? extends T> inputClass,
 			Consumer<StepVerifier.FirstStep<DataBuffer>> stepConsumer) {
@@ -108,11 +108,11 @@ public abstract class AbstractEncoderTests<E extends Encoder<?>> extends Abstrac
 	 * </ul>
 	 *
 	 * @param input the input to be provided to the encoder
-	 * @param inputType the input type
+	 * @param inputType input类型
 	 * @param stepConsumer a consumer to {@linkplain StepVerifier verify} the output
 	 * @param mimeType the mime type to use for decoding. May be {@code null}.
 	 * @param hints the hints used for decoding. May be {@code null}.
-	 * @param <T> the output type
+	 * @param <T> output类型
 	 */
 	protected <T> void testEncodeAll(Publisher<? extends T> input, ResolvableType inputType,
 			Consumer<StepVerifier.FirstStep<DataBuffer>> stepConsumer,
@@ -129,7 +129,7 @@ public abstract class AbstractEncoderTests<E extends Encoder<?>> extends Abstrac
 	 * @param input the input to be provided to the encoder
 	 * @param inputClass the input class
 	 * @param stepConsumer a consumer to {@linkplain StepVerifier verify} the output
-	 * @param <T> the output type
+	 * @param <T> output类型
 	 */
 	protected <T> void testEncode(Publisher<? extends T> input, Class<? extends T> inputClass,
 			Consumer<StepVerifier.FirstStep<DataBuffer>> stepConsumer) {
@@ -140,11 +140,11 @@ public abstract class AbstractEncoderTests<E extends Encoder<?>> extends Abstrac
 	 * Test a standard {@link Encoder#encode encode} scenario.
 	 *
 	 * @param input the input to be provided to the encoder
-	 * @param inputType the input type
+	 * @param inputType input类型
 	 * @param stepConsumer a consumer to {@linkplain StepVerifier verify} the output
 	 * @param mimeType the mime type to use for decoding. May be {@code null}.
 	 * @param hints the hints used for decoding. May be {@code null}.
-	 * @param <T> the output type
+	 * @param <T> output类型
 	 */
 	protected <T> void testEncode(Publisher<? extends T> input, ResolvableType inputType,
 			Consumer<StepVerifier.FirstStep<DataBuffer>> stepConsumer,
@@ -163,7 +163,7 @@ public abstract class AbstractEncoderTests<E extends Encoder<?>> extends Abstrac
 	 * The result is expected to contain one "normal" element, followed by the error.
 	 *
 	 * @param input the input to be provided to the encoder
-	 * @param inputType the input type
+	 * @param inputType input类型
 	 * @param mimeType the mime type to use for decoding. May be {@code null}.
 	 * @param hints the hints used for decoding. May be {@code null}.
 	 * @see InputException
@@ -191,7 +191,7 @@ public abstract class AbstractEncoderTests<E extends Encoder<?>> extends Abstrac
 	 * The result is expected to contain one "normal" element.
 	 *
 	 * @param input the input to be provided to the encoder
-	 * @param inputType the input type
+	 * @param inputType input类型
 	 * @param mimeType the mime type to use for decoding. May be {@code null}.
 	 * @param hints the hints used for decoding. May be {@code null}.
 	 */
@@ -211,7 +211,7 @@ public abstract class AbstractEncoderTests<E extends Encoder<?>> extends Abstrac
 	 * Test a {@link Encoder#encode encode} scenario where the input stream is empty.
 	 * The output is expected to be empty as well.
 	 *
-	 * @param inputType the input type
+	 * @param inputType input类型
 	 * @param mimeType the mime type to use for decoding. May be {@code null}.
 	 * @param hints the hints used for decoding. May be {@code null}.
 	 */

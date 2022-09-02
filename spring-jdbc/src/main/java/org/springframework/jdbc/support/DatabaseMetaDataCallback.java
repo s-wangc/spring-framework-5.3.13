@@ -27,7 +27,7 @@ import java.sql.SQLException;
  *
  * @author Thomas Risberg
  * @author Juergen Hoeller
- * @param <T> the result type
+ * @param <T> result类型
  * @see JdbcUtils#extractDatabaseMetaData(javax.sql.DataSource, DatabaseMetaDataCallback)
  */
 @FunctionalInterface

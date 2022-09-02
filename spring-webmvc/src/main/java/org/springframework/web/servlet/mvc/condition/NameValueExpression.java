@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  *
  * @author Rossen Stoyanchev
  * @since 3.1
- * @param <T> the value type
+ * @param <T> value类型
  * @see RequestMapping#params()
  * @see RequestMapping#headers()
  */

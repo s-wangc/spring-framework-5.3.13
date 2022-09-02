@@ -27,7 +27,7 @@ import org.springframework.web.server.ServerWebExchange;
  *
  * @author Rossen Stoyanchev
  * @since 5.0
- * @param <T> the value type
+ * @param <T> value类型
  */
 abstract class AbstractNameValueExpression<T> implements NameValueExpression<T> {
 

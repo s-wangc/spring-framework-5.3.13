@@ -35,7 +35,7 @@ package org.springframework.beans.factory;
  *
  * @author Juergen Hoeller
  * @since 2.0.3
- * @param <T> the bean type
+ * @param <T> bean类型
  * @see #isPrototype()
  * @see #isSingleton()
  */

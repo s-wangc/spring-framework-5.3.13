@@ -31,7 +31,7 @@ import java.util.Set;
  * @author Erwin Vervaet
  * @author Juergen Hoeller
  * @since 3.0
- * @param <E> the element type
+ * @param <E> element类型
  */
 public class CompositeIterator<E> implements Iterator<E> {
 

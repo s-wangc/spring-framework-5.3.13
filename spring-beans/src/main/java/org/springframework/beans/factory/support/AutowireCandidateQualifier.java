@@ -43,7 +43,7 @@ public class AutowireCandidateQualifier extends BeanMetadataAttributeAccessor {
 	/**
 	 * Construct a qualifier to match against an annotation of the
 	 * given type.
-	 * @param type the annotation type
+	 * @param type annotation类型
 	 */
 	public AutowireCandidateQualifier(Class<?> type) {
 		this(type.getName());
@@ -65,7 +65,7 @@ public class AutowireCandidateQualifier extends BeanMetadataAttributeAccessor {
 	 * Construct a qualifier to match against an annotation of the
 	 * given type whose {@code value} attribute also matches
 	 * the specified value.
-	 * @param type the annotation type
+	 * @param type annotation类型
 	 * @param value the annotation value to match
 	 */
 	public AutowireCandidateQualifier(Class<?> type, Object value) {

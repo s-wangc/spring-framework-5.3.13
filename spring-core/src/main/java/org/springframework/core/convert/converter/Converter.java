@@ -29,8 +29,8 @@ import org.springframework.util.Assert;
  * @author Keith Donald
  * @author Josh Cummings
  * @since 3.0
- * @param <S> the source type
- * @param <T> the target type
+ * @param <S> source类型
+ * @param <T> target类型
  */
 @FunctionalInterface
 public interface Converter<S, T> {

@@ -34,7 +34,7 @@ import org.springframework.lang.Nullable;
  * and a DataSource. SQL will often vary between subclasses.
  *
  * @author Thomas Risberg
- * @param <T> the result type
+ * @param <T> result类型
  * @see org.springframework.jdbc.object.SqlQuery
  */
 public abstract class UpdatableSqlQuery<T> extends SqlQuery<T> {

@@ -29,7 +29,7 @@ import org.springframework.lang.Nullable;
  *
  * @author Juergen Hoeller
  * @since 4.2
- * @param <T> the result type
+ * @param <T> result类型
  * @see HibernateTemplate
  * @see HibernateTransactionManager
  */

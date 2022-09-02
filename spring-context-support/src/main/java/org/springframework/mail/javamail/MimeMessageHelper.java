@@ -1107,7 +1107,7 @@ public class MimeMessageHelper {
 	/**
 	 * Create an Activation Framework DataSource for the given InputStreamSource.
 	 * @param inputStreamSource the InputStreamSource (typically a Spring Resource)
-	 * @param contentType the content type
+	 * @param contentType content类型
 	 * @param name DataSource的名称
 	 * @return the Activation Framework DataSource
 	 */

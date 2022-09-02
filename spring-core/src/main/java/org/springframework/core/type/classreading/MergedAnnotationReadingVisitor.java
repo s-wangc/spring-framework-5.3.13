@@ -38,7 +38,7 @@ import org.springframework.util.ClassUtils;
  *
  * @author Phillip Webb
  * @since 5.2
- * @param <A> the annotation type
+ * @param <A> annotation类型
  */
 class MergedAnnotationReadingVisitor<A extends Annotation> extends AnnotationVisitor {
 

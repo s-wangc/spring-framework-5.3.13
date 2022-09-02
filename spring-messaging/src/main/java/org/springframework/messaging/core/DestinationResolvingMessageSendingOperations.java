@@ -29,7 +29,7 @@ import org.springframework.messaging.MessagingException;
  * @author Mark Fisher
  * @author Rossen Stoyanchev
  * @since 4.0
- * @param <D> the destination type
+ * @param <D> destination类型
  * @see DestinationResolver
  */
 public interface DestinationResolvingMessageSendingOperations<D> extends MessageSendingOperations<D> {

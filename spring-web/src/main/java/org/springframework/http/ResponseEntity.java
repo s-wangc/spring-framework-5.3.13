@@ -69,7 +69,7 @@ import org.springframework.util.ObjectUtils;
  * @author Arjen Poutsma
  * @author Brian Clozel
  * @since 3.0.2
- * @param <T> the body type
+ * @param <T> body类型
  * @see #getStatusCode()
  * @see org.springframework.web.client.RestOperations#getForEntity(String, Class, Object...)
  * @see org.springframework.web.client.RestOperations#getForEntity(String, Class, java.util.Map)
@@ -471,7 +471,7 @@ public class ResponseEntity<T> extends HttpEntity<T> {
 		/**
 		 * Set the {@linkplain MediaType media type} of the body, as specified by the
 		 * {@code Content-Type} header.
-		 * @param contentType the content type
+		 * @param contentType content类型
 		 * @return this builder
 		 * @see HttpHeaders#setContentType(MediaType)
 		 */

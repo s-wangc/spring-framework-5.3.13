@@ -30,7 +30,7 @@ import javax.cache.annotation.CacheMethodDetails;
  *
  * @author Stephane Nicoll
  * @since 4.1
- * @param <A> the annotation type
+ * @param <A> annotation类型
  */
 class DefaultCacheMethodDetails<A extends Annotation> implements CacheMethodDetails<A> {
 

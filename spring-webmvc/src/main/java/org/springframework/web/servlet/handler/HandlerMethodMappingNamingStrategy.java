@@ -36,7 +36,7 @@ import org.springframework.web.method.HandlerMethod;
  *
  * @author Rossen Stoyanchev
  * @since 4.1
- * @param <T> the mapping type
+ * @param <T> mapping类型
  */
 @FunctionalInterface
 public interface HandlerMethodMappingNamingStrategy<T> {

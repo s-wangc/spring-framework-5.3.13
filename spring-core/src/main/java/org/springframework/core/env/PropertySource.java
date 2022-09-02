@@ -50,7 +50,7 @@ import org.springframework.util.ObjectUtils;
  *
  * @author Chris Beams
  * @since 3.1
- * @param <T> the source type
+ * @param <T> source类型
  * @see PropertySources
  * @see PropertyResolver
  * @see PropertySourcesPropertyResolver

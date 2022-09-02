@@ -35,7 +35,7 @@ import javax.jms.Session;
  *
  * @author Juergen Hoeller
  * @since 2.0
- * @param <M> the message type
+ * @param <M> message类型
  * @see AbstractMessageListenerContainer#setMessageListener
  * @see DefaultMessageListenerContainer
  * @see SimpleMessageListenerContainer

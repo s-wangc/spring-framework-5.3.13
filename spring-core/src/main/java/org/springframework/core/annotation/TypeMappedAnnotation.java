@@ -65,7 +65,7 @@ import org.springframework.util.ReflectionUtils;
  * @author Juergen Hoeller
  * @author Sam Brannen
  * @since 5.2
- * @param <A> the annotation type
+ * @param <A> annotation类型
  * @see TypeMappedAnnotations
  */
 final class TypeMappedAnnotation<A extends Annotation> extends AbstractMergedAnnotation<A> {

@@ -36,7 +36,7 @@ import org.springframework.util.MimeType;
  * @author Sebastien Deleuze
  * @author Arjen Poutsma
  * @since 5.0
- * @param <T> the element type
+ * @param <T> element类型
  */
 public abstract class AbstractDecoder<T> implements Decoder<T> {
 

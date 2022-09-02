@@ -27,7 +27,7 @@ import java.io.InputStream;
  * @author Mark Fisher
  * @author Juergen Hoeller
  * @since 3.0.5
- * @param <T> the object type
+ * @param <T> object类型
  * @see Serializer
  */
 @FunctionalInterface

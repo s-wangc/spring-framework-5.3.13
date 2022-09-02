@@ -282,7 +282,7 @@ public abstract class MetaAnnotationUtils {
 	 * public class UserRepositoryTests { }
 	 * </pre>
 	 *
-	 * @param <T> the annotation type
+	 * @param <T> annotation类型
 	 */
 	public static class AnnotationDescriptor<T extends Annotation> {
 

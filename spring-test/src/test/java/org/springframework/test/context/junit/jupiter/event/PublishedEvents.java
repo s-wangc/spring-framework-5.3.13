@@ -43,7 +43,7 @@ public interface PublishedEvents {
 	/**
 	 * Returns all application events of the given type that were fired during the test execution.
 	 *
-	 * @param <T> the event type
+	 * @param <T> event类型
 	 * @param type must not be {@literal null}
 	 */
 	<T> TypedPublishedEvents<T> ofType(Class<T> type);
@@ -51,14 +51,14 @@ public interface PublishedEvents {
 	/**
 	 * All application events of a given type that were fired during a test execution.
 	 *
-	 * @param <T> the event type
+	 * @param <T> event类型
 	 */
 	interface TypedPublishedEvents<T> extends Iterable<T> {
 
 		/**
 		 * Further constrain the event type for downstream assertions.
 		 *
-		 * @param subType the sub type
+		 * @param subType sub类型
 		 * @return will never be {@literal null}
 		 */
 		<S extends T> TypedPublishedEvents<S> ofSubType(Class<S> subType);

@@ -116,7 +116,7 @@ public class MimeType implements Comparable<MimeType>, Serializable {
 	 * Create a new {@code MimeType} for the given primary type.
 	 * <p>The {@linkplain #getSubtype() subtype} is set to <code>"&#42;"</code>,
 	 * and the parameters are empty.
-	 * @param type the primary type
+	 * @param type primary类型
 	 * @throws IllegalArgumentException if any of the parameters contains illegal characters
 	 */
 	public MimeType(String type) {
@@ -126,7 +126,7 @@ public class MimeType implements Comparable<MimeType>, Serializable {
 	/**
 	 * Create a new {@code MimeType} for the given primary type and subtype.
 	 * <p>The parameters are empty.
-	 * @param type the primary type
+	 * @param type primary类型
 	 * @param subtype the subtype
 	 * @throws IllegalArgumentException if any of the parameters contains illegal characters
 	 */
@@ -136,7 +136,7 @@ public class MimeType implements Comparable<MimeType>, Serializable {
 
 	/**
 	 * Create a new {@code MimeType} for the given type, subtype, and character set.
-	 * @param type the primary type
+	 * @param type primary类型
 	 * @param subtype the subtype
 	 * @param charset the character set
 	 * @throws IllegalArgumentException if any of the parameters contains illegal characters
@@ -172,7 +172,7 @@ public class MimeType implements Comparable<MimeType>, Serializable {
 
 	/**
 	 * Create a new {@code MimeType} for the given type, subtype, and parameters.
-	 * @param type the primary type
+	 * @param type primary类型
 	 * @param subtype the subtype
 	 * @param parameters the parameters (may be {@code null})
 	 * @throws IllegalArgumentException if any of the parameters contains illegal characters

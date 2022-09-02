@@ -422,7 +422,7 @@ final class AnnotationTypeMapping {
 
 	/**
 	 * Get the type of the mapped annotation.
-	 * @return the annotation type
+	 * @return annotation类型
 	 */
 	Class<? extends Annotation> getAnnotationType() {
 		return this.annotationType;

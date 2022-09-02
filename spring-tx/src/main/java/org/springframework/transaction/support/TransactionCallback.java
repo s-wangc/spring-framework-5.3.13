@@ -30,7 +30,7 @@ import org.springframework.transaction.TransactionStatus;
  *
  * @author Juergen Hoeller
  * @since 17.03.2003
- * @param <T> the result type
+ * @param <T> result类型
  * @see TransactionTemplate
  * @see CallbackPreferringPlatformTransactionManager
  */

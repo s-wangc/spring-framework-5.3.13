@@ -34,7 +34,7 @@ import org.springframework.lang.Nullable;
  *
  * @author Arjen Poutsma
  * @since 3.0
- * @param <T> the data type
+ * @param <T> data类型
  * @see RestTemplate#execute
  */
 @FunctionalInterface

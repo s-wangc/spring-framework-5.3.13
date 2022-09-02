@@ -69,7 +69,7 @@ import org.springframework.web.servlet.ModelAndView;
  *
  * @author Arjen Poutsma
  * @since 5.2
- * @param <T> the entity type
+ * @param <T> entity类型
  */
 final class DefaultEntityResponseBuilder<T> implements EntityResponse.Builder<T> {
 

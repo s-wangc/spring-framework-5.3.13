@@ -26,7 +26,7 @@ import reactor.core.publisher.Mono;
  * @author Rossen Stoyanchev
  * @author Stephane Maldini
  * @since 5.1
- * @param <T> the object type
+ * @param <T> object类型
  */
 public class MonoToListenableFutureAdapter<T> extends CompletableToListenableFutureAdapter<T> {
 

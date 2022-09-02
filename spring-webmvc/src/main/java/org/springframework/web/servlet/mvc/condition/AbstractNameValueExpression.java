@@ -29,7 +29,7 @@ import org.springframework.util.ObjectUtils;
  * @author Rossen Stoyanchev
  * @author Arjen Poutsma
  * @since 3.1
- * @param <T> the value type
+ * @param <T> value类型
  */
 abstract class AbstractNameValueExpression<T> implements NameValueExpression<T> {
 

@@ -78,8 +78,8 @@ public interface GenericConverter {
 
 		/**
 		 * Create a new source-to-target pair.
-		 * @param sourceType the source type
-		 * @param targetType the target type
+		 * @param sourceType source类型
+		 * @param targetType target类型
 		 */
 		public ConvertiblePair(Class<?> sourceType, Class<?> targetType) {
 			Assert.notNull(sourceType, "Source type must not be null");

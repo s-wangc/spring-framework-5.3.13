@@ -24,7 +24,7 @@ import org.springframework.util.Assert;
  *
  * @author Juergen Hoeller
  * @since 2.5.2
- * @param <T> the value type
+ * @param <T> value类型
  * @see NamedInheritableThreadLocal
  */
 public class NamedThreadLocal<T> extends ThreadLocal<T> {

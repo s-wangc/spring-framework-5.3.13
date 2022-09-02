@@ -46,7 +46,7 @@ import org.springframework.lang.Nullable;
  * @author Rod Johnson
  * @author Thomas Risberg
  * @author Jean-Pierre Pawlak
- * @param <T> the result type
+ * @param <T> result类型
  * @see org.springframework.jdbc.object.MappingSqlQuery
  * @see org.springframework.jdbc.object.SqlQuery
  */

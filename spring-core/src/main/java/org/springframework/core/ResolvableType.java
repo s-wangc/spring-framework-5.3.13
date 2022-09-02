@@ -1650,7 +1650,7 @@ public class ResolvableType implements Serializable {
 		/**
 		 * Get a {@link WildcardBounds} instance for the specified type, returning
 		 * {@code null} if the specified type cannot be resolved to a {@link WildcardType}.
-		 * @param type the source type
+		 * @param type source类型
 		 * @return a {@link WildcardBounds} instance or {@code null}
 		 */
 		@Nullable

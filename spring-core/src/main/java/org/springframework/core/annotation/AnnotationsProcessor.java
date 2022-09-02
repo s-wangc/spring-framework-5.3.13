@@ -25,8 +25,8 @@ import org.springframework.lang.Nullable;
  *
  * @author Phillip Webb
  * @since 5.2
- * @param <C> the context type
- * @param <R> the result type
+ * @param <C> context类型
+ * @param <R> result类型
  * @see AnnotationsScanner
  * @see TypeMappedAnnotations
  */

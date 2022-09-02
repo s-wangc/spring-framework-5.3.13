@@ -41,7 +41,7 @@ import org.springframework.util.concurrent.SuccessCallback;
  * @author Juergen Hoeller
  * @author Rossen Stoyanchev
  * @since 3.0
- * @param <V> the value type
+ * @param <V> value类型
  * @see Async
  * @see #forValue(Object)
  * @see #forExecutionException(Throwable)

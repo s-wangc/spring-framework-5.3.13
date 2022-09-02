@@ -238,7 +238,7 @@ public class MvcUriComponentsBuilder {
 	 * can be {@code null}.
 	 * <p><strong>Note:</strong> This method extracts values from "Forwarded"
 	 * and "X-Forwarded-*" headers if found. See class-level docs.
-	 * @param controllerType the controller type
+	 * @param controllerType controller类型
 	 * @param method the controller method
 	 * @param args argument values for the controller method
 	 * @return a UriComponentsBuilder instance, never {@code null}
@@ -258,7 +258,7 @@ public class MvcUriComponentsBuilder {
 	 * and "X-Forwarded-*" headers if found. See class-level docs.
 	 * @param baseUrl the builder for the base URL; the builder will be cloned
 	 * and therefore not modified and may be re-used for further calls.
-	 * @param controllerType the controller type
+	 * @param controllerType controller类型
 	 * @param method the controller method
 	 * @param args argument values for the controller method
 	 * @return a UriComponentsBuilder instance (never {@code null})

@@ -32,8 +32,8 @@ import org.springframework.util.comparator.Comparators;
  *
  * @author Phillip Webb
  * @since 3.2
- * @param <S> the source type
- * @param <T> the target type
+ * @param <S> source类型
+ * @param <T> target类型
  */
 public class ConvertingComparator<S, T> implements Comparator<S> {
 
@@ -66,7 +66,7 @@ public class ConvertingComparator<S, T> implements Comparator<S> {
 	 * 创建一个新的{@code ConvertingComparator}实例.
 	 * @param comparator the underlying comparator
 	 * @param conversionService the conversion service
-	 * @param targetType the target type
+	 * @param targetType target类型
 	 */
 	public ConvertingComparator(
 			Comparator<T> comparator, ConversionService conversionService, Class<? extends T> targetType) {

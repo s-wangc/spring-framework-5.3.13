@@ -90,7 +90,7 @@ public class ArgumentTypePreparedStatementSetter implements PreparedStatementSet
 	 * value and type. This method can be overridden by sub-classes if needed.
 	 * @param ps the PreparedStatement
 	 * @param parameterPosition index of the parameter position
-	 * @param argType the argument type
+	 * @param argType argument类型
 	 * @param argValue the argument value
 	 * @throws SQLException if thrown by PreparedStatement methods
 	 */

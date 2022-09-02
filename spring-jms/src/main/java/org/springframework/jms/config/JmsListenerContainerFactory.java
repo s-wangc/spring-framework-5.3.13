@@ -24,7 +24,7 @@ import org.springframework.jms.listener.MessageListenerContainer;
  *
  * @author Stephane Nicoll
  * @since 4.1
- * @param <C> the container type
+ * @param <C> container类型
  * @see JmsListenerEndpoint
  */
 public interface JmsListenerContainerFactory<C extends MessageListenerContainer> {

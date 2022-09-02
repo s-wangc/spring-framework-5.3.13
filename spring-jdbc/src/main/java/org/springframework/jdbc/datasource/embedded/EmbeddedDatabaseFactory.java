@@ -126,7 +126,7 @@ public class EmbeddedDatabaseFactory {
 	 * Set the type of embedded database to use.
 	 * <p>Call this when you wish to configure one of the pre-supported types.
 	 * <p>Defaults to HSQL.
-	 * @param type the database type
+	 * @param type database类型
 	 */
 	public void setDatabaseType(EmbeddedDatabaseType type) {
 		this.databaseConfigurer = EmbeddedDatabaseConfigurerFactory.getConfigurer(type);

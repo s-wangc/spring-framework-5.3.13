@@ -55,8 +55,8 @@ public interface ConverterRegistry {
 
 	/**
 	 * Remove any converters from {@code sourceType} to {@code targetType}.
-	 * @param sourceType the source type
-	 * @param targetType the target type
+	 * @param sourceType source类型
+	 * @param targetType target类型
 	 */
 	void removeConvertible(Class<?> sourceType, Class<?> targetType);
 

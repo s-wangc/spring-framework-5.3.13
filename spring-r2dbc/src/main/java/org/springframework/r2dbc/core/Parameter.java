@@ -58,7 +58,7 @@ public final class Parameter {
 	/**
 	 * Create a new {@link Parameter} from {@code value} and {@code type}.
 	 * @param value the parameter value (can be {@code null})
-	 * @param type the parameter type
+	 * @param type parameter类型
 	 * @return the {@link Parameter} value for {@code value}
 	 */
 	public static Parameter fromOrEmpty(@Nullable Object value, Class<?> type) {

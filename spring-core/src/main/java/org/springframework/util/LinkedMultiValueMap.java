@@ -32,7 +32,7 @@ import java.util.Map;
  * @author Arjen Poutsma
  * @author Juergen Hoeller
  * @since 3.0
- * @param <K> the key type
+ * @param <K> key类型
  * @param <V> the value element type
  */
 public class LinkedMultiValueMap<K, V> extends MultiValueMapAdapter<K, V>  // new public base class in 5.3

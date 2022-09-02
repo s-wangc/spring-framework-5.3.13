@@ -41,7 +41,7 @@ import org.springframework.web.socket.sockjs.transport.handler.WebSocketTranspor
  * @author Rossen Stoyanchev
  * @author Sebastien Deleuze
  * @since 4.0
- * @param <M> the mappings type
+ * @param <M> mappings类型
  */
 public abstract class AbstractWebSocketHandlerRegistration<M> implements WebSocketHandlerRegistration {
 

@@ -39,7 +39,7 @@ import org.springframework.util.ExceptionTypeFilter;
  *
  * @author Stephane Nicoll
  * @since 4.1
- * @param <A> the annotation type
+ * @param <A> annotation类型
  */
 abstract class AbstractJCacheOperation<A extends Annotation> implements JCacheOperation<A> {
 

@@ -171,7 +171,7 @@ public interface ServerRequest {
 	/**
 	 * Extract the body to a {@code Mono}.
 	 * @param elementClass the class of element in the {@code Mono}
-	 * @param <T> the element type
+	 * @param <T> element类型
 	 * @return the body as a mono
 	 */
 	<T> Mono<T> bodyToMono(Class<? extends T> elementClass);
@@ -179,7 +179,7 @@ public interface ServerRequest {
 	/**
 	 * Extract the body to a {@code Mono}.
 	 * @param typeReference a type reference describing the expected response request type
-	 * @param <T> the element type
+	 * @param <T> element类型
 	 * @return a mono containing the body of the given type {@code T}
 	 */
 	<T> Mono<T> bodyToMono(ParameterizedTypeReference<T> typeReference);
@@ -187,7 +187,7 @@ public interface ServerRequest {
 	/**
 	 * Extract the body to a {@code Flux}.
 	 * @param elementClass the class of element in the {@code Flux}
-	 * @param <T> the element type
+	 * @param <T> element类型
 	 * @return the body as a flux
 	 */
 	<T> Flux<T> bodyToFlux(Class<? extends T> elementClass);
@@ -195,7 +195,7 @@ public interface ServerRequest {
 	/**
 	 * Extract the body to a {@code Flux}.
 	 * @param typeReference a type reference describing the expected request body type
-	 * @param <T> the element type
+	 * @param <T> element类型
 	 * @return a flux containing the body of the given type {@code T}
 	 */
 	<T> Flux<T> bodyToFlux(ParameterizedTypeReference<T> typeReference);

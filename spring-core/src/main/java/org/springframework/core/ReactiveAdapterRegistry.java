@@ -160,7 +160,7 @@ public class ReactiveAdapterRegistry {
 	/**
 	 * Get the adapter for the given reactive type. Or if a "source" object is
 	 * provided, its actual type is used instead.
-	 * @param reactiveType the reactive type
+	 * @param reactiveType reactive类型
 	 * (may be {@code null} if a concrete source object is given)
 	 * @param source an instance of the reactive type
 	 * (i.e. to adapt from; may be {@code null} if the reactive type is specified)

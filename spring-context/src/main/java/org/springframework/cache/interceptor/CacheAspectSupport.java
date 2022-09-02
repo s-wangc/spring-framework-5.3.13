@@ -271,7 +271,7 @@ public abstract class CacheAspectSupport extends AbstractCacheInvoker
 	 * used for the operation.
 	 * @param operation the operation
 	 * @param method the method on which the operation is invoked
-	 * @param targetClass the target type
+	 * @param targetClass target类型
 	 * @return the resolved metadata for the operation
 	 */
 	protected CacheOperationMetadata getCacheOperationMetadata(

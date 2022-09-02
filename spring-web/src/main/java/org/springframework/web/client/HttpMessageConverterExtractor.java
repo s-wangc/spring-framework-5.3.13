@@ -40,7 +40,7 @@ import org.springframework.util.FileCopyUtils;
  * @author Arjen Poutsma
  * @author Sam Brannen
  * @since 3.0
- * @param <T> the data type
+ * @param <T> data类型
  * @see RestTemplate
  */
 public class HttpMessageConverterExtractor<T> implements ResponseExtractor<T> {

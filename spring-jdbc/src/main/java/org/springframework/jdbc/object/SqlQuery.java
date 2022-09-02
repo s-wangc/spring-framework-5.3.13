@@ -51,7 +51,7 @@ import org.springframework.lang.Nullable;
  * @author Rod Johnson
  * @author Juergen Hoeller
  * @author Thomas Risberg
- * @param <T> the result type
+ * @param <T> result类型
  * @see SqlUpdate
  */
 public abstract class SqlQuery<T> extends SqlOperation {

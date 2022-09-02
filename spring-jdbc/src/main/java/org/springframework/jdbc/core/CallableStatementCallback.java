@@ -38,7 +38,7 @@ import org.springframework.lang.Nullable;
  *
  * @author Juergen Hoeller
  * @since 16.03.2004
- * @param <T> the result type
+ * @param <T> result类型
  * @see JdbcTemplate#execute(String, CallableStatementCallback)
  * @see JdbcTemplate#execute(CallableStatementCreator, CallableStatementCallback)
  */

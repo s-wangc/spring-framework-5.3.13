@@ -24,7 +24,7 @@ import java.lang.annotation.Annotation;
  *
  * @author Phillip Webb
  * @since 5.2
- * @param <A> the annotation type
+ * @param <A> annotation类型
  * @see MergedAnnotationSelectors
  */
 @FunctionalInterface

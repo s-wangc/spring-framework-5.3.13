@@ -71,7 +71,7 @@ public interface ServerWebExchange {
 	/**
 	 * Return the request attribute value if present.
 	 * @param name the attribute name
-	 * @param <T> the attribute type
+	 * @param <T> attribute类型
 	 * @return the attribute value
 	 */
 	@SuppressWarnings("unchecked")
@@ -84,7 +84,7 @@ public interface ServerWebExchange {
 	 * Return the request attribute value or if not present raise an
 	 * {@link IllegalArgumentException}.
 	 * @param name the attribute name
-	 * @param <T> the attribute type
+	 * @param <T> attribute类型
 	 * @return the attribute value
 	 */
 	@SuppressWarnings("unchecked")
@@ -98,7 +98,7 @@ public interface ServerWebExchange {
 	 * Return the request attribute value, or a default, fallback value.
 	 * @param name the attribute name
 	 * @param defaultValue a default value to return instead
-	 * @param <T> the attribute type
+	 * @param <T> attribute类型
 	 * @return the attribute value
 	 */
 	@SuppressWarnings("unchecked")

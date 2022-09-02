@@ -55,7 +55,7 @@ public abstract class RepeatableContainers {
 	/**
 	 * Add an additional explicit relationship between a contained and
 	 * repeatable annotation.
-	 * @param container the container type
+	 * @param container container类型
 	 * @param repeatable the contained repeatable type
 	 * @return a new {@link RepeatableContainers} instance
 	 */

@@ -169,7 +169,7 @@ public class ContentNegotiationConfigurer {
 	 * {@link ServletContext#getMimeType} and {@link MediaTypeFactory} to resolve path
 	 * extensions. To change this behavior see the {@link #useRegisteredExtensionsOnly} property.
 	 * @param extension the key to look up
-	 * @param mediaType the media type
+	 * @param mediaType media类型
 	 * @see #mediaTypes(Map)
 	 * @see #replaceMediaTypes(Map)
 	 */

@@ -166,7 +166,7 @@ public interface DatabaseClient extends ConnectionAccessor {
 		/**
 		 * Bind a {@code null} value to a parameter identified by its {@code index}.
 		 * @param index zero based index to bind the parameter to
-		 * @param type the parameter type
+		 * @param type parameter类型
 		 */
 		GenericExecuteSpec bindNull(int index, Class<?> type);
 
@@ -180,7 +180,7 @@ public interface DatabaseClient extends ConnectionAccessor {
 		/**
 		 * Bind a {@code null} value to a parameter identified by its {@code name}.
 		 * @param name parameter的名称
-		 * @param type the parameter type
+		 * @param type parameter类型
 		 */
 		GenericExecuteSpec bindNull(String name, Class<?> type);
 
@@ -214,7 +214,7 @@ public interface DatabaseClient extends ConnectionAccessor {
 		/**
 		 * Configure a result mapping {@link Function function} and enter the execution stage.
 		 * @param mappingFunction a function that maps from {@link Row} to the result type
-		 * @param <R> the result type
+		 * @param <R> result类型
 		 * @return a {@link FetchSpec} for configuration what to fetch
 		 */
 		default <R> RowsFetchSpec<R> map(Function<Row, R> mappingFunction) {
@@ -226,7 +226,7 @@ public interface DatabaseClient extends ConnectionAccessor {
 		 * Configure a result mapping {@link BiFunction function} and enter the execution stage.
 		 * @param mappingFunction a function that maps from {@link Row} and {@link RowMetadata}
 		 * to the result type
-		 * @param <R> the result type
+		 * @param <R> result类型
 		 * @return a {@link FetchSpec} for configuration what to fetch
 		 */
 		<R> RowsFetchSpec<R> map(BiFunction<Row, RowMetadata, R> mappingFunction);

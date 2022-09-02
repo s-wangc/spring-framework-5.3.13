@@ -49,7 +49,7 @@ import org.springframework.web.context.request.NativeWebRequest;
  * @author Juergen Hoeller
  * @author Rob Winch
  * @since 3.2
- * @param <T> the result type
+ * @param <T> result类型
  */
 public class DeferredResult<T> {
 

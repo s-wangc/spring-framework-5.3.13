@@ -295,7 +295,7 @@ public class GroovyBeanDefinitionReader extends AbstractBeanDefinitionReader imp
 
 	/**
 	 * Define an inner bean definition.
-	 * @param type the bean type
+	 * @param type bean类型
 	 * @return the bean definition
 	 */
 	public GenericBeanDefinition bean(Class<?> type) {
@@ -306,7 +306,7 @@ public class GroovyBeanDefinitionReader extends AbstractBeanDefinitionReader imp
 
 	/**
 	 * Define an inner bean definition.
-	 * @param type the bean type
+	 * @param type bean类型
 	 * @param args the constructors arguments and closure configurer
 	 * @return the bean definition
 	 */

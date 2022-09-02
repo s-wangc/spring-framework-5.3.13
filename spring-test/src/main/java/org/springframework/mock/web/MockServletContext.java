@@ -284,7 +284,7 @@ public class MockServletContext implements ServletContext {
 	/**
 	 * Adds a mime type mapping for use by {@link #getMimeType(String)}.
 	 * @param fileExtension a file extension, such as {@code txt}, {@code gif}
-	 * @param mimeType the mime type
+	 * @param mimeType mime类型
 	 */
 	public void addMimeType(String fileExtension, MediaType mimeType) {
 		Assert.notNull(fileExtension, "'fileExtension' must not be null");

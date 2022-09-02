@@ -61,7 +61,7 @@ public class SessionAttributesHandler {
 	 * Create a new session attributes handler. Session attribute names and types
 	 * are extracted from the {@code @SessionAttributes} annotation, if present,
 	 * on the given type.
-	 * @param handlerType the controller type
+	 * @param handlerType controller类型
 	 * @param sessionAttributeStore used for session access
 	 */
 	public SessionAttributesHandler(Class<?> handlerType, SessionAttributeStore sessionAttributeStore) {

@@ -165,7 +165,7 @@ public abstract class AbstractAspectJAdvisorFactory implements AspectJAdvisorFac
 	/**
 	 * Class modelling an AspectJ annotation, exposing its type enumeration and
 	 * pointcut String.
-	 * @param <A> the annotation type
+	 * @param <A> annotation类型
 	 */
 	protected static class AspectJAnnotation<A extends Annotation> {
 

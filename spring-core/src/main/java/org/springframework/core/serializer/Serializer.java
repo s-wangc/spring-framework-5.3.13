@@ -27,7 +27,7 @@ import java.io.OutputStream;
  * @author Mark Fisher
  * @author Juergen Hoeller
  * @since 3.0.5
- * @param <T> the object type
+ * @param <T> object类型
  * @see Deserializer
  */
 @FunctionalInterface

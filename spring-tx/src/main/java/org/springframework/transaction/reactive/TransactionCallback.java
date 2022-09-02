@@ -32,7 +32,7 @@ import org.springframework.transaction.ReactiveTransaction;
  * @author Mark Paluch
  * @author Juergen Hoeller
  * @since 5.2
- * @param <T> the result type
+ * @param <T> result类型
  * @see TransactionalOperator
  */
 @FunctionalInterface

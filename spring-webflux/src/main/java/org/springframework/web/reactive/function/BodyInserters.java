@@ -424,7 +424,7 @@ public abstract class BodyInserters {
 	 * Extension of {@link BodyInserter} that allows for adding form data or
 	 * multipart form data.
 	 *
-	 * @param <T> the value type
+	 * @param <T> value类型
 	 */
 	public interface FormInserter<T> extends BodyInserter<MultiValueMap<String, T>, ClientHttpRequest> {
 

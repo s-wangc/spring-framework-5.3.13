@@ -31,7 +31,7 @@ import org.springframework.lang.Nullable;
  *
  * @author Juergen Hoeller
  * @since 2.5.1
- * @param <T> the result type
+ * @param <T> result类型
  * @see JmsTemplate#browse(BrowserCallback)
  * @see JmsTemplate#browseSelected(String, BrowserCallback)
  */

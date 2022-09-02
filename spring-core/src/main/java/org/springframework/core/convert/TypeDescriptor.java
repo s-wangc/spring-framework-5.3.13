@@ -117,7 +117,7 @@ public class TypeDescriptor implements Serializable {
 	 * <p>This constructor is used internally and may also be used by subclasses
 	 * that support non-Java languages with extended type systems. It is public
 	 * as of 5.1.4 whereas it was protected before.
-	 * @param resolvableType the resolvable type
+	 * @param resolvableType resolvable类型
 	 * @param type the backing type (or {@code null} if it should get resolved)
 	 * @param annotations the type annotations
 	 * @since 4.0
@@ -237,7 +237,7 @@ public class TypeDescriptor implements Serializable {
 	 * Determine if this type descriptor has the specified annotation.
 	 * <p>As of Spring Framework 4.2, this method supports arbitrary levels
 	 * of meta-annotations.
-	 * @param annotationType the annotation type
+	 * @param annotationType annotation类型
 	 * @return <tt>true</tt> if the annotation is present
 	 */
 	public boolean hasAnnotation(Class<? extends Annotation> annotationType) {
@@ -252,7 +252,7 @@ public class TypeDescriptor implements Serializable {
 	/**
 	 * Obtain the annotation of the specified {@code annotationType} that is on this type descriptor.
 	 * <p>As of Spring Framework 4.2, this method supports arbitrary levels of meta-annotations.
-	 * @param annotationType the annotation type
+	 * @param annotationType annotation类型
 	 * @return the annotation, or {@code null} if no such annotation exists on this type descriptor
 	 */
 	@Nullable

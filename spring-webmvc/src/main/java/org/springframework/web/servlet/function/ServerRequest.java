@@ -136,7 +136,7 @@ public interface ServerRequest {
 	/**
 	 * Extract the body as an object of the given type.
 	 * @param bodyType the type of return value
-	 * @param <T> the body type
+	 * @param <T> body类型
 	 * @return the body
 	 */
 	<T> T body(Class<T> bodyType) throws ServletException, IOException;
@@ -144,7 +144,7 @@ public interface ServerRequest {
 	/**
 	 * Extract the body as an object of the given type.
 	 * @param bodyType the type of return value
-	 * @param <T> the body type
+	 * @param <T> body类型
 	 * @return the body
 	 */
 	<T> T body(ParameterizedTypeReference<T> bodyType) throws ServletException, IOException;

@@ -46,7 +46,7 @@ import org.springframework.util.Assert;
  *
  * @author Juergen Hoeller
  * @since 19.05.2003
- * @param <E> the element type
+ * @param <E> element类型
  * @see #getPageList()
  * @see org.springframework.beans.support.MutableSortDefinition
  */

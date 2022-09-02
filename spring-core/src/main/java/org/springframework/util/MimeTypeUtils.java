@@ -181,7 +181,7 @@ public abstract class MimeTypeUtils {
 	 * Parse the given String into a single {@code MimeType}.
 	 * Recently parsed {@code MimeType} are cached for further retrieval.
 	 * @param mimeType the string to parse
-	 * @return the mime type
+	 * @return mime类型
 	 * @throws InvalidMimeTypeException if the string cannot be parsed
 	 */
 	public static MimeType parseMimeType(String mimeType) {

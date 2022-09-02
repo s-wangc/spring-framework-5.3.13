@@ -24,7 +24,7 @@ import org.springframework.lang.Nullable;
  *
  * @author Rossen Stoyanchev
  * @since 5.0
- * @param <T> the value type
+ * @param <T> value类型
  */
 public interface NameValueExpression<T> {
 

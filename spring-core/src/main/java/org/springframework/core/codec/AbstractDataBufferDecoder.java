@@ -43,7 +43,7 @@ import org.springframework.util.MimeType;
  *
  * @author Rossen Stoyanchev
  * @since 5.0
- * @param <T> the element type
+ * @param <T> element类型
  */
 @SuppressWarnings("deprecation")
 public abstract class AbstractDataBufferDecoder<T> extends AbstractDecoder<T> {

@@ -41,7 +41,7 @@ public class BeanNotOfRequiredTypeException extends BeansException {
 	/**
 	 * 创建一个新的BeanNotOfRequiredTypeException.
 	 * @param beanName 请求的bean的名称
-	 * @param requiredType the required type
+	 * @param requiredType required类型
 	 * @param actualType the actual type returned, which did not match
 	 * the expected type
 	 */

@@ -32,7 +32,7 @@ import org.springframework.util.Assert;
  * @author Agim Emruli
  * @author Juergen Hoeller
  * @since 4.1
- * @param <D> the destination type
+ * @param <D> destination类型
  * @see DestinationResolver#resolveDestination
  */
 public class CachingDestinationResolverProxy<D> implements DestinationResolver<D>, InitializingBean {

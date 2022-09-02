@@ -56,7 +56,7 @@ import org.springframework.util.ReflectionUtils;
  * @author Juergen Hoeller
  * @author Keith Donald
  * @since 1.0.2
- * @param <T> the bean type
+ * @param <T> bean类型
  * @see #setSingleton
  * @see #createInstance()
  */

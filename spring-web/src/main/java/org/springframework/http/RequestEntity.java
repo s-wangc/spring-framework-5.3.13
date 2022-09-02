@@ -58,7 +58,7 @@ import org.springframework.util.ObjectUtils;
  * @author Sebastien Deleuze
  * @author Parviz Rozikov
  * @since 4.1
- * @param <T> the body type
+ * @param <T> body类型
  * @see #getMethod()
  * @see #getUrl()
  * @see org.springframework.web.client.RestOperations#exchange(RequestEntity, Class)
@@ -508,7 +508,7 @@ public class RequestEntity<T> extends HttpEntity<T> {
 		/**
 		 * Set the {@linkplain MediaType media type} of the body, as specified
 		 * by the {@code Content-Type} header.
-		 * @param contentType the content type
+		 * @param contentType content类型
 		 * @return this builder
 		 * @see HttpHeaders#setContentType(MediaType)
 		 */
@@ -679,7 +679,7 @@ public class RequestEntity<T> extends HttpEntity<T> {
 	/**
 	 * RequestEntity initialized with a URI template and variables instead of a {@link URI}.
 	 * @since 5.3
-	 * @param <T> the body type
+	 * @param <T> body类型
 	 */
 	public static class UriTemplateRequestEntity<T> extends RequestEntity<T> {
 
