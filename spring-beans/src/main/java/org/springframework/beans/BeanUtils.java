@@ -591,7 +591,7 @@ public abstract class BeanUtils {
 	/**
 	 * Determine the bean property type for the given property from the
 	 * given classes/interfaces, if possible.
-	 * @param propertyName the name of the bean property
+	 * @param propertyName bean属性的名称
 	 * @param beanClasses the classes to check against
 	 * @return the property type, or {@code Object.class} as fallback
 	 */

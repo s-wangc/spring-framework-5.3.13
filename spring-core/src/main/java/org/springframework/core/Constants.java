@@ -172,7 +172,7 @@ public class Constants {
 	/**
 	 * Return all names of the group of constants for the
 	 * given bean property name.
-	 * @param propertyName the name of the bean property
+	 * @param propertyName bean属性的名称
 	 * @return the set of values
 	 * @see #propertyToConstantNamePrefix
 	 */
@@ -226,7 +226,7 @@ public class Constants {
 	/**
 	 * Return all values of the group of constants for the
 	 * given bean property name.
-	 * @param propertyName the name of the bean property
+	 * @param propertyName bean属性的名称
 	 * @return the set of values
 	 * @see #propertyToConstantNamePrefix
 	 */
@@ -278,7 +278,7 @@ public class Constants {
 	 * Look up the given value within the group of constants for
 	 * the given bean property name. Will return the first match.
 	 * @param value constant value to look up
-	 * @param propertyName the name of the bean property
+	 * @param propertyName bean属性的名称
 	 * @return the name of the constant field
 	 * @throws ConstantException if the value wasn't found
 	 * @see #propertyToConstantNamePrefix
@@ -314,7 +314,7 @@ public class Constants {
 	 * Example: "imagesize" &rarr; "IMAGESIZE".<br>
 	 * Example: "ImageSize" &rarr; "_IMAGE_SIZE".<br>
 	 * Example: "IMAGESIZE" &rarr; "_I_M_A_G_E_S_I_Z_E"
-	 * @param propertyName the name of the bean property
+	 * @param propertyName bean属性的名称
 	 * @return the corresponding constant name prefix
 	 * @see #getValuesForProperty
 	 * @see #toCodeForProperty

@@ -1152,7 +1152,7 @@ public class ResolvableType implements Serializable {
 	 * <p>Use this variant when the class that declares the field includes generic
 	 * parameter variables that are satisfied by the implementation type.
 	 * @param field the source field
-	 * @param implementationType the implementation type
+	 * @param implementationType implementation类型
 	 * @return a {@link ResolvableType} for the specified field
 	 * @see #forField(Field)
 	 */
@@ -1296,7 +1296,7 @@ public class ResolvableType implements Serializable {
 	 * given implementation type. Use this variant when the class that declares the method
 	 * includes generic parameter variables that are satisfied by the implementation type.
 	 * @param methodParameter the source method parameter (must not be {@code null})
-	 * @param implementationType the implementation type
+	 * @param implementationType implementation类型
 	 * @return a {@link ResolvableType} for the specified method parameter
 	 * @see #forMethodParameter(MethodParameter)
 	 */
@@ -1345,7 +1345,7 @@ public class ResolvableType implements Serializable {
 
 	/**
 	 * Return a {@link ResolvableType} as a array of the specified {@code componentType}.
-	 * @param componentType the component type
+	 * @param componentType component类型
 	 * @return a {@link ResolvableType} as an array of the specified component type
 	 */
 	public static ResolvableType forArrayComponent(ResolvableType componentType) {

@@ -234,7 +234,7 @@ final class AnnotationTypeMappings {
 
 		/**
 		 * Get or create {@link AnnotationTypeMappings} for the specified annotation type.
-		 * @param annotationType the annotation type
+		 * @param annotationType annotation类型
 		 * @return a new or existing {@link AnnotationTypeMappings} instance
 		 */
 		AnnotationTypeMappings get(Class<? extends Annotation> annotationType) {
