@@ -343,7 +343,7 @@ public interface AutowireCapableBeanFactory extends BeanFactory {
 	 * @return the bean name plus bean instance
 	 * @throws NoSuchBeanDefinitionException if no matching bean was found
 	 * @throws NoUniqueBeanDefinitionException if more than one matching bean was found
-	 * @throws BeansException if the bean could not be created
+	 * @throws BeansException 如果无法创建bean
 	 * @since 4.3.3
 	 * @see #getBean(Class)
 	 */
@@ -359,7 +359,7 @@ public interface AutowireCapableBeanFactory extends BeanFactory {
 	 * @param descriptor the dependency descriptor for the requesting injection point
 	 * @return the corresponding bean instance
 	 * @throws NoSuchBeanDefinitionException if there is no bean with the specified name
-	 * @throws BeansException if the bean could not be created
+	 * @throws BeansException 如果无法创建bean
 	 * @since 5.1.5
 	 * @see #getBean(String, Class)
 	 */

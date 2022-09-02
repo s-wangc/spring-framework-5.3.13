@@ -565,7 +565,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	 * @param mbd the merged bean definition for the bean
 	 * @param args explicit arguments to use for constructor or factory method invocation
 	 * @return a new instance of the bean
-	 * @throws BeanCreationException if the bean could not be created
+	 * @throws BeanCreationException 如果无法创建bean
 	 * @see #instantiateBean
 	 * @see #instantiateUsingFactoryMethod
 	 * @see #autowireConstructor

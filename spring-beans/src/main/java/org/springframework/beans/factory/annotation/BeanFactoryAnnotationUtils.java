@@ -82,7 +82,7 @@ public abstract class BeanFactoryAnnotationUtils {
 	 * @return the matching bean of type {@code T} (never {@code null})
 	 * @throws NoUniqueBeanDefinitionException if multiple matching beans of type {@code T} found
 	 * @throws NoSuchBeanDefinitionException if no matching bean of type {@code T} found
-	 * @throws BeansException if the bean could not be created
+	 * @throws BeansException 如果无法创建bean
 	 * @see BeanFactoryUtils#beanOfTypeIncludingAncestors(ListableBeanFactory, Class)
 	 */
 	public static <T> T qualifiedBeanOfType(BeanFactory beanFactory, Class<T> beanType, String qualifier)

@@ -155,7 +155,7 @@ public interface BeanFactory {
 	 * @return an instance of the bean
 	 * @throws NoSuchBeanDefinitionException if there is no such bean definition
 	 * @throws BeanNotOfRequiredTypeException if the bean is not of the required type
-	 * @throws BeansException if the bean could not be created
+	 * @throws BeansException 如果无法创建bean
 	 */
 	<T> T getBean(String name, Class<T> requiredType) throws BeansException;
 
@@ -170,7 +170,7 @@ public interface BeanFactory {
 	 * @throws NoSuchBeanDefinitionException if there is no such bean definition
 	 * @throws BeanDefinitionStoreException if arguments have been given but
 	 * the affected bean isn't a prototype
-	 * @throws BeansException if the bean could not be created
+	 * @throws BeansException 如果无法创建bean
 	 * @since 2.5
 	 */
 	Object getBean(String name, Object... args) throws BeansException;
@@ -185,7 +185,7 @@ public interface BeanFactory {
 	 * @return an instance of the single bean matching the required type
 	 * @throws NoSuchBeanDefinitionException if no bean of the given type was found
 	 * @throws NoUniqueBeanDefinitionException if more than one bean of the given type was found
-	 * @throws BeansException if the bean could not be created
+	 * @throws BeansException 如果无法创建bean
 	 * @since 3.0
 	 * @see ListableBeanFactory
 	 */
@@ -206,7 +206,7 @@ public interface BeanFactory {
 	 * @throws NoSuchBeanDefinitionException if there is no such bean definition
 	 * @throws BeanDefinitionStoreException if arguments have been given but
 	 * the affected bean isn't a prototype
-	 * @throws BeansException if the bean could not be created
+	 * @throws BeansException 如果无法创建bean
 	 * @since 4.1
 	 */
 	<T> T getBean(Class<T> requiredType, Object... args) throws BeansException;
