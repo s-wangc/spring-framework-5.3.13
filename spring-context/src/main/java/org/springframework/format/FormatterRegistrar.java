@@ -30,7 +30,7 @@ public interface FormatterRegistrar {
 	/**
 	 * Register Formatters and Converters with a FormattingConversionService
 	 * through a FormatterRegistry SPI.
-	 * @param registry the FormatterRegistry instance to use.
+	 * @param registry 要使用的FormatterRegistry实例.
 	 */
 	void registerFormatters(FormatterRegistry registry);
 

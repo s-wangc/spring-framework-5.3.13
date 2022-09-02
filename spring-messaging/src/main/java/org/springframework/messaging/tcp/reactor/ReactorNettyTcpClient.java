@@ -144,7 +144,7 @@ public class ReactorNettyTcpClient<P> implements TcpOperations<P> {
 	/**
 	 * Constructor with an externally created {@link TcpClient} instance whose
 	 * lifecycle is expected to be managed externally.
-	 * @param tcpClient the TcpClient instance to use
+	 * @param tcpClient 要使用的TcpClient实例
 	 * @param codec for encoding and decoding the input/output byte streams
 	 * @see org.springframework.messaging.simp.stomp.StompReactorNettyCodec
 	 */

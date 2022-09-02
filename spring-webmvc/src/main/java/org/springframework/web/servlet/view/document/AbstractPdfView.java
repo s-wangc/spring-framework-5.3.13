@@ -104,7 +104,7 @@ public abstract class AbstractPdfView extends AbstractView {
 	 * Create a new PdfWriter for the given iText Document.
 	 * @param document the iText Document to create a writer for
 	 * @param os 要写入的OutputStream
-	 * @return the PdfWriter instance to use
+	 * @return 要使用的PdfWriter实例
 	 * @throws DocumentException if thrown during writer creation
 	 */
 	protected PdfWriter newWriter(Document document, OutputStream os) throws DocumentException {

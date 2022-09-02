@@ -49,7 +49,7 @@ public class GsonMessageConverter extends AbstractJsonMessageConverter {
 
 	/**
 	 * Construct a new {@code GsonMessageConverter} with the given delegate.
-	 * @param gson the Gson instance to use
+	 * @param gson 要使用的Gson实例
 	 */
 	public GsonMessageConverter(Gson gson) {
 		Assert.notNull(gson, "A Gson instance is required");

@@ -54,7 +54,7 @@ public class KotlinSerializationJsonMessageConverter extends AbstractJsonMessage
 
 	/**
 	 * Construct a new {@code KotlinSerializationJsonMessageConverter} with the given delegate.
-	 * @param json the Json instance to use
+	 * @param json 要使用的Json实例
 	 */
 	public KotlinSerializationJsonMessageConverter(Json json) {
 		this.json = json;

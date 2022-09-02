@@ -59,7 +59,7 @@ public class JsonbMessageConverter extends AbstractJsonMessageConverter {
 
 	/**
 	 * Construct a new {@code JsonbMessageConverter} with the given delegate.
-	 * @param jsonb the Jsonb instance to use
+	 * @param jsonb 要使用的Jsonb实例
 	 */
 	public JsonbMessageConverter(Jsonb jsonb) {
 		Assert.notNull(jsonb, "A Jsonb instance is required");

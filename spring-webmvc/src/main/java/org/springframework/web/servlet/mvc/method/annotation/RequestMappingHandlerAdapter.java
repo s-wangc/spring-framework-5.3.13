@@ -988,7 +988,7 @@ public class RequestMappingHandlerAdapter extends AbstractHandlerMethodAdapter
 	 * <p>The default implementation creates a ServletRequestDataBinderFactory.
 	 * This can be overridden for custom ServletRequestDataBinder subclasses.
 	 * @param binderMethods {@code @InitBinder} methods
-	 * @return the InitBinderDataBinderFactory instance to use
+	 * @return 要使用的InitBinderDataBinderFactory实例
 	 * @throws Exception in case of invalid state or arguments
 	 */
 	protected InitBinderDataBinderFactory createDataBinderFactory(List<InvocableHandlerMethod> binderMethods)
