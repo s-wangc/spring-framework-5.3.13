@@ -346,7 +346,7 @@ public interface ConfigurableBeanFactory extends HierarchicalBeanFactory, Single
 	 * @param name the name of the bean to check
 	 * @return whether the bean is a FactoryBean
 	 * ({@code false} means the bean exists but is not a FactoryBean)
-	 * @throws NoSuchBeanDefinitionException if there is no bean with the given name
+	 * @throws NoSuchBeanDefinitionException 如果没有具有给定名称的bean
 	 * @since 2.5
 	 */
 	boolean isFactoryBean(String name) throws NoSuchBeanDefinitionException;

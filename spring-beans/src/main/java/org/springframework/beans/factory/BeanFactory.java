@@ -265,7 +265,7 @@ public interface BeanFactory {
 	 * <p>Will ask the parent factory if the bean cannot be found in this factory instance.
 	 * @param name the name of the bean to query
 	 * @return whether this bean corresponds to a singleton instance
-	 * @throws NoSuchBeanDefinitionException if there is no bean with the given name
+	 * @throws NoSuchBeanDefinitionException 如果没有具有给定名称的bean
 	 * @see #getBean
 	 * @see #isPrototype
 	 */
@@ -282,7 +282,7 @@ public interface BeanFactory {
 	 * <p>Will ask the parent factory if the bean cannot be found in this factory instance.
 	 * @param name the name of the bean to query
 	 * @return whether this bean will always deliver independent instances
-	 * @throws NoSuchBeanDefinitionException if there is no bean with the given name
+	 * @throws NoSuchBeanDefinitionException 如果没有具有给定名称的bean
 	 * @since 2.0.3
 	 * @see #getBean
 	 * @see #isSingleton
@@ -299,7 +299,7 @@ public interface BeanFactory {
 	 * @param typeToMatch the type to match against (as a {@code ResolvableType})
 	 * @return {@code true} if the bean type matches,
 	 * {@code false} if it doesn't match or cannot be determined yet
-	 * @throws NoSuchBeanDefinitionException if there is no bean with the given name
+	 * @throws NoSuchBeanDefinitionException 如果没有具有给定名称的bean
 	 * @since 4.2
 	 * @see #getBean
 	 * @see #getType
@@ -316,7 +316,7 @@ public interface BeanFactory {
 	 * @param typeToMatch the type to match against (as a {@code Class})
 	 * @return {@code true} if the bean type matches,
 	 * {@code false} if it doesn't match or cannot be determined yet
-	 * @throws NoSuchBeanDefinitionException if there is no bean with the given name
+	 * @throws NoSuchBeanDefinitionException 如果没有具有给定名称的bean
 	 * @since 2.0.1
 	 * @see #getBean
 	 * @see #getType
@@ -333,7 +333,7 @@ public interface BeanFactory {
 	 * <p>Will ask the parent factory if the bean cannot be found in this factory instance.
 	 * @param name the name of the bean to query
 	 * @return the type of the bean, or {@code null} if not determinable
-	 * @throws NoSuchBeanDefinitionException if there is no bean with the given name
+	 * @throws NoSuchBeanDefinitionException 如果没有具有给定名称的bean
 	 * @since 1.1.2
 	 * @see #getBean
 	 * @see #isTypeMatch
@@ -354,7 +354,7 @@ public interface BeanFactory {
 	 * @param allowFactoryBeanInit whether a {@code FactoryBean} may get initialized
 	 * just for the purpose of determining its object type
 	 * @return the type of the bean, or {@code null} if not determinable
-	 * @throws NoSuchBeanDefinitionException if there is no bean with the given name
+	 * @throws NoSuchBeanDefinitionException 如果没有具有给定名称的bean
 	 * @since 5.2
 	 * @see #getBean
 	 * @see #isTypeMatch

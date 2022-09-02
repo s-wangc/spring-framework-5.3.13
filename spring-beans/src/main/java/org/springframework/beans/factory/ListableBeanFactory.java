@@ -349,7 +349,7 @@ public interface ListableBeanFactory extends BeanFactory {
 	 * @param annotationType the type of annotation to look for
 	 * (at class, interface or factory method level of the specified bean)
 	 * @return the annotation of the given type if found, or {@code null} otherwise
-	 * @throws NoSuchBeanDefinitionException if there is no bean with the given name
+	 * @throws NoSuchBeanDefinitionException 如果没有具有给定名称的bean
 	 * @since 3.0
 	 * @see #getBeanNamesForAnnotation
 	 * @see #getBeansWithAnnotation

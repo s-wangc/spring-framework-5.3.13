@@ -87,7 +87,7 @@ public interface ConfigurableListableBeanFactory
 	 * @param beanName the name of the bean to check
 	 * @param descriptor the descriptor of the dependency to resolve
 	 * @return whether the bean should be considered as autowire candidate
-	 * @throws NoSuchBeanDefinitionException if there is no bean with the given name
+	 * @throws NoSuchBeanDefinitionException 如果没有具有给定名称的bean
 	 */
 	boolean isAutowireCandidate(String beanName, DependencyDescriptor descriptor)
 			throws NoSuchBeanDefinitionException;
@@ -103,7 +103,7 @@ public interface ConfigurableListableBeanFactory
 	 * It is only meant for accessing local bean definitions of this factory.
 	 * @param beanName bean的名称
 	 * @return the registered BeanDefinition
-	 * @throws NoSuchBeanDefinitionException if there is no bean with the given name
+	 * @throws NoSuchBeanDefinitionException 如果没有具有给定名称的bean
 	 * defined in this factory
 	 */
 	BeanDefinition getBeanDefinition(String beanName) throws NoSuchBeanDefinitionException;

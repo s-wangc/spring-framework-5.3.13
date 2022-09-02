@@ -526,7 +526,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 * {@code ResolvableType})
 	 * @return {@code true} if the bean type matches, {@code false} if it
 	 * doesn't match or cannot be determined yet
-	 * @throws NoSuchBeanDefinitionException if there is no bean with the given name
+	 * @throws NoSuchBeanDefinitionException 如果没有具有给定名称的bean
 	 * @since 5.2
 	 * @see #getBean
 	 * @see #getType
@@ -1118,7 +1118,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 * @param name the name of the bean to retrieve the merged definition for
 	 * (may be an alias)
 	 * @return a (potentially merged) RootBeanDefinition for the given bean
-	 * @throws NoSuchBeanDefinitionException if there is no bean with the given name
+	 * @throws NoSuchBeanDefinitionException 如果没有具有给定名称的bean
 	 * @throws BeanDefinitionStoreException in case of an invalid bean definition
 	 */
 	@Override
@@ -1332,7 +1332,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 * if the specified bean corresponds to a child bean definition.
 	 * @param beanName the name of the bean to retrieve the merged definition for
 	 * @return a (potentially merged) RootBeanDefinition for the given bean
-	 * @throws NoSuchBeanDefinitionException if there is no bean with the given name
+	 * @throws NoSuchBeanDefinitionException 如果没有具有给定名称的bean
 	 * @throws BeanDefinitionStoreException in case of an invalid bean definition
 	 */
 	protected RootBeanDefinition getMergedLocalBeanDefinition(String beanName) throws BeansException {
