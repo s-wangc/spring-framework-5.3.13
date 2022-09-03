@@ -302,7 +302,7 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 	/**
 	 * Load bean definitions from the specified XML file.
 	 * @param resource the resource descriptor for the XML file
-	 * @return the number of bean definitions found
+	 * @return 找到的bean定义的数量
 	 * @throws BeanDefinitionStoreException 在加载或解析错误的情况下
 	 */
 	@Override
@@ -314,7 +314,7 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 	 * Load bean definitions from the specified XML file.
 	 * @param encodedResource the resource descriptor for the XML file,
 	 * allowing to specify an encoding to use for parsing the file
-	 * @return the number of bean definitions found
+	 * @return 找到的bean定义的数量
 	 * @throws BeanDefinitionStoreException 在加载或解析错误的情况下
 	 */
 	public int loadBeanDefinitions(EncodedResource encodedResource) throws BeanDefinitionStoreException {
@@ -352,7 +352,7 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 	/**
 	 * Load bean definitions from the specified XML file.
 	 * @param inputSource the SAX InputSource to read from
-	 * @return the number of bean definitions found
+	 * @return 找到的bean定义的数量
 	 * @throws BeanDefinitionStoreException 在加载或解析错误的情况下
 	 */
 	public int loadBeanDefinitions(InputSource inputSource) throws BeanDefinitionStoreException {
@@ -364,7 +364,7 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 	 * @param inputSource the SAX InputSource to read from
 	 * @param resourceDescription a description of the resource
 	 * (can be {@code null} or empty)
-	 * @return the number of bean definitions found
+	 * @return 找到的bean定义的数量
 	 * @throws BeanDefinitionStoreException 在加载或解析错误的情况下
 	 */
 	public int loadBeanDefinitions(InputSource inputSource, @Nullable String resourceDescription)
@@ -378,7 +378,7 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 	 * Actually load bean definitions from the specified XML file.
 	 * @param inputSource the SAX InputSource to read from
 	 * @param resource the resource descriptor for the XML file
-	 * @return the number of bean definitions found
+	 * @return 找到的bean定义的数量
 	 * @throws BeanDefinitionStoreException 在加载或解析错误的情况下
 	 * @see #doLoadDocument
 	 * @see #registerBeanDefinitions
@@ -499,7 +499,7 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 	 * {@code registerBeanDefinitions} on it.
 	 * @param doc the DOM document
 	 * @param resource the resource descriptor (for context information)
-	 * @return the number of bean definitions found
+	 * @return 找到的bean定义的数量
 	 * @throws BeanDefinitionStoreException in case of parsing errors
 	 * @see #loadBeanDefinitions
 	 * @see #setDocumentReaderClass

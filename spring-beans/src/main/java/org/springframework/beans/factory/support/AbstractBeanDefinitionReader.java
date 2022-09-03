@@ -204,7 +204,7 @@ public abstract class AbstractBeanDefinitionReader implements BeanDefinitionRead
 	 * @param actualResources a Set to be filled with the actual Resource objects
 	 * that have been resolved during the loading process. May be {@code null}
 	 * to indicate that the caller is not interested in those Resource objects.
-	 * @return the number of bean definitions found
+	 * @return 找到的bean定义的数量
 	 * @throws BeanDefinitionStoreException 在加载或解析错误的情况下
 	 * @see #getResourceLoader()
 	 * @see #loadBeanDefinitions(org.springframework.core.io.Resource)

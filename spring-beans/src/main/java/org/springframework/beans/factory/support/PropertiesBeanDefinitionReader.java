@@ -207,7 +207,7 @@ public class PropertiesBeanDefinitionReader extends AbstractBeanDefinitionReader
 	 * Load bean definitions from the specified properties file,
 	 * using all property keys (i.e. not filtering by prefix).
 	 * @param resource the resource descriptor for the properties file
-	 * @return the number of bean definitions found
+	 * @return 找到的bean定义的数量
 	 * @throws BeanDefinitionStoreException 在加载或解析错误的情况下
 	 * @see #loadBeanDefinitions(org.springframework.core.io.Resource, String)
 	 */
@@ -221,7 +221,7 @@ public class PropertiesBeanDefinitionReader extends AbstractBeanDefinitionReader
 	 * @param resource the resource descriptor for the properties file
 	 * @param prefix a filter within the keys in the map: e.g. 'beans.'
 	 * (can be empty or {@code null})
-	 * @return the number of bean definitions found
+	 * @return 找到的bean定义的数量
 	 * @throws BeanDefinitionStoreException 在加载或解析错误的情况下
 	 */
 	public int loadBeanDefinitions(Resource resource, @Nullable String prefix) throws BeanDefinitionStoreException {
@@ -232,7 +232,7 @@ public class PropertiesBeanDefinitionReader extends AbstractBeanDefinitionReader
 	 * Load bean definitions from the specified properties file.
 	 * @param encodedResource the resource descriptor for the properties file,
 	 * allowing to specify an encoding to use for parsing the file
-	 * @return the number of bean definitions found
+	 * @return 找到的bean定义的数量
 	 * @throws BeanDefinitionStoreException 在加载或解析错误的情况下
 	 */
 	public int loadBeanDefinitions(EncodedResource encodedResource) throws BeanDefinitionStoreException {
@@ -245,7 +245,7 @@ public class PropertiesBeanDefinitionReader extends AbstractBeanDefinitionReader
 	 * allowing to specify an encoding to use for parsing the file
 	 * @param prefix a filter within the keys in the map: e.g. 'beans.'
 	 * (can be empty or {@code null})
-	 * @return the number of bean definitions found
+	 * @return 找到的bean定义的数量
 	 * @throws BeanDefinitionStoreException 在加载或解析错误的情况下
 	 */
 	public int loadBeanDefinitions(EncodedResource encodedResource, @Nullable String prefix)
@@ -281,7 +281,7 @@ public class PropertiesBeanDefinitionReader extends AbstractBeanDefinitionReader
 	 * Register bean definitions contained in a resource bundle,
 	 * using all property keys (i.e. not filtering by prefix).
 	 * @param rb the ResourceBundle to load from
-	 * @return the number of bean definitions found
+	 * @return 找到的bean定义的数量
 	 * @throws BeanDefinitionStoreException 在加载或解析错误的情况下
 	 * @see #registerBeanDefinitions(java.util.ResourceBundle, String)
 	 */
@@ -296,7 +296,7 @@ public class PropertiesBeanDefinitionReader extends AbstractBeanDefinitionReader
 	 * @param rb the ResourceBundle to load from
 	 * @param prefix a filter within the keys in the map: e.g. 'beans.'
 	 * (can be empty or {@code null})
-	 * @return the number of bean definitions found
+	 * @return 找到的bean定义的数量
 	 * @throws BeanDefinitionStoreException 在加载或解析错误的情况下
 	 */
 	public int registerBeanDefinitions(ResourceBundle rb, @Nullable String prefix) throws BeanDefinitionStoreException {
@@ -317,7 +317,7 @@ public class PropertiesBeanDefinitionReader extends AbstractBeanDefinitionReader
 	 * @param map a map of {@code name} to {@code property} (String or Object). Property
 	 * values will be strings if coming from a Properties file etc. Property names
 	 * (keys) <b>must</b> be Strings. Class keys must be Strings.
-	 * @return the number of bean definitions found
+	 * @return 找到的bean定义的数量
 	 * @throws BeansException 在加载或解析错误的情况下
 	 * @see #registerBeanDefinitions(java.util.Map, String, String)
 	 */
@@ -333,7 +333,7 @@ public class PropertiesBeanDefinitionReader extends AbstractBeanDefinitionReader
 	 * (keys) <b>must</b> be Strings. Class keys must be Strings.
 	 * @param prefix a filter within the keys in the map: e.g. 'beans.'
 	 * (can be empty or {@code null})
-	 * @return the number of bean definitions found
+	 * @return 找到的bean定义的数量
 	 * @throws BeansException 在加载或解析错误的情况下
 	 */
 	public int registerBeanDefinitions(Map<?, ?> map, @Nullable String prefix) throws BeansException {
@@ -350,7 +350,7 @@ public class PropertiesBeanDefinitionReader extends AbstractBeanDefinitionReader
 	 * (can be empty or {@code null})
 	 * @param resourceDescription description of the resource that the
 	 * Map came from (for logging purposes)
-	 * @return the number of bean definitions found
+	 * @return 找到的bean定义的数量
 	 * @throws BeansException 在加载或解析错误的情况下
 	 * @see #registerBeanDefinitions(Map, String)
 	 */

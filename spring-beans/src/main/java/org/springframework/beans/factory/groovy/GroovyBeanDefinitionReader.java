@@ -215,7 +215,7 @@ public class GroovyBeanDefinitionReader extends AbstractBeanDefinitionReader imp
 	 * <p>Note that {@code ".xml"} files will be parsed as XML content; all other kinds
 	 * of resources will be parsed as Groovy scripts.
 	 * @param resource the resource descriptor for the Groovy script or XML file
-	 * @return the number of bean definitions found
+	 * @return 找到的bean定义的数量
 	 * @throws BeanDefinitionStoreException 在加载或解析错误的情况下
 	 */
 	@Override
@@ -229,7 +229,7 @@ public class GroovyBeanDefinitionReader extends AbstractBeanDefinitionReader imp
 	 * of resources will be parsed as Groovy scripts.
 	 * @param encodedResource the resource descriptor for the Groovy script or XML file,
 	 * allowing specification of an encoding to use for parsing the file
-	 * @return the number of bean definitions found
+	 * @return 找到的bean定义的数量
 	 * @throws BeanDefinitionStoreException 在加载或解析错误的情况下
 	 */
 	public int loadBeanDefinitions(EncodedResource encodedResource) throws BeanDefinitionStoreException {
