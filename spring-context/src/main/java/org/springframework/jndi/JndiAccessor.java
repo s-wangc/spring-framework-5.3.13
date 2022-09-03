@@ -35,7 +35,7 @@ import org.springframework.lang.Nullable;
 public class JndiAccessor {
 
 	/**
-	 * Logger, available to subclasses.
+	 * 可用于子类的Logger.
 	 */
 	protected final Log logger = LogFactory.getLog(getClass());
 

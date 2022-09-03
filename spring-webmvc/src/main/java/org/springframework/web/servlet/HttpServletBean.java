@@ -82,7 +82,7 @@ import org.springframework.web.context.support.StandardServletEnvironment;
 @SuppressWarnings("serial")
 public abstract class HttpServletBean extends HttpServlet implements EnvironmentCapable, EnvironmentAware {
 
-	/** Logger available to subclasses. */
+	/** 可用于子类的Logger. */
 	protected final Log logger = LogFactory.getLog(getClass());
 
 	@Nullable

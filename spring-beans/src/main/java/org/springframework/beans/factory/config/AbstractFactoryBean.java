@@ -63,7 +63,7 @@ import org.springframework.util.ReflectionUtils;
 public abstract class AbstractFactoryBean<T>
 		implements FactoryBean<T>, BeanClassLoaderAware, BeanFactoryAware, InitializingBean, DisposableBean {
 
-	/** Logger available to subclasses. */
+	/** 可用于子类的Logger. */
 	protected final Log logger = LogFactory.getLog(getClass());
 
 	private boolean singleton = true;

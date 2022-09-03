@@ -50,7 +50,7 @@ import org.springframework.util.Assert;
  */
 public abstract class AbstractHttpMessageConverter<T> implements HttpMessageConverter<T> {
 
-	/** Logger available to subclasses. */
+	/** 可用于子类的Logger. */
 	protected final Log logger = HttpLogging.forLogName(getClass());
 
 	private List<MediaType> supportedMediaTypes = Collections.emptyList();

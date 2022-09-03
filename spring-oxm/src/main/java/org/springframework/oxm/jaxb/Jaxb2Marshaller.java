@@ -132,7 +132,7 @@ public class Jaxb2Marshaller implements MimeMarshaller, MimeUnmarshaller, Generi
 			(publicId, systemId) -> new InputSource(new StringReader(""));
 
 
-	/** Logger available to subclasses. */
+	/** 可用于子类的Logger. */
 	protected final Log logger = LogFactory.getLog(getClass());
 
 	@Nullable

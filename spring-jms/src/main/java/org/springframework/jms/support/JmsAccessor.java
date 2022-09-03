@@ -51,7 +51,7 @@ public abstract class JmsAccessor implements InitializingBean {
 	private static final Constants sessionConstants = new Constants(Session.class);
 
 
-	/** Logger available to subclasses. */
+	/** 可用于子类的Logger. */
 	protected final Log logger = LogFactory.getLog(getClass());
 
 	@Nullable

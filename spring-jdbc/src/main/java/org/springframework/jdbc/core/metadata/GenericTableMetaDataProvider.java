@@ -44,7 +44,7 @@ import org.springframework.lang.Nullable;
  */
 public class GenericTableMetaDataProvider implements TableMetaDataProvider {
 
-	/** Logger available to subclasses. */
+	/** 可用于子类的Logger. */
 	protected static final Log logger = LogFactory.getLog(TableMetaDataProvider.class);
 
 	/** indicator whether column meta-data should be used. */

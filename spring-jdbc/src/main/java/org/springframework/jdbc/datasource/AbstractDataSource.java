@@ -39,7 +39,7 @@ import org.apache.commons.logging.LogFactory;
  */
 public abstract class AbstractDataSource implements DataSource {
 
-	/** Logger available to subclasses. */
+	/** 可用于子类的Logger. */
 	protected final Log logger = LogFactory.getLog(getClass());
 
 

@@ -44,7 +44,7 @@ import org.springframework.util.StringUtils;
  */
 public class GenericCallMetaDataProvider implements CallMetaDataProvider {
 
-	/** Logger available to subclasses. */
+	/** 可用于子类的Logger. */
 	protected static final Log logger = LogFactory.getLog(CallMetaDataProvider.class);
 
 

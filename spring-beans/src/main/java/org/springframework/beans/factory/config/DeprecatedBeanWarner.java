@@ -33,7 +33,7 @@ import org.springframework.util.StringUtils;
 public class DeprecatedBeanWarner implements BeanFactoryPostProcessor {
 
 	/**
-	 * Logger available to subclasses.
+	 * 可用于子类的Logger.
 	 */
 	protected transient Log logger = LogFactory.getLog(getClass());
 

@@ -47,7 +47,7 @@ import org.springframework.util.StringUtils;
  */
 public class ResourceScriptSource implements ScriptSource {
 
-	/** Logger available to subclasses. */
+	/** 可用于子类的Logger. */
 	protected final Log logger = LogFactory.getLog(getClass());
 
 	private EncodedResource resource;

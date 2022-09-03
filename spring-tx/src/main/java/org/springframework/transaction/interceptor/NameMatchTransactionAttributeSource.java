@@ -48,7 +48,7 @@ public class NameMatchTransactionAttributeSource
 		implements TransactionAttributeSource, EmbeddedValueResolverAware, InitializingBean, Serializable {
 
 	/**
-	 * Logger available to subclasses.
+	 * 可用于子类的Logger.
 	 * <p>Static for optimal serialization.
 	 */
 	protected static final Log logger = LogFactory.getLog(NameMatchTransactionAttributeSource.class);

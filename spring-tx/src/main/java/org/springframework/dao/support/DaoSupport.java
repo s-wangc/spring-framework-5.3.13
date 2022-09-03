@@ -34,7 +34,7 @@ import org.springframework.beans.factory.InitializingBean;
  */
 public abstract class DaoSupport implements InitializingBean {
 
-	/** Logger available to subclasses. */
+	/** 可用于子类的Logger. */
 	protected final Log logger = LogFactory.getLog(getClass());
 
 

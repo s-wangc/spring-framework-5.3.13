@@ -44,7 +44,7 @@ import org.springframework.util.CollectionUtils;
  */
 public abstract class EntityManagerFactoryAccessor implements BeanFactoryAware {
 
-	/** Logger available to subclasses. */
+	/** 可用于子类的Logger. */
 	protected final Log logger = LogFactory.getLog(getClass());
 
 	@Nullable

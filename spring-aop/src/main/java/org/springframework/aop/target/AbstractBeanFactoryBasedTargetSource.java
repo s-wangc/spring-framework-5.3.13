@@ -53,7 +53,7 @@ public abstract class AbstractBeanFactoryBasedTargetSource implements TargetSour
 	private static final long serialVersionUID = -4721607536018568393L;
 
 
-	/** Logger available to subclasses. */
+	/** 可用于子类的Logger. */
 	protected final Log logger = LogFactory.getLog(getClass());
 
 	/** Name of the target bean we will create on each invocation. */

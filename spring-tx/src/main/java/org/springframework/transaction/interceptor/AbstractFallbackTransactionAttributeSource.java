@@ -68,7 +68,7 @@ public abstract class AbstractFallbackTransactionAttributeSource
 
 
 	/**
-	 * Logger available to subclasses.
+	 * 可用于子类的Logger.
 	 * <p>As this base class is not marked Serializable, the logger will be recreated
 	 * after serialization - provided that the concrete subclass is Serializable.
 	 */

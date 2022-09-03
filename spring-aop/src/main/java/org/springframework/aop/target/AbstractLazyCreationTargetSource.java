@@ -42,7 +42,7 @@ import org.springframework.lang.Nullable;
  */
 public abstract class AbstractLazyCreationTargetSource implements TargetSource {
 
-	/** Logger available to subclasses. */
+	/** 可用于子类的Logger. */
 	protected final Log logger = LogFactory.getLog(getClass());
 
 	/** The lazily initialized target object. */

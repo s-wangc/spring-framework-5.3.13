@@ -57,7 +57,7 @@ import org.springframework.util.Assert;
 public abstract class AbstractAdaptableMessageListener
 		implements MessageListener, SessionAwareMessageListener<Message> {
 
-	/** Logger available to subclasses. */
+	/** 可用于子类的Logger. */
 	protected final Log logger = LogFactory.getLog(getClass());
 
 	@Nullable

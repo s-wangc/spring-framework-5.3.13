@@ -79,7 +79,7 @@ import org.springframework.util.StringUtils;
  */
 public class BeanPropertyRowMapper<T> implements RowMapper<T> {
 
-	/** Logger available to subclasses. */
+	/** 可用于子类的Logger. */
 	protected final Log logger = LogFactory.getLog(getClass());
 
 	/** The class we are mapping to. */

@@ -43,7 +43,7 @@ import org.springframework.util.Assert;
 @Deprecated
 public class AsyncHttpAccessor {
 
-	/** Logger available to subclasses. */
+	/** 可用于子类的Logger. */
 	protected final Log logger = HttpLogging.forLogName(getClass());
 
 	@Nullable

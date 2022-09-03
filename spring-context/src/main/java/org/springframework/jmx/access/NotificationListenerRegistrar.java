@@ -50,7 +50,7 @@ import org.springframework.util.CollectionUtils;
 public class NotificationListenerRegistrar extends NotificationListenerHolder
 		implements InitializingBean, DisposableBean {
 
-	/** Logger available to subclasses. */
+	/** 可用于子类的Logger. */
 	protected final Log logger = LogFactory.getLog(getClass());
 
 	private final ConnectorDelegate connector = new ConnectorDelegate();

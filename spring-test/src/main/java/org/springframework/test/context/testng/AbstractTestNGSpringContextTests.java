@@ -92,7 +92,7 @@ import org.springframework.test.context.web.ServletTestExecutionListener;
 	DirtiesContextTestExecutionListener.class, EventPublishingTestExecutionListener.class })
 public abstract class AbstractTestNGSpringContextTests implements IHookable, ApplicationContextAware {
 
-	/** Logger available to subclasses. */
+	/** 可用于子类的Logger. */
 	protected final Log logger = LogFactory.getLog(getClass());
 
 	/**

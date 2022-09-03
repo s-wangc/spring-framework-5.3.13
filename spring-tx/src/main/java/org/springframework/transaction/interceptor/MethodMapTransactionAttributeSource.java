@@ -48,7 +48,7 @@ import org.springframework.util.StringValueResolver;
 public class MethodMapTransactionAttributeSource
 		implements TransactionAttributeSource, EmbeddedValueResolverAware, BeanClassLoaderAware, InitializingBean {
 
-	/** Logger available to subclasses. */
+	/** 可用于子类的Logger. */
 	protected final Log logger = LogFactory.getLog(getClass());
 
 	/** Map from method name to attribute value. */

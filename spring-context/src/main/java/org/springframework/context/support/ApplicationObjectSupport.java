@@ -48,7 +48,7 @@ import org.springframework.util.Assert;
  */
 public abstract class ApplicationObjectSupport implements ApplicationContextAware {
 
-	/** Logger that is available to subclasses. */
+	/** Logger that 可用于子类的is. */
 	protected final Log logger = LogFactory.getLog(getClass());
 
 	/** ApplicationContext this object runs in. */

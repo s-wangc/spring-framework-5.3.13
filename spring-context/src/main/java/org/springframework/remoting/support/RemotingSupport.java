@@ -32,7 +32,7 @@ import org.springframework.util.ClassUtils;
  */
 public abstract class RemotingSupport implements BeanClassLoaderAware {
 
-	/** Logger available to subclasses. */
+	/** 可用于子类的Logger. */
 	protected final Log logger = LogFactory.getLog(getClass());
 
 	private ClassLoader beanClassLoader = ClassUtils.getDefaultClassLoader();

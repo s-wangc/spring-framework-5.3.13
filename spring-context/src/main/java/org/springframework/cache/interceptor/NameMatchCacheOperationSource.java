@@ -40,7 +40,7 @@ import org.springframework.util.PatternMatchUtils;
 public class NameMatchCacheOperationSource implements CacheOperationSource, Serializable {
 
 	/**
-	 * Logger available to subclasses.
+	 * 可用于子类的Logger.
 	 * <p>Static for optimal serialization.
 	 */
 	protected static final Log logger = LogFactory.getLog(NameMatchCacheOperationSource.class);

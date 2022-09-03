@@ -35,7 +35,7 @@ import org.springframework.web.client.RestTemplate;
  */
 public class RestGatewaySupport {
 
-	/** Logger available to subclasses. */
+	/** 可用于子类的Logger. */
 	protected final Log logger = LogFactory.getLog(getClass());
 
 	private RestTemplate restTemplate;

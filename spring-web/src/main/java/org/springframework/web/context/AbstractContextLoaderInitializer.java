@@ -41,7 +41,7 @@ import org.springframework.web.WebApplicationInitializer;
  */
 public abstract class AbstractContextLoaderInitializer implements WebApplicationInitializer {
 
-	/** Logger available to subclasses. */
+	/** 可用于子类的Logger. */
 	protected final Log logger = LogFactory.getLog(getClass());
 
 
