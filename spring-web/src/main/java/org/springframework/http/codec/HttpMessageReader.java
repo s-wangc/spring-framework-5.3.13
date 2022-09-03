@@ -79,7 +79,7 @@ public interface HttpMessageReader<T> {
 	 * Read from the input message and decode to a stream of objects.
 	 * @param elementType the type of objects in the stream which must have been
 	 * previously checked via {@link #canRead(ResolvableType, MediaType)}
-	 * @param message the message to read from
+	 * @param message 读入的message
 	 * @param hints additional information about how to read and decode the input
 	 * @return the decoded stream of elements
 	 */
@@ -89,7 +89,7 @@ public interface HttpMessageReader<T> {
 	 * Read from the input message and decode to a single object.
 	 * @param elementType the type of objects in the stream which must have been
 	 * previously checked via {@link #canRead(ResolvableType, MediaType)}
-	 * @param message the message to read from
+	 * @param message 读入的message
 	 * @param hints additional information about how to read and decode the input
 	 * @return the decoded object
 	 */

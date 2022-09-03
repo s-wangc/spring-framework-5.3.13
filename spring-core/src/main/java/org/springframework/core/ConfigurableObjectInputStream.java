@@ -43,7 +43,7 @@ public class ConfigurableObjectInputStream extends ObjectInputStream {
 
 	/**
 	 * Create a new ConfigurableObjectInputStream for the given InputStream and ClassLoader.
-	 * @param in the InputStream to read from
+	 * @param in 读入的InputStream
 	 * @param classLoader the ClassLoader to use for loading local classes
 	 * @see java.io.ObjectInputStream#ObjectInputStream(java.io.InputStream)
 	 */
@@ -53,7 +53,7 @@ public class ConfigurableObjectInputStream extends ObjectInputStream {
 
 	/**
 	 * Create a new ConfigurableObjectInputStream for the given InputStream and ClassLoader.
-	 * @param in the InputStream to read from
+	 * @param in 读入的InputStream
 	 * @param classLoader the ClassLoader to use for loading local classes
 	 * @param acceptProxyClasses whether to accept deserialization of proxy classes
 	 * (may be deactivated as a security measure)

@@ -225,7 +225,7 @@ public abstract class AbstractHttpInvokerRequestExecutor implements HttpInvokerR
 	 * {@code ObjectInputStream} via {@code createObjectInputStream} and
 	 * calls {@code doReadRemoteInvocationResult} to actually read the object.
 	 * <p>Can be overridden for custom serialization of the invocation.
-	 * @param is the InputStream to read from
+	 * @param is 读入的InputStream
 	 * @param codebaseUrl the codebase URL to load classes from if not found locally
 	 * @return the RemoteInvocationResult object
 	 * @throws IOException if thrown by I/O methods
@@ -257,7 +257,7 @@ public abstract class AbstractHttpInvokerRequestExecutor implements HttpInvokerR
 	/**
 	 * Create an ObjectInputStream for the given InputStream and codebase.
 	 * The default implementation creates a CodebaseAwareObjectInputStream.
-	 * @param is the InputStream to read from
+	 * @param is 读入的InputStream
 	 * @param codebaseUrl the codebase URL to load classes from if not found locally
 	 * (can be {@code null})
 	 * @return the new ObjectInputStream instance to use
@@ -274,7 +274,7 @@ public abstract class AbstractHttpInvokerRequestExecutor implements HttpInvokerR
 	 * <p>The default implementation simply calls {@code readObject}.
 	 * Can be overridden for deserialization of a custom wrapper object rather
 	 * than the plain invocation, for example an encryption-aware holder.
-	 * @param ois the ObjectInputStream to read from
+	 * @param ois 读入的ObjectInputStream
 	 * @return the RemoteInvocationResult object
 	 * @throws IOException if thrown by I/O methods
 	 * @throws ClassNotFoundException if the class name of a serialized object

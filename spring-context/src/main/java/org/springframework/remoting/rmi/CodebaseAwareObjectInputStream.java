@@ -60,7 +60,7 @@ public class CodebaseAwareObjectInputStream extends ConfigurableObjectInputStrea
 
 	/**
 	 * Create a new CodebaseAwareObjectInputStream for the given InputStream and codebase.
-	 * @param in the InputStream to read from
+	 * @param in 读入的InputStream
 	 * @param codebaseUrl the codebase URL to load classes from if not found locally
 	 * (can consist of multiple URLs, separated by spaces)
 	 * @see java.io.ObjectInputStream#ObjectInputStream(java.io.InputStream)
@@ -71,7 +71,7 @@ public class CodebaseAwareObjectInputStream extends ConfigurableObjectInputStrea
 
 	/**
 	 * Create a new CodebaseAwareObjectInputStream for the given InputStream and codebase.
-	 * @param in the InputStream to read from
+	 * @param in 读入的InputStream
 	 * @param classLoader the ClassLoader to use for loading local classes
 	 * (may be {@code null} to indicate RMI's default ClassLoader)
 	 * @param codebaseUrl the codebase URL to load classes from if not found locally
@@ -87,7 +87,7 @@ public class CodebaseAwareObjectInputStream extends ConfigurableObjectInputStrea
 
 	/**
 	 * Create a new CodebaseAwareObjectInputStream for the given InputStream and codebase.
-	 * @param in the InputStream to read from
+	 * @param in 读入的InputStream
 	 * @param classLoader the ClassLoader to use for loading local classes
 	 * (may be {@code null} to indicate RMI's default ClassLoader)
 	 * @param acceptProxyClasses whether to accept deserialization of proxy classes

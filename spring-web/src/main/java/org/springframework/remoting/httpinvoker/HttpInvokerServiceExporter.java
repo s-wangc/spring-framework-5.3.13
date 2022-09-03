@@ -106,7 +106,7 @@ public class HttpInvokerServiceExporter extends org.springframework.remoting.rmi
 	 * and calls {@link #doReadRemoteInvocation} to actually read the object.
 	 * <p>Can be overridden for custom serialization of the invocation.
 	 * @param request current HTTP request
-	 * @param is the InputStream to read from
+	 * @param is 读入的InputStream
 	 * @return the RemoteInvocation object
 	 * @throws IOException in case of I/O failure
 	 * @throws ClassNotFoundException if thrown during deserialization

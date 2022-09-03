@@ -192,7 +192,7 @@ public abstract class DataBufferUtils {
 	 * {@link #readAsynchronousFileChannel(Callable, DataBufferFactory, int)} or else
 	 * fall back to {@link #readByteChannel(Callable, DataBufferFactory, int)}.
 	 * Closes the channel when the flux is terminated.
-	 * @param resource the resource to read from
+	 * @param resource 读入的resource
 	 * @param bufferFactory the factory to create data buffers with
 	 * @param bufferSize the maximum size of the data buffers
 	 * @return a Flux of data buffers read from the given channel
@@ -209,7 +209,7 @@ public abstract class DataBufferUtils {
 	 * {@link #readAsynchronousFileChannel(Callable, DataBufferFactory, int)} or else
 	 * fall back on {@link #readByteChannel(Callable, DataBufferFactory, int)}.
 	 * Closes the channel when the flux is terminated.
-	 * @param resource the resource to read from
+	 * @param resource 读入的resource
 	 * @param position the position to start reading from
 	 * @param bufferFactory the factory to create data buffers with
 	 * @param bufferSize the maximum size of the data buffers

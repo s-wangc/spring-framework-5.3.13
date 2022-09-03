@@ -119,7 +119,7 @@ public abstract class RemoteInvocationSerializingExporter extends RemoteInvocati
 	/**
 	 * Create an ObjectInputStream for the given InputStream.
 	 * <p>The default implementation creates a Spring {@link CodebaseAwareObjectInputStream}.
-	 * @param is the InputStream to read from
+	 * @param is 读入的InputStream
 	 * @return the new ObjectInputStream instance to use
 	 * @throws java.io.IOException if creation of the ObjectInputStream failed
 	 */
@@ -134,7 +134,7 @@ public abstract class RemoteInvocationSerializingExporter extends RemoteInvocati
 	 * {@link java.io.ObjectInputStream#readObject()}.
 	 * Can be overridden for deserialization of a custom wrapper object rather
 	 * than the plain invocation, for example an encryption-aware holder.
-	 * @param ois the ObjectInputStream to read from
+	 * @param ois 读入的ObjectInputStream
 	 * @return the RemoteInvocationResult object
 	 * @throws java.io.IOException in case of I/O failure
 	 * @throws ClassNotFoundException if case of a transferred class not
