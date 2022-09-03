@@ -85,7 +85,7 @@ public class PersistenceExceptionTranslationInterceptor
 
 
 	/**
-	 * Specify the PersistenceExceptionTranslator to use.
+	 * 指定要使用的PersistenceExceptionTranslator.
 	 * <p>Default is to autodetect all PersistenceExceptionTranslators
 	 * in the containing BeanFactory, using them in a chain.
 	 * @see #detectPersistenceExceptionTranslators

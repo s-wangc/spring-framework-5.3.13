@@ -89,7 +89,7 @@ public class DefaultSubscriptionRegistry extends AbstractSubscriptionRegistry {
 
 
 	/**
-	 * Specify the {@link PathMatcher} to use.
+	 * 指定要使用的{@link PathMatcher}.
 	 */
 	public void setPathMatcher(PathMatcher pathMatcher) {
 		this.pathMatcher = pathMatcher;
