@@ -773,7 +773,7 @@ public class BeanDefinitionParserDelegate {
 	}
 
 	/**
-	 * Parse a constructor-arg element.
+	 * 解析一个constructor-arg元素.
 	 */
 	public void parseConstructorArgElement(Element ele, BeanDefinition bd) {
 		String indexAttr = ele.getAttribute(INDEX_ATTRIBUTE);
@@ -834,7 +834,7 @@ public class BeanDefinitionParserDelegate {
 	}
 
 	/**
-	 * Parse a property element.
+	 * 解析一个property元素.
 	 */
 	public void parsePropertyElement(Element ele, BeanDefinition bd) {
 		String propertyName = ele.getAttribute(NAME_ATTRIBUTE);
@@ -860,7 +860,7 @@ public class BeanDefinitionParserDelegate {
 	}
 
 	/**
-	 * Parse a qualifier element.
+	 * 解析一个qualifier元素.
 	 */
 	public void parseQualifierElement(Element ele, AbstractBeanDefinition bd) {
 		String typeName = ele.getAttribute(TYPE_ATTRIBUTE);
@@ -1126,7 +1126,7 @@ public class BeanDefinitionParserDelegate {
 	}
 
 	/**
-	 * Parse a list element.
+	 * 解析一个list元素.
 	 */
 	public List<Object> parseListElement(Element collectionEle, @Nullable BeanDefinition bd) {
 		String defaultElementType = collectionEle.getAttribute(VALUE_TYPE_ATTRIBUTE);
@@ -1140,7 +1140,7 @@ public class BeanDefinitionParserDelegate {
 	}
 
 	/**
-	 * Parse a set element.
+	 * 解析一个set元素.
 	 */
 	public Set<Object> parseSetElement(Element collectionEle, @Nullable BeanDefinition bd) {
 		String defaultElementType = collectionEle.getAttribute(VALUE_TYPE_ATTRIBUTE);
@@ -1165,7 +1165,7 @@ public class BeanDefinitionParserDelegate {
 	}
 
 	/**
-	 * Parse a map element.
+	 * 解析一个map元素.
 	 */
 	public Map<Object, Object> parseMapElement(Element mapEle, @Nullable BeanDefinition bd) {
 		String defaultKeyType = mapEle.getAttribute(KEY_TYPE_ATTRIBUTE);
@@ -1327,7 +1327,7 @@ public class BeanDefinitionParserDelegate {
 	}
 
 	/**
-	 * Parse a props element.
+	 * 解析一个props元素.
 	 */
 	public Properties parsePropsElement(Element propsEle) {
 		ManagedProperties props = new ManagedProperties();
