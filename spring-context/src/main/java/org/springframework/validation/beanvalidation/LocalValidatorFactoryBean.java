@@ -191,7 +191,7 @@ public class LocalValidatorFactoryBean extends SpringValidatorAdapter
 	/**
 	 * Set the ParameterNameDiscoverer to use for resolving method and constructor
 	 * parameter names if needed for message interpolation.
-	 * <p>Default is a {@link org.springframework.core.DefaultParameterNameDiscoverer}.
+	 * <p>默认值为{@link org.springframework.core.DefaultParameterNameDiscoverer}.
 	 */
 	public void setParameterNameDiscoverer(ParameterNameDiscoverer parameterNameDiscoverer) {
 		this.parameterNameDiscoverer = parameterNameDiscoverer;

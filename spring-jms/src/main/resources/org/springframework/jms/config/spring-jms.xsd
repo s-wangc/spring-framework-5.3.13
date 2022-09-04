@@ -191,7 +191,7 @@
 				<xsd:annotation>
 					<xsd:documentation><![CDATA[
 	A reference to the MessageConverter strategy for converting JMS Messages to
-	listener method arguments. Default is a SimpleMessageConverter.
+	listener method arguments. 默认值为SimpleMessageConverter.
 					]]></xsd:documentation>
 					<xsd:appinfo>
 						<tool:annotation kind="ref">
@@ -449,7 +449,7 @@
 				<xsd:annotation>
 					<xsd:documentation><![CDATA[
 	A reference to the MessageConverter strategy for converting JMS Messages to
-	listener method arguments. Default is a SimpleMessageConverter.
+	listener method arguments. 默认值为SimpleMessageConverter.
 					]]></xsd:documentation>
 					<xsd:appinfo>
 						<tool:annotation kind="ref">

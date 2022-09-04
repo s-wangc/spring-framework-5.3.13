@@ -115,7 +115,7 @@ public class JndiRmiClientInterceptor extends JndiObjectLocator implements Metho
 
 	/**
 	 * Set the RemoteInvocationFactory to use for this accessor.
-	 * Default is a {@link DefaultRemoteInvocationFactory}.
+	 * 默认值为{@link DefaultRemoteInvocationFactory}.
 	 * <p>A custom invocation factory can add further context information
 	 * to the invocation, for example user credentials.
 	 */

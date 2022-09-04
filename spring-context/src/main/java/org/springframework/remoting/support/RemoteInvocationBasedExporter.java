@@ -37,7 +37,7 @@ public abstract class RemoteInvocationBasedExporter extends RemoteExporter {
 
 	/**
 	 * Set the RemoteInvocationExecutor to use for this exporter.
-	 * Default is a DefaultRemoteInvocationExecutor.
+	 * 默认值为DefaultRemoteInvocationExecutor.
 	 * <p>A custom invocation executor can extract further context information
 	 * from the invocation, for example user credentials.
 	 */

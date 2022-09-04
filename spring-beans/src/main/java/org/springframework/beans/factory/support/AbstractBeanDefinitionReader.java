@@ -168,7 +168,7 @@ public abstract class AbstractBeanDefinitionReader implements BeanDefinitionRead
 	/**
 	 * Set the BeanNameGenerator to use for anonymous beans
 	 * (without explicit bean name specified).
-	 * <p>Default is a {@link DefaultBeanNameGenerator}.
+	 * <p>默认值为{@link DefaultBeanNameGenerator}.
 	 */
 	public void setBeanNameGenerator(@Nullable BeanNameGenerator beanNameGenerator) {
 		this.beanNameGenerator = (beanNameGenerator != null ? beanNameGenerator : DefaultBeanNameGenerator.INSTANCE);

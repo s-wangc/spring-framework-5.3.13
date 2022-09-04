@@ -205,7 +205,7 @@ public class ClassPathBeanDefinitionScanner extends ClassPathScanningCandidateCo
 
 	/**
 	 * Set the BeanNameGenerator to use for detected bean classes.
-	 * <p>Default is a {@link AnnotationBeanNameGenerator}.
+	 * <p>默认值为{@link AnnotationBeanNameGenerator}.
 	 */
 	public void setBeanNameGenerator(@Nullable BeanNameGenerator beanNameGenerator) {
 		this.beanNameGenerator =

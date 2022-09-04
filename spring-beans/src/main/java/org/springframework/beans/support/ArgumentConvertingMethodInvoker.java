@@ -49,7 +49,7 @@ public class ArgumentConvertingMethodInvoker extends MethodInvoker {
 
 	/**
 	 * Set a TypeConverter to use for argument type conversion.
-	 * <p>Default is a {@link org.springframework.beans.SimpleTypeConverter}.
+	 * <p>默认值为{@link org.springframework.beans.SimpleTypeConverter}.
 	 * Can be overridden with any TypeConverter implementation, typically
 	 * a pre-configured SimpleTypeConverter or a BeanWrapperImpl instance.
 	 * @see org.springframework.beans.SimpleTypeConverter

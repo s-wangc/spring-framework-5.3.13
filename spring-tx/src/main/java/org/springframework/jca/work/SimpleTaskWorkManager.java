@@ -73,7 +73,7 @@ public class SimpleTaskWorkManager implements WorkManager {
 	/**
 	 * Specify the TaskExecutor to use for <i>synchronous</i> work execution
 	 * (i.e. {@link #doWork} calls).
-	 * <p>Default is a {@link org.springframework.core.task.SyncTaskExecutor}.
+	 * <p>默认值为{@link org.springframework.core.task.SyncTaskExecutor}.
 	 */
 	public void setSyncTaskExecutor(TaskExecutor syncTaskExecutor) {
 		this.syncTaskExecutor = syncTaskExecutor;
@@ -84,7 +84,7 @@ public class SimpleTaskWorkManager implements WorkManager {
 	 * (i.e. {@link #startWork} and {@link #scheduleWork} calls).
 	 * <p>This will typically (but not necessarily) be an
 	 * {@link org.springframework.core.task.AsyncTaskExecutor} implementation.
-	 * Default is a {@link org.springframework.core.task.SimpleAsyncTaskExecutor}.
+	 * 默认值为{@link org.springframework.core.task.SimpleAsyncTaskExecutor}.
 	 */
 	public void setAsyncTaskExecutor(AsyncTaskExecutor asyncTaskExecutor) {
 		this.asyncTaskExecutor = asyncTaskExecutor;

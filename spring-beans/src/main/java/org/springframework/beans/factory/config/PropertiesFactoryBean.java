@@ -35,7 +35,7 @@ import org.springframework.lang.Nullable;
  * an exception will be thrown on initialization.
  *
  * <p>Can create a singleton or a new object on each request.
- * Default is a singleton.
+ * 默认值为singleton.
  *
  * @author Juergen Hoeller
  * @see #setLocation

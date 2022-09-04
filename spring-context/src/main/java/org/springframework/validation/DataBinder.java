@@ -495,7 +495,7 @@ public class DataBinder implements PropertyEditorRegistry, TypeConverter {
 	/**
 	 * Set the strategy to use for resolving errors into message codes.
 	 * Applies the given strategy to the underlying errors holder.
-	 * <p>Default is a DefaultMessageCodesResolver.
+	 * <p>默认值为DefaultMessageCodesResolver.
 	 * @see BeanPropertyBindingResult#setMessageCodesResolver
 	 * @see DefaultMessageCodesResolver
 	 */
@@ -510,7 +510,7 @@ public class DataBinder implements PropertyEditorRegistry, TypeConverter {
 	/**
 	 * Set the strategy to use for processing binding errors, that is,
 	 * required field errors and {@code PropertyAccessException}s.
-	 * <p>Default is a DefaultBindingErrorProcessor.
+	 * <p>默认值为DefaultBindingErrorProcessor.
 	 * @see DefaultBindingErrorProcessor
 	 */
 	public void setBindingErrorProcessor(BindingErrorProcessor bindingErrorProcessor) {

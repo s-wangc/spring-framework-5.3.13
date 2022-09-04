@@ -267,7 +267,7 @@ public abstract class AbstractReflectiveMBeanInfoAssembler extends AbstractMBean
 	/**
 	 * Set the ParameterNameDiscoverer to use for resolving method parameter
 	 * names if needed (e.g. for parameter names of MBean operation methods).
-	 * <p>Default is a {@link DefaultParameterNameDiscoverer}.
+	 * <p>默认值为{@link DefaultParameterNameDiscoverer}.
 	 */
 	public void setParameterNameDiscoverer(@Nullable ParameterNameDiscoverer parameterNameDiscoverer) {
 		this.parameterNameDiscoverer = parameterNameDiscoverer;

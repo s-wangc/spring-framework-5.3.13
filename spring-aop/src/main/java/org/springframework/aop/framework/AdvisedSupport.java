@@ -168,7 +168,7 @@ public class AdvisedSupport extends ProxyConfig implements Advised {
 
 	/**
 	 * Set the advisor chain factory to use.
-	 * <p>Default is a {@link DefaultAdvisorChainFactory}.
+	 * <p>默认值为{@link DefaultAdvisorChainFactory}.
 	 */
 	public void setAdvisorChainFactory(AdvisorChainFactory advisorChainFactory) {
 		Assert.notNull(advisorChainFactory, "AdvisorChainFactory must not be null");

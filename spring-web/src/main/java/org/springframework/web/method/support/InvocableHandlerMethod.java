@@ -105,7 +105,7 @@ public class InvocableHandlerMethod extends HandlerMethod {
 	/**
 	 * Set the ParameterNameDiscoverer for resolving parameter names when needed
 	 * (e.g. default request attribute name).
-	 * <p>Default is a {@link org.springframework.core.DefaultParameterNameDiscoverer}.
+	 * <p>默认值为{@link org.springframework.core.DefaultParameterNameDiscoverer}.
 	 */
 	public void setParameterNameDiscoverer(ParameterNameDiscoverer parameterNameDiscoverer) {
 		this.parameterNameDiscoverer = parameterNameDiscoverer;

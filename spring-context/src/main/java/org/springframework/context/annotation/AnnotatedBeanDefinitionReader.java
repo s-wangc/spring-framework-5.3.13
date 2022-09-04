@@ -99,7 +99,7 @@ public class AnnotatedBeanDefinitionReader {
 	/**
 	 * Set the {@code Environment} to use when evaluating whether
 	 * {@link Conditional @Conditional}-annotated component classes should be registered.
-	 * <p>The default is a {@link StandardEnvironment}.
+	 * <p>默认值为{@link StandardEnvironment}.
 	 * @see #registerBean(Class, String, Class...)
 	 */
 	public void setEnvironment(Environment environment) {
@@ -108,7 +108,7 @@ public class AnnotatedBeanDefinitionReader {
 
 	/**
 	 * Set the {@code BeanNameGenerator} to use for detected bean classes.
-	 * <p>The default is a {@link AnnotationBeanNameGenerator}.
+	 * <p>默认值为{@link AnnotationBeanNameGenerator}.
 	 */
 	public void setBeanNameGenerator(@Nullable BeanNameGenerator beanNameGenerator) {
 		this.beanNameGenerator =

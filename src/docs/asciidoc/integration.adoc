@@ -2755,7 +2755,7 @@ also provides a discussion of transaction choices and message redelivery scenari
 
 | `message-converter`
 | A reference to the `MessageConverter` strategy for converting JMS Messages to listener
-  method arguments. The default is a `SimpleMessageConverter`.
+  method arguments. 默认值为`SimpleMessageConverter`.
 
 | `error-handler`
 | A reference to an `ErrorHandler` strategy for handling any uncaught exceptions that

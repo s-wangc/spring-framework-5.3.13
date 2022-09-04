@@ -269,7 +269,7 @@ public class MBeanExporter extends MBeanRegistrationSupport implements MBeanExpo
 
 	/**
 	 * Set the implementation of the {@code MBeanInfoAssembler} interface to use
-	 * for this exporter. Default is a {@code SimpleReflectiveMBeanInfoAssembler}.
+	 * for this exporter. 默认值为{@code SimpleReflectiveMBeanInfoAssembler}.
 	 * <p>The passed-in assembler can optionally implement the
 	 * {@code AutodetectCapableMBeanInfoAssembler} interface, which enables it
 	 * to participate in the exporter's MBean autodetection process.
@@ -284,7 +284,7 @@ public class MBeanExporter extends MBeanRegistrationSupport implements MBeanExpo
 
 	/**
 	 * Set the implementation of the {@code ObjectNamingStrategy} interface
-	 * to use for this exporter. Default is a {@code KeyNamingStrategy}.
+	 * to use for this exporter. 默认值为{@code KeyNamingStrategy}.
 	 * @see org.springframework.jmx.export.naming.KeyNamingStrategy
 	 * @see org.springframework.jmx.export.naming.MetadataNamingStrategy
 	 */

@@ -151,7 +151,7 @@ public abstract class CacheAspectSupport extends AbstractCacheInvoker
 	/**
 	 * Set the default {@link KeyGenerator} that this cache aspect should delegate to
 	 * if no specific key generator has been set for the operation.
-	 * <p>The default is a {@link SimpleKeyGenerator}.
+	 * <p>默认值为{@link SimpleKeyGenerator}.
 	 */
 	public void setKeyGenerator(KeyGenerator keyGenerator) {
 		this.keyGenerator = SingletonSupplier.of(keyGenerator);

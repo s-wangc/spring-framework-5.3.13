@@ -65,7 +65,7 @@ public class CacheProxyFactoryBean extends AbstractSingletonProxyFactoryBean
 	/**
 	 * Set the default {@link KeyGenerator} that this cache aspect should delegate to
 	 * if no specific key generator has been set for the operation.
-	 * <p>The default is a {@link SimpleKeyGenerator}.
+	 * <p>默认值为{@link SimpleKeyGenerator}.
 	 * @since 5.0.3
 	 * @see CacheInterceptor#setKeyGenerator
 	 */
