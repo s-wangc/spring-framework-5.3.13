@@ -22,7 +22,7 @@ import org.springframework.test.context.CacheAwareContextLoaderDelegate;
 import org.springframework.util.Assert;
 
 /**
- * Default implementation of the {@link BootstrapContext} interface.
+ * 接口{@link BootstrapContext}的缺省实现.
  *
  * @author Sam Brannen
  * @since 4.1

@@ -66,7 +66,7 @@ import org.springframework.util.ObjectUtils;
 import org.springframework.util.ResourceUtils;
 
 /**
- * Default implementation of the {@link PersistenceUnitManager} interface.
+ * 接口{@link PersistenceUnitManager}的缺省实现.
  * Used as internal default by
  * {@link org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean}.
  *

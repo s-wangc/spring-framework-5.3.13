@@ -24,7 +24,7 @@ import java.io.Writer;
 import java.util.Properties;
 
 /**
- * Default implementation of the {@link PropertiesPersister} interface.
+ * 接口{@link PropertiesPersister}的缺省实现.
  * Follows the native parsing of {@code java.util.Properties}.
  *
  * <p>Allows for reading from any Reader and writing to any Writer, for example

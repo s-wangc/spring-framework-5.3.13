@@ -35,7 +35,7 @@ import org.springframework.dao.DataAccessResourceFailureException;
 import org.springframework.lang.Nullable;
 
 /**
- * Default implementation of the {@link SqlXmlHandler} interface.
+ * 接口{@link SqlXmlHandler}的缺省实现.
  * Provides database-specific implementations for storing and
  * retrieving XML documents to and from fields in a database,
  * relying on the JDBC 4.0 {@code java.sql.SQLXML} facility.

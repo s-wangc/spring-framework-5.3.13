@@ -22,7 +22,7 @@ import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.util.Assert;
 
 /**
- * Default implementation of the {@link ScopedObject} interface.
+ * 接口{@link ScopedObject}的缺省实现.
  *
  * <p>Simply delegates the calls to the underlying
  * {@link ConfigurableBeanFactory bean factory}

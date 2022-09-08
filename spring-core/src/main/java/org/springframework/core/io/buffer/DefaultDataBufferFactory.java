@@ -22,7 +22,7 @@ import java.util.List;
 import org.springframework.util.Assert;
 
 /**
- * Default implementation of the {@code DataBufferFactory} interface. Allows for
+ * 接口{@code DataBufferFactory}的缺省实现. Allows for
  * specification of the default initial capacity at construction time, as well
  * as whether heap-based or direct buffers are to be preferred.
  *

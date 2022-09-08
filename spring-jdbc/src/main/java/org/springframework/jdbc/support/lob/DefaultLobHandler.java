@@ -34,7 +34,7 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.lang.Nullable;
 
 /**
- * Default implementation of the {@link LobHandler} interface.
+ * 接口{@link LobHandler}的缺省实现.
  * Invokes the direct accessor methods that {@code java.sql.ResultSet}
  * and {@code java.sql.PreparedStatement} offer.
  *

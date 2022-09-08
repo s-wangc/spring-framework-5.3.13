@@ -33,7 +33,7 @@ import org.springframework.util.ClassUtils;
 import org.springframework.util.CollectionUtils;
 
 /**
- * Default implementation of the {@link NamespaceHandlerResolver} interface.
+ * 接口{@link NamespaceHandlerResolver}的缺省实现.
  * Resolves namespace URIs to implementation classes based on the mappings
  * contained in mapping file.
  *

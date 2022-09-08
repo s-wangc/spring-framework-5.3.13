@@ -30,7 +30,7 @@ import org.springframework.transaction.TransactionDefinition;
 import org.springframework.transaction.TransactionException;
 
 /**
- * Default implementation of the {@link JpaDialect} interface.
+ * 接口{@link JpaDialect}的缺省实现.
  * Used as default dialect by {@link JpaTransactionManager}.
  *
  * <p>Simply begins a standard JPA transaction in {@link #beginTransaction} and

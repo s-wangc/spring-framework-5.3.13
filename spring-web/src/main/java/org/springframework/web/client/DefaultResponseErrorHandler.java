@@ -30,7 +30,7 @@ import org.springframework.util.FileCopyUtils;
 import org.springframework.util.ObjectUtils;
 
 /**
- * Spring's default implementation of the {@link ResponseErrorHandler} interface.
+ * {@link ResponseErrorHandler}接口的Spring缺省实现.
  *
  * <p>This error handler checks for the status code on the
  * {@link ClientHttpResponse}. Any code in the 4xx or 5xx series is considered

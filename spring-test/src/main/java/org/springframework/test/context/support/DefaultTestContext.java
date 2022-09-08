@@ -33,7 +33,7 @@ import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
 
 /**
- * Default implementation of the {@link TestContext} interface.
+ * 接口{@link TestContext}的缺省实现.
  *
  * @author Sam Brannen
  * @author Juergen Hoeller

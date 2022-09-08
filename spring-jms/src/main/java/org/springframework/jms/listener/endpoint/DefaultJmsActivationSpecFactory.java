@@ -25,7 +25,7 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.BeanWrapper;
 
 /**
- * Default implementation of the {@link JmsActivationSpecFactory} interface.
+ * 接口{@link JmsActivationSpecFactory}的缺省实现.
  * Supports the standard JMS properties as defined by the JCA 1.5 specification,
  * as well as Spring's extended "maxConcurrency" and "prefetchSize" settings
  * through autodetection of well-known vendor-specific provider properties.
