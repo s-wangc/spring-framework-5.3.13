@@ -43,13 +43,13 @@ public class BshScriptEvaluator implements ScriptEvaluator, BeanClassLoaderAware
 
 
 	/**
-	 * Construct a new BshScriptEvaluator.
+	 * 构建一个新的BshScriptEvaluator.
 	 */
 	public BshScriptEvaluator() {
 	}
 
 	/**
-	 * Construct a new BshScriptEvaluator.
+	 * 构建一个新的BshScriptEvaluator.
 	 * @param classLoader the ClassLoader to use for the {@link Interpreter}
 	 */
 	public BshScriptEvaluator(ClassLoader classLoader) {

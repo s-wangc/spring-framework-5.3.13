@@ -48,13 +48,13 @@ public class GroovyScriptEvaluator implements ScriptEvaluator, BeanClassLoaderAw
 
 
 	/**
-	 * Construct a new GroovyScriptEvaluator.
+	 * 构建一个新的GroovyScriptEvaluator.
 	 */
 	public GroovyScriptEvaluator() {
 	}
 
 	/**
-	 * Construct a new GroovyScriptEvaluator.
+	 * 构建一个新的GroovyScriptEvaluator.
 	 * @param classLoader the ClassLoader to use as a parent for the {@link GroovyShell}
 	 */
 	public GroovyScriptEvaluator(@Nullable ClassLoader classLoader) {

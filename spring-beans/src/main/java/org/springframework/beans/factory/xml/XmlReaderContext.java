@@ -50,7 +50,7 @@ public class XmlReaderContext extends ReaderContext {
 
 
 	/**
-	 * Construct a new {@code XmlReaderContext}.
+	 * 构建一个新的{@code XmlReaderContext}.
 	 * @param resource the XML bean definition resource
 	 * @param problemReporter the problem reporter in use
 	 * @param eventListener the event listener in use

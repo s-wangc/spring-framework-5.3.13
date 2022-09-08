@@ -55,7 +55,7 @@ public class StandardScriptEvaluator implements ScriptEvaluator, BeanClassLoader
 
 
 	/**
-	 * Construct a new {@code StandardScriptEvaluator}.
+	 * 构建一个新的{@code StandardScriptEvaluator}.
 	 */
 	public StandardScriptEvaluator() {
 	}

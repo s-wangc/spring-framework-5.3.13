@@ -56,7 +56,7 @@ public class TransactionalApplicationListenerMethodAdapter extends ApplicationLi
 
 
 	/**
-	 * Construct a new TransactionalApplicationListenerMethodAdapter.
+	 * 构建一个新的TransactionalApplicationListenerMethodAdapter.
 	 * @param beanName the name of the bean to invoke the listener method on
 	 * @param targetClass the target class that the method is declared on
 	 * @param method the listener method to invoke

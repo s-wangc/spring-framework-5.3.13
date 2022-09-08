@@ -30,7 +30,7 @@ import org.springframework.core.io.support.EncodedResource;
 public class ScriptStatementFailedException extends ScriptException {
 
 	/**
-	 * Construct a new {@code ScriptStatementFailedException}.
+	 * 构建一个新的{@code ScriptStatementFailedException}.
 	 * @param stmt the actual SQL statement that failed
 	 * @param stmtNumber the statement number in the SQL script (i.e.,
 	 * the n<sup>th</sup> statement present in the resource)

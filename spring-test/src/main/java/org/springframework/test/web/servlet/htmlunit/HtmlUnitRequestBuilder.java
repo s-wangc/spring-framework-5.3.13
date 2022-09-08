@@ -96,7 +96,7 @@ final class HtmlUnitRequestBuilder implements RequestBuilder, Mergeable {
 
 
 	/**
-	 * Construct a new {@code HtmlUnitRequestBuilder}.
+	 * 构建一个新的{@code HtmlUnitRequestBuilder}.
 	 * @param sessions a {@link Map} from session {@linkplain HttpSession#getId() IDs}
 	 * to currently managed {@link HttpSession} objects; never {@code null}
 	 * @param webClient the WebClient for retrieving cookies

@@ -42,7 +42,7 @@ public abstract class AbstractCacheResolver implements CacheResolver, Initializi
 
 
 	/**
-	 * Construct a new {@code AbstractCacheResolver}.
+	 * 构建一个新的{@code AbstractCacheResolver}.
 	 * @see #setCacheManager
 	 */
 	protected AbstractCacheResolver() {

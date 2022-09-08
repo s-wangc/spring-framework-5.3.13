@@ -43,7 +43,7 @@ public class ReplaceOverride extends MethodOverride {
 
 
 	/**
-	 * Construct a new ReplaceOverride.
+	 * 构建一个新的ReplaceOverride.
 	 * @param methodName the name of the method to override
 	 * @param methodReplacerBeanName the bean name of the {@link MethodReplacer}
 	 */

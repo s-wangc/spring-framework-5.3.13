@@ -71,7 +71,7 @@ public class DelegatingIntroductionInterceptor extends IntroductionInfoSupport
 	}
 
 	/**
-	 * Construct a new DelegatingIntroductionInterceptor.
+	 * 构建一个新的DelegatingIntroductionInterceptor.
 	 * The delegate will be the subclass, which must implement
 	 * additional interfaces.
 	 */

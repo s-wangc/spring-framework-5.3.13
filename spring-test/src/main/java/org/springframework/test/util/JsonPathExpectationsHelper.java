@@ -50,7 +50,7 @@ public class JsonPathExpectationsHelper {
 
 
 	/**
-	 * Construct a new {@code JsonPathExpectationsHelper}.
+	 * 构建一个新的{@code JsonPathExpectationsHelper}.
 	 * @param expression the {@link JsonPath} expression; never {@code null} or empty
 	 * @param args arguments to parameterize the {@code JsonPath} expression with,
 	 * using formatting specifiers defined in {@link String#format(String, Object...)}

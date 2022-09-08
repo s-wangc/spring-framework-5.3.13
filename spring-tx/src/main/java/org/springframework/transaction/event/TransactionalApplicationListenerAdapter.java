@@ -57,7 +57,7 @@ public class TransactionalApplicationListenerAdapter<E extends ApplicationEvent>
 
 
 	/**
-	 * Construct a new TransactionalApplicationListenerAdapter.
+	 * 构建一个新的TransactionalApplicationListenerAdapter.
 	 * @param targetListener the actual listener to invoke in the specified transaction phase
 	 * @see #setTransactionPhase
 	 * @see TransactionalApplicationListener#forPayload

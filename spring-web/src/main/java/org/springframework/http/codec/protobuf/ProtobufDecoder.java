@@ -85,7 +85,7 @@ public class ProtobufDecoder extends ProtobufCodecSupport implements Decoder<Mes
 
 
 	/**
-	 * Construct a new {@code ProtobufDecoder}.
+	 * 构建一个新的{@code ProtobufDecoder}.
 	 */
 	public ProtobufDecoder() {
 		this(ExtensionRegistry.newInstance());

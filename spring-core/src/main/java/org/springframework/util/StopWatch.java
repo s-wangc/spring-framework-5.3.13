@@ -74,7 +74,7 @@ public class StopWatch {
 
 
 	/**
-	 * Construct a new {@code StopWatch}.
+	 * 构建一个新的{@code StopWatch}.
 	 * <p>Does not start any task.
 	 */
 	public StopWatch() {

@@ -43,7 +43,7 @@ class WebLogicClassPreProcessorAdapter implements InvocationHandler {
 
 
 	/**
-	 * Construct a new {@link WebLogicClassPreProcessorAdapter}.
+	 * 构建一个新的{@link WebLogicClassPreProcessorAdapter}.
 	 */
 	public WebLogicClassPreProcessorAdapter(ClassFileTransformer transformer, ClassLoader loader) {
 		this.transformer = transformer;

@@ -35,7 +35,7 @@ import org.springframework.lang.Nullable;
 public class SimpleCacheResolver extends AbstractCacheResolver {
 
 	/**
-	 * Construct a new {@code SimpleCacheResolver}.
+	 * 构建一个新的{@code SimpleCacheResolver}.
 	 * @see #setCacheManager
 	 */
 	public SimpleCacheResolver() {

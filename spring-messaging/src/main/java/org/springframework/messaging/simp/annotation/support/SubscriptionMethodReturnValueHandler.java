@@ -68,7 +68,7 @@ public class SubscriptionMethodReturnValueHandler implements HandlerMethodReturn
 
 
 	/**
-	 * Construct a new SubscriptionMethodReturnValueHandler.
+	 * 构建一个新的SubscriptionMethodReturnValueHandler.
 	 * @param template a messaging template to send messages to,
 	 * most likely the "clientOutboundChannel" (must not be {@code null})
 	 */

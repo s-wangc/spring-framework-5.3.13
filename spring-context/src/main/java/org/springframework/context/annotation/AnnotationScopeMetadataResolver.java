@@ -44,7 +44,7 @@ public class AnnotationScopeMetadataResolver implements ScopeMetadataResolver {
 
 
 	/**
-	 * Construct a new {@code AnnotationScopeMetadataResolver}.
+	 * 构建一个新的{@code AnnotationScopeMetadataResolver}.
 	 * @see #AnnotationScopeMetadataResolver(ScopedProxyMode)
 	 * @see ScopedProxyMode#NO
 	 */

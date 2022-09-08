@@ -115,7 +115,7 @@ public class ProtobufHttpMessageConverter extends AbstractHttpMessageConverter<M
 
 
 	/**
-	 * Construct a new {@code ProtobufHttpMessageConverter}.
+	 * 构建一个新的{@code ProtobufHttpMessageConverter}.
 	 */
 	public ProtobufHttpMessageConverter() {
 		this(null, null);
