@@ -63,7 +63,7 @@ public final class SpringFactoriesLoader {
 
 	/**
 	 * The location to look for factories.
-	 * <p>Can be present in multiple JAR files.
+	 * <p>可以存在于多个JAR文件中.
 	 */
 	public static final String FACTORIES_RESOURCE_LOCATION = "META-INF/spring.factories";
 

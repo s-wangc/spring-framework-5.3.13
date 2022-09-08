@@ -50,7 +50,7 @@ import org.springframework.util.CollectionUtils;
 public class DefaultNamespaceHandlerResolver implements NamespaceHandlerResolver {
 
 	/**
-	 * The location to look for the mapping files. Can be present in multiple JAR files.
+	 * The location to look for the mapping files. 可以存在于多个JAR文件中.
 	 */
 	public static final String DEFAULT_HANDLER_MAPPINGS_LOCATION = "META-INF/spring.handlers";
 

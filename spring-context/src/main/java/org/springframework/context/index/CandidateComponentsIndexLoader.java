@@ -43,7 +43,7 @@ public final class CandidateComponentsIndexLoader {
 
 	/**
 	 * The location to look for components.
-	 * <p>Can be present in multiple JAR files.
+	 * <p>可以存在于多个JAR文件中.
 	 */
 	public static final String COMPONENTS_RESOURCE_LOCATION = "META-INF/spring.components";
 
