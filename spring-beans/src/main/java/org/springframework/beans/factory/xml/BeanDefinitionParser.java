@@ -48,7 +48,7 @@ public interface BeanDefinitionParser {
 	 * an inner tag in a {@code <property/>} tag). Implementations may return
 	 * {@code null} if they will <strong>not</strong> be used in a nested fashion.
 	 * @param element the element that is to be parsed into one or more {@link BeanDefinition BeanDefinitions}
-	 * @param parserContext the object encapsulating the current state of the parsing process;
+	 * @param parserContext 封装解析过程当前状态的对象;
 	 * provides access to a {@link org.springframework.beans.factory.support.BeanDefinitionRegistry}
 	 * @return the primary {@link BeanDefinition}
 	 */

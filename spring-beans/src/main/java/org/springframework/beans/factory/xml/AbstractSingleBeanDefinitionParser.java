@@ -52,7 +52,7 @@ public abstract class AbstractSingleBeanDefinitionParser extends AbstractBeanDef
 	 * {@link #getBeanClass bean Class} and passes it to the
 	 * {@link #doParse} strategy method.
 	 * @param element the element that is to be parsed into a single BeanDefinition
-	 * @param parserContext the object encapsulating the current state of the parsing process
+	 * @param parserContext 封装解析过程当前状态的对象
 	 * @return the BeanDefinition resulting from the parsing of the supplied {@link Element}
 	 * @throws IllegalStateException if the bean {@link Class} returned from
 	 * {@link #getBeanClass(org.w3c.dom.Element)} is {@code null}
@@ -138,7 +138,7 @@ public abstract class AbstractSingleBeanDefinitionParser extends AbstractBeanDef
 	 * <p>The default implementation delegates to the {@code doParse}
 	 * version without ParserContext argument.
 	 * @param element the XML element being parsed
-	 * @param parserContext the object encapsulating the current state of the parsing process
+	 * @param parserContext 封装解析过程当前状态的对象
 	 * @param builder used to define the {@code BeanDefinition}
 	 * @see #doParse(Element, BeanDefinitionBuilder)
 	 */

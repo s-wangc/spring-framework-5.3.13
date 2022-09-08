@@ -66,7 +66,7 @@ public interface NamespaceHandler {
 	 * <p>Implementations may return {@code null} if they will
 	 * <strong>not</strong> be used in a nested scenario.
 	 * @param element the element that is to be parsed into one or more {@code BeanDefinitions}
-	 * @param parserContext the object encapsulating the current state of the parsing process
+	 * @param parserContext 封装解析过程当前状态的对象
 	 * @return the primary {@code BeanDefinition} (can be {@code null} as explained above)
 	 */
 	@Nullable
@@ -85,7 +85,7 @@ public interface NamespaceHandler {
 	 * additional beans needed to support the main definition.
 	 * @param source the source element or attribute that is to be parsed
 	 * @param definition the current bean definition
-	 * @param parserContext the object encapsulating the current state of the parsing process
+	 * @param parserContext 封装解析过程当前状态的对象
 	 * @return the decorated definition (to be registered in the BeanFactory),
 	 * or simply the original bean definition if no decoration is required.
 	 * A {@code null} value is strictly speaking invalid, but will be leniently

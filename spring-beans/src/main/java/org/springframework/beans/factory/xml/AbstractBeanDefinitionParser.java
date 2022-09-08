@@ -100,7 +100,7 @@ public abstract class AbstractBeanDefinitionParser implements BeanDefinitionPars
 	 * {@link #shouldGenerateIdAsFallback() fallback} to a generated id.
 	 * @param element the element that the bean definition has been built from
 	 * @param definition the bean definition to be registered
-	 * @param parserContext the object encapsulating the current state of the parsing process;
+	 * @param parserContext 封装解析过程当前状态的对象;
 	 * provides access to a {@link org.springframework.beans.factory.support.BeanDefinitionRegistry}
 	 * @return the resolved id
 	 * @throws BeanDefinitionStoreException if no unique name could be generated
@@ -144,7 +144,7 @@ public abstract class AbstractBeanDefinitionParser implements BeanDefinitionPars
 	 * Central template method to actually parse the supplied {@link Element}
 	 * into one or more {@link BeanDefinition BeanDefinitions}.
 	 * @param element the element that is to be parsed into one or more {@link BeanDefinition BeanDefinitions}
-	 * @param parserContext the object encapsulating the current state of the parsing process;
+	 * @param parserContext 封装解析过程当前状态的对象;
 	 * provides access to a {@link org.springframework.beans.factory.support.BeanDefinitionRegistry}
 	 * @return the primary {@link BeanDefinition} resulting from the parsing of the supplied {@link Element}
 	 * @see #parse(org.w3c.dom.Element, ParserContext)
