@@ -448,7 +448,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 		// No singleton instance found -> check bean definition.
 		BeanFactory parentBeanFactory = getParentBeanFactory();
 		if (parentBeanFactory != null && !containsBeanDefinition(beanName)) {
-			// No bean definition found in this factory -> delegate to parent.
+			// 在这个工厂中没有找到bean定义 -> 委托给parent.
 			return parentBeanFactory.isSingleton(originalBeanName(name));
 		}
 
@@ -478,7 +478,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 
 		BeanFactory parentBeanFactory = getParentBeanFactory();
 		if (parentBeanFactory != null && !containsBeanDefinition(beanName)) {
-			// No bean definition found in this factory -> delegate to parent.
+			// 在这个工厂中没有找到bean定义 -> 委托给parent.
 			return parentBeanFactory.isPrototype(originalBeanName(name));
 		}
 
@@ -585,7 +585,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 		// No singleton instance found -> check bean definition.
 		BeanFactory parentBeanFactory = getParentBeanFactory();
 		if (parentBeanFactory != null && !containsBeanDefinition(beanName)) {
-			// No bean definition found in this factory -> delegate to parent.
+			// 在这个工厂中没有找到bean定义 -> 委托给parent.
 			return parentBeanFactory.isTypeMatch(originalBeanName(name), typeToMatch);
 		}
 
@@ -702,7 +702,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 		// No singleton instance found -> check bean definition.
 		BeanFactory parentBeanFactory = getParentBeanFactory();
 		if (parentBeanFactory != null && !containsBeanDefinition(beanName)) {
-			// No bean definition found in this factory -> delegate to parent.
+			// 在这个工厂中没有找到bean定义 -> 委托给parent.
 			return parentBeanFactory.getType(originalBeanName(name));
 		}
 
@@ -1141,7 +1141,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 		}
 		// No singleton instance found -> check bean definition.
 		if (!containsBeanDefinition(beanName) && getParentBeanFactory() instanceof ConfigurableBeanFactory) {
-			// No bean definition found in this factory -> delegate to parent.
+			// 在这个工厂中没有找到bean定义 -> 委托给parent.
 			return ((ConfigurableBeanFactory) getParentBeanFactory()).isFactoryBean(name);
 		}
 		return isFactoryBean(beanName, getMergedLocalBeanDefinition(beanName));
