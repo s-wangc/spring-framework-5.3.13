@@ -125,7 +125,7 @@ public class GenericApplicationContext extends AbstractApplicationContext implem
 	}
 
 	/**
-	 * Create a new GenericApplicationContext with the given parent.
+	 * 使用给定的parent创建一个新GenericApplicationContext.
 	 * @param parent the parent application context
 	 * @see #registerBeanDefinition
 	 * @see #refresh

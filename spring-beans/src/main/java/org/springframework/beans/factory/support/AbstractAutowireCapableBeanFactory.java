@@ -186,7 +186,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	}
 
 	/**
-	 * Create a new AbstractAutowireCapableBeanFactory with the given parent.
+	 * 使用给定的parent创建一个新AbstractAutowireCapableBeanFactory.
 	 * @param parentBeanFactory parent bean factory, or {@code null} if none
 	 */
 	public AbstractAutowireCapableBeanFactory(@Nullable BeanFactory parentBeanFactory) {

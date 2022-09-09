@@ -190,7 +190,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	}
 
 	/**
-	 * Create a new AbstractBeanFactory with the given parent.
+	 * 使用给定的parent创建一个新AbstractBeanFactory.
 	 * @param parentBeanFactory parent bean factory, or {@code null} if none
 	 * @see #getBean
 	 */

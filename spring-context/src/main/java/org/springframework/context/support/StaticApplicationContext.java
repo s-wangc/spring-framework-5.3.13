@@ -55,7 +55,7 @@ public class StaticApplicationContext extends GenericApplicationContext {
 	}
 
 	/**
-	 * Create a new StaticApplicationContext with the given parent.
+	 * 使用给定的parent创建一个新StaticApplicationContext.
 	 * @see #registerSingleton
 	 * @see #registerPrototype
 	 * @see #registerBeanDefinition
