@@ -135,7 +135,7 @@ public class TransactionInterceptor extends TransactionAspectSupport implements 
 
 
 	//---------------------------------------------------------------------
-	// Serialization support
+	// 序列化支持
 	//---------------------------------------------------------------------
 
 	private void writeObject(ObjectOutputStream oos) throws IOException {

@@ -106,7 +106,7 @@ public class IntroductionInfoSupport implements IntroductionInfo, Serializable {
 
 
 	//---------------------------------------------------------------------
-	// Serialization support
+	// 序列化支持
 	//---------------------------------------------------------------------
 
 	/**

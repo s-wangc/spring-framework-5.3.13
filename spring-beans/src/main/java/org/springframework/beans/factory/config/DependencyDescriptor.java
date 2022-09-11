@@ -433,7 +433,7 @@ public class DependencyDescriptor extends InjectionPoint implements Serializable
 
 
 	//---------------------------------------------------------------------
-	// Serialization support
+	// 序列化支持
 	//---------------------------------------------------------------------
 
 	private void readObject(ObjectInputStream ois) throws IOException, ClassNotFoundException {
