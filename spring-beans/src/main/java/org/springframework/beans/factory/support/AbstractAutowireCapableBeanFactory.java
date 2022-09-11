@@ -689,7 +689,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 
 	/**
 	 * Determine the target type for the given bean definition.
-	 * @param beanName the name of the bean (for error handling purposes)
+	 * @param beanName bean的名称(用于错误处理)
 	 * @param mbd the merged bean definition for the bean
 	 * @param typesToMatch the types to match in case of internal type matching purposes
 	 * (also signals that the returned {@code Class} will never be exposed to application code)
@@ -716,7 +716,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	 * <p>This implementation determines the type matching {@link #createBean}'s
 	 * different creation strategies. As far as possible, we'll perform static
 	 * type checking to avoid creation of the target bean.
-	 * @param beanName the name of the bean (for error handling purposes)
+	 * @param beanName bean的名称(用于错误处理)
 	 * @param mbd the merged bean definition for the bean
 	 * @param typesToMatch the types to match in case of internal type matching purposes
 	 * (also signals that the returned {@code Class} will never be exposed to application code)
@@ -973,7 +973,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	/**
 	 * Obtain a reference for early access to the specified bean,
 	 * typically for the purpose of resolving a circular reference.
-	 * @param beanName the name of the bean (for error handling purposes)
+	 * @param beanName bean的名称(用于错误处理)
 	 * @param mbd the merged bean definition for the bean
 	 * @param bean the raw bean instance
 	 * @return the object to expose as bean reference

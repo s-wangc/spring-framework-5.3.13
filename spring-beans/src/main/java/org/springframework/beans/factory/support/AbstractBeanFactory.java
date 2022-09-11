@@ -1512,7 +1512,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 * resolving a bean class name into a Class reference (if necessary)
 	 * and storing the resolved Class in the bean definition for further use.
 	 * @param mbd the merged bean definition to determine the class for
-	 * @param beanName the name of the bean (for error handling purposes)
+	 * @param beanName bean的名称(用于错误处理)
 	 * @param typesToMatch the types to match in case of internal type matching purposes
 	 * (also signals that the returned {@code Class} will never be exposed to application code)
 	 * @return the resolved bean class (or {@code null} if none)
