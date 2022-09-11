@@ -997,7 +997,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	 * Obtain a "shortcut" singleton FactoryBean instance to use for a
 	 * {@code getObjectType()} call, without full initialization of the FactoryBean.
 	 * @param beanName bean的名称
-	 * @param mbd the bean definition for the bean
+	 * @param mbd bean的bean definition
 	 * @return the FactoryBean instance, or {@code null} to indicate
 	 * that we couldn't obtain a shortcut FactoryBean instance
 	 */
@@ -1062,7 +1062,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	 * Obtain a "shortcut" non-singleton FactoryBean instance to use for a
 	 * {@code getObjectType()} call, without full initialization of the FactoryBean.
 	 * @param beanName bean的名称
-	 * @param mbd the bean definition for the bean
+	 * @param mbd bean的bean definition
 	 * @return the FactoryBean instance, or {@code null} to indicate
 	 * that we couldn't obtain a shortcut FactoryBean instance
 	 */
@@ -1121,7 +1121,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	 * Apply before-instantiation post-processors, resolving whether there is a
 	 * before-instantiation shortcut for the specified bean.
 	 * @param beanName bean的名称
-	 * @param mbd the bean definition for the bean
+	 * @param mbd bean的bean definition
 	 * @return the shortcut-determined bean instance, or {@code null} if none
 	 */
 	@Nullable
@@ -1169,7 +1169,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	 * Create a new instance for the specified bean, using an appropriate instantiation strategy:
 	 * factory method, constructor autowiring, or simple instantiation.
 	 * @param beanName bean的名称
-	 * @param mbd the bean definition for the bean
+	 * @param mbd bean的bean definition
 	 * @param args explicit arguments to use for constructor or factory method invocation
 	 * @return 一个BeanWrapper的新实例
 	 * @see #obtainFromSupplier
@@ -1311,7 +1311,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	/**
 	 * Instantiate the given bean using its default constructor.
 	 * @param beanName bean的名称
-	 * @param mbd the bean definition for the bean
+	 * @param mbd bean的bean definition
 	 * @return 一个BeanWrapper的新实例
 	 */
 	protected BeanWrapper instantiateBean(String beanName, RootBeanDefinition mbd) {
@@ -1340,7 +1340,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	 * mbd parameter specifies a class, rather than a factoryBean, or an instance variable
 	 * on a factory object itself configured using Dependency Injection.
 	 * @param beanName bean的名称
-	 * @param mbd the bean definition for the bean
+	 * @param mbd bean的bean definition
 	 * @param explicitArgs argument values passed in programmatically via the getBean method,
 	 * or {@code null} if none (implying the use of constructor argument values from bean definition)
 	 * @return 一个BeanWrapper的新实例
@@ -1360,7 +1360,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	 * bean factory is able to host components that expect constructor-based
 	 * dependency resolution.
 	 * @param beanName bean的名称
-	 * @param mbd the bean definition for the bean
+	 * @param mbd bean的bean definition
 	 * @param ctors the chosen candidate constructors
 	 * @param explicitArgs argument values passed in programmatically via the getBean method,
 	 * or {@code null} if none (implying the use of constructor argument values from bean definition)
@@ -1376,7 +1376,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	 * Populate the bean instance in the given BeanWrapper with the property values
 	 * from the bean definition.
 	 * @param beanName bean的名称
-	 * @param mbd the bean definition for the bean
+	 * @param mbd bean的bean definition
 	 * @param bw the BeanWrapper with bean instance
 	 */
 	@SuppressWarnings("deprecation")  // for postProcessPropertyValues

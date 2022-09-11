@@ -1918,7 +1918,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 * to be called on factory shutdown (if applicable). Only applies to singletons.
 	 * @param beanName bean的名称
 	 * @param bean the bean instance
-	 * @param mbd the bean definition for the bean
+	 * @param mbd bean的bean definition
 	 * @see RootBeanDefinition#isSingleton
 	 * @see RootBeanDefinition#getDependsOn
 	 * @see #registerDisposableBean
