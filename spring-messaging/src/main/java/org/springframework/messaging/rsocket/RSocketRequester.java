@@ -433,7 +433,7 @@ public interface RSocketRequester extends Disposable {
 		 * Perform a {@link RSocket#requestResponse requestResponse} exchange.
 		 * <p>If the return type is {@code Mono<Void>}, the {@code Mono} will
 		 * complete after all data is consumed.
-		 * <p><strong>Note:</strong> This method will raise an error if
+		 * <p><strong>注意:</strong> This method will raise an error if
 		 * the request payload is a multi-valued {@link Publisher} as there is
 		 * no many-to-one RSocket interaction.
 		 * @param dataType the expected data type for the response

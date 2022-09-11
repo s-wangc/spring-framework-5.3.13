@@ -36,7 +36,7 @@ import org.springframework.util.concurrent.ListenableFutureTask;
  * <p>Supports limiting concurrent threads through the "concurrencyLimit"
  * bean property. By default, the number of concurrent threads is unlimited.
  *
- * <p><b>NOTE: This implementation does not reuse threads!</b> Consider a
+ * <p><b>注意: This implementation does not reuse threads!</b> Consider a
  * thread-pooling TaskExecutor implementation instead, in particular for
  * executing a large number of short-lived tasks.
  *
@@ -126,7 +126,7 @@ public class SimpleAsyncTaskExecutor extends CustomizableThreadCreator
 	 * execution callback (which may be a wrapper around the user-supplied task).
 	 * <p>The primary use case is to set some execution context around the task's
 	 * invocation, or to provide some monitoring/statistics for task execution.
-	 * <p><b>NOTE:</b> Exception handling in {@code TaskDecorator} implementations
+	 * <p><b>注意:</b> Exception handling in {@code TaskDecorator} implementations
 	 * is limited to plain {@code Runnable} execution via {@code execute} calls.
 	 * In case of {@code #submit} calls, the exposed {@code Runnable} will be a
 	 * {@code FutureTask} which does not propagate any exceptions; you might
@@ -142,7 +142,7 @@ public class SimpleAsyncTaskExecutor extends CustomizableThreadCreator
 	 * -1 indicates no concurrency limit at all.
 	 * <p>In principle, this limit can be changed at runtime,
 	 * although it is generally designed as a config time setting.
-	 * NOTE: Do not switch between -1 and any concrete limit at runtime,
+	 * 注意: Do not switch between -1 and any concrete limit at runtime,
 	 * as this will lead to inconsistent concurrency counts: A limit
 	 * of -1 effectively turns off concurrency counting completely.
 	 * @see #UNBOUNDED_CONCURRENCY

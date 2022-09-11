@@ -31,7 +31,7 @@ import org.springframework.lang.Nullable;
  * that always returns a fixed default locale and optionally time zone.
  * Default is the current JVM's default locale.
  *
- * <p>Note: Does not support {@code setLocale(Context)}, as the fixed
+ * <p>注意: Does not support {@code setLocale(Context)}, as the fixed
  * locale and time zone cannot be changed.
  *
  * @author Juergen Hoeller

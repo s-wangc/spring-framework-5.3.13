@@ -121,7 +121,7 @@ public class JobDetailFactoryBean
 	 * Register objects in the JobDataMap via a given Map.
 	 * <p>These objects will be available to this Job only,
 	 * in contrast to objects in the SchedulerContext.
-	 * <p>Note: When using persistent Jobs whose JobDetail will be kept in the
+	 * <p>注意: When using persistent Jobs whose JobDetail will be kept in the
 	 * database, do not put Spring-managed beans or an ApplicationContext
 	 * reference into the JobDataMap but rather into the SchedulerContext.
 	 * @param jobDataAsMap a Map with String keys and any objects as values
@@ -175,7 +175,7 @@ public class JobDetailFactoryBean
 	 * <p>Note that BeanFactory callback interfaces like ApplicationContextAware
 	 * are not automatically applied to Quartz Job instances, because Quartz
 	 * itself is responsible for the lifecycle of its Jobs.
-	 * <p><b>Note: When using persistent job stores where JobDetail contents will
+	 * <p><b>注意: When using persistent job stores where JobDetail contents will
 	 * be kept in the database, do not put an ApplicationContext reference into
 	 * the JobDataMap but rather into the SchedulerContext.</b>
 	 * @see org.springframework.scheduling.quartz.SchedulerFactoryBean#setApplicationContextSchedulerContextKey

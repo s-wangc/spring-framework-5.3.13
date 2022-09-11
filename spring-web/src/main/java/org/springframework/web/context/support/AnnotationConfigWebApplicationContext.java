@@ -73,7 +73,7 @@ import org.springframework.web.context.ContextLoader;
  * and {@link #scan(String...)} methods over the {@link #setConfigLocation(String)}
  * method, which is primarily for use by {@code ContextLoader}.
  *
- * <p>Note: In case of multiple {@code @Configuration} classes, later {@code @Bean}
+ * <p>注意: In case of multiple {@code @Configuration} classes, later {@code @Bean}
  * definitions will override ones defined in earlier loaded files. This can be leveraged
  * to deliberately override certain bean definitions via an extra {@code @Configuration}
  * class.

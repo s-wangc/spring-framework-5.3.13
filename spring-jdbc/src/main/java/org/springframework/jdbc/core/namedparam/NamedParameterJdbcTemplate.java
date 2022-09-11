@@ -59,7 +59,7 @@ import org.springframework.util.ConcurrentLruCache;
  * exposed to allow for convenient access to the traditional
  * {@link org.springframework.jdbc.core.JdbcTemplate} methods.
  *
- * <p><b>NOTE: An instance of this class is thread-safe once configured.</b>
+ * <p><b>注意: An instance of this class is thread-safe once configured.</b>
  *
  * @author Thomas Risberg
  * @author Juergen Hoeller
@@ -388,7 +388,7 @@ public class NamedParameterJdbcTemplate implements NamedParameterJdbcOperations 
 
 	/**
 	 * Build a {@link PreparedStatementCreator} based on the given SQL and named parameters.
-	 * <p>Note: Directly called from all {@code query} variants. Delegates to the common
+	 * <p>注意: Directly called from all {@code query} variants. Delegates to the common
 	 * {@link #getPreparedStatementCreator(String, SqlParameterSource, Consumer)} method.
 	 * @param sql the SQL statement to execute
 	 * @param paramSource container of arguments to bind
@@ -401,7 +401,7 @@ public class NamedParameterJdbcTemplate implements NamedParameterJdbcOperations 
 
 	/**
 	 * Build a {@link PreparedStatementCreator} based on the given SQL and named parameters.
-	 * <p>Note: Used for the {@code update} variant with generated key handling, and also
+	 * <p>注意: Used for the {@code update} variant with generated key handling, and also
 	 * delegated from {@link #getPreparedStatementCreator(String, SqlParameterSource)}.
 	 * @param sql the SQL statement to execute
 	 * @param paramSource container of arguments to bind

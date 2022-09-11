@@ -35,7 +35,7 @@ import org.springframework.util.StringUtils;
  * <li>file name suffix in the request path, like "static/myresource-version.js"
  * </ul>
  *
- * <p>Note: This base class does <i>not</i> provide support for generating the
+ * <p>注意: This base class does <i>not</i> provide support for generating the
  * version string.
  *
  * @author Brian Clozel

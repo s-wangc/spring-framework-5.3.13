@@ -544,7 +544,7 @@ The following example uses both a location and a loader:
 <1> Configuring both a location and a custom loader.
 
 
-NOTE: `@ContextConfiguration` provides support for inheriting resource locations or
+注意: `@ContextConfiguration` provides support for inheriting resource locations or
 configuration classes as well as context initializers that are declared by superclasses
 or enclosing classes.
 
@@ -743,7 +743,7 @@ be active:
 <1> Indicate that the `dev` and `integration` profiles should be active.
 
 
-NOTE: `@ActiveProfiles` provides support for inheriting active bean definition profiles
+注意: `@ActiveProfiles` provides support for inheriting active bean definition profiles
 declared by superclasses and enclosing classes by default. You can also resolve active
 bean definition profiles programmatically by implementing a custom
 <<testcontext-ctx-management-env-profiles-ActiveProfilesResolver, `ActiveProfilesResolver`>>
@@ -1857,7 +1857,7 @@ If the `spring.test.constructor.autowire.mode` property is not set, test class
 constructors will not be automatically autowired.
 =====
 
-NOTE: As of Spring Framework 5.2, `@TestConstructor` is only supported in conjunction
+注意: As of Spring Framework 5.2, `@TestConstructor` is only supported in conjunction
 with the `SpringExtension` for use with JUnit Jupiter. Note that the `SpringExtension` is
 often automatically registered for you – for example, when using annotations such as
 `@SpringJUnitConfig` and `@SpringJUnitWebConfig` or various test-related annotations from
@@ -1905,7 +1905,7 @@ following annotations.
 * <<spring-testing-annotation-sqlmergemode>>
 * <<integration-testing-annotations-testconstructor>>
 
-NOTE: The use of `@NestedTestConfiguration` typically only makes sense in conjunction
+注意: The use of `@NestedTestConfiguration` typically only makes sense in conjunction
 with `@Nested` test classes in JUnit Jupiter; however, there may be other testing
 frameworks with support for Spring and nested test classes that make use of this
 annotation.
@@ -2672,7 +2672,7 @@ test's `ApplicationContext` can listen to the following events published by the
 * `AfterTestMethodEvent`
 * `AfterTestClassEvent`
 
-NOTE: These events are only published if the `ApplicationContext` has already been loaded.
+注意: These events are only published if the `ApplicationContext` has already been loaded.
 
 These events may be consumed for various reasons, such as resetting mock beans or tracing
 test execution. One advantage of consuming test execution events rather than implementing
@@ -3306,7 +3306,7 @@ is set to `false`, the resource locations or component classes and the context
 initializers, respectively, for the test class shadow and effectively replace the
 configuration defined by superclasses.
 
-NOTE: As of Spring Framework 5.3, test configuration may also be inherited from enclosing
+注意: As of Spring Framework 5.3, test configuration may also be inherited from enclosing
 classes. See <<testcontext-junit-jupiter-nested-test-configuration>> for details.
 
 In the next example, which uses XML resource locations, the `ApplicationContext` for
@@ -3456,7 +3456,7 @@ particular bean definition profiles for various testing scenarios. This is achie
 annotating a test class with the `@ActiveProfiles` annotation and supplying a list of
 profiles that should be activated when loading the `ApplicationContext` for the test.
 
-NOTE: You can use `@ActiveProfiles` with any implementation of the `SmartContextLoader`
+注意: You can use `@ActiveProfiles` with any implementation of the `SmartContextLoader`
 SPI, but `@ActiveProfiles` is not supported with implementations of the older
 `ContextLoader` SPI.
 
@@ -3779,7 +3779,7 @@ automatically inherit the `@ActiveProfiles` configuration from the base class. I
 following example, the declaration of `@ActiveProfiles` (as well as other annotations)
 has been moved to an abstract superclass, `AbstractIntegrationTest`:
 
-NOTE: As of Spring Framework 5.3, test configuration may also be inherited from enclosing
+注意: As of Spring Framework 5.3, test configuration may also be inherited from enclosing
 classes. See <<testcontext-junit-jupiter-nested-test-configuration>> for details.
 
 [source,java,indent=0,subs="verbatim,quotes",role="primary"]
@@ -4117,7 +4117,7 @@ If the `inheritLocations` or `inheritProperties` attribute in `@TestPropertySour
 set to `false`, the locations or inlined properties, respectively, for the test class
 shadow and effectively replace the configuration defined by superclasses.
 
-NOTE: As of Spring Framework 5.3, test configuration may also be inherited from enclosing
+注意: As of Spring Framework 5.3, test configuration may also be inherited from enclosing
 classes. See <<testcontext-junit-jupiter-nested-test-configuration>> for details.
 
 In the next example, the `ApplicationContext` for `BaseTest` is loaded by using only the
@@ -4844,7 +4844,7 @@ shows this configuration scenario:
 ----
 
 .Dirtying a context within a context hierarchy
-NOTE: If you use `@DirtiesContext` in a test whose context is configured as part of a
+注意: If you use `@DirtiesContext` in a test whose context is configured as part of a
 context hierarchy, you can use the `hierarchyMode` flag to control how the context cache
 is cleared. For further details, see the discussion of `@DirtiesContext` in
 <<spring-testing-annotation-dirtiescontext, Spring Testing Annotations>> and the
@@ -4868,7 +4868,7 @@ TIP: For testing frameworks other than JUnit Jupiter, the TestContext framework 
 participate in instantiation of the test class. Thus, the use of `@Autowired` or
 `@Inject` for constructors has no effect for test classes.
 
-NOTE: Although field injection is discouraged in production code, field injection is
+注意: Although field injection is discouraged in production code, field injection is
 actually quite natural in test code. The rationale for the difference is that you will
 never instantiate your test class directly. Consequently, there is no need to be able to
 invoke a `public` constructor or setter method on your test class.
@@ -5841,7 +5841,7 @@ configure individual SQL statements or the resource paths to SQL scripts that sh
 run against a given database before or after an integration test method. Support for
 `@Sql` is provided by the `SqlScriptsTestExecutionListener`, which is enabled by default.
 
-NOTE: Method-level `@Sql` declarations override class-level declarations by default. As
+注意: Method-level `@Sql` declarations override class-level declarations by default. As
 of Spring Framework 5.2, however, this behavior may be configured per test class or per
 test method via `@SqlMergeMode`. See
 <<testcontext-executing-sql-declaratively-script-merging>> for further details.
@@ -7612,7 +7612,7 @@ when using HTML-based views. This integration lets you:
 * Optionally, test using mock services to speed up testing.
 * Share logic between in-container end-to-end tests and out-of-container integration tests.
 
-NOTE: MockMvc works with templating technologies that do not rely on a Servlet Container
+注意: MockMvc works with templating technologies that do not rely on a Servlet Container
 (for example, Thymeleaf, FreeMarker, and others), but it does not work with JSPs, since
 they rely on the Servlet container.
 
@@ -7845,7 +7845,7 @@ We can easily create an HtmlUnit `WebClient` that integrates with MockMvc by usi
 	}
 ----
 
-NOTE: This is a simple example of using `MockMvcWebClientBuilder`. For advanced usage,
+注意: This is a simple example of using `MockMvcWebClientBuilder`. For advanced usage,
 see <<spring-mvc-test-server-htmlunit-mah-advanced-builder>>.
 
 This ensures that any URL that references `localhost` as the server is directed to our
@@ -7872,7 +7872,7 @@ message with the following:
 	val createMsgFormPage = webClient.getPage("http://localhost/messages/form")
 ----
 
-NOTE: The default context path is `""`. Alternatively, we can specify the context path,
+注意: The default context path is `""`. Alternatively, we can specify the context path,
 as described in <<spring-mvc-test-server-htmlunit-mah-advanced-builder>>.
 
 Once we have a reference to the `HtmlPage`, we can then fill out the form and submit it
@@ -8059,7 +8059,7 @@ We can already use HtmlUnit and MockMvc, so why would we want to use WebDriver? 
 Selenium WebDriver provides a very elegant API that lets us easily organize our code. To
 better show how it works, we explore an example in this section.
 
-NOTE: Despite being a part of https://docs.seleniumhq.org/[Selenium], WebDriver does not
+注意: Despite being a part of https://docs.seleniumhq.org/[Selenium], WebDriver does not
 require a Selenium Server to run your tests.
 
 Suppose we need to ensure that a message is created properly. The tests involve finding
@@ -8226,7 +8226,7 @@ We can easily create a Selenium WebDriver that integrates with MockMvc by using 
 	}
 ----
 
-NOTE: This is a simple example of using `MockMvcHtmlUnitDriverBuilder`. For more advanced
+注意: This is a simple example of using `MockMvcHtmlUnitDriverBuilder`. For more advanced
 usage, see <<spring-mvc-test-server-htmlunit-webdriver-advanced-builder>>.
 
 The preceding example ensures that any URL that references `localhost` as the server is
@@ -8569,7 +8569,7 @@ def setup() {
 }
 ----
 
-NOTE: This is a simple example of using `MockMvcHtmlUnitDriverBuilder`. For more advanced
+注意: This is a simple example of using `MockMvcHtmlUnitDriverBuilder`. For more advanced
 usage, see <<spring-mvc-test-server-htmlunit-webdriver-advanced-builder>>.
 
 This ensures that any URL referencing `localhost` as the server is directed to our
@@ -8642,7 +8642,7 @@ at CreateMessagePage
 errors.contains('This field is required.')
 ----
 
-NOTE: We use an assertion in the closure so that we can determine where things went wrong
+注意: We use an assertion in the closure so that we can determine where things went wrong
 if we were at the wrong page.
 
 Next, we create a `content` closure that specifies all the areas of interest within the

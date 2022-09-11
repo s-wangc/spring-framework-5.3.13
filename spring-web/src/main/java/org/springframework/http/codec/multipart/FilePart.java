@@ -33,7 +33,7 @@ public interface FilePart extends Part {
 
 	/**
 	 * Return the original filename in the client's filesystem.
-	 * <p><strong>Note:</strong> Please keep in mind this filename is supplied
+	 * <p><strong>注意:</strong> Please keep in mind this filename is supplied
 	 * by the client and should not be used blindly. In addition to not using
 	 * the directory portion, the file name could also contain characters such
 	 * as ".." and others that can be used maliciously. It is recommended to not

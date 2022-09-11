@@ -49,7 +49,7 @@ import org.springframework.lang.Nullable;
  * much easier to setup than RMI. Alternatively, consider Spring's HTTP invoker
  * to combine Java serialization with HTTP-based transport.
  *
- * <p>Note: RMI makes a best-effort attempt to obtain the fully qualified host name.
+ * <p>注意: RMI makes a best-effort attempt to obtain the fully qualified host name.
  * If one cannot be determined, it will fall back and use the IP address. Depending
  * on your network configuration, in some cases it will resolve the IP to the loopback
  * address. To ensure that RMI will use the host name bound to the correct network

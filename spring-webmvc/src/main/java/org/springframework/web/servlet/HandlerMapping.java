@@ -43,7 +43,7 @@ import org.springframework.lang.Nullable;
  * a custom mapping based on session state, cookie state or many other
  * variables. No other MVC framework seems to be equally flexible.
  *
- * <p>Note: Implementations can implement the {@link org.springframework.core.Ordered}
+ * <p>注意: Implementations can implement the {@link org.springframework.core.Ordered}
  * interface to be able to specify a sorting order and thus a priority for getting
  * applied by DispatcherServlet. Non-Ordered instances get treated as lowest priority.
  *
@@ -82,7 +82,7 @@ public interface HandlerMapping {
 	 * Name of the {@link HttpServletRequest} attribute that contains the path
 	 * within the handler mapping, in case of a pattern match, or the full
 	 * relevant URI (typically within the DispatcherServlet's mapping) else.
-	 * <p>Note: This attribute is not required to be supported by all
+	 * <p>注意: This attribute is not required to be supported by all
 	 * HandlerMapping implementations. URL-based HandlerMappings will
 	 * typically support it, but handlers should not necessarily expect
 	 * this request attribute to be present in all scenarios.
@@ -92,7 +92,7 @@ public interface HandlerMapping {
 	/**
 	 * Name of the {@link HttpServletRequest} attribute that contains the
 	 * best matching pattern within the handler mapping.
-	 * <p>Note: This attribute is not required to be supported by all
+	 * <p>注意: This attribute is not required to be supported by all
 	 * HandlerMapping implementations. URL-based HandlerMappings will
 	 * typically support it, but handlers should not necessarily expect
 	 * this request attribute to be present in all scenarios.
@@ -102,7 +102,7 @@ public interface HandlerMapping {
 	/**
 	 * Name of the boolean {@link HttpServletRequest} attribute that indicates
 	 * whether type-level mappings should be inspected.
-	 * <p>Note: This attribute is not required to be supported by all
+	 * <p>注意: This attribute is not required to be supported by all
 	 * HandlerMapping implementations.
 	 */
 	String INTROSPECT_TYPE_LEVEL_MAPPING = HandlerMapping.class.getName() + ".introspectTypeLevelMapping";
@@ -110,7 +110,7 @@ public interface HandlerMapping {
 	/**
 	 * Name of the {@link HttpServletRequest} attribute that contains the URI
 	 * templates map, mapping variable names to values.
-	 * <p>Note: This attribute is not required to be supported by all
+	 * <p>注意: This attribute is not required to be supported by all
 	 * HandlerMapping implementations. URL-based HandlerMappings will
 	 * typically support it, but handlers should not necessarily expect
 	 * this request attribute to be present in all scenarios.
@@ -121,7 +121,7 @@ public interface HandlerMapping {
 	 * Name of the {@link HttpServletRequest} attribute that contains a map with
 	 * URI variable names and a corresponding MultiValueMap of URI matrix
 	 * variables for each.
-	 * <p>Note: This attribute is not required to be supported by all
+	 * <p>注意: This attribute is not required to be supported by all
 	 * HandlerMapping implementations and may also not be present depending on
 	 * whether the HandlerMapping is configured to keep matrix variable content
 	 */
@@ -130,7 +130,7 @@ public interface HandlerMapping {
 	/**
 	 * Name of the {@link HttpServletRequest} attribute that contains the set of
 	 * producible MediaTypes applicable to the mapped handler.
-	 * <p>Note: This attribute is not required to be supported by all
+	 * <p>注意: This attribute is not required to be supported by all
 	 * HandlerMapping implementations. Handlers should not necessarily expect
 	 * this request attribute to be present in all scenarios.
 	 */

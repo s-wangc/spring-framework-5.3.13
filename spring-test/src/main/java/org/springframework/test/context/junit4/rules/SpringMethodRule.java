@@ -76,7 +76,7 @@ import org.springframework.test.context.junit4.statements.SpringRepeat;
  * <li>{@link org.springframework.test.annotation.IfProfileValue @IfProfileValue}</li>
  * </ul>
  *
- * <p><strong>NOTE:</strong> As of Spring Framework 4.3, this class requires JUnit 4.12 or higher.
+ * <p><strong>注意:</strong> As of Spring Framework 4.3, this class requires JUnit 4.12 or higher.
  *
  * <p><strong>WARNING:</strong> Due to the shortcomings of JUnit rules, the
  * {@code SpringMethodRule}

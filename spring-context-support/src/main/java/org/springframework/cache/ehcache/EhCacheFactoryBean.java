@@ -48,10 +48,10 @@ import org.springframework.lang.Nullable;
  * specified cache properties and add it to the CacheManager for later retrieval. If some
  * or all properties are not set at configuration time, this FactoryBean will use defaults.
  *
- * <p>Note: If the named Cache instance is found, the properties will be ignored and the
+ * <p>注意: If the named Cache instance is found, the properties will be ignored and the
  * Cache instance will be retrieved from the CacheManager.
  *
- * <p>Note: As of Spring 5.0, Spring's EhCache support requires EhCache 2.10 or higher.
+ * <p>注意: As of Spring 5.0, Spring's EhCache support requires EhCache 2.10 or higher.
  *
  * @author Juergen Hoeller
  * @author Dmitriy Kopylenko
@@ -163,7 +163,7 @@ public class EhCacheFactoryBean extends CacheConfiguration implements FactoryBea
 	 * {@link net.sf.ehcache.constructs.blocking.UpdatingCacheEntryFactory},
 	 * which will lead to the use of an
 	 * {@link net.sf.ehcache.constructs.blocking.UpdatingSelfPopulatingCache}.
-	 * <p>Note: Any such self-populating cache is automatically a blocking cache.
+	 * <p>注意: Any such self-populating cache is automatically a blocking cache.
 	 * @see net.sf.ehcache.constructs.blocking.SelfPopulatingCache
 	 * @see net.sf.ehcache.constructs.blocking.UpdatingSelfPopulatingCache
 	 * @see net.sf.ehcache.constructs.blocking.UpdatingCacheEntryFactory

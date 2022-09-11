@@ -36,7 +36,7 @@ public interface SmartValidator extends Validator {
 	 * <p><b>This variant of {@code validate()} supports validation hints, such as
 	 * validation groups against a JSR-303 provider</b> (in which case, the provided hint
 	 * objects need to be annotation arguments of type {@code Class}).
-	 * <p>Note: Validation hints may get ignored by the actual target {@code Validator},
+	 * <p>注意: Validation hints may get ignored by the actual target {@code Validator},
 	 * in which case this method should behave just like its regular
 	 * {@link #validate(Object, Errors)} sibling.
 	 * @param target the object that is to be validated

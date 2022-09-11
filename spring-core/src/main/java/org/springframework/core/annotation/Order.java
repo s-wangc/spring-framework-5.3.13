@@ -32,7 +32,7 @@ import org.springframework.core.Ordered;
  * {@code Ordered.LOWEST_PRECEDENCE}, indicating lowest priority (losing to any other
  * specified order value).
  *
- * <p><b>NOTE:</b> Since Spring 4.0, annotation-based ordering is supported for many
+ * <p><b>注意:</b> Since Spring 4.0, annotation-based ordering is supported for many
  * kinds of components in Spring, even for collection injection where the order values
  * of the target components are taken into account (either from their target class or
  * from their {@code @Bean} method). While such order values may influence priorities

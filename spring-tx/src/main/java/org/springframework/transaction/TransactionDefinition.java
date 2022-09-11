@@ -54,7 +54,7 @@ public interface TransactionDefinition {
 	/**
 	 * Support a current transaction; execute non-transactionally if none exists.
 	 * Analogous to the EJB transaction attribute of the same name.
-	 * <p><b>NOTE:</b> For transaction managers with transaction synchronization,
+	 * <p><b>注意:</b> For transaction managers with transaction synchronization,
 	 * {@code PROPAGATION_SUPPORTS} is slightly different from no transaction
 	 * at all, as it defines a transaction scope that synchronization might apply to.
 	 * As a consequence, the same resources (a JDBC {@code Connection}, a
@@ -83,7 +83,7 @@ public interface TransactionDefinition {
 	/**
 	 * Create a new transaction, suspending the current transaction if one exists.
 	 * Analogous to the EJB transaction attribute of the same name.
-	 * <p><b>NOTE:</b> Actual transaction suspension will not work out-of-the-box
+	 * <p><b>注意:</b> Actual transaction suspension will not work out-of-the-box
 	 * on all transaction managers. This in particular applies to
 	 * {@link org.springframework.transaction.jta.JtaTransactionManager},
 	 * which requires the {@code javax.transaction.TransactionManager} to be
@@ -98,7 +98,7 @@ public interface TransactionDefinition {
 	/**
 	 * Do not support a current transaction; rather always execute non-transactionally.
 	 * Analogous to the EJB transaction attribute of the same name.
-	 * <p><b>NOTE:</b> Actual transaction suspension will not work out-of-the-box
+	 * <p><b>注意:</b> Actual transaction suspension will not work out-of-the-box
 	 * on all transaction managers. This in particular applies to
 	 * {@link org.springframework.transaction.jta.JtaTransactionManager},
 	 * which requires the {@code javax.transaction.TransactionManager} to be
@@ -122,7 +122,7 @@ public interface TransactionDefinition {
 	 * Execute within a nested transaction if a current transaction exists,
 	 * behave like {@link #PROPAGATION_REQUIRED} otherwise. There is no
 	 * analogous feature in EJB.
-	 * <p><b>NOTE:</b> Actual creation of a nested transaction will only work on
+	 * <p><b>注意:</b> Actual creation of a nested transaction will only work on
 	 * specific transaction managers. Out of the box, this only applies to the JDBC
 	 * {@link org.springframework.jdbc.datasource.DataSourceTransactionManager}
 	 * when working on a JDBC 3.0 driver. Some JTA providers might support

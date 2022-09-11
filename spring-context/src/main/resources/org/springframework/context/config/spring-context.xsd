@@ -201,7 +201,7 @@
 	@PersistenceContext and @PersistenceUnit (if available). Alternatively, you may
 	choose to activate the individual BeanPostProcessors for those annotations.
 
-	Note: This tag does not activate processing of Spring's @Transactional or EJB 3's
+	注意: This tag does not activate processing of Spring's @Transactional or EJB 3's
 	@TransactionAttribute annotation. Consider the use of the <tx:annotation-driven>
 	tag for that purpose.
 
@@ -219,14 +219,14 @@
 	@Controller, @RestController, @ControllerAdvice, and @Configuration stereotypes
 	will be detected.
 
-	Note: This tag implies the effects of the 'annotation-config' tag, activating @Required,
+	注意: This tag implies the effects of the 'annotation-config' tag, activating @Required,
 	@Autowired, @PostConstruct, @PreDestroy, @Resource, @PersistenceContext and @PersistenceUnit
 	annotations in the component classes, which is usually desired for autodetected components
 	(without external configuration). Turn off the 'annotation-config' attribute to deactivate
 	this default behavior, for example in order to use custom BeanPostProcessor definitions
 	for handling those annotations.
 
-	Note: You may use placeholders in package paths, but only resolved against system
+	注意: You may use placeholders in package paths, but only resolved against system
 	properties (analogous to resource paths). A component scan results in new bean definitions
 	being registered; Spring's PropertySourcesPlaceholderConfigurer will apply to those bean
 	definitions just like to regular bean definitions, but it won't apply to the component
@@ -521,7 +521,7 @@
     "regex" indicates a regex pattern to be matched by the target components' class names;
     "custom" indicates a custom implementation of the org.springframework.core.type.TypeFilter interface.
 
-    Note: This attribute will not be inherited by child bean definitions.
+    注意: This attribute will not be inherited by child bean definitions.
     Hence, it needs to be specified per concrete bean definition.
                 ]]></xsd:documentation>
 			</xsd:annotation>

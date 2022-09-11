@@ -63,7 +63,7 @@ import org.springframework.util.Assert;
  * respectively. These defaults can be overridden through the "destinationResolver"
  * and "messageConverter" bean properties.
  *
- * <p><b>NOTE: The {@code ConnectionFactory} used with this template should
+ * <p><b>注意: The {@code ConnectionFactory} used with this template should
  * return pooled Connections (or a single shared Connection) as well as pooled
  * Sessions and MessageProducers. Otherwise, performance of ad-hoc JMS operations
  * is going to suffer.</b> The simplest option is to use the Spring-provided
@@ -121,7 +121,7 @@ public class JmsTemplate extends JmsDestinationAccessor implements JmsOperations
 
 	/**
 	 * Create a new JmsTemplate for bean-style usage.
-	 * <p>Note: The ConnectionFactory has to be set before using the instance.
+	 * <p>注意: The ConnectionFactory has to be set before using the instance.
 	 * This constructor can be used to prepare a JmsTemplate via a BeanFactory,
 	 * typically setting the ConnectionFactory via setConnectionFactory.
 	 * @see #setConnectionFactory
@@ -1067,7 +1067,7 @@ public class JmsTemplate extends JmsDestinationAccessor implements JmsOperations
 	 * Check whether the given Session is locally transacted, that is, whether
 	 * its transaction is managed by this listener container's Session handling
 	 * and not by an external transaction coordinator.
-	 * <p>Note: The Session's own transacted flag will already have been checked
+	 * <p>注意: The Session's own transacted flag will already have been checked
 	 * before. This method is about finding out whether the Session's transaction
 	 * is local or externally coordinated.
 	 * @param session the Session to check

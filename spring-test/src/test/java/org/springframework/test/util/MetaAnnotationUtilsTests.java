@@ -113,14 +113,14 @@ class MetaAnnotationUtilsTests {
 
 	@Test
 	void findAnnotationDescriptorWithInheritedAnnotationOnClass() {
-		// Note: @Transactional is inherited
+		// 注意: @Transactional is inherited
 		assertThat(findAnnotationDescriptor(InheritedAnnotationClass.class, Transactional.class).getRootDeclaringClass()).isEqualTo(InheritedAnnotationClass.class);
 		assertThat(findAnnotationDescriptor(SubInheritedAnnotationClass.class, Transactional.class).getRootDeclaringClass()).isEqualTo(InheritedAnnotationClass.class);
 	}
 
 	@Test
 	void findAnnotationDescriptorWithInheritedAnnotationOnInterface() {
-		// Note: @Transactional is inherited
+		// 注意: @Transactional is inherited
 		Transactional rawAnnotation = InheritedAnnotationInterface.class.getAnnotation(Transactional.class);
 
 		AnnotationDescriptor<Transactional> descriptor =
@@ -145,14 +145,14 @@ class MetaAnnotationUtilsTests {
 
 	@Test
 	void findAnnotationDescriptorForNonInheritedAnnotationOnClass() {
-		// Note: @Order is not inherited.
+		// 注意: @Order is not inherited.
 		assertThat(findAnnotationDescriptor(NonInheritedAnnotationClass.class, Order.class).getRootDeclaringClass()).isEqualTo(NonInheritedAnnotationClass.class);
 		assertThat(findAnnotationDescriptor(SubNonInheritedAnnotationClass.class, Order.class).getRootDeclaringClass()).isEqualTo(NonInheritedAnnotationClass.class);
 	}
 
 	@Test
 	void findAnnotationDescriptorForNonInheritedAnnotationOnInterface() {
-		// Note: @Order is not inherited.
+		// 注意: @Order is not inherited.
 		Order rawAnnotation = NonInheritedAnnotationInterface.class.getAnnotation(Order.class);
 
 		AnnotationDescriptor<Order> descriptor =
@@ -281,7 +281,7 @@ class MetaAnnotationUtilsTests {
 	@Test
 	@SuppressWarnings("unchecked")
 	void findAnnotationDescriptorForTypesWithInheritedAnnotationOnClass() {
-		// Note: @Transactional is inherited
+		// 注意: @Transactional is inherited
 		assertThat(findAnnotationDescriptorForTypes(InheritedAnnotationClass.class, Transactional.class).getRootDeclaringClass()).isEqualTo(InheritedAnnotationClass.class);
 		assertThat(findAnnotationDescriptorForTypes(SubInheritedAnnotationClass.class, Transactional.class).getRootDeclaringClass()).isEqualTo(InheritedAnnotationClass.class);
 	}
@@ -289,7 +289,7 @@ class MetaAnnotationUtilsTests {
 	@Test
 	@SuppressWarnings("unchecked")
 	void findAnnotationDescriptorForTypesWithInheritedAnnotationOnInterface() {
-		// Note: @Transactional is inherited
+		// 注意: @Transactional is inherited
 		Transactional rawAnnotation = InheritedAnnotationInterface.class.getAnnotation(Transactional.class);
 
 		UntypedAnnotationDescriptor descriptor =
@@ -315,7 +315,7 @@ class MetaAnnotationUtilsTests {
 	@Test
 	@SuppressWarnings("unchecked")
 	void findAnnotationDescriptorForTypesForNonInheritedAnnotationOnClass() {
-		// Note: @Order is not inherited.
+		// 注意: @Order is not inherited.
 		assertThat(findAnnotationDescriptorForTypes(NonInheritedAnnotationClass.class, Order.class).getRootDeclaringClass()).isEqualTo(NonInheritedAnnotationClass.class);
 		assertThat(findAnnotationDescriptorForTypes(SubNonInheritedAnnotationClass.class, Order.class).getRootDeclaringClass()).isEqualTo(NonInheritedAnnotationClass.class);
 	}
@@ -323,7 +323,7 @@ class MetaAnnotationUtilsTests {
 	@Test
 	@SuppressWarnings("unchecked")
 	void findAnnotationDescriptorForTypesForNonInheritedAnnotationOnInterface() {
-		// Note: @Order is not inherited.
+		// 注意: @Order is not inherited.
 		Order rawAnnotation = NonInheritedAnnotationInterface.class.getAnnotation(Order.class);
 
 		UntypedAnnotationDescriptor descriptor =

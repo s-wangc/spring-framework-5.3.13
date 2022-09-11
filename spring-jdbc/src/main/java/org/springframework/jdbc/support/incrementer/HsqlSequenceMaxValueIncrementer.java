@@ -24,7 +24,7 @@ import javax.sql.DataSource;
  *
  * <p>Thanks to Guillaume Bilodeau for the suggestion!
  *
- * <p><b>NOTE:</b> This is an alternative to using a regular table to support
+ * <p><b>注意:</b> This is an alternative to using a regular table to support
  * generating unique keys that was necessary in previous versions of HSQL.
  *
  * @author Thomas Risberg

@@ -29,7 +29,7 @@ import org.springframework.web.servlet.view.AbstractUrlBasedView;
  * <p>The view class for all views created by this resolver can be specified
  * via {@link #setViewClass(Class)}.
  *
- * <p><b>Note:</b> When chaining ViewResolvers this resolver will check for the
+ * <p><b>注意:</b> When chaining ViewResolvers this resolver will check for the
  * existence of the specified template resources and only return a non-null
  * {@code View} object if a template is actually found.
  *

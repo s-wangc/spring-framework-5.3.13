@@ -48,7 +48,7 @@ import org.springframework.util.ReflectionUtils;
  * {@link org.springframework.scripting.support.ScriptFactoryPostProcessor};
  * see the latter's javadoc for a configuration example.
  *
- * <p>Note: Spring 4.0 supports Groovy 1.8 and higher.
+ * <p>注意: Spring 4.0 supports Groovy 1.8 and higher.
  *
  * @author Juergen Hoeller
  * @author Rob Harrop

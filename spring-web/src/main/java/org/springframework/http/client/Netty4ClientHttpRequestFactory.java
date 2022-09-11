@@ -102,7 +102,7 @@ public class Netty4ClientHttpRequestFactory implements ClientHttpRequestFactory,
 	/**
 	 * Create a new {@code Netty4ClientHttpRequestFactory} with the given
 	 * {@link EventLoopGroup}.
-	 * <p><b>NOTE:</b> the given group will <strong>not</strong> be
+	 * <p><b>注意:</b> the given group will <strong>not</strong> be
 	 * {@linkplain EventLoopGroup#shutdownGracefully() shutdown} by this factory;
 	 * doing so becomes the responsibility of the caller.
 	 */

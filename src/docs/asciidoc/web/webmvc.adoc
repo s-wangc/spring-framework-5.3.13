@@ -80,7 +80,7 @@ the `DispatcherServlet`, which is auto-detected by the Servlet container
 	}
 ----
 
-NOTE: In addition to using the ServletContext API directly, you can also extend
+注意: In addition to using the ServletContext API directly, you can also extend
 `AbstractAnnotationConfigDispatcherServletInitializer` and override specific methods
 (see the example under <<mvc-servlet-context-hierarchy>>).
 
@@ -117,7 +117,7 @@ The following example of `web.xml` configuration registers and initializes the `
 </web-app>
 ----
 
-NOTE: Spring Boot follows a different initialization sequence. Rather than hooking into
+注意: Spring Boot follows a different initialization sequence. Rather than hooking into
 the lifecycle of the Servlet container, Spring Boot uses Spring configuration to
 bootstrap itself and the embedded Servlet container. `Filter` and `Servlet` declarations
 are detected in Spring configuration and registered with the Servlet container.
@@ -307,7 +307,7 @@ In most cases, the <<mvc-config>> is the best starting point. It declares the re
 beans in either Java or XML and provides a higher-level configuration callback API to
 customize it.
 
-NOTE: Spring Boot relies on the MVC Java configuration to configure Spring MVC and
+注意: Spring Boot relies on the MVC Java configuration to configure Spring MVC and
 provides many extra convenient options.
 
 
@@ -3116,7 +3116,7 @@ When the `@RequestParam` annotation is declared as a `Map<String, MultipartFile>
 `MultiValueMap<String, MultipartFile>`, without a parameter name specified in the annotation,
 then the map is populated with the multipart files for each given parameter name.
 
-NOTE: With Servlet 3.0 multipart parsing, you may also declare `javax.servlet.http.Part`
+注意: With Servlet 3.0 multipart parsing, you may also declare `javax.servlet.http.Part`
 instead of Spring's `MultipartFile`, as a method argument or collection value type.
 
 You can also use multipart content as part of data binding to a
@@ -3482,7 +3482,7 @@ which allow rendering only a subset of all fields in an `Object`. To use it with
 	}
 ----
 
-NOTE: `@JsonView` allows an array of view classes, but you can specify only one per
+注意: `@JsonView` allows an array of view classes, but you can specify only one per
 controller method. If you need to activate multiple views, you can use a composite interface.
 
 If you want to do the above programmatically, instead of declaring an `@JsonView` annotation,
@@ -3618,7 +3618,7 @@ The following example adds only one attribute:
 ----
 
 
-NOTE: When a name is not explicitly specified, a default name is chosen based on the `Object`
+注意: When a name is not explicitly specified, a default name is chosen based on the `Object`
 type, as explained in the javadoc for {api-spring-framework}/core/Conventions.html[`Conventions`].
 You can always assign an explicit name by using the overloaded `addAttribute` method or
 through the `name` attribute on `@ModelAttribute` (for a return value).
@@ -4161,7 +4161,7 @@ as the following example shows:
 			.path("/accounts").build()
 ----
 
-NOTE: As of 5.1, `ServletUriComponentsBuilder` ignores information from the `Forwarded` and
+注意: As of 5.1, `ServletUriComponentsBuilder` ignores information from the `Forwarded` and
 `X-Forwarded-*` headers, which specify the client-originated address. Consider using the
 <<filters-forwarded-headers, `ForwardedHeaderFilter`>> to extract and use or to discard
 such headers.
@@ -4248,7 +4248,7 @@ akin to mock testing through proxies to avoid referring to the controller method
 	val uri = uriComponents.encode().toUri()
 ----
 
-NOTE: Controller method signatures are limited in their design when they are supposed to be usable for
+注意: Controller method signatures are limited in their design when they are supposed to be usable for
 link creation with `fromMethodCall`. Aside from needing a proper parameter signature,
 there is a technical limitation on the return type (namely, generating a runtime proxy
 for link builder invocations), so the return type must not be `final`. In particular,
@@ -4287,7 +4287,7 @@ following listing uses `withMethodCall`:
 	val uri = uriComponents.encode().toUri()
 ----
 
-NOTE: As of 5.1, `MvcUriComponentsBuilder` ignores information from the `Forwarded` and
+注意: As of 5.1, `MvcUriComponentsBuilder` ignores information from the `Forwarded` and
 `X-Forwarded-*` headers, which specify the client-originated address. Consider using the
 <<filters-forwarded-headers, ForwardedHeaderFilter>> to extract and use or to discard
 such headers.
@@ -5223,7 +5223,7 @@ in the HTML spec. For such cases date and time formatting can be customized as f
 	}
 ----
 
-NOTE: See <<core.adoc#format-FormatterRegistrar-SPI, the `FormatterRegistrar` SPI>>
+注意: See <<core.adoc#format-FormatterRegistrar-SPI, the `FormatterRegistrar` SPI>>
 and the `FormattingConversionServiceFactoryBean` for more information on when to use
 FormatterRegistrar implementations.
 
@@ -5506,7 +5506,7 @@ It also automatically registers the following well-known modules if they are det
 * https://github.com/FasterXML/jackson-datatype-jdk8[jackson-datatype-jdk8]: Support for other Java 8 types, such as `Optional`.
 * https://github.com/FasterXML/jackson-module-kotlin[`jackson-module-kotlin`]: Support for Kotlin classes and data classes.
 
-NOTE: Enabling indentation with Jackson XML support requires
+注意: Enabling indentation with Jackson XML support requires
 https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.codehaus.woodstox%22%20AND%20a%3A%22woodstox-core-asl%22[`woodstox-core-asl`]
 dependency in addition to https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22jackson-dataformat-xml%22[`jackson-dataformat-xml`] one.
 

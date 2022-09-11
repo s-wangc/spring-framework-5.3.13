@@ -998,7 +998,7 @@ the target collection type to resolve the collection's element type. This lets e
 element in the source array be converted to the collection element type before the
 collection is set on the target field.
 
-NOTE: Because `GenericConverter` is a more complex SPI interface, you should use
+注意: Because `GenericConverter` is a more complex SPI interface, you should use
 it only when you need it. Favor `Converter` or `ConverterFactory` for basic type
 conversion needs.
 
@@ -1075,7 +1075,7 @@ Spring picks up that `ConversionService` and uses it whenever a type
 conversion needs to be performed by the framework. You can also inject this
 `ConversionService` into any of your beans and invoke it directly.
 
-NOTE: If no `ConversionService` is registered with Spring, the original `PropertyEditor`-based
+注意: If no `ConversionService` is registered with Spring, the original `PropertyEditor`-based
 system is used.
 
 To register a default `ConversionService` with Spring, add the following bean definition

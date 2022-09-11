@@ -33,7 +33,7 @@ import org.springframework.web.server.ServerWebExchange;
  * specified in the "Accept-Language" header of the HTTP request (that is,
  * the locale sent by the client browser, normally that of the client's OS).
  *
- * <p>Note: Does not support {@link #setLocaleContext}, since the accept header
+ * <p>注意: Does not support {@link #setLocaleContext}, since the accept header
  * can only be changed through changing the client's locale settings.
  *
  * @author Sebastien Deleuze

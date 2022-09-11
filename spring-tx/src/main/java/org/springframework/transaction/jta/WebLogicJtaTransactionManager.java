@@ -59,7 +59,7 @@ import org.springframework.util.Assert;
  * "transactionManager"/"transactionManagerName", passing in existing handles
  * or specifying corresponding JNDI locations to look up.
  *
- * <p><b>NOTE: This JtaTransactionManager is intended to refine specific transaction
+ * <p><b>注意: This JtaTransactionManager is intended to refine specific transaction
  * demarcation behavior on Spring's side. It will happily co-exist with independently
  * configured WebLogic transaction strategies in your persistence provider, with no
  * need to specifically connect those setups in any way.</b>

@@ -73,7 +73,7 @@ public abstract class StompClientSupport {
 
 	/**
 	 * Configure a scheduler to use for heartbeats and for receipt tracking.
-	 * <p><strong>Note:</strong> Some transports have built-in support to work
+	 * <p><strong>注意:</strong> Some transports have built-in support to work
 	 * with heartbeats and therefore do not require a TaskScheduler.
 	 * Receipts however, if needed, do require a TaskScheduler to be configured.
 	 * <p>By default, this is not set.
@@ -98,7 +98,7 @@ public abstract class StompClientSupport {
 	 * <p>By default this is set to "10000,10000" but subclasses may override
 	 * that default and for example set it to "0,0" if they require a
 	 * TaskScheduler to be configured first.
-	 * <p><strong>Note:</strong> that a heartbeat is sent only in case of
+	 * <p><strong>注意:</strong> that a heartbeat is sent only in case of
 	 * inactivity, i.e. when no other messages are sent. This can present a
 	 * challenge when using an external broker since messages with a non-broker
 	 * destination represent activity but aren't actually forwarded to the broker.

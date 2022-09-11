@@ -46,7 +46,7 @@ public interface WebApplicationContext extends ApplicationContext {
 
 	/**
 	 * Context attribute to bind root WebApplicationContext to on successful startup.
-	 * <p>Note: If the startup of the root context fails, this attribute can contain
+	 * <p>注意: If the startup of the root context fails, this attribute can contain
 	 * an exception or error as value. Use WebApplicationContextUtils for convenient
 	 * lookup of the root WebApplicationContext.
 	 * @see org.springframework.web.context.support.WebApplicationContextUtils#getWebApplicationContext
@@ -80,7 +80,7 @@ public interface WebApplicationContext extends ApplicationContext {
 
 	/**
 	 * Name of the ServletContext init-params environment bean in the factory.
-	 * <p>Note: Possibly merged with ServletConfig parameters.
+	 * <p>注意: Possibly merged with ServletConfig parameters.
 	 * ServletConfig parameters override ServletContext parameters of the same name.
 	 * @see javax.servlet.ServletContext#getInitParameterNames()
 	 * @see javax.servlet.ServletContext#getInitParameter(String)

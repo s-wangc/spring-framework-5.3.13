@@ -29,7 +29,7 @@ import org.springframework.util.Assert;
  * needs internally, including a generic transaction object determined by the
  * concrete transaction manager implementation.
  *
- * <p><b>NOTE:</b> This is <i>not</i> intended for use with other ReactiveTransactionManager
+ * <p><b>注意:</b> This is <i>not</i> intended for use with other ReactiveTransactionManager
  * implementations, in particular not for mock transaction managers in testing environments.
  *
  * @author Mark Paluch

@@ -203,7 +203,7 @@ current call stack. For example, it might fire if the join point was invoked by 
 in the `com.mycompany.web` package or by the `SomeCaller` class. Control flow pointcuts
 are specified by using the `org.springframework.aop.support.ControlFlowPointcut` class.
 
-NOTE: Control flow pointcuts are significantly more expensive to evaluate at runtime than even
+注意: Control flow pointcuts are significantly more expensive to evaluate at runtime than even
 other dynamic pointcuts. In Java 1.4, the cost is about five times that of other dynamic
 pointcuts.
 
@@ -253,7 +253,7 @@ AspectJ), you can declare custom pointcuts, whether static or dynamic. Custom
 pointcuts in Spring can be arbitrarily complex. However, we recommend using the AspectJ pointcut
 expression language, if you can.
 
-NOTE: Later versions of Spring may offer support for "`semantic pointcuts`" as offered by JAC --
+注意: Later versions of Spring may offer support for "`semantic pointcuts`" as offered by JAC --
 for example, "`all methods that change instance variables in the target object.`"
 
 
@@ -348,7 +348,7 @@ return its return value. However, a `MethodInterceptor`, like any around advice,
 return a different value or throw an exception rather than invoke the proceed method.
 However, you do not want to do this without good reason.
 
-NOTE: `MethodInterceptor` implementations offer interoperability with other AOP Alliance-compliant AOP
+注意: `MethodInterceptor` implementations offer interoperability with other AOP Alliance-compliant AOP
 implementations. The other advice types discussed in the remainder of this section
 implement common AOP concepts but in a Spring-specific way. While there is an advantage
 in using the most specific advice type, stick with `MethodInterceptor` around advice if
@@ -521,7 +521,7 @@ methods can be combined in a single class. The following listing shows the final
 	}
 ----
 
-NOTE: If a throws-advice method throws an exception itself, it overrides the
+注意: If a throws-advice method throws an exception itself, it overrides the
 original exception (that is, it changes the exception thrown to the user). The overriding
 exception is typically a RuntimeException, which is compatible with any method
 signature. However, if a throws-advice method throws a checked exception, it must
@@ -824,7 +824,7 @@ business objects (and you should be!), you want to use one of Spring's AOP
 `FactoryBean` implementations. (Remember that a factory bean introduces a layer of indirection, letting
 it create objects of a different type.)
 
-NOTE: The Spring AOP support also uses factory beans under the covers.
+注意: The Spring AOP support also uses factory beans under the covers.
 
 The basic way to create an AOP proxy in Spring is to use the
 `org.springframework.aop.framework.ProxyFactoryBean`. This gives complete control over
@@ -913,7 +913,7 @@ This section serves as the definitive documentation on how the `ProxyFactoryBean
 chooses to create either a JDK-based proxy or a CGLIB-based proxy for a particular target
 object (which is to be proxied).
 
-NOTE: The behavior of the `ProxyFactoryBean` with regard to creating JDK- or CGLIB-based
+注意: The behavior of the `ProxyFactoryBean` with regard to creating JDK- or CGLIB-based
 proxies changed between versions 1.2.x and 2.0 of Spring. The `ProxyFactoryBean` now
 exhibits similar semantics with regard to auto-detecting interfaces as those of the
 `TransactionProxyFactoryBean` class.
@@ -1001,7 +1001,7 @@ Note that the `interceptorNames` property takes a list of `String`, which holds 
 interceptors or advisors in the current factory. You can use advisors, interceptors, before, after
 returning, and throws advice objects. The ordering of advisors is significant.
 
-NOTE: You might be wondering why the list does not hold bean references. The reason for this is
+注意: You might be wondering why the list does not hold bean references. The reason for this is
 that, if the singleton property of the `ProxyFactoryBean` is set to `false`, it must be able to
 return independent proxy instances. If any of the advisors is itself a prototype, an
 independent instance would need to be returned, so it is necessary to be able to obtain
@@ -1374,7 +1374,7 @@ manipulating its advice:
 	assertEquals("Added two advisors", oldAdvisorCount + 2, advised.advisors.size)
 ----
 
-NOTE: It is questionable whether it is advisable (no pun intended) to modify advice on a
+注意: It is questionable whether it is advisable (no pun intended) to modify advice on a
 business object in production, although there are, no doubt, legitimate usage cases.
 However, it can be very useful in development (for example, in tests). We have sometimes
 found it very useful to be able to add test code in the form of an interceptor or other
@@ -1613,7 +1613,7 @@ application's classpath to use this feature. You can also subclass
 `org.springframework.aop.target.AbstractPoolingTargetSource` to support any other
 pooling API.
 
-NOTE: Commons Pool 1.5+ is also supported but is deprecated as of Spring Framework 4.2.
+注意: Commons Pool 1.5+ is also supported but is deprecated as of Spring Framework 4.2.
 
 The following listing shows an example configuration:
 
@@ -1679,7 +1679,7 @@ The cast is defined as follows:
 	println("Max pool size is " + conf.maxSize)
 ----
 
-NOTE: Pooling stateless service objects is not usually necessary. We do not believe it should
+注意: Pooling stateless service objects is not usually necessary. We do not believe it should
 be the default choice, as most stateless objects are naturally thread safe, and instance
 pooling is problematic if resources are cached.
 
@@ -1729,7 +1729,7 @@ of target source, as the following example shows:
 	</bean>
 ----
 
-NOTE: `ThreadLocal` instances come with serious issues (potentially resulting in memory leaks) when
+注意: `ThreadLocal` instances come with serious issues (potentially resulting in memory leaks) when
 incorrectly using them in multi-threaded and multi-classloader environments. You
 should always consider wrapping a threadlocal in some other class and never directly use
 the `ThreadLocal` itself (except in the wrapper class). Also, you should

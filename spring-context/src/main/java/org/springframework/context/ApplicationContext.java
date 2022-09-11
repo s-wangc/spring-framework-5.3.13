@@ -100,7 +100,7 @@ public interface ApplicationContext extends EnvironmentCapable, ListableBeanFact
 	 * {@link ConfigurableApplicationContext} interface offers access to the
 	 * {@link AutowireCapableBeanFactory} interface too. The present method mainly
 	 * serves as a convenient, specific facility on the ApplicationContext interface.
-	 * <p><b>NOTE: As of 4.2, this method will consistently throw IllegalStateException
+	 * <p><b>注意: As of 4.2, this method will consistently throw IllegalStateException
 	 * after the application context has been closed.</b> In current Spring Framework
 	 * versions, only refreshable application contexts behave that way; as of 4.2,
 	 * all application context implementations will be required to comply.

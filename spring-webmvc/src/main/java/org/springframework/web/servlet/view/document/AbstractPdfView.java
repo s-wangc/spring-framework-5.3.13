@@ -42,7 +42,7 @@ import org.springframework.web.servlet.view.AbstractView;
  * <b>We strongly recommend OpenPDF since it is actively maintained
  * and fixes an important vulnerability for untrusted PDF content.</b>
  *
- * <p>Note: Internet Explorer requires a ".pdf" extension, as it doesn't
+ * <p>注意: Internet Explorer requires a ".pdf" extension, as it doesn't
  * always respect the declared content type.
  *
  * @author Rod Johnson

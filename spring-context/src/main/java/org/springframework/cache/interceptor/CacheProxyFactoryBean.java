@@ -98,7 +98,7 @@ public class CacheProxyFactoryBean extends AbstractSingletonProxyFactoryBean
 	/**
 	 * Set a pointcut, i.e. a bean that triggers conditional invocation of the
 	 * {@link CacheInterceptor} depending on the method and attributes passed.
-	 * <p>Note: Additional interceptors are always invoked.
+	 * <p>注意: Additional interceptors are always invoked.
 	 * @see #setPreInterceptors
 	 * @see #setPostInterceptors
 	 */

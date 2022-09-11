@@ -126,7 +126,7 @@ public class PropertyComparator<T> implements Comparator<T> {
 
 	/**
 	 * Sort the given List according to the given sort definition.
-	 * <p>Note: Contained objects have to provide the given property
+	 * <p>注意: Contained objects have to provide the given property
 	 * in the form of a bean property, i.e. a getXXX method.
 	 * @param source the input List
 	 * @param sortDefinition the parameters to sort by
@@ -140,7 +140,7 @@ public class PropertyComparator<T> implements Comparator<T> {
 
 	/**
 	 * Sort the given source according to the given sort definition.
-	 * <p>Note: Contained objects have to provide the given property
+	 * <p>注意: Contained objects have to provide the given property
 	 * in the form of a bean property, i.e. a getXXX method.
 	 * @param source input source
 	 * @param sortDefinition the parameters to sort by

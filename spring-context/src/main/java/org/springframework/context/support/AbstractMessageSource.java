@@ -39,7 +39,7 @@ import org.springframework.util.ObjectUtils;
  * {@link #resolveCodeWithoutArguments} method should be overridden
  * as well, resolving messages without a MessageFormat being involved.
  *
- * <p><b>Note:</b> By default, message texts are only parsed through
+ * <p><b>注意:</b> By default, message texts are only parsed through
  * MessageFormat if arguments have been passed in for the message. In case
  * of no arguments, message texts will be returned as-is. As a consequence,
  * you should only use MessageFormat escaping for messages with actual
@@ -106,7 +106,7 @@ public abstract class AbstractMessageSource extends MessageSourceSupport impleme
 	 * Set whether to use the message code as default message instead of
 	 * throwing a NoSuchMessageException. Useful for development and debugging.
 	 * 默认值是"false".
-	 * <p>Note: In case of a MessageSourceResolvable with multiple codes
+	 * <p>注意: In case of a MessageSourceResolvable with multiple codes
 	 * (like a FieldError) and a MessageSource that has a parent MessageSource,
 	 * do <i>not</i> activate "useCodeAsDefaultMessage" in the <i>parent</i>:
 	 * Else, you'll get the first code returned as message by the parent,

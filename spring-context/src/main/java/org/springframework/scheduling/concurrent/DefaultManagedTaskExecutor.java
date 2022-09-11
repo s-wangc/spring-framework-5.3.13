@@ -30,7 +30,7 @@ import org.springframework.lang.Nullable;
  * JNDI-based variant of {@link ConcurrentTaskExecutor}, performing a default lookup for
  * JSR-236's "java:comp/DefaultManagedExecutorService" in a Java EE 7/8 environment.
  *
- * <p>Note: This class is not strictly JSR-236 based; it can work with any regular
+ * <p>注意: This class is not strictly JSR-236 based; it can work with any regular
  * {@link java.util.concurrent.Executor} that can be found in JNDI.
  * The actual adapting to {@link javax.enterprise.concurrent.ManagedExecutorService}
  * happens in the base class {@link ConcurrentTaskExecutor} itself.

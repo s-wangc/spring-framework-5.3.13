@@ -37,7 +37,7 @@ import io.rsocket.ConnectionSetupPayload;
  * On the client side this method is only a callback and does not affect the
  * establishment of the connection.
  *
- * <p><strong>Note:</strong> an {@code @ConnectMapping} method may start
+ * <p><strong>注意:</strong> an {@code @ConnectMapping} method may start
  * requests to the remote through an
  * {@link org.springframework.messaging.rsocket.RSocketRequester RSocketRequester}
  * method argument, but it must do so independent of the handling thread (e.g.

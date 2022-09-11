@@ -57,7 +57,7 @@ import org.springframework.lang.Nullable;
  * to the {@code filename} variable</li>
  * </ul>
  *
- * <p><strong>Note:</strong> a pattern and a path must both be absolute or must
+ * <p><strong>注意:</strong> a pattern and a path must both be absolute or must
  * both be relative in order for the two to match. Therefore it is recommended
  * that users of this implementation to sanitize patterns in order to prefix
  * them with "/" as it makes sense in the context in which they're used.

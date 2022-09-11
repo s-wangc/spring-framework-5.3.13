@@ -128,7 +128,7 @@ public abstract class AbstractDispatcherServletInitializer extends AbstractConte
 	/**
 	 * Create a {@link DispatcherServlet} (or other kind of {@link FrameworkServlet}-derived
 	 * dispatcher) with the specified {@link WebApplicationContext}.
-	 * <p>Note: This allows for any {@link FrameworkServlet} subclass as of 4.2.3.
+	 * <p>注意: This allows for any {@link FrameworkServlet} subclass as of 4.2.3.
 	 * Previously, it insisted on returning a {@link DispatcherServlet} or subclass thereof.
 	 */
 	protected FrameworkServlet createDispatcherServlet(WebApplicationContext servletAppContext) {

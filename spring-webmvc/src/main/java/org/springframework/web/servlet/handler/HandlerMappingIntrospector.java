@@ -64,7 +64,7 @@ import org.springframework.web.util.UrlPathHelper;
  * request.
  * </ul>
  *
- * <p><strong>Note:</strong> This is primarily an SPI to allow Spring Security
+ * <p><strong>注意:</strong> This is primarily an SPI to allow Spring Security
  * to align its pattern matching with the same pattern matching that would be
  * used in Spring MVC for a given request, in order to avoid security issues.
  * Use of this introspector should be avoided for other purposes because it

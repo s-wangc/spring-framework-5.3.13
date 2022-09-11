@@ -85,7 +85,7 @@ public abstract class ConnectionFactoryUtils {
 	 * if transaction synchronization is active (e.g. if in a JTA transaction).
 	 * @param cf the ConnectionFactory to obtain Connection from
 	 * @param spec the ConnectionSpec for the desired Connection (may be {@code null}).
-	 * Note: If this is specified, a new Connection will be obtained for every call,
+	 * 注意: If this is specified, a new Connection will be obtained for every call,
 	 * without participating in a shared transactional Connection.
 	 * @return a CCI Connection from the given ConnectionFactory
 	 * @throws org.springframework.jca.cci.CannotGetCciConnectionException

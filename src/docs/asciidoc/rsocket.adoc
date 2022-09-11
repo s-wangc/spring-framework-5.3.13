@@ -721,7 +721,7 @@ use the following method arguments:
 | The payload of the request. This can be a concrete value of asynchronous types like
   `Mono` or `Flux`.
 
-  *Note:* Use of the annotation is optional. A method argument that is not a simple type
+  *注意:* Use of the annotation is optional. A method argument that is not a simple type
   and is not any of the other supported arguments, is assumed to be the expected payload.
 
 | `RSocketRequester`

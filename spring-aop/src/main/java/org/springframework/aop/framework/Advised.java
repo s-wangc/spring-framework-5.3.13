@@ -167,7 +167,7 @@ public interface Advised extends TargetClassAware {
 
 	/**
 	 * Replace the given advisor.
-	 * <p><b>Note:</b> If the advisor is an {@link org.springframework.aop.IntroductionAdvisor}
+	 * <p><b>注意:</b> If the advisor is an {@link org.springframework.aop.IntroductionAdvisor}
 	 * and the replacement is not or implements different interfaces, the proxy will need
 	 * to be re-obtained or the old interfaces won't be supported and the new interface
 	 * won't be implemented.
@@ -198,7 +198,7 @@ public interface Advised extends TargetClassAware {
 	 * <p>This will be wrapped in a {@link org.springframework.aop.support.DefaultPointcutAdvisor}
 	 * with a pointcut that always applies, and returned from the {@link #getAdvisors()}
 	 * method in this wrapped form.
-	 * <p>Note: The given advice will apply to all invocations on the proxy,
+	 * <p>注意: The given advice will apply to all invocations on the proxy,
 	 * even to the {@code toString()} method! Use appropriate advice implementations
 	 * or specify appropriate pointcuts to apply to a narrower set of methods.
 	 * @param pos index from 0 (head)

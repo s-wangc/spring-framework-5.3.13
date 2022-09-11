@@ -77,7 +77,7 @@ import org.springframework.util.StringUtils;
  *
  * <p>Can be used within a service implementation via direct instantiation
  * with a DataSource reference, or get prepared in an application context
- * and given to services as bean reference. Note: The DataSource should
+ * and given to services as bean reference. 注意: The DataSource should
  * always be configured as a bean in the application context, in the first case
  * given to the service directly, in the second case to the prepared template.
  *
@@ -88,7 +88,7 @@ import org.springframework.util.StringUtils;
  * <p>All SQL operations performed by this class are logged at debug level,
  * using "org.springframework.jdbc.core.JdbcTemplate" as log category.
  *
- * <p><b>NOTE: An instance of this class is thread-safe once configured.</b>
+ * <p><b>注意: An instance of this class is thread-safe once configured.</b>
  *
  * @author Rod Johnson
  * @author Juergen Hoeller
@@ -156,7 +156,7 @@ public class JdbcTemplate extends JdbcAccessor implements JdbcOperations {
 
 	/**
 	 * Construct a new JdbcTemplate for bean usage.
-	 * <p>Note: The DataSource has to be set before using the instance.
+	 * <p>注意: The DataSource has to be set before using the instance.
 	 * @see #setDataSource
 	 */
 	public JdbcTemplate() {
@@ -164,7 +164,7 @@ public class JdbcTemplate extends JdbcAccessor implements JdbcOperations {
 
 	/**
 	 * Construct a new JdbcTemplate, given a DataSource to obtain connections from.
-	 * <p>Note: This will not trigger initialization of the exception translator.
+	 * <p>注意: This will not trigger initialization of the exception translator.
 	 * @param dataSource the JDBC DataSource to obtain connections from
 	 */
 	public JdbcTemplate(DataSource dataSource) {
@@ -174,7 +174,7 @@ public class JdbcTemplate extends JdbcAccessor implements JdbcOperations {
 
 	/**
 	 * Construct a new JdbcTemplate, given a DataSource to obtain connections from.
-	 * <p>Note: Depending on the "lazyInit" flag, initialization of the exception translator
+	 * <p>注意: Depending on the "lazyInit" flag, initialization of the exception translator
 	 * will be triggered.
 	 * @param dataSource the JDBC DataSource to obtain connections from
 	 * @param lazyInit whether to lazily initialize the SQLExceptionTranslator
@@ -212,7 +212,7 @@ public class JdbcTemplate extends JdbcAccessor implements JdbcOperations {
 	 * row data that will never be read by the application.
 	 * <p>Default is -1, indicating to use the JDBC driver's default configuration
 	 * (i.e. to not pass a specific fetch size setting on to the driver).
-	 * <p>Note: As of 4.3, negative values other than -1 will get passed on to the
+	 * <p>注意: As of 4.3, negative values other than -1 will get passed on to the
 	 * driver, since e.g. MySQL supports special behavior for {@code Integer.MIN_VALUE}.
 	 * @see java.sql.Statement#setFetchSize
 	 */
@@ -235,7 +235,7 @@ public class JdbcTemplate extends JdbcAccessor implements JdbcOperations {
 	 * that might return a large number of matches).
 	 * <p>Default is -1, indicating to use the JDBC driver's default configuration
 	 * (i.e. to not pass a specific max rows setting on to the driver).
-	 * <p>Note: As of 4.3, negative values other than -1 will get passed on to the
+	 * <p>注意: As of 4.3, negative values other than -1 will get passed on to the
 	 * driver, in sync with {@link #setFetchSize}'s support for special MySQL values.
 	 * @see java.sql.Statement#setMaxRows
 	 */
@@ -254,7 +254,7 @@ public class JdbcTemplate extends JdbcAccessor implements JdbcOperations {
 	 * Set the query timeout for statements that this JdbcTemplate executes.
 	 * <p>Default is -1, indicating to use the JDBC driver's default
 	 * (i.e. to not pass a specific query timeout setting on the driver).
-	 * <p>Note: Any timeout specified here will be overridden by the remaining
+	 * <p>注意: Any timeout specified here will be overridden by the remaining
 	 * transaction timeout when executing within a transaction that has a
 	 * timeout specified at the transaction level.
 	 * @see java.sql.Statement#setQueryTimeout

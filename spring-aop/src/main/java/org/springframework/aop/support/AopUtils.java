@@ -182,7 +182,7 @@ public abstract class AopUtils {
 	 * is one. E.g. the method may be {@code IFoo.bar()} and the target class
 	 * may be {@code DefaultFoo}. In this case, the method may be
 	 * {@code DefaultFoo.bar()}. This enables attributes on that method to be found.
-	 * <p><b>NOTE:</b> In contrast to {@link org.springframework.util.ClassUtils#getMostSpecificMethod},
+	 * <p><b>注意:</b> In contrast to {@link org.springframework.util.ClassUtils#getMostSpecificMethod},
 	 * this method resolves Java 5 bridge methods in order to retrieve attributes
 	 * from the <i>original</i> method definition.
 	 * @param method the method to be invoked, which may come from an interface

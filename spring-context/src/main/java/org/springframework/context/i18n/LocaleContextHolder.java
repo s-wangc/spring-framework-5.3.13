@@ -169,7 +169,7 @@ public final class LocaleContextHolder {
 	/**
 	 * Set a shared default locale at the framework level,
 	 * as an alternative to the JVM-wide default locale.
-	 * <p><b>NOTE:</b> This can be useful to set an application-level
+	 * <p><b>注意:</b> This can be useful to set an application-level
 	 * default locale which differs from the JVM-wide default locale.
 	 * However, this requires each such application to operate against
 	 * locally deployed Spring Framework jars. Do not deploy Spring
@@ -189,7 +189,7 @@ public final class LocaleContextHolder {
 	 * or the system default Locale otherwise. This is effectively a
 	 * replacement for {@link java.util.Locale#getDefault()},
 	 * able to optionally respect a user-level Locale setting.
-	 * <p>Note: This method has a fallback to the shared default Locale,
+	 * <p>注意: This method has a fallback to the shared default Locale,
 	 * either at the framework level or at the JVM-wide system level.
 	 * If you'd like to check for the raw LocaleContext content
 	 * (which may indicate no specific locale through {@code null}, use
@@ -272,7 +272,7 @@ public final class LocaleContextHolder {
 	/**
 	 * Set a shared default time zone at the framework level,
 	 * as an alternative to the JVM-wide default time zone.
-	 * <p><b>NOTE:</b> This can be useful to set an application-level
+	 * <p><b>注意:</b> This can be useful to set an application-level
 	 * default time zone which differs from the JVM-wide default time zone.
 	 * However, this requires each such application to operate against
 	 * locally deployed Spring Framework jars. Do not deploy Spring
@@ -292,7 +292,7 @@ public final class LocaleContextHolder {
 	 * or the system default TimeZone otherwise. This is effectively a
 	 * replacement for {@link java.util.TimeZone#getDefault()},
 	 * able to optionally respect a user-level TimeZone setting.
-	 * <p>Note: This method has a fallback to the shared default TimeZone,
+	 * <p>注意: This method has a fallback to the shared default TimeZone,
 	 * either at the framework level or at the JVM-wide system level.
 	 * If you'd like to check for the raw LocaleContext content
 	 * (which may indicate no specific time zone through {@code null}, use

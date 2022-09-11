@@ -145,7 +145,7 @@ class CollectionFactoryTests {
 		// Use a try-catch block to ensure that the exception is thrown as a result of the
 		// next line and not as a result of the previous line.
 
-		// Note: 'map' values must be of type Integer, but the values in the map
+		// 注意: 'map' values must be of type Integer, but the values in the map
 		// returned by createMap() are of type java.util.List. Thus 1 cannot be
 		// cast to a List.
 

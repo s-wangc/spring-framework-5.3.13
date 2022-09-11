@@ -125,7 +125,7 @@ public abstract class EntityManagerFactoryUtils {
 	/**
 	 * Obtain a JPA EntityManager from the given factory. Is aware of a corresponding
 	 * EntityManager bound to the current thread, e.g. when using JpaTransactionManager.
-	 * <p>Note: Will return {@code null} if no thread-bound EntityManager found!
+	 * <p>注意: Will return {@code null} if no thread-bound EntityManager found!
 	 * @param emf the EntityManagerFactory to create the EntityManager with
 	 * @return the EntityManager, or {@code null} if none found
 	 * @throws DataAccessResourceFailureException if the EntityManager couldn't be obtained
@@ -141,7 +141,7 @@ public abstract class EntityManagerFactoryUtils {
 	/**
 	 * Obtain a JPA EntityManager from the given factory. Is aware of a corresponding
 	 * EntityManager bound to the current thread, e.g. when using JpaTransactionManager.
-	 * <p>Note: Will return {@code null} if no thread-bound EntityManager found!
+	 * <p>注意: Will return {@code null} if no thread-bound EntityManager found!
 	 * @param emf the EntityManagerFactory to create the EntityManager with
 	 * @param properties the properties to be passed into the {@code createEntityManager}
 	 * call (may be {@code null})

@@ -195,7 +195,7 @@ public class UriComponentsBuilder implements UriBuilder, Cloneable {
 
 	/**
 	 * Create a builder that is initialized from the given {@code URI}.
-	 * <p><strong>Note:</strong> the components in the resulting builder will be
+	 * <p><strong>注意:</strong> the components in the resulting builder will be
 	 * in fully encoded (raw) form and further changes must also supply values
 	 * that are fully encoded, for example via methods in {@link UriUtils}.
 	 * In addition please use {@link #build(boolean)} with a value of "true" to
@@ -212,7 +212,7 @@ public class UriComponentsBuilder implements UriBuilder, Cloneable {
 
 	/**
 	 * Create a builder that is initialized with the given URI string.
-	 * <p><strong>Note:</strong> The presence of reserved characters can prevent
+	 * <p><strong>注意:</strong> The presence of reserved characters can prevent
 	 * correct parsing of the URI string. For example if a query parameter
 	 * contains {@code '='} or {@code '&'} characters, the query string cannot
 	 * be parsed unambiguously. Such values should be substituted for URI
@@ -275,7 +275,7 @@ public class UriComponentsBuilder implements UriBuilder, Cloneable {
 
 	/**
 	 * Create a URI components builder from the given HTTP URL String.
-	 * <p><strong>Note:</strong> The presence of reserved characters can prevent
+	 * <p><strong>注意:</strong> The presence of reserved characters can prevent
 	 * correct parsing of the URI string. For example if a query parameter
 	 * contains {@code '='} or {@code '&'} characters, the query string cannot
 	 * be parsed unambiguously. Such values should be substituted for URI
@@ -828,7 +828,7 @@ public class UriComponentsBuilder implements UriBuilder, Cloneable {
 	 * "Forwarded" (<a href="https://tools.ietf.org/html/rfc7239">RFC 7239</a>,
 	 * or "X-Forwarded-Host", "X-Forwarded-Port", and "X-Forwarded-Proto" if
 	 * "Forwarded" is not found.
-	 * <p><strong>Note:</strong> this method uses values from forwarded headers,
+	 * <p><strong>注意:</strong> this method uses values from forwarded headers,
 	 * if present, in order to reflect the client-originated protocol and address.
 	 * Consider using the {@code ForwardedHeaderFilter} in order to choose from a
 	 * central place whether to extract and use, or to discard such headers.

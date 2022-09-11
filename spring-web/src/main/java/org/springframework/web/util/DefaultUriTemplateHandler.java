@@ -34,7 +34,7 @@ import java.util.Map;
  * @author Rossen Stoyanchev
  * @since 4.2
  * @deprecated as of 5.0 in favor of {@link DefaultUriBuilderFactory}.
- * <p><strong>Note:</strong> {@link DefaultUriBuilderFactory} has a different
+ * <p><strong>注意:</strong> {@link DefaultUriBuilderFactory} has a different
  * default for the {@link #setParsePath(boolean) parsePath} property (from
  * false to true).
  */
@@ -77,7 +77,7 @@ public class DefaultUriTemplateHandler extends AbstractUriTemplateHandler {
 	 * a URI variable into a path segment the "/" character is illegal and
 	 * encoded. The ";" character however is legal and not encoded even though
 	 * it has a reserved purpose.
-	 * <p><strong>Note:</strong> this property supersedes the need to also set
+	 * <p><strong>注意:</strong> this property supersedes the need to also set
 	 * the {@link #setParsePath parsePath} property.
 	 * @param strictEncoding whether to perform strict encoding
 	 * @since 4.3

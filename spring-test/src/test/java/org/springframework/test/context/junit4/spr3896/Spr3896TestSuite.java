@@ -29,7 +29,7 @@ import org.junit.runners.Suite.SuiteClasses;
  * @since 2.5
  */
 @RunWith(Suite.class)
-// Note: the following 'multi-line' layout is for enhanced code readability.
+// 注意: the following 'multi-line' layout is for enhanced code readability.
 @SuiteClasses({
 
 DefaultLocationsBaseTests.class,

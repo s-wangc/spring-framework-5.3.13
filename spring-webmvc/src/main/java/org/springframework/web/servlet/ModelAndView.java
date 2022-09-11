@@ -109,7 +109,7 @@ public class ModelAndView {
 
 	/**
 	 * Create a new ModelAndView given a View object and a model.
-	 * <em>Note: the supplied model data is copied into the internal
+	 * <em>注意: the supplied model data is copied into the internal
 	 * storage of this class. You should not consider to modify the supplied
 	 * Map after supplying it to this class</em>
 	 * @param view the View object to render

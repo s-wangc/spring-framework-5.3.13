@@ -77,7 +77,7 @@ public interface HibernateOperations {
 	 * to the caller (can only be unchecked). Hibernate exceptions are
 	 * transformed into appropriate DAO ones. Allows for returning a result
 	 * object, that is a domain object or a collection of domain objects.
-	 * <p>Note: Callback code is not supposed to handle transactions itself!
+	 * <p>注意: Callback code is not supposed to handle transactions itself!
 	 * Use an appropriate transaction manager like
 	 * {@link HibernateTransactionManager}. Generally, callback code must not
 	 * touch any {@code Session} lifecycle methods, like close,
@@ -234,7 +234,7 @@ public interface HibernateOperations {
 
 	/**
 	 * Return all persistent instances of the given entity class.
-	 * Note: Use queries or criteria for retrieving a specific subset.
+	 * 注意: Use queries or criteria for retrieving a specific subset.
 	 * @param entityClass a persistent class
 	 * @return a {@link List} containing 0 or more persistent instances
 	 * @throws DataAccessException if there is a Hibernate error
@@ -590,7 +590,7 @@ public interface HibernateOperations {
 	/**
 	 * Execute a query based on a given Hibernate criteria object.
 	 * @param criteria the detached Hibernate criteria object.
-	 * <b>Note: Do not reuse criteria objects! They need to recreated per execution,
+	 * <b>注意: Do not reuse criteria objects! They need to recreated per execution,
 	 * due to the suboptimal design of Hibernate's criteria facility.</b>
 	 * @return a {@link List} containing 0 or more persistent instances
 	 * @throws DataAccessException in case of Hibernate errors
@@ -601,7 +601,7 @@ public interface HibernateOperations {
 	/**
 	 * Execute a query based on the given Hibernate criteria object.
 	 * @param criteria the detached Hibernate criteria object.
-	 * <b>Note: Do not reuse criteria objects! They need to recreated per execution,
+	 * <b>注意: Do not reuse criteria objects! They need to recreated per execution,
 	 * due to the suboptimal design of Hibernate's criteria facility.</b>
 	 * @param firstResult the index of the first result object to be retrieved
 	 * (numbered from 0)

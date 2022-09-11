@@ -47,7 +47,7 @@ import org.springframework.util.StringUtils;
  * and captures it as a variable named "spring"</li>
  * </ul>
  *
- * <p><strong>Note:</strong> In contrast to
+ * <p><strong>注意:</strong> In contrast to
  * {@link org.springframework.util.AntPathMatcher}, {@code **} is supported only
  * at the end of a pattern. For example {@code /pages/{**}} is valid but
  * {@code /pages/{**}/details} is not. The same applies also to the capturing

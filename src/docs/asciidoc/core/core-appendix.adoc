@@ -574,7 +574,7 @@ This element activates the Spring infrastructure to detect annotations in bean c
 Alternatively, you can choose to explicitly activate the individual `BeanPostProcessors`
 for those annotations.
 
-NOTE: This element does not activate processing of Spring's
+注意: This element does not activate processing of Spring's
 <<data-access.adoc#transaction-declarative-annotations, `@Transactional`>> annotation;
 you can use the <<data-access.adoc#tx-decl-explained, `<tx:annotation-driven/>`>>
 element for that purpose. Similarly, Spring's
@@ -758,7 +758,7 @@ The second of the two preceding snippets
 creates a bean in the container (identified by the name `dateFormat` of type
 `SimpleDateFormat`) with a couple of properties set.
 
-NOTE: The schema-based approach to creating configuration format allows for tight integration
+注意: The schema-based approach to creating configuration format allows for tight integration
 with an IDE that has a schema-aware XML editor. By using a properly authored schema, you
 can use autocompletion to let a user choose between several configuration options
 defined in the enumeration.

@@ -44,7 +44,7 @@ import org.springframework.util.ErrorHandler;
  * style XA-aware JMS messaging. The actual registration process is up to concrete
  * subclasses.
  *
- * <p><b>NOTE:</b> The default behavior of this message listener container is to
+ * <p><b>注意:</b> The default behavior of this message listener container is to
  * <b>never</b> propagate an exception thrown by a message listener up to the JMS
  * provider. Instead, it will log any such exception at the error level.
  * This means that from the perspective of the attendant JMS provider no such
@@ -189,7 +189,7 @@ public abstract class AbstractMessageListenerContainer extends AbstractJmsListen
 	 * Set the destination to receive messages from.
 	 * <p>Alternatively, specify a "destinationName", to be dynamically
 	 * resolved via the {@link org.springframework.jms.support.destination.DestinationResolver}.
-	 * <p>Note: The destination may be replaced at runtime, with the listener
+	 * <p>注意: The destination may be replaced at runtime, with the listener
 	 * container picking up the new destination immediately (works e.g. with
 	 * DefaultMessageListenerContainer, as long as the cache level is less than
 	 * CACHE_CONSUMER). However, this is considered advanced usage; use it with care!
@@ -218,7 +218,7 @@ public abstract class AbstractMessageListenerContainer extends AbstractJmsListen
 	 * <p>The specified name will be dynamically resolved via the configured
 	 * {@link #setDestinationResolver destination resolver}.
 	 * <p>Alternatively, specify a JMS {@link Destination} object as "destination".
-	 * <p>Note: The destination may be replaced at runtime, with the listener
+	 * <p>注意: The destination may be replaced at runtime, with the listener
 	 * container picking up the new destination immediately (works e.g. with
 	 * DefaultMessageListenerContainer, as long as the cache level is less than
 	 * CACHE_CONSUMER). However, this is considered advanced usage; use it with care!
@@ -252,7 +252,7 @@ public abstract class AbstractMessageListenerContainer extends AbstractJmsListen
 	 * Set the JMS message selector expression (or {@code null} if none).
 	 * 默认值是none.
 	 * <p>See the JMS specification for a detailed definition of selector expressions.
-	 * <p>Note: The message selector may be replaced at runtime, with the listener
+	 * <p>注意: The message selector may be replaced at runtime, with the listener
 	 * container picking up the new selector value immediately (works e.g. with
 	 * DefaultMessageListenerContainer, as long as the cache level is less than
 	 * CACHE_CONSUMER). However, this is considered advanced usage; use it with care!
@@ -274,7 +274,7 @@ public abstract class AbstractMessageListenerContainer extends AbstractJmsListen
 	 * Set the message listener implementation to register.
 	 * This can be either a standard JMS {@link MessageListener} object
 	 * or a Spring {@link SessionAwareMessageListener} object.
-	 * <p>Note: The message listener may be replaced at runtime, with the listener
+	 * <p>注意: The message listener may be replaced at runtime, with the listener
 	 * container picking up the new listener object immediately (works e.g. with
 	 * DefaultMessageListenerContainer, as long as the cache level is less than
 	 * CACHE_CONSUMER). However, this is considered advanced usage; use it with care!
@@ -395,7 +395,7 @@ public abstract class AbstractMessageListenerContainer extends AbstractJmsListen
 	 * of a topic (pub-sub domain) with a shared or durable subscription.
 	 * <p>The subscription name needs to be unique within this client's
 	 * JMS client id. Default is the class name of the specified message listener.
-	 * <p>Note: Only 1 concurrent consumer (which is the default of this
+	 * <p>注意: Only 1 concurrent consumer (which is the default of this
 	 * message listener container) is allowed for each subscription,
 	 * except for a shared subscription (which requires JMS 2.0).
 	 * @since 4.1
@@ -423,7 +423,7 @@ public abstract class AbstractMessageListenerContainer extends AbstractJmsListen
 	 * to pub-sub domain mode and activates subscription durability as well.
 	 * <p>The durable subscription name needs to be unique within this client's
 	 * JMS client id. Default is the class name of the specified message listener.
-	 * <p>Note: Only 1 concurrent consumer (which is the default of this
+	 * <p>注意: Only 1 concurrent consumer (which is the default of this
 	 * message listener container) is allowed for each durable subscription,
 	 * except for a shared durable subscription (which requires JMS 2.0).
 	 * @see #setPubSubDomain
@@ -595,7 +595,7 @@ public abstract class AbstractMessageListenerContainer extends AbstractJmsListen
 	 * even in the stopping phase, with the drawback that even newly sent
 	 * messages might still get processed (if coming in before all receive
 	 * timeouts have expired).
-	 * <p><b>NOTE:</b> Aborting receive attempts for such incoming messages
+	 * <p><b>注意:</b> Aborting receive attempts for such incoming messages
 	 * might lead to the provider's retry count decreasing for the affected
 	 * messages. If you have a high number of concurrent consumers, make sure
 	 * that the number of retries is higher than the number of consumers,
@@ -832,7 +832,7 @@ public abstract class AbstractMessageListenerContainer extends AbstractJmsListen
 	 * Check whether the given Session is locally transacted, that is, whether
 	 * its transaction is managed by this listener container's Session handling
 	 * and not by an external transaction coordinator.
-	 * <p>Note: The Session's own transacted flag will already have been checked
+	 * <p>注意: The Session's own transacted flag will already have been checked
 	 * before. This method is about finding out whether the Session's transaction
 	 * is local or externally coordinated.
 	 * @param session the Session to check

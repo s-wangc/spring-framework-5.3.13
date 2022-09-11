@@ -76,7 +76,7 @@ public abstract class AbstractResourceBasedMessageSource extends AbstractMessage
 	 * <p>The associated resource bundles will be checked sequentially when resolving
 	 * a message code. Note that message definitions in a <i>previous</i> resource
 	 * bundle will override ones in a later bundle, due to the sequential lookup.
-	 * <p>Note: In contrast to {@link #addBasenames}, this replaces existing entries
+	 * <p>注意: In contrast to {@link #addBasenames}, this replaces existing entries
 	 * with the given names and can therefore also be used to reset the configuration.
 	 * @param basenames an array of basenames
 	 * @see #setBasename
@@ -89,7 +89,7 @@ public abstract class AbstractResourceBasedMessageSource extends AbstractMessage
 
 	/**
 	 * Add the specified basenames to the existing basename configuration.
-	 * <p>Note: If a given basename already exists, the position of its entry
+	 * <p>注意: If a given basename already exists, the position of its entry
 	 * will remain as in the original set. New entries will be added at the
 	 * end of the list, to be searched after existing basenames.
 	 * @since 4.3

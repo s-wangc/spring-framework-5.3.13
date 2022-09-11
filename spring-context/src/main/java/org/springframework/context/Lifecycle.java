@@ -19,7 +19,7 @@ package org.springframework.context;
 /**
  * A common interface defining methods for start/stop lifecycle control.
  * The typical use case for this is to control asynchronous processing.
- * <b>NOTE: This interface does not imply specific auto-startup semantics.
+ * <b>注意: This interface does not imply specific auto-startup semantics.
  * Consider implementing {@link SmartLifecycle} for that purpose.</b>
  *
  * <p>Can be implemented by both components (typically a Spring bean defined in a

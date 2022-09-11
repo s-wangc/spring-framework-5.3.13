@@ -43,7 +43,7 @@ import org.springframework.util.ReflectionUtils;
  * {@link JmsTransactionManager} binds instances of this class to the thread,
  * for a given JMS {@link ConnectionFactory}.
  *
- * <p>Note: This is an SPI class, not intended to be used by applications.
+ * <p>注意: This is an SPI class, not intended to be used by applications.
  *
  * @author Juergen Hoeller
  * @since 1.1

@@ -39,7 +39,7 @@ import org.springframework.util.StringUtils;
  * a space will be encoded into {@code %20}. This behavior can be changed
  * by calling the {@link #URIEditor(boolean)} constructor.
  *
- * <p>Note: A URI is more relaxed than a URL in that it does not require
+ * <p>注意: A URI is more relaxed than a URL in that it does not require
  * a valid protocol to be specified. Any scheme within a valid URI syntax
  * is allowed, even without a matching protocol handler being registered.
  *

@@ -35,7 +35,7 @@ import org.springframework.util.Assert;
 
 /**
  * ----------------------
- * <p><strong>NOTE:</strong> This class was copied from
+ * <p><strong>注意:</strong> This class was copied from
  * {@code org.springframework.http.server.reactive.ChannelSendOperator} and is
  * identical to it. It's used for the same purpose, i.e. the ability to switch to
  * alternate handling via annotated exception handler methods if the output

@@ -416,7 +416,7 @@ public class AspectJExpressionPointcut extends AbstractExpressionPointcut
 	}
 
 	private void bindParameters(ProxyMethodInvocation invocation, JoinPointMatch jpm) {
-		// Note: Can't use JoinPointMatch.getClass().getName() as the key, since
+		// 注意: Can't use JoinPointMatch.getClass().getName() as the key, since
 		// Spring AOP does all the matching at a join point, and then all the invocations
 		// under this scenario, if we just use JoinPointMatch as the key, then
 		// 'last man wins' which is not what we want at all.
@@ -430,7 +430,7 @@ public class AspectJExpressionPointcut extends AbstractExpressionPointcut
 		if (targetMethod.getDeclaringClass().isInterface()) {
 			// Try to build the most specific interface possible for inherited methods to be
 			// considered for sub-interface matches as well, in particular for proxy classes.
-			// Note: AspectJ is only going to take Method.getDeclaringClass() into account.
+			// 注意: AspectJ is only going to take Method.getDeclaringClass() into account.
 			Set<Class<?>> ifcs = ClassUtils.getAllInterfacesForClassAsSet(targetClass);
 			if (ifcs.size() > 1) {
 				try {

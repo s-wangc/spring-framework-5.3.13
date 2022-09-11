@@ -35,7 +35,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration
-// NOTE: if we omit the @WebAppConfiguration declaration, the ApplicationContext will fail
+// 注意: if we omit the @WebAppConfiguration declaration, the ApplicationContext will fail
 // to load since @EnableWebMvc requires that the context be a WebApplicationContext.
 @WebAppConfiguration
 public class Spr9799AnnotationConfigTests {

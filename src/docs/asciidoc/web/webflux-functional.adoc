@@ -854,5 +854,5 @@ We only let the handler function be run when access is allowed.
 Besides using the `filter` method on the router function builder, it is possible to apply a
 filter to an existing router function via `RouterFunction.filter(HandlerFilterFunction)`.
 
-NOTE: CORS support for functional endpoints is provided through a dedicated
+注意: CORS support for functional endpoints is provided through a dedicated
 <<webflux-cors.adoc#webflux-cors-webfilter, `CorsWebFilter`>>.

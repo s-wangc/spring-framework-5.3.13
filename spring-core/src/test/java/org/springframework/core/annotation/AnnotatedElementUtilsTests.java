@@ -246,7 +246,7 @@ class AnnotatedElementUtilsTests {
 	}
 
 	/**
-	 * Note: this functionality is required by {@code org.springframework.context.annotation.ProfileCondition}.
+	 * 注意: this functionality is required by {@code org.springframework.context.annotation.ProfileCondition}.
 	 */
 	@Test
 	void getAllAnnotationAttributesOnClassWithMultipleComposedAnnotations() {

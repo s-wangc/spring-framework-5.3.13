@@ -45,7 +45,7 @@ import org.springframework.lang.Nullable;
  * scenarios, all beans will be defined by external bean definitions anyway, so most
  * applications don't need to worry about this differentiation.
  *
- * <p><b>NOTE:</b> With the exception of {@code getBeanDefinitionCount}
+ * <p><b>注意:</b> With the exception of {@code getBeanDefinitionCount}
  * and {@code containsBeanDefinition}, the methods in this interface
  * are not designed for frequent invocation. Implementations may be slow.
  *
@@ -128,7 +128,7 @@ public interface ListableBeanFactory extends BeanFactory {
 	 * Return the names of beans matching the given type (including subclasses),
 	 * judging from either bean definitions or the value of {@code getObjectType}
 	 * in the case of FactoryBeans.
-	 * <p><b>NOTE: This method introspects top-level beans only.</b> It does <i>not</i>
+	 * <p><b>注意: This method introspects top-level beans only.</b> It does <i>not</i>
 	 * check nested beans which might match the specified type as well.
 	 * <p>Does consider objects created by FactoryBeans, which means that FactoryBeans
 	 * will get initialized. If the object created by the FactoryBean doesn't match,
@@ -136,7 +136,7 @@ public interface ListableBeanFactory extends BeanFactory {
 	 * <p>Does not consider any hierarchy this factory may participate in.
 	 * Use BeanFactoryUtils' {@code beanNamesForTypeIncludingAncestors}
 	 * to include beans in ancestor factories too.
-	 * <p>Note: Does <i>not</i> ignore singleton beans that have been registered
+	 * <p>注意: Does <i>not</i> ignore singleton beans that have been registered
 	 * by other means than bean definitions.
 	 * <p>This version of {@code getBeanNamesForType} matches all kinds of beans,
 	 * be it singletons, prototypes, or FactoryBeans. In most implementations, the
@@ -157,7 +157,7 @@ public interface ListableBeanFactory extends BeanFactory {
 	 * Return the names of beans matching the given type (including subclasses),
 	 * judging from either bean definitions or the value of {@code getObjectType}
 	 * in the case of FactoryBeans.
-	 * <p><b>NOTE: This method introspects top-level beans only.</b> It does <i>not</i>
+	 * <p><b>注意: This method introspects top-level beans only.</b> It does <i>not</i>
 	 * check nested beans which might match the specified type as well.
 	 * <p>Does consider objects created by FactoryBeans if the "allowEagerInit" flag is set,
 	 * which means that FactoryBeans will get initialized. If the object created by the
@@ -167,7 +167,7 @@ public interface ListableBeanFactory extends BeanFactory {
 	 * <p>Does not consider any hierarchy this factory may participate in.
 	 * Use BeanFactoryUtils' {@code beanNamesForTypeIncludingAncestors}
 	 * to include beans in ancestor factories too.
-	 * <p>Note: Does <i>not</i> ignore singleton beans that have been registered
+	 * <p>注意: Does <i>not</i> ignore singleton beans that have been registered
 	 * by other means than bean definitions.
 	 * <p>Bean names returned by this method should always return bean names <i>in the
 	 * order of definition</i> in the backend configuration, as far as possible.
@@ -191,7 +191,7 @@ public interface ListableBeanFactory extends BeanFactory {
 	 * Return the names of beans matching the given type (including subclasses),
 	 * judging from either bean definitions or the value of {@code getObjectType}
 	 * in the case of FactoryBeans.
-	 * <p><b>NOTE: This method introspects top-level beans only.</b> It does <i>not</i>
+	 * <p><b>注意: This method introspects top-level beans only.</b> It does <i>not</i>
 	 * check nested beans which might match the specified type as well.
 	 * <p>Does consider objects created by FactoryBeans, which means that FactoryBeans
 	 * will get initialized. If the object created by the FactoryBean doesn't match,
@@ -199,7 +199,7 @@ public interface ListableBeanFactory extends BeanFactory {
 	 * <p>Does not consider any hierarchy this factory may participate in.
 	 * Use BeanFactoryUtils' {@code beanNamesForTypeIncludingAncestors}
 	 * to include beans in ancestor factories too.
-	 * <p>Note: Does <i>not</i> ignore singleton beans that have been registered
+	 * <p>注意: Does <i>not</i> ignore singleton beans that have been registered
 	 * by other means than bean definitions.
 	 * <p>This version of {@code getBeanNamesForType} matches all kinds of beans,
 	 * be it singletons, prototypes, or FactoryBeans. In most implementations, the
@@ -218,7 +218,7 @@ public interface ListableBeanFactory extends BeanFactory {
 	 * Return the names of beans matching the given type (including subclasses),
 	 * judging from either bean definitions or the value of {@code getObjectType}
 	 * in the case of FactoryBeans.
-	 * <p><b>NOTE: This method introspects top-level beans only.</b> It does <i>not</i>
+	 * <p><b>注意: This method introspects top-level beans only.</b> It does <i>not</i>
 	 * check nested beans which might match the specified type as well.
 	 * <p>Does consider objects created by FactoryBeans if the "allowEagerInit" flag is set,
 	 * which means that FactoryBeans will get initialized. If the object created by the
@@ -228,7 +228,7 @@ public interface ListableBeanFactory extends BeanFactory {
 	 * <p>Does not consider any hierarchy this factory may participate in.
 	 * Use BeanFactoryUtils' {@code beanNamesForTypeIncludingAncestors}
 	 * to include beans in ancestor factories too.
-	 * <p>Note: Does <i>not</i> ignore singleton beans that have been registered
+	 * <p>注意: Does <i>not</i> ignore singleton beans that have been registered
 	 * by other means than bean definitions.
 	 * <p>Bean names returned by this method should always return bean names <i>in the
 	 * order of definition</i> in the backend configuration, as far as possible.
@@ -251,7 +251,7 @@ public interface ListableBeanFactory extends BeanFactory {
 	 * Return the bean instances that match the given object type (including
 	 * subclasses), judging from either bean definitions or the value of
 	 * {@code getObjectType} in the case of FactoryBeans.
-	 * <p><b>NOTE: This method introspects top-level beans only.</b> It does <i>not</i>
+	 * <p><b>注意: This method introspects top-level beans only.</b> It does <i>not</i>
 	 * check nested beans which might match the specified type as well.
 	 * <p>Does consider objects created by FactoryBeans, which means that FactoryBeans
 	 * will get initialized. If the object created by the FactoryBean doesn't match,
@@ -259,7 +259,7 @@ public interface ListableBeanFactory extends BeanFactory {
 	 * <p>Does not consider any hierarchy this factory may participate in.
 	 * Use BeanFactoryUtils' {@code beansOfTypeIncludingAncestors}
 	 * to include beans in ancestor factories too.
-	 * <p>Note: Does <i>not</i> ignore singleton beans that have been registered
+	 * <p>注意: Does <i>not</i> ignore singleton beans that have been registered
 	 * by other means than bean definitions.
 	 * <p>This version of getBeansOfType matches all kinds of beans, be it
 	 * singletons, prototypes, or FactoryBeans. In most implementations, the
@@ -281,7 +281,7 @@ public interface ListableBeanFactory extends BeanFactory {
 	 * Return the bean instances that match the given object type (including
 	 * subclasses), judging from either bean definitions or the value of
 	 * {@code getObjectType} in the case of FactoryBeans.
-	 * <p><b>NOTE: This method introspects top-level beans only.</b> It does <i>not</i>
+	 * <p><b>注意: This method introspects top-level beans only.</b> It does <i>not</i>
 	 * check nested beans which might match the specified type as well.
 	 * <p>Does consider objects created by FactoryBeans if the "allowEagerInit" flag is set,
 	 * which means that FactoryBeans will get initialized. If the object created by the
@@ -291,7 +291,7 @@ public interface ListableBeanFactory extends BeanFactory {
 	 * <p>Does not consider any hierarchy this factory may participate in.
 	 * Use BeanFactoryUtils' {@code beansOfTypeIncludingAncestors}
 	 * to include beans in ancestor factories too.
-	 * <p>Note: Does <i>not</i> ignore singleton beans that have been registered
+	 * <p>注意: Does <i>not</i> ignore singleton beans that have been registered
 	 * by other means than bean definitions.
 	 * <p>The Map returned by this method should always return bean names and
 	 * corresponding bean instances <i>in the order of definition</i> in the

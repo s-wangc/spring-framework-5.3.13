@@ -76,7 +76,7 @@ public interface MessageSource {
 	/**
 	 * Try to resolve the message using all the attributes contained within the
 	 * {@code MessageSourceResolvable} argument that was passed in.
-	 * <p>NOTE: We must throw a {@code NoSuchMessageException} on this method
+	 * <p>注意: We must throw a {@code NoSuchMessageException} on this method
 	 * since at the time of calling this method we aren't able to determine if the
 	 * {@code defaultMessage} property of the resolvable is {@code null} or not.
 	 * @param resolvable the value object storing attributes required to resolve a message

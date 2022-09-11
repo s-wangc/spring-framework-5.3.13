@@ -184,7 +184,7 @@ public class MutablePropertyValues implements PropertyValues, Serializable {
 	/**
 	 * Overloaded version of {@code addPropertyValue} that takes
 	 * a property name and a property value.
-	 * <p>Note: As of Spring 3.0, we recommend using the more concise
+	 * <p>注意: As of Spring 3.0, we recommend using the more concise
 	 * and chaining-capable variant {@link #add}.
 	 * @param propertyName property的名称
 	 * @param propertyValue value of the property

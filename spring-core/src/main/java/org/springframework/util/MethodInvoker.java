@@ -297,7 +297,7 @@ public class MethodInvoker {
 	 * Therefore, with an arg of type Integer, a constructor (Integer) would be preferred to a
 	 * constructor (Number) which would in turn be preferred to a constructor (Object).
 	 * All argument weights get accumulated.
-	 * <p>Note: This is the algorithm used by MethodInvoker itself and also the algorithm
+	 * <p>注意: This is the algorithm used by MethodInvoker itself and also the algorithm
 	 * used for constructor and factory method selection in Spring's bean container (in case
 	 * of lenient constructor resolution which is the default for regular bean definitions).
 	 * @param paramTypes the parameter types to match

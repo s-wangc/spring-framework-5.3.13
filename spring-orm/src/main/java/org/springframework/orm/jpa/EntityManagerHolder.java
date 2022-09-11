@@ -31,7 +31,7 @@ import org.springframework.util.Assert;
  * <p>Also serves as a base class for {@link org.springframework.orm.hibernate5.SessionHolder},
  * as of 5.1.
  *
- * <p>Note: This is an SPI class, not intended to be used by applications.
+ * <p>注意: This is an SPI class, not intended to be used by applications.
  *
  * @author Juergen Hoeller
  * @since 2.0

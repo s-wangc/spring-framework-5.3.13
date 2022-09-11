@@ -44,7 +44,7 @@ import org.springframework.web.context.WebApplicationContext;
  * JAX-WS runtime, hence the need for this base class to provide
  * {@code @Autowired} processing based on the current Spring context.
  *
- * <p><b>NOTE:</b> If there is an explicit way to access the ServletContext,
+ * <p><b>注意:</b> If there is an explicit way to access the ServletContext,
  * prefer such a way over using this class. The {@link WebApplicationContextUtils}
  * class allows for easy access to the Spring root web application context
  * based on the ServletContext.

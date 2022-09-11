@@ -34,7 +34,7 @@ import org.springframework.core.annotation.AliasFor;
  * {@link ExceptionHandler @ExceptionHandler} methods assume
  * {@link ResponseBody @ResponseBody} semantics by default.
  *
- * <p><b>NOTE:</b> {@code @RestControllerAdvice} is processed if an appropriate
+ * <p><b>注意:</b> {@code @RestControllerAdvice} is processed if an appropriate
  * {@code HandlerMapping}-{@code HandlerAdapter} pair is configured such as the
  * {@code RequestMappingHandlerMapping}-{@code RequestMappingHandlerAdapter} pair
  * which are the default in the MVC Java config and the MVC namespace.

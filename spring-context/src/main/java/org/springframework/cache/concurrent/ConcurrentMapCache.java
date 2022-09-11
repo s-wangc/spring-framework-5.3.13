@@ -33,7 +33,7 @@ import org.springframework.util.Assert;
  * with {@link org.springframework.cache.support.SimpleCacheManager} or
  * dynamically through {@link ConcurrentMapCacheManager}.
  *
- * <p><b>Note:</b> As {@link ConcurrentHashMap} (the default implementation used)
+ * <p><b>注意:</b> As {@link ConcurrentHashMap} (the default implementation used)
  * does not allow for {@code null} values to be stored, this class will replace
  * them with a predefined internal object. This behavior can be changed through the
  * {@link #ConcurrentMapCache(String, ConcurrentMap, boolean)} constructor.

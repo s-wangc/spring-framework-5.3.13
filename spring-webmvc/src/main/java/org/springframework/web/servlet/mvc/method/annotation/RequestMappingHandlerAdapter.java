@@ -320,7 +320,7 @@ public class RequestMappingHandlerAdapter extends AbstractHandlerMethodAdapter
 
 	/**
 	 * Provide custom {@link ModelAndViewResolver ModelAndViewResolvers}.
-	 * <p><strong>Note:</strong> This method is available for backwards
+	 * <p><strong>注意:</strong> This method is available for backwards
 	 * compatibility only. However, it is recommended to re-write a
 	 * {@code ModelAndViewResolver} as {@link HandlerMethodReturnValueHandler}.
 	 * An adapter between the two interfaces is not possible since the

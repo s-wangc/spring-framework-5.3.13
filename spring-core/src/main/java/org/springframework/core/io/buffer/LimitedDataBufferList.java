@@ -32,7 +32,7 @@ import reactor.core.publisher.Flux;
  * {@link DataBufferLimitException} is raised.  {@link #clear()} resets the
  * count. Remove and set are not supported.
  *
- * <p><strong>Note:</strong> This class does not automatically release the
+ * <p><strong>注意:</strong> This class does not automatically release the
  * buffers it contains. It is usually preferable to use hooks such as
  * {@link Flux#doOnDiscard} that also take care of cancel and error signals,
  * or otherwise {@link #releaseAndClear()} can be used.

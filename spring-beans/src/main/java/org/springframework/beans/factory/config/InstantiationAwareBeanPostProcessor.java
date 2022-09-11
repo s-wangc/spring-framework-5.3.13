@@ -32,7 +32,7 @@ import org.springframework.lang.Nullable;
  * lazily initializing targets, etc), or to implement additional injection strategies
  * such as field injection.
  *
- * <p><b>NOTE:</b> This interface is a special purpose interface, mainly for
+ * <p><b>注意:</b> This interface is a special purpose interface, mainly for
  * internal use within the framework. It is recommended to implement the plain
  * {@link BeanPostProcessor} interface as far as possible, or to derive from
  * {@link InstantiationAwareBeanPostProcessorAdapter} in order to be shielded

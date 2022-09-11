@@ -35,7 +35,7 @@ import org.springframework.lang.Nullable;
  * the set of cache names is pre-defined through {@link #setCacheNames}, with no
  * dynamic creation of further cache regions at runtime.
  *
- * <p>Note: This is by no means a sophisticated CacheManager; it comes with no
+ * <p>注意: This is by no means a sophisticated CacheManager; it comes with no
  * cache configuration options. However, it may be useful for testing or simple
  * caching scenarios. For advanced local caching needs, consider
  * {@link org.springframework.cache.jcache.JCacheCacheManager},
@@ -100,7 +100,7 @@ public class ConcurrentMapCacheManager implements CacheManager, BeanClassLoaderA
 	 * in this cache manager.
 	 * <p>Default is "true", despite ConcurrentHashMap itself not supporting {@code null}
 	 * values. An internal holder object will be used to store user-level {@code null}s.
-	 * <p>Note: A change of the null-value setting will reset all existing caches,
+	 * <p>注意: A change of the null-value setting will reset all existing caches,
 	 * if any, to reconfigure them with the new null-value requirement.
 	 */
 	public void setAllowNullValues(boolean allowNullValues) {
@@ -124,7 +124,7 @@ public class ConcurrentMapCacheManager implements CacheManager, BeanClassLoaderA
 	 * or the reference ({@code false} for all of its caches.
 	 * <p>Default is "false" so that the value itself is stored and no serializable
 	 * contract is required on cached values.
-	 * <p>Note: A change of the store-by-value setting will reset all existing caches,
+	 * <p>注意: A change of the store-by-value setting will reset all existing caches,
 	 * if any, to reconfigure them with the new store-by-value requirement.
 	 * @since 4.3
 	 */

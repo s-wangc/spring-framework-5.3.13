@@ -4,7 +4,7 @@
  * allowing to set up an EhCache CacheManager and Caches
  * as beans in a Spring context.
  *
- * <p>Note: EhCache 3.x lives in a different package namespace
+ * <p>注意: EhCache 3.x lives in a different package namespace
  * and is not covered by the traditional support classes here.
  * Instead, consider using it through JCache (JSR-107), with
  * Spring's support in {@code org.springframework.cache.jcache}.

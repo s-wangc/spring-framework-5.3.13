@@ -30,7 +30,7 @@ import static org.mockito.Mockito.mock;
 
 /**
  * Superclass for unit tests for EntityManagerFactory-creating beans.
- * Note: Subclasses must set expectations on the mock EntityManagerFactory.
+ * 注意: Subclasses must set expectations on the mock EntityManagerFactory.
  *
  * @author Rod Johnson
  * @author Juergen Hoeller

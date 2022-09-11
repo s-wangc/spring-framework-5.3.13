@@ -48,7 +48,7 @@ import org.springframework.util.Assert;
  *
  * <p>Can be used within a service implementation via direct instantiation with
  * a transaction manager reference, or get prepared in an application context
- * and passed to services as bean reference. Note: The transaction manager should
+ * and passed to services as bean reference. 注意: The transaction manager should
  * always be configured as bean in the application context: in the first case given
  * to the service directly, in the second case given to the prepared template.
  *
@@ -74,7 +74,7 @@ public class TransactionTemplate extends DefaultTransactionDefinition
 
 	/**
 	 * Construct a new TransactionTemplate for bean usage.
-	 * <p>Note: The PlatformTransactionManager needs to be set before
+	 * <p>注意: The PlatformTransactionManager needs to be set before
 	 * any {@code execute} calls.
 	 * @see #setTransactionManager
 	 */

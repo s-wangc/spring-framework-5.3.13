@@ -33,7 +33,7 @@ import org.springframework.web.util.WebUtils;
  * Provides {@code getWebApplicationContext()}, {@code getServletContext()}, and
  * {@code getTempDir()} accessors.
  *
- * <p>Note: It is generally recommended to use individual callback interfaces for the actual
+ * <p>注意: It is generally recommended to use individual callback interfaces for the actual
  * callbacks needed. This broad base class is primarily intended for use within the framework,
  * in case of {@link ServletContext} access etc typically being needed.
  *
@@ -98,7 +98,7 @@ public abstract class WebApplicationObjectSupport extends ApplicationObjectSuppo
 
 	/**
 	 * Return the current application context as WebApplicationContext.
-	 * <p><b>NOTE:</b> Only use this if you actually need to access
+	 * <p><b>注意:</b> Only use this if you actually need to access
 	 * WebApplicationContext-specific functionality. Preferably use
 	 * {@code getApplicationContext()} or {@code getServletContext()}
 	 * else, to be able to run in non-WebApplicationContext environments as well.

@@ -34,7 +34,7 @@ import org.springframework.web.context.support.GenericWebApplicationContext;
  * {@link org.springframework.test.context.ContextConfiguration @ContextConfiguration}
  * for a definition of <em>annotated class</em>.
  *
- * <p>Note: {@code AnnotationConfigWebContextLoader} supports <em>annotated classes</em>
+ * <p>注意: {@code AnnotationConfigWebContextLoader} supports <em>annotated classes</em>
  * rather than the String-based resource locations defined by the legacy
  * {@link org.springframework.test.context.ContextLoader ContextLoader} API. Thus,
  * although {@code AnnotationConfigWebContextLoader} extends

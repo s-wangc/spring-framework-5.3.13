@@ -38,7 +38,7 @@ import org.springframework.transaction.TransactionException;
  * application services utilizing this class, making calls to the low-level
  * services via an inner-class callback object.
  *
- * <p><strong>Note:</strong> Transactional Publishers should avoid Subscription
+ * <p><strong>注意:</strong> Transactional Publishers should avoid Subscription
  * cancellation. See the
  * <a href="https://docs.spring.io/spring/docs/current/spring-framework-reference/data-access.html#tx-prog-operator-cancel">Cancel Signals</a>
  * section of the Spring Framework reference for more details.

@@ -51,7 +51,7 @@ public interface CallableStatementCallback<T> {
 	 * or the Connection, or about handling transactions: this will all be
 	 * handled by Spring's JdbcTemplate.
 	 *
-	 * <p><b>NOTE:</b> Any ResultSets opened should be closed in finally blocks
+	 * <p><b>注意:</b> Any ResultSets opened should be closed in finally blocks
 	 * within the callback implementation. Spring will close the Statement
 	 * object after the callback returned, but this does not necessarily imply
 	 * that the ResultSet resources will be closed: the Statement objects might

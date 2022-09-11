@@ -153,7 +153,7 @@ public class ConcurrentTaskScheduler extends ConcurrentTaskExecutor implements T
 	 * <p>Autodetects a JSR-236 {@link javax.enterprise.concurrent.ManagedScheduledExecutorService}
 	 * in order to use it for trigger-based scheduling if possible,
 	 * instead of Spring's local trigger management.
-	 * <p>Note: This will only apply to {@link TaskScheduler} invocations.
+	 * <p>注意: This will only apply to {@link TaskScheduler} invocations.
 	 * If you want the given executor to apply to
 	 * {@link org.springframework.scheduling.SchedulingTaskExecutor} invocations
 	 * as well, pass the same executor reference to {@link #setConcurrentExecutor}.

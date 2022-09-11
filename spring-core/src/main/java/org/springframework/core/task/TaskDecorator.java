@@ -27,7 +27,7 @@ package org.springframework.core.task;
  * <p>The primary use case is to set some execution context around the task's
  * invocation, or to provide some monitoring/statistics for task execution.
  *
- * <p><b>NOTE:</b> Exception handling in {@code TaskDecorator} implementations
+ * <p><b>注意:</b> Exception handling in {@code TaskDecorator} implementations
  * may be limited. Specifically in case of a {@code Future}-based operation,
  * the exposed {@code Runnable} will be a wrapper which does not propagate
  * any exceptions from its {@code run} method.

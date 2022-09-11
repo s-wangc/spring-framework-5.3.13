@@ -36,7 +36,7 @@ import org.springframework.lang.Nullable;
  * checked exceptions. An SqlRowSet will throw Spring's {@link InvalidResultSetAccessException}
  * instead (when appropriate).
  *
- * <p>Note: This interface extends the {@code java.io.Serializable} marker interface.
+ * <p>注意: This interface extends the {@code java.io.Serializable} marker interface.
  * Implementations, which typically hold disconnected data, are encouraged to be actually
  * serializable (as far as possible).
  *

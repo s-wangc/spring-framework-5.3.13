@@ -64,7 +64,7 @@ public interface JpaVendorAdapter {
 	 * non-unit-dependent properties. Effectively, this PersistenceUnitInfo-based
 	 * variant only needs to be implemented if there is an actual need to react
 	 * to unit-specific characteristics such as the transaction type.
-	 * <p><b>NOTE:</b> This variant will only be invoked in case of Java EE style
+	 * <p><b>注意:</b> This variant will only be invoked in case of Java EE style
 	 * container bootstrapping where a {@link PersistenceUnitInfo} is present
 	 * (i.e. {@link LocalContainerEntityManagerFactoryBean}. In case of simple
 	 * Java SE style bootstrapping via {@link javax.persistence.Persistence}

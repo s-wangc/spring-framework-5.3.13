@@ -34,10 +34,10 @@ import org.springframework.util.StringUtils;
  * <p>For example:<br>
  * {@code com.mycompany.mycode.MyClass.myMethod=PROPAGATION_MANDATORY,ISOLATION_DEFAULT}
  *
- * <p><b>NOTE:</b> The specified class must be the one where the methods are
+ * <p><b>注意:</b> The specified class must be the one where the methods are
  * defined; in case of implementing an interface, the interface class name.
  *
- * <p>Note: Will register all overloaded methods for a given name.
+ * <p>注意: Will register all overloaded methods for a given name.
  * Does not support explicit registration of certain overloaded methods.
  * Supports "xxx*" mappings, e.g. "notify*" for "notify" and "notifyAll".
  *

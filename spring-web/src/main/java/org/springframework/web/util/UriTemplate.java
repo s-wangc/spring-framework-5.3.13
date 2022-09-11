@@ -35,7 +35,7 @@ import org.springframework.util.CollectionUtils;
  * {@link #match(String)}. This class is designed to be thread-safe and
  * reusable, and allows any number of expand or match calls.
  *
- * <p><strong>Note:</strong> this class uses {@link UriComponentsBuilder}
+ * <p><strong>注意:</strong> this class uses {@link UriComponentsBuilder}
  * internally to expand URI templates, and is merely a shortcut for already
  * prepared URI templates. For more dynamic preparation and extra flexibility,
  * e.g. around URI encoding, consider using {@code UriComponentsBuilder} or the

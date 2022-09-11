@@ -34,7 +34,7 @@ import org.springframework.util.Assert;
  * or Ant-style patterns like "/myfiles/*-context.xml" (see the
  * {@link org.springframework.util.AntPathMatcher} javadoc for pattern details).
  *
- * <p>Note: In case of multiple config locations, later bean definitions will
+ * <p>注意: In case of multiple config locations, later bean definitions will
  * override ones defined in earlier loaded files. This can be leveraged to
  * deliberately override certain bean definitions via an extra XML file.
  *

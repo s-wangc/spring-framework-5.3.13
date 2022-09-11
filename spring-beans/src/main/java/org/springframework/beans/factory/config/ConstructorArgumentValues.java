@@ -66,7 +66,7 @@ public class ConstructorArgumentValues {
 	/**
 	 * Copy all given argument values into this object, using separate holder
 	 * instances to keep the values independent from the original object.
-	 * <p>Note: Identical ValueHolder instances will only be registered once,
+	 * <p>注意: Identical ValueHolder instances will only be registered once,
 	 * to allow for merging and re-merging of argument value definitions. Distinct
 	 * ValueHolder instances carrying the same content are of course allowed.
 	 */
@@ -185,7 +185,7 @@ public class ConstructorArgumentValues {
 
 	/**
 	 * Add a generic argument value to be matched by type.
-	 * <p>Note: A single generic argument value will just be used once,
+	 * <p>注意: A single generic argument value will just be used once,
 	 * rather than matched multiple times.
 	 * @param value the argument value
 	 */
@@ -195,7 +195,7 @@ public class ConstructorArgumentValues {
 
 	/**
 	 * Add a generic argument value to be matched by type.
-	 * <p>Note: A single generic argument value will just be used once,
+	 * <p>注意: A single generic argument value will just be used once,
 	 * rather than matched multiple times.
 	 * @param value the argument value
 	 * @param type the type of the constructor argument
@@ -206,10 +206,10 @@ public class ConstructorArgumentValues {
 
 	/**
 	 * Add a generic argument value to be matched by type or name (if available).
-	 * <p>Note: A single generic argument value will just be used once,
+	 * <p>注意: A single generic argument value will just be used once,
 	 * rather than matched multiple times.
 	 * @param newValue the argument value in the form of a ValueHolder
-	 * <p>Note: Identical ValueHolder instances will only be registered once,
+	 * <p>注意: Identical ValueHolder instances will only be registered once,
 	 * to allow for merging and re-merging of argument value definitions. Distinct
 	 * ValueHolder instances carrying the same content are of course allowed.
 	 */

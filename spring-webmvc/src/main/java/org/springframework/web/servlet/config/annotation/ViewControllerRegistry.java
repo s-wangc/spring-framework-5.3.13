@@ -65,7 +65,7 @@ public class ViewControllerRegistry {
 	 * patterns are {@link PathMatchConfigurer#setPatternParser enabled} or
 	 * {@link AntPathMatcher} otherwise. The syntax is largely the same with
 	 * {@link PathPattern} more tailored for web usage and more efficient.
-	 * <p><strong>Note:</strong> If an {@code @RequestMapping} method is mapped
+	 * <p><strong>注意:</strong> If an {@code @RequestMapping} method is mapped
 	 * to a URL for any HTTP method then a view controller cannot handle the
 	 * same URL. For this reason it is recommended to avoid splitting URL
 	 * handling across an annotated controller and a view controller.

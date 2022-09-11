@@ -58,7 +58,7 @@ import org.springframework.util.concurrent.ListenableFutureTask;
  * {@link #setCorePoolSize "corePoolSize"} (see also the
  * {@link #setAllowCoreThreadTimeOut "allowCoreThreadTimeOut"} mode of scaling).
  *
- * <p><b>NOTE:</b> This class implements Spring's
+ * <p><b>注意:</b> This class implements Spring's
  * {@link org.springframework.core.task.TaskExecutor} interface as well as the
  * {@link java.util.concurrent.Executor} interface, with the former being the primary
  * interface, the other just serving as secondary convenience. For this reason, the
@@ -205,7 +205,7 @@ public class ThreadPoolTaskExecutor extends ExecutorConfigurationSupport
 	 * execution callback (which may be a wrapper around the user-supplied task).
 	 * <p>The primary use case is to set some execution context around the task's
 	 * invocation, or to provide some monitoring/statistics for task execution.
-	 * <p><b>NOTE:</b> Exception handling in {@code TaskDecorator} implementations
+	 * <p><b>注意:</b> Exception handling in {@code TaskDecorator} implementations
 	 * is limited to plain {@code Runnable} execution via {@code execute} calls.
 	 * In case of {@code #submit} calls, the exposed {@code Runnable} will be a
 	 * {@code FutureTask} which does not propagate any exceptions; you might
@@ -220,7 +220,7 @@ public class ThreadPoolTaskExecutor extends ExecutorConfigurationSupport
 
 
 	/**
-	 * Note: This method exposes an {@link ExecutorService} to its base class
+	 * 注意: This method exposes an {@link ExecutorService} to its base class
 	 * but stores the actual {@link ThreadPoolExecutor} handle internally.
 	 * Do not override this method for replacing the executor, rather just for
 	 * decorating its {@code ExecutorService} handle or storing custom state.

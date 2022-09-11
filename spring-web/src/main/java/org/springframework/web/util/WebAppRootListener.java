@@ -29,7 +29,7 @@ import javax.servlet.ServletContextListener;
  * (i.e. System.getProperty values), like log4j's "${key}" syntax within log
  * file locations.
  *
- * <p>Note: This listener should be placed before ContextLoaderListener in {@code web.xml},
+ * <p>注意: This listener should be placed before ContextLoaderListener in {@code web.xml},
  * at least when used for log4j. Log4jConfigListener sets the system property
  * implicitly, so there's no need for this listener in addition to it.
  *

@@ -84,7 +84,7 @@ import org.springframework.web.accept.ParameterContentNegotiationStrategy;
  * <p>As of 5.0 you can set the exact strategies to use via
  * {@link #strategies(List)}.
  *
- * <p><strong>Note:</strong> if you must use URL-based content type resolution,
+ * <p><strong>注意:</strong> if you must use URL-based content type resolution,
  * the use of a query parameter is simpler and preferable to the use of a path
  * extension since the latter can cause issues with URI variables, path
  * parameters, and URI decoding. Consider setting {@link #favorPathExtension}
@@ -113,7 +113,7 @@ public class ContentNegotiationConfigurer {
 
 	/**
 	 * Set the exact list of strategies to use.
-	 * <p><strong>Note:</strong> use of this method is mutually exclusive with
+	 * <p><strong>注意:</strong> use of this method is mutually exclusive with
 	 * use of all other setters in this class which customize a default, fixed
 	 * set of strategies. See class level doc for more details.
 	 * @param strategies 要使用的strategies

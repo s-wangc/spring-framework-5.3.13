@@ -103,7 +103,7 @@ public interface TestContext extends AttributeAccessor, Serializable {
 
 	/**
 	 * Get the current {@linkplain Object test instance} for this test context.
-	 * <p>Note: this is a mutable property.
+	 * <p>注意: this is a mutable property.
 	 * @return the current test instance (never {@code null})
 	 * @see #updateState(Object, Method, Throwable)
 	 */
@@ -111,7 +111,7 @@ public interface TestContext extends AttributeAccessor, Serializable {
 
 	/**
 	 * Get the current {@linkplain Method test method} for this test context.
-	 * <p>Note: this is a mutable property.
+	 * <p>注意: this is a mutable property.
 	 * @return the current test method (never {@code null})
 	 * @see #updateState(Object, Method, Throwable)
 	 */
@@ -120,7 +120,7 @@ public interface TestContext extends AttributeAccessor, Serializable {
 	/**
 	 * Get the {@linkplain Throwable exception} that was thrown during execution
 	 * of the {@linkplain #getTestMethod() test method}.
-	 * <p>Note: this is a mutable property.
+	 * <p>注意: this is a mutable property.
 	 * @return the exception that was thrown, or {@code null} if no exception was thrown
 	 * @see #updateState(Object, Method, Throwable)
 	 */

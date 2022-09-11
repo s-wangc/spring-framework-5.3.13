@@ -615,7 +615,7 @@
 	This will be applied in case of a request message that does not carry
 	a "JMSReplyTo" field. The type of this destination will be determined
 	by the listener-container's "response-destination-type" attribute.
-	Note: This only applies to a listener method with a return value,
+	注意: This only applies to a listener method with a return value,
 	for which each result object will be converted into a response message.
 				]]></xsd:documentation>
 			</xsd:annotation>

@@ -46,7 +46,7 @@ import org.springframework.lang.Nullable;
  * retrieved via {@link #getContentAsByteArray()}.
  *
  * <p>Used e.g. by {@link org.springframework.web.filter.AbstractRequestLoggingFilter}.
- * Note: As of Spring Framework 5.0, this wrapper is built on the Servlet 3.1 API.
+ * 注意: As of Spring Framework 5.0, this wrapper is built on the Servlet 3.1 API.
  *
  *
  * @author Juergen Hoeller
@@ -190,7 +190,7 @@ public class ContentCachingRequestWrapper extends HttpServletRequestWrapper {
 	/**
 	 * Return the cached request content as a byte array.
 	 * <p>The returned array will never be larger than the content cache limit.
-	 * <p><strong>Note:</strong> The byte array returned from this method
+	 * <p><strong>注意:</strong> The byte array returned from this method
 	 * reflects the amount of content that has has been read at the time when it
 	 * is called. If the application does not read the content, this method
 	 * returns an empty array.

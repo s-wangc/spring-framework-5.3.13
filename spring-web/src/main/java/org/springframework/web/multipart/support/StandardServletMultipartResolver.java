@@ -42,7 +42,7 @@ import org.springframework.web.multipart.MultipartResolver;
  * {@link #setStrictServletCompliance strict Servlet compliance}, narrowing the
  * applicability of Spring's {@link MultipartHttpServletRequest} to form data only.
  *
- * <p><b>Note:</b> In order to use Servlet 3.0 based multipart parsing,
+ * <p><b>注意:</b> In order to use Servlet 3.0 based multipart parsing,
  * you need to mark the affected servlet with a "multipart-config" section in
  * {@code web.xml}, or with a {@link javax.servlet.MultipartConfigElement}
  * in programmatic servlet registration, or (in case of a custom servlet class)

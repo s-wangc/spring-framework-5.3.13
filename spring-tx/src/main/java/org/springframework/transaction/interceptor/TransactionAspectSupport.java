@@ -91,7 +91,7 @@ import org.springframework.util.StringUtils;
  */
 public abstract class TransactionAspectSupport implements BeanFactoryAware, InitializingBean {
 
-	// NOTE: This class must not implement Serializable because it serves as base
+	// 注意: This class must not implement Serializable because it serves as base
 	// class for AspectJ aspects (which are not allowed to implement Serializable)!
 
 
@@ -240,7 +240,7 @@ public abstract class TransactionAspectSupport implements BeanFactoryAware, Init
 	 * Set properties with method names as keys and transaction attribute
 	 * descriptors (parsed via TransactionAttributeEditor) as values:
 	 * e.g. key = "myMethod", value = "PROPAGATION_REQUIRED,readOnly".
-	 * <p>Note: Method names are always applied to the target class,
+	 * <p>注意: Method names are always applied to the target class,
 	 * no matter if defined in an interface or the class itself.
 	 * <p>Internally, a NameMatchTransactionAttributeSource will be
 	 * created from the given properties.

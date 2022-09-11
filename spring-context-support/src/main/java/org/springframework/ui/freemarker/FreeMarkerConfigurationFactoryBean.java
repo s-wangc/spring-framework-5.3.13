@@ -42,7 +42,7 @@ import org.springframework.lang.Nullable;
 
  * See the base class FreeMarkerConfigurationFactory for configuration details.
  *
- * <p>Note: Spring's FreeMarker support requires FreeMarker 2.3 or higher.
+ * <p>注意: Spring's FreeMarker support requires FreeMarker 2.3 or higher.
  *
  * @author Darren Davison
  * @since 03.03.2004

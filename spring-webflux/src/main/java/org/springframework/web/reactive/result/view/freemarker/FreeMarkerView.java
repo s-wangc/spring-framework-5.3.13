@@ -63,7 +63,7 @@ import org.springframework.web.server.ServerWebExchange;
  * template relative to the FreeMarkerConfigurer's
  * {@link FreeMarkerConfigurer#setTemplateLoaderPath templateLoaderPath}.
  *
- * <p>Note: Spring's FreeMarker support requires FreeMarker 2.3 or higher.
+ * <p>注意: Spring's FreeMarker support requires FreeMarker 2.3 or higher.
  *
  * @author Rossen Stoyanchev
  * @author Sam Brannen

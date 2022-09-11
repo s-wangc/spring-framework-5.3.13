@@ -32,7 +32,7 @@ import org.springframework.web.util.UrlPathHelper;
  * UriComponentsBuilder with additional static factory methods to create links
  * based on the current HttpServletRequest.
  *
- * <p><strong>Note:</strong> As of 5.1, methods in this class do not extract
+ * <p><strong>注意:</strong> As of 5.1, methods in this class do not extract
  * {@code "Forwarded"} and {@code "X-Forwarded-*"} headers that specify the
  * client-originated address. Please, use
  * {@link org.springframework.web.filter.ForwardedHeaderFilter

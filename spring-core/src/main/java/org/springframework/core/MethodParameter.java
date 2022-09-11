@@ -190,7 +190,7 @@ public class MethodParameter {
 
 	/**
 	 * Return the wrapped Method, if any.
-	 * <p>Note: Either Method or Constructor is available.
+	 * <p>注意: Either Method or Constructor is available.
 	 * @return the Method, or {@code null} if none
 	 */
 	@Nullable
@@ -200,7 +200,7 @@ public class MethodParameter {
 
 	/**
 	 * Return the wrapped Constructor, if any.
-	 * <p>Note: Either Method or Constructor is available.
+	 * <p>注意: Either Method or Constructor is available.
 	 * @return the Constructor, or {@code null} if none
 	 */
 	@Nullable
@@ -225,7 +225,7 @@ public class MethodParameter {
 
 	/**
 	 * Return the wrapped annotated element.
-	 * <p>Note: This method exposes the annotations declared on the method/constructor
+	 * <p>注意: This method exposes the annotations declared on the method/constructor
 	 * itself (i.e. at the method/constructor level, not at the parameter level).
 	 * @return the Method or Constructor as AnnotatedElement
 	 */

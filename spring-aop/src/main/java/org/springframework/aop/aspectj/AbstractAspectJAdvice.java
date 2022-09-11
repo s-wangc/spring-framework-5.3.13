@@ -153,7 +153,7 @@ public abstract class AbstractAspectJAdvice implements Advice, AspectJPrecedence
 
 	@Nullable
 	private Type discoveredReturningGenericType;
-	// Note: Unlike return type, no such generic information is needed for the throwing type,
+	// 注意: Unlike return type, no such generic information is needed for the throwing type,
 	// since Java doesn't allow exception types to be parameterized.
 
 
@@ -662,7 +662,7 @@ public abstract class AbstractAspectJAdvice implements Advice, AspectJPrecedence
 		return getJoinPointMatch((ProxyMethodInvocation) mi);
 	}
 
-	// Note: We can't use JoinPointMatch.getClass().getName() as the key, since
+	// 注意: We can't use JoinPointMatch.getClass().getName() as the key, since
 	// Spring AOP does all the matching at a join point, and then all the invocations.
 	// Under this scenario, if we just use JoinPointMatch as the key, then
 	// 'last man wins' which is not what we want at all.

@@ -37,7 +37,7 @@ import org.springframework.lang.Nullable;
  * to retrieve the current locale in controllers or views, independent
  * of the actual resolution strategy.
  *
- * <p>Note: As of Spring 4.0, there is an extended strategy interface
+ * <p>注意: As of Spring 4.0, there is an extended strategy interface
  * called {@link LocaleContextResolver}, allowing for resolution of
  * a {@link org.springframework.context.i18n.LocaleContext} object,
  * potentially including associated time zone information. Spring's

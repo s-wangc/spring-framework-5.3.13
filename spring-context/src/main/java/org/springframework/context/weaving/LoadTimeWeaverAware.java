@@ -40,7 +40,7 @@ public interface LoadTimeWeaverAware extends Aware {
 	 * or a custom init-method. Invoked after
 	 * {@link org.springframework.context.ApplicationContextAware ApplicationContextAware's}
 	 * {@link org.springframework.context.ApplicationContextAware#setApplicationContext setApplicationContext(..)}.
-	 * <p><b>NOTE:</b> This method will only be called if there actually is a
+	 * <p><b>注意:</b> This method will only be called if there actually is a
 	 * {@code LoadTimeWeaver} available in the application context. If
 	 * there is none, the method will simply not get invoked, assuming that the
 	 * implementing object is able to activate its weaving dependency accordingly.

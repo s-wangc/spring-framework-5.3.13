@@ -75,7 +75,7 @@ public interface SimpMessageSendingOperations extends MessageSendingOperations<S
 	 * MessageHeaders headers = accessor.getMessageHeaders();
 	 * messagingTemplate.convertAndSendToUser(user, destination, payload, headers);
 	 * </pre>
-	 * <p><strong>Note:</strong> if the {@code MessageHeaders} are mutable as in
+	 * <p><strong>注意:</strong> if the {@code MessageHeaders} are mutable as in
 	 * the above example, implementations of this interface should take notice and
 	 * update the headers in the same instance (rather than copy or re-create it)
 	 * and then set it immutable before sending the final message.

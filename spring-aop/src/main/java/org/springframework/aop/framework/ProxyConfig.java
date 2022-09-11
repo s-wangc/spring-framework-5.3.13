@@ -52,7 +52,7 @@ public class ProxyConfig implements Serializable {
 	 * target class. If that target class is an interface, a JDK proxy will be
 	 * created for the given interface. If that target class is any other class,
 	 * a CGLIB proxy will be created for the given class.
-	 * <p>Note: Depending on the configuration of the concrete proxy factory,
+	 * <p>注意: Depending on the configuration of the concrete proxy factory,
 	 * the proxy-target-class behavior will also be applied if no interfaces
 	 * have been specified (and no interface autodetection is activated).
 	 * @see org.springframework.aop.TargetSource#getTargetClass()

@@ -121,7 +121,7 @@ While this couples your code to Spring, it really only couples it to this small 
 utility classes, which serves as a more capable replacement for `URL` and can be
 considered equivalent to any other library you would use for this purpose.
 
-NOTE: The `Resource` abstraction does not replace functionality. It wraps it where
+注意: The `Resource` abstraction does not replace functionality. It wraps it where
 possible. For example, a `UrlResource` wraps a URL and uses the wrapped `URL` to do its
 work.
 
@@ -453,7 +453,7 @@ constructor argument, or method parameter that expects the `ResourceLoader` type
 as the field, constructor, or method in question carries the `@Autowired` annotation.
 For more information, see <<beans-autowired-annotation>>.
 
-NOTE: To load one or more `Resource` objects for a resource path that contains wildcards
+注意: To load one or more `Resource` objects for a resource path that contains wildcards
 or makes use of the special `classpath*:` resource prefix, consider having an instance of
 <<resources-resourcepatternresolver,`ResourcePatternResolver`>> autowired into your
 application components instead of `ResourceLoader`.
@@ -790,7 +790,7 @@ must be obtained (internally, this essentially happens through a call to
 `ClassLoader.getResources(...)`) and then merged to form the final application
 context definition.
 
-NOTE: The wildcard classpath relies on the `getResources()` method of the underlying
+注意: The wildcard classpath relies on the `getResources()` method of the underlying
 `ClassLoader`. As most application servers nowadays supply their own `ClassLoader`
 implementation, the behavior might differ, especially when dealing with jar files. A
 simple test to check if `classpath*` works is to use the `ClassLoader` to load a file from

@@ -50,7 +50,7 @@ import org.springframework.lang.Nullable;
  * javadoc for pattern details). Note that ".xml" files will be parsed as XML content;
  * all other kinds of resources will be parsed as Groovy scripts.
  *
- * <p>Note: In case of multiple config locations, later bean definitions will
+ * <p>注意: In case of multiple config locations, later bean definitions will
  * override ones defined in earlier loaded files. This can be leveraged to
  * deliberately override certain bean definitions via an extra Groovy script.
  *

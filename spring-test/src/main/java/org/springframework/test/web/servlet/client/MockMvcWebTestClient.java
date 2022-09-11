@@ -134,7 +134,7 @@ public interface MockMvcWebTestClient {
 	 * 		.andExpect(flash().attributeCount(1))
 	 * 		.andExpect(flash().attribute("message", "success!"));
 	 * </pre>
-	 * <p>Note: this method works only if the {@link WebTestClient} used to
+	 * <p>注意: this method works only if the {@link WebTestClient} used to
 	 * perform the request was initialized through one of bind method in this
 	 * class, and therefore requests are handled by {@link MockMvc}.
 	 */

@@ -69,7 +69,7 @@ import org.springframework.core.env.Profiles;
  * <p>If the {@code @Profile} annotation is omitted, registration will occur regardless
  * of which (if any) profiles are active.
  *
- * <p><b>NOTE:</b> With {@code @Profile} on {@code @Bean} methods, a special scenario may
+ * <p><b>注意:</b> With {@code @Profile} on {@code @Bean} methods, a special scenario may
  * apply: In the case of overloaded {@code @Bean} methods of the same Java method name
  * (analogous to constructor overloading), an {@code @Profile} condition needs to be
  * consistently declared on all overloaded methods. If the conditions are inconsistent,

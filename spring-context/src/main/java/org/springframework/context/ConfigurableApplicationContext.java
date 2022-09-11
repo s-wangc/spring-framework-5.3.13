@@ -215,7 +215,7 @@ public interface ConfigurableApplicationContext extends ApplicationContext, Life
 	/**
 	 * Close this application context, releasing all resources and locks that the
 	 * implementation might hold. This includes destroying all cached singleton beans.
-	 * <p>Note: Does <i>not</i> invoke {@code close} on a parent context;
+	 * <p>注意: Does <i>not</i> invoke {@code close} on a parent context;
 	 * parent contexts have their own, independent lifecycle.
 	 * <p>This method can be called multiple times without side effects: Subsequent
 	 * {@code close} calls on an already closed context will be ignored.
@@ -236,7 +236,7 @@ public interface ConfigurableApplicationContext extends ApplicationContext, Life
 	/**
 	 * Return the internal bean factory of this application context.
 	 * Can be used to access specific functionality of the underlying factory.
-	 * <p>Note: Do not use this to post-process the bean factory; singletons
+	 * <p>注意: Do not use this to post-process the bean factory; singletons
 	 * will already have been instantiated before. Use a BeanFactoryPostProcessor
 	 * to intercept the BeanFactory setup process before beans get touched.
 	 * <p>Generally, this internal factory will only be accessible while the context

@@ -35,7 +35,7 @@ import org.springframework.core.annotation.AliasFor;
  * {@link Bean @Bean}, {@code @Scope} indicates the name of a scope to use
  * for the instance returned from the method.
  *
- * <p><b>NOTE:</b> {@code @Scope} annotations are only introspected on the
+ * <p><b>注意:</b> {@code @Scope} annotations are only introspected on the
  * concrete bean class (for annotated components) or the factory method
  * (for {@code @Bean} methods). In contrast to XML bean definitions,
  * there is no notion of bean definition inheritance, and inheritance

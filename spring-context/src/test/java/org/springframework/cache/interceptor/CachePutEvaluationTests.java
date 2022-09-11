@@ -96,7 +96,7 @@ public class CachePutEvaluationTests {
 		// CachePut forced a method call
 		Long anotherValue = this.service.getAndPut(key);
 		assertThat(anotherValue).isNotSameAs(value);
-		// NOTE: while you might expect the main key to have been updated, it hasn't. @Cacheable operations
+		// 注意: while you might expect the main key to have been updated, it hasn't. @Cacheable operations
 		// are only processed in case of a cache miss. This is why combining @Cacheable with @CachePut
 		// is a very bad idea. We could refine the condition now that we can figure out if we are going
 		// to invoke the method anyway but that brings a whole new set of potential regressions.

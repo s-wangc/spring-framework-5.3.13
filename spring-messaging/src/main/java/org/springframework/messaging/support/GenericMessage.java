@@ -64,7 +64,7 @@ public class GenericMessage<T> implements Message<T>, Serializable {
 
 	/**
 	 * A constructor with the {@link MessageHeaders} instance to use.
-	 * <p><strong>Note:</strong> the given {@code MessageHeaders} instance is used
+	 * <p><strong>注意:</strong> the given {@code MessageHeaders} instance is used
 	 * directly in the new message, i.e. it is not copied.
 	 * @param payload the message payload (never {@code null})
 	 * @param headers message headers

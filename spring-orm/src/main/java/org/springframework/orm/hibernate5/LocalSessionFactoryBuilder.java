@@ -180,7 +180,7 @@ public class LocalSessionFactoryBuilder extends Configuration {
 	 * <p>A passed-in Spring {@link JtaTransactionManager} needs to contain a JTA
 	 * {@link TransactionManager} reference to be usable here, except for the WebSphere
 	 * case where we'll automatically set {@code WebSphereExtendedJtaPlatform} accordingly.
-	 * <p>Note: If this is set, the Hibernate settings should not contain a JTA platform
+	 * <p>注意: If this is set, the Hibernate settings should not contain a JTA platform
 	 * setting to avoid meaningless double configuration.
 	 */
 	public LocalSessionFactoryBuilder setJtaTransactionManager(Object jtaTransactionManager) {
@@ -222,7 +222,7 @@ public class LocalSessionFactoryBuilder extends Configuration {
 	/**
 	 * Set a Hibernate {@link org.hibernate.resource.beans.container.spi.BeanContainer}
 	 * for the given Spring {@link ConfigurableListableBeanFactory}.
-	 * <p>Note: Bean container integration requires Hibernate 5.3 or higher.
+	 * <p>注意: Bean container integration requires Hibernate 5.3 or higher.
 	 * It enables autowiring of Hibernate attribute converters and entity listeners.
 	 * @since 5.1
 	 * @see SpringBeanContainer
@@ -236,7 +236,7 @@ public class LocalSessionFactoryBuilder extends Configuration {
 	/**
 	 * Set the Hibernate {@link RegionFactory} to use for the SessionFactory.
 	 * Allows for using a Spring-managed {@code RegionFactory} instance.
-	 * <p>Note: If this is set, the Hibernate settings should not define a
+	 * <p>注意: If this is set, the Hibernate settings should not define a
 	 * cache provider to avoid meaningless double configuration.
 	 * @since 5.1
 	 * @see AvailableSettings#CACHE_REGION_FACTORY

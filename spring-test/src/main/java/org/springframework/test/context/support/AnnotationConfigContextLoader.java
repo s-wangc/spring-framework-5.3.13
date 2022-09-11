@@ -34,7 +34,7 @@ import org.springframework.util.ObjectUtils;
  * {@link org.springframework.test.context.ContextConfiguration @ContextConfiguration}
  * for a definition of <em>component class</em>.
  *
- * <p>Note: {@code AnnotationConfigContextLoader} supports <em>component classes</em>
+ * <p>注意: {@code AnnotationConfigContextLoader} supports <em>component classes</em>
  * rather than the String-based resource locations defined by the legacy
  * {@link org.springframework.test.context.ContextLoader ContextLoader} API. Thus,
  * although {@code AnnotationConfigContextLoader} extends

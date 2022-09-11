@@ -78,7 +78,7 @@ import org.springframework.util.ResourceUtils;
  * DataSource names are by default interpreted as JNDI names, and no load time weaving
  * is available (which requires weaving to be turned off in the persistence provider).
  *
- * <p><b>NOTE: Spring's JPA support requires JPA 2.1 or higher, as of Spring 5.0.</b>
+ * <p><b>注意: Spring's JPA support requires JPA 2.1 or higher, as of Spring 5.0.</b>
  *
  * @author Juergen Hoeller
  * @author Stephane Nicoll
@@ -228,7 +228,7 @@ public class DefaultPersistenceUnitManager
 	 * may live next to regularly defined units originating from {@code persistence.xml}.
 	 * Its name is determined by {@link #setDefaultPersistenceUnitName}: by default,
 	 * it's simply "default".
-	 * <p><b>Note: There may be limitations in comparison to regular JPA scanning.</b>
+	 * <p><b>注意: There may be limitations in comparison to regular JPA scanning.</b>
 	 * In particular, JPA providers may pick up annotated packages for provider-specific
 	 * annotations only when driven by {@code persistence.xml}. As of 4.1, Spring's
 	 * scan can detect annotated packages as well if supported by the given

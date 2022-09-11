@@ -28,7 +28,7 @@ import org.springframework.util.ClassUtils;
  * {@link LoadTimeWeaver} implementation for WebLogic's instrumentable
  * ClassLoader.
  *
- * <p><b>NOTE:</b> Requires BEA WebLogic version 10 or higher.
+ * <p><b>注意:</b> Requires BEA WebLogic version 10 or higher.
  *
  * @author Costin Leau
  * @author Juergen Hoeller

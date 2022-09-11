@@ -25,7 +25,7 @@ import org.springframework.beans.factory.Aware;
  * {@link ServletConfig} (typically determined by the {@link WebApplicationContext})
  * that it runs in.
  *
- * <p>Note: Only satisfied if actually running within a Servlet-specific
+ * <p>注意: Only satisfied if actually running within a Servlet-specific
  * WebApplicationContext. Otherwise, no ServletConfig will be set.
  *
  * @author Juergen Hoeller

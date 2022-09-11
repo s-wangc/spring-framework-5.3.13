@@ -87,7 +87,7 @@ public abstract class StringUtils {
 	 * <p>The Object signature is useful for general attribute handling code
 	 * that commonly deals with Strings but generally has to iterate over
 	 * Objects since attributes may e.g. be primitive value objects as well.
-	 * <p><b>Note: If the object is typed to {@code String} upfront, prefer
+	 * <p><b>注意: If the object is typed to {@code String} upfront, prefer
 	 * {@link #hasLength(String)} or {@link #hasText(String)} instead.</b>
 	 * @param str the candidate object (possibly a {@code String})
 	 * @since 3.2.1
@@ -102,7 +102,7 @@ public abstract class StringUtils {
 	/**
 	 * Check that the given {@code CharSequence} is neither {@code null} nor
 	 * of length 0.
-	 * <p>Note: this method returns {@code true} for a {@code CharSequence}
+	 * <p>注意: this method returns {@code true} for a {@code CharSequence}
 	 * that purely consists of whitespace.
 	 * <p><pre class="code">
 	 * StringUtils.hasLength(null) = false
@@ -121,7 +121,7 @@ public abstract class StringUtils {
 
 	/**
 	 * Check that the given {@code String} is neither {@code null} nor of length 0.
-	 * <p>Note: this method returns {@code true} for a {@code String} that
+	 * <p>注意: this method returns {@code true} for a {@code String} that
 	 * purely consists of whitespace.
 	 * @param str the {@code String} to check (may be {@code null})
 	 * @return {@code true} if the {@code String} is not {@code null} and has length
@@ -832,7 +832,7 @@ public abstract class StringUtils {
 	 * {@link Locale#toString Locale's toString}, in a lenient sense.
 	 * This method does not aim for strict {@code Locale} design compliance;
 	 * it is rather specifically tailored for typical Spring parsing needs.
-	 * <p><b>Note: This delegate does not accept the BCP 47 language tag format.
+	 * <p><b>注意: This delegate does not accept the BCP 47 language tag format.
 	 * Please use {@link #parseLocale} for lenient parsing of both formats.</b>
 	 * @param localeString the locale {@code String}: following {@code Locale's}
 	 * {@code toString()} format ("en", "en_UK", etc), also accepting spaces as

@@ -46,7 +46,7 @@ import org.springframework.lang.Nullable;
  * same design constraints as {@link ConcurrentHashMap} with the exception that
  * {@code null} values and {@code null} keys are supported.
  *
- * <p><b>NOTE:</b> The use of references means that there is no guarantee that items
+ * <p><b>注意:</b> The use of references means that there is no guarantee that items
  * placed into the map will be subsequently available. The garbage collector may discard
  * references at any time, so it may appear that an unknown thread is silently removing
  * entries.

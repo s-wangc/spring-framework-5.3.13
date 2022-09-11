@@ -107,7 +107,7 @@ import org.springframework.util.StringUtils;
  * Remove or turn off the default annotation configuration there if you intend
  * to specify a custom {@code AutowiredAnnotationBeanPostProcessor} bean definition.
  *
- * <p><b>NOTE:</b> Annotation injection will be performed <i>before</i> XML injection;
+ * <p><b>注意:</b> Annotation injection will be performed <i>before</i> XML injection;
  * thus the latter configuration will override the former for properties wired through
  * both approaches.
  *

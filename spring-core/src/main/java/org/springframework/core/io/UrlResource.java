@@ -84,7 +84,7 @@ public class UrlResource extends AbstractFileResolvingResource {
 
 	/**
 	 * Create a new {@code UrlResource} based on a URL path.
-	 * <p>Note: The given path needs to be pre-encoded if necessary.
+	 * <p>注意: The given path needs to be pre-encoded if necessary.
 	 * @param path a URL path
 	 * @throws MalformedURLException if the given URL path is not valid
 	 * @see java.net.URL#URL(String)

@@ -98,7 +98,7 @@ public @interface DateTimeFormat {
 	 * specified. Set this attribute when you wish to format your field or method
 	 * parameter in accordance with a custom date time pattern not represented by
 	 * a style or ISO format.
-	 * <p>Note: This pattern follows the original {@link java.text.SimpleDateFormat} style,
+	 * <p>注意: This pattern follows the original {@link java.text.SimpleDateFormat} style,
 	 * as also supported by Joda-Time, with strict parsing semantics towards overflows
 	 * (e.g. rejecting a Feb 29 value for a non-leap-year). As a consequence, 'yy'
 	 * characters indicate a year in the traditional style, not a "year-of-era" as in the

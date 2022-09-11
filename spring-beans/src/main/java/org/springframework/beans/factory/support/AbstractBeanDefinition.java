@@ -411,7 +411,7 @@ public abstract class AbstractBeanDefinition extends BeanMetadataAttributeAccess
 
 	/**
 	 * Return the specified class of the bean definition (assuming it is resolved already).
-	 * <p><b>NOTE:</b> This is an initial class reference as declared in the bean metadata
+	 * <p><b>注意:</b> This is an initial class reference as declared in the bean metadata
 	 * definition, potentially combined with a declared factory method or a
 	 * {@link org.springframework.beans.factory.FactoryBean} which may lead to a different
 	 * runtime type of the bean, or not being set at all in case of an instance-level

@@ -104,7 +104,7 @@ import org.springframework.util.xml.StaxUtils;
  * <p>Due to XStream's API, it is required to set the encoding used for writing to
  * OutputStreams. It defaults to {@code UTF-8}.
  *
- * <p><b>NOTE:</b> XStream is an XML serialization library, not a data binding library.
+ * <p><b>注意:</b> XStream is an XML serialization library, not a data binding library.
  * Therefore, it has limited namespace support. As such, it is rather unsuitable for
  * usage within Web Services.
  *
@@ -278,7 +278,7 @@ public class XStreamMarshaller extends AbstractMarshaller implements BeanClassLo
 	 * {@link com.thoughtworks.xstream.security.AnyTypePermission},
 	 * {@link com.thoughtworks.xstream.security.ExplicitTypePermission} etc,
 	 * as an alternative to overriding the {@link #customizeXStream} method.
-	 * <p>Note: As of XStream 1.4.18, the default type permissions are
+	 * <p>注意: As of XStream 1.4.18, the default type permissions are
 	 * restricted to well-known core JDK types. For any custom types,
 	 * explicit type permissions need to be registered.
 	 * @since 5.2.17
@@ -639,7 +639,7 @@ public class XStreamMarshaller extends AbstractMarshaller implements BeanClassLo
 
 	/**
 	 * Return the native XStream delegate used by this marshaller.
-	 * <p><b>NOTE: This method has been marked as final as of Spring 4.0.</b>
+	 * <p><b>注意: This method has been marked as final as of Spring 4.0.</b>
 	 * It can be used to access the fully configured XStream for marshalling
 	 * but not configuration purposes anymore.
 	 * <p>As of Spring Framework 5.1.16, creation of the {@link XStream} instance

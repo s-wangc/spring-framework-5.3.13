@@ -39,7 +39,7 @@ public enum Propagation {
 	/**
 	 * Support a current transaction, execute non-transactionally if none exists.
 	 * Analogous to EJB transaction attribute of the same name.
-	 * <p>Note: For transaction managers with transaction synchronization,
+	 * <p>注意: For transaction managers with transaction synchronization,
 	 * {@code SUPPORTS} is slightly different from no transaction at all,
 	 * as it defines a transaction scope that synchronization will apply for.
 	 * As a consequence, the same resources (JDBC Connection, Hibernate Session, etc)
@@ -58,7 +58,7 @@ public enum Propagation {
 	/**
 	 * Create a new transaction, and suspend the current transaction if one exists.
 	 * Analogous to the EJB transaction attribute of the same name.
-	 * <p><b>NOTE:</b> Actual transaction suspension will not work out-of-the-box
+	 * <p><b>注意:</b> Actual transaction suspension will not work out-of-the-box
 	 * on all transaction managers. This in particular applies to
 	 * {@link org.springframework.transaction.jta.JtaTransactionManager},
 	 * which requires the {@code javax.transaction.TransactionManager} to be
@@ -70,7 +70,7 @@ public enum Propagation {
 	/**
 	 * Execute non-transactionally, suspend the current transaction if one exists.
 	 * Analogous to EJB transaction attribute of the same name.
-	 * <p><b>NOTE:</b> Actual transaction suspension will not work out-of-the-box
+	 * <p><b>注意:</b> Actual transaction suspension will not work out-of-the-box
 	 * on all transaction managers. This in particular applies to
 	 * {@link org.springframework.transaction.jta.JtaTransactionManager},
 	 * which requires the {@code javax.transaction.TransactionManager} to be
@@ -88,7 +88,7 @@ public enum Propagation {
 	/**
 	 * Execute within a nested transaction if a current transaction exists,
 	 * behave like {@code REQUIRED} otherwise. There is no analogous feature in EJB.
-	 * <p>Note: Actual creation of a nested transaction will only work on specific
+	 * <p>注意: Actual creation of a nested transaction will only work on specific
 	 * transaction managers. Out of the box, this only applies to the JDBC
 	 * DataSourceTransactionManager. Some JTA providers might support nested
 	 * transactions as well.

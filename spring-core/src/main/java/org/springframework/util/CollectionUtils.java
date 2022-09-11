@@ -108,7 +108,7 @@ public abstract class CollectionUtils {
 	/**
 	 * Convert the supplied array into a List. A primitive array gets converted
 	 * into a List of the appropriate wrapper type.
-	 * <p><b>NOTE:</b> Generally prefer the standard {@link Arrays#asList} method.
+	 * <p><b>注意:</b> Generally prefer the standard {@link Arrays#asList} method.
 	 * This {@code arrayToList} method is just meant to deal with an incoming Object
 	 * value that might be an {@code Object[]} or a primitive array at runtime.
 	 * <p>A {@code null} source value will be converted to an empty List.

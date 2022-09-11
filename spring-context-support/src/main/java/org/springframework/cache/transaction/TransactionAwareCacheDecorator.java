@@ -32,7 +32,7 @@ import org.springframework.util.Assert;
  * transaction. If no transaction is active, {@link #put}, {@link #evict} and
  * {@link #clear} operations will be performed immediately, as usual.
  *
- * <p><b>Note:</b> Use of immediate operations such as {@link #putIfAbsent} and
+ * <p><b>注意:</b> Use of immediate operations such as {@link #putIfAbsent} and
  * {@link #evictIfPresent} cannot be deferred to the after-commit phase of a
  * running transaction. Use these with care in a transactional environment.
  *

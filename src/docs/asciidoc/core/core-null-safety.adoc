@@ -23,7 +23,7 @@ for up-to-date information. Nullability declarations are expected to be fine-tun
 Spring Framework releases, including minor ones. Nullability of types used inside method
 bodies is outside of the scope of this feature.
 
-NOTE: Other common libraries such as Reactor and Spring Data provide null-safe APIs that
+注意: Other common libraries such as Reactor and Spring Data provide null-safe APIs that
 use a similar nullability arrangement, delivering a consistent overall experience for
 Spring application developers.
 

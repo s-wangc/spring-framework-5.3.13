@@ -753,7 +753,7 @@ public abstract class WebUtils {
 	 * A list containing "*" means that all origins are allowed.
 	 * An empty list means only same origin is allowed.
 	 *
-	 * <p><strong>Note:</strong> as of 5.1 this method ignores
+	 * <p><strong>注意:</strong> as of 5.1 this method ignores
 	 * {@code "Forwarded"} and {@code "X-Forwarded-*"} headers that specify the
 	 * client-originated address. Consider using the {@code ForwardedHeaderFilter}
 	 * to extract and use, or to discard such headers.
@@ -782,7 +782,7 @@ public abstract class WebUtils {
 	 * {@code Forwarded}, {@code X-Forwarded-Proto}, {@code X-Forwarded-Host} and
 	 * {@code X-Forwarded-Port} headers.
 	 *
-	 * <p><strong>Note:</strong> as of 5.1 this method ignores
+	 * <p><strong>注意:</strong> as of 5.1 this method ignores
 	 * {@code "Forwarded"} and {@code "X-Forwarded-*"} headers that specify the
 	 * client-originated address. Consider using the {@code ForwardedHeaderFilter}
 	 * to extract and use, or to discard such headers.

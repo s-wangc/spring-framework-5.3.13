@@ -191,7 +191,7 @@ public class ResourceHttpRequestHandler extends WebContentGenerator
 	 * {@code Resource} locations provided via {@link #setLocations(List) setLocations}.
 	 * <p>Note that the returned list is fully initialized only after
 	 * initialization via {@link #afterPropertiesSet()}.
-	 * <p><strong>Note:</strong> As of 5.3.11 the list of locations may be filtered to
+	 * <p><strong>注意:</strong> As of 5.3.11 the list of locations may be filtered to
 	 * exclude those that don't actually exist and therefore the list returned from this
 	 * method may be a subset of all given locations. See {@link #setOptimizeLocations}.
 	 * @see #setLocationValues
@@ -724,7 +724,7 @@ public class ResourceHttpRequestHandler extends WebContentGenerator
 	 * <li>Paths that represent a {@link org.springframework.util.ResourceUtils#isUrl
 	 * valid URL} or would represent one after the leading slash is removed.
 	 * </ul>
-	 * <p><strong>Note:</strong> this method assumes that leading, duplicate '/'
+	 * <p><strong>注意:</strong> this method assumes that leading, duplicate '/'
 	 * or control characters (e.g. white space) have been trimmed so that the
 	 * path starts predictably with a single '/' or does not have one.
 	 * @param path the path to validate

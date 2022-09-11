@@ -23,7 +23,7 @@ import javax.servlet.jsp.JspException;
  * page. The actual value  can be overridden by escaping-aware tags.
  * 默认值是"false".
  *
- * <p>Note: You can also set a "defaultHtmlEscape" web.xml context-param.
+ * <p>注意: You can also set a "defaultHtmlEscape" web.xml context-param.
  * A page-level setting overrides a context-param.
  *
  * <table>

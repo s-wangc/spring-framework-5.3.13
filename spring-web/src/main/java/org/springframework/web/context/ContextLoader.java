@@ -62,7 +62,7 @@ import org.springframework.util.StringUtils;
  * If not explicitly specified, the context implementation is supposed to use a
  * default location (with XmlWebApplicationContext: "/WEB-INF/applicationContext.xml").
  *
- * <p>Note: In case of multiple config locations, later bean definitions will
+ * <p>注意: In case of multiple config locations, later bean definitions will
  * override ones defined in previously loaded files, at least when using one of
  * Spring's default ApplicationContext implementations. This can be leveraged
  * to deliberately override certain bean definitions via an extra XML file.

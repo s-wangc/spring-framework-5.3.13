@@ -99,7 +99,7 @@ public class MailSendException extends MailException {
 	 * the generic MailSender interface.
 	 * <p>In case of sending MimeMessage instances via JavaMailSender,
 	 * the messages will be of type MimeMessage.
-	 * <p><b>NOTE:</b> This Map will not be available after serialization.
+	 * <p><b>注意:</b> This Map will not be available after serialization.
 	 * Use {@link #getMessageExceptions()} in such a scenario, which will
 	 * be available after serialization as well.
 	 * @return the Map of failed messages as keys and thrown exceptions as values

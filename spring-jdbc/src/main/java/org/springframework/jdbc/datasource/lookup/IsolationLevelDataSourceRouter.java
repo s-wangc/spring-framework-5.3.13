@@ -69,7 +69,7 @@ import org.springframework.transaction.support.TransactionSynchronizationManager
  *   &lt;property name="defaultTargetDataSource" value="java:comp/env/jdbc/mydefds"/&gt;
  * &lt;/bean&gt;</pre>
  *
- * Note: If you are using this router in combination with Spring's
+ * 注意: If you are using this router in combination with Spring's
  * {@link org.springframework.transaction.jta.JtaTransactionManager},
  * don't forget to switch the "allowCustomIsolationLevels" flag to "true".
  * (By default, JtaTransactionManager will only accept a default isolation level

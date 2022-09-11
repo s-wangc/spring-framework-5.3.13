@@ -48,7 +48,7 @@ import org.springframework.web.context.WebApplicationContext;
  * by type: All beans in the Spring root WebApplicationContext that implement the
  * PhaseListener interface will be fetched and invoked.
  *
- * <p>Note: This multicaster's {@code getPhaseId()} method will always return
+ * <p>注意: This multicaster's {@code getPhaseId()} method will always return
  * {@code ANY_PHASE}. <b>The phase id exposed by the target listener beans
  * will be ignored; all events will be propagated to all listeners.</b>
  *

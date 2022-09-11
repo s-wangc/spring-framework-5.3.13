@@ -45,7 +45,7 @@ public class ClassWriter extends ClassVisitor {
    * #visitMethod} method will be ignored, and computed automatically from the signature and the
    * bytecode of each method.
    *
-   * <p><b>Note:</b> for classes whose version is {@link Opcodes#V1_7} of more, this option requires
+   * <p><b>注意:</b> for classes whose version is {@link Opcodes#V1_7} of more, this option requires
    * valid stack map frames. The maximum stack size is then computed from these frames, and from the
    * bytecode instructions in between. If stack map frames are not present or must be recomputed,
    * used {@link #COMPUTE_FRAMES} instead.
@@ -65,7 +65,7 @@ public class ClassWriter extends ClassVisitor {
    */
   public static final int COMPUTE_FRAMES = 2;
 
-  // Note: fields are ordered as in the ClassFile structure, and those related to attributes are
+  // 注意: fields are ordered as in the ClassFile structure, and those related to attributes are
   // ordered as in Section 4.7 of the JVMS.
 
   /**

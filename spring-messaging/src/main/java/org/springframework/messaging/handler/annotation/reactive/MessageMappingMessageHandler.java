@@ -195,7 +195,7 @@ public class MessageMappingMessageHandler extends AbstractMethodMessageHandler<C
 	 * globally applicable
 	 * {@link org.springframework.messaging.handler.annotation.MessageExceptionHandler @MessageExceptionHandler}
 	 * methods.
-	 * <p>Note: spring-messaging does not depend on spring-web and therefore it
+	 * <p>注意: spring-messaging does not depend on spring-web and therefore it
 	 * is not possible to explicitly support the registration of a
 	 * {@code @ControllerAdvice} bean. You can use the following adapter code
 	 * to register {@code @ControllerAdvice} beans here:

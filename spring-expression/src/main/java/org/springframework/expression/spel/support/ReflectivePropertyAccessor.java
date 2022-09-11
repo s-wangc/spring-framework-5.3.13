@@ -524,7 +524,7 @@ public class ReflectivePropertyAccessor implements PropertyAccessor {
 	 * member (method/field) to use each time read() is called. This method will just
 	 * return the ReflectivePropertyAccessor instance if it is unable to build a more
 	 * optimal accessor.
-	 * <p>Note: An optimal accessor is currently only usable for read attempts.
+	 * <p>注意: An optimal accessor is currently only usable for read attempts.
 	 * Do not call this method if you need a read-write accessor.
 	 * @see OptimalPropertyAccessor
 	 */

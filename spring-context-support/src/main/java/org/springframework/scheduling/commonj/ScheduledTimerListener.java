@@ -180,7 +180,7 @@ public class ScheduledTimerListener {
 	 * interval in-between executions.
 	 * <p>Note that the semantics of the period value vary between fixed-rate
 	 * and fixed-delay execution.
-	 * <p><b>Note:</b> A period of 0 (for example as fixed delay) <i>is</i>
+	 * <p><b>注意:</b> A period of 0 (for example as fixed delay) <i>is</i>
 	 * supported, because the CommonJ specification defines this as a legal value.
 	 * Hence a value of 0 will result in immediate re-execution after a job has
 	 * finished (not in one-time execution like with {@code java.util.Timer}).

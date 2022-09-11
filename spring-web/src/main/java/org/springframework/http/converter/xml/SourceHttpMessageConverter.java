@@ -118,7 +118,7 @@ public class SourceHttpMessageConverter<T extends Source> extends AbstractHttpMe
 	/**
 	 * Indicate whether external XML entities are processed when converting to a Source.
 	 * <p>Default is {@code false}, meaning that external entities are not resolved.
-	 * <p><strong>Note:</strong> setting this option to {@code true} also
+	 * <p><strong>注意:</strong> setting this option to {@code true} also
 	 * automatically sets {@link #setSupportDtd} to {@code true}.
 	 */
 	public void setProcessExternalEntities(boolean processExternalEntities) {

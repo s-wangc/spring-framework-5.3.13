@@ -97,7 +97,7 @@ import org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolv
  * ordered at 2 to map URL paths to controller bean names.
  * </ul>
  *
- * <p><strong>Note:</strong> Additional HandlerMappings may be registered
+ * <p><strong>注意:</strong> Additional HandlerMappings may be registered
  * as a result of using the {@code <view-controller>} or the
  * {@code <resources>} MVC namespace elements.
  *

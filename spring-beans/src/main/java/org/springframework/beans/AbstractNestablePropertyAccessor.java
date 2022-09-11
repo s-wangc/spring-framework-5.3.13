@@ -828,7 +828,7 @@ public abstract class AbstractNestablePropertyAccessor extends AbstractPropertyA
 	/**
 	 * Retrieve a Property accessor for the given nested property.
 	 * Create a new one if not found in the cache.
-	 * <p>Note: Caching nested PropertyAccessors is necessary now,
+	 * <p>注意: Caching nested PropertyAccessors is necessary now,
 	 * to keep registered custom editors for nested properties.
 	 * @param nestedProperty property to create the PropertyAccessor for
 	 * @return the PropertyAccessor instance, either cached or newly created

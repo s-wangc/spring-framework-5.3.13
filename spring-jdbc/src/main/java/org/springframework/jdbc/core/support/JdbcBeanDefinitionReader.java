@@ -33,7 +33,7 @@ import org.springframework.util.Assert;
  * Formats for each are identical to the properties format recognized
  * by PropertiesBeanDefinitionReader.
  *
- * <p><b>NOTE:</b> This is mainly intended as an example for a custom
+ * <p><b>注意:</b> This is mainly intended as an example for a custom
  * JDBC-based bean definition reader. It does not aim to offer
  * comprehensive functionality.
  *

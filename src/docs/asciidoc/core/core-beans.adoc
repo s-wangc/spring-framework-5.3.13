@@ -100,7 +100,7 @@ Configuration metadata is traditionally supplied in a simple and intuitive XML f
 which is what most of this chapter uses to convey key concepts and features of the
 Spring IoC container.
 
-NOTE: XML-based metadata is not the only allowed form of configuration metadata.
+注意: XML-based metadata is not the only allowed form of configuration metadata.
 The Spring IoC container itself is totally decoupled from the format in which this
 configuration metadata is actually written. These days, many developers choose
 <<beans-java, Java-based configuration>> for their Spring applications.
@@ -558,7 +558,7 @@ Also, if you use Spring AOP, it helps a lot when applying advice to a set of bea
 related by name.
 ****
 
-NOTE: With component scanning in the classpath, Spring generates bean names for unnamed
+注意: With component scanning in the classpath, Spring generates bean names for unnamed
 components, following the rules described earlier: essentially, taking the simple class name
 and turning its initial character to lower-case. However, in the (unusual) special
 case when there is more than one character and both the first and second characters
@@ -847,7 +847,7 @@ This approach shows that the factory bean itself can be managed and configured t
 dependency injection (DI). See <<beans-factory-properties-detailed,Dependencies and
 Configuration in Detail>>.
 
-NOTE: In Spring documentation, "factory bean" refers to a bean that is configured in the
+注意: In Spring documentation, "factory bean" refers to a bean that is configured in the
 Spring container and that creates objects through an
 <<beans-factory-class-instance-factory-method,instance>> or
 <<beans-factory-class-static-factory-method,static>> factory method. By contrast,
@@ -1059,7 +1059,7 @@ as the following example shows:
 In addition to resolving the ambiguity of multiple simple values, specifying an index
 resolves ambiguity where a constructor has two arguments of the same type.
 
-NOTE: The index is 0-based.
+注意: The index is 0-based.
 --
 
 .[[beans-factory-ctor-arguments-name]]Constructor argument name
@@ -1561,7 +1561,7 @@ likely fatal results) when the `client` bean is actually instantiated. If the `c
 bean is a <<beans-factory-scopes,prototype>> bean, this typo and the resulting exception
 may only be discovered long after the container is deployed.
 
-NOTE: The `local` attribute on the `idref` element is no longer supported in the 4.0 beans
+注意: The `local` attribute on the `idref` element is no longer supported in the 4.0 beans
 XSD, since it does not provide value over a regular `bean` reference any more. Change
 your existing `idref local` references to `idref bean` when upgrading to the 4.0 schema.
 
@@ -1624,7 +1624,7 @@ listings shows how to use the `parent` attribute:
 	</bean>
 ----
 
-NOTE: The `local` attribute on the `ref` element is no longer supported in the 4.0 beans
+注意: The `local` attribute on the `ref` element is no longer supported in the 4.0 beans
 XSD, since it does not provide value over a regular `bean` reference any more. Change
 your existing `ref local` references to `ref bean` when upgrading to the 4.0 schema.
 
@@ -1962,7 +1962,7 @@ attribute to do the exact same thing. In this case, `spouse` is the property nam
 whereas the `-ref` part indicates that this is not a straight value but rather a
 reference to another bean.
 
-NOTE: The p-namespace is not as flexible as the standard XML format. For example, the format
+注意: The p-namespace is not as flexible as the standard XML format. For example, the format
 for declaring property references clashes with properties that end in `Ref`, whereas the
 standard XML format does not. We recommend that you choose your approach carefully and
 communicate this to your team members to avoid producing XML documents that use all
@@ -2020,7 +2020,7 @@ argument indexes, as follows:
 		c:_2="something@somewhere.com"/>
 ----
 
-NOTE: Due to the XML grammar, the index notation requires the presence of the leading `_`,
+注意: Due to the XML grammar, the index notation requires the presence of the leading `_`,
 as XML attribute names cannot start with a number (even though some IDEs allow it).
 A corresponding index notation is also available for `<constructor-arg>` elements but
 not commonly used since the plain order of declaration is usually sufficient there.
@@ -2084,7 +2084,7 @@ delimiters):
 	<bean id="accountDao" class="x.y.jdbc.JdbcAccountDao" />
 ----
 
-NOTE: The `depends-on` attribute can specify both an initialization-time dependency and,
+注意: The `depends-on` attribute can specify both an initialization-time dependency and,
 in the case of <<beans-factory-scopes-singleton,singleton>> beans only, a corresponding
 destruction-time dependency. Dependent beans that define a `depends-on` relationship
 with a given bean are destroyed first, prior to the given bean itself being destroyed.
@@ -2242,7 +2242,7 @@ makes that specific bean definition unavailable to the autowiring infrastructure
 (including annotation style configurations such as <<beans-autowired-annotation,
 `@Autowired`>>).
 
-NOTE: The `autowire-candidate` attribute is designed to only affect type-based autowiring.
+注意: The `autowire-candidate` attribute is designed to only affect type-based autowiring.
 It does not affect explicit references by name, which get resolved even if the
 specified bean is not marked as an autowire candidate. As a consequence, autowiring
 by name nevertheless injects a bean if the name matches.
@@ -2706,7 +2706,7 @@ The following table describes the supported scopes:
   the context of a web-aware Spring `ApplicationContext`.
 |===
 
-NOTE: As of Spring 3.0, a thread scope is available but is not registered by default. For
+注意: As of Spring 3.0, a thread scope is available but is not registered by default. For
 more information, see the documentation for
 {api-spring-framework}/context/support/SimpleThreadScope.html[`SimpleThreadScope`].
 For instructions on how to register this or any other custom scope, see
@@ -3288,7 +3288,7 @@ of the custom `Scope` implementation that you wish to register and use.
 Suppose that you write your custom `Scope` implementation, and then register it as shown
 in the next example.
 
-NOTE: The next example uses `SimpleThreadScope`, which is included with Spring but is not
+注意: The next example uses `SimpleThreadScope`, which is included with Spring but is not
 registered by default. The instructions would be the same for your own custom `Scope`
 implementations.
 
@@ -3350,7 +3350,7 @@ of the scope. You can also do the `Scope` registration declaratively, by using t
 	</beans>
 ----
 
-NOTE: When you place `<aop:scoped-proxy/>` within a `<bean>` declaration for a
+注意: When you place `<aop:scoped-proxy/>` within a `<bean>` declaration for a
 `FactoryBean` implementation, it is the factory bean itself that is scoped, not the object
 returned from `getObject()`.
 
@@ -3673,7 +3673,7 @@ As of Spring 2.5, you have three options for controlling bean lifecycle behavior
 * The <<beans-postconstruct-and-predestroy-annotations, `@PostConstruct` and `@PreDestroy`
 annotations>>. You can combine these mechanisms to control a given bean.
 
-NOTE: If multiple lifecycle mechanisms are configured for a bean and each mechanism is
+注意: If multiple lifecycle mechanisms are configured for a bean and each mechanism is
 configured with a different method name, then each configured method is run in the
 order listed after this note. However, if the same method name is configured -- for example,
 `init()` for an initialization method -- for more than one of these lifecycle mechanisms,
@@ -4075,7 +4075,7 @@ parent bean ID returns an error. Similarly, the container's internal
 `preInstantiateSingletons()` method ignores bean definitions that are defined as
 abstract.
 
-NOTE: `ApplicationContext` pre-instantiates all singletons by default. Therefore, it is
+注意: `ApplicationContext` pre-instantiates all singletons by default. Therefore, it is
 important (at least for singleton beans) that if you have a (parent) bean definition
 which you intend to use only as a template, and this definition specifies a class, you
 must make sure to set the __abstract__ attribute to __true__, otherwise the application
@@ -4157,7 +4157,7 @@ initialization of other beans in the context, this early type detection is criti
 
 [[beans-factory-programmatically-registering-beanpostprocessors]]
 .Programmatically registering `BeanPostProcessor` instances
-NOTE: While the recommended approach for `BeanPostProcessor` registration is through
+注意: While the recommended approach for `BeanPostProcessor` registration is through
 `ApplicationContext` auto-detection (as described earlier), you can register them
 programmatically against a `ConfigurableBeanFactory` by using the `addBeanPostProcessor`
 method. This can be useful when you need to evaluate conditional logic before
@@ -4377,7 +4377,7 @@ implement the `BeanFactoryPostProcessor` interface. It uses these beans as bean 
 post-processors, at the appropriate time. You can deploy these post-processor beans as
 you would any other bean.
 
-NOTE: As with ``BeanPostProcessor``s , you typically do not want to configure
+注意: As with ``BeanPostProcessor``s , you typically do not want to configure
 ``BeanFactoryPostProcessor``s for lazy initialization. If no other bean references a
 `Bean(Factory)PostProcessor`, that post-processor will not get instantiated at all.
 Thus, marking it for lazy initialization will be ignored, and the
@@ -4514,7 +4514,7 @@ tom.fred.bob.sammy=123
 ----
 
 
-NOTE: Specified override values are always literal values. They are not translated into
+注意: Specified override values are always literal values. They are not translated into
 bean references. This convention also applies when the original value in the XML bean
 definition specifies a bean reference.
 
@@ -5927,7 +5927,7 @@ named `movieFinder` injected into its setter method:
 	}
 ----
 
-NOTE: The name provided with the annotation is resolved as a bean name by the
+注意: The name provided with the annotation is resolved as a bean name by the
 `ApplicationContext` of which the `CommonAnnotationBeanPostProcessor` is aware.
 The names can be resolved through JNDI if you configure Spring's
 {api-spring-framework}/jndi/support/SimpleJndiBeanFactory.html[`SimpleJndiBeanFactory`]
@@ -6062,7 +6062,7 @@ example shows:
 	}
 ----
 
-NOTE: When configuring a `PropertySourcesPlaceholderConfigurer` using JavaConfig, the
+注意: When configuring a `PropertySourcesPlaceholderConfigurer` using JavaConfig, the
 `@Bean` method must be `static`.
 
 Using the above configuration ensures Spring initialization failure if any `${}`
@@ -6070,7 +6070,7 @@ placeholder could not be resolved. It is also possible to use methods like
 `setPlaceholderPrefix`, `setPlaceholderSuffix`, or `setValueSeparator` to customize
 placeholders.
 
-NOTE: Spring Boot configures by default a `PropertySourcesPlaceholderConfigurer` bean that
+注意: Spring Boot configures by default a `PropertySourcesPlaceholderConfigurer` bean that
 will get properties from `application.properties` and `application.yml` files.
 
 Built-in converter support provided by Spring allows simple type conversion (to `Integer`
@@ -6490,7 +6490,7 @@ comma- or semicolon- or space-separated list that includes the parent package of
 	}
 ----
 
-NOTE: For brevity, the preceding example could have used the `value` attribute of the
+注意: For brevity, the preceding example could have used the `value` attribute of the
 annotation (that is, `@ComponentScan("org.example")`).
 
 The following alternative uses XML:
@@ -6536,7 +6536,7 @@ Furthermore, the `AutowiredAnnotationBeanPostProcessor` and
 component-scan element. That means that the two components are autodetected and
 wired together -- all without any bean configuration metadata provided in XML.
 
-NOTE: You can disable the registration of `AutowiredAnnotationBeanPostProcessor` and
+注意: You can disable the registration of `AutowiredAnnotationBeanPostProcessor` and
 `CommonAnnotationBeanPostProcessor` by including the `annotation-config` attribute
 with a value of `false`.
 
@@ -6620,7 +6620,7 @@ The following listing shows the equivalent XML:
 	</beans>
 ----
 
-NOTE: You can also disable the default filters by setting `useDefaultFilters=false` on the
+注意: You can also disable the default filters by setting `useDefaultFilters=false` on the
 annotation or by providing `use-default-filters="false"` as an attribute of the
 `<component-scan/>` element. This effectively disables automatic detection of classes
 annotated or meta-annotated with `@Component`, `@Repository`, `@Service`, `@Controller`,
@@ -6965,7 +6965,7 @@ scope within the annotation, as the following example shows:
 	}
 ----
 
-NOTE: `@Scope` annotations are only introspected on the concrete bean class (for annotated
+注意: `@Scope` annotations are only introspected on the concrete bean class (for annotated
 components) or the factory method (for `@Bean` methods). In contrast to XML bean
 definitions, there is no notion of bean definition inheritance, and inheritance
 hierarchies at the class level are irrelevant for metadata purposes.
@@ -6976,7 +6976,7 @@ you may also compose your own scoping annotations by using Spring's meta-annotat
 approach: for example, a custom annotation meta-annotated with `@Scope("prototype")`,
 possibly also declaring a custom scoped-proxy mode.
 
-NOTE: To provide a custom strategy for scope resolution rather than relying on the
+注意: To provide a custom strategy for scope resolution rather than relying on the
 annotation-based approach, you can implement the
 {api-spring-framework}/context/annotation/ScopeMetadataResolver.html[`ScopeMetadataResolver`]
 interface. Be sure to include a default no-arg constructor. Then you can provide the
@@ -7111,7 +7111,7 @@ class CachingMovieCatalog : MovieCatalog {
 }
 ----
 
-NOTE: As with most annotation-based alternatives, keep in mind that the annotation metadata is
+注意: As with most annotation-based alternatives, keep in mind that the annotation metadata is
 bound to the class definition itself, while the use of XML allows for multiple beans
 of the same type to provide variations in their qualifier metadata, because that
 metadata is provided per-instance rather than per-class.
@@ -7125,7 +7125,7 @@ While classpath scanning is very fast, it is possible to improve the startup per
 of large applications by creating a static list of candidates at compilation time. In this
 mode, all modules that are targets of component scanning must use this mechanism.
 
-NOTE: Your existing `@ComponentScan` or `<context:component-scan/>` directives must remain
+注意: Your existing `@ComponentScan` or `<context:component-scan/>` directives must remain
 unchanged to request the context to scan candidates in certain packages. When the
 `ApplicationContext` detects such an index, it automatically uses it rather than scanning
 the classpath.
@@ -7169,7 +7169,7 @@ configuration, as shown in the following example:
 The `spring-context-indexer` artifact generates a `META-INF/spring.components` file that
 is included in the jar file.
 
-NOTE: When working with this mode in your IDE, the `spring-context-indexer` must be
+注意: When working with this mode in your IDE, the `spring-context-indexer` must be
 registered as an annotation processor to make sure the index is up-to-date when
 candidate components are updated.
 
@@ -7477,7 +7477,7 @@ exact same way as when you use Spring annotations, as the following example show
 	}
 ----
 
-NOTE: In contrast to `@Component`, the JSR-330 `@Named` and the JSR-250 `ManagedBean`
+注意: In contrast to `@Component`, the JSR-330 `@Named` and the JSR-250 `ManagedBean`
 annotations are not composable. You should use Spring's stereotype model for building
 custom component annotations.
 
@@ -7817,7 +7817,7 @@ following example shows:
 	}
 ----
 
-NOTE: Remember that `@Configuration` classes are <<beans-meta-annotations, meta-annotated>>
+注意: Remember that `@Configuration` classes are <<beans-meta-annotations, meta-annotated>>
 with `@Component`, so they are candidates for component-scanning. In the preceding example,
 assuming that `AppConfig` is declared within the `com.acme` package (or any package
 underneath), it is picked up during the call to `scan()`. Upon `refresh()`, all its `@Bean`
@@ -8436,7 +8436,7 @@ as having one bean method call another, as the following example shows:
 In the preceding example, `beanOne` receives a reference to `beanTwo` through constructor
 injection.
 
-NOTE: This method of declaring inter-bean dependencies works only when the `@Bean` method
+注意: This method of declaring inter-bean dependencies works only when the `@Bean` method
 is declared within a `@Configuration` class. You cannot declare inter-bean dependencies
 by using plain `@Component` classes.
 
@@ -8600,7 +8600,7 @@ where the magic comes in: All `@Configuration` classes are subclassed at startup
 with `CGLIB`. In the subclass, the child method checks the container first for any
 cached (scoped) beans before it calls the parent method and creates a new instance.
 
-NOTE: The behavior could be different according to the scope of your bean. We are talking
+注意: The behavior could be different according to the scope of your bean. We are talking
 about singletons here.
 
 [NOTE]
@@ -9272,7 +9272,7 @@ jdbc.password=
 ----
 
 
-NOTE: In `system-test-config.xml` file, the `AppConfig` `<bean/>` does not declare an `id`
+注意: In `system-test-config.xml` file, the `AppConfig` `<bean/>` does not declare an `id`
 element. While it would be acceptable to do so, it is unnecessary, given that no other bean
 ever refers to it, and it is unlikely to be explicitly fetched from the container by name.
 Similarly, the `DataSource` bean is only ever autowired by type, so an explicit bean `id`
@@ -9579,7 +9579,7 @@ can rewrite the `dataSource` configuration as follows:
 	}
 ----
 
-NOTE: As mentioned earlier, with `@Bean` methods, you typically choose to use programmatic
+注意: As mentioned earlier, with `@Bean` methods, you typically choose to use programmatic
 JNDI lookups, by using either Spring's `JndiTemplate`/`JndiLocatorDelegate` helpers or the
 straight JNDI `InitialContext` usage shown earlier but not the `JndiObjectFactoryBean`
 variant, which would force you to declare the return type as the `FactoryBean` type.
@@ -9593,7 +9593,7 @@ profile expressions:
 * `&`: A logical "`and`" of the profiles
 * `|`: A logical "`or`" of the profiles
 
-NOTE: You cannot mix the `&` and `|` operators without using parentheses. For example,
+注意: You cannot mix the `&` and `|` operators without using parentheses. For example,
 `production & us-east | eu-central` is not a valid expression. It must be expressed as
 `production & (us-east | eu-central)`.
 
@@ -9940,7 +9940,7 @@ is configured with two PropertySource objects -- one representing the set of JVM
 (`System.getProperties()`) and one representing the set of system environment variables
 (`System.getenv()`).
 
-NOTE: These default property sources are present for `StandardEnvironment`, for use in standalone
+注意: These default property sources are present for `StandardEnvironment`, for use in standalone
 applications. {api-spring-framework}/web/context/support/StandardServletEnvironment.html[`StandardServletEnvironment`]
 is populated with additional default property sources including servlet config and servlet
 context parameters. It can optionally enable a {api-spring-framework}/jndi/JndiPropertySource.html[`JndiPropertySource`].
@@ -10088,7 +10088,7 @@ resolved to the corresponding value. If not, then `default/path` is used
 as a default. If no default is specified and a property cannot be resolved, an
 `IllegalArgumentException` is thrown.
 
-NOTE: The `@PropertySource` annotation is repeatable, according to Java 8 conventions.
+注意: The `@PropertySource` annotation is repeatable, according to Java 8 conventions.
 However, all such `@PropertySource` annotations need to be declared at the same
 level, either directly on the configuration class or as meta-annotations within the
 same custom annotation. Mixing direct annotations and meta-annotations is not
@@ -10409,11 +10409,11 @@ You can also use the `MessageSourceAware` interface to acquire a reference to an
 `ApplicationContext` that implements the `MessageSourceAware` interface is injected with
 the application context's `MessageSource` when the bean is created and configured.
 
-NOTE: Because Spring's `MessageSource` is based on Java's `ResourceBundle`, it does not merge
+注意: Because Spring's `MessageSource` is based on Java's `ResourceBundle`, it does not merge
 bundles with the same base name, but will only use the first bundle found.
 Subsequent message bundles with the same base name are ignored.
 
-NOTE: As an alternative to `ResourceBundleMessageSource`, Spring provides a
+注意: As an alternative to `ResourceBundleMessageSource`, Spring provides a
 `ReloadableResourceBundleMessageSource` class. This variant supports the same bundle
 file format but is more flexible than the standard JDK based
 `ResourceBundleMessageSource` implementation. In particular, it allows for reading
@@ -10650,7 +10650,7 @@ called, if there are any email messages that should be blocked, a custom event o
 `ApplicationListener` and receives the `BlockedListEvent`, at which point it can
 notify appropriate parties.
 
-NOTE: Spring's eventing mechanism is designed for simple communication between Spring beans
+注意: Spring's eventing mechanism is designed for simple communication between Spring beans
 within the same application context. However, for more sophisticated enterprise
 integration needs, the separately maintained
 https://projects.spring.io/spring-integration/[Spring Integration] project provides
@@ -10798,7 +10798,7 @@ method signature to return the event that should be published, as the following 
 	}
 ----
 
-NOTE: This feature is not supported for
+注意: This feature is not supported for
 <<context-functionality-events-async, asynchronous listeners>>.
 
 The `handleBlockedListEvent()` method publishes a new `ListUpdateEvent` for every
@@ -11034,7 +11034,7 @@ To start collecting custom `StartupStep`, components can either get the `Applica
 instance from the application context directly, make their component implement `ApplicationStartupAware`,
 or ask for the `ApplicationStartup` type on any injection point.
 
-NOTE: Developers should not use the `"spring.*"` namespace when creating custom startup steps.
+注意: Developers should not use the `"spring.*"` namespace when creating custom startup steps.
 This namespace is reserved for internal Spring usage and is subject to change.
 
 [[context-create]]
@@ -11106,7 +11106,7 @@ and the corresponding Spring XML bean definition file(s) (typically
 . Drop the resulting RAR file into your
 application server's deployment directory.
 
-NOTE: Such RAR deployment units are usually self-contained. They do not expose components
+注意: Such RAR deployment units are usually self-contained. They do not expose components
 to the outside world, not even to other modules of the same application. Interaction with a
 RAR-based `ApplicationContext` usually occurs through JMS destinations that it shares with
 other modules. A RAR-based `ApplicationContext` may also, for example, schedule some jobs

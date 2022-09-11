@@ -112,7 +112,7 @@ public class ClassReader {
    * must not be modified. This field is intended for {@link Attribute} sub classes, and is normally
    * not needed by class visitors.</i>
    *
-   * <p>NOTE: the ClassFile structure can start at any offset within this array, i.e. it does not
+   * <p>注意: the ClassFile structure can start at any offset within this array, i.e. it does not
    * necessarily start at offset 0. Use {@link #getItem} and {@link #header} to get correct
    * ClassFile element offsets within this byte array.
    */

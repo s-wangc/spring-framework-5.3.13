@@ -687,7 +687,7 @@ public abstract class BeanUtils {
 
 	/**
 	 * Copy the property values of the given source bean into the target bean.
-	 * <p>Note: The source and target classes do not have to match or even be derived
+	 * <p>注意: The source and target classes do not have to match or even be derived
 	 * from each other, as long as the properties match. Any bean properties that the
 	 * source bean exposes but the target bean does not will silently be ignored.
 	 * <p>This is just a convenience method. For more complex transfer needs,
@@ -704,7 +704,7 @@ public abstract class BeanUtils {
 	/**
 	 * Copy the property values of the given source bean into the given target bean,
 	 * only setting properties defined in the given "editable" class (or interface).
-	 * <p>Note: The source and target classes do not have to match or even be derived
+	 * <p>注意: The source and target classes do not have to match or even be derived
 	 * from each other, as long as the properties match. Any bean properties that the
 	 * source bean exposes but the target bean does not will silently be ignored.
 	 * <p>This is just a convenience method. For more complex transfer needs,
@@ -722,7 +722,7 @@ public abstract class BeanUtils {
 	/**
 	 * Copy the property values of the given source bean into the given target bean,
 	 * ignoring the given "ignoreProperties".
-	 * <p>Note: The source and target classes do not have to match or even be derived
+	 * <p>注意: The source and target classes do not have to match or even be derived
 	 * from each other, as long as the properties match. Any bean properties that the
 	 * source bean exposes but the target bean does not will silently be ignored.
 	 * <p>This is just a convenience method. For more complex transfer needs,
@@ -739,7 +739,7 @@ public abstract class BeanUtils {
 
 	/**
 	 * Copy the property values of the given source bean into the given target bean.
-	 * <p>Note: The source and target classes do not have to match or even be derived
+	 * <p>注意: The source and target classes do not have to match or even be derived
 	 * from each other, as long as the properties match. Any bean properties that the
 	 * source bean exposes but the target bean does not will silently be ignored.
 	 * <p>As of Spring Framework 5.3, this method honors generic type information

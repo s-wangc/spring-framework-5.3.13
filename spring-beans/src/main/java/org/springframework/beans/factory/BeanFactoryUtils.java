@@ -310,7 +310,7 @@ public abstract class BeanFactoryUtils {
 	 * <p>Does consider objects created by FactoryBeans, which means that FactoryBeans
 	 * will get initialized. If the object created by the FactoryBean doesn't match,
 	 * the raw FactoryBean itself will be matched against the type.
-	 * <p><b>Note: Beans of the same name will take precedence at the 'lowest' factory level,
+	 * <p><b>注意: Beans of the same name will take precedence at the 'lowest' factory level,
 	 * i.e. such beans will be returned from the lowest factory that they are being found in,
 	 * hiding corresponding beans in ancestor factories.</b> This feature allows for
 	 * 'replacing' beans by explicitly choosing the same bean name in a child factory;
@@ -351,7 +351,7 @@ public abstract class BeanFactoryUtils {
 	 * FactoryBean doesn't match, the raw FactoryBean itself will be matched against the
 	 * type. If "allowEagerInit" is not set, only raw FactoryBeans will be checked
 	 * (which doesn't require initialization of each FactoryBean).
-	 * <p><b>Note: Beans of the same name will take precedence at the 'lowest' factory level,
+	 * <p><b>注意: Beans of the same name will take precedence at the 'lowest' factory level,
 	 * i.e. such beans will be returned from the lowest factory that they are being found in,
 	 * hiding corresponding beans in ancestor factories.</b> This feature allows for
 	 * 'replacing' beans by explicitly choosing the same bean name in a child factory;
@@ -401,7 +401,7 @@ public abstract class BeanFactoryUtils {
 	 * the raw FactoryBean itself will be matched against the type.
 	 * <p>This version of {@code beanOfTypeIncludingAncestors} automatically includes
 	 * prototypes and FactoryBeans.
-	 * <p><b>Note: Beans of the same name will take precedence at the 'lowest' factory level,
+	 * <p><b>注意: Beans of the same name will take precedence at the 'lowest' factory level,
 	 * i.e. such beans will be returned from the lowest factory that they are being found in,
 	 * hiding corresponding beans in ancestor factories.</b> This feature allows for
 	 * 'replacing' beans by explicitly choosing the same bean name in a child factory;
@@ -431,7 +431,7 @@ public abstract class BeanFactoryUtils {
 	 * FactoryBean doesn't match, the raw FactoryBean itself will be matched against the
 	 * type. If "allowEagerInit" is not set, only raw FactoryBeans will be checked
 	 * (which doesn't require initialization of each FactoryBean).
-	 * <p><b>Note: Beans of the same name will take precedence at the 'lowest' factory level,
+	 * <p><b>注意: Beans of the same name will take precedence at the 'lowest' factory level,
 	 * i.e. such beans will be returned from the lowest factory that they are being found in,
 	 * hiding corresponding beans in ancestor factories.</b> This feature allows for
 	 * 'replacing' beans by explicitly choosing the same bean name in a child factory;

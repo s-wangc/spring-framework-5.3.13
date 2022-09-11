@@ -36,7 +36,7 @@ import org.springframework.lang.Nullable;
  * {@link #setSingleton singleton} property may be set to "false", to cause this
  * factory to invoke the target method each time it is asked for an object.
  *
- * <p><b>NOTE: If your target method does not produce a result to expose, consider
+ * <p><b>注意: If your target method does not produce a result to expose, consider
  * {@link MethodInvokingBean} instead, which avoids the type determination and
  * lifecycle limitations that this {@link MethodInvokingFactoryBean} comes with.</b>
  *

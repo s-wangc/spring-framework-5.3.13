@@ -49,7 +49,7 @@ public abstract class AbstractAdvisingBeanPostProcessor extends ProxyProcessorSu
 	 * <p>Default is "false", applying the advisor after existing advisors, i.e.
 	 * as close as possible to the target method. Switch this to "true" in order
 	 * for this post-processor's advisor to wrap existing advisors as well.
-	 * <p>Note: Check the concrete post-processor's javadoc whether it possibly
+	 * <p>注意: Check the concrete post-processor's javadoc whether it possibly
 	 * changes this flag by default, depending on the nature of its advisor.
 	 */
 	public void setBeforeExistingAdvisors(boolean beforeExistingAdvisors) {
@@ -108,7 +108,7 @@ public abstract class AbstractAdvisingBeanPostProcessor extends ProxyProcessorSu
 	 * post-processor's {@link Advisor}.
 	 * <p>Delegates to {@link #isEligible(Class)} for target class checking.
 	 * Can be overridden e.g. to specifically exclude certain beans by name.
-	 * <p>Note: Only called for regular bean instances but not for existing
+	 * <p>注意: Only called for regular bean instances but not for existing
 	 * proxy instances which implement {@link Advised} and allow for adding
 	 * the local {@link Advisor} to the existing proxy's {@link Advisor} chain.
 	 * For the latter, {@link #isEligible(Class)} is being called directly,

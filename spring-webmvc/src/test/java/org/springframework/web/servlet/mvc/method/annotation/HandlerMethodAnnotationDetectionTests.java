@@ -404,7 +404,7 @@ class HandlerMethodAnnotationDetectionTests {
 
 		@Override
 		@RequestMapping(value = "/path1/path2", method = RequestMethod.POST)
-		// NOTE: @ModelAttribute will NOT be found on the abstract superclass if
+		// 注意: @ModelAttribute will NOT be found on the abstract superclass if
 		// @RequestMapping is declared locally. Thus, we have to redeclare
 		// @ModelAttribute locally as well.
 		@ModelAttribute("attr2")

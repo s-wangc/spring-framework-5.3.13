@@ -409,7 +409,7 @@ public abstract class Assert {
 
 	/**
 	 * Assert that an array contains no {@code null} elements.
-	 * <p>Note: Does not complain if the array is empty!
+	 * <p>注意: Does not complain if the array is empty!
 	 * <pre class="code">Assert.noNullElements(array, "The array must contain non-null elements");</pre>
 	 * @param array the array to check
 	 * @param message the exception message to use if the assertion fails
@@ -427,7 +427,7 @@ public abstract class Assert {
 
 	/**
 	 * Assert that an array contains no {@code null} elements.
-	 * <p>Note: Does not complain if the array is empty!
+	 * <p>注意: Does not complain if the array is empty!
 	 * <pre class="code">
 	 * Assert.noNullElements(array, () -&gt; "The " + arrayType + " array must contain non-null elements");
 	 * </pre>
@@ -503,7 +503,7 @@ public abstract class Assert {
 
 	/**
 	 * Assert that a collection contains no {@code null} elements.
-	 * <p>Note: Does not complain if the collection is empty!
+	 * <p>注意: Does not complain if the collection is empty!
 	 * <pre class="code">Assert.noNullElements(collection, "Collection must contain non-null elements");</pre>
 	 * @param collection the collection to check
 	 * @param message the exception message to use if the assertion fails
@@ -522,7 +522,7 @@ public abstract class Assert {
 
 	/**
 	 * Assert that a collection contains no {@code null} elements.
-	 * <p>Note: Does not complain if the collection is empty!
+	 * <p>注意: Does not complain if the collection is empty!
 	 * <pre class="code">
 	 * Assert.noNullElements(collection, () -&gt; "Collection " + collectionName + " must contain non-null elements");
 	 * </pre>

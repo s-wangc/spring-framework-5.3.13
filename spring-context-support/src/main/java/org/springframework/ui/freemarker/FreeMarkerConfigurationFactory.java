@@ -59,7 +59,7 @@ import org.springframework.util.CollectionUtils;
  * <p>The simplest way to use this class is to specify a "templateLoaderPath";
  * FreeMarker does not need any further configuration then.
  *
- * <p>Note: Spring's FreeMarker support requires FreeMarker 2.3 or higher.
+ * <p>注意: Spring's FreeMarker support requires FreeMarker 2.3 or higher.
  *
  * @author Darren Davison
  * @author Juergen Hoeller

@@ -68,7 +68,7 @@ public interface ConfigurableListableBeanFactory
 	 * to be autowirable but are not defined as beans in the factory:
 	 * e.g. a dependency of type ApplicationContext resolved to the
 	 * ApplicationContext instance that the bean is living in.
-	 * <p>Note: There are no such default types registered in a plain BeanFactory,
+	 * <p>注意: There are no such default types registered in a plain BeanFactory,
 	 * not even for the BeanFactory interface itself.
 	 * @param dependencyType the dependency type to register. This will typically
 	 * be a base interface such as BeanFactory, with extensions of it resolved
@@ -99,7 +99,7 @@ public interface ConfigurableListableBeanFactory
 	 * <p>A returned BeanDefinition object should not be a copy but the original
 	 * definition object as registered in the factory. This means that it should
 	 * be castable to a more specific implementation type, if necessary.
-	 * <p><b>NOTE:</b> This method does <i>not</i> consider ancestor factories.
+	 * <p><b>注意:</b> This method does <i>not</i> consider ancestor factories.
 	 * It is only meant for accessing local bean definitions of this factory.
 	 * @param beanName bean的名称
 	 * @return the registered BeanDefinition
@@ -153,7 +153,7 @@ public interface ConfigurableListableBeanFactory
 	 * {@link org.springframework.beans.factory.FactoryBean FactoryBeans}.
 	 * Typically invoked at the end of factory setup, if desired.
 	 * @throws BeansException if one of the singleton beans could not be created.
-	 * Note: This may have left the factory with some beans already initialized!
+	 * 注意: This may have left the factory with some beans already initialized!
 	 * Call {@link #destroySingletons()} for full cleanup in this case.
 	 * @see #destroySingletons()
 	 */

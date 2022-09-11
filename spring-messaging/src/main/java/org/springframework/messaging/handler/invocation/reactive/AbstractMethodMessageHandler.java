@@ -315,7 +315,7 @@ public abstract class AbstractMethodMessageHandler<T>
 	/**
 	 * Detect if the given handler has any methods that can handle messages and if
 	 * so register it with the extracted mapping information.
-	 * <p><strong>Note:</strong> This method is protected and can be invoked by
+	 * <p><strong>注意:</strong> This method is protected and can be invoked by
 	 * subclasses, but this should be done on startup only as documented in
 	 * {@link #registerHandlerMethod}.
 	 * @param handler the handler to check, either an instance of a Spring bean name
@@ -370,7 +370,7 @@ public abstract class AbstractMethodMessageHandler<T>
 
 	/**
 	 * Register a handler method and its unique mapping.
-	 * <p><strong>Note:</strong> As of 5.3 this method is public (rather than
+	 * <p><strong>注意:</strong> As of 5.3 this method is public (rather than
 	 * protected) and can be used both at startup and at runtime.
 	 * @param handler the bean name of the handler or the handler instance
 	 * @param method the method to register
@@ -434,7 +434,7 @@ public abstract class AbstractMethodMessageHandler<T>
 	/**
 	 * Return String-based destinations for the given mapping, if any, that can
 	 * be used to find matches with a direct lookup (i.e. non-patterns).
-	 * <p><strong>Note:</strong> This is completely optional. The mapping
+	 * <p><strong>注意:</strong> This is completely optional. The mapping
 	 * metadata for a subclass may support neither direct lookups, nor String
 	 * based destinations.
 	 */

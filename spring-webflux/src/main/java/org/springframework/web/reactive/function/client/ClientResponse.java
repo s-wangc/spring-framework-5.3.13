@@ -207,7 +207,7 @@ public interface ClientResponse {
 
 	/**
 	 * Create a builder with the status, headers, and cookies of the given response.
-	 * <p><strong>Note:</strong> Note that the body in the returned builder is
+	 * <p><strong>注意:</strong> Note that the body in the returned builder is
 	 * {@link Flux#empty()} by default. To carry over the one from the original
 	 * response, use {@code otherResponse.bodyToFlux(DataBuffer.class)} or
 	 * simply use the instance based {@link #mutate()} method.
@@ -373,7 +373,7 @@ public interface ClientResponse {
 
 		/**
 		 * Set the body of the response.
-		 * <p><strong>Note:</strong> This method will drain the existing body,
+		 * <p><strong>注意:</strong> This method will drain the existing body,
 		 * if set in the builder.
 		 * @param body the new body to use
 		 * @return this builder
@@ -382,7 +382,7 @@ public interface ClientResponse {
 
 		/**
 		 * Set the body of the response to the UTF-8 encoded bytes of the given string.
-		 * <p><strong>Note:</strong> This method will drain the existing body,
+		 * <p><strong>注意:</strong> This method will drain the existing body,
 		 * if set in the builder.
 		 * @param body the new body.
 		 * @return this builder

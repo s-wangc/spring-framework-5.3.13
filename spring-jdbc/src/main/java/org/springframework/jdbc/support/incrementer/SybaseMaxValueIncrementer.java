@@ -20,7 +20,7 @@ import javax.sql.DataSource;
 
 /**
  * {@link DataFieldMaxValueIncrementer} that increments the maximum value of a given Sybase table
- * with the equivalent of an auto-increment column. Note: If you use this class, your table key
+ * with the equivalent of an auto-increment column. 注意: If you use this class, your table key
  * column should <i>NOT</i> be defined as an IDENTITY column, as the sequence table does the job.
  *
  * <p>This class is intended to be used with Sybase Adaptive Server.

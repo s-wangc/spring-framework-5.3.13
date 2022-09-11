@@ -50,7 +50,7 @@ public interface View {
 	 * for the request which can be used to create
 	 * {@link org.springframework.validation.BindingResult BindingResult}
 	 * instances for objects in to the model.
-	 * <p>Note: This attribute is not required and may not be present.
+	 * <p>注意: This attribute is not required and may not be present.
 	 * @since 5.1.8
 	 */
 	String BINDING_CONTEXT_ATTRIBUTE = View.class.getName() + ".bindingContext";

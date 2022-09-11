@@ -38,7 +38,7 @@ import org.springframework.lang.Nullable;
  * any custom {@link CacheManager} may play that role of the last delegate as
  * well, lazily creating cache regions for any requested name.
  *
- * <p>Note: Regular CacheManagers that this composite manager delegates to need
+ * <p>注意: Regular CacheManagers that this composite manager delegates to need
  * to return {@code null} from {@link #getCache(String)} if they are unaware of
  * the specified cache name, allowing for iteration to the next delegate in line.
  * However, most {@link CacheManager} implementations fall back to lazy creation

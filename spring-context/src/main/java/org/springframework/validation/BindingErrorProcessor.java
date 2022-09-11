@@ -26,7 +26,7 @@ import org.springframework.beans.PropertyAccessException;
  * <p>The error processor is pluggable so you can treat errors differently
  * if you want to. A default implementation is provided for typical needs.
  *
- * <p>Note: As of Spring 2.0, this interface operates on a given BindingResult,
+ * <p>注意: As of Spring 2.0, this interface operates on a given BindingResult,
  * to be compatible with any binding strategy (bean property, direct field access, etc).
  * It can still receive a BindException as argument (since a BindException implements
  * the BindingResult interface as well) but no longer operates on it directly.

@@ -41,7 +41,7 @@ import org.springframework.util.Assert;
  * Supports resolution as a {@link File} and also as a {@link URL}.
  * Implements the extended {@link WritableResource} interface.
  *
- * <p>Note: As of 5.1, {@link java.nio.file.Path} support is also available
+ * <p>注意: As of 5.1, {@link java.nio.file.Path} support is also available
  * in {@link FileSystemResource#FileSystemResource(Path) FileSystemResource},
  * applying Spring's standard String-based path transformations but
  * performing all operations via the {@link java.nio.file.Files} API.
@@ -62,7 +62,7 @@ public class PathResource extends AbstractResource implements WritableResource {
 
 	/**
 	 * Create a new PathResource from a Path handle.
-	 * <p>Note: Unlike {@link FileSystemResource}, when building relative resources
+	 * <p>注意: Unlike {@link FileSystemResource}, when building relative resources
 	 * via {@link #createRelative}, the relative path will be built <i>underneath</i>
 	 * the given root: e.g. Paths.get("C:/dir1/"), relative path "dir2" &rarr; "C:/dir1/dir2"!
 	 * @param path a Path handle
@@ -74,7 +74,7 @@ public class PathResource extends AbstractResource implements WritableResource {
 
 	/**
 	 * Create a new PathResource from a Path handle.
-	 * <p>Note: Unlike {@link FileSystemResource}, when building relative resources
+	 * <p>注意: Unlike {@link FileSystemResource}, when building relative resources
 	 * via {@link #createRelative}, the relative path will be built <i>underneath</i>
 	 * the given root: e.g. Paths.get("C:/dir1/"), relative path "dir2" &rarr; "C:/dir1/dir2"!
 	 * @param path a path
@@ -87,7 +87,7 @@ public class PathResource extends AbstractResource implements WritableResource {
 
 	/**
 	 * Create a new PathResource from a Path handle.
-	 * <p>Note: Unlike {@link FileSystemResource}, when building relative resources
+	 * <p>注意: Unlike {@link FileSystemResource}, when building relative resources
 	 * via {@link #createRelative}, the relative path will be built <i>underneath</i>
 	 * the given root: e.g. Paths.get("C:/dir1/"), relative path "dir2" &rarr; "C:/dir1/dir2"!
 	 * @param uri a path URI

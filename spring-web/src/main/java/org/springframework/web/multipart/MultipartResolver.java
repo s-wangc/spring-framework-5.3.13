@@ -67,7 +67,7 @@ import javax.servlet.http.HttpServletRequest;
  * {@link MultipartResolver} bean in the root application context. This is mainly
  * intended for applications that do not use Spring's own web MVC framework.
  *
- * <p>Note: There is hardly ever a need to access the {@link MultipartResolver}
+ * <p>注意: There is hardly ever a need to access the {@link MultipartResolver}
  * itself from application code. It will simply do its work behind the scenes,
  * making {@link MultipartHttpServletRequest MultipartHttpServletRequests}
  * available to controllers.

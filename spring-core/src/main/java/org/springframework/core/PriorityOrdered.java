@@ -33,7 +33,7 @@ package org.springframework.core;
  * remaining objects. A typical example: prioritized post-processors in a Spring
  * {@link org.springframework.context.ApplicationContext}.
  *
- * <p>Note: {@code PriorityOrdered} post-processor beans are initialized in
+ * <p>注意: {@code PriorityOrdered} post-processor beans are initialized in
  * a special phase, ahead of other post-processor beans. This subtly
  * affects their autowiring behavior: they will only be autowired against
  * beans which do not require eager initialization for type matching.

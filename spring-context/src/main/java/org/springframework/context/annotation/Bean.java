@@ -96,7 +96,7 @@ import org.springframework.core.annotation.AliasFor;
  * order values determine the order of resolved elements in case of collection
  * injection points (with several target beans matching by type and qualifier).
  *
- * <p><b>NOTE:</b> {@code @Order} values may influence priorities at injection points,
+ * <p><b>注意:</b> {@code @Order} values may influence priorities at injection points,
  * but please be aware that they do not influence singleton startup order which is an
  * orthogonal concern determined by dependency relationships and {@code @DependsOn}
  * declarations as mentioned above. Also, {@link javax.annotation.Priority} is not
@@ -293,7 +293,7 @@ public @interface Bean {
 	 * nevertheless get detected and the corresponding destroy method invoked: In other
 	 * words, {@code destroyMethod=""} only affects custom close/shutdown methods and
 	 * {@link java.io.Closeable}/{@link java.lang.AutoCloseable} declared close methods.
-	 * <p>Note: Only invoked on beans whose lifecycle is under the full control of the
+	 * <p>注意: Only invoked on beans whose lifecycle is under the full control of the
 	 * factory, which is always the case for singletons but not guaranteed for any
 	 * other scope.
 	 * @see org.springframework.beans.factory.DisposableBean

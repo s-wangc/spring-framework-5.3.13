@@ -60,7 +60,7 @@ import org.springframework.util.MethodInvoker;
  * MethodInvokingJobDetailFactoryBean are by default volatile and durable
  * (according to Quartz terminology).
  *
- * <p><b>NOTE: JobDetails created via this FactoryBean are <i>not</i>
+ * <p><b>注意: JobDetails created via this FactoryBean are <i>not</i>
  * serializable and thus not suitable for persistent job stores.</b>
  * You need to implement your own Quartz Job as a thin wrapper for each case
  * where you want a persistent job to delegate to a specific service method.

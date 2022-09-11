@@ -53,7 +53,7 @@ import org.springframework.util.Assert;
  *
  * <p>Can be used within a service implementation via direct instantiation
  * with a ConnectionFactory reference, or get prepared in an application context
- * and given to services as bean reference. Note: The ConnectionFactory should
+ * and given to services as bean reference. 注意: The ConnectionFactory should
  * always be configured as a bean in the application context, in the first case
  * given to the service directly, in the second case to the prepared template.
  *
@@ -82,7 +82,7 @@ public class CciTemplate implements CciOperations {
 
 	/**
 	 * Construct a new CciTemplate for bean usage.
-	 * <p>Note: The ConnectionFactory has to be set before using the instance.
+	 * <p>注意: The ConnectionFactory has to be set before using the instance.
 	 * @see #setConnectionFactory
 	 */
 	public CciTemplate() {
@@ -90,7 +90,7 @@ public class CciTemplate implements CciOperations {
 
 	/**
 	 * Construct a new CciTemplate, given a ConnectionFactory to obtain Connections from.
-	 * Note: This will trigger eager initialization of the exception translator.
+	 * 注意: This will trigger eager initialization of the exception translator.
 	 * @param connectionFactory the JCA ConnectionFactory to obtain Connections from
 	 */
 	public CciTemplate(ConnectionFactory connectionFactory) {
@@ -100,7 +100,7 @@ public class CciTemplate implements CciOperations {
 
 	/**
 	 * Construct a new CciTemplate, given a ConnectionFactory to obtain Connections from.
-	 * Note: This will trigger eager initialization of the exception translator.
+	 * 注意: This will trigger eager initialization of the exception translator.
 	 * @param connectionFactory the JCA ConnectionFactory to obtain Connections from
 	 * @param connectionSpec the CCI ConnectionSpec to obtain Connections for
 	 * (may be {@code null})

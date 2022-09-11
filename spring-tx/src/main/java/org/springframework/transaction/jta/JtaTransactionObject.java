@@ -28,7 +28,7 @@ import org.springframework.transaction.support.TransactionSynchronizationUtils;
  * JTA transaction object, representing a {@link javax.transaction.UserTransaction}.
  * Used as transaction object by Spring's {@link JtaTransactionManager}.
  *
- * <p>Note: This is an SPI class, not intended to be used by applications.
+ * <p>注意: This is an SPI class, not intended to be used by applications.
  *
  * @author Juergen Hoeller
  * @since 1.1

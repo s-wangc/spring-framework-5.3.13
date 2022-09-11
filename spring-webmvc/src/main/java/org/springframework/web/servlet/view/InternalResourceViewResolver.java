@@ -33,7 +33,7 @@ import org.springframework.util.ClassUtils;
  * WEB-INF, to hide them from direct access (e.g. via a manually entered URL).
  * Only controllers will be able to access them then.
  *
- * <p><b>Note:</b> When chaining ViewResolvers, an InternalResourceViewResolver
+ * <p><b>注意:</b> When chaining ViewResolvers, an InternalResourceViewResolver
  * always needs to be last, as it will attempt to resolve any view name,
  * no matter whether the underlying resource actually exists.
  *

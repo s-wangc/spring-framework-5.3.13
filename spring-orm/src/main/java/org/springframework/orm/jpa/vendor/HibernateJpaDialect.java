@@ -102,7 +102,7 @@ public class HibernateJpaDialect extends DefaultJpaDialect {
 	 * {@code Connection.setReadOnly(true)} for read-only transactions anymore either.
 	 * If this flag is turned off, no cleanup of a JDBC Connection is required after
 	 * a transaction, since no Connection settings will get modified.
-	 * <p><b>NOTE:</b> The default behavior in terms of read-only handling changed
+	 * <p><b>注意:</b> The default behavior in terms of read-only handling changed
 	 * in Spring 4.1, propagating the read-only status to the JDBC Connection now,
 	 * analogous to other Spring transaction managers. This may have the effect
 	 * that you're running into read-only enforcement now where previously write

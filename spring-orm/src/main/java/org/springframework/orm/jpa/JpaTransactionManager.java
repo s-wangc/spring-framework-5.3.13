@@ -83,7 +83,7 @@ import org.springframework.util.CollectionUtils;
  * {@link org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy}).
  * Note that this requires a vendor-specific {@link JpaDialect} to be configured.
  *
- * <p>Note: To be able to register a DataSource's Connection for plain JDBC code,
+ * <p>注意: To be able to register a DataSource's Connection for plain JDBC code,
  * this instance needs to be aware of the DataSource ({@link #setDataSource}).
  * The given DataSource should obviously match the one used by the given
  * EntityManagerFactory. This transaction manager will autodetect the DataSource

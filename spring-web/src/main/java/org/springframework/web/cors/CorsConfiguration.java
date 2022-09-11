@@ -241,7 +241,7 @@ public class CorsConfiguration {
 	 * <p>The special value {@code "*"} allows all methods.
 	 * <p>If not set, only {@code "GET"} and {@code "HEAD"} are allowed.
 	 * <p>By default this is not set.
-	 * <p><strong>Note:</strong> CORS checks use values from "Forwarded"
+	 * <p><strong>注意:</strong> CORS checks use values from "Forwarded"
 	 * (<a href="https://tools.ietf.org/html/rfc7239">RFC 7239</a>),
 	 * "X-Forwarded-Host", "X-Forwarded-Port", and "X-Forwarded-Proto" headers,
 	 * if present, in order to reflect the client-originated address.

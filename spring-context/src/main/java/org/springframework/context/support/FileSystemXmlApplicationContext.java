@@ -28,7 +28,7 @@ import org.springframework.lang.Nullable;
  * file system locations (e.g. "mydir/myfile.txt"). Useful for test harnesses
  * as well as for standalone environments.
  *
- * <p><b>NOTE:</b> Plain paths will always be interpreted as relative
+ * <p><b>注意:</b> Plain paths will always be interpreted as relative
  * to the current VM working directory, even if they start with a slash.
  * (This is consistent with the semantics in a Servlet container.)
  * <b>Use an explicit "file:" prefix to enforce an absolute file path.</b>
@@ -38,7 +38,7 @@ import org.springframework.lang.Nullable;
  * or Ant-style patterns like "/myfiles/*-context.xml" (see the
  * {@link org.springframework.util.AntPathMatcher} javadoc for pattern details).
  *
- * <p>Note: In case of multiple config locations, later bean definitions will
+ * <p>注意: In case of multiple config locations, later bean definitions will
  * override ones defined in earlier loaded files. This can be leveraged to
  * deliberately override certain bean definitions via an extra XML file.
  *
@@ -146,7 +146,7 @@ public class FileSystemXmlApplicationContext extends AbstractXmlApplicationConte
 
 	/**
 	 * Resolve resource paths as file system paths.
-	 * <p>Note: Even if a given path starts with a slash, it will get
+	 * <p>注意: Even if a given path starts with a slash, it will get
 	 * interpreted as relative to the current VM working directory.
 	 * This is consistent with the semantics in a Servlet container.
 	 * @param path the path to the resource

@@ -301,7 +301,7 @@ public final class RequestMappingInfo implements RequestCondition<RequestMapping
 
 	/**
 	 * Compares "this" info (i.e. the current instance) with another info in the context of a request.
-	 * <p>Note: It is assumed both instances have been obtained via
+	 * <p>注意: It is assumed both instances have been obtained via
 	 * {@link #getMatchingCondition(ServerWebExchange)} to ensure they have conditions with
 	 * content relevant to current request.
 	 */

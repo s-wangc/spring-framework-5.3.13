@@ -124,7 +124,7 @@ public interface ServerWebExchange {
 	/**
 	 * Return the form data from the body of the request if the Content-Type is
 	 * {@code "application/x-www-form-urlencoded"} or an empty map otherwise.
-	 * <p><strong>Note:</strong> calling this method causes the request body to
+	 * <p><strong>注意:</strong> calling this method causes the request body to
 	 * be read and parsed in full and the resulting {@code MultiValueMap} is
 	 * cached so that this method is safe to call more than once.
 	 */
@@ -133,10 +133,10 @@ public interface ServerWebExchange {
 	/**
 	 * Return the parts of a multipart request if the Content-Type is
 	 * {@code "multipart/form-data"} or an empty map otherwise.
-	 * <p><strong>Note:</strong> calling this method causes the request body to
+	 * <p><strong>注意:</strong> calling this method causes the request body to
 	 * be read and parsed in full and the resulting {@code MultiValueMap} is
 	 * cached so that this method is safe to call more than once.
-	 * <p><strong>Note:</strong>the {@linkplain Part#content() contents} of each
+	 * <p><strong>注意:</strong>the {@linkplain Part#content() contents} of each
 	 * part is not cached, and can only be read once.
 	 */
 	Mono<MultiValueMap<String, Part>> getMultipartData();
@@ -186,7 +186,7 @@ public interface ServerWebExchange {
 	 * status, and adding "ETag" and "Last-Modified" headers when applicable.
 	 * This method works with conditional GET/HEAD requests as well as with
 	 * conditional POST/PUT/DELETE requests.
-	 * <p><strong>Note:</strong> The HTTP specification recommends setting both
+	 * <p><strong>注意:</strong> The HTTP specification recommends setting both
 	 * ETag and Last-Modified values, but you can also use
 	 * {@code #checkNotModified(String)} or
 	 * {@link #checkNotModified(Instant)}.

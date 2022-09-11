@@ -41,7 +41,7 @@ public interface Model {
 	/**
 	 * Add the supplied attribute to this {@code Map} using a
 	 * {@link org.springframework.core.Conventions#getVariableName generated name}.
-	 * <p><i>Note: Empty {@link java.util.Collection Collections} are not added to
+	 * <p><i>注意: Empty {@link java.util.Collection Collections} are not added to
 	 * the model when using this method because we cannot correctly determine
 	 * the true convention name. View code should check for {@code null} rather
 	 * than for empty collections as is already done by JSTL tags.</i>

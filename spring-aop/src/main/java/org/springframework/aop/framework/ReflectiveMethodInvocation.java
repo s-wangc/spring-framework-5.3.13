@@ -45,7 +45,7 @@ import org.springframework.lang.Nullable;
  * It is also possible to attach custom attributes to the invocation,
  * using the {@link #setUserAttribute} / {@link #getUserAttribute} methods.
  *
- * <p><b>NOTE:</b> This class is considered internal and should not be
+ * <p><b>注意:</b> This class is considered internal and should not be
  * directly accessed. The sole reason for it being public is compatibility
  * with existing framework integrations (e.g. Pitchfork). For any other
  * purposes, use the {@link ProxyMethodInvocation} interface instead.

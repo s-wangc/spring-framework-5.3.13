@@ -72,7 +72,7 @@ public abstract class RequestContextUtils {
 	 * that has initiated request processing, and for the global context if none
 	 * was found associated with the current request. The global context will
 	 * be found via the ServletContext or via ContextLoader's current context.
-	 * <p>NOTE: This variant remains compatible with Servlet 2.5, explicitly
+	 * <p>注意: This variant remains compatible with Servlet 2.5, explicitly
 	 * checking a given ServletContext instead of deriving it from the request.
 	 * @param request current HTTP request
 	 * @param servletContext current servlet context
@@ -105,7 +105,7 @@ public abstract class RequestContextUtils {
 	 * that has initiated request processing, and for the global context if none
 	 * was found associated with the current request. The global context will
 	 * be found via the ServletContext or via ContextLoader's current context.
-	 * <p>NOTE: This variant requires Servlet 3.0+ and is generally recommended
+	 * <p>注意: This variant requires Servlet 3.0+ and is generally recommended
 	 * for forward-looking custom user code.
 	 * @param request current HTTP request
 	 * @return the request-specific WebApplicationContext, or the global one
@@ -155,7 +155,7 @@ public abstract class RequestContextUtils {
 	 * Retrieve the current time zone from the given request, using the
 	 * TimeZoneAwareLocaleResolver bound to the request by the DispatcherServlet
 	 * (if available), falling back to the system's default time zone.
-	 * <p>Note: This method returns {@code null} if no specific time zone can be
+	 * <p>注意: This method returns {@code null} if no specific time zone can be
 	 * resolved for the given request. This is in contrast to {@link #getLocale}
 	 * where there is always the request's accept-header locale to fall back to.
 	 * <p>Consider using {@link org.springframework.context.i18n.LocaleContextHolder#getTimeZone()}

@@ -112,7 +112,7 @@ public class InterceptorRegistration {
 	 * <p>This is an advanced property that should be used only when a
 	 * customized {@link AntPathMatcher} or a custom PathMatcher is required.
 	 * <p>By default this is {@link AntPathMatcher}.
-	 * <p><strong>Note:</strong> Setting {@code PathMatcher} enforces use of
+	 * <p><strong>注意:</strong> Setting {@code PathMatcher} enforces use of
 	 * String pattern matching even when a
 	 * {@link ServletRequestPathUtils#parseAndCache parsed} {@code RequestPath}
 	 * is available.

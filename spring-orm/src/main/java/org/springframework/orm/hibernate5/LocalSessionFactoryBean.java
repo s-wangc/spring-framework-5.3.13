@@ -172,7 +172,7 @@ public class LocalSessionFactoryBean extends HibernateExceptionTranslator
 	/**
 	 * Set the location of a single Hibernate XML config file, for example as
 	 * classpath resource "classpath:hibernate.cfg.xml".
-	 * <p>Note: Can be omitted when all necessary properties and mapping
+	 * <p>注意: Can be omitted when all necessary properties and mapping
 	 * resources are specified locally via this bean.
 	 * @see Configuration#configure(java.net.URL)
 	 */
@@ -183,7 +183,7 @@ public class LocalSessionFactoryBean extends HibernateExceptionTranslator
 	/**
 	 * Set the locations of multiple Hibernate XML config files, for example as
 	 * classpath resources "classpath:hibernate.cfg.xml,classpath:extension.cfg.xml".
-	 * <p>Note: Can be omitted when all necessary properties and mapping
+	 * <p>注意: Can be omitted when all necessary properties and mapping
 	 * resources are specified locally via this bean.
 	 * @see Configuration#configure(java.net.URL)
 	 */
@@ -292,7 +292,7 @@ public class LocalSessionFactoryBean extends HibernateExceptionTranslator
 	/**
 	 * Set the Hibernate {@link RegionFactory} to use for the SessionFactory.
 	 * Allows for using a Spring-managed {@code RegionFactory} instance.
-	 * <p>Note: If this is set, the Hibernate settings should not define a
+	 * <p>注意: If this is set, the Hibernate settings should not define a
 	 * cache provider to avoid meaningless double configuration.
 	 * @since 5.1
 	 * @see LocalSessionFactoryBuilder#setCacheRegionFactory
@@ -320,7 +320,7 @@ public class LocalSessionFactoryBean extends HibernateExceptionTranslator
 
 	/**
 	 * Set Hibernate properties, such as "hibernate.dialect".
-	 * <p>Note: Do not specify a transaction provider here when using
+	 * <p>注意: Do not specify a transaction provider here when using
 	 * Spring-driven transactions. It is also advisable to omit connection
 	 * provider settings and use a Spring-set DataSource instead.
 	 * @see #setDataSource

@@ -42,7 +42,7 @@ import org.springframework.util.ReflectionUtils;
  *
  * <p>An instance of this class is serializable if the delegates are.
  *
- * <p><i>Note: There are some implementation similarities between this class and
+ * <p><i>注意: There are some implementation similarities between this class and
  * {@link DelegatingIntroductionInterceptor} that suggest a possible refactoring
  * to extract a common ancestor class in the future.</i>
  *

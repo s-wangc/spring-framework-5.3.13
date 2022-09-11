@@ -54,7 +54,7 @@ import org.springframework.util.Assert;
  * &lt;@spring.bind "person.age"/&gt;
  * age is ${spring.status.value}</pre>
  *
- * Note: Spring's FreeMarker support requires FreeMarker 2.3 or higher.
+ * 注意: Spring's FreeMarker support requires FreeMarker 2.3 or higher.
  *
  * @author Rossen Stoyanchev
  * @since 5.0

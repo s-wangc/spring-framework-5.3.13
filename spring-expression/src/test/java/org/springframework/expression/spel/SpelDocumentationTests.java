@@ -41,7 +41,7 @@ import static org.assertj.core.api.Assertions.within;
 /**
  * Test the examples specified in the documentation.
  *
- * NOTE: any outgoing changes from this file upon synchronizing with the repo may indicate that
+ * 注意: any outgoing changes from this file upon synchronizing with the repo may indicate that
  * you need to update the documentation too !
  *
  * @author Andy Clement

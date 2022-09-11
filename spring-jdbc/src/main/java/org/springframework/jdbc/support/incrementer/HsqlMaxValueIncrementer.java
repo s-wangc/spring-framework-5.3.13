@@ -20,7 +20,7 @@ import javax.sql.DataSource;
 
 /**
  * {@link DataFieldMaxValueIncrementer} that increments the maximum value of a given HSQL table
- * with the equivalent of an auto-increment column. Note: If you use this class, your HSQL
+ * with the equivalent of an auto-increment column. 注意: If you use this class, your HSQL
  * key column should <i>NOT</i> be auto-increment, as the sequence table does the job.
  *
  * <p>The sequence is kept in a table. There should be one sequence table per
@@ -37,7 +37,7 @@ import javax.sql.DataSource;
  * is rolled back, the unused values will never be served. The maximum hole size in
  * numbering is consequently the value of cacheSize.
  *
- * <p><b>NOTE:</b> HSQL now supports sequences and you should consider using them instead:
+ * <p><b>注意:</b> HSQL now supports sequences and you should consider using them instead:
  * {@link HsqlSequenceMaxValueIncrementer}
  *
  * @author Jean-Pierre Pawlak

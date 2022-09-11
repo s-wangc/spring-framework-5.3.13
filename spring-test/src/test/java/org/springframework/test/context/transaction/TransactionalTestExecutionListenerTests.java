@@ -102,7 +102,7 @@ class TransactionalTestExecutionListenerTests {
 
 	@Test
 	void beforeTestMethodWithTransactionalDeclaredOnClassViaMetaAnnotationWithOverride() throws Exception {
-		// Note: not actually invoked within a transaction since the test class is
+		// 注意: not actually invoked within a transaction since the test class is
 		// annotated with @MetaTxWithOverride(propagation = NOT_SUPPORTED)
 		assertBeforeTestMethodWithTransactionalTestMethod(
 				TransactionalDeclaredOnClassViaMetaAnnotationWithOverrideTestCase.class, false);
@@ -110,7 +110,7 @@ class TransactionalTestExecutionListenerTests {
 
 	@Test
 	void beforeTestMethodWithTransactionalDeclaredOnMethodViaMetaAnnotationWithOverride() throws Exception {
-		// Note: not actually invoked within a transaction since the method is
+		// 注意: not actually invoked within a transaction since the method is
 		// annotated with @MetaTxWithOverride(propagation = NOT_SUPPORTED)
 		assertBeforeTestMethodWithTransactionalTestMethod(
 				TransactionalDeclaredOnMethodViaMetaAnnotationWithOverrideTestCase.class, false);

@@ -54,7 +54,7 @@ import org.springframework.web.util.UriTemplateHandler;
  * {@link #getRestOperations()} method and shares its {@linkplain #setErrorHandler error handler}
  * and {@linkplain #setMessageConverters message converters} with that {@code RestTemplate}.
  *
- * <p><strong>Note:</strong> by default {@code AsyncRestTemplate} relies on
+ * <p><strong>注意:</strong> by default {@code AsyncRestTemplate} relies on
  * standard JDK facilities to establish HTTP connections. You can switch to use
  * a different HTTP library such as Apache HttpComponents, Netty, and OkHttp by
  * using a constructor accepting an {@link org.springframework.http.client.AsyncClientHttpRequestFactory}.

@@ -135,7 +135,7 @@ public class ScheduledExecutorTask {
 	 * the task will be executed repeatedly, with the given interval in-between executions.
 	 * <p>Note that the semantics of the period value vary between fixed-rate and
 	 * fixed-delay execution.
-	 * <p><b>Note:</b> A period of 0 (for example as fixed delay) is <i>not</i> supported,
+	 * <p><b>注意:</b> A period of 0 (for example as fixed delay) is <i>not</i> supported,
 	 * simply because {@code java.util.concurrent.ScheduledExecutorService} itself
 	 * does not support it. Hence a value of 0 will be treated as one-time execution;
 	 * however, that value should never be specified explicitly in the first place!

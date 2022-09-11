@@ -164,12 +164,12 @@ public class SimpleMessageListenerContainer extends AbstractMessageListenerConta
 	 * rather than blocking the JMS provider, usually integrating with an existing
 	 * thread pool. This allows to keep the number of concurrent consumers low (1)
 	 * while still processing messages concurrently (decoupled from receiving!).
-	 * <p><b>NOTE: Specifying a TaskExecutor for listener execution affects
+	 * <p><b>注意: Specifying a TaskExecutor for listener execution affects
 	 * acknowledgement semantics.</b> Messages will then always get acknowledged
 	 * before listener execution, with the underlying Session immediately reused
 	 * for receiving the next message. Using this in combination with a transacted
 	 * session or with client acknowledgement will lead to unspecified results!
-	 * <p><b>NOTE: Concurrent listener execution via a TaskExecutor will lead
+	 * <p><b>注意: Concurrent listener execution via a TaskExecutor will lead
 	 * to concurrent processing of messages that have been received by the same
 	 * underlying Session.</b> As a consequence, it is not recommended to use
 	 * this setting with a {@link SessionAwareMessageListener}, at least not

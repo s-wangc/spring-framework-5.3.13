@@ -49,7 +49,7 @@ import org.springframework.lang.Nullable;
  * as "depends-on" the registry definition (RmiRegistryFactoryBean),
  * to guarantee starting up the registry first.
  *
- * <p>Note: The implementation of this class mirrors the corresponding logic
+ * <p>注意: The implementation of this class mirrors the corresponding logic
  * in {@link RmiServiceExporter}, and also offers the same customization hooks.
  * RmiServiceExporter implements its own registry lookup as a convenience:
  * It is very common to simply rely on the registry defaults.

@@ -83,7 +83,7 @@ import org.springframework.util.StringUtils;
  * {@code EntityManager} reference, where type mismatches might be detected as late
  * as on the first actual invocation.
  *
- * <p>Note: In the present implementation, PersistenceAnnotationBeanPostProcessor
+ * <p>注意: In the present implementation, PersistenceAnnotationBeanPostProcessor
  * only supports {@code @PersistenceUnit} and {@code @PersistenceContext}
  * with the "unitName" attribute, or no attribute at all (for the default unit).
  * If those annotations are present with the "name" attribute at the class level,
@@ -151,13 +151,13 @@ import org.springframework.util.StringUtils;
  * as well, specify entries for both "persistenceUnits" and "persistenceContexts",
  * pointing to matching JNDI locations.
  *
- * <p><b>NOTE: In general, do not inject EXTENDED EntityManagers into STATELESS beans,
+ * <p><b>注意: In general, do not inject EXTENDED EntityManagers into STATELESS beans,
  * i.e. do not use {@code @PersistenceContext} with type {@code EXTENDED} in
  * Spring beans defined with scope 'singleton' (Spring's default scope).</b>
  * Extended EntityManagers are <i>not</i> thread-safe, hence they must not be used
  * in concurrently accessed beans (which Spring-managed singletons usually are).
  *
- * <p>Note: A default PersistenceAnnotationBeanPostProcessor will be registered
+ * <p>注意: A default PersistenceAnnotationBeanPostProcessor will be registered
  * by the "context:annotation-config" and "context:component-scan" XML tags.
  * Remove or turn off the default annotation configuration there if you intend
  * to specify a custom PersistenceAnnotationBeanPostProcessor bean definition.

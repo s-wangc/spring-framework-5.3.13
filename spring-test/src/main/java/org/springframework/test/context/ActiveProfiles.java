@@ -108,7 +108,7 @@ public @interface ActiveProfiles {
 	 *     // ...
 	 * }
 	 * </pre>
-	 * <p>Note: {@code @ActiveProfiles} can be used when loading an
+	 * <p>注意: {@code @ActiveProfiles} can be used when loading an
 	 * {@code ApplicationContext} from path-based resource locations or
 	 * annotated classes.
 	 * @see ContextConfiguration#locations

@@ -27,7 +27,7 @@ package org.springframework.beans.factory;
  * instances if their {@link #isSingleton()} implementation returns
  * {@code false}; the exposed object is only accessed on demand.
  *
- * <p><b>NOTE:</b> This interface is a special purpose interface, mainly for
+ * <p><b>注意:</b> This interface is a special purpose interface, mainly for
  * internal use within the framework and within collaborating frameworks.
  * In general, application-provided FactoryBeans should simply implement
  * the plain {@link FactoryBean} interface. New methods might be added

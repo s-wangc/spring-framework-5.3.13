@@ -89,7 +89,7 @@ public abstract class PropertiesLoaderSupport {
 	 * Set locations of properties files to be loaded.
 	 * <p>Can point to classic properties files or to XML files
 	 * that follow JDK 1.5's properties XML format.
-	 * <p>Note: Properties defined in later files will override
+	 * <p>注意: Properties defined in later files will override
 	 * properties defined earlier files, in case of overlapping keys.
 	 * Hence, make sure that the most specific files are the last
 	 * ones in the given list of locations.

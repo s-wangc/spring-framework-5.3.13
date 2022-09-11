@@ -26,7 +26,7 @@ import org.springframework.util.StopWatch;
 /**
  * Benchmarks for introductions.
  *
- * NOTE: No assertions!
+ * 注意: No assertions!
  *
  * @author Rod Johnson
  * @author Chris Beams

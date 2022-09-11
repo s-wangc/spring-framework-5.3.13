@@ -49,7 +49,7 @@ import org.springframework.cglib.core.internal.CustomizerRegistry;
  *     Object key1 = factory.newInstance(4, "Hello");
  *     Object key2 = factory.newInstance(4, "World");
  * </pre><p>
- * <b>Note:</b>
+ * <b>注意:</b>
  * <code>hashCode</code> equality between two keys <code>key1</code> and <code>key2</code> is only guaranteed if
  * <code>key1.equals(key2)</code> <i>and</i> the keys were produced by the same factory.
  * @version $Id: KeyFactory.java,v 1.26 2006/03/05 02:43:19 herbyderby Exp $

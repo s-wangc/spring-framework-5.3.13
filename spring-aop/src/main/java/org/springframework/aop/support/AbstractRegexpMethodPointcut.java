@@ -35,7 +35,7 @@ import org.springframework.util.StringUtils;
  * The result will be the union of these patterns.
  * </ul>
  *
- * <p>Note: the regular expressions must be a match. For example,
+ * <p>注意: the regular expressions must be a match. For example,
  * {@code .*get.*} will match com.mycom.Foo.getBar().
  * {@code get.*} will not.
  *

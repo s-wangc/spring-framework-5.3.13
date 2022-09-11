@@ -29,7 +29,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.condition.JRE.JAVA_8;
 
 /**
- * NOTE: These tests fail under Eclipse/IDEA because JiBX binding does
+ * 注意: These tests fail under Eclipse/IDEA because JiBX binding does
  * not occur by default. The Gradle build should succeed, however.
  *
  * @author Arjen Poutsma

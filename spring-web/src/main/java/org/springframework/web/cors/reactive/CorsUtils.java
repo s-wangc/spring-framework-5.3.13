@@ -59,7 +59,7 @@ public abstract class CorsUtils {
 	 * Check if the request is a same-origin one, based on {@code Origin}, and
 	 * {@code Host} headers.
 	 *
-	 * <p><strong>Note:</strong> as of 5.1 this method ignores
+	 * <p><strong>注意:</strong> as of 5.1 this method ignores
 	 * {@code "Forwarded"} and {@code "X-Forwarded-*"} headers that specify the
 	 * client-originated address. Consider using the {@code ForwardedHeaderFilter}
 	 * to extract and use, or to discard such headers.

@@ -29,7 +29,7 @@ import org.springframework.web.server.ServerWebExchange;
  * {@link LocaleContextResolver} implementation that always returns a fixed locale
  * and optionally time zone. Default is the current JVM's default locale.
  *
- * <p>Note: Does not support {@link #setLocaleContext}, as the fixed locale and
+ * <p>注意: Does not support {@link #setLocaleContext}, as the fixed locale and
  * time zone cannot be changed.
  *
  * @author Sebastien Deleuze

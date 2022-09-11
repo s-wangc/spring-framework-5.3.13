@@ -28,7 +28,7 @@ import org.junit.runners.model.InitializationError;
  * this one, use {@link org.springframework.test.context.junit4.rules.SpringClassRule}
  * and {@link org.springframework.test.context.junit4.rules.SpringMethodRule}.
  *
- * <p><strong>NOTE:</strong> This class requires JUnit 4.12 or higher.
+ * <p><strong>注意:</strong> This class requires JUnit 4.12 or higher.
  *
  * @author Sam Brannen
  * @since 4.3

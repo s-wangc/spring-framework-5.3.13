@@ -202,7 +202,7 @@ public abstract class AbstractAdaptableMessageListener
 	 * <p>Delegates the message to the target listener method, with appropriate
 	 * conversion of the message argument. In case of an exception, the
 	 * {@link #handleListenerException(Throwable)} method will be invoked.
-	 * <p><b>Note:</b> Does not support sending response messages based on
+	 * <p><b>注意:</b> Does not support sending response messages based on
 	 * result objects returned from listener methods. Use the
 	 * {@link SessionAwareMessageListener} entry point (typically through a Spring
 	 * message listener container) for handling result objects as well.

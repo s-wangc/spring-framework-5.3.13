@@ -59,7 +59,7 @@ public abstract class HttpRange {
 	 */
 	public ResourceRegion toResourceRegion(Resource resource) {
 		// Don't try to determine contentLength on InputStreamResource - cannot be read afterwards...
-		// Note: custom InputStreamResource subclasses could provide a pre-calculated content length!
+		// 注意: custom InputStreamResource subclasses could provide a pre-calculated content length!
 		Assert.isTrue(resource.getClass() != InputStreamResource.class,
 				"Cannot convert an InputStreamResource to a ResourceRegion");
 		long contentLength = getLengthFor(resource);

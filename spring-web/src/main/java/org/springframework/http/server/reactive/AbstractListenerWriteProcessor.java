@@ -239,7 +239,7 @@ public abstract class AbstractListenerWriteProcessor<T> implements Processor<T, 
 
 	/**
 	 * Write the given item.
-	 * <p><strong>Note:</strong> Sub-classes are responsible for releasing any
+	 * <p><strong>注意:</strong> Sub-classes are responsible for releasing any
 	 * data buffer associated with the item, once fully written, if pooled
 	 * buffers apply to the underlying container.
 	 * @param data the item to write

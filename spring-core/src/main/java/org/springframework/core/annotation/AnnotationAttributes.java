@@ -259,7 +259,7 @@ public class AnnotationAttributes extends LinkedHashMap<String, Object> {
 	/**
 	 * Get the {@link AnnotationAttributes} stored under the specified
 	 * {@code attributeName}.
-	 * <p>Note: if you expect an actual annotation, invoke
+	 * <p>注意: if you expect an actual annotation, invoke
 	 * {@link #getAnnotation(String, Class)} instead.
 	 * @param attributeName the name of the attribute to get;
 	 * never {@code null} or empty
@@ -290,7 +290,7 @@ public class AnnotationAttributes extends LinkedHashMap<String, Object> {
 	 * <p>If the value stored under the specified {@code attributeName} is
 	 * an instance of {@code AnnotationAttributes}, it will be wrapped in
 	 * a single-element array before returning it.
-	 * <p>Note: if you expect an actual array of annotations, invoke
+	 * <p>注意: if you expect an actual array of annotations, invoke
 	 * {@link #getAnnotationArray(String, Class)} instead.
 	 * @param attributeName the name of the attribute to get;
 	 * never {@code null} or empty

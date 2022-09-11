@@ -46,13 +46,13 @@ import javax.persistence.spi.PersistenceProvider;
  * or use Spring's {@link LocalContainerEntityManagerFactoryBean} with appropriate
  * configuration for local setup according to JPA's container contract.
  *
- * <p><b>Note:</b> This FactoryBean has limited configuration power in terms of
+ * <p><b>注意:</b> This FactoryBean has limited configuration power in terms of
  * what configuration it is able to pass to the JPA provider. If you need more
  * flexible configuration, for example passing a Spring-managed JDBC DataSource
  * to the JPA provider, consider using Spring's more powerful
  * {@link LocalContainerEntityManagerFactoryBean} instead.
  *
- * <p><b>NOTE: Spring's JPA support requires JPA 2.1 or higher, as of Spring 5.0.</b>
+ * <p><b>注意: Spring's JPA support requires JPA 2.1 or higher, as of Spring 5.0.</b>
  * JPA 1.0/2.0 based applications are still supported; however, a JPA 2.1 compliant
  * persistence provider is needed at runtime.
  *

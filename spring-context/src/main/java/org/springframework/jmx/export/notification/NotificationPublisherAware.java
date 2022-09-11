@@ -26,7 +26,7 @@ import org.springframework.beans.factory.Aware;
  * <p>Provides Spring-created managed resources with a {@link NotificationPublisher}
  * as soon as they are registered with the {@link javax.management.MBeanServer}.
  *
- * <p><b>NOTE:</b> This interface only applies to simple Spring-managed
+ * <p><b>注意:</b> This interface only applies to simple Spring-managed
  * beans which happen to get exported through Spring's
  * {@link org.springframework.jmx.export.MBeanExporter}.
  * It does not apply to any non-exported beans; neither does it apply

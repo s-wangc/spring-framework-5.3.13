@@ -128,7 +128,7 @@ public interface AutowireCapableBeanFactory extends BeanFactory {
 	 * Fully create a new bean instance of the given class.
 	 * <p>Performs full initialization of the bean, including all applicable
 	 * {@link BeanPostProcessor BeanPostProcessors}.
-	 * <p>Note: This is intended for creating a fresh instance, populating annotated
+	 * <p>注意: This is intended for creating a fresh instance, populating annotated
 	 * fields and methods as well as applying all standard bean initialization callbacks.
 	 * It does <i>not</i> imply traditional by-name or by-type autowiring of properties;
 	 * use {@link #createBean(Class, int, boolean)} for those purposes.
@@ -141,7 +141,7 @@ public interface AutowireCapableBeanFactory extends BeanFactory {
 	/**
 	 * Populate the given bean instance through applying after-instantiation callbacks
 	 * and bean property post-processing (e.g. for annotation-driven injection).
-	 * <p>Note: This is essentially intended for (re-)populating annotated fields and
+	 * <p>注意: This is essentially intended for (re-)populating annotated fields and
 	 * methods, either for new instances or for deserialized instances. It does
 	 * <i>not</i> imply traditional by-name or by-type autowiring of properties;
 	 * use {@link #autowireBeanProperties} for those purposes.
@@ -157,7 +157,7 @@ public interface AutowireCapableBeanFactory extends BeanFactory {
 	 * (including ones which might wrap the given raw bean).
 	 * <p>This is effectively a superset of what {@link #initializeBean} provides,
 	 * fully applying the configuration specified by the corresponding bean definition.
-	 * <b>Note: This method requires a bean definition for the given name!</b>
+	 * <b>注意: This method requires a bean definition for the given name!</b>
 	 * @param existingBean the existing bean instance
 	 * @param beanName the name of the bean, to be passed to it if necessary
 	 * (a bean definition of that name has to be available)
@@ -250,7 +250,7 @@ public interface AutowireCapableBeanFactory extends BeanFactory {
 	 * <p>This method does <i>not</i> autowire bean properties; it just applies
 	 * explicitly defined property values. Use the {@link #autowireBeanProperties}
 	 * method to autowire an existing bean instance.
-	 * <b>Note: This method requires a bean definition for the given name!</b>
+	 * <b>注意: This method requires a bean definition for the given name!</b>
 	 * <p>Does <i>not</i> apply standard {@link BeanPostProcessor BeanPostProcessors}
 	 * callbacks or perform any further initialization of the bean. This interface
 	 * offers distinct, fine-grained operations for those purposes, for example

@@ -257,7 +257,7 @@ public interface BeanFactory {
 	/**
 	 * Is this bean a shared singleton? That is, will {@link #getBean} always
 	 * return the same instance?
-	 * <p>Note: This method returning {@code false} does not clearly indicate
+	 * <p>注意: This method returning {@code false} does not clearly indicate
 	 * independent instances. It indicates non-singleton instances, which may correspond
 	 * to a scoped bean as well. Use the {@link #isPrototype} operation to explicitly
 	 * check for independent instances.
@@ -274,7 +274,7 @@ public interface BeanFactory {
 	/**
 	 * Is this bean a prototype? That is, will {@link #getBean} always return
 	 * independent instances?
-	 * <p>Note: This method returning {@code false} does not clearly indicate
+	 * <p>注意: This method returning {@code false} does not clearly indicate
 	 * a singleton object. It indicates non-independent instances, which may correspond
 	 * to a scoped bean as well. Use the {@link #isSingleton} operation to explicitly
 	 * check for a shared singleton instance.

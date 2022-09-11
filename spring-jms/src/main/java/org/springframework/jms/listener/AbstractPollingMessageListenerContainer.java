@@ -109,7 +109,7 @@ public abstract class AbstractPollingMessageListenerContainer extends AbstractMe
 	 * {@link org.springframework.transaction.jta.JtaTransactionManager} or one
 	 * of its subclasses, in combination with a JTA-aware ConnectionFactory that
 	 * this message listener container obtains its Connections from.
-	 * <p><b>Note: Consider the use of local JMS transactions instead.</b>
+	 * <p><b>注意: Consider the use of local JMS transactions instead.</b>
 	 * Simply switch the {@link #setSessionTransacted "sessionTransacted"} flag
 	 * to "true" in order to use a locally transacted JMS Session for the entire
 	 * receive processing, including any Session operations performed by a
@@ -158,7 +158,7 @@ public abstract class AbstractPollingMessageListenerContainer extends AbstractMe
 	/**
 	 * Set the timeout to use for receive calls, in <b>milliseconds</b>.
 	 * The default is 1000 ms, that is, 1 second.
-	 * <p><b>NOTE:</b> This value needs to be smaller than the transaction
+	 * <p><b>注意:</b> This value needs to be smaller than the transaction
 	 * timeout used by the transaction manager (in the appropriate unit,
 	 * of course). 0 indicates no timeout at all; however, this is only
 	 * feasible if not running within a transaction manager and generally

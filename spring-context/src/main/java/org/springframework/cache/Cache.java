@@ -23,7 +23,7 @@ import org.springframework.lang.Nullable;
 /**
  * Interface that defines common cache operations.
  *
- * <b>Note:</b> Due to the generic use of caching, it is recommended that
+ * <b>注意:</b> Due to the generic use of caching, it is recommended that
  * implementations allow storage of <tt>null</tt> values (for example to
  * cache methods that return {@code null}).
  *
@@ -63,7 +63,7 @@ public interface Cache {
 	/**
 	 * Return the value to which this cache maps the specified key,
 	 * generically specifying a type that return value will be cast to.
-	 * <p>Note: This variant of {@code get} does not allow for differentiating
+	 * <p>注意: This variant of {@code get} does not allow for differentiating
 	 * between a cached {@code null} value and no cache entry found at all.
 	 * Use the standard {@link #get(Object)} variant for that purpose instead.
 	 * @param key the key whose associated value is to be returned

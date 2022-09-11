@@ -40,7 +40,7 @@ public interface ExchangeFilterFunction {
 	 * {@linkplain ExchangeFunction#exchange(ClientRequest) invoked} in order to
 	 * proceed with the exchange, or not invoked to shortcut the chain.
 	 *
-	 * <p><strong>Note:</strong> When a filter handles the response after the
+	 * <p><strong>注意:</strong> When a filter handles the response after the
 	 * call to {@link ExchangeFunction#exchange}, extra care must be taken to
 	 * always consume its content or otherwise propagate it downstream for
 	 * further handling, for example by the {@link WebClient}. Please, see the

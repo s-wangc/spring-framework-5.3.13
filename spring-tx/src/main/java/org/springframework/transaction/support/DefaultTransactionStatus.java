@@ -33,7 +33,7 @@ import org.springframework.util.Assert;
  * <p>Supports delegating savepoint-related methods to a transaction object
  * that implements the {@link SavepointManager} interface.
  *
- * <p><b>NOTE:</b> This is <i>not</i> intended for use with other PlatformTransactionManager
+ * <p><b>注意:</b> This is <i>not</i> intended for use with other PlatformTransactionManager
  * implementations, in particular not for mock transaction managers in testing environments.
  * Use the alternative {@link SimpleTransactionStatus} class or a mock for the plain
  * {@link org.springframework.transaction.TransactionStatus} interface instead.

@@ -41,7 +41,7 @@ public enum TransactionPhase {
 
 	/**
 	 * Handle the event after the commit has completed successfully.
-	 * <p>Note: This is a specialization of {@link #AFTER_COMPLETION} and therefore
+	 * <p>注意: This is a specialization of {@link #AFTER_COMPLETION} and therefore
 	 * executes in the same sequence of events as {@code AFTER_COMPLETION}
 	 * (and not in {@link TransactionSynchronization#afterCommit()}).
 	 * <p>Interactions with the underlying transactional resource will not be
@@ -54,7 +54,7 @@ public enum TransactionPhase {
 
 	/**
 	 * Handle the event if the transaction has rolled back.
-	 * <p>Note: This is a specialization of {@link #AFTER_COMPLETION} and therefore
+	 * <p>注意: This is a specialization of {@link #AFTER_COMPLETION} and therefore
 	 * executes in the same sequence of events as {@code AFTER_COMPLETION}.
 	 * <p>Interactions with the underlying transactional resource will not be
 	 * committed in this phase. See

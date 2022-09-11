@@ -309,7 +309,7 @@ public class ReflectionHelperTests extends AbstractExpressionTests {
 		assertThat(rpa.canRead(ctx, t, "id")).isTrue();
 		assertThat(rpa.read(ctx, t, "ID").getValue()).isEqualTo("ID");
 		assertThat(rpa.canRead(ctx, t, "ID")).isTrue();
-		// note: "Id" is not a valid JavaBean name, nevertheless it is treated as "id"
+		// 注意: "Id" is not a valid JavaBean name, nevertheless it is treated as "id"
 		assertThat(rpa.read(ctx, t, "Id").getValue()).isEqualTo("id");
 		assertThat(rpa.canRead(ctx, t, "Id")).isTrue();
 

@@ -33,7 +33,7 @@ import org.springframework.util.ConcurrentLruCache;
  * <p>References to the same parameter name are substituted with the
  * same bind marker placeholder if a {@link BindMarkersFactory} uses
  * {@link BindMarkersFactory#identifiablePlaceholders() identifiable} placeholders.
- * <p><b>NOTE: An instance of this class is thread-safe once configured.</b>
+ * <p><b>注意: An instance of this class is thread-safe once configured.</b>
  *
  * @author Mark Paluch
  * @author Juergen Hoeller

@@ -44,7 +44,7 @@ import org.springframework.util.Assert;
  * {@code ConnectionFactory} to the current subscriber context, potentially
  * allowing for one context-bound {@code Connection} per {@code ConnectionFactory}.
  *
- * <p><b>Note: The {@code ConnectionFactory} that this transaction manager
+ * <p><b>注意: The {@code ConnectionFactory} that this transaction manager
  * operates on needs to return independent {@code Connection}s.</b>
  * The {@code Connection}s may come from a pool (the typical case), but the
  * {@code ConnectionFactory} must not return scoped scoped {@code Connection}s

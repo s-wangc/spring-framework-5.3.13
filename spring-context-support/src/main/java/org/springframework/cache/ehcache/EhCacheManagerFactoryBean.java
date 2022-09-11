@@ -42,7 +42,7 @@ import org.springframework.lang.Nullable;
  * and cares for proper shutdown of the CacheManager. EhCacheManagerFactoryBean is
  * also necessary for loading EhCache configuration from a non-default config location.
  *
- * <p>Note: As of Spring 5.0, Spring's EhCache support requires EhCache 2.10 or higher.
+ * <p>注意: As of Spring 5.0, Spring's EhCache support requires EhCache 2.10 or higher.
  *
  * @author Juergen Hoeller
  * @author Dmitriy Kopylenko
@@ -111,7 +111,7 @@ public class EhCacheManagerFactoryBean implements FactoryBean<CacheManager>, Ini
 	 * Set whether the EhCache CacheManager should be shared (as a singleton at the
 	 * ClassLoader level) or independent (typically local within the application).
 	 * Default is "false", creating an independent local instance.
-	 * <p><b>NOTE:</b> This feature allows for sharing this EhCacheManagerFactoryBean's
+	 * <p><b>注意:</b> This feature allows for sharing this EhCacheManagerFactoryBean's
 	 * CacheManager with any code calling <code>CacheManager.create()</code> in the same
 	 * ClassLoader space, with no need to agree on a specific CacheManager name.
 	 * However, it only supports a single EhCacheManagerFactoryBean involved which will

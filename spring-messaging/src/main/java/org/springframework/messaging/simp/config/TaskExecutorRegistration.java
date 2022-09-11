@@ -67,7 +67,7 @@ public class TaskExecutorRegistration {
 
 	/**
 	 * Set the core pool size of the ThreadPoolExecutor.
-	 * <p><strong>NOTE:</strong> The core pool size is effectively the max pool size
+	 * <p><strong>注意:</strong> The core pool size is effectively the max pool size
 	 * when an unbounded {@link #queueCapacity(int) queueCapacity} is configured
 	 * (the default). This is essentially the "Unbounded queues" strategy as explained
 	 * in {@link java.util.concurrent.ThreadPoolExecutor ThreadPoolExecutor}. When
@@ -84,7 +84,7 @@ public class TaskExecutorRegistration {
 
 	/**
 	 * Set the max pool size of the ThreadPoolExecutor.
-	 * <p><strong>NOTE:</strong> When an unbounded
+	 * <p><strong>注意:</strong> When an unbounded
 	 * {@link #queueCapacity(int) queueCapacity} is configured (the default), the
 	 * max pool size is effectively ignored. See the "Unbounded queues" strategy
 	 * in {@link java.util.concurrent.ThreadPoolExecutor ThreadPoolExecutor} for
@@ -110,7 +110,7 @@ public class TaskExecutorRegistration {
 
 	/**
 	 * Set the queue capacity for the ThreadPoolExecutor.
-	 * <p><strong>NOTE:</strong> when an unbounded {@code queueCapacity} is configured
+	 * <p><strong>注意:</strong> when an unbounded {@code queueCapacity} is configured
 	 * (the default), the core pool size is effectively the max pool size. This is
 	 * essentially the "Unbounded queues" strategy as explained in
 	 * {@link java.util.concurrent.ThreadPoolExecutor ThreadPoolExecutor}. When

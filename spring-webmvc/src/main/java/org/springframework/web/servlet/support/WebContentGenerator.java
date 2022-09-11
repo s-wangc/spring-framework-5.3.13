@@ -49,7 +49,7 @@ import org.springframework.web.context.support.WebApplicationObjectSupport;
  * headers can be controlled via the {@link #setCacheSeconds "cacheSeconds"}
  * and {@link #setCacheControl "cacheControl"} properties.
  *
- * <p><b>NOTE:</b> As of Spring 4.2, this generator's default behavior changed when
+ * <p><b>注意:</b> As of Spring 4.2, this generator's default behavior changed when
  * using only {@link #setCacheSeconds}, sending HTTP response headers that are in line
  * with current browsers and proxies implementations (i.e. no HTTP 1.0 headers anymore)
  * Reverting to the previous behavior can be easily done by using one of the newly
@@ -286,7 +286,7 @@ public abstract class WebContentGenerator extends WebApplicationObjectSupport {
 	/**
 	 * Set whether to use the HTTP 1.0 expires header. Default is "false",
 	 * as of 4.2.
-	 * <p>Note: Cache headers will only get applied if caching is enabled
+	 * <p>注意: Cache headers will only get applied if caching is enabled
 	 * (or explicitly prevented) for the current request.
 	 * @deprecated as of 4.2, since going forward, the HTTP 1.1 cache-control
 	 * header will be required, with the HTTP 1.0 headers disappearing
@@ -307,7 +307,7 @@ public abstract class WebContentGenerator extends WebApplicationObjectSupport {
 
 	/**
 	 * Set whether to use the HTTP 1.1 cache-control header. 默认值是"true".
-	 * <p>Note: Cache headers will only get applied if caching is enabled
+	 * <p>注意: Cache headers will only get applied if caching is enabled
 	 * (or explicitly prevented) for the current request.
 	 * @deprecated as of 4.2, since going forward, the HTTP 1.1 cache-control
 	 * header will be required, with the HTTP 1.0 headers disappearing

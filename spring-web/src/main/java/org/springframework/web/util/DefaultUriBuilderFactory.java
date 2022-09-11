@@ -85,7 +85,7 @@ public class DefaultUriBuilderFactory implements UriBuilderFactory {
 	 * Set the {@link EncodingMode encoding mode} to use.
 	 * <p>By default this is set to {@link EncodingMode#TEMPLATE_AND_VALUES
 	 * EncodingMode.TEMPLATE_AND_VALUES}.
-	 * <p><strong>Note:</strong> Prior to 5.1 the default was
+	 * <p><strong>注意:</strong> Prior to 5.1 the default was
 	 * {@link EncodingMode#URI_COMPONENT EncodingMode.URI_COMPONENT}
 	 * therefore the {@code WebClient} {@code RestTemplate} have switched their
 	 * default behavior.

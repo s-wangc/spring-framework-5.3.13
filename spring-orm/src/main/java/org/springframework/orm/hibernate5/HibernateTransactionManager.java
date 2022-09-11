@@ -78,7 +78,7 @@ import org.springframework.util.Assert;
  * or going through a
  * {@link org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy}).
  *
- * <p>Note: To be able to register a DataSource's Connection for plain JDBC code,
+ * <p>注意: To be able to register a DataSource's Connection for plain JDBC code,
  * this instance needs to be aware of the DataSource ({@link #setDataSource}).
  * The given DataSource should obviously match the one used by the given SessionFactory.
  *
@@ -202,7 +202,7 @@ public class HibernateTransactionManager extends AbstractPlatformTransactionMana
 	 * manager needs to work on the underlying target DataSource. If there's
 	 * nevertheless a TransactionAwareDataSourceProxy passed in, it will be
 	 * unwrapped to extract its target DataSource.
-	 * <p><b>NOTE: For scenarios with many transactions that just read data from
+	 * <p><b>注意: For scenarios with many transactions that just read data from
 	 * Hibernate's cache (and do not actually access the database), consider using
 	 * a {@link org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy}
 	 * for the actual target DataSource. Alternatively, consider switching

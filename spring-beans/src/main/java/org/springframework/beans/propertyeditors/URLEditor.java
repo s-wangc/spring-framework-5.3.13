@@ -32,7 +32,7 @@ import org.springframework.util.Assert;
  * ("file:", "http:", etc) and Spring's special "classpath:" pseudo-URL,
  * as well as Spring's context-specific relative file paths.
  *
- * <p>Note: A URL must specify a valid protocol, else it will be rejected
+ * <p>注意: A URL must specify a valid protocol, else it will be rejected
  * upfront. However, the target resource does not necessarily have to exist
  * at the time of URL creation; this depends on the specific resource type.
  *

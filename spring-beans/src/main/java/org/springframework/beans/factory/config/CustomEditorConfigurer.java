@@ -79,7 +79,7 @@ import org.springframework.util.ClassUtils;
  * class names (e.g. "boolean"). Delegates to {@link ClassUtils} for actual
  * class name resolution.
  *
- * <p><b>NOTE:</b> Custom property editors registered with this configurer do
+ * <p><b>注意:</b> Custom property editors registered with this configurer do
  * <i>not</i> apply to data binding. Custom editors for data binding need to
  * be registered on the {@link org.springframework.validation.DataBinder}:
  * Use a common base class or delegate to common PropertyEditorRegistrar

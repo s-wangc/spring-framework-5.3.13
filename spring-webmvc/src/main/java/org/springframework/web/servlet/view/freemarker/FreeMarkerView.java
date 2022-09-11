@@ -75,7 +75,7 @@ import org.springframework.web.servlet.view.AbstractTemplateView;
  * bean property. See {@link #setConfiguration} for more details on the impacts
  * of this approach.
  *
- * <p>Note: Spring's FreeMarker support requires FreeMarker 2.3 or higher.
+ * <p>注意: Spring's FreeMarker support requires FreeMarker 2.3 or higher.
  *
  * @author Darren Davison
  * @author Juergen Hoeller
@@ -124,7 +124,7 @@ public class FreeMarkerView extends AbstractTemplateView {
 	 * Set the FreeMarker Configuration to be used by this view.
 	 * <p>If this is not set, the default lookup will occur: a single {@link FreeMarkerConfig}
 	 * is expected in the current web application context, with any bean name.
-	 * <strong>Note:</strong> using this method will cause a new instance of {@link TaglibFactory}
+	 * <strong>注意:</strong> using this method will cause a new instance of {@link TaglibFactory}
 	 * to created for every single {@link FreeMarkerView} instance. This can be quite expensive
 	 * in terms of memory and initial CPU usage. In production it is recommended that you use
 	 * a {@link FreeMarkerConfig} which exposes a single shared {@link TaglibFactory}.

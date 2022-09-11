@@ -112,7 +112,7 @@ import org.springframework.web.util.WebUtils;
  * If not explicitly specified, the context implementation is supposed to build a
  * default location from the namespace of the servlet.
  *
- * <p>Note: In case of multiple config locations, later bean definitions will
+ * <p>注意: In case of multiple config locations, later bean definitions will
  * override ones defined in earlier loaded files, at least when using Spring's
  * default ApplicationContext implementation. This can be leveraged to
  * deliberately override certain bean definitions via an extra XML file.

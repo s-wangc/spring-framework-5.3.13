@@ -134,7 +134,7 @@ import org.springframework.web.util.WebUtils;
  * {@link org.springframework.web.servlet.theme.FixedThemeResolver}.
  * </ul>
  *
- * <p><b>NOTE: The {@code @RequestMapping} annotation will only be processed if a
+ * <p><b>注意: The {@code @RequestMapping} annotation will only be processed if a
  * corresponding {@code HandlerMapping} (for type-level annotations) and/or
  * {@code HandlerAdapter} (for method-level annotations) is present in the dispatcher.</b>
  * This is the case by default. However, if you are defining custom {@code HandlerMappings}
@@ -819,7 +819,7 @@ public class DispatcherServlet extends FrameworkServlet {
 	 * Return the configured {@link HandlerMapping} beans that were detected by
 	 * type in the {@link WebApplicationContext} or initialized based on the
 	 * default set of strategies from {@literal DispatcherServlet.properties}.
-	 * <p><strong>Note:</strong> This method may return {@code null} if invoked
+	 * <p><strong>注意:</strong> This method may return {@code null} if invoked
 	 * prior to {@link #onRefresh(ApplicationContext)}.
 	 * @return an immutable list with the configured mappings, or {@code null}
 	 * if not initialized yet

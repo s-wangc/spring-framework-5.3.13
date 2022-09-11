@@ -41,7 +41,7 @@ import static org.springframework.test.util.AssertionErrors.fail;
  * <p>An instance of this class is typically accessed via
  * {@link MockMvcResultMatchers#handler}.
  *
- * <p><strong>Note:</strong> Expectations that assert the controller method
+ * <p><strong>注意:</strong> Expectations that assert the controller method
  * used to process the request work only for requests processed with
  * {@link RequestMappingHandlerMapping} and {@link RequestMappingHandlerAdapter}
  * which is used by default with the Spring MVC Java config and XML namespace.

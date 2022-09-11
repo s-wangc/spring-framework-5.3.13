@@ -101,7 +101,7 @@ public class JmsTransactionManager extends AbstractPlatformTransactionManager
 
 	/**
 	 * Create a new JmsTransactionManager for bean-style usage.
-	 * <p>Note: The ConnectionFactory has to be set before using the instance.
+	 * <p>注意: The ConnectionFactory has to be set before using the instance.
 	 * This constructor can be used to prepare a JmsTemplate via a BeanFactory,
 	 * typically setting the ConnectionFactory via setConnectionFactory.
 	 * <p>Turns off transaction synchronization by default, as this manager might

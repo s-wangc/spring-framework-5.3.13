@@ -69,7 +69,7 @@ import org.springframework.lang.Nullable;
  * You will get the same effect with non-transactional reads, but lazy fetching
  * of JDBC Connections allows you to still perform reads in transactions.
  *
- * <p><b>NOTE:</b> This DataSource proxy needs to return wrapped Connections
+ * <p><b>注意:</b> This DataSource proxy needs to return wrapped Connections
  * (which implement the {@link ConnectionProxy} interface) in order to handle
  * lazy fetching of an actual JDBC Connection. Use {@link Connection#unwrap}
  * to retrieve the native JDBC Connection.

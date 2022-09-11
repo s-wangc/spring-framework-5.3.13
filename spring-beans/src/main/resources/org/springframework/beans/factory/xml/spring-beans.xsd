@@ -325,7 +325,7 @@
 	默认值是"false". Specify "true" to tell the bean factory to not
 	try to instantiate that particular bean in any case.
 
-	Note: This attribute will not be inherited by child bean definitions.
+	注意: This attribute will not be inherited by child bean definitions.
 	Hence, it needs to be specified per abstract bean definition.
 				]]></xsd:documentation>
 			</xsd:annotation>
@@ -337,7 +337,7 @@
 	it will be instantiated on startup by bean factories that perform eager
 	initialization of singletons. The effective 默认值是"false".
 
-	Note: This attribute will not be inherited by child bean definitions.
+	注意: This attribute will not be inherited by child bean definitions.
 	Hence, it needs to be specified per concrete bean definition. It can be
 	shared through the 'default-lazy-init' attribute at the 'beans' level
 	and potentially inherited from outer 'beans' defaults in case of nested
@@ -385,7 +385,7 @@
 	Note that explicit dependencies, i.e. "property" and "constructor-arg"
 	elements, always override autowiring.
 
-	Note: This attribute will not be inherited by child bean definitions.
+	注意: This attribute will not be inherited by child bean definitions.
 	Hence, it needs to be specified per concrete bean definition. It can be
 	shared through the 'default-autowire' attribute at the 'beans' level
 	and potentially inherited from outer 'beans' defaults in case of nested
@@ -414,7 +414,7 @@
 	other kinds of dependencies like statics (*ugh*) or database preparation
 	on startup.
 
-	Note: This attribute will not be inherited by child bean definitions.
+	注意: This attribute will not be inherited by child bean definitions.
 	Hence, it needs to be specified per concrete bean definition.
 				]]></xsd:documentation>
 			</xsd:annotation>
@@ -461,7 +461,7 @@
 	interface or the standard Java Closeable/AutoCloseable interface,
 	or marking a method with the PreDestroy annotation.
 
-	Note: Only invoked on beans whose lifecycle is under the full
+	注意: Only invoked on beans whose lifecycle is under the full
 	control of the factory - which is always the case for singletons,
 	but not guaranteed for any other scope.
 				]]></xsd:documentation>
@@ -566,7 +566,7 @@
 	Arguments correspond to either a specific index of the constructor
 	argument list or are supposed to be matched generically by type.
 
-	Note: A single generic argument value will just be used once, rather
+	注意: A single generic argument value will just be used once, rather
 	than potentially matched multiple times (as of Spring 1.1).
 
 	constructor-arg elements are also used in conjunction with the
@@ -614,7 +614,7 @@
 					<xsd:documentation><![CDATA[
 	The exact name of the argument in the constructor argument list.
 	Only needed to avoid ambiguities, e.g. in case of 2 arguments of
-	the exact same type. Note: This requires debug symbols to be
+	the exact same type. 注意: This requires debug symbols to be
 	stored in the class file in order to introspect argument names!
 					]]></xsd:documentation>
 				</xsd:annotation>

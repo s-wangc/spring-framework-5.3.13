@@ -57,7 +57,7 @@ import org.springframework.util.ReflectionUtils;
  * to get transaction participation even without a proxy for the target
  * {@link ConnectionFactory}, avoiding the need to define such a proxy in the first place.
  *
- * <p><b>NOTE:</b> This {@link ConnectionFactory} proxy needs to return wrapped
+ * <p><b>注意:</b> This {@link ConnectionFactory} proxy needs to return wrapped
  * {@link Connection}s in order to handle close calls properly.
  * Use {@link Wrapped#unwrap()} to retrieve the native R2DBC Connection.
  *

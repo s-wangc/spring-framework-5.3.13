@@ -47,7 +47,7 @@ import org.springframework.util.ReflectionUtils;
  * for Reactor, RxJava 3, {@link CompletableFuture}, {@code Flow.Publisher},
  * and Kotlin Coroutines' {@code Deferred} and {@code Flow}.
  *
- * <p><strong>Note:</strong> As of Spring Framework 5.3.11, support for
+ * <p><strong>注意:</strong> As of Spring Framework 5.3.11, support for
  * RxJava 1.x and 2.x is deprecated in favor of RxJava 3.
  *
  * @author Rossen Stoyanchev
@@ -194,7 +194,7 @@ public class ReactiveAdapterRegistry {
 	/**
 	 * Return a shared default {@code ReactiveAdapterRegistry} instance,
 	 * lazily building it once needed.
-	 * <p><b>NOTE:</b> We highly recommend passing a long-lived, pre-configured
+	 * <p><b>注意:</b> We highly recommend passing a long-lived, pre-configured
 	 * {@code ReactiveAdapterRegistry} instance for customization purposes.
 	 * This accessor is only meant as a fallback for code paths that want to
 	 * fall back on a default instance if one isn't provided.

@@ -26,7 +26,7 @@ import org.springframework.web.servlet.view.UrlBasedViewResolver;
  * <p>The view class for all views created by this resolver can be specified
  * via the {@link #setViewClass(Class)} property.
  *
- * <p><b>Note:</b> When chaining ViewResolvers this resolver will check for the
+ * <p><b>注意:</b> When chaining ViewResolvers this resolver will check for the
  * existence of the specified template resources and only return a non-null
  * View object if a template is actually found.
  *

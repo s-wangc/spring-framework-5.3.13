@@ -33,12 +33,12 @@ import org.springframework.util.StringUtils;
  * <p>Supports Spring-style URL notation: any fully qualified standard URL
  * ("file:", "http:", etc) and Spring's special "classpath:" pseudo-URL.
  *
- * <p><b>NOTE:</b> The behavior of this editor has changed in Spring 2.0.
+ * <p><b>注意:</b> The behavior of this editor has changed in Spring 2.0.
  * Previously, it created a File instance directly from a filename.
  * As of Spring 2.0, it takes a standard Spring resource location as input;
  * this is consistent with URLEditor and InputStreamEditor now.
  *
- * <p><b>NOTE:</b> In Spring 2.5 the following modification was made.
+ * <p><b>注意:</b> In Spring 2.5 the following modification was made.
  * If a file name is specified without a URL prefix or without an absolute path
  * then we try to locate the file using standard ResourceLoader semantics.
  * If the file was not found, then a File instance is created assuming the file

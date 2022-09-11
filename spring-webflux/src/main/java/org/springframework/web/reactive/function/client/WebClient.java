@@ -178,7 +178,7 @@ public interface WebClient {
 		 * <p>The {@code DefaultUriBuilderFactory} is used to prepare the URL
 		 * for every request with the given base URL, unless the URL request
 		 * for a given URL is absolute in which case the base URL is ignored.
-		 * <p><strong>Note:</strong> this method is mutually exclusive with
+		 * <p><strong>注意:</strong> this method is mutually exclusive with
 		 * {@link #uriBuilderFactory(UriBuilderFactory)}. If both are used, the
 		 * baseUrl value provided here will be ignored.
 		 * @see DefaultUriBuilderFactory#DefaultUriBuilderFactory(String)
@@ -196,7 +196,7 @@ public interface WebClient {
 		 * factory.setDefaultVariables(defaultVars);
 		 * WebClient client = WebClient.builder().uriBuilderFactory(factory).build();
 		 * </pre>
-		 * <p><strong>Note:</strong> this method is mutually exclusive with
+		 * <p><strong>注意:</strong> this method is mutually exclusive with
 		 * {@link #uriBuilderFactory(UriBuilderFactory)}. If both are used, the
 		 * defaultUriVariables value provided here will be ignored.
 		 * @see DefaultUriBuilderFactory#setDefaultUriVariables(Map)
@@ -534,7 +534,7 @@ public interface WebClient {
 		 *         }
 		 *     });
 		 * </pre>
-		 * <p><strong>Note:</strong> After the returned {@code Mono} completes,
+		 * <p><strong>注意:</strong> After the returned {@code Mono} completes,
 		 * the response body is automatically released if it hasn't been consumed.
 		 * If the response content is needed, the provided function must declare
 		 * how to decode it.
@@ -566,7 +566,7 @@ public interface WebClient {
 		 *         }
 		 *     });
 		 * </pre>
-		 * <p><strong>Note:</strong> After the returned {@code Flux} completes,
+		 * <p><strong>注意:</strong> After the returned {@code Flux} completes,
 		 * the response body is automatically released if it hasn't been consumed.
 		 * If the response content is needed, the provided function must declare
 		 * how to decode it.
@@ -594,7 +594,7 @@ public interface WebClient {
 		 *     .exchange()
 		 *     .flatMapMany(response -&gt; response.bodyToFlux(Person.class));
 		 * </pre>
-		 * <p><strong>NOTE:</strong> Unlike {@link #retrieve()}, when using
+		 * <p><strong>注意:</strong> Unlike {@link #retrieve()}, when using
 		 * {@code exchange()}, it is the responsibility of the application to
 		 * consume any response content regardless of the scenario (success,
 		 * error, unexpected data, etc). Not doing so can cause a memory leak.
@@ -874,7 +874,7 @@ public interface WebClient {
 		 * 4xx or 5xx), the {@code Mono} emits a {@link WebClientException}.
 		 * Use {@link #onStatus(Predicate, Function)} to customize error response
 		 * handling.
-		 * <p><strong>Note:</strong> The {@code Flux} representing the body must
+		 * <p><strong>注意:</strong> The {@code Flux} representing the body must
 		 * be subscribed to or else associated resources will not be released.
 		 * @param elementType the type of element to decode the target Flux to
 		 * @param <T> the body element type

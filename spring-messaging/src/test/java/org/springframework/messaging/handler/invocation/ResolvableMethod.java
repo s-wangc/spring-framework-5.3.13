@@ -57,7 +57,7 @@ import org.springframework.util.ReflectionUtils;
 import static java.util.stream.Collectors.joining;
 
 /**
- * NOTE: This class is a replica of the same class in spring-web so it can
+ * 注意: This class is a replica of the same class in spring-web so it can
  * be used for tests in spring-messaging.
  *
  * <p>Convenience class to resolve method parameters from hints.

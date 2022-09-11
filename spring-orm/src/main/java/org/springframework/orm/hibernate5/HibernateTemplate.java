@@ -65,11 +65,11 @@ import org.springframework.util.Assert;
  *
  * <p>Can be used within a service implementation via direct instantiation
  * with a SessionFactory reference, or get prepared in an application context
- * and given to services as bean reference. Note: The SessionFactory should
+ * and given to services as bean reference. 注意: The SessionFactory should
  * always be configured as bean in the application context, in the first case
  * given to the service directly, in the second case to the prepared template.
  *
- * <p><b>NOTE: Hibernate access code can also be coded against the native Hibernate
+ * <p><b>注意: Hibernate access code can also be coded against the native Hibernate
  * {@link Session}. Hence, for newly started projects, consider adopting the standard
  * Hibernate style of coding against {@link SessionFactory#getCurrentSession()}.
  * Alternatively, use {@link #execute(HibernateCallback)} with Java 8 lambda code blocks

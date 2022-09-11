@@ -40,7 +40,7 @@ import org.springframework.util.ReflectionUtils;
  * Factored-out methods for performing invocations within an RMI client.
  * Can handle both RMI and non-RMI service interfaces working on an RMI stub.
  *
- * <p>Note: This is an SPI class, not intended to be used by applications.
+ * <p>注意: This is an SPI class, not intended to be used by applications.
  *
  * @author Juergen Hoeller
  * @since 1.1

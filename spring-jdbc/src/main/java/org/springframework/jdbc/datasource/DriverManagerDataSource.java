@@ -29,7 +29,7 @@ import org.springframework.util.ClassUtils;
  * configuring the plain old JDBC {@link java.sql.DriverManager} via bean properties, and
  * returning a new {@link java.sql.Connection} from every {@code getConnection} call.
  *
- * <p><b>NOTE: This class is not an actual connection pool; it does not actually
+ * <p><b>注意: This class is not an actual connection pool; it does not actually
  * pool Connections.</b> It just serves as simple replacement for a full-blown
  * connection pool, implementing the same standard interface, but creating new
  * Connections on every call.
@@ -39,7 +39,7 @@ import org.springframework.util.ClassUtils;
  * a simple JNDI environment. Pool-assuming {@code Connection.close()} calls will
  * simply close the Connection, so any DataSource-aware persistence code should work.
  *
- * <p><b>NOTE: Within special class loading environments such as OSGi, this class
+ * <p><b>注意: Within special class loading environments such as OSGi, this class
  * is effectively superseded by {@link SimpleDriverDataSource} due to general class
  * loading issues with the JDBC DriverManager that be resolved through direct Driver
  * usage (which is exactly what SimpleDriverDataSource does).</b>
@@ -112,7 +112,7 @@ public class DriverManagerDataSource extends AbstractDriverBasedDataSource {
 	/**
 	 * Set the JDBC driver class name. This driver will get initialized
 	 * on startup, registering itself with the JDK's DriverManager.
-	 * <p><b>NOTE: DriverManagerDataSource is primarily intended for accessing
+	 * <p><b>注意: DriverManagerDataSource is primarily intended for accessing
 	 * <i>pre-registered</i> JDBC drivers.</b> If you need to register a new driver,
 	 * consider using {@link SimpleDriverDataSource} instead. Alternatively, consider
 	 * initializing the JDBC driver yourself before instantiating this DataSource.

@@ -1413,7 +1413,7 @@
 	set on the "Access-Control-Allow-Credentials" response header of
 	preflight requests.
 
-	NOTE: Be aware that this option establishes a high
+	注意: Be aware that this option establishes a high
 	level of trust with the configured domains and also increases the surface
 	attack of the web application by exposing sensitive user-specific
 	information such as cookies and CSRF tokens.

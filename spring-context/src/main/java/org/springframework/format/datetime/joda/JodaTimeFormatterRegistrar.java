@@ -42,7 +42,7 @@ import org.springframework.format.annotation.DateTimeFormat.ISO;
 /**
  * Configures Joda-Time's formatting system for use with Spring.
  *
- * <p><b>NOTE:</b> Spring's Joda-Time support requires Joda-Time 2.x, as of Spring 4.0.
+ * <p><b>注意:</b> Spring's Joda-Time support requires Joda-Time 2.x, as of Spring 4.0.
  *
  * @author Keith Donald
  * @author Juergen Hoeller

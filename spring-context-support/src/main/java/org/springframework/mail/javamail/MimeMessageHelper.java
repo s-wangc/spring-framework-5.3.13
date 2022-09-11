@@ -493,7 +493,7 @@ public class MimeMessageHelper {
 	 * <p>The default is {@code false} for standard MIME behavior; turn this to
 	 * {@code true} for compatibility with older email clients. On a related note,
 	 * check out JavaMail's {@code mail.mime.encodefilename} system property.
-	 * <p><b>NOTE:</b> The default changed to {@code false} in 5.3, in favor of
+	 * <p><b>注意:</b> The default changed to {@code false} in 5.3, in favor of
 	 * JavaMail's standard {@code mail.mime.encodefilename} system property.
 	 * @since 5.2.9
 	 * @see #addAttachment(String, DataSource)
@@ -787,7 +787,7 @@ public class MimeMessageHelper {
 	 * Set the given text directly as content in non-multipart mode
 	 * or as default body part in multipart mode.
 	 * Always applies the default content type "text/plain".
-	 * <p><b>NOTE:</b> Invoke {@link #addInline} <i>after</i> {@code setText};
+	 * <p><b>注意:</b> Invoke {@link #addInline} <i>after</i> {@code setText};
 	 * else, mail readers might not be able to resolve inline references correctly.
 	 * @param text the text for the message
 	 * @throws MessagingException 如果出现错误
@@ -800,7 +800,7 @@ public class MimeMessageHelper {
 	 * Set the given text directly as content in non-multipart mode
 	 * or as default body part in multipart mode.
 	 * The "html" flag determines the content type to apply.
-	 * <p><b>NOTE:</b> Invoke {@link #addInline} <i>after</i> {@code setText};
+	 * <p><b>注意:</b> Invoke {@link #addInline} <i>after</i> {@code setText};
 	 * else, mail readers might not be able to resolve inline references correctly.
 	 * @param text the text for the message
 	 * @param html whether to apply content type "text/html" for an
@@ -827,7 +827,7 @@ public class MimeMessageHelper {
 	/**
 	 * Set the given plain text and HTML text as alternatives, offering
 	 * both options to the email client. Requires multipart mode.
-	 * <p><b>NOTE:</b> Invoke {@link #addInline} <i>after</i> {@code setText};
+	 * <p><b>注意:</b> Invoke {@link #addInline} <i>after</i> {@code setText};
 	 * else, mail readers might not be able to resolve inline references correctly.
 	 * @param plainText the plain text for the message
 	 * @param htmlText the HTML text for the message
@@ -893,7 +893,7 @@ public class MimeMessageHelper {
 	 * <p>Note that the InputStream returned by the DataSource implementation
 	 * needs to be a <i>fresh one on each call</i>, as JavaMail will invoke
 	 * {@code getInputStream()} multiple times.
-	 * <p><b>NOTE:</b> Invoke {@code addInline} <i>after</i> {@link #setText};
+	 * <p><b>注意:</b> Invoke {@code addInline} <i>after</i> {@link #setText};
 	 * else, mail readers might not be able to resolve inline references correctly.
 	 * @param contentId the content ID to use. Will end up as "Content-ID" header
 	 * in the body part, surrounded by angle brackets: e.g. "myId" &rarr; "&lt;myId&gt;".
@@ -920,7 +920,7 @@ public class MimeMessageHelper {
 	 * <p>The content type will be determined by the name of the given
 	 * content file. Do not use this for temporary files with arbitrary
 	 * filenames (possibly ending in ".tmp" or the like)!
-	 * <p><b>NOTE:</b> Invoke {@code addInline} <i>after</i> {@link #setText};
+	 * <p><b>注意:</b> Invoke {@code addInline} <i>after</i> {@link #setText};
 	 * else, mail readers might not be able to resolve inline references correctly.
 	 * @param contentId the content ID to use. Will end up as "Content-ID" header
 	 * in the body part, surrounded by angle brackets: e.g. "myId" &rarr; "&lt;myId&gt;".
@@ -947,7 +947,7 @@ public class MimeMessageHelper {
 	 * <p>Note that the InputStream returned by the Resource implementation
 	 * needs to be a <i>fresh one on each call</i>, as JavaMail will invoke
 	 * {@code getInputStream()} multiple times.
-	 * <p><b>NOTE:</b> Invoke {@code addInline} <i>after</i> {@link #setText};
+	 * <p><b>注意:</b> Invoke {@code addInline} <i>after</i> {@link #setText};
 	 * else, mail readers might not be able to resolve inline references correctly.
 	 * @param contentId the content ID to use. Will end up as "Content-ID" header
 	 * in the body part, surrounded by angle brackets: e.g. "myId" &rarr; "&lt;myId&gt;".
@@ -973,7 +973,7 @@ public class MimeMessageHelper {
 	 * <p>Note that the InputStream returned by the InputStreamSource implementation
 	 * needs to be a <i>fresh one on each call</i>, as JavaMail will invoke
 	 * {@code getInputStream()} multiple times.
-	 * <p><b>NOTE:</b> Invoke {@code addInline} <i>after</i> {@code setText};
+	 * <p><b>注意:</b> Invoke {@code addInline} <i>after</i> {@code setText};
 	 * else, mail readers might not be able to resolve inline references correctly.
 	 * @param contentId the content ID to use. Will end up as "Content-ID" header
 	 * in the body part, surrounded by angle brackets: e.g. "myId" &rarr; "&lt;myId&gt;".

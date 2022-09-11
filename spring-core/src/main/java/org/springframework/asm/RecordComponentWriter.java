@@ -31,7 +31,7 @@ final class RecordComponentWriter extends RecordComponentVisitor {
   /** Where the constants used in this RecordComponentWriter must be stored. */
   private final SymbolTable symbolTable;
 
-  // Note: fields are ordered as in the record_component_info structure, and those related to
+  // 注意: fields are ordered as in the record_component_info structure, and those related to
   // attributes are ordered as in Section 4.7 of the JVMS.
 
   /** The name_index field of the Record attribute. */

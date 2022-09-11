@@ -39,7 +39,7 @@ public interface ViewResolver {
 
 	/**
 	 * Resolve the given view by name.
-	 * <p>Note: To allow for ViewResolver chaining, a ViewResolver should
+	 * <p>注意: To allow for ViewResolver chaining, a ViewResolver should
 	 * return {@code null} if a view with the given name is not defined in it.
 	 * However, this is not required: Some ViewResolvers will always attempt
 	 * to build View objects with the given name, unable to return {@code null}

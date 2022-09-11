@@ -36,7 +36,7 @@ import org.springframework.transaction.TransactionException;
  * <p>Simply begins a standard JPA transaction in {@link #beginTransaction} and
  * performs standard exception translation through {@link EntityManagerFactoryUtils}.
  *
- * <p><b>NOTE: Spring's JPA support requires JPA 2.1 or higher, as of Spring 5.0.</b>
+ * <p><b>注意: Spring's JPA support requires JPA 2.1 or higher, as of Spring 5.0.</b>
  *
  * @author Juergen Hoeller
  * @since 2.0

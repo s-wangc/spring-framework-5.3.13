@@ -30,7 +30,7 @@ and https://search.maven.org/artifact/org.jetbrains.kotlin/kotlin-reflect[`kotli
 to be present on the classpath. They are provided by default if you bootstrap a Kotlin project on
 https://start.spring.io/#!language=kotlin&type=gradle-project[start.spring.io].
 
-NOTE: The https://github.com/FasterXML/jackson-module-kotlin[Jackson Kotlin module] is required
+注意: The https://github.com/FasterXML/jackson-module-kotlin[Jackson Kotlin module] is required
 for serializing or deserializing JSON data for Kotlin classes with Jackson, so make sure to add the
 `com.fasterxml.jackson.module:jackson-module-kotlin` dependency to your project if you have such need.
 It is automatically registered when found in the classpath.
@@ -45,7 +45,7 @@ use these extensions to add new Kotlin-specific conveniences to existing Spring 
 The {docs-spring-framework}/kdoc-api/spring-framework/[Spring Framework KDoc API] lists
 and documents all available Kotlin extensions and DSLs.
 
-NOTE: Keep in mind that Kotlin extensions need to be imported to be used. This means,
+注意: Keep in mind that Kotlin extensions need to be imported to be used. This means,
 for example, that the `GenericApplicationContext.registerBean` Kotlin extension
 is available only if `org.springframework.context.support.registerBean` is imported.
 That said, similar to static imports, an IDE should automatically suggest the import in most cases.
@@ -56,7 +56,7 @@ and the Spring Framework provides some extensions to take advantage of this feat
 This allows for a better Kotlin API `RestTemplate`, for the new `WebClient` from Spring
 WebFlux, and for various other APIs.
 
-NOTE: Other libraries, such as Reactor and Spring Data, also provide Kotlin extensions
+注意: Other libraries, such as Reactor and Spring Data, also provide Kotlin extensions
 for their APIs, thus giving a better Kotlin development experience overall.
 
 To retrieve a list of `User` objects in Java, you would normally write the following:
@@ -98,7 +98,7 @@ https://kotlinlang.org/docs/reference/java-interop.html#jsr-305-support[Kotlin s
 and Spring nullability annotations provide null-safety for the whole Spring Framework API to Kotlin developers,
 with the advantage of dealing with `null`-related issues at compile time.
 
-NOTE: Libraries such as Reactor or Spring Data provide null-safe APIs to leverage this feature.
+注意: Libraries such as Reactor or Spring Data provide null-safe APIs to leverage this feature.
 
 You can configure JSR-305 checks by adding the `-Xjsr305` compiler flag with the following
 options: `-Xjsr305={strict|warn|ignore}`.
@@ -109,7 +109,7 @@ in Kotlin types inferred from Spring API but should be used with the knowledge t
 API nullability declaration could evolve even between minor releases and that more checks may
 be added in the future.
 
-NOTE: Generic type arguments, varargs, and array elements nullability are not supported yet,
+注意: Generic type arguments, varargs, and array elements nullability are not supported yet,
 but should be in an upcoming release. See https://github.com/Kotlin/KEEP/issues/79[this discussion]
 for up-to-date information.
 
@@ -148,7 +148,7 @@ Following the same principle, `@Bean fun play(toy: Toy, car: Car?) = Baz(toy, Ca
 that a bean of type `Toy` must be registered in the application context, while a bean of
 type `Car` may or may not exist. The same behavior applies to autowired constructor parameters.
 
-NOTE: If you use bean validation on classes with properties or a primary constructor
+注意: If you use bean validation on classes with properties or a primary constructor
 parameters, you may need to use
 https://kotlinlang.org/docs/reference/annotations.html#annotation-use-site-targets[annotation use-site targets],
 such as `@field:NotNull` or `@get:Size(min=5, max=15)`, as described in
@@ -247,7 +247,7 @@ In the following example notice that:
 	}
 ----
 
-NOTE: This DSL is programmatic, meaning it allows custom registration logic of beans
+注意: This DSL is programmatic, meaning it allows custom registration logic of beans
 through an `if` expression, a `for` loop, or any other Kotlin constructs.
 
 You can then use this `beans()` function to register beans on the application context,
@@ -262,7 +262,7 @@ as the following example shows:
 ----
 
 
-NOTE: Spring Boot is based on JavaConfig and
+注意: Spring Boot is based on JavaConfig and
 https://github.com/spring-projects/spring-boot/issues/8115[does not yet provide specific support for functional bean definition],
 but you can experimentally use functional bean definitions through Spring Boot's `ApplicationContextInitializer` support.
 See https://stackoverflow.com/questions/45935931/how-to-use-functional-bean-definition-kotlin-dsl-with-spring-boot-and-spring-w/46033685#46033685[this Stack Overflow answer]
@@ -306,7 +306,7 @@ class RouterRouterConfiguration {
 }
 ----
 
-NOTE: This DSL is programmatic, meaning that it allows custom registration logic of beans
+注意: This DSL is programmatic, meaning that it allows custom registration logic of beans
 through an `if` expression, a `for` loop, or any other Kotlin constructs. That can be useful
 when you need to register routes depending on dynamic data (for example, from a database).
 
@@ -655,7 +655,7 @@ reasons) are normally proxied by CGLIB. The workaround is to add an `open` keywo
 member function of Spring beans that are proxied by CGLIB, which can
 quickly become painful and is against the Kotlin principle of keeping code concise and predictable.
 
-NOTE: It is also possible to avoid CGLIB proxies for configuration classes by using `@Configuration(proxyBeanMethods = false)`.
+注意: It is also possible to avoid CGLIB proxies for configuration classes by using `@Configuration(proxyBeanMethods = false)`.
 See {api-spring-framework}/context/annotation/Configuration.html#proxyBeanMethods--[`proxyBeanMethods` Javadoc] for more details.
 
 Fortunately, Kotlin provides a
@@ -677,7 +677,7 @@ https://start.spring.io/#!language=kotlin&type=gradle-project[start.spring.io] e
 the `kotlin-spring` plugin by default. So, in practice, you can write your Kotlin beans
 without any additional `open` keyword, as in Java.
 
-NOTE: The Kotlin code samples in Spring Framework documentation do not explicitly specify
+注意: The Kotlin code samples in Spring Framework documentation do not explicitly specify
 `open` on the classes and their member functions. The samples are written for projects
 using the `kotlin-allopen` plugin, since this is the most commonly used setup.
 
@@ -720,7 +720,7 @@ If you need to leverage this kind of mechanism for other persistence technologie
 the https://kotlinlang.org/docs/reference/compiler-plugins.html#how-to-use-no-arg-plugin[`kotlin-noarg`]
 plugin.
 
-NOTE: As of the Kay release train, Spring Data supports Kotlin immutable class instances and
+注意: As of the Kay release train, Spring Data supports Kotlin immutable class instances and
 does not require the `kotlin-noarg` plugin if the module uses Spring Data object mappings
 (such as MongoDB, Redis, Cassandra, and others).
 
@@ -739,7 +739,7 @@ as the following example shows:
 	)
 ----
 
-NOTE: Classes with a single constructor have their parameters automatically autowired.
+注意: Classes with a single constructor have their parameters automatically autowired.
 That's why there is no need for an explicit `@Autowired constructor` in the example shown
 above.
 
@@ -768,7 +768,7 @@ https://kotlinlang.org/docs/reference/idioms.html#string-interpolation[string in
 Therefore, if you wish to use the `@Value` annotation in Kotlin, you need to escape the `$`
 character by writing pass:q[`@Value("\${property}")`].
 
-NOTE: If you use Spring Boot, you should probably use
+注意: If you use Spring Boot, you should probably use
 https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html#boot-features-external-config-typesafe-configuration-properties[`@ConfigurationProperties`]
 instead of `@Value` annotations.
 
@@ -852,7 +852,7 @@ to be specified with named array attributes).
 An alternative for this specific `method` attribute (the most common one) is to
 use a shortcut annotation, such as `@GetMapping`, `@PostMapping`, and others.
 
-NOTE: If the `@RequestMapping` `method` attribute is not specified, all HTTP methods will
+注意: If the `@RequestMapping` `method` attribute is not specified, all HTTP methods will
 be matched, not only the `GET` method.
 
 === Testing
@@ -861,7 +861,7 @@ This section addresses testing with the combination of Kotlin and Spring Framewo
 The recommended testing framework is https://junit.org/junit5/[JUnit 5] along with
 https://mockk.io/[Mockk] for mocking.
 
-NOTE: If you are using Spring Boot, see
+注意: If you are using Spring Boot, see
 https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-kotlin-testing[this related documentation].
 
 ==== Constructor injection

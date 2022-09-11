@@ -76,7 +76,7 @@ public class PathMatchConfigurer {
 	/**
 	 * Enable use of parsed {@link PathPattern}s as described in
 	 * {@link AbstractHandlerMapping#setPatternParser(PathPatternParser)}.
-	 * <p><strong>Note:</strong> This is mutually exclusive with use of
+	 * <p><strong>注意:</strong> This is mutually exclusive with use of
 	 * {@link #setUrlPathHelper(UrlPathHelper)} and
 	 * {@link #setPathMatcher(PathMatcher)}.
 	 * <p>By default this is not enabled.
@@ -121,7 +121,7 @@ public class PathMatchConfigurer {
 	 * Whether to use suffix pattern match (".*") when matching patterns to
 	 * requests. If enabled a method mapped to "/users" also matches to "/users.*".
 	 * <p>By default this is set to {@code false}.
-	 * <p><strong>Note:</strong> This property is mutually exclusive with and
+	 * <p><strong>注意:</strong> This property is mutually exclusive with and
 	 * ignored when {@link #setPatternParser(PathPatternParser)} is set.
 	 * @deprecated as of 5.2.4. See class-level note in
 	 * {@link RequestMappingHandlerMapping} on the deprecation of path extension
@@ -142,7 +142,7 @@ public class PathMatchConfigurer {
 	 * negotiation}. This is generally recommended to reduce ambiguity and to
 	 * avoid issues such as when a "." appears in the path for other reasons.
 	 * <p>By default this is set to "false".
-	 * <p><strong>Note:</strong> This property is mutually exclusive with and
+	 * <p><strong>注意:</strong> This property is mutually exclusive with and
 	 * ignored when {@link #setPatternParser(PathPatternParser)} is set.
 	 * @deprecated as of 5.2.4. See class-level note in
 	 * {@link RequestMappingHandlerMapping} on the deprecation of path extension
@@ -156,7 +156,7 @@ public class PathMatchConfigurer {
 
 	/**
 	 * Set the UrlPathHelper to use to resolve the mapping path for the application.
-	 * <p><strong>Note:</strong> This property is mutually exclusive with and
+	 * <p><strong>注意:</strong> This property is mutually exclusive with and
 	 * ignored when {@link #setPatternParser(PathPatternParser)} is set.
 	 */
 	public PathMatchConfigurer setUrlPathHelper(UrlPathHelper urlPathHelper) {
@@ -167,7 +167,7 @@ public class PathMatchConfigurer {
 	/**
 	 * Set the PathMatcher to use for String pattern matching.
 	 * <p>By default this is {@link AntPathMatcher}.
-	 * <p><strong>Note:</strong> This property is mutually exclusive with and
+	 * <p><strong>注意:</strong> This property is mutually exclusive with and
 	 * ignored when {@link #setPatternParser(PathPatternParser)} is set.
 	 */
 	public PathMatchConfigurer setPathMatcher(PathMatcher pathMatcher) {

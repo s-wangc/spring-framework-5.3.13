@@ -61,7 +61,7 @@ import org.springframework.web.util.WebUtils;
  * Needs to be initialized <i>either</i> by an application context <i>or</i>
  * via the constructor that takes a ServletContext (for standalone usage).
  *
- * <p>Note: The common alternative is
+ * <p>注意: The common alternative is
  * {@link org.springframework.web.multipart.support.StandardServletMultipartResolver},
  * delegating to the Servlet container's own multipart parser, with configuration to
  * happen at the container level and potentially with container-specific limitations.

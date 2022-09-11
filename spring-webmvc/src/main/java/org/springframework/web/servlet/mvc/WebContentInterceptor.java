@@ -141,7 +141,7 @@ public class WebContentInterceptor extends WebContentGenerator implements Handle
 	 * <p>This is an advanced property that should be used only when a
 	 * customized {@link AntPathMatcher} or a custom PathMatcher is required.
 	 * <p>By default this is {@link AntPathMatcher}.
-	 * <p><strong>Note:</strong> Setting {@code PathMatcher} enforces use of
+	 * <p><strong>注意:</strong> Setting {@code PathMatcher} enforces use of
 	 * String pattern matching even when a
 	 * {@link ServletRequestPathUtils#parseAndCache parsed} {@code RequestPath}
 	 * is available.
@@ -162,7 +162,7 @@ public class WebContentInterceptor extends WebContentGenerator implements Handle
 	 * as well as the class-level Javadoc for details for when each is used.
 	 * The syntax is largely the same with {@link PathPattern} more tailored for
 	 * web usage.
-	 * <p><b>NOTE:</b> Path patterns are not supposed to overlap. If a request
+	 * <p><b>注意:</b> Path patterns are not supposed to overlap. If a request
 	 * matches several mappings, it is effectively undefined which one will apply
 	 * (due to the lack of key ordering in {@code java.util.Properties}).
 	 * @param cacheMappings a mapping between URL paths (as keys) and
@@ -188,7 +188,7 @@ public class WebContentInterceptor extends WebContentGenerator implements Handle
 	 * as well as the class-level Javadoc for details for when each is used.
 	 * The syntax is largely the same with {@link PathPattern} more tailored for
 	 * web usage.
-	 * <p><b>NOTE:</b> Path patterns are not supposed to overlap. If a request
+	 * <p><b>注意:</b> Path patterns are not supposed to overlap. If a request
 	 * matches several mappings, it is effectively undefined which one will apply
 	 * (due to the lack of key ordering in the underlying {@code java.util.HashMap}).
 	 * @param cacheControl the {@code CacheControl} to use

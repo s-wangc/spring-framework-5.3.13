@@ -23,7 +23,7 @@ import org.springframework.beans.FatalBeanException;
  * if the bean is not fully initialized yet, for example because it is involved
  * in a circular reference.
  *
- * <p>Note: A circular reference with a FactoryBean cannot be solved by eagerly
+ * <p>注意: A circular reference with a FactoryBean cannot be solved by eagerly
  * caching singleton instances like with normal beans. The reason is that
  * <i>every</i> FactoryBean needs to be fully initialized before it can
  * return the created bean, while only <i>specific</i> normal beans need

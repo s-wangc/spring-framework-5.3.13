@@ -158,7 +158,7 @@ public abstract class AbstractJackson2HttpMessageConverter extends AbstractGener
 	 * {@link Class}. This is useful when you want to deviate from the
 	 * {@link #getObjectMapper() default} ObjectMapper or have the
 	 * {@code ObjectMapper} vary by {@code MediaType}.
-	 * <p><strong>Note:</strong> Use of this method effectively turns off use of
+	 * <p><strong>注意:</strong> Use of this method effectively turns off use of
 	 * the default {@link #getObjectMapper() ObjectMapper} and
 	 * {@link #setSupportedMediaTypes(List) supportedMediaTypes} for the given
 	 * class. Therefore it is important for the mappings configured here to

@@ -37,7 +37,7 @@ import org.springframework.lang.Nullable;
  * <p>This interface is not intended for application developers. It is available
  * to handlers who want to develop their own web workflow.
  *
- * <p>Note: {@code HandlerAdapter} implementors may implement the {@link
+ * <p>注意: {@code HandlerAdapter} implementors may implement the {@link
  * org.springframework.core.Ordered} interface to be able to specify a sorting
  * order (and thus a priority) for getting applied by the {@code DispatcherServlet}.
  * Non-Ordered instances get treated as lowest priority.

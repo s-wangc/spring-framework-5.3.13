@@ -40,7 +40,7 @@ import org.springframework.util.Assert;
  * by default. A custom HibernateTemplate instance can be used through overriding
  * {@link #createHibernateTemplate}.
  *
- * <p><b>NOTE: Hibernate access code can also be coded in plain Hibernate style.
+ * <p><b>注意: Hibernate access code can also be coded in plain Hibernate style.
  * Hence, for newly started projects, consider adopting the standard Hibernate
  * style of coding data access objects instead, based on
  * {@link SessionFactory#getCurrentSession()}.
@@ -104,7 +104,7 @@ public abstract class HibernateDaoSupport extends DaoSupport {
 	/**
 	 * Return the HibernateTemplate for this DAO,
 	 * pre-initialized with the SessionFactory or set explicitly.
-	 * <p><b>Note: The returned HibernateTemplate is a shared instance.</b>
+	 * <p><b>注意: The returned HibernateTemplate is a shared instance.</b>
 	 * You may introspect its configuration, but not modify the configuration
 	 * (other than from within an {@link #initDao} implementation).
 	 * Consider creating a custom HibernateTemplate instance via

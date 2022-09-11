@@ -26,7 +26,7 @@ import org.springframework.core.task.AsyncTaskExecutor;
  * {@link Runnable Runnables} that match the exposed preferences
  * of the {@code TaskExecutor} implementation in use.
  *
- * <p>Note: {@link SchedulingTaskExecutor} implementations are encouraged to also
+ * <p>注意: {@link SchedulingTaskExecutor} implementations are encouraged to also
  * implement the {@link org.springframework.core.task.AsyncListenableTaskExecutor}
  * interface. This is not required due to the dependency on Spring 4.0's new
  * {@link org.springframework.util.concurrent.ListenableFuture} interface,

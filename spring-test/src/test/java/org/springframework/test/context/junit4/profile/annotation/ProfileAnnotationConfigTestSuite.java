@@ -28,7 +28,7 @@ import org.junit.runners.Suite.SuiteClasses;
  * @since 3.1
  */
 @RunWith(Suite.class)
-// Note: the following 'multi-line' layout is for enhanced code readability.
+// 注意: the following 'multi-line' layout is for enhanced code readability.
 @SuiteClasses({//
 DefaultProfileAnnotationConfigTests.class,//
 	DevProfileAnnotationConfigTests.class,//

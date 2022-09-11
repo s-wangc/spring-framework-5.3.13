@@ -254,7 +254,7 @@ public abstract class AbstractView extends WebApplicationObjectSupport implement
 	 * value expressions.
 	 * <p>默认值是"false". Switch this flag on to transparently expose all
 	 * Spring beans in the request attribute namespace.
-	 * <p><b>NOTE:</b> Context beans will override any custom request or session
+	 * <p><b>注意:</b> Context beans will override any custom request or session
 	 * attributes of the same name that have been manually added. However, model
 	 * attributes (as explicitly exposed to this view) of the same name will
 	 * always override context beans.

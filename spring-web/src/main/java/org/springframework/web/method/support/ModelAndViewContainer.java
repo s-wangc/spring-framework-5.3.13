@@ -227,7 +227,7 @@ public class ModelAndViewContainer {
 	/**
 	 * Register whether data binding should occur for a corresponding model attribute,
 	 * corresponding to an {@code @ModelAttribute(binding=true/false)} declaration.
-	 * <p>Note: While this flag will be taken into account by {@link #isBindingDisabled},
+	 * <p>注意: While this flag will be taken into account by {@link #isBindingDisabled},
 	 * a hard {@link #setBindingDisabled} declaration will always override it.
 	 * @param attributeName attribute的名称
 	 * @since 4.3.13

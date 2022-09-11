@@ -101,7 +101,7 @@ public class DispatcherHandler implements WebHandler, PreFlightRequestHandler, A
 	 * Return all {@link HandlerMapping} beans detected by type in the
 	 * {@link #setApplicationContext injected context} and also
 	 * {@link AnnotationAwareOrderComparator#sort(List) sorted}.
-	 * <p><strong>Note:</strong> This method may return {@code null} if invoked
+	 * <p><strong>注意:</strong> This method may return {@code null} if invoked
 	 * prior to {@link #setApplicationContext(ApplicationContext)}.
 	 * @return immutable list with the configured mappings or {@code null}
 	 */

@@ -437,7 +437,7 @@ public class Jaxb2Marshaller implements MimeMarshaller, MimeUnmarshaller, Generi
 	 * {@code Source} passed to {@link #unmarshal(Source)} is a {@link SAXSource} or
 	 * {@link StreamSource}. It has no effect for {@link DOMSource} or {@link StAXSource}
 	 * instances.
-	 * <p><strong>Note:</strong> setting this option to {@code true} also automatically
+	 * <p><strong>注意:</strong> setting this option to {@code true} also automatically
 	 * sets {@link #setSupportDtd} to {@code true}.
 	 */
 	public void setProcessExternalEntities(boolean processExternalEntities) {
@@ -716,7 +716,7 @@ public class Jaxb2Marshaller implements MimeMarshaller, MimeUnmarshaller, Generi
 
 	/**
 	 * Return a newly created JAXB marshaller.
-	 * <p>Note: JAXB marshallers are not necessarily thread-safe.
+	 * <p>注意: JAXB marshallers are not necessarily thread-safe.
 	 * This method is public as of 5.2.
 	 * @since 5.2
 	 * @see #createUnmarshaller()
@@ -821,7 +821,7 @@ public class Jaxb2Marshaller implements MimeMarshaller, MimeUnmarshaller, Generi
 
 	/**
 	 * Return a newly created JAXB unmarshaller.
-	 * <p>Note: JAXB unmarshallers are not necessarily thread-safe.
+	 * <p>注意: JAXB unmarshallers are not necessarily thread-safe.
 	 * This method is public as of 5.2.
 	 * @since 5.2
 	 * @see #createMarshaller()

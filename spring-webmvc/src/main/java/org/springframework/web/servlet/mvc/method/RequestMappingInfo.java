@@ -419,7 +419,7 @@ public final class RequestMappingInfo implements RequestCondition<RequestMapping
 	/**
 	 * Compares "this" info (i.e. the current instance) with another info in the
 	 * context of a request.
-	 * <p>Note: It is assumed both instances have been obtained via
+	 * <p>注意: It is assumed both instances have been obtained via
 	 * {@link #getMatchingCondition(HttpServletRequest)} to ensure they have
 	 * conditions with content relevant to current request.
 	 */
@@ -890,7 +890,7 @@ public final class RequestMappingInfo implements RequestCondition<RequestMapping
 		/**
 		 * Enable use of parsed {@link PathPattern}s as described in
 		 * {@link AbstractHandlerMapping#setPatternParser(PathPatternParser)}.
-		 * <p><strong>Note:</strong> This property is mutually exclusive with
+		 * <p><strong>注意:</strong> This property is mutually exclusive with
 		 * {@link #setPathMatcher(PathMatcher)}.
 		 * <p>By default this is not enabled.
 		 * @since 5.3

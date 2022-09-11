@@ -62,7 +62,7 @@ import org.springframework.transaction.support.TransactionSynchronizationManager
  * that all operations performed through standard JDBC will automatically participate
  * in Spring-managed transaction timeouts.
  *
- * <p><b>NOTE:</b> This DataSource proxy needs to return wrapped Connections (which
+ * <p><b>注意:</b> This DataSource proxy needs to return wrapped Connections (which
  * implement the {@link ConnectionProxy} interface) in order to handle close calls
  * properly. Use {@link Connection#unwrap} to retrieve the native JDBC Connection.
  *

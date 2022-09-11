@@ -28,7 +28,7 @@ import org.springframework.util.ReflectionUtils;
 /**
  * Utility methods for decorating tasks with error handling.
  *
- * <p><b>NOTE:</b> This class is intended for internal use by Spring's scheduler
+ * <p><b>注意:</b> This class is intended for internal use by Spring's scheduler
  * implementations. It is only public so that it may be accessed from impl classes
  * within other packages. It is <i>not</i> intended for general use.
  *
@@ -47,7 +47,7 @@ public abstract class TaskUtils {
 
 	/**
 	 * An ErrorHandler strategy that will log at error level and then
-	 * re-throw the Exception. Note: this will typically prevent subsequent
+	 * re-throw the Exception. 注意: this will typically prevent subsequent
 	 * execution of a scheduled task.
 	 */
 	public static final ErrorHandler LOG_AND_PROPAGATE_ERROR_HANDLER = new PropagatingErrorHandler();

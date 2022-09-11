@@ -372,7 +372,7 @@ public interface RestOperations {
 	 * <p>URI Template variables are expanded using the given URI variables, if any.
 	 * <p>The {@code request} parameter can be a {@link HttpEntity} in order to
 	 * add additional HTTP headers to the request.
-	 * <p><b>NOTE: The standard JDK HTTP library does not support HTTP PATCH.
+	 * <p><b>注意: The standard JDK HTTP library does not support HTTP PATCH.
 	 * You need to use the Apache HttpComponents or OkHttp request factory.</b>
 	 * @param url the URL
 	 * @param request the object to be PATCHed (may be {@code null})
@@ -395,7 +395,7 @@ public interface RestOperations {
 	 * <p>URI Template variables are expanded using the given map.
 	 * <p>The {@code request} parameter can be a {@link HttpEntity} in order to
 	 * add additional HTTP headers to the request.
-	 * <p><b>NOTE: The standard JDK HTTP library does not support HTTP PATCH.
+	 * <p><b>注意: The standard JDK HTTP library does not support HTTP PATCH.
 	 * You need to use the Apache HttpComponents or OkHttp request factory.</b>
 	 * @param url the URL
 	 * @param request the object to be PATCHed (may be {@code null})
@@ -417,7 +417,7 @@ public interface RestOperations {
 	 * and return the representation found in the response.
 	 * <p>The {@code request} parameter can be a {@link HttpEntity} in order to
 	 * add additional HTTP headers to the request.
-	 * <p><b>NOTE: The standard JDK HTTP library does not support HTTP PATCH.
+	 * <p><b>注意: The standard JDK HTTP library does not support HTTP PATCH.
 	 * You need to use the Apache HttpComponents or OkHttp request factory.</b>
 	 * @param url the URL
 	 * @param request the object to be PATCHed (may be {@code null})

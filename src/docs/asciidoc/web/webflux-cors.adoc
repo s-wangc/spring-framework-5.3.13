@@ -308,7 +308,7 @@ You can apply CORS support through the built-in
 {api-spring-framework}/web/cors/reactive/CorsWebFilter.html[`CorsWebFilter`], which is a
 good fit with <<webflux-fn, functional endpoints>>.
 
-NOTE: If you try to use the `CorsFilter` with Spring Security, keep in mind that Spring
+注意: If you try to use the `CorsFilter` with Spring Security, keep in mind that Spring
 Security has
 https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#cors[built-in support]
 for CORS.

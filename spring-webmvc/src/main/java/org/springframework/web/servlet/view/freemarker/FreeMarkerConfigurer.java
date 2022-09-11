@@ -65,7 +65,7 @@ import org.springframework.web.context.ServletContextAware;
  * &lt;@spring.bind "person.age"/&gt;
  * age is ${spring.status.value}</pre>
  *
- * Note: Spring's FreeMarker support requires FreeMarker 2.3 or higher.
+ * 注意: Spring's FreeMarker support requires FreeMarker 2.3 or higher.
  *
  * @author Darren Davison
  * @author Rob Harrop

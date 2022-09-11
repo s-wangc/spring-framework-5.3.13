@@ -459,7 +459,7 @@ public class ResolvableType implements Serializable {
 	/**
 	 * Return a {@link ResolvableType} representing the direct supertype of this type.
 	 * If no supertype is available this method returns {@link #NONE}.
-	 * <p>Note: The resulting {@link ResolvableType} instance may not be {@link Serializable}.
+	 * <p>注意: The resulting {@link ResolvableType} instance may not be {@link Serializable}.
 	 * @see #getInterfaces()
 	 */
 	public ResolvableType getSuperType() {
@@ -489,7 +489,7 @@ public class ResolvableType implements Serializable {
 	 * Return a {@link ResolvableType} array representing the direct interfaces
 	 * implemented by this type. If this type does not implement any interfaces an
 	 * empty array is returned.
-	 * <p>Note: The resulting {@link ResolvableType} instances may not be {@link Serializable}.
+	 * <p>注意: The resulting {@link ResolvableType} instances may not be {@link Serializable}.
 	 * @see #getSuperType()
 	 */
 	public ResolvableType[] getInterfaces() {
@@ -828,7 +828,7 @@ public class ResolvableType implements Serializable {
 
 	/**
 	 * Resolve this type by a single level, returning the resolved value or {@link #NONE}.
-	 * <p>Note: The returned {@link ResolvableType} should only be used as an intermediary
+	 * <p>注意: The returned {@link ResolvableType} should only be used as an intermediary
 	 * as it cannot be serialized.
 	 */
 	ResolvableType resolveType() {
@@ -1356,7 +1356,7 @@ public class ResolvableType implements Serializable {
 
 	/**
 	 * Return a {@link ResolvableType} for the specified {@link Type}.
-	 * <p>Note: The resulting {@link ResolvableType} instance may not be {@link Serializable}.
+	 * <p>注意: The resulting {@link ResolvableType} instance may not be {@link Serializable}.
 	 * @param type the source type (potentially {@code null})
 	 * @return a {@link ResolvableType} for the specified {@link Type}
 	 * @see #forType(Type, ResolvableType)
@@ -1368,7 +1368,7 @@ public class ResolvableType implements Serializable {
 	/**
 	 * Return a {@link ResolvableType} for the specified {@link Type} backed by the given
 	 * owner type.
-	 * <p>Note: The resulting {@link ResolvableType} instance may not be {@link Serializable}.
+	 * <p>注意: The resulting {@link ResolvableType} instance may not be {@link Serializable}.
 	 * @param type the source type or {@code null}
 	 * @param owner the owner type used to resolve variables
 	 * @return a {@link ResolvableType} for the specified {@link Type} and owner
@@ -1385,7 +1385,7 @@ public class ResolvableType implements Serializable {
 
 	/**
 	 * Return a {@link ResolvableType} for the specified {@link ParameterizedTypeReference}.
-	 * <p>Note: The resulting {@link ResolvableType} instance may not be {@link Serializable}.
+	 * <p>注意: The resulting {@link ResolvableType} instance may not be {@link Serializable}.
 	 * @param typeReference the reference to obtain the source type from
 	 * @return a {@link ResolvableType} for the specified {@link ParameterizedTypeReference}
 	 * @since 4.3.12

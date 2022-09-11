@@ -25,7 +25,7 @@ import org.springframework.transaction.support.ResourceHolderSupport;
  * {@link CciLocalTransactionManager} binds instances of this class to the thread,
  * for a given {@link javax.resource.cci.ConnectionFactory}.
  *
- * <p>Note: This is an SPI class, not intended to be used by applications.
+ * <p>注意: This is an SPI class, not intended to be used by applications.
  *
  * @author Thierry Templier
  * @author Juergen Hoeller

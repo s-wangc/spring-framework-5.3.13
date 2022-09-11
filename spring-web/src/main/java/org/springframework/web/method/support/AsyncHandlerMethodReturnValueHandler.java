@@ -23,7 +23,7 @@ import org.springframework.lang.Nullable;
  * A return value handler that supports async types. Such return value types
  * need to be handled with priority so the async value can be "unwrapped".
  *
- * <p><strong>Note: </strong> implementing this contract is not required but it
+ * <p><strong>注意: </strong> implementing this contract is not required but it
  * should be implemented when the handler needs to be prioritized ahead of others.
  * For example custom (async) handlers, by default ordered after built-in
  * handlers, should take precedence over {@code @ResponseBody} or

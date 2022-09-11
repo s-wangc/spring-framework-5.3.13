@@ -52,7 +52,7 @@ import org.springframework.transaction.TransactionDefinition;
  * <p>This annotation commonly works with thread-bound transactions managed by a
  * {@link org.springframework.transaction.PlatformTransactionManager}, exposing a
  * transaction to all data access operations within the current execution thread.
- * <b>Note: This does NOT propagate to newly started threads within the method.</b>
+ * <b>注意: This does NOT propagate to newly started threads within the method.</b>
  *
  * <p>Alternatively, this annotation may demarcate a reactive transaction managed
  * by a {@link org.springframework.transaction.ReactiveTransactionManager} which

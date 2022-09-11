@@ -227,7 +227,7 @@ public class SchedulerFactoryBean extends SchedulerAccessor implements FactoryBe
 	 * called, it overrides any class specified through {@link #setSchedulerFactoryClass}
 	 * as well as any settings specified through {@link #setConfigLocation},
 	 * {@link #setQuartzProperties}, {@link #setTaskExecutor} or {@link #setDataSource}.
-	 * <p><b>NOTE:</b> With an externally provided {@code SchedulerFactory} instance,
+	 * <p><b>注意:</b> With an externally provided {@code SchedulerFactory} instance,
 	 * local settings such as {@link #setConfigLocation} or {@link #setQuartzProperties}
 	 * will be ignored here in {@code SchedulerFactoryBean}, expecting the external
 	 * {@code SchedulerFactory} instance to get initialized on its own.
@@ -273,7 +273,7 @@ public class SchedulerFactoryBean extends SchedulerAccessor implements FactoryBe
 	/**
 	 * Set the location of the Quartz properties config file, for example
 	 * as classpath resource "classpath:quartz.properties".
-	 * <p>Note: Can be omitted when all necessary properties are specified
+	 * <p>注意: Can be omitted when all necessary properties are specified
 	 * locally via this bean, or when relying on Quartz' default configuration.
 	 * @see #setQuartzProperties
 	 */
@@ -311,7 +311,7 @@ public class SchedulerFactoryBean extends SchedulerAccessor implements FactoryBe
 	/**
 	 * Set the default {@link DataSource} to be used by the Scheduler.
 	 * If set, this will override corresponding settings in Quartz properties.
-	 * <p>Note: If this is set, the Quartz settings should not define
+	 * <p>注意: If this is set, the Quartz settings should not define
 	 * a job store "dataSource" to avoid meaningless double configuration.
 	 * <p>A Spring-specific subclass of Quartz' JobStoreCMT will be used.
 	 * It is therefore strongly recommended to perform all operations on
@@ -351,7 +351,7 @@ public class SchedulerFactoryBean extends SchedulerAccessor implements FactoryBe
 	/**
 	 * Register objects in the Scheduler context via a given Map.
 	 * These objects will be available to any Job that runs in this Scheduler.
-	 * <p>Note: When using persistent Jobs whose JobDetail will be kept in the
+	 * <p>注意: When using persistent Jobs whose JobDetail will be kept in the
 	 * database, do not put Spring-managed beans or an ApplicationContext
 	 * reference into the JobDataMap but rather into the SchedulerContext.
 	 * @param schedulerContextAsMap a Map with String keys and any objects as
@@ -366,7 +366,7 @@ public class SchedulerFactoryBean extends SchedulerAccessor implements FactoryBe
 	 * Set the key of an {@link ApplicationContext} reference to expose in the
 	 * SchedulerContext, for example "applicationContext". 默认值是none.
 	 * Only applicable when running in a Spring ApplicationContext.
-	 * <p>Note: When using persistent Jobs whose JobDetail will be kept in the
+	 * <p>注意: When using persistent Jobs whose JobDetail will be kept in the
 	 * database, do not put an ApplicationContext reference into the JobDataMap
 	 * but rather into the SchedulerContext.
 	 * <p>In case of a QuartzJobBean, the reference will be applied to the Job

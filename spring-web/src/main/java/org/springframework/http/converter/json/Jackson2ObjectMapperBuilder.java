@@ -189,7 +189,7 @@ public class Jackson2ObjectMapperBuilder {
 
 	/**
 	 * Define the format for date/time with the given {@link DateFormat}.
-	 * <p>Note: Setting this property makes the exposed {@link ObjectMapper}
+	 * <p>注意: Setting this property makes the exposed {@link ObjectMapper}
 	 * non-thread-safe, according to Jackson's thread safety rules.
 	 * @see #simpleDateFormat(String)
 	 */
@@ -200,7 +200,7 @@ public class Jackson2ObjectMapperBuilder {
 
 	/**
 	 * Define the date/time format with a {@link SimpleDateFormat}.
-	 * <p>Note: Setting this property makes the exposed {@link ObjectMapper}
+	 * <p>注意: Setting this property makes the exposed {@link ObjectMapper}
 	 * non-thread-safe, according to Jackson's thread safety rules.
 	 * @see #dateFormat(DateFormat)
 	 */
@@ -524,7 +524,7 @@ public class Jackson2ObjectMapperBuilder {
 	 * Specify one or more modules to be registered with the {@link ObjectMapper}.
 	 * <p>Multiple invocations are not additive, the last one defines the modules to
 	 * register.
-	 * <p>Note: If this is set, no finding of modules is going to happen - not by
+	 * <p>注意: If this is set, no finding of modules is going to happen - not by
 	 * Jackson, and not by Spring either (see {@link #findModulesViaServiceLoader}).
 	 * As a consequence, specifying an empty list here will suppress any kind of
 	 * module detection.
@@ -541,7 +541,7 @@ public class Jackson2ObjectMapperBuilder {
 	 * Set a complete list of modules to be registered with the {@link ObjectMapper}.
 	 * <p>Multiple invocations are not additive, the last one defines the modules to
 	 * register.
-	 * <p>Note: If this is set, no finding of modules is going to happen - not by
+	 * <p>注意: If this is set, no finding of modules is going to happen - not by
 	 * Jackson, and not by Spring either (see {@link #findModulesViaServiceLoader}).
 	 * As a consequence, specifying an empty list here will suppress any kind of
 	 * module detection.

@@ -32,7 +32,7 @@ import org.springframework.lang.Nullable;
  * allows you to prioritize that listener amongst other listeners running before or after
  * transaction completion.
  *
- * <p><b>NOTE: Transactional event listeners only work with thread-bound transactions
+ * <p><b>注意: Transactional event listeners only work with thread-bound transactions
  * managed by a {@link org.springframework.transaction.PlatformTransactionManager
  * PlatformTransactionManager}.</b> A reactive transaction managed by a
  * {@link org.springframework.transaction.ReactiveTransactionManager ReactiveTransactionManager}

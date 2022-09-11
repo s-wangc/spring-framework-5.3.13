@@ -30,7 +30,7 @@ import org.springframework.util.StringUtils;
  * ClassFileTransformer-based weaver, allowing for a list of transformers to be
  * applied on a class byte array. Normally used inside class loaders.
  *
- * <p>Note: This class is deliberately implemented for minimal external dependencies,
+ * <p>注意: This class is deliberately implemented for minimal external dependencies,
  * since it is included in weaver jars (to be deployed into application servers).
  *
  * @author Rod Johnson

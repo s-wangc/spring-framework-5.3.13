@@ -109,7 +109,7 @@ public interface RequestAttributes {
 	 * facade's {@link #removeAttribute(String, int)} method, any registered
 	 * destruction callback should be disabled as well, assuming that the
 	 * removed object will be reused or manually destroyed.
-	 * <p><b>NOTE:</b> Callback objects should generally be serializable if
+	 * <p><b>注意:</b> Callback objects should generally be serializable if
 	 * they are being registered for a session scope. Otherwise the callback
 	 * (or even the entire session) might not survive web app restarts.
 	 * @param name the name of the attribute to register the callback for

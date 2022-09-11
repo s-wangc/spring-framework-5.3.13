@@ -46,7 +46,7 @@ public interface InterruptibleBatchPreparedStatementSetter extends BatchPrepared
 	/**
 	 * Return whether the batch is complete, that is, whether there were no
 	 * additional values added during the last {@code setValues} call.
-	 * <p><b>NOTE:</b> If this method returns {@code true}, any parameters
+	 * <p><b>注意:</b> If this method returns {@code true}, any parameters
 	 * that might have been set during the last {@code setValues} call will
 	 * be ignored! Make sure that you set a corresponding internal flag if you
 	 * detect exhaustion <i>at the beginning</i> of your {@code setValues}

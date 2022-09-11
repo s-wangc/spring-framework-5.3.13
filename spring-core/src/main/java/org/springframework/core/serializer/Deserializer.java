@@ -35,7 +35,7 @@ public interface Deserializer<T> {
 
 	/**
 	 * Read (assemble) an object of type T from the given InputStream.
-	 * <p>Note: Implementations should not close the given InputStream
+	 * <p>注意: Implementations should not close the given InputStream
 	 * (or any decorators of that InputStream) but rather leave this up
 	 * to the caller.
 	 * @param inputStream the input stream

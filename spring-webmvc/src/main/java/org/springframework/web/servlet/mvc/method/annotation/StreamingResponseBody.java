@@ -25,7 +25,7 @@ import java.io.OutputStream;
  * where the application can write directly to the response {@code OutputStream}
  * without holding up the Servlet container thread.
  *
- * <p><strong>Note:</strong> when using this option it is highly recommended to
+ * <p><strong>注意:</strong> when using this option it is highly recommended to
  * configure explicitly the TaskExecutor used in Spring MVC for executing
  * asynchronous requests. Both the MVC Java config and the MVC namespaces provide
  * options to configure asynchronous handling. If not using those, an application

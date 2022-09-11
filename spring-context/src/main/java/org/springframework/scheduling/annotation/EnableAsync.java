@@ -76,7 +76,7 @@ import org.springframework.core.Ordered;
  * method.</li>
  * </ul>
  *
- * <p><b>NOTE: {@link AsyncConfigurer} configuration classes get initialized early
+ * <p><b>注意: {@link AsyncConfigurer} configuration classes get initialized early
  * in the application context bootstrap. If you need any dependencies on other beans
  * there, make sure to declare them 'lazy' as far as possible in order to let them
  * go through other post-processors as well.</b>
@@ -107,7 +107,7 @@ import org.springframework.core.Ordered;
  * keep the default settings. Consider also extending from {@link AsyncConfigurerSupport}
  * when possible.
  *
- * <p>Note: In the above example the {@code ThreadPoolTaskExecutor} is not a fully managed
+ * <p>注意: In the above example the {@code ThreadPoolTaskExecutor} is not a fully managed
  * Spring bean. Add the {@code @Bean} annotation to the {@code getAsyncExecutor()} method
  * if you want a fully managed bean. In such circumstances it is no longer necessary to
  * manually call the {@code executor.initialize()} method as this will be invoked

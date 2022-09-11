@@ -81,7 +81,7 @@ public interface Scope {
 	 * callback for the specified object, if any. It does, however, <i>not</i>
 	 * need to <i>execute</i> a registered destruction callback in this case,
 	 * since the object will be destroyed by the caller (if appropriate).
-	 * <p><b>Note: This is an optional operation.</b> Implementations may throw
+	 * <p><b>注意: This is an optional operation.</b> Implementations may throw
 	 * {@link UnsupportedOperationException} if they do not support explicitly
 	 * removing an object.
 	 * @param name the name of the object to remove
@@ -97,7 +97,7 @@ public interface Scope {
 	 * object in the scope (or at destruction of the entire scope, if the
 	 * scope does not destroy individual objects but rather only terminates
 	 * in its entirety).
-	 * <p><b>Note: This is an optional operation.</b> This method will only
+	 * <p><b>注意: This is an optional operation.</b> This method will only
 	 * be called for scoped beans with actual destruction configuration
 	 * (DisposableBean, destroy-method, DestructionAwareBeanPostProcessor).
 	 * Implementations should do their best to execute a given callback
@@ -141,7 +141,7 @@ public interface Scope {
 	 * {@link javax.servlet.http.HttpSession#getId() session ID}; in the
 	 * case of a custom conversation that sits within the overall session,
 	 * the specific ID for the current conversation would be appropriate.
-	 * <p><b>Note: This is an optional operation.</b> It is perfectly valid to
+	 * <p><b>注意: This is an optional operation.</b> It is perfectly valid to
 	 * return {@code null} in an implementation of this method if the
 	 * underlying storage mechanism has no obvious candidate for such an ID.
 	 * @return the conversation ID, or {@code null} if there is no

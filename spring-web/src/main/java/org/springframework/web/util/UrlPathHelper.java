@@ -110,7 +110,7 @@ public class UrlPathHelper {
 	 * <p>Either the request encoding or the default Servlet spec encoding
 	 * (ISO-8859-1) is used when set to "true".
 	 * <p>By default this is set to {@literal true}.
-	 * <p><strong>Note:</strong> Be aware the servlet path will not match when
+	 * <p><strong>注意:</strong> Be aware the servlet path will not match when
 	 * compared to encoded paths. Therefore use of {@code urlDecode=false} is
 	 * not compatible with a prefix-based Servlet mapping and likewise implies
 	 * also setting {@code alwaysUseFullPath=true}.

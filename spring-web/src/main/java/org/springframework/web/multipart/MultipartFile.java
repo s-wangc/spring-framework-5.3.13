@@ -53,7 +53,7 @@ public interface MultipartFile extends InputStreamSource {
 	 * Return the original filename in the client's filesystem.
 	 * <p>This may contain path information depending on the browser used,
 	 * but it typically will not with any other than Opera.
-	 * <p><strong>Note:</strong> Please keep in mind this filename is supplied
+	 * <p><strong>注意:</strong> Please keep in mind this filename is supplied
 	 * by the client and should not be used blindly. In addition to not using
 	 * the directory portion, the file name could also contain characters such
 	 * as ".." and others that can be used maliciously. It is recommended to not
@@ -124,7 +124,7 @@ public interface MultipartFile extends InputStreamSource {
 	 * <p>If the target file has been moved in the filesystem, this operation
 	 * cannot be invoked again afterwards. Therefore, call this method just once
 	 * in order to work with any storage mechanism.
-	 * <p><b>NOTE:</b> Depending on the underlying provider, temporary storage
+	 * <p><b>注意:</b> Depending on the underlying provider, temporary storage
 	 * may be container-dependent, including the base directory for relative
 	 * destinations specified here (e.g. with Servlet 3.0 multipart handling).
 	 * For absolute destinations, the target file may get renamed/moved from its

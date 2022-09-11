@@ -74,13 +74,13 @@ abstract public class AbstractClassGenerator<T> implements ClassGenerator {
 		 * configuration), and the value is the generated class plus some additional values
 		 * (see {@link #unwrapCachedValue(Object)}.
 		 * <p>The generated classes can be reused as long as their classloader is reachable.</p>
-		 * <p>Note: the only way to access a class is to find it through generatedClasses cache, thus
+		 * <p>注意: the only way to access a class is to find it through generatedClasses cache, thus
 		 * the key should not expire as long as the class itself is alive (its classloader is alive).</p>
 		 */
 		private final LoadingCache<AbstractClassGenerator, Object, Object> generatedClasses;
 
 		/**
-		 * Note: ClassLoaderData object is stored as a value of {@code WeakHashMap<ClassLoader, ...>} thus
+		 * 注意: ClassLoaderData object is stored as a value of {@code WeakHashMap<ClassLoader, ...>} thus
 		 * this classLoader reference should be weak otherwise it would make classLoader strongly reachable
 		 * and alive forever.
 		 * Reference queue is not required since the cleanup is handled by {@link WeakHashMap}.

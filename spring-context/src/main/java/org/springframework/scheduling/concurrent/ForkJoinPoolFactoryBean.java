@@ -55,7 +55,7 @@ public class ForkJoinPoolFactoryBean implements FactoryBean<ForkJoinPool>, Initi
 	 * {@link #setParallelism "parallelism"}, {@link #setThreadFactory "threadFactory"},
 	 * {@link #setUncaughtExceptionHandler "uncaughtExceptionHandler"} and
 	 * {@link #setAsyncMode "asyncMode"} properties on this FactoryBean.
-	 * <p><b>NOTE:</b> Setting this flag to "true" effectively ignores all other
+	 * <p><b>注意:</b> Setting this flag to "true" effectively ignores all other
 	 * properties on this FactoryBean, reusing the shared common JDK {@link ForkJoinPool}
 	 * instead. This is a fine choice on JDK 8 but does remove the application's ability
 	 * to customize ForkJoinPool behavior, in particular the use of custom threads.

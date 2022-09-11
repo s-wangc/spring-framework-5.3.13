@@ -126,11 +126,11 @@ import org.springframework.util.StringValueResolver;
  * "alwaysUseJndiLookup" flag just affects {@code name} references and
  * default names (inferred from the field name / property name).
  *
- * <p><b>NOTE:</b> A default CommonAnnotationBeanPostProcessor will be registered
+ * <p><b>注意:</b> A default CommonAnnotationBeanPostProcessor will be registered
  * by the "context:annotation-config" and "context:component-scan" XML tags.
  * Remove or turn off the default annotation configuration there if you intend
  * to specify a custom CommonAnnotationBeanPostProcessor bean definition!
- * <p><b>NOTE:</b> Annotation injection will be performed <i>before</i> XML injection; thus
+ * <p><b>注意:</b> Annotation injection will be performed <i>before</i> XML injection; thus
  * the latter configuration will override the former for properties wired through
  * both approaches.
  *

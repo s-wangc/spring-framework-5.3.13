@@ -82,7 +82,7 @@ public interface HandlerInterceptor {
 	 * of any number of interceptors, with the handler itself at the end.
 	 * With this method, each interceptor can decide to abort the execution chain,
 	 * typically sending an HTTP error or writing a custom response.
-	 * <p><strong>Note:</strong> special considerations apply for asynchronous
+	 * <p><strong>注意:</strong> special considerations apply for asynchronous
 	 * request processing. For more details see
 	 * {@link org.springframework.web.servlet.AsyncHandlerInterceptor}.
 	 * <p>The default implementation returns {@code true}.
@@ -109,7 +109,7 @@ public interface HandlerInterceptor {
 	 * of any number of interceptors, with the handler itself at the end.
 	 * With this method, each interceptor can post-process an execution,
 	 * getting applied in inverse order of the execution chain.
-	 * <p><strong>Note:</strong> special considerations apply for asynchronous
+	 * <p><strong>注意:</strong> special considerations apply for asynchronous
 	 * request processing. For more details see
 	 * {@link org.springframework.web.servlet.AsyncHandlerInterceptor}.
 	 * <p>默认实现为空.
@@ -129,12 +129,12 @@ public interface HandlerInterceptor {
 	 * Callback after completion of request processing, that is, after rendering
 	 * the view. Will be called on any outcome of handler execution, thus allows
 	 * for proper resource cleanup.
-	 * <p>Note: Will only be called if this interceptor's {@code preHandle}
+	 * <p>注意: Will only be called if this interceptor's {@code preHandle}
 	 * method has successfully completed and returned {@code true}!
 	 * <p>As with the {@code postHandle} method, the method will be invoked on each
 	 * interceptor in the chain in reverse order, so the first interceptor will be
 	 * the last to be invoked.
-	 * <p><strong>Note:</strong> special considerations apply for asynchronous
+	 * <p><strong>注意:</strong> special considerations apply for asynchronous
 	 * request processing. For more details see
 	 * {@link org.springframework.web.servlet.AsyncHandlerInterceptor}.
 	 * <p>默认实现为空.

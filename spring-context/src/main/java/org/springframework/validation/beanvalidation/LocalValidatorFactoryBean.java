@@ -153,7 +153,7 @@ public class LocalValidatorFactoryBean extends SpringValidatorAdapter
 	 * instead of relying on JSR-303's default "ValidationMessages.properties" bundle
 	 * in the classpath. This may refer to a Spring context's shared "messageSource" bean,
 	 * or to some special MessageSource setup for validation purposes only.
-	 * <p><b>NOTE:</b> This feature requires Hibernate Validator 4.3 or higher on the classpath.
+	 * <p><b>注意:</b> This feature requires Hibernate Validator 4.3 or higher on the classpath.
 	 * You may nevertheless use a different validation provider but Hibernate Validator's
 	 * {@link ResourceBundleMessageInterpolator} class must be accessible during configuration.
 	 * <p>Specify either this property or {@link #setMessageInterpolator "messageInterpolator"},

@@ -171,7 +171,7 @@
 	might be supported by extended bean factories (for example, in a
 	web environment).
 
-	Note: This attribute will not be inherited by child bean definitions.
+	注意: This attribute will not be inherited by child bean definitions.
 	Hence, it needs to be specified per concrete bean definition.
 
 	Inner bean definitions inherit the singleton status of their containing
@@ -187,7 +187,7 @@
 	默认值是"false". Specify "true" to tell the bean factory to not try to
 	instantiate that particular bean in any case.
 
-	Note: This attribute will not be inherited by child bean definitions.
+	注意: This attribute will not be inherited by child bean definitions.
 	Hence, it needs to be specified per abstract bean definition.
 -->
 <!ATTLIST bean abstract (true | false) #IMPLIED>
@@ -197,7 +197,7 @@
 	If false, it will get instantiated on startup by bean factories
 	that perform eager initialization of singletons.
 
-	Note: This attribute will not be inherited by child bean definitions.
+	注意: This attribute will not be inherited by child bean definitions.
 	Hence, it needs to be specified per concrete bean definition.
 -->
 <!ATTLIST bean lazy-init (true | false | default) "default">
@@ -240,7 +240,7 @@
 	always override autowiring. Autowire behavior can be combined with dependency
 	checking, which will be performed after all autowiring has been completed.
 
-	Note: This attribute will not be inherited by child bean definitions.
+	注意: This attribute will not be inherited by child bean definitions.
 	Hence, it needs to be specified per concrete bean definition.
 -->
 <!ATTLIST bean autowire (no | byName | byType | constructor | autodetect | default) "default">
@@ -253,7 +253,7 @@
 	constructor arguments. This property should just be necessary for other kinds
 	of dependencies like statics (*ugh*) or database preparation on startup.
 
-	Note: This attribute will not be inherited by child bean definitions.
+	注意: This attribute will not be inherited by child bean definitions.
 	Hence, it needs to be specified per concrete bean definition.
 -->
 <!ATTLIST bean depends-on CDATA #IMPLIED>
@@ -278,7 +278,7 @@
 	on bean factory shutdown. The method must have no arguments,
 	but may throw any exception.
 
-	Note: Only invoked on beans whose lifecycle is under full control
+	注意: Only invoked on beans whose lifecycle is under full control
 	of the factory - which is always the case for singletons, but not
 	guaranteed for any other scope.
 -->
@@ -329,7 +329,7 @@
 	Arguments correspond to either a specific index of the constructor argument
 	list or are supposed to be matched generically by type.
 
-	Note: A single generic argument value will just be used once, rather than
+	注意: A single generic argument value will just be used once, rather than
 	potentially matched multiple times (as of Spring 1.1).
 
 	constructor-arg elements are also used in conjunction with the factory-method

@@ -84,7 +84,7 @@ public abstract class AbstractHandlerMapping extends ApplicationObjectSupport
 	 * <li>{@link PathPatternParser#setCaseSensitive(boolean)} -- the case
 	 * sensitive slash option, including its default value.
 	 * </ul>
-	 * <p><strong>Note:</strong> aside from
+	 * <p><strong>注意:</strong> aside from
 	 */
 	public void setUseCaseSensitiveMatch(boolean caseSensitiveMatch) {
 		this.patternParser.setCaseSensitive(caseSensitiveMatch);

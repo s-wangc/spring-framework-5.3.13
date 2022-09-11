@@ -43,7 +43,7 @@ import org.springframework.web.servlet.View;
  * of its definition resources. Consider {@link ResourceBundleViewResolver} if you
  * need to apply different view resources per locale.
  *
- * <p>Note: This {@code ViewResolver} implements the {@link Ordered} interface
+ * <p>注意: This {@code ViewResolver} implements the {@link Ordered} interface
  * in order to allow for flexible participation in {@code ViewResolver} chaining.
  * For example, some special views could be defined via this {@code ViewResolver}
  * (giving it 0 as "order" value), while all remaining views could be resolved by

@@ -74,7 +74,7 @@ public interface WebRequestInterceptor {
 	 * Callback after completion of request processing, that is, after rendering
 	 * the view. Will be called on any outcome of handler execution, thus allows
 	 * for proper resource cleanup.
-	 * <p>Note: Will only be called if this interceptor's {@code preHandle}
+	 * <p>注意: Will only be called if this interceptor's {@code preHandle}
 	 * method has successfully completed!
 	 * @param request the current web request
 	 * @param ex exception thrown on handler execution, if any

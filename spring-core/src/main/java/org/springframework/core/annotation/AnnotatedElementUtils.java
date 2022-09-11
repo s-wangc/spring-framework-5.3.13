@@ -461,7 +461,7 @@ public abstract class AnnotatedElementUtils {
 	 * Get the annotation attributes of <strong>all</strong> annotations of the specified
 	 * {@code annotationName} in the annotation hierarchy above the supplied
 	 * {@link AnnotatedElement} and store the results in a {@link MultiValueMap}.
-	 * <p>Note: in contrast to {@link #getMergedAnnotationAttributes(AnnotatedElement, String)},
+	 * <p>注意: in contrast to {@link #getMergedAnnotationAttributes(AnnotatedElement, String)},
 	 * this method does <em>not</em> support attribute overrides.
 	 * <p>This method follows <em>get semantics</em> as described in the
 	 * {@linkplain AnnotatedElementUtils class-level javadoc}.
@@ -483,7 +483,7 @@ public abstract class AnnotatedElementUtils {
 	 * the specified {@code annotationName} in the annotation hierarchy above
 	 * the supplied {@link AnnotatedElement} and store the results in a
 	 * {@link MultiValueMap}.
-	 * <p>Note: in contrast to {@link #getMergedAnnotationAttributes(AnnotatedElement, String)},
+	 * <p>注意: in contrast to {@link #getMergedAnnotationAttributes(AnnotatedElement, String)},
 	 * this method does <em>not</em> support attribute overrides.
 	 * <p>This method follows <em>get semantics</em> as described in the
 	 * {@linkplain AnnotatedElementUtils class-level javadoc}.

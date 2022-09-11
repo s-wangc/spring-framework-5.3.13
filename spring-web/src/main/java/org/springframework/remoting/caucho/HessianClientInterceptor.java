@@ -46,9 +46,9 @@ import org.springframework.util.Assert;
  * <p>Hessian is a slim, binary RPC protocol.
  * For information on Hessian, see the
  * <a href="http://hessian.caucho.com">Hessian website</a>
- * <b>Note: As of Spring 4.0, this client requires Hessian 4.0 or above.</b>
+ * <b>注意: As of Spring 4.0, this client requires Hessian 4.0 or above.</b>
  *
- * <p>Note: There is no requirement for services accessed with this proxy factory
+ * <p>注意: There is no requirement for services accessed with this proxy factory
  * to have been exported using Spring's {@link HessianServiceExporter}, as there is
  * no special handling involved. As a consequence, you can also access services that
  * have been exported using Caucho's {@link com.caucho.hessian.server.HessianServlet}.

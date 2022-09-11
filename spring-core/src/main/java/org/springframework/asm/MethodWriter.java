@@ -286,7 +286,7 @@ final class MethodWriter extends MethodVisitor {
   /** Where the constants used in this MethodWriter must be stored. */
   private final SymbolTable symbolTable;
 
-  // Note: fields are ordered as in the method_info structure, and those related to attributes are
+  // 注意: fields are ordered as in the method_info structure, and those related to attributes are
   // ordered as in Section 4.7 of the JVMS.
 
   /**

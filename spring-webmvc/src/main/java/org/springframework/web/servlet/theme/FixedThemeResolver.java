@@ -26,7 +26,7 @@ import org.springframework.lang.Nullable;
  * that simply uses a fixed theme. The fixed name can be defined via
  * the "defaultThemeName" property; out of the box, it is "theme".
  *
- * <p>Note: Does not support {@code setThemeName}, as the fixed theme
+ * <p>注意: Does not support {@code setThemeName}, as the fixed theme
  * cannot be changed.
  *
  * @author Jean-Pierre Pawlak

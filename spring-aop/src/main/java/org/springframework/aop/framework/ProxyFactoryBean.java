@@ -151,7 +151,7 @@ public class ProxyFactoryBean extends ProxyCreatorSupport
 	 * is added to wrap it. Such a target bean cannot be used if the "target"
 	 * or "targetSource" or "targetName" property is set, in which case the
 	 * "interceptorNames" array must contain only Advice/Advisor bean names.
-	 * <p><b>NOTE: Specifying a target bean as final name in the "interceptorNames"
+	 * <p><b>注意: Specifying a target bean as final name in the "interceptorNames"
 	 * list is deprecated and will be removed in a future Spring version.</b>
 	 * Use the {@link #setTargetName "targetName"} property instead.
 	 * @see org.aopalliance.intercept.MethodInterceptor

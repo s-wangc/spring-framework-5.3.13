@@ -28,7 +28,7 @@ import org.springframework.lang.Nullable;
  * A simple transaction-backed {@link Scope} implementation, delegating to
  * {@link TransactionSynchronizationManager}'s resource binding mechanism.
  *
- * <p><b>NOTE:</b> Like {@link org.springframework.context.support.SimpleThreadScope},
+ * <p><b>注意:</b> Like {@link org.springframework.context.support.SimpleThreadScope},
  * this transaction scope is not registered by default in common contexts. Instead,
  * you need to explicitly assign it to a scope key in your setup, either through
  * {@link org.springframework.beans.factory.config.ConfigurableBeanFactory#registerScope}
@@ -50,7 +50,7 @@ public class SimpleTransactionScope implements Scope {
 			TransactionSynchronizationManager.registerSynchronization(new CleanupSynchronization(scopedObjects));
 			TransactionSynchronizationManager.bindResource(this, scopedObjects);
 		}
-		// NOTE: Do NOT modify the following to use Map::computeIfAbsent. For details,
+		// 注意: Do NOT modify the following to use Map::computeIfAbsent. For details,
 		// see https://github.com/spring-projects/spring-framework/issues/25801.
 		Object scopedObject = scopedObjects.scopedInstances.get(name);
 		if (scopedObject == null) {

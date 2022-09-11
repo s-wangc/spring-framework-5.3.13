@@ -24,7 +24,7 @@ import org.springframework.lang.Nullable;
 /**
  * {@code RouteMatcher} that delegates to a {@link PathMatcher}.
  *
- * <p><strong>Note:</strong> This implementation is not efficient since
+ * <p><strong>注意:</strong> This implementation is not efficient since
  * {@code PathMatcher} treats paths and patterns as Strings. For more optimized
  * performance use the {@code PathPatternRouteMatcher} from {@code spring-web}
  * which enables use of parsed routes and patterns.

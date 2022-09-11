@@ -91,7 +91,7 @@ public interface StompSession {
 	/**
 	 * Send an acknowledgement whether a message was consumed or not resulting
 	 * in an ACK or NACK frame respectively.
-	 * <p><strong>Note:</strong> to use this when subscribing you must set the
+	 * <p><strong>注意:</strong> to use this when subscribing you must set the
 	 * {@link StompHeaders#setAck(String) ack} header to "client" or
 	 * "client-individual" in order ot use this.
 	 * @param messageId the id of the message
@@ -177,7 +177,7 @@ public interface StompSession {
 		/**
 		 * Alternative to {@link #unsubscribe()} with additional custom headers
 		 * to send to the server.
-		 * <p><strong>Note:</strong> There is no need to set the subscription id.
+		 * <p><strong>注意:</strong> There is no need to set the subscription id.
 		 * @param headers the custom headers, if any
 		 * @since 5.0
 		 */

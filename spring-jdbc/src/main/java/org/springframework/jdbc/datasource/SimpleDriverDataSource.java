@@ -30,7 +30,7 @@ import org.springframework.util.Assert;
  * configuring a plain old JDBC {@link java.sql.Driver} via bean properties, and
  * returning a new {@link java.sql.Connection} from every {@code getConnection} call.
  *
- * <p><b>NOTE: This class is not an actual connection pool; it does not actually
+ * <p><b>注意: This class is not an actual connection pool; it does not actually
  * pool Connections.</b> It just serves as simple replacement for a full-blown
  * connection pool, implementing the same standard interface, but creating new
  * Connections on every call.

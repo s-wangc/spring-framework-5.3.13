@@ -44,7 +44,7 @@ import org.springframework.util.Assert;
  * Mock implementation of the {@link javax.servlet.jsp.PageContext} interface.
  * Only necessary for testing applications when testing custom JSP tags.
  *
- * <p>Note: Expects initialization via the constructor rather than via the
+ * <p>注意: Expects initialization via the constructor rather than via the
  * {@code PageContext.initialize} method. Does not support writing to a
  * JspWriter, request dispatching, or {@code handlePageException} calls.
  *

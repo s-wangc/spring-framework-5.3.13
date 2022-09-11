@@ -76,7 +76,7 @@ public class EncodedResourceResolver extends AbstractResourceResolver {
 	 * coding that is present in the {@literal "Accept-Encoding"} header for a
 	 * given request, and that has a file present with the associated extension,
 	 * is used.
-	 * <p><strong>Note:</strong> Each coding must be associated with a file
+	 * <p><strong>注意:</strong> Each coding must be associated with a file
 	 * extension via {@link #registerExtension} or {@link #setExtensions}. Also
 	 * customizations to the list of codings here should be matched by
 	 * customizations to the same list in {@link CachingResourceResolver} to

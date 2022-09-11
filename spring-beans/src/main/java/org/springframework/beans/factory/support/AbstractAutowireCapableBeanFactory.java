@@ -238,7 +238,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	 * it does work fine for many scenarios, though.
 	 * <p>默认值是"true". Turn this off to throw an exception when encountering
 	 * a circular reference, disallowing them completely.
-	 * <p><b>NOTE:</b> It is generally recommended to not rely on circular references
+	 * <p><b>注意:</b> It is generally recommended to not rely on circular references
 	 * between your beans. Refactor your application logic to have the two beans
 	 * involved delegate to a third bean that encapsulates their common logic.
 	 */
@@ -265,7 +265,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	 * <p>Default is "false", as of Spring 2.0. Turn this on to allow for non-wrapped
 	 * raw beans injected into some of your references, which was Spring 1.2's
 	 * (arguably unclean) default behavior.
-	 * <p><b>NOTE:</b> It is generally recommended to not rely on circular references
+	 * <p><b>注意:</b> It is generally recommended to not rely on circular references
 	 * between your beans, in particular with auto-proxying involved.
 	 * @see #setAllowCircularReferences
 	 */

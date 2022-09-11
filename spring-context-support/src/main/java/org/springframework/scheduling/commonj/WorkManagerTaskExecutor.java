@@ -58,7 +58,7 @@ import org.springframework.util.concurrent.ListenableFutureTask;
  * <p>The CommonJ WorkManager will usually be retrieved from the application
  * server's JNDI environment, as defined in the server's management console.
  *
- * <p>Note: On EE 7/8 compliant versions of WebLogic and WebSphere, a
+ * <p>注意: On EE 7/8 compliant versions of WebLogic and WebSphere, a
  * {@link org.springframework.scheduling.concurrent.DefaultManagedTaskExecutor}
  * should be preferred, following JSR-236 support in Java EE 7/8.
  *
@@ -121,7 +121,7 @@ public class WorkManagerTaskExecutor extends JndiLocatorSupport
 	 * execution callback (which may be a wrapper around the user-supplied task).
 	 * <p>The primary use case is to set some execution context around the task's
 	 * invocation, or to provide some monitoring/statistics for task execution.
-	 * <p><b>NOTE:</b> Exception handling in {@code TaskDecorator} implementations
+	 * <p><b>注意:</b> Exception handling in {@code TaskDecorator} implementations
 	 * is limited to plain {@code Runnable} execution via {@code execute} calls.
 	 * In case of {@code #submit} calls, the exposed {@code Runnable} will be a
 	 * {@code FutureTask} which does not propagate any exceptions; you might

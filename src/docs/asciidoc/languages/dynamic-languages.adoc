@@ -208,7 +208,7 @@ running application (or redeploy in the case of a web application). The
 dynamic-language-backed bean so amended picks up the new state and logic from the
 changed dynamic language source file.
 
-NOTE: This feature is off by default.
+注意: This feature is off by default.
 
 Now we can take a look at an example to see how easy it is to start using refreshable
 beans. To turn on the refreshable beans feature, you have to specify exactly one
@@ -559,7 +559,7 @@ If you do not use the Spring namespace support, you can still use the
 	<bean class="org.springframework.scripting.support.ScriptFactoryPostProcessor"/>
 ----
 
-NOTE: You may also specify a Groovy `CompilationCustomizer` (such as an `ImportCustomizer`)
+注意: You may also specify a Groovy `CompilationCustomizer` (such as an `ImportCustomizer`)
 or even a full Groovy `CompilerConfiguration` object in the same place as Spring's
 `GroovyObjectCustomizer`. Furthermore, you may set a common `GroovyClassLoader` with custom
 configuration for your beans at the `ConfigurableApplicationContext.setClassLoader` level;
@@ -669,7 +669,7 @@ you change presentation layer logic by editing and saving text files. Any
 changes to such dynamic language source files is (depending on the configuration)
 automatically reflected in the beans that are backed by dynamic language source files.
 
-NOTE: To effect this automatic "`pickup`" of any changes to dynamic-language-backed
+注意: To effect this automatic "`pickup`" of any changes to dynamic-language-backed
 beans, you have to enable the "`refreshable beans`" functionality. See
 <<dynamic-language-refreshable-beans>> for a full treatment of this feature.
 
@@ -724,7 +724,7 @@ validation logic by editing and saving a simple text file. Any such changes is
 (depending on the configuration) automatically reflected in the execution of a
 running application and would not require the restart of an application.
 
-NOTE: To effect the automatic "`pickup`" of any changes to dynamic-language-backed
+注意: To effect the automatic "`pickup`" of any changes to dynamic-language-backed
 beans, you have to enable the 'refreshable beans' feature. See
 <<dynamic-language-refreshable-beans>> for a full and detailed treatment of this feature.
 

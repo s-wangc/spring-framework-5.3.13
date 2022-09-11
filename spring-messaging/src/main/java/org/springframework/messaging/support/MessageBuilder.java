@@ -192,7 +192,7 @@ public final class MessageBuilder<T> {
 	/**
 	 * A shortcut factory method for creating a message with the given payload
 	 * and {@code MessageHeaders}.
-	 * <p><strong>Note:</strong> the given {@code MessageHeaders} instance is used
+	 * <p><strong>注意:</strong> the given {@code MessageHeaders} instance is used
 	 * directly in the new message, i.e. it is not copied.
 	 * @param payload the payload to use (never {@code null})
 	 * @param messageHeaders the headers to use (never {@code null})

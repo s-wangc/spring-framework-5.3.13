@@ -245,7 +245,7 @@ public abstract class AbstractPlatformTransactionManager implements PlatformTran
 	 * are capable of continuing towards a transaction commit even after a data access
 	 * failure: This is generally not the case for a Hibernate Session, for example;
 	 * neither is it for a sequence of JDBC insert/update/delete operations.
-	 * <p><b>Note:</b>This flag only applies to an explicit rollback attempt for a
+	 * <p><b>注意:</b>This flag only applies to an explicit rollback attempt for a
 	 * subtransaction, typically caused by an exception thrown by a data access operation
 	 * (where TransactionInterceptor will trigger a {@code PlatformTransactionManager.rollback()}
 	 * call according to a rollback rule). If the flag is off, the caller can handle the exception

@@ -47,7 +47,7 @@ import org.springframework.util.Assert;
  * {@link Message} that is then enriched with the sessionId, subscriptionId, and
  * destination of the input message.
  *
- * <p><strong>Note:</strong> this default behavior for interpreting the return
+ * <p><strong>注意:</strong> this default behavior for interpreting the return
  * value from an {@code @SubscribeMapping} method can be overridden through use
  * of the {@link SendTo} or {@link SendToUser} annotations in which case a
  * message is prepared and sent to the broker instead.

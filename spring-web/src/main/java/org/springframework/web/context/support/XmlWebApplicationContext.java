@@ -42,7 +42,7 @@ import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
  * like "/WEB-INF/*-context.xml" (see {@link org.springframework.util.PathMatcher}
  * javadoc for pattern details).
  *
- * <p>Note: In case of multiple config locations, later bean definitions will
+ * <p>注意: In case of multiple config locations, later bean definitions will
  * override ones defined in earlier loaded files. This can be leveraged to
  * deliberately override certain bean definitions via an extra XML file.
  *

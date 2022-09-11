@@ -425,7 +425,7 @@ specify CORS settings by URL pattern. If both are specified, they are combined b
 Spring WebFlux provides a `WebSocketClient` abstraction with implementations for
 Reactor Netty, Tomcat, Jetty, Undertow, and standard Java (that is, JSR-356).
 
-NOTE: The Tomcat client is effectively an extension of the standard Java one with some extra
+注意: The Tomcat client is effectively an extension of the standard Java one with some extra
 functionality in the `WebSocketSession` handling to take advantage of the Tomcat-specific
 API to suspend receiving messages for back pressure.
 

@@ -13,7 +13,7 @@
 	</bean>
 
 	<!--
-		NOTE: The bean names removeNodeStatusScreen and removeNodeStatusPresenter are seemingly
+		注意: The bean names removeNodeStatusScreen and removeNodeStatusPresenter are seemingly
 		quite odd for TestBean instances; however, these have been chosen due to the fact that
 		they end up in the same bucket within a HashMap/ConcurrentHashMap initialized with the
 		default initial capacity.

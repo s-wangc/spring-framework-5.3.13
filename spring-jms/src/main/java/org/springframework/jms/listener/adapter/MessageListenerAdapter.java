@@ -54,7 +54,7 @@ import org.springframework.util.ObjectUtils;
  * {@link #setDefaultResponseDestination(javax.jms.Destination) specified default
  * destination}).
  *
- * <p><b>Note:</b> The sending of response messages is only available when
+ * <p><b>注意:</b> The sending of response messages is only available when
  * using the {@link SessionAwareMessageListener} entry point (typically through a
  * Spring message listener container). Usage as standard JMS {@link MessageListener}
  * does <i>not</i> support the generation of response messages.

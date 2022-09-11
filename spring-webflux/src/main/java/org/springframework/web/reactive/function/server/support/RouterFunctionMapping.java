@@ -75,7 +75,7 @@ public class RouterFunctionMapping extends AbstractHandlerMapping implements Ini
 
 	/**
 	 * Return the configured {@link RouterFunction}.
-	 * <p><strong>Note:</strong> When router functions are detected from the
+	 * <p><strong>注意:</strong> When router functions are detected from the
 	 * ApplicationContext, this method may return {@code null} if invoked
 	 * prior to {@link #afterPropertiesSet()}.
 	 * @return the router function or {@code null}

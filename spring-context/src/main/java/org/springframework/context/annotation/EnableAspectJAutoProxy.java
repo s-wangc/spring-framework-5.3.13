@@ -101,7 +101,7 @@ import java.lang.annotation.Target;
  *     // no explicit &#064;Bean definitions required
  * }</pre>
  *
- * <b>Note: {@code @EnableAspectJAutoProxy} applies to its local application context only,
+ * <b>注意: {@code @EnableAspectJAutoProxy} applies to its local application context only,
  * allowing for selective proxying of beans at different levels.</b> Please redeclare
  * {@code @EnableAspectJAutoProxy} in each individual context, e.g. the common root web
  * application context and any separate {@code DispatcherServlet} application contexts,

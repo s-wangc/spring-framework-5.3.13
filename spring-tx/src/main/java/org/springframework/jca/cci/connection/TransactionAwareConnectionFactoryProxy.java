@@ -55,7 +55,7 @@ import org.springframework.lang.Nullable;
  * CCI operation objects to get transaction participation even without a proxy for
  * the target ConnectionFactory, avoiding the need to define such a proxy in the first place.
  *
- * <p><b>NOTE:</b> This ConnectionFactory proxy needs to return wrapped Connections
+ * <p><b>注意:</b> This ConnectionFactory proxy needs to return wrapped Connections
  * in order to handle close calls properly. Therefore, the returned Connections cannot
  * be cast to a native CCI Connection type or to a connection pool implementation type.
  *

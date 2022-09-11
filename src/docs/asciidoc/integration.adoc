@@ -21,7 +21,7 @@ method API.
 * <<web-reactive.adoc#webflux-client, WebClient>>: a non-blocking, reactive alternative
 that supports both synchronous and asynchronous as well as streaming scenarios.
 
-NOTE: As of 5.0 the `RestTemplate` is in maintenance mode, with only minor requests for
+注意: As of 5.0 the `RestTemplate` is in maintenance mode, with only minor requests for
 changes and bugs to be accepted going forward. Please, consider using the
 <<web-reactive.adoc#webflux-client, WebClient>> which offers a more modern API and
 supports sync, async, and streaming scenarios.
@@ -638,7 +638,7 @@ Spring-managed beans, similar to the standalone mode discussed in the
 <<remoting-web-services-jaxws-export-standalone, previous section>> --
 but this time in a Servlet environment.
 
-NOTE: This is not portable in a Java EE environment. It is mainly intended for non-EE
+注意: This is not portable in a Java EE environment. It is mainly intended for non-EE
 environments, such as Tomcat, that embed the JAX-WS RI as part of the web application.
 
 The differences from the standard style of exporting servlet-based endpoints are that
@@ -710,7 +710,7 @@ as the following example shows:
 	}
 ----
 
-NOTE: The above is slightly simplified in that JAX-WS requires endpoint interfaces
+注意: The above is slightly simplified in that JAX-WS requires endpoint interfaces
 and implementation classes to be annotated with `@WebService`, `@SOAPBinding`, etc.
 annotations. This means that you cannot (easily) use plain Java interfaces and
 implementation classes as JAX-WS endpoint artifacts; you need to annotate them
@@ -771,7 +771,7 @@ Furthermore, the service name is used to bind the service. So, in the preceding 
 service is bound at `'rmi://HOST:1199/AccountService'`. We use this URL later on to link in
 the service at the client side.
 
-NOTE: The `servicePort` property has been omitted (it defaults to 0). This means that an
+注意: The `servicePort` property has been omitted (it defaults to 0). This means that an
 anonymous port is used to communicate with the service.
 
 
@@ -959,7 +959,7 @@ In the preceding example, we explicitly mention the `BeanNameUrlHandlerMapping` 
 an interceptor, to let only administrators and operators call the beans mentioned in
 this application context.
 
-NOTE: The preceding example does not show a flexible kind of security infrastructure. For
+注意: The preceding example does not show a flexible kind of security infrastructure. For
 more options as far as security is concerned, have a look at the Spring Security project
 at https://projects.spring.io/spring-security/.
 
@@ -1435,7 +1435,7 @@ transparent. Spring's EJB accessors, including the `<jee:local-slsb>` and
 They handle a home interface if found (EJB 2.x style) or perform straight component
 invocations if no home interface is available (EJB 3 style).
 
-Note: For EJB 3 Session Beans, you can effectively use a `JndiObjectFactoryBean` /
+注意: For EJB 3 Session Beans, you can effectively use a `JndiObjectFactoryBean` /
 `<jee:jndi-lookup>` as well, since fully usable component references are exposed for
 plain JNDI lookups there. Defining explicit `<jee:local-slsb>` or `<jee:remote-slsb>`
 lookups provides consistent and more explicit EJB access configuration.
@@ -1698,7 +1698,7 @@ to runtime demands or for participation in externally managed transactions.
 Compatibility-wise, it stays very close to the spirit of the standalone JMS
 specification, but is generally not compatible with Java EE's JMS restrictions.
 
-NOTE: While `SimpleMessageListenerContainer` does not allow for participation in externally
+注意: While `SimpleMessageListenerContainer` does not allow for participation in externally
 managed transactions, it does support native JMS transactions. To enable this feature,
 you can switch the `sessionTransacted` flag to `true` or, in the XML namespace, set the
 `acknowledge` attribute to `transacted`. Exceptions thrown from your listener then lead
@@ -1736,7 +1736,7 @@ a simple `BackOff` implementation retries every five seconds. You can specify
 a custom `BackOff` implementation for more fine-grained recovery options. See
 {api-spring-framework}/util/backoff/ExponentialBackOff.html[`ExponentialBackOff`] for an example.
 
-NOTE: Like its sibling (<<jms-mdp-simple, `SimpleMessageListenerContainer`>>),
+注意: Like its sibling (<<jms-mdp-simple, `SimpleMessageListenerContainer`>>),
 `DefaultMessageListenerContainer` supports native JMS transactions and allows for
 customizing the acknowledgment mode. If feasible for your scenario, This is strongly
 recommended over externally managed transactions -- that is, if you can live with
@@ -1948,7 +1948,7 @@ the receiver should wait before giving up waiting for a message.
 [[jms-receiving-async]]
 ==== Asynchronous reception: Message-Driven POJOs
 
-NOTE: Spring also supports annotated-listener endpoints through the use of the `@JmsListener`
+注意: Spring also supports annotated-listener endpoints through the use of the `@JmsListener`
 annotation and provides an open infrastructure to register endpoints programmatically.
 This is, by far, the most convenient way to setup an asynchronous receiver.
 See <<jms-annotated-support>> for more details.
@@ -2319,7 +2319,7 @@ find out about the actual capabilities of your connector, and see the
 {api-spring-framework}/jca/endpoint/GenericMessageEndpointManager.html[`GenericMessageEndpointManager`]
 javadoc for the Spring-specific configuration details.
 
-NOTE: JCA-based message endpoint management is very analogous to EJB 2.1 Message-Driven Beans.
+注意: JCA-based message endpoint management is very analogous to EJB 2.1 Message-Driven Beans.
 It uses the same underlying resource provider contract. As with EJB 2.1 MDBs, you can use any
 message listener interface supported by your JCA provider in the Spring context as well.
 Spring nevertheless provides explicit "`convenience`" support for JMS, because JMS is the
@@ -3012,7 +3012,7 @@ With this configuration, the `testBean` bean is exposed as an MBean under the
 are exposed as attributes and all `public` methods (except those inherited from the
 `Object` class) are exposed as operations.
 
-NOTE: `MBeanExporter` is a `Lifecycle` bean (see <<core.adoc#beans-factory-lifecycle-processor,
+注意: `MBeanExporter` is a `Lifecycle` bean (see <<core.adoc#beans-factory-lifecycle-processor,
 Startup and Shutdown Callbacks>>). By default, MBeans are exported as late as possible during
 the application lifecycle. You can configure the `phase` at which
 the export happens or disable automatic registration by setting the `autoStartup` flag.
@@ -3264,7 +3264,7 @@ with the `ManagedAttribute` annotation. When marking properties, you can omit
 either the annotation of the getter or the setter to create a write-only or read-only
 attribute, respectively.
 
-NOTE: A `ManagedResource`-annotated bean must be public, as must the methods exposing
+注意: A `ManagedResource`-annotated bean must be public, as must the methods exposing
 an operation or an attribute.
 
 The following example shows the annotated version of the `JmxTestBean` class that we
@@ -4207,7 +4207,7 @@ specification (1.2) entitled 'The JMX Notification Model'.)
 Spring provides support not only for registering to receive `Notifications` but also
 for publishing `Notifications`.
 
-NOTE: This section is really only relevant to Spring-managed beans that have
+注意: This section is really only relevant to Spring-managed beans that have
 been exposed as MBeans through an `MBeanExporter`. Any existing user-defined MBeans should
 use the standard JMX APIs for notification publication.
 
@@ -4479,7 +4479,7 @@ callback interface. In the following example, the `mailSender` property is of ty
 	}
 ----
 
-NOTE: The mail code is a crosscutting concern and could well be a candidate for
+注意: The mail code is a crosscutting concern and could well be a candidate for
 refactoring into a <<core.adoc#aop, custom Spring AOP aspect>>, which could then
 be run at appropriate joinpoints on the `OrderManager` target.
 
@@ -4913,7 +4913,7 @@ Note that, with the preceding XML, an executor reference is provided for handlin
 tasks that correspond to methods with the `@Async` annotation, and the scheduler
 reference is provided for managing those methods annotated with `@Scheduled`.
 
-NOTE: The default advice mode for processing `@Async` annotations is `proxy` which allows
+注意: The default advice mode for processing `@Async` annotations is `proxy` which allows
 for interception of calls through the proxy only. Local calls within the same class
 cannot get intercepted that way. For a more advanced mode of interception, consider
 switching to `aspectj` mode in combination with compile-time or load-time weaving.
@@ -5091,7 +5091,7 @@ target, as the following example shows:
 	}
 ----
 
-NOTE: There is no direct XML equivalent for `@Async`, since such methods should be designed
+注意: There is no direct XML equivalent for `@Async`, since such methods should be designed
 for asynchronous execution in the first place, not externally re-declared to be asynchronous.
 However, you can manually set up Spring's `AsyncExecutionInterceptor` with Spring AOP,
 in combination with a custom pointcut.
@@ -5457,7 +5457,7 @@ has it applied automatically:
 
 All additional properties from the job data map are available to you as well.
 
-NOTE: By using the `name` and `group` properties, you can modify the name and the group
+注意: By using the `name` and `group` properties, you can modify the name and the group
 of the job, respectively. By default, the name of the job matches the bean name
 of the `JobDetailFactoryBean` (`exampleJob` in the preceding example above).
 
@@ -5517,7 +5517,7 @@ job does not start before the first one has finished. To make jobs resulting fro
 	</bean>
 ----
 
-NOTE: By default, jobs will run in a concurrent fashion.
+注意: By default, jobs will run in a concurrent fashion.
 
 
 [[scheduling-quartz-cron]]
@@ -5703,7 +5703,7 @@ cache is declared, the annotation lets multiple names be specified so that more 
 cache is being used. In this case, each of the caches is checked before invoking the
 method -- if at least one cache is hit, the associated value is returned.
 
-NOTE: All the other caches that do not contain the value are also updated, even though
+注意: All the other caches that do not contain the value are also updated, even though
 the cached method was not actually invoked.
 
 The following example uses `@Cacheable` on the `findBook` method with multiple caches:
@@ -5801,7 +5801,7 @@ example shows:
 	public Book findBook(ISBN isbn, boolean checkWarehouse, boolean includeUsed)
 ----
 
-NOTE: The `key` and `keyGenerator` parameters are mutually exclusive and an operation
+注意: The `key` and `keyGenerator` parameters are mutually exclusive and an operation
 that specifies both results in an exception.
 
 [[cache-annotations-cacheable-default-cache-resolver]]
@@ -5878,7 +5878,7 @@ is updated in the cache. The following example shows how to use the `sync` attri
 <1> Using the `sync` attribute.
 
 
-NOTE: This is an optional feature, and your favorite cache library may not support it.
+注意: This is an optional feature, and your favorite cache library may not support it.
 All `CacheManager` implementations provided by the core framework support it. See the
 documentation of your cache provider for more details.
 
@@ -6147,12 +6147,12 @@ specify various options that influence the way the caching behavior is added to 
 application through AOP. The configuration is intentionally similar with that of
 <<data-access.adoc#tx-annotation-driven-settings, `@Transactional`>>.
 
-NOTE: The default advice mode for processing caching annotations is `proxy`, which allows
+注意: The default advice mode for processing caching annotations is `proxy`, which allows
 for interception of calls through the proxy only. Local calls within the same class
 cannot get intercepted that way. For a more advanced mode of interception, consider
 switching to `aspectj` mode in combination with compile-time or load-time weaving.
 
-NOTE: For more detail about advanced customizations (using Java configuration) that are
+注意: For more detail about advanced customizations (using Java configuration) that are
 required to implement `CachingConfigurer`, see the
 {api-spring-framework}/cache/annotation/CachingConfigurer.html[javadoc].
 
@@ -6219,7 +6219,7 @@ required to implement `CachingConfigurer`, see the
   No specified ordering means that the AOP subsystem determines the order of the advice.
 |===
 
-NOTE: `<cache:annotation-driven/>` looks for `@Cacheable/@CachePut/@CacheEvict/@Caching`
+注意: `<cache:annotation-driven/>` looks for `@Cacheable/@CachePut/@CacheEvict/@Caching`
 only on beans in the same application context in which it is defined. This means that,
 if you put `<cache:annotation-driven/>` in a `WebApplicationContext` for a
 `DispatcherServlet`, it checks for beans only in your controllers, not your services.
@@ -6243,7 +6243,7 @@ class-based proxies (`proxy-target-class="true"`) or the weaving-based aspect
 (`mode="aspectj"`), the caching settings are not recognized by the proxying and weaving
 infrastructure, and the object is not wrapped in a caching proxy.
 
-NOTE: In proxy mode (the default), only external method calls coming in through the
+注意: In proxy mode (the default), only external method calls coming in through the
 proxy are intercepted. This means that self-invocation (in effect, a method within the
 target object that calls another method of the target object) does not lead to actual
 caching at runtime even if the invoked method is marked with `@Cacheable`. Consider
@@ -6379,7 +6379,7 @@ to customize the factory for each cache operation, as the following example show
 <1> Customizing the factory for this operation.
 
 
-NOTE: For all referenced classes, Spring tries to locate a bean with the given type.
+注意: For all referenced classes, Spring tries to locate a bean with the given type.
 If more than one match exists, a new instance is created and can use the regular
 bean lifecycle callbacks, such as dependency injection.
 
@@ -6425,7 +6425,7 @@ declarative annotation support. Both `@EnableCaching` and the `cache:annotation-
 XML element automatically enable the JCache support if both the JSR-107 API and the
 `spring-context-support` module are present in the classpath.
 
-NOTE: Depending on your use case, the choice is basically yours. You can even mix and
+注意: Depending on your use case, the choice is basically yours. You can even mix and
 match services by using the JSR-107 API on some and using Spring's own annotations on
 others. However, if these services impact the same caches, you should use a consistent
 and identical key generation implementation.
@@ -6529,7 +6529,7 @@ or eviction contracts.
 [[cache-store-configuration-ehcache]]
 ==== Ehcache-based Cache
 
-NOTE: Ehcache 3.x is fully JSR-107 compliant and no dedicated support is required for it.
+注意: Ehcache 3.x is fully JSR-107 compliant and no dedicated support is required for it.
 
 The Ehcache 2.x implementation is located in the `org.springframework.cache.ehcache`
 package. Again, to use it, you need to declare the appropriate `CacheManager`.

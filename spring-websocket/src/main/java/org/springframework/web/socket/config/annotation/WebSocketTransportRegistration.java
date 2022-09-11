@@ -50,7 +50,7 @@ public class WebSocketTransportRegistration {
 	 * Configure the maximum size of an inbound sub-protocol message, such as
 	 * a STOMP frame which may be aggregated from multiple WebSocket messages.
 	 * <p>The default value is 64K (i.e. 64 * 1024).
-	 * <p><strong>Note:</strong> This is not the same as the size of an
+	 * <p><strong>注意:</strong> This is not the same as the size of an
 	 * individual WebSocket message which needs to be configured at the WebSocket
 	 * server level instead. See the reference documentation for details.
 	 */

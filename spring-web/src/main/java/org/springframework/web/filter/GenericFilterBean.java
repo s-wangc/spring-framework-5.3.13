@@ -176,7 +176,7 @@ public abstract class GenericFilterBean implements Filter, BeanNameAware, Enviro
 
 	/**
 	 * Subclasses may override this to perform custom filter shutdown.
-	 * <p>Note: This method will be called from standard filter destruction
+	 * <p>注意: This method will be called from standard filter destruction
 	 * as well as filter bean destruction in a Spring application context.
 	 * <p>This default implementation is empty.
 	 */
@@ -258,7 +258,7 @@ public abstract class GenericFilterBean implements Filter, BeanNameAware, Enviro
 	 * Subclasses may override this to perform custom initialization.
 	 * All bean properties of this filter will have been set before this
 	 * method is invoked.
-	 * <p>Note: This method will be called from standard filter initialization
+	 * <p>注意: This method will be called from standard filter initialization
 	 * as well as filter bean initialization in a Spring application context.
 	 * Filter name and ServletContext will be available in both cases.
 	 * <p>This default implementation is empty.

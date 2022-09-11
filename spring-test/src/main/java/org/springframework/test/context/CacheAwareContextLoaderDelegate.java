@@ -28,7 +28,7 @@ import org.springframework.test.annotation.DirtiesContext.HierarchyMode;
  * {@link org.springframework.test.context.cache.ContextCache ContextCache}
  * behind the scenes.
  *
- * <p>Note: {@code CacheAwareContextLoaderDelegate} does not extend the
+ * <p>注意: {@code CacheAwareContextLoaderDelegate} does not extend the
  * {@link ContextLoader} or {@link SmartContextLoader} interface.
  *
  * @author Sam Brannen

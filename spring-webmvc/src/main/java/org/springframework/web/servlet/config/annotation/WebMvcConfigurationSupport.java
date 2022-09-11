@@ -415,7 +415,7 @@ public class WebMvcConfigurationSupport implements ApplicationContextAware, Serv
 	 * Return a global {@link UrlPathHelper} instance which is used to resolve
 	 * the request mapping path for an application. The instance can be
 	 * configured via {@link #configurePathMatch(PathMatchConfigurer)}.
-	 * <p><b>Note:</b> This is only used when parsed patterns are not
+	 * <p><b>注意:</b> This is only used when parsed patterns are not
 	 * {@link PathMatchConfigurer#setPatternParser enabled}.
 	 * @since 4.1
 	 */
@@ -428,7 +428,7 @@ public class WebMvcConfigurationSupport implements ApplicationContextAware, Serv
 	 * Return a global {@link PathMatcher} instance which is used for URL path
 	 * matching with String patterns. The returned instance can be configured
 	 * using {@link #configurePathMatch(PathMatchConfigurer)}.
-	 * <p><b>Note:</b> This is only used when parsed patterns are not
+	 * <p><b>注意:</b> This is only used when parsed patterns are not
 	 * {@link PathMatchConfigurer#setPatternParser enabled}.
 	 * @since 4.1
 	 */
@@ -1019,7 +1019,7 @@ public class WebMvcConfigurationSupport implements ApplicationContextAware, Serv
 	 * Returns a {@link HandlerExceptionResolverComposite} containing a list of exception
 	 * resolvers obtained either through {@link #configureHandlerExceptionResolvers} or
 	 * through {@link #addDefaultHandlerExceptionResolvers}.
-	 * <p><strong>Note:</strong> This method cannot be made final due to CGLIB constraints.
+	 * <p><strong>注意:</strong> This method cannot be made final due to CGLIB constraints.
 	 * Rather than overriding it, consider overriding {@link #configureHandlerExceptionResolvers}
 	 * which allows for providing a list of resolvers.
 	 */

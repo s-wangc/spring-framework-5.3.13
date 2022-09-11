@@ -94,7 +94,7 @@ public class PathResourceResolver extends AbstractResourceResolver {
 	 * Configure charsets associated with locations. If a static resource is found
 	 * under a {@link org.springframework.core.io.UrlResource URL resource}
 	 * location the charset is used to encode the relative path
-	 * <p><strong>Note:</strong> the charset is used only if the
+	 * <p><strong>注意:</strong> the charset is used only if the
 	 * {@link #setUrlPathHelper urlPathHelper} property is also configured and
 	 * its {@code urlDecode} property is set to true.
 	 * @since 4.3.13

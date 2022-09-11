@@ -35,7 +35,7 @@ public interface Serializer<T> {
 
 	/**
 	 * Write an object of type T to the given OutputStream.
-	 * <p>Note: Implementations should not close the given OutputStream
+	 * <p>注意: Implementations should not close the given OutputStream
 	 * (or any decorators of that OutputStream) but rather leave this up
 	 * to the caller.
 	 * @param object the object to serialize

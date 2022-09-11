@@ -32,7 +32,7 @@ import org.springframework.util.Assert;
  * <p>Inherits rollback-only support for nested R2DBC transactions and reference
  * count functionality from the base class.
  *
- * <p>Note: This is an SPI class, not intended to be used by applications.
+ * <p>注意: This is an SPI class, not intended to be used by applications.
  *
  * @author Mark Paluch
  * @author Christoph Strobl

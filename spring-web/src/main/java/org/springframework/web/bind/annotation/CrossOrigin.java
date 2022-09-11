@@ -132,7 +132,7 @@ public @interface CrossOrigin {
 	 * cross domain requests, to the annotated endpoint. The configured value is
 	 * set on the {@code Access-Control-Allow-Credentials} response header of
 	 * preflight requests.
-	 * <p><strong>NOTE:</strong> Be aware that this option establishes a high
+	 * <p><strong>注意:</strong> Be aware that this option establishes a high
 	 * level of trust with the configured domains and also increases the surface
 	 * attack of the web application by exposing sensitive user-specific
 	 * information such as cookies and CSRF tokens.

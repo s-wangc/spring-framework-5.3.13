@@ -31,7 +31,7 @@ import org.springframework.test.context.TestContextManager;
  * JUnit 4 execution chain by calling {@link TestContextManager#afterTestExecution
  * afterTestExecution()} on the supplied {@link TestContextManager}.
  *
- * <p><strong>NOTE:</strong> This class requires JUnit 4.9 or higher.
+ * <p><strong>注意:</strong> This class requires JUnit 4.9 or higher.
  *
  * @author Sam Brannen
  * @since 5.0

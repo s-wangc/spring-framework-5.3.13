@@ -69,7 +69,7 @@ import org.springframework.util.function.SupplierUtils;
  * used for determining caching operations, a {@link KeyGenerator} will build the
  * cache keys, and a {@link CacheResolver} will resolve the actual cache(s) to use.
  *
- * <p>Note: A cache aspect is serializable but does not perform any actual caching
+ * <p>注意: A cache aspect is serializable but does not perform any actual caching
  * after deserialization.
  *
  * @author Costin Leau

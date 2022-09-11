@@ -37,7 +37,7 @@ import org.springframework.contextsupport.testfixture.jcache.JCacheableService;
 /**
  * Repository sample with a @CacheDefaults annotation
  *
- * <p>Note: copy/pasted from its original compilation because it needs to be
+ * <p>注意: copy/pasted from its original compilation because it needs to be
  * processed by the AspectJ compiler to wave the required aspects.
  *
  * @author Stephane Nicoll

@@ -70,7 +70,7 @@ public class TaskExecutorAdapter implements AsyncListenableTaskExecutor {
 	 * execution callback (which may be a wrapper around the user-supplied task).
 	 * <p>The primary use case is to set some execution context around the task's
 	 * invocation, or to provide some monitoring/statistics for task execution.
-	 * <p><b>NOTE:</b> Exception handling in {@code TaskDecorator} implementations
+	 * <p><b>注意:</b> Exception handling in {@code TaskDecorator} implementations
 	 * is limited to plain {@code Runnable} execution via {@code execute} calls.
 	 * In case of {@code #submit} calls, the exposed {@code Runnable} will be a
 	 * {@code FutureTask} which does not propagate any exceptions; you might

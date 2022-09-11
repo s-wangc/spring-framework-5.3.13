@@ -39,7 +39,7 @@ public interface AsyncHandlerMethodReturnValueHandler extends HandlerMethodRetur
 	 * with success and error callbacks. If this method returns {@code true},
 	 * then {@link #toListenableFuture} is invoked next. If it returns
 	 * {@code false}, then {@link #handleReturnValue} is called.
-	 * <p><strong>Note:</strong> this method will only be invoked after
+	 * <p><strong>注意:</strong> this method will only be invoked after
 	 * {@link #supportsReturnType(org.springframework.core.MethodParameter)}
 	 * is called and it returns {@code true}.
 	 * @param returnValue the value returned from the handler method
@@ -54,7 +54,7 @@ public interface AsyncHandlerMethodReturnValueHandler extends HandlerMethodRetur
 	 * {@link org.springframework.util.concurrent.SettableListenableFuture
 	 * SettableListenableFuture}. Return value handling will then continue when
 	 * the ListenableFuture is completed with either success or error.
-	 * <p><strong>Note:</strong> this method will only be invoked after
+	 * <p><strong>注意:</strong> this method will only be invoked after
 	 * {@link #supportsReturnType(org.springframework.core.MethodParameter)}
 	 * is called and it returns {@code true}.
 	 * @param returnValue the value returned from the handler method

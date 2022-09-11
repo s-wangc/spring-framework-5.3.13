@@ -73,7 +73,7 @@ public class BeanDefinitionHolder implements BeanMetadataElement {
 	/**
 	 * Copy constructor: Create a new BeanDefinitionHolder with the
 	 * same contents as the given BeanDefinitionHolder instance.
-	 * <p>Note: The wrapped BeanDefinition reference is taken as-is;
+	 * <p>注意: The wrapped BeanDefinition reference is taken as-is;
 	 * it is {@code not} deeply copied.
 	 * @param beanDefinitionHolder the BeanDefinitionHolder to copy
 	 */

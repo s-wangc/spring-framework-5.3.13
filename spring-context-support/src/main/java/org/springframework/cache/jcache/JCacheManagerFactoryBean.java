@@ -33,7 +33,7 @@ import org.springframework.lang.Nullable;
  * obtaining a pre-defined {@code CacheManager} by name through the standard
  * JCache {@link Caching javax.cache.Caching} class.
  *
- * <p>Note: This class has been updated for JCache 1.0, as of Spring 4.0.
+ * <p>注意: This class has been updated for JCache 1.0, as of Spring 4.0.
  *
  * @author Juergen Hoeller
  * @since 3.2

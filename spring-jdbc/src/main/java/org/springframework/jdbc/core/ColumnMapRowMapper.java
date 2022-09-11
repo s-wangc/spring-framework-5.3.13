@@ -34,7 +34,7 @@ import org.springframework.util.LinkedCaseInsensitiveMap;
  * in the column Map can be customized by overriding {@link #createColumnMap}
  * and {@link #getColumnKey}, respectively.
  *
- * <p><b>Note:</b> By default, {@code ColumnMapRowMapper} will try to build a linked Map
+ * <p><b>注意:</b> By default, {@code ColumnMapRowMapper} will try to build a linked Map
  * with case-insensitive keys, to preserve column order as well as allow any
  * casing to be used for column names.
  *

@@ -69,7 +69,7 @@ import org.springframework.util.ClassUtils;
  * plus the {@link EntityManagerFactoryInfo} interface which exposes additional
  * metadata as assembled by this FactoryBean.
  *
- * <p><b>NOTE: Spring's JPA support requires JPA 2.1 or higher, as of Spring 5.0.</b>
+ * <p><b>注意: Spring's JPA support requires JPA 2.1 or higher, as of Spring 5.0.</b>
  * JPA 1.0/2.0 based applications are still supported; however, a JPA 2.1 compliant
  * persistence provider is needed at runtime.
  *
@@ -123,7 +123,7 @@ public class LocalContainerEntityManagerFactoryBean extends AbstractEntityManage
 	 * Set the location of the {@code persistence.xml} file
 	 * we want to use. This is a Spring resource location.
 	 * <p>Default is "classpath:META-INF/persistence.xml".
-	 * <p><b>NOTE: Only applied if no external PersistenceUnitManager specified.</b>
+	 * <p><b>注意: Only applied if no external PersistenceUnitManager specified.</b>
 	 * @param persistenceXmlLocation a Spring resource String
 	 * identifying the location of the {@code persistence.xml} file
 	 * that this LocalContainerEntityManagerFactoryBean should parse
@@ -136,7 +136,7 @@ public class LocalContainerEntityManagerFactoryBean extends AbstractEntityManage
 	/**
 	 * Uses the specified persistence unit name as the name of the default
 	 * persistence unit, if applicable.
-	 * <p><b>NOTE: Only applied if no external PersistenceUnitManager specified.</b>
+	 * <p><b>注意: Only applied if no external PersistenceUnitManager specified.</b>
 	 * @see DefaultPersistenceUnitManager#setDefaultPersistenceUnitName
 	 */
 	@Override
@@ -152,7 +152,7 @@ public class LocalContainerEntityManagerFactoryBean extends AbstractEntityManage
 	 * <p>Default is "classpath:", that is, the root of the current classpath
 	 * (nearest root directory). To be overridden if unit-specific resolution
 	 * does not work and the classpath root is not appropriate either.
-	 * <p><b>NOTE: Only applied if no external PersistenceUnitManager specified.</b>
+	 * <p><b>注意: Only applied if no external PersistenceUnitManager specified.</b>
 	 * @since 4.3.3
 	 * @see DefaultPersistenceUnitManager#setDefaultPersistenceUnitRootLocation
 	 */
@@ -168,7 +168,7 @@ public class LocalContainerEntityManagerFactoryBean extends AbstractEntityManage
 	 * <p>默认值是none. Specify packages to search for autodetection of your entity
 	 * classes in the classpath. This is analogous to Spring's component-scan feature
 	 * ({@link org.springframework.context.annotation.ClassPathBeanDefinitionScanner}).
-	 * <p><b>Note: There may be limitations in comparison to regular JPA scanning.</b>
+	 * <p><b>注意: There may be limitations in comparison to regular JPA scanning.</b>
 	 * In particular, JPA providers may pick up annotated packages for provider-specific
 	 * annotations only when driven by {@code persistence.xml}. As of 4.1, Spring's
 	 * scan can detect annotated packages as well if supported by the given
@@ -179,7 +179,7 @@ public class LocalContainerEntityManagerFactoryBean extends AbstractEntityManage
 	 * resource for the default unit if the mapping file is not co-located with a
 	 * {@code persistence.xml} file (in which case we assume it is only meant to be
 	 * used with the persistence units defined there, like in standard JPA).
-	 * <p><b>NOTE: Only applied if no external PersistenceUnitManager specified.</b>
+	 * <p><b>注意: Only applied if no external PersistenceUnitManager specified.</b>
 	 * @param packagesToScan one or more base packages to search, analogous to
 	 * Spring's component-scan configuration for regular Spring components
 	 * @see #setPersistenceUnitManager
@@ -207,7 +207,7 @@ public class LocalContainerEntityManagerFactoryBean extends AbstractEntityManage
 	 * {@code META-INF/orm.xml} check. On the other hand, explicitly specifying
 	 * {@code META-INF/orm.xml} here will register that file even if it happens
 	 * to be co-located with a {@code persistence.xml} file.
-	 * <p><b>NOTE: Only applied if no external PersistenceUnitManager specified.</b>
+	 * <p><b>注意: Only applied if no external PersistenceUnitManager specified.</b>
 	 * @see #setPersistenceUnitManager
 	 * @see DefaultPersistenceUnitManager#setMappingResources
 	 */
@@ -218,7 +218,7 @@ public class LocalContainerEntityManagerFactoryBean extends AbstractEntityManage
 	/**
 	 * Specify the JPA 2.0 shared cache mode for this persistence unit,
 	 * overriding a value in {@code persistence.xml} if set.
-	 * <p><b>NOTE: Only applied if no external PersistenceUnitManager specified.</b>
+	 * <p><b>注意: Only applied if no external PersistenceUnitManager specified.</b>
 	 * @since 4.0
 	 * @see javax.persistence.spi.PersistenceUnitInfo#getSharedCacheMode()
 	 * @see #setPersistenceUnitManager
@@ -230,7 +230,7 @@ public class LocalContainerEntityManagerFactoryBean extends AbstractEntityManage
 	/**
 	 * Specify the JPA 2.0 validation mode for this persistence unit,
 	 * overriding a value in {@code persistence.xml} if set.
-	 * <p><b>NOTE: Only applied if no external PersistenceUnitManager specified.</b>
+	 * <p><b>注意: Only applied if no external PersistenceUnitManager specified.</b>
 	 * @since 4.0
 	 * @see javax.persistence.spi.PersistenceUnitInfo#getValidationMode()
 	 * @see #setPersistenceUnitManager
@@ -249,7 +249,7 @@ public class LocalContainerEntityManagerFactoryBean extends AbstractEntityManage
 	 * overriding data source configuration in {@code persistence.xml} (if any).
 	 * Note that this variant typically works for JTA transaction management as well;
 	 * if it does not, consider using the explicit {@link #setJtaDataSource} instead.
-	 * <p><b>NOTE: Only applied if no external PersistenceUnitManager specified.</b>
+	 * <p><b>注意: Only applied if no external PersistenceUnitManager specified.</b>
 	 * @see javax.persistence.spi.PersistenceUnitInfo#getNonJtaDataSource()
 	 * @see #setPersistenceUnitManager
 	 */
@@ -266,7 +266,7 @@ public class LocalContainerEntityManagerFactoryBean extends AbstractEntityManage
 	 * <p>In JPA speak, a DataSource passed in here will be used as "jtaDataSource"
 	 * on the PersistenceUnitInfo passed to the PersistenceProvider, as well as
 	 * overriding data source configuration in {@code persistence.xml} (if any).
-	 * <p><b>NOTE: Only applied if no external PersistenceUnitManager specified.</b>
+	 * <p><b>注意: Only applied if no external PersistenceUnitManager specified.</b>
 	 * @see javax.persistence.spi.PersistenceUnitInfo#getJtaDataSource()
 	 * @see #setPersistenceUnitManager
 	 */
@@ -281,7 +281,7 @@ public class LocalContainerEntityManagerFactoryBean extends AbstractEntityManage
 	 * <p>Such post-processors can, for example, register further entity
 	 * classes and jar files, in addition to the metadata read from
 	 * {@code persistence.xml}.
-	 * <p><b>NOTE: Only applied if no external PersistenceUnitManager specified.</b>
+	 * <p><b>注意: Only applied if no external PersistenceUnitManager specified.</b>
 	 * @see #setPersistenceUnitManager
 	 */
 	public void setPersistenceUnitPostProcessors(PersistenceUnitPostProcessor... postProcessors) {
@@ -299,12 +299,12 @@ public class LocalContainerEntityManagerFactoryBean extends AbstractEntityManage
 	 * VM agent specified on JVM startup, and ReflectiveLoadTimeWeaver, which interacts
 	 * with an underlying ClassLoader based on specific extended methods being available
 	 * on it.
-	 * <p><b>NOTE:</b> As of Spring 2.5, the context's default LoadTimeWeaver (defined
+	 * <p><b>注意:</b> As of Spring 2.5, the context's default LoadTimeWeaver (defined
 	 * as bean with name "loadTimeWeaver") will be picked up automatically, if available,
 	 * removing the need for LoadTimeWeaver configuration on each affected target bean.
 	 * Consider using the {@code context:load-time-weaver} XML tag for creating
 	 * such a shared LoadTimeWeaver (autodetecting the environment by default).
-	 * <p><b>NOTE:</b> Only applied if no external PersistenceUnitManager specified.
+	 * <p><b>注意:</b> Only applied if no external PersistenceUnitManager specified.
 	 * Otherwise, the external {@link #setPersistenceUnitManager PersistenceUnitManager}
 	 * is responsible for the weaving configuration.
 	 * @see org.springframework.instrument.classloading.InstrumentationLoadTimeWeaver

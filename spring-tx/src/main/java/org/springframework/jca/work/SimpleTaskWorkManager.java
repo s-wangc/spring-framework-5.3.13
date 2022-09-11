@@ -46,7 +46,7 @@ import org.springframework.util.Assert;
  * for {@link #startWork} and {@link #scheduleWork} calls, by default.
  * These default task executors can be overridden through configuration.
  *
- * <p><b>NOTE: This WorkManager does not provide thread pooling by default!</b>
+ * <p><b>注意: This WorkManager does not provide thread pooling by default!</b>
  * Specify a {@link org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor}
  * (or any other thread-pooling TaskExecutor) as "asyncTaskExecutor" in order to
  * achieve actual thread pooling.

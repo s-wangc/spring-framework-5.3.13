@@ -74,7 +74,7 @@ public interface SimpleJdbcInsertOperations {
 
 	/**
 	 * Include synonyms for the column meta-data lookups via JDBC.
-	 * <p>Note: This is only necessary to include for Oracle since other databases
+	 * <p>注意: This is only necessary to include for Oracle since other databases
 	 * supporting synonyms seems to include the synonyms automatically.
 	 * @return the instance of this SimpleJdbcInsert
 	 */

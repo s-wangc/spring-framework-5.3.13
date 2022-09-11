@@ -42,7 +42,7 @@ import org.springframework.util.Assert;
  * Binds a JDBC Connection from the specified DataSource to the current thread,
  * potentially allowing for one thread-bound Connection per DataSource.
  *
- * <p><b>Note: The DataSource that this transaction manager operates on needs
+ * <p><b>注意: The DataSource that this transaction manager operates on needs
  * to return independent Connections.</b> The Connections may come from a pool
  * (the typical case), but the DataSource must not return thread-scoped /
  * request-scoped Connections or the like. This transaction manager will
@@ -98,7 +98,7 @@ import org.springframework.util.Assert;
  * setup analogous to {@code JtaTransactionManager}, in particular with respect to
  * lazily registered ORM resources (e.g. a Hibernate {@code Session}).
  *
- * <p><b>NOTE: As of 5.3, {@link org.springframework.jdbc.support.JdbcTransactionManager}
+ * <p><b>注意: As of 5.3, {@link org.springframework.jdbc.support.JdbcTransactionManager}
  * is available as an extended subclass which includes commit/rollback exception
  * translation, aligned with {@link org.springframework.jdbc.core.JdbcTemplate}.</b>
  *

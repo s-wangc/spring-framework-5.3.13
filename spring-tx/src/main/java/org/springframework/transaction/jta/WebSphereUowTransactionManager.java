@@ -75,7 +75,7 @@ import org.springframework.util.ReflectionUtils;
  * simply specify the actual location through this transaction manager's
  * "uowManagerName" bean property.
  *
- * <p><b>NOTE: This JtaTransactionManager is intended to refine specific transaction
+ * <p><b>注意: This JtaTransactionManager is intended to refine specific transaction
  * demarcation behavior on Spring's side. It will happily co-exist with independently
  * configured WebSphere transaction strategies in your persistence provider, with no
  * need to specifically connect those setups in any way.</b>

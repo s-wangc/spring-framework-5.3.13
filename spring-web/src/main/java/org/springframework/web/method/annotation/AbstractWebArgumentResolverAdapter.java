@@ -33,7 +33,7 @@ import org.springframework.web.method.support.ModelAndViewContainer;
  * An abstract base class adapting a {@link WebArgumentResolver} to the
  * {@link HandlerMethodArgumentResolver} contract.
  *
- * <p><strong>Note:</strong> This class is provided for backwards compatibility.
+ * <p><strong>注意:</strong> This class is provided for backwards compatibility.
  * However it is recommended to re-write a {@code WebArgumentResolver} as
  * {@code HandlerMethodArgumentResolver}. Since {@link #supportsParameter}
  * can only be implemented by actually resolving the value and then checking

@@ -62,10 +62,10 @@ import org.springframework.web.servlet.View;
  * resolution as standard view name. This is typically used for controller URLs;
  * it is not supposed to be used for JSP URLs - use logical view names there.
  *
- * <p>Note: This class does not support localized resolution, i.e. resolving
+ * <p>注意: This class does not support localized resolution, i.e. resolving
  * a symbolic view name to different resources depending on the current locale.
  *
- * <p><b>Note:</b> When chaining ViewResolvers, a UrlBasedViewResolver will check whether
+ * <p><b>注意:</b> When chaining ViewResolvers, a UrlBasedViewResolver will check whether
  * the {@linkplain AbstractUrlBasedView#checkResource specified resource actually exists}.
  * However, with {@link InternalResourceView}, it is not generally possible to
  * determine the existence of the target resource upfront. In such a scenario,

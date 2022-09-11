@@ -40,7 +40,7 @@ import org.springframework.web.servlet.mvc.annotation.ModelAndViewResolver;
  * type. If neither of these succeeds (essentially simple type other than
  * String), {@link UnsupportedOperationException} is raised.
  *
- * <p><strong>Note:</strong> This class is primarily needed to support
+ * <p><strong>注意:</strong> This class is primarily needed to support
  * {@link ModelAndViewResolver}, which unfortunately cannot be properly
  * adapted to the {@link HandlerMethodReturnValueHandler} contract since the
  * {@link HandlerMethodReturnValueHandler#supportsReturnType} method

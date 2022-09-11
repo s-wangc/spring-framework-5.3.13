@@ -70,7 +70,7 @@ import org.springframework.util.ObjectUtils;
  * It may nevertheless run against a JMS 1.1 driver (bound to the JMS 2.0 API)
  * as long as no actual JMS 2.0 calls are triggered by the application's setup.
  *
- * <p><b>NOTE: This ConnectionFactory requires explicit closing of all Sessions
+ * <p><b>注意: This ConnectionFactory requires explicit closing of all Sessions
  * obtained from its shared Connection.</b> This is the usual recommendation for
  * native JMS access code anyway. However, with this ConnectionFactory, its use
  * is mandatory in order to actually allow for Session reuse.

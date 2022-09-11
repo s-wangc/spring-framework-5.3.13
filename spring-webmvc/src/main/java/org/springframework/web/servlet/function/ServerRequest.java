@@ -266,7 +266,7 @@ public interface ServerRequest {
 	 * }</pre>
 	 * <p>This method works with conditional GET/HEAD requests, but
 	 * also with conditional POST/PUT/DELETE requests.
-	 * <p><strong>Note:</strong> you can use either
+	 * <p><strong>注意:</strong> you can use either
 	 * this {@code #checkNotModified(Instant)} method; or
 	 * {@link #checkNotModified(String)}. If you want enforce both
 	 * a strong entity tag and a Last-Modified value,
@@ -300,7 +300,7 @@ public interface ServerRequest {
 	 * }</pre>
 	 * <p>This method works with conditional GET/HEAD requests, but
 	 * also with conditional POST/PUT/DELETE requests.
-	 * <p><strong>Note:</strong> you can use either
+	 * <p><strong>注意:</strong> you can use either
 	 * this {@link #checkNotModified(Instant)} method; or
 	 * {@code #checkNotModified(String)}. If you want enforce both
 	 * a strong entity tag and a Last-Modified value,

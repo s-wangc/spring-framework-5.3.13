@@ -64,7 +64,7 @@ public interface SingletonBeanRegistry {
 	 * <p>The main purpose of this method is to access manually registered singletons
 	 * (see {@link #registerSingleton}). Can also be used to access a singleton
 	 * defined by a bean definition that already been created, in a raw fashion.
-	 * <p><b>NOTE:</b> This lookup method is not aware of FactoryBean prefixes or aliases.
+	 * <p><b>注意:</b> This lookup method is not aware of FactoryBean prefixes or aliases.
 	 * You need to resolve the canonical bean name first before obtaining the singleton instance.
 	 * @param beanName the name of the bean to look for
 	 * @return the registered singleton object, or {@code null} if none found
@@ -87,7 +87,7 @@ public interface SingletonBeanRegistry {
 	 * <p>Use BeanFactory's {@code containsBean} for general checks whether the
 	 * factory knows about a bean with a given name (whether manually registered singleton
 	 * instance or created by bean definition), also checking ancestor factories.
-	 * <p><b>NOTE:</b> This lookup method is not aware of FactoryBean prefixes or aliases.
+	 * <p><b>注意:</b> This lookup method is not aware of FactoryBean prefixes or aliases.
 	 * You need to resolve the canonical bean name first before checking the singleton status.
 	 * @param beanName the name of the bean to look for
 	 * @return if this bean factory contains a singleton instance with the given name

@@ -176,7 +176,7 @@ public class Jackson2ObjectMapperFactoryBean implements FactoryBean<ObjectMapper
 
 	/**
 	 * Define the format for date/time with the given {@link DateFormat}.
-	 * <p>Note: Setting this property makes the exposed {@link ObjectMapper}
+	 * <p>注意: Setting this property makes the exposed {@link ObjectMapper}
 	 * non-thread-safe, according to Jackson's thread safety rules.
 	 * @see #setSimpleDateFormat(String)
 	 */
@@ -186,7 +186,7 @@ public class Jackson2ObjectMapperFactoryBean implements FactoryBean<ObjectMapper
 
 	/**
 	 * Define the date/time format with a {@link SimpleDateFormat}.
-	 * <p>Note: Setting this property makes the exposed {@link ObjectMapper}
+	 * <p>注意: Setting this property makes the exposed {@link ObjectMapper}
 	 * non-thread-safe, according to Jackson's thread safety rules.
 	 * @see #setDateFormat(DateFormat)
 	 */
@@ -380,7 +380,7 @@ public class Jackson2ObjectMapperFactoryBean implements FactoryBean<ObjectMapper
 
 	/**
 	 * Set a complete list of modules to be registered with the {@link ObjectMapper}.
-	 * <p>Note: If this is set, no finding of modules is going to happen - not by
+	 * <p>注意: If this is set, no finding of modules is going to happen - not by
 	 * Jackson, and not by Spring either (see {@link #setFindModulesViaServiceLoader}).
 	 * As a consequence, specifying an empty list here will suppress any kind of
 	 * module detection.

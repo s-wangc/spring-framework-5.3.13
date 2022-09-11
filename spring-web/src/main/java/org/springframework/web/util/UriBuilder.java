@@ -96,7 +96,7 @@ public interface UriBuilder {
 	 * // Results is "/first-value/second-value/"
 	 * </pre>
 	 * <p>The resulting full path is normalized to eliminate duplicate slashes.
-	 * <p><strong>Note:</strong> When inserting a URI variable value that
+	 * <p><strong>注意:</strong> When inserting a URI variable value that
 	 * contains slashes in a {@link #path(String) path}, whether those are
 	 * encoded depends on the configured encoding mode. For more details, see
 	 * {@link UriComponentsBuilder#encode()}, or otherwise if building URIs
@@ -146,7 +146,7 @@ public interface UriBuilder {
 	 * Parse the given query string into query parameters where parameters are
 	 * separated with {@code '&'} and their values, if any, with {@code '='}.
 	 * The query may contain URI template variables.
-	 * <p><strong>Note: </strong> please, review the Javadoc of
+	 * <p><strong>注意: </strong> please, review the Javadoc of
 	 * {@link #queryParam(String, Object...)} for further notes on the treatment
 	 * and encoding of individual query parameters.
 	 * @param query the query string
@@ -155,7 +155,7 @@ public interface UriBuilder {
 
 	/**
 	 * Clear existing query parameters and then delegate to {@link #query(String)}.
-	 * <p><strong>Note: </strong> please, review the Javadoc of
+	 * <p><strong>注意: </strong> please, review the Javadoc of
 	 * {@link #queryParam(String, Object...)} for further notes on the treatment
 	 * and encoding of individual query parameters.
 	 * @param query the query string; a {@code null} value removes all query parameters.
@@ -167,7 +167,7 @@ public interface UriBuilder {
 	 * contain URI template variables to be expanded later from values. If no
 	 * values are given, the resulting URI will contain the query parameter name
 	 * only, e.g. {@code "?foo"} instead of {@code "?foo=bar"}.
-	 * <p><strong>Note:</strong> encoding, if applied, will only encode characters
+	 * <p><strong>注意:</strong> encoding, if applied, will only encode characters
 	 * that are illegal in a query parameter name or value such as {@code "="}
 	 * or {@code "&"}. All others that are legal as per syntax rules in
 	 * <a href="https://tools.ietf.org/html/rfc3986">RFC 3986</a> are not
@@ -185,7 +185,7 @@ public interface UriBuilder {
 
 	/**
 	 * Variant of {@link #queryParam(String, Object...)} with a Collection.
-	 * <p><strong>Note: </strong> please, review the Javadoc of
+	 * <p><strong>注意: </strong> please, review the Javadoc of
 	 * {@link #queryParam(String, Object...)} for further notes on the treatment
 	 * and encoding of individual query parameters.
 	 * @param name the query parameter name
@@ -207,7 +207,7 @@ public interface UriBuilder {
 
 	/**
 	 * Add multiple query parameters and values.
-	 * <p><strong>Note: </strong> please, review the Javadoc of
+	 * <p><strong>注意: </strong> please, review the Javadoc of
 	 * {@link #queryParam(String, Object...)} for further notes on the treatment
 	 * and encoding of individual query parameters.
 	 * @param params the params
@@ -217,7 +217,7 @@ public interface UriBuilder {
 	/**
 	 * Set the query parameter values replacing existing values, or if no
 	 * values are given, the query parameter is removed.
-	 * <p><strong>Note: </strong> please, review the Javadoc of
+	 * <p><strong>注意: </strong> please, review the Javadoc of
 	 * {@link #queryParam(String, Object...)} for further notes on the treatment
 	 * and encoding of individual query parameters.
 	 * @param name the query parameter name
@@ -228,7 +228,7 @@ public interface UriBuilder {
 
 	/**
 	 * Variant of {@link #replaceQueryParam(String, Object...)} with a Collection.
-	 * <p><strong>Note: </strong> please, review the Javadoc of
+	 * <p><strong>注意: </strong> please, review the Javadoc of
 	 * {@link #queryParam(String, Object...)} for further notes on the treatment
 	 * and encoding of individual query parameters.
 	 * @param name the query parameter name
@@ -240,7 +240,7 @@ public interface UriBuilder {
 
 	/**
 	 * Set the query parameter values after removing all existing ones.
-	 * <p><strong>Note: </strong> please, review the Javadoc of
+	 * <p><strong>注意: </strong> please, review the Javadoc of
 	 * {@link #queryParam(String, Object...)} for further notes on the treatment
 	 * and encoding of individual query parameters.
 	 * @param params the query parameter name

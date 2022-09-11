@@ -108,7 +108,7 @@ public abstract class AbstractMarshaller implements Marshaller, Unmarshaller {
 	 * {@code Source} passed to {@link #unmarshal(Source)} is a {@link SAXSource} or
 	 * {@link StreamSource}. It has no effect for {@link DOMSource} or {@link StAXSource}
 	 * instances.
-	 * <p><strong>Note:</strong> setting this option to {@code true} also
+	 * <p><strong>注意:</strong> setting this option to {@code true} also
 	 * automatically sets {@link #setSupportDtd} to {@code true}.
 	 */
 	public void setProcessExternalEntities(boolean processExternalEntities) {

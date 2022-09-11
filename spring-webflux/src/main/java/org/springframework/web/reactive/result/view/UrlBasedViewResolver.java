@@ -53,7 +53,7 @@ import org.springframework.util.PatternMatchUtils;
  * URL, rather than resolution as standard view name. This is typically used
  * for redirecting to a controller URL after finishing a form workflow.
  *
- * <p>Note: This class does not support localized resolution, i.e. resolving
+ * <p>注意: This class does not support localized resolution, i.e. resolving
  * a symbolic view name to different resources depending on the current locale.
  *
  * @author Rossen Stoyanchev

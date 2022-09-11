@@ -297,7 +297,7 @@ public abstract class AbstractAutoProxyCreator extends ProxyProcessorSupport
 
 	/**
 	 * Build a cache key for the given bean class and bean name.
-	 * <p>Note: As of 4.2.3, this implementation does not return a concatenated
+	 * <p>注意: As of 4.2.3, this implementation does not return a concatenated
 	 * class/name String anymore but rather the most efficient cache key possible:
 	 * a plain bean name, prepended with {@link BeanFactory#FACTORY_BEAN_PREFIX}
 	 * in case of a {@code FactoryBean}; or if no bean name specified, then the

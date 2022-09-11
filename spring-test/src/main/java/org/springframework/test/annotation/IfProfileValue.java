@@ -109,7 +109,7 @@ public @interface IfProfileValue {
 	/**
 	 * A single, permissible {@code value} of the <em>profile value</em>
 	 * for the given {@link #name}.
-	 * <p>Note: Assigning values to both {@code #value} and {@link #values}
+	 * <p>注意: Assigning values to both {@code #value} and {@link #values}
 	 * will lead to a configuration conflict.
 	 */
 	String value() default "";
@@ -117,7 +117,7 @@ public @interface IfProfileValue {
 	/**
 	 * A list of all permissible {@code values} of the <em>profile value</em>
 	 * for the given {@link #name}.
-	 * <p>Note: Assigning values to both {@link #value} and {@code #values}
+	 * <p>注意: Assigning values to both {@link #value} and {@code #values}
 	 * will lead to a configuration conflict.
 	 */
 	String[] values() default {};

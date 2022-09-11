@@ -75,7 +75,7 @@ public abstract class AbstractTraceInterceptor implements MethodInterceptor, Ser
 	 * log messages for a particular method invocation: a dynamic one for the
 	 * {@code Class} getting called, or a static one for the {@code Class}
 	 * of the trace interceptor.
-	 * <p><b>NOTE:</b> Specify either this property or "loggerName", not both.
+	 * <p><b>注意:</b> Specify either this property or "loggerName", not both.
 	 * @see #getLoggerForInvocation(org.aopalliance.intercept.MethodInvocation)
 	 */
 	public void setUseDynamicLogger(boolean useDynamicLogger) {
@@ -90,7 +90,7 @@ public abstract class AbstractTraceInterceptor implements MethodInterceptor, Ser
 	 * <p>This can be specified to not log into the category of a class
 	 * (whether this interceptor's class or the class getting called)
 	 * but rather into a specific named category.
-	 * <p><b>NOTE:</b> Specify either this property or "useDynamicLogger", not both.
+	 * <p><b>注意:</b> Specify either this property or "useDynamicLogger", not both.
 	 * @see org.apache.commons.logging.LogFactory#getLog(String)
 	 * @see java.util.logging.Logger#getLogger(String)
 	 */

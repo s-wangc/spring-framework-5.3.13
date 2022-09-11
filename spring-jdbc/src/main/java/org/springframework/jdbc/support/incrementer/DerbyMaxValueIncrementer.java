@@ -20,7 +20,7 @@ import javax.sql.DataSource;
 
 /**
  * {@link DataFieldMaxValueIncrementer} that increments the maximum value of a given Derby table
- * with the equivalent of an auto-increment column. Note: If you use this class, your Derby key
+ * with the equivalent of an auto-increment column. 注意: If you use this class, your Derby key
  * column should <i>NOT</i> be defined as an IDENTITY column, as the sequence table does the job.
  *
  * <p>The sequence is kept in a table. There should be one sequence table per

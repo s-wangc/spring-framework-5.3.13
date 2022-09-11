@@ -29,7 +29,7 @@ import org.springframework.orm.jpa.EntityManagerHolder;
  * for a given {@link org.hibernate.SessionFactory}. Extends {@link EntityManagerHolder}
  * as of 5.1, automatically exposing an {@code EntityManager} handle on Hibernate 5.2+.
  *
- * <p>Note: This is an SPI class, not intended to be used by applications.
+ * <p>注意: This is an SPI class, not intended to be used by applications.
  *
  * @author Juergen Hoeller
  * @since 4.2

@@ -67,7 +67,7 @@ https://www.reactive-streams.org/reactive-streams-1.0.1-javadoc/org/reactivestre
 can then write to the response. The main purpose of Reactive Streams is to let the
   subscriber control how quickly or how slowly the publisher produces data.
 
-NOTE: *Common question: what if a publisher cannot slow down?* +
+注意: *Common question: what if a publisher cannot slow down?* +
 The purpose of Reactive Streams is only to establish the mechanism and a boundary.
 If a publisher cannot slow down, it has to decide whether to buffer, drop, or fail.
 
@@ -100,7 +100,7 @@ operations on the output, but you need to adapt the output for use with another 
 Whenever feasible (for example, annotated controllers), WebFlux adapts transparently to the use
 of RxJava or another reactive library. See <<webflux-reactive-libraries>> for more details.
 
-NOTE: In addition to Reactive APIs, WebFlux can also be used with
+注意: In addition to Reactive APIs, WebFlux can also be used with
 <<languages.adoc#coroutines, Coroutines>> APIs in Kotlin which provides a more imperative style of programming.
 The following Kotlin code samples will be provided with Coroutines APIs.
 
@@ -650,7 +650,7 @@ a proxy at the boundary of trust should be configured to remove untrusted forwar
 from the outside. You can also configure the `ForwardedHeaderTransformer` with
 `removeOnly=true`, in which case it removes but does not use the headers.
 
-NOTE: In 5.1 `ForwardedHeaderFilter` was deprecated and superceded by
+注意: In 5.1 `ForwardedHeaderFilter` was deprecated and superceded by
 `ForwardedHeaderTransformer` so forwarded headers can be processed earlier, before the
 exchange is created. If the filter is configured anyway, it is taken out of the list of
 filters, and `ForwardedHeaderTransformer` is used instead.
@@ -1108,7 +1108,7 @@ Applications can declare the infrastructure beans (listed under
 However, in most cases, the <<webflux-config>> is the best starting point. It declares the
 required beans and provides a higher-level configuration callback API to customize it.
 
-NOTE: Spring Boot relies on the WebFlux config to configure Spring WebFlux and also provides
+注意: Spring Boot relies on the WebFlux config to configure Spring WebFlux and also provides
 many extra convenient options.
 
 
@@ -1545,7 +1545,7 @@ through `PropertyPlaceHolderConfigurer` against local, system, environment, and 
 sources. You ca use this to, for example, parameterize a base URL based on some external
 configuration.
 
-NOTE: Spring WebFlux uses `PathPattern` and the `PathPatternParser` for URI path matching support.
+注意: Spring WebFlux uses `PathPattern` and the `PathPatternParser` for URI path matching support.
 Both classes are located in `spring-web` and are expressly designed for use with HTTP URL
 paths in web applications where a large number of URI path patterns are matched at runtime.
 
@@ -3083,7 +3083,7 @@ which allows rendering only a subset of all fields in an `Object`. To use it wit
 	}
 ----
 
-NOTE: `@JsonView` allows an array of view classes but you can only specify only one per
+注意: `@JsonView` allows an array of view classes but you can only specify only one per
 controller method. Use a composite interface if you need to activate multiple views.
 
 
@@ -3151,7 +3151,7 @@ The following example adds one attribute only:
 	}
 ----
 
-NOTE: When a name is not explicitly specified, a default name is chosen based on the type,
+注意: When a name is not explicitly specified, a default name is chosen based on the type,
 as explained in the javadoc for {api-spring-framework}/core/Conventions.html[`Conventions`].
 You can always assign an explicit name by using the overloaded `addAttribute` method or
 through the name attribute on `@ModelAttribute` (for a return value).
@@ -3374,7 +3374,7 @@ argument signature and to declare your primary root exception mappings on a
 `@ControllerAdvice` prioritized with a corresponding order.
 See <<web.adoc#mvc-ann-exceptionhandler, the MVC section>> for details.
 
-NOTE: An `@ExceptionHandler` method in WebFlux supports the same method arguments and
+注意: An `@ExceptionHandler` method in WebFlux supports the same method arguments and
 return values as a `@RequestMapping` method, with the exception of request body-
 and `@ModelAttribute`-related method arguments.
 
@@ -3394,7 +3394,7 @@ of error details in the response body is application-specific. However, a
 value to set the status and the body of the response. Such methods can also be declared
 in `@ControllerAdvice` classes to apply them globally.
 
-NOTE: Note that Spring WebFlux does not have an equivalent for the Spring MVC
+注意: Note that Spring WebFlux does not have an equivalent for the Spring MVC
 `ResponseEntityExceptionHandler`, because WebFlux raises only `ResponseStatusException`
 (or subclasses thereof), and those do not need to be translated to
 an HTTP status code.
@@ -3819,7 +3819,7 @@ in the HTML spec. For such cases date and time formatting can be customized as f
 	}
 ----
 
-NOTE: See <<core.adoc#format-FormatterRegistrar-SPI, `FormatterRegistrar` SPI>>
+注意: See <<core.adoc#format-FormatterRegistrar-SPI, `FormatterRegistrar` SPI>>
 and the `FormattingConversionServiceFactoryBean` for more information on when to
 use `FormatterRegistrar` implementations.
 

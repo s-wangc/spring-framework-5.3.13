@@ -69,7 +69,7 @@ import org.springframework.util.StringUtils;
  * specifically tailored for scripts and not built into Spring's core
  * container itself but rather implemented as an extension.
  *
- * <p><b>NOTE:</b> The most important characteristic of this post-processor
+ * <p><b>注意:</b> The most important characteristic of this post-processor
  * is that constructor arguments are applied to the
  * {@link org.springframework.scripting.ScriptFactory} instance
  * while bean property values are applied to the generated scripted object.
@@ -99,7 +99,7 @@ import org.springframework.util.StringUtils;
  *   &lt;property name="message" value="Hello World!"/&gt;
  * &lt;/bean&gt;</pre>
  *
- * <p><b>NOTE:</b> Please note that the above excerpt from a Spring
+ * <p><b>注意:</b> Please note that the above excerpt from a Spring
  * XML bean definition file uses just the &lt;bean/&gt;-style syntax
  * (in an effort to illustrate using the {@link ScriptFactoryPostProcessor} itself).
  * In reality, you would never create a &lt;bean/&gt; definition for a

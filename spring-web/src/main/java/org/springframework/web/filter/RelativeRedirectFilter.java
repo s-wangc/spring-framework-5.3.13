@@ -34,7 +34,7 @@ import org.springframework.util.Assert;
  * <a href="https://tools.ietf.org/html/rfc7231#section-7.1.2"> RFC 7231 Section 7.1.2</a>,
  * and furthermore not necessarily taking into account "X-Forwarded" headers.
  *
- * <p><strong>Note:</strong> While relative redirects are recommended in the
+ * <p><strong>注意:</strong> While relative redirects are recommended in the
  * RFC, under some configurations with reverse proxies they may not work.
  *
  * @author Rob Winch

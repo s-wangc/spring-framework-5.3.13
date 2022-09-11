@@ -174,7 +174,7 @@ class TestPropertySourceAttributes {
 
 	/**
 	 * Get the resource locations that were declared via {@code @TestPropertySource}.
-	 * <p>Note: The returned value may represent a <em>detected default</em>
+	 * <p>注意: The returned value may represent a <em>detected default</em>
 	 * or merged locations that do not match the original value declared via a
 	 * single {@code @TestPropertySource} annotation.
 	 * @return the resource locations; potentially <em>empty</em>
@@ -196,7 +196,7 @@ class TestPropertySourceAttributes {
 
 	/**
 	 * Get the inlined properties that were declared via {@code @TestPropertySource}.
-	 * <p>Note: The returned value may represent merged properties that do not
+	 * <p>注意: The returned value may represent merged properties that do not
 	 * match the original value declared via a single {@code @TestPropertySource}
 	 * annotation.
 	 * @return the inlined properties; potentially <em>empty</em>

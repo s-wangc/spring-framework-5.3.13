@@ -33,7 +33,7 @@ import org.springframework.format.datetime.DateFormatterRegistrar;
  * Installs lower-level type converters required to integrate
  * JSR-310 support into Spring's field formatting system.
  *
- * <p>Note: {@link DateTimeFormatterRegistrar} installs these converters but
+ * <p>注意: {@link DateTimeFormatterRegistrar} installs these converters but
  * does not rely on them for its formatters. They are just being registered
  * for custom conversion scenarios between different JSR-310 value types
  * and also between {@link java.util.Calendar} and JSR-310 value types.

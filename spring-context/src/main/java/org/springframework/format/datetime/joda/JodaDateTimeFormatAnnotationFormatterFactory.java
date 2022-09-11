@@ -39,7 +39,7 @@ import org.springframework.util.StringUtils;
 /**
  * Formats fields annotated with the {@link DateTimeFormat} annotation using Joda-Time.
  *
- * <p><b>NOTE:</b> Spring's Joda-Time support requires Joda-Time 2.x, as of Spring 4.0.
+ * <p><b>注意:</b> Spring's Joda-Time support requires Joda-Time 2.x, as of Spring 4.0.
  *
  * @author Keith Donald
  * @author Juergen Hoeller
@@ -55,7 +55,7 @@ public class JodaDateTimeFormatAnnotationFormatterFactory extends EmbeddedValueR
 
 	static {
 		// Create the set of field types that may be annotated with @DateTimeFormat.
-		// Note: the 3 ReadablePartial concrete types are registered explicitly since
+		// 注意: the 3 ReadablePartial concrete types are registered explicitly since
 		// addFormatterForFieldType rules exist for each of these types
 		// (if we did not do this, the default byType rules for LocalDate, LocalTime,
 		// and LocalDateTime would take precedence over the annotation rule, which

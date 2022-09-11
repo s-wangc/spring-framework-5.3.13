@@ -71,7 +71,7 @@ public class HybridContextLoaderTests {
 		assertThat(fooFromXml).isEqualTo("XML");
 		assertThat(fooFromJava).isEqualTo("Java");
 
-		// Note: the XML bean definition for "enigma" always wins since
+		// 注意: the XML bean definition for "enigma" always wins since
 		// ConfigurationClassBeanDefinitionReader.isOverriddenByExistingDefinition()
 		// lets XML bean definitions override those "discovered" later via an
 		// @Bean method.

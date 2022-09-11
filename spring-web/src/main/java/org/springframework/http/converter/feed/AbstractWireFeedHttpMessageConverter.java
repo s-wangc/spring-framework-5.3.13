@@ -41,7 +41,7 @@ import org.springframework.util.StringUtils;
  * Abstract base class for Atom and RSS Feed message converters, using the
  * <a href="https://github.com/rometools/rome">ROME tools</a> project.
  *
- * <p><b>NOTE: As of Spring 4.1, this is based on the {@code com.rometools}
+ * <p><b>注意: As of Spring 4.1, this is based on the {@code com.rometools}
  * variant of ROME, version 1.5. Please upgrade your build dependency.</b>
  *
  * @author Arjen Poutsma

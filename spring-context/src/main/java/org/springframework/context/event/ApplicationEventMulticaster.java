@@ -75,7 +75,7 @@ public interface ApplicationEventMulticaster {
 	 * {@code ApplicationListener} instances (which includes adapter classes
 	 * such as {@link ApplicationListenerMethodAdapter}, e.g. for annotated
 	 * {@link EventListener} methods).
-	 * <p>Note: This just applies to instance registrations, not to listeners
+	 * <p>注意: This just applies to instance registrations, not to listeners
 	 * registered by bean name.
 	 * @param predicate the predicate to identify listener instances to remove,
 	 * e.g. checking {@link SmartApplicationListener#getListenerId()}
@@ -89,7 +89,7 @@ public interface ApplicationEventMulticaster {
 	 * Remove all matching listener beans from the set of registered
 	 * listener bean names (referring to bean classes which in turn
 	 * implement the {@link ApplicationListener} interface directly).
-	 * <p>Note: This just applies to bean name registrations, not to
+	 * <p>注意: This just applies to bean name registrations, not to
 	 * programmatically registered {@code ApplicationListener} instances.
 	 * @param predicate the predicate to identify listener bean names to remove
 	 * @since 5.3.5

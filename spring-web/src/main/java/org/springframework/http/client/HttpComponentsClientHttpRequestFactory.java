@@ -50,7 +50,7 @@ import org.springframework.util.Assert;
  * <p>Allows to use a pre-configured {@link HttpClient} instance -
  * potentially with authentication, HTTP connection pooling, etc.
  *
- * <p><b>NOTE:</b> Requires Apache HttpComponents 4.3 or higher, as of Spring 4.0.
+ * <p><b>注意:</b> Requires Apache HttpComponents 4.3 or higher, as of Spring 4.0.
  *
  * @author Oleg Kalnichevski
  * @author Arjen Poutsma

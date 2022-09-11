@@ -131,7 +131,7 @@ public class ContentNegotiationManagerFactoryBean
 
 	/**
 	 * Set the exact list of strategies to use.
-	 * <p><strong>Note:</strong> use of this method is mutually exclusive with
+	 * <p><strong>注意:</strong> use of this method is mutually exclusive with
 	 * use of all other setters in this class which customize a default, fixed
 	 * set of strategies. See class level doc for more details.
 	 * @param strategies 要使用的strategies
@@ -185,7 +185,7 @@ public class ContentNegotiationManagerFactoryBean
 	 * path extension strategy} can fall back on lookups via
 	 * {@link ServletContext#getMimeType} and
 	 * {@link org.springframework.http.MediaTypeFactory}.
-	 * <p><strong>Note:</strong> Mappings registered here may be accessed via
+	 * <p><strong>注意:</strong> Mappings registered here may be accessed via
 	 * {@link ContentNegotiationManager#getMediaTypeMappings()} and may be used
 	 * not only in the parameter and path extension strategies. For example,
 	 * with the Spring MVC config, e.g. {@code @EnableWebMvc} or

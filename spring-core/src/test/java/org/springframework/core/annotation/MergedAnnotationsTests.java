@@ -264,7 +264,7 @@ class MergedAnnotationsTests {
 	}
 
 	/**
-	 * Note: this functionality is required by
+	 * 注意: this functionality is required by
 	 * {@code org.springframework.context.annotation.ProfileCondition}.
 	 */
 	@Test
@@ -977,7 +977,7 @@ class MergedAnnotationsTests {
 		assertThat(MergedAnnotations.from(NonAnnotatedClass.class,
 				SearchStrategy.SUPERCLASS).get(
 						Transactional.class).getSource()).isNull();
-		// inherited class-level annotation; note: @Transactional is inherited
+		// inherited class-level annotation; 注意: @Transactional is inherited
 		assertThat(MergedAnnotations.from(InheritedAnnotationInterface.class,
 				SearchStrategy.SUPERCLASS).get(
 						Transactional.class).getSource()).isEqualTo(
@@ -993,7 +993,7 @@ class MergedAnnotationsTests {
 				SearchStrategy.SUPERCLASS).get(
 						Transactional.class).getSource()).isEqualTo(
 								InheritedAnnotationClass.class);
-		// non-inherited class-level annotation; note: @Order is not inherited,
+		// non-inherited class-level annotation; 注意: @Order is not inherited,
 		// but we should still find it on classes.
 		assertThat(MergedAnnotations.from(NonInheritedAnnotationInterface.class,
 				SearchStrategy.SUPERCLASS).get(Order.class).getSource()).isEqualTo(
@@ -1016,7 +1016,7 @@ class MergedAnnotationsTests {
 				transactionalCandidateList)).isNull();
 		assertThat(getSuperClassSourceWithTypeIn(NonAnnotatedClass.class,
 				transactionalCandidateList)).isNull();
-		// inherited class-level annotation; note: @Transactional is inherited
+		// inherited class-level annotation; 注意: @Transactional is inherited
 		assertThat(getSuperClassSourceWithTypeIn(InheritedAnnotationInterface.class,
 				transactionalCandidateList)).isEqualTo(
 						InheritedAnnotationInterface.class);
@@ -1026,7 +1026,7 @@ class MergedAnnotationsTests {
 				transactionalCandidateList)).isEqualTo(InheritedAnnotationClass.class);
 		assertThat(getSuperClassSourceWithTypeIn(SubInheritedAnnotationClass.class,
 				transactionalCandidateList)).isEqualTo(InheritedAnnotationClass.class);
-		// non-inherited class-level annotation; note: @Order is not inherited,
+		// non-inherited class-level annotation; 注意: @Order is not inherited,
 		// but should still find it on classes.
 		List<Class<? extends Annotation>> orderCandidateList = Collections.singletonList(
 				Order.class);
@@ -1048,7 +1048,7 @@ class MergedAnnotationsTests {
 				candidates)).isNull();
 		assertThat(getSuperClassSourceWithTypeIn(NonAnnotatedClass.class,
 				candidates)).isNull();
-		// inherited class-level annotation; note: @Transactional is inherited
+		// inherited class-level annotation; 注意: @Transactional is inherited
 		assertThat(getSuperClassSourceWithTypeIn(InheritedAnnotationInterface.class,
 				candidates)).isEqualTo(InheritedAnnotationInterface.class);
 		assertThat(getSuperClassSourceWithTypeIn(SubInheritedAnnotationInterface.class,
@@ -1057,7 +1057,7 @@ class MergedAnnotationsTests {
 				candidates)).isEqualTo(InheritedAnnotationClass.class);
 		assertThat(getSuperClassSourceWithTypeIn(SubInheritedAnnotationClass.class,
 				candidates)).isEqualTo(InheritedAnnotationClass.class);
-		// non-inherited class-level annotation; note: @Order is not inherited,
+		// non-inherited class-level annotation; 注意: @Order is not inherited,
 		// but findAnnotationDeclaringClassForTypes() should still find it on
 		// classes.
 		assertThat(getSuperClassSourceWithTypeIn(NonInheritedAnnotationInterface.class,
@@ -1095,7 +1095,7 @@ class MergedAnnotationsTests {
 				Transactional.class).isDirectlyPresent()).isFalse();
 		assertThat(MergedAnnotations.from(NonAnnotatedClass.class).isDirectlyPresent(
 				Transactional.class)).isFalse();
-		// inherited class-level annotation; note: @Transactional is inherited
+		// inherited class-level annotation; 注意: @Transactional is inherited
 		assertThat(MergedAnnotations.from(InheritedAnnotationInterface.class).get(
 				Transactional.class).isDirectlyPresent()).isTrue();
 		assertThat(MergedAnnotations.from(
@@ -1116,7 +1116,7 @@ class MergedAnnotationsTests {
 		assertThat(MergedAnnotations.from(
 				SubInheritedAnnotationClass.class).isDirectlyPresent(
 						Transactional.class)).isFalse();
-		// non-inherited class-level annotation; note: @Order is not inherited
+		// non-inherited class-level annotation; 注意: @Order is not inherited
 		assertThat(MergedAnnotations.from(NonInheritedAnnotationInterface.class).get(
 				Order.class).isDirectlyPresent()).isTrue();
 		assertThat(MergedAnnotations.from(
@@ -1148,7 +1148,7 @@ class MergedAnnotationsTests {
 		assertThat(MergedAnnotations.from(NonAnnotatedClass.class,
 				SearchStrategy.INHERITED_ANNOTATIONS).get(
 						Transactional.class).getAggregateIndex()).isEqualTo(-1);
-		// inherited class-level annotation; note: @Transactional is inherited
+		// inherited class-level annotation; 注意: @Transactional is inherited
 		assertThat(MergedAnnotations.from(InheritedAnnotationInterface.class,
 				SearchStrategy.INHERITED_ANNOTATIONS).get(
 						Transactional.class).getAggregateIndex()).isEqualTo(0);
@@ -1163,7 +1163,7 @@ class MergedAnnotationsTests {
 		assertThat(MergedAnnotations.from(SubInheritedAnnotationClass.class,
 				SearchStrategy.INHERITED_ANNOTATIONS).get(
 						Transactional.class).getAggregateIndex()).isEqualTo(1);
-		// non-inherited class-level annotation; note: @Order is not inherited
+		// non-inherited class-level annotation; 注意: @Order is not inherited
 		assertThat(MergedAnnotations.from(NonInheritedAnnotationInterface.class,
 				SearchStrategy.INHERITED_ANNOTATIONS).get(
 						Order.class).getAggregateIndex()).isEqualTo(0);

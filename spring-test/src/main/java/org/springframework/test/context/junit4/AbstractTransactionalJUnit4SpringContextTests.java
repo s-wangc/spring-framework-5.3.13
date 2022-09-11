@@ -84,7 +84,7 @@ import org.springframework.util.Assert;
  * and specify your runner of choice via {@link org.junit.runner.RunWith @RunWith(...)}.</li>
  * </ul>
  *
- * <p><strong>NOTE:</strong> This class requires JUnit 4.12 or higher.
+ * <p><strong>注意:</strong> This class requires JUnit 4.12 or higher.
  *
  * @author Sam Brannen
  * @author Juergen Hoeller

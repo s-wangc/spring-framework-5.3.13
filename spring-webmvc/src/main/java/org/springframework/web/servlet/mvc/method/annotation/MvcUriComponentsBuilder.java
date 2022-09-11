@@ -82,7 +82,7 @@ import org.springframework.web.util.UriComponentsBuilder;
  * {@link #relativeTo(org.springframework.web.util.UriComponentsBuilder)}.
  * </ul>
  *
- * <p><strong>Note:</strong> This class uses values from "Forwarded"
+ * <p><strong>注意:</strong> This class uses values from "Forwarded"
  * (<a href="https://tools.ietf.org/html/rfc7239">RFC 7239</a>),
  * "X-Forwarded-Host", "X-Forwarded-Port", and "X-Forwarded-Proto" headers,
  * if present, in order to reflect the client-originated protocol and address.
@@ -149,7 +149,7 @@ public class MvcUriComponentsBuilder {
 	 * Create a {@link UriComponentsBuilder} from the mapping of a controller class
 	 * and current request information including Servlet mapping. If the controller
 	 * contains multiple mappings, only the first one is used.
-	 * <p><strong>Note:</strong> This method extracts values from "Forwarded"
+	 * <p><strong>注意:</strong> This method extracts values from "Forwarded"
 	 * and "X-Forwarded-*" headers if found. See class-level docs.
 	 * @param controllerType the controller to build a URI for
 	 * @return a UriComponentsBuilder instance (never {@code null})
@@ -163,7 +163,7 @@ public class MvcUriComponentsBuilder {
 	 * {@code UriComponentsBuilder} representing the base URL. This is useful
 	 * when using MvcUriComponentsBuilder outside the context of processing a
 	 * request or to apply a custom baseUrl not matching the current request.
-	 * <p><strong>Note:</strong> This method extracts values from "Forwarded"
+	 * <p><strong>注意:</strong> This method extracts values from "Forwarded"
 	 * and "X-Forwarded-*" headers if found. See class-level docs.
 	 * @param builder the builder for the base URL; the builder will be cloned
 	 * and therefore not modified and may be re-used for further calls.
@@ -189,7 +189,7 @@ public class MvcUriComponentsBuilder {
 	 * Create a {@link UriComponentsBuilder} from the mapping of a controller
 	 * method and an array of method argument values. This method delegates
 	 * to {@link #fromMethod(Class, Method, Object...)}.
-	 * <p><strong>Note:</strong> This method extracts values from "Forwarded"
+	 * <p><strong>注意:</strong> This method extracts values from "Forwarded"
 	 * and "X-Forwarded-*" headers if found. See class-level docs.
 	 * @param controllerType the controller
 	 * @param methodName the method name
@@ -210,7 +210,7 @@ public class MvcUriComponentsBuilder {
 	 * accepts a {@code UriComponentsBuilder} representing the base URL. This is
 	 * useful when using MvcUriComponentsBuilder outside the context of processing
 	 * a request or to apply a custom baseUrl not matching the current request.
-	 * <p><strong>Note:</strong> This method extracts values from "Forwarded"
+	 * <p><strong>注意:</strong> This method extracts values from "Forwarded"
 	 * and "X-Forwarded-*" headers if found. See class-level docs.
 	 * @param builder the builder for the base URL; the builder will be cloned
 	 * and therefore not modified and may be re-used for further calls.
@@ -236,7 +236,7 @@ public class MvcUriComponentsBuilder {
 	 * {@link org.springframework.web.method.support.UriComponentsContributor
 	 * UriComponentsContributor}) while remaining argument values are ignored and
 	 * can be {@code null}.
-	 * <p><strong>Note:</strong> This method extracts values from "Forwarded"
+	 * <p><strong>注意:</strong> This method extracts values from "Forwarded"
 	 * and "X-Forwarded-*" headers if found. See class-level docs.
 	 * @param controllerType controller类型
 	 * @param method the controller method
@@ -254,7 +254,7 @@ public class MvcUriComponentsBuilder {
 	 * This is useful when using MvcUriComponentsBuilder outside the context of
 	 * processing a request or to apply a custom baseUrl not matching the
 	 * current request.
-	 * <p><strong>Note:</strong> This method extracts values from "Forwarded"
+	 * <p><strong>注意:</strong> This method extracts values from "Forwarded"
 	 * and "X-Forwarded-*" headers if found. See class-level docs.
 	 * @param baseUrl the builder for the base URL; the builder will be cloned
 	 * and therefore not modified and may be re-used for further calls.
@@ -302,7 +302,7 @@ public class MvcUriComponentsBuilder {
 	 * controller.getAddressesForCountry("US")
 	 * builder = MvcUriComponentsBuilder.fromMethodCall(controller);
 	 * </pre>
-	 * <p><strong>Note:</strong> This method extracts values from "Forwarded"
+	 * <p><strong>注意:</strong> This method extracts values from "Forwarded"
 	 * and "X-Forwarded-*" headers if found. See class-level docs.
 	 * @param info either the value returned from a "mock" controller
 	 * invocation or the "mock" controller itself after an invocation
@@ -324,7 +324,7 @@ public class MvcUriComponentsBuilder {
 	 * {@code UriComponentsBuilder} representing the base URL. This is useful
 	 * when using MvcUriComponentsBuilder outside the context of processing a
 	 * request or to apply a custom baseUrl not matching the current request.
-	 * <p><strong>Note:</strong> This method extracts values from "Forwarded"
+	 * <p><strong>注意:</strong> This method extracts values from "Forwarded"
 	 * and "X-Forwarded-*" headers if found. See class-level docs.
 	 * @param builder the builder for the base URL; the builder will be cloned
 	 * and therefore not modified and may be re-used for further calls.
@@ -351,7 +351,7 @@ public class MvcUriComponentsBuilder {
 	 * <pre class="code">
 	 * MvcUriComponentsBuilder.fromMethodCall(on(FooController.class).getFoo(1)).build();
 	 * </pre>
-	 * <p><strong>Note:</strong> This method extracts values from "Forwarded"
+	 * <p><strong>注意:</strong> This method extracts values from "Forwarded"
 	 * and "X-Forwarded-*" headers if found. See class-level docs.
 	 * @param controllerType the target controller
 	 */
@@ -375,7 +375,7 @@ public class MvcUriComponentsBuilder {
 	 * fooController.saveFoo(2, null);
 	 * builder = MvcUriComponentsBuilder.fromMethodCall(fooController);
 	 * </pre>
-	 * <p><strong>Note:</strong> This method extracts values from "Forwarded"
+	 * <p><strong>注意:</strong> This method extracts values from "Forwarded"
 	 * and "X-Forwarded-*" headers if found. See class-level docs.
 	 * @param controllerType the target controller
 	 */
@@ -420,7 +420,7 @@ public class MvcUriComponentsBuilder {
 	 * <p>Note that it's not necessary to specify all arguments. Only the ones
 	 * required to prepare the URL, mainly {@code @RequestParam} and {@code @PathVariable}).
 	 *
-	 * <p><strong>Note:</strong> This method extracts values from "Forwarded"
+	 * <p><strong>注意:</strong> This method extracts values from "Forwarded"
 	 * and "X-Forwarded-*" headers if found. See class-level docs.
 	 * @param mappingName the mapping name
 	 * @return a builder to prepare the URI String
@@ -437,7 +437,7 @@ public class MvcUriComponentsBuilder {
 	 * {@code UriComponentsBuilder} representing the base URL. This is useful
 	 * when using MvcUriComponentsBuilder outside the context of processing a
 	 * request or to apply a custom baseUrl not matching the current request.
-	 * <p><strong>Note:</strong> This method extracts values from "Forwarded"
+	 * <p><strong>注意:</strong> This method extracts values from "Forwarded"
 	 * and "X-Forwarded-*" headers if found. See class-level docs.
 	 * @param builder the builder for the base URL; the builder will be cloned
 	 * and therefore not modified and may be re-used for further calls.
@@ -478,7 +478,7 @@ public class MvcUriComponentsBuilder {
 	/**
 	 * An alternative to {@link #fromController(Class)} for use with an instance
 	 * of this class created via a call to {@link #relativeTo}.
-	 * <p><strong>Note:</strong> This method extracts values from "Forwarded"
+	 * <p><strong>注意:</strong> This method extracts values from "Forwarded"
 	 * and "X-Forwarded-*" headers if found. See class-level docs.
 	 * @since 4.2
 	 */
@@ -489,7 +489,7 @@ public class MvcUriComponentsBuilder {
 	/**
 	 * An alternative to {@link #fromMethodName(Class, String, Object...)}} for
 	 * use with an instance of this class created via {@link #relativeTo}.
-	 * <p><strong>Note:</strong> This method extracts values from "Forwarded"
+	 * <p><strong>注意:</strong> This method extracts values from "Forwarded"
 	 * and "X-Forwarded-*" headers if found. See class-level docs.
 	 * @since 4.2
 	 */
@@ -500,7 +500,7 @@ public class MvcUriComponentsBuilder {
 	/**
 	 * An alternative to {@link #fromMethodCall(Object)} for use with an instance
 	 * of this class created via {@link #relativeTo}.
-	 * <p><strong>Note:</strong> This method extracts values from "Forwarded"
+	 * <p><strong>注意:</strong> This method extracts values from "Forwarded"
 	 * and "X-Forwarded-*" headers if found. See class-level docs.
 	 * @since 4.2
 	 */
@@ -511,7 +511,7 @@ public class MvcUriComponentsBuilder {
 	/**
 	 * An alternative to {@link #fromMappingName(String)} for use with an instance
 	 * of this class created via {@link #relativeTo}.
-	 * <p><strong>Note:</strong> This method extracts values from "Forwarded"
+	 * <p><strong>注意:</strong> This method extracts values from "Forwarded"
 	 * and "X-Forwarded-*" headers if found. See class-level docs.
 	 * @since 4.2
 	 */
@@ -522,7 +522,7 @@ public class MvcUriComponentsBuilder {
 	/**
 	 * An alternative to {@link #fromMethod(Class, Method, Object...)}
 	 * for use with an instance of this class created via {@link #relativeTo}.
-	 * <p><strong>Note:</strong> This method extracts values from "Forwarded"
+	 * <p><strong>注意:</strong> This method extracts values from "Forwarded"
 	 * and "X-Forwarded-*" headers if found. See class-level docs.
 	 * @since 4.2
 	 */

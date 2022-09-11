@@ -38,7 +38,7 @@ import org.springframework.lang.Nullable;
  * environment, simply using regular local threads otherwise - without conditional
  * setup (i.e. without profiles).
  *
- * <p>Note: This class is not strictly JSR-236 based; it can work with any regular
+ * <p>注意: This class is not strictly JSR-236 based; it can work with any regular
  * {@link java.util.concurrent.ThreadFactory} that can be found in JNDI. Therefore,
  * the default JNDI name "java:comp/DefaultManagedThreadFactory" can be customized
  * through the {@link #setJndiName "jndiName"} bean property.

@@ -32,7 +32,7 @@ import org.springframework.lang.Nullable;
  * {@code AddressValidator} validates "address", not being aware
  * that this is a subobject of customer.
  *
- * <p>Note: {@code Errors} objects are single-threaded.
+ * <p>注意: {@code Errors} objects are single-threaded.
  *
  * @author Rod Johnson
  * @author Juergen Hoeller

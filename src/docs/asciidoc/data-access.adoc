@@ -324,11 +324,11 @@ The `JtaTransactionManager` does not need to know about the `DataSource` (or any
 specific resources) because it uses the container's global transaction management
 infrastructure.
 
-NOTE: The preceding definition of the `dataSource` bean uses the `<jndi-lookup/>` tag
+注意: The preceding definition of the `dataSource` bean uses the `<jndi-lookup/>` tag
 from the `jee` namespace. For more information see
 <<integration.adoc#xsd-schemas-jee, The JEE Schema>>.
 
-NOTE: If you use JTA, your transaction manager definition should look the same, regardless
+注意: If you use JTA, your transaction manager definition should look the same, regardless
 of what data access technology you use, be it JDBC, Hibernate JPA, or any other supported
 technology. This is due to the fact that JTA transactions are global transactions, which
 can enlist any transactional resource.
@@ -348,7 +348,7 @@ application code can use to obtain Hibernate `Session` instances.
 The `DataSource` bean definition is similar to the local JDBC example shown previously
 and, thus, is not shown in the following example.
 
-NOTE: If the `DataSource` (used by any non-JTA transaction manager) is looked up through
+注意: If the `DataSource` (used by any non-JTA transaction manager) is looked up through
 JNDI and managed by a Java EE container, it should be non-transactional, because the
 Spring Framework (rather than the Java EE container) manages the transactions.
 
@@ -515,7 +515,7 @@ abstractions mentioned earlier.
 [[transaction-declarative]]
 === Declarative Transaction Management
 
-NOTE: Most Spring Framework users choose declarative transaction management. This option has
+注意: Most Spring Framework users choose declarative transaction management. This option has
 the least impact on application code and, hence, is most consistent with the ideals of a
 non-invasive lightweight container.
 
@@ -582,7 +582,7 @@ with transactional metadata yields an AOP proxy that uses a `TransactionIntercep
 conjunction with an appropriate `TransactionManager` implementation to drive transactions
 around method invocations.
 
-NOTE: Spring AOP is covered in <<core.adoc#aop, the AOP section>>.
+注意: Spring AOP is covered in <<core.adoc#aop, the AOP section>>.
 
 Spring Framework's `TransactionInterceptor` provides transaction management for
 imperative and reactive programming models. The interceptor detects the desired flavor of
@@ -599,7 +599,7 @@ transactions require a `PlatformTransactionManager`, while reactive transactions
 ====
 `@Transactional` commonly works with thread-bound transactions managed by
 `PlatformTransactionManager`, exposing a transaction to all data access operations within
-the current execution thread. Note: This does _not_ propagate to newly started threads
+the current execution thread. 注意: This does _not_ propagate to newly started threads
 within the method.
 
 A reactive transaction managed by `ReactiveTransactionManager` uses the Reactor context
@@ -816,7 +816,7 @@ service layer. The following example shows how to do so:
 	</aop:config>
 ----
 
-NOTE: In the preceding example, it is assumed that all your service interfaces are defined
+注意: In the preceding example, it is assumed that all your service interfaces are defined
 in the `x.y.service` package. See <<core.adoc#aop, the AOP section>> for more details.
 
 Now that we have analyzed the configuration, you may be asking yourself,
@@ -889,7 +889,7 @@ output and the stack trace from the `UnsupportedOperationException` thrown by th
 
 To use reactive transaction management the code has to use reactive types.
 
-NOTE: Spring Framework uses the `ReactiveAdapterRegistry` to determine whether a method
+注意: Spring Framework uses the `ReactiveAdapterRegistry` to determine whether a method
 return type is reactive.
 
 The following listing shows a modified version of the previously used `FooService`, but
@@ -1297,7 +1297,7 @@ source code puts the declarations much closer to the affected code. There is not
 danger of undue coupling, because code that is meant to be used transactionally is
 almost always deployed that way anyway.
 
-NOTE: The standard `javax.transaction.Transactional` annotation is also supported as a
+注意: The standard `javax.transaction.Transactional` annotation is also supported as a
 drop-in replacement to Spring's own annotation. Please refer to JTA 1.2 documentation
 for more details.
 
@@ -1533,7 +1533,7 @@ if you use class-based proxies (`proxy-target-class="true"`) or the weaving-base
 aspect (`mode="aspectj"`), the transaction settings are not recognized by the proxying
 and weaving infrastructure, and the object is not wrapped in a transactional proxy.
 
-NOTE: In proxy mode (which is the default), only external method calls coming in through
+注意: In proxy mode (which is the default), only external method calls coming in through
 the proxy are intercepted. This means that self-invocation (in effect, a method within
 the target object calling another method of the target object) does not lead to an actual
 transaction at runtime even if the invoked method is marked with `@Transactional`. Also,
@@ -1588,19 +1588,19 @@ is modified) to support `@Transactional` runtime behavior on any kind of method.
   No specified ordering means that the AOP subsystem determines the order of the advice.
 |===
 
-NOTE: The default advice mode for processing `@Transactional` annotations is `proxy`,
+注意: The default advice mode for processing `@Transactional` annotations is `proxy`,
 which allows for interception of calls through the proxy only. Local calls within the
 same class cannot get intercepted that way. For a more advanced mode of interception,
 consider switching to `aspectj` mode in combination with compile-time or load-time weaving.
 
-NOTE: The `proxy-target-class` attribute controls what type of transactional proxies are
+注意: The `proxy-target-class` attribute controls what type of transactional proxies are
 created for classes annotated with the `@Transactional` annotation. If
 `proxy-target-class` is set to `true`, class-based proxies are created. If
 `proxy-target-class` is `false` or if the attribute is omitted, standard JDK
 interface-based proxies are created. (See <<core.adoc#aop-proxying, Proxying Mechanisms>>
 for a discussion of the different proxy types.)
 
-NOTE: `@EnableTransactionManagement` and `<tx:annotation-driven/>` look for
+注意: `@EnableTransactionManagement` and `<tx:annotation-driven/>` look for
 `@Transactional` only on beans in the same application context in which they are defined.
 This means that, if you put annotation-driven configuration in a `WebApplicationContext`
 for a `DispatcherServlet`, it checks for `@Transactional` beans only in your controllers
@@ -1895,7 +1895,7 @@ defined for a larger scope. This is a fine default in common call stack arrangem
 within the same thread (for example, a service facade that delegates to several repository methods
 where all the underlying resources have to participate in the service-level transaction).
 
-NOTE: By default, a participating transaction joins the characteristics of the outer scope,
+注意: By default, a participating transaction joins the characteristics of the outer scope,
 silently ignoring the local isolation level, timeout value, or read-only flag (if any).
 Consider switching the `validateExistingTransactions` flag to `true` on your transaction
 manager if you want isolation level declarations to be rejected when participating in
@@ -1960,7 +1960,7 @@ When you invoke the `updateFoo(Foo)` method, you want to see the following actio
 * The transaction commits.
 * The profiling aspect reports the exact duration of the whole transactional method invocation.
 
-NOTE: This chapter is not concerned with explaining AOP in any great detail (except as it
+注意: This chapter is not concerned with explaining AOP in any great detail (except as it
 applies to transactions). See <<core.adoc#aop,AOP>> for detailed coverage of the AOP
 configuration and AOP in general.
 
@@ -2172,7 +2172,7 @@ attribute to `aspectj` as described in <<transaction-declarative-annotations>>. 
 we focus here on applications that run outside of a Spring container, we show
 you how to do it programmatically.
 
-NOTE: Prior to continuing, you may want to read <<transaction-declarative-annotations>> and
+注意: Prior to continuing, you may want to read <<transaction-declarative-annotations>> and
 <<core.adoc#aop, AOP>> respectively.
 
 The following example shows how to create a transaction manager and configure the
@@ -2197,7 +2197,7 @@ The following example shows how to create a transaction manager and configure th
 	AnnotationTransactionAspect.aspectOf().transactionManager = txManager
 ----
 
-NOTE: When you use this aspect, you must annotate the implementation class (or the methods
+注意: When you use this aspect, you must annotate the implementation class (or the methods
 within that class or both), not the interface (if any) that the class implements. AspectJ
 follows Java's rule that annotations on interfaces are not inherited.
 
@@ -2239,7 +2239,7 @@ do the boilerplate acquisition and release transactional resources) and results 
 code that is intention driven, in that your code focuses solely on what
 you want to do.
 
-NOTE: As the examples that follow show, using the `TransactionTemplate` absolutely
+注意: As the examples that follow show, using the `TransactionTemplate` absolutely
 couples you to Spring's transaction infrastructure and APIs. Whether or not programmatic
 transaction management is suitable for your development needs is a decision that you
 have to make yourself.
@@ -2422,7 +2422,7 @@ operators. It uses a callback approach (to free application code from having to 
 boilerplate acquisition and release transactional resources) and results in code that is
 intention driven, in that your code focuses solely on what you want to do.
 
-NOTE: As the examples that follow show, using the `TransactionOperator` absolutely
+注意: As the examples that follow show, using the `TransactionOperator` absolutely
 couples you to Spring's transaction infrastructure and APIs. Whether or not programmatic
 transaction management is suitable for your development needs is a decision that you have
 to make yourself.
@@ -2998,7 +2998,7 @@ this `DataSource`. The following example autowires a `DataSource`:
 	}
 ----
 
-NOTE: See the specific coverage of each persistence technology for details on how to
+注意: See the specific coverage of each persistence technology for details on how to
 configure the application context to take advantage of these annotations.
 
 
@@ -3170,7 +3170,7 @@ You can use `JdbcTemplate` within a DAO implementation through direct instantiat
 with a `DataSource` reference, or you can configure it in a Spring IoC container and give it to
 DAOs as a bean reference.
 
-NOTE: The `DataSource` should always be configured as a bean in the Spring IoC container. In
+注意: The `DataSource` should always be configured as a bean in the Spring IoC container. In
 the first case the bean is given to the service directly; in the second case it is given
 to the prepared template.
 
@@ -3771,7 +3771,7 @@ The `SQLErrorCodeSQLExceptionTranslator` applies matching rules in the following
   translator. If this translation is not available, the next fallback translator is
   the `SQLStateSQLExceptionTranslator`.
 
-NOTE: The `SQLErrorCodesFactory` is used by default to define `Error` codes and custom exception
+注意: The `SQLErrorCodesFactory` is used by default to define `Error` codes and custom exception
 translations. They are looked up in a file named `sql-error-codes.xml` from the
 classpath, and the matching `SQLErrorCodes` instance is located based on the database
 name from the database metadata of the database in use.
@@ -4111,7 +4111,7 @@ configure your own with a connection pool implementation provided by a third par
 Traditional choices are Apache Commons DBCP and C3P0 with bean-style `DataSource` classes;
 for a modern JDBC connection pool, consider HikariCP with its builder-style API instead.
 
-NOTE: You should use the `DriverManagerDataSource` and `SimpleDriverDataSource` classes
+注意: You should use the `DriverManagerDataSource` and `SimpleDriverDataSource` classes
 (as included in the Spring distribution) only for testing purposes! Those variants do not
 provide pooling and perform poorly when multiple requests for a connection are made.
 
@@ -4265,7 +4265,7 @@ environment, that it is almost always preferable to use such a connection pool o
 target `DataSource` to add awareness of Spring-managed transactions. In this respect, it
 is similar to a transactional JNDI `DataSource`, as provided by a Java EE server.
 
-NOTE: It is rarely desirable to use this class, except when already existing code must be
+注意: It is rarely desirable to use this class, except when already existing code must be
 called and passed a standard JDBC `DataSource` interface implementation. In this case,
 you can still have this code be usable and, at the same time, have this code
 participating in Spring managed transactions. It is generally preferable to write your
@@ -5028,7 +5028,7 @@ explicitly if you wish. You can do so by creating and configuring `SimpleJdbcCal
 the `declareParameters` method, which takes a variable number of `SqlParameter` objects
 as input. See the <<jdbc-params, next section>> for details on how to define an `SqlParameter`.
 
-NOTE: Explicit declarations are necessary if the database you use is not a Spring-supported
+注意: Explicit declarations are necessary if the database you use is not a Spring-supported
 database. Currently, Spring supports metadata lookup of stored procedure calls for the
 following databases: Apache Derby, DB2, MySQL, Microsoft SQL Server, Oracle, and Sybase.
 We also support metadata lookup of stored functions for MySQL, Microsoft SQL Server,
@@ -5125,7 +5125,7 @@ The second line (with the `SqlOutParameter`) declares an `out` parameter to be u
 stored procedure call. There is also an `SqlInOutParameter` for `InOut` parameters
 (parameters that provide an IN value to the procedure and that also return a value).
 
-NOTE: Only parameters declared as `SqlParameter` and `SqlInOutParameter` are used to
+注意: Only parameters declared as `SqlParameter` and `SqlInOutParameter` are used to
 provide input values. This is different from the `StoredProcedure` class, which (for
 backwards compatibility reasons) lets input values be provided for parameters
 declared as `SqlOutParameter`.
@@ -6020,7 +6020,7 @@ the latter approach. You can pass in the values as a `java.util.List` of primiti
 list is used to insert the required placeholders and pass in the values during
 statement execution.
 
-NOTE: Be careful when passing in many values. The JDBC standard does not guarantee that you
+注意: Be careful when passing in many values. The JDBC standard does not guarantee that you
 can use more than 100 values for an `in` expression list. Various databases exceed this
 number, but they usually have a hard limit for how many values are allowed. For example, Oracle's
 limit is 1000.
@@ -6656,7 +6656,7 @@ The simplest way to create a `DatabaseClient` object is through a static factory
 	val client = DatabaseClient.create(connectionFactory)
 ----
 
-NOTE: The `ConnectionFactory` should always be configured as a bean in the Spring IoC
+注意: The `ConnectionFactory` should always be configured as a bean in the Spring IoC
 container.
 
 The preceding method creates a `DatabaseClient` with default settings.
@@ -6723,7 +6723,7 @@ execution specification. The preceding example above uses `then()` to return a c
 `Publisher` that completes as soon as the query (or queries, if the SQL query contains
 multiple statements) completes.
 
-NOTE: `execute(…)` accepts either the SQL query string or a query `Supplier<String>`
+注意: `execute(…)` accepts either the SQL query string or a query `Supplier<String>`
 to defer the actual query creation until execution.
 
 [[r2dbc-DatabaseClient-examples-query]]
@@ -6924,7 +6924,7 @@ The preceding query can be parametrized and run as follows:
 	    .bind("tuples", tuples)
 ----
 
-NOTE: Usage of select lists is vendor-dependent.
+注意: Usage of select lists is vendor-dependent.
 
 The following example shows a simpler variant using `IN` predicates:
 
@@ -6945,7 +6945,7 @@ The following example shows a simpler variant using `IN` predicates:
 	    .bind("tuples", arrayOf(35, 50))
 ----
 
-NOTE: R2DBC itself does not support Collection-like values. Nevertheless,
+注意: R2DBC itself does not support Collection-like values. Nevertheless,
 expanding a given `List` in the example above works for named parameters
 in Spring's R2DBC support, e.g. for use in `IN` clauses as shown above.
 However, inserting or updating array-typed columns (e.g. in Postgres)
@@ -7203,7 +7203,7 @@ excessive creation of physical connections.
 `TransactionAwareConnectionFactoryProxy` is a proxy for a target `ConnectionFactory`.
 The proxy wraps that target `ConnectionFactory` to add awareness of Spring-managed transactions.
 
-NOTE: Using this class is required if you use a R2DBC client that is not integrated otherwise
+注意: Using this class is required if you use a R2DBC client that is not integrated otherwise
 with Spring's R2DBC support. In this case, you can still use this client and, at
 the same time, have this client participating in Spring managed transactions. It is generally
 preferable to integrate a R2DBC client with proper access to `ConnectionFactoryUtils`
@@ -7424,7 +7424,7 @@ implementations and transaction demarcation. Most of these patterns can be direc
 translated to all other supported ORM tools. The later sections in this chapter then
 cover the other ORM technologies and show brief examples.
 
-NOTE: As of Spring Framework 5.3, Spring requires Hibernate ORM 5.2+ for Spring's
+注意: As of Spring Framework 5.3, Spring requires Hibernate ORM 5.2+ for Spring's
 `HibernateJpaVendorAdapter` as well as for a native Hibernate `SessionFactory` setup.
 It is strongly recommended to go with Hibernate ORM 5.4 for a newly started application.
 For use with `HibernateJpaVendorAdapter`, Hibernate Search needs to be upgraded to 5.11.6.
@@ -7601,7 +7601,7 @@ container by using either Java annotations or XML. This declarative transaction 
 lets you keep business services free of repetitive transaction demarcation code and
 focus on adding business logic, which is the real value of your application.
 
-NOTE: Before you continue, we are strongly encourage you to read <<transaction-declarative>>
+注意: Before you continue, we are strongly encourage you to read <<transaction-declarative>>
 if you have not already done so.
 
 You can annotate the service layer with `@Transactional` annotations and instruct the
@@ -8003,7 +8003,7 @@ You can use this option for full JPA capabilities in a Spring-based application 
 This includes web containers such as Tomcat, stand-alone applications, and
 integration tests with sophisticated persistence requirements.
 
-NOTE: If you want to specifically configure a Hibernate setup, an immediate alternative
+注意: If you want to specifically configure a Hibernate setup, an immediate alternative
 is to set up a native Hibernate `LocalSessionFactoryBean` instead of a plain JPA
 `LocalContainerEntityManagerFactoryBean`, letting it interact with JPA access code
 as well as native Hibernate access code.
@@ -8042,7 +8042,7 @@ The following example shows a typical `persistence.xml` file:
 	</persistence>
 ----
 
-NOTE: The `<exclude-unlisted-classes/>` shortcut indicates that no scanning for
+注意: The `<exclude-unlisted-classes/>` shortcut indicates that no scanning for
 annotated entity classes is supposed to occur. An explicit 'true' value
 (`<exclude-unlisted-classes>true</exclude-unlisted-classes/>`) also means no scan.
 `<exclude-unlisted-classes>false</exclude-unlisted-classes/>` does trigger a scan.
@@ -8196,7 +8196,7 @@ Spring Data JPA, make sure to set up deferred bootstrapping for its repositories
 [[orm-jpa-dao]]
 ==== Implementing DAOs Based on JPA: `EntityManagerFactory` and `EntityManager`
 
-NOTE: Although `EntityManagerFactory` instances are thread-safe, `EntityManager` instances are
+注意: Although `EntityManagerFactory` instances are thread-safe, `EntityManager` instances are
 not. The injected JPA `EntityManager` behaves like an `EntityManager` fetched from an
 application server's JNDI environment, as defined by the JPA specification. It delegates
 all calls to the current transactional `EntityManager`, if any. Otherwise, it falls back
@@ -8361,7 +8361,7 @@ a non-invasiveness perspective and can feel more natural to JPA developers.
 [[orm-jpa-tx]]
 ==== Spring-driven JPA transactions
 
-NOTE: We strongly encourage you to read <<transaction-declarative>>, if you have not
+注意: We strongly encourage you to read <<transaction-declarative>>, if you have not
 already done so, to get more detailed coverage of Spring's declarative transaction support.
 
 The recommended strategy for JPA is local transactions through JPA's native transaction
@@ -8375,7 +8375,7 @@ to JDBC access code that accesses the same `DataSource`, provided that the regis
 Spring provides dialects for the EclipseLink and Hibernate JPA implementations.
 See the <<orm-jpa-dialect, next section>> for details on the `JpaDialect` mechanism.
 
-NOTE: As an immediate alternative, Spring's native `HibernateTransactionManager` is capable
+注意: As an immediate alternative, Spring's native `HibernateTransactionManager` is capable
 of interacting with JPA access code, adapting to several Hibernate specifics and providing
 JDBC interaction. This makes particular sense in combination with `LocalSessionFactoryBean`
 setup. See <<orm-jpa-hibernate, Native Hibernate Setup for JPA Interaction>> for details.
@@ -8584,7 +8584,7 @@ representations, as the following table indicates:
 | `java.io.File`, `java.io.OutputStream`, or `java.io.Writer`
 |===
 
-NOTE: Although the `marshal()` method accepts a plain object as its first parameter, most
+注意: Although the `marshal()` method accepts a plain object as its first parameter, most
 `Marshaller` implementations cannot handle arbitrary objects. Instead, an object class
 must be mapped in a mapping file, be marked with an annotation, be registered with the
 marshaller, or have a common base class. Refer to the later sections in this chapter
@@ -9038,7 +9038,7 @@ result, default XStream converters with lower priorities and possible security
 vulnerabilities do not get invoked.
 =====
 
-NOTE: Note that XStream is an XML serialization library, not a data binding library.
+注意: Note that XStream is an XML serialization library, not a data binding library.
 Therefore, it has limited namespace support. As a result, it is rather unsuitable for usage
 within Web Services.
 

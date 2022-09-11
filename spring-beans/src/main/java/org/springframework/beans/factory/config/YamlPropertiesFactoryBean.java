@@ -31,7 +31,7 @@ import org.springframework.lang.Nullable;
  * useful hierarchical properties. It's more or less a superset of JSON, so it
  * has a lot of similar features.
  *
- * <p><b>Note: All exposed values are of type {@code String}</b> for access through
+ * <p><b>注意: All exposed values are of type {@code String}</b> for access through
  * the common {@link Properties#getProperty} method (e.g. in configuration property
  * resolution through {@link PropertyResourceConfigurer#setProperties(Properties)}).
  * If this is not desirable, use {@link YamlMapFactoryBean} instead.

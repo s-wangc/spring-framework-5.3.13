@@ -32,7 +32,7 @@ import org.springframework.util.ObjectUtils;
  * The remaining settings will <i>always</i> be taken from the child definition:
  * depends on, autowire mode, dependency check, singleton, lazy init.
  *
- * <p><b>NOTE:</b> Since Spring 2.5, the preferred way to register bean
+ * <p><b>注意:</b> Since Spring 2.5, the preferred way to register bean
  * definitions programmatically is the {@link GenericBeanDefinition} class,
  * which allows to dynamically define parent dependencies through the
  * {@link GenericBeanDefinition#setParentName} method. This effectively

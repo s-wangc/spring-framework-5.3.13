@@ -99,7 +99,7 @@ import org.springframework.util.backoff.FixedBackOff;
  * number of 1 consumer, otherwise you'd receive the same message multiple times on
  * the same node.
  *
- * <p><b>Note: Don't use Spring's {@link org.springframework.jms.connection.CachingConnectionFactory}
+ * <p><b>注意: Don't use Spring's {@link org.springframework.jms.connection.CachingConnectionFactory}
  * in combination with dynamic scaling.</b> Ideally, don't use it with a message
  * listener container at all, since it is generally preferable to let the
  * listener container itself handle appropriate caching within its lifecycle.
@@ -660,7 +660,7 @@ public class DefaultMessageListenerContainer extends AbstractPollingMessageListe
 	/**
 	 * Stop this listener container, invoking the specific callback
 	 * once all listener processing has actually stopped.
-	 * <p>Note: Further {@code stop(runnable)} calls (before processing
+	 * <p>注意: Further {@code stop(runnable)} calls (before processing
 	 * has actually stopped) will override the specified callback. Only the
 	 * latest specified callback will be invoked.
 	 * <p>If a subsequent {@link #start()} call restarts the listener container

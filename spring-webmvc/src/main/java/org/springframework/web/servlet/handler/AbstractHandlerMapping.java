@@ -63,7 +63,7 @@ import org.springframework.web.util.pattern.PathPatternParser;
  * implementations. Supports ordering, a default handler, handler interceptors,
  * including handler interceptors mapped by path patterns.
  *
- * <p>Note: This base class does <i>not</i> support exposure of the
+ * <p>注意: This base class does <i>not</i> support exposure of the
  * {@link #PATH_WITHIN_HANDLER_MAPPING_ATTRIBUTE}. Support for this attribute
  * is up to concrete subclasses, typically based on request URL mappings.
  *
@@ -173,7 +173,7 @@ public abstract class AbstractHandlerMapping extends WebApplicationObjectSupport
 
 	/**
 	 * Shortcut to same property on the configured {@code UrlPathHelper}.
-	 * <p><strong>Note:</strong> This property is mutually exclusive with and
+	 * <p><strong>注意:</strong> This property is mutually exclusive with and
 	 * ignored when {@link #setPatternParser(PathPatternParser)} is set.
 	 * @see org.springframework.web.util.UrlPathHelper#setAlwaysUseFullPath(boolean)
 	 */
@@ -187,7 +187,7 @@ public abstract class AbstractHandlerMapping extends WebApplicationObjectSupport
 
 	/**
 	 * Shortcut to same property on the underlying {@code UrlPathHelper}.
-	 * <p><strong>Note:</strong> This property is mutually exclusive with and
+	 * <p><strong>注意:</strong> This property is mutually exclusive with and
 	 * ignored when {@link #setPatternParser(PathPatternParser)} is set.
 	 * @see org.springframework.web.util.UrlPathHelper#setUrlDecode(boolean)
 	 */
@@ -201,7 +201,7 @@ public abstract class AbstractHandlerMapping extends WebApplicationObjectSupport
 
 	/**
 	 * Shortcut to same property on the underlying {@code UrlPathHelper}.
-	 * <p><strong>Note:</strong> This property is mutually exclusive with and
+	 * <p><strong>注意:</strong> This property is mutually exclusive with and
 	 * ignored when {@link #setPatternParser(PathPatternParser)} is set.
 	 * @see org.springframework.web.util.UrlPathHelper#setRemoveSemicolonContent(boolean)
 	 */
@@ -215,7 +215,7 @@ public abstract class AbstractHandlerMapping extends WebApplicationObjectSupport
 
 	/**
 	 * Configure the UrlPathHelper to use for resolution of lookup paths.
-	 * <p><strong>Note:</strong> This property is mutually exclusive with and
+	 * <p><strong>注意:</strong> This property is mutually exclusive with and
 	 * ignored when {@link #setPatternParser(PathPatternParser)} is set.
 	 */
 	public void setUrlPathHelper(UrlPathHelper urlPathHelper) {
@@ -235,7 +235,7 @@ public abstract class AbstractHandlerMapping extends WebApplicationObjectSupport
 
 	/**
 	 * Configure the PathMatcher to use.
-	 * <p><strong>Note:</strong> This property is mutually exclusive with and
+	 * <p><strong>注意:</strong> This property is mutually exclusive with and
 	 * ignored when {@link #setPatternParser(PathPatternParser)} is set.
 	 * <p>By default this is {@link AntPathMatcher}.
 	 * @see org.springframework.util.AntPathMatcher
@@ -546,7 +546,7 @@ public abstract class AbstractHandlerMapping extends WebApplicationObjectSupport
 	 * path, the HTTP methods from the "Access-Control-Request-Method" header, and
 	 * the headers from the "Access-Control-Request-Headers" header thus allowing
 	 * the CORS configuration to be obtained via {@link #getCorsConfiguration(Object, HttpServletRequest)},
-	 * <p>Note: This method may also return a pre-built {@link HandlerExecutionChain},
+	 * <p>注意: This method may also return a pre-built {@link HandlerExecutionChain},
 	 * combining a handler object with dynamically determined interceptors.
 	 * Statically specified interceptors will get merged into such an existing chain.
 	 * @param request current HTTP request
@@ -588,7 +588,7 @@ public abstract class AbstractHandlerMapping extends WebApplicationObjectSupport
 	 * {@link MappedInterceptor MappedInterceptors} matching to the current request URL. Interceptors
 	 * are added in the order they were registered. Subclasses may override this
 	 * in order to extend/rearrange the list of interceptors.
-	 * <p><b>NOTE:</b> The passed-in handler object may be a raw handler or a
+	 * <p><b>注意:</b> The passed-in handler object may be a raw handler or a
 	 * pre-built {@link HandlerExecutionChain}. This method should handle those
 	 * two cases explicitly, either building a new {@link HandlerExecutionChain}
 	 * or extending the existing chain.

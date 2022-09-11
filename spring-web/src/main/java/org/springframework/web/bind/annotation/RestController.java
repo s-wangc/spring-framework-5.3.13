@@ -33,7 +33,7 @@ import org.springframework.stereotype.Controller;
  * {@link RequestMapping @RequestMapping} methods assume
  * {@link ResponseBody @ResponseBody} semantics by default.
  *
- * <p><b>NOTE:</b> {@code @RestController} is processed if an appropriate
+ * <p><b>注意:</b> {@code @RestController} is processed if an appropriate
  * {@code HandlerMapping}-{@code HandlerAdapter} pair is configured such as the
  * {@code RequestMappingHandlerMapping}-{@code RequestMappingHandlerAdapter}
  * pair which are the default in the MVC Java config and the MVC namespace.

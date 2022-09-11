@@ -59,7 +59,7 @@ import org.springframework.web.util.pattern.PathPatternParser;
  * {@link RequestMapping @RequestMapping} annotations in
  * {@link Controller @Controller} classes.
  *
- * <p><strong>Deprecation Note:</strong></p> In 5.2.4,
+ * <p><strong>Deprecation 注意:</strong></p> In 5.2.4,
  * {@link #setUseSuffixPatternMatch(boolean) useSuffixPatternMatch} and
  * {@link #setUseRegisteredSuffixPatternMatch(boolean) useRegisteredSuffixPatternMatch}
  * were deprecated in order to discourage use of path extensions for request
@@ -98,7 +98,7 @@ public class RequestMappingHandlerMapping extends RequestMappingInfoHandlerMappi
 	 * <p>By default value this is set to {@code false}.
 	 * <p>Also see {@link #setUseRegisteredSuffixPatternMatch(boolean)} for
 	 * more fine-grained control over specific suffixes to allow.
-	 * <p><strong>Note:</strong> This property is ignored when
+	 * <p><strong>注意:</strong> This property is ignored when
 	 * {@link #setPatternParser(PathPatternParser)} is configured.
 	 * @deprecated as of 5.2.4. See class level note on the deprecation of
 	 * path extension config options. As there is no replacement for this method,
@@ -116,7 +116,7 @@ public class RequestMappingHandlerMapping extends RequestMappingInfoHandlerMappi
 	 * is generally recommended to reduce ambiguity and to avoid issues such as
 	 * when a "." appears in the path for other reasons.
 	 * <p>By default this is set to "false".
-	 * <p><strong>Note:</strong> This property is ignored when
+	 * <p><strong>注意:</strong> This property is ignored when
 	 * {@link #setPatternParser(PathPatternParser)} is configured.
 	 * @deprecated as of 5.2.4. See class level note on the deprecation of
 	 * path extension config options.

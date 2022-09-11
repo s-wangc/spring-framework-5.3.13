@@ -31,7 +31,7 @@ import org.springframework.util.Assert;
  * {@link org.springframework.cache.Cache} implementation on top of a
  * {@link Cache javax.cache.Cache} instance.
  *
- * <p>Note: This class has been updated for JCache 1.0, as of Spring 4.0.
+ * <p>注意: This class has been updated for JCache 1.0, as of Spring 4.0.
  *
  * @author Juergen Hoeller
  * @author Stephane Nicoll

@@ -41,7 +41,7 @@ import org.springframework.lang.Nullable;
  * }
  * </pre>
  *
- * <p><b>NOTE:</b> It is possible to use non thread-safe script engines with
+ * <p><b>注意:</b> It is possible to use non thread-safe script engines with
  * templating libraries not designed for concurrency, like Handlebars or React running on
  * Nashorn, by setting the {@link #setSharedEngine sharedEngine} property to {@code false}.
  *

@@ -159,7 +159,7 @@ public abstract class AbstractListenerReadPublisher<T> implements Publisher<T> {
 
 	/**
 	 * Invoked when reading is paused due to a lack of demand.
-	 * <p><strong>Note:</strong> This method is guaranteed not to compete with
+	 * <p><strong>注意:</strong> This method is guaranteed not to compete with
 	 * {@link #checkOnDataAvailable()} so it can be used to safely suspend
 	 * reading, if the underlying API supports it, i.e. without competing with
 	 * an implicit call to resume via {@code checkOnDataAvailable()}.

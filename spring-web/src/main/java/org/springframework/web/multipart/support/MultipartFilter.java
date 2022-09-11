@@ -51,7 +51,7 @@ import org.springframework.web.multipart.MultipartResolver;
  * Note that the lookup method should not create a new MultipartResolver instance
  * for each call but rather return a reference to a pre-built instance.
  *
- * <p>Note: This filter is an <b>alternative</b> to using DispatcherServlet's
+ * <p>注意: This filter is an <b>alternative</b> to using DispatcherServlet's
  * MultipartResolver support, for example for web applications with custom web views
  * which do not use Spring's web MVC, or for custom filters applied before a Spring MVC
  * DispatcherServlet (e.g. {@link org.springframework.web.filter.HiddenHttpMethodFilter}).

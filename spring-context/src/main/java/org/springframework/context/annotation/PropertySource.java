@@ -147,7 +147,7 @@ import org.springframework.core.io.support.PropertySourceFactory;
  * ConfigurableEnvironment} and {@link org.springframework.core.env.MutablePropertySources
  * MutablePropertySources} javadocs for details.
  *
- * <p><b>NOTE: This annotation is repeatable according to Java 8 conventions.</b>
+ * <p><b>注意: This annotation is repeatable according to Java 8 conventions.</b>
  * However, all such {@code @PropertySource} annotations need to be declared at the same
  * level: either directly on the configuration class or as meta-annotations on the
  * same custom annotation. Mixing direct annotations and meta-annotations is not

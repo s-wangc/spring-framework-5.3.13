@@ -46,7 +46,7 @@ import org.springframework.web.util.WebUtils;
  * (e.g. a {@link org.springframework.web.servlet.View}) is still rendered.
  * As such, this filter only saves bandwidth, not server performance.
  *
- * <p><b>NOTE:</b> As of Spring Framework 5.0, this filter uses request/response
+ * <p><b>注意:</b> As of Spring Framework 5.0, this filter uses request/response
  * decorators built on the Servlet 3.1 API.
  *
  * @author Arjen Poutsma
@@ -184,7 +184,7 @@ public class ShallowEtagHeaderFilter extends OncePerRequestFilter {
 	 * This method can be used to suppress the content caching response wrapper
 	 * of the ShallowEtagHeaderFilter. The main reason for this is streaming
 	 * scenarios which are not to be cached and do not need an eTag.
-	 * <p><strong>Note:</strong> This method must be called before the response
+	 * <p><strong>注意:</strong> This method must be called before the response
 	 * is written to in order for the entire response content to be written
 	 * without caching.
 	 * @since 4.2

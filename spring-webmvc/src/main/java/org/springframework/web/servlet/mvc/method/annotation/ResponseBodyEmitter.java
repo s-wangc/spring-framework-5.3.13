@@ -171,7 +171,7 @@ public class ResponseBodyEmitter {
 	 * Write the given object to the response.
 	 * <p>If any exception occurs a dispatch is made back to the app server where
 	 * Spring MVC will pass the exception through its exception handling mechanism.
-	 * <p><strong>Note:</strong> if the send fails with an IOException, you do
+	 * <p><strong>注意:</strong> if the send fails with an IOException, you do
 	 * not need to call {@link #completeWithError(Throwable)} in order to clean
 	 * up. Instead the Servlet container creates a notification that results in a
 	 * dispatch where Spring MVC invokes exception resolvers and completes
@@ -222,7 +222,7 @@ public class ResponseBodyEmitter {
 	 * Complete request processing by performing a dispatch into the servlet
 	 * container, where Spring MVC is invoked once more, and completes the
 	 * request processing lifecycle.
-	 * <p><strong>Note:</strong> this method should be called by the application
+	 * <p><strong>注意:</strong> this method should be called by the application
 	 * to complete request processing. It should not be used after container
 	 * related events such as an error while {@link #send(Object) sending}.
 	 */
@@ -243,7 +243,7 @@ public class ResponseBodyEmitter {
 	 * exception through its exception handling mechanism. Note however that
 	 * at this stage of request processing, the response is committed and the
 	 * response status can no longer be changed.
-	 * <p><strong>Note:</strong> this method should be called by the application
+	 * <p><strong>注意:</strong> this method should be called by the application
 	 * to complete request processing with an error. It should not be used after
 	 * container related events such as an error while
 	 * {@link #send(Object) sending}.

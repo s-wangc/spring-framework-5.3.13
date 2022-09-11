@@ -61,7 +61,7 @@ final class AnnotationWriter extends AnnotationVisitor {
    * #visitEnd()}). The element_value_pairs array is filled incrementally in the various visit()
    * methods.
    *
-   * <p>Note: as an exception to the above rules, for AnnotationDefault attributes (which contain a
+   * <p>注意: as an exception to the above rules, for AnnotationDefault attributes (which contain a
    * single element_value by definition), this ByteVector is initially empty when passed to the
    * constructor, and {@link #numElementValuePairsOffset} is set to -1.
    */
@@ -488,7 +488,7 @@ final class AnnotationWriter extends AnnotationVisitor {
       final String attributeName,
       final AnnotationWriter[] annotationWriters,
       final int annotableParameterCount) {
-    // Note: attributeName is added to the constant pool by the call to computeAnnotationsSize
+    // 注意: attributeName is added to the constant pool by the call to computeAnnotationsSize
     // below. This assumes that there is at least one non-null element in the annotationWriters
     // sub-array (which is ensured by the lazy instantiation of this array in MethodWriter).
     // The attribute_name_index, attribute_length and num_parameters fields use 7 bytes, and each

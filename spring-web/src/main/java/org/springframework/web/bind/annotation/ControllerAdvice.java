@@ -49,7 +49,7 @@ import org.springframework.stereotype.Component;
  * model attributes and data binding initialization, {@code @ModelAttribute} and
  * {@code @InitBinder} methods will follow {@code @ControllerAdvice} order.
  *
- * <p>Note: For {@code @ExceptionHandler} methods, a root exception match will be
+ * <p>注意: For {@code @ExceptionHandler} methods, a root exception match will be
  * preferred to just matching a cause of the current exception, among the handler
  * methods of a particular advice bean. However, a cause match on a higher-priority
  * advice will still be preferred over any match (whether root or cause level)

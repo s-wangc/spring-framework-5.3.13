@@ -107,7 +107,7 @@ public interface FactoryBean<T> {
 	 * <p>This method can be called <i>before</i> this FactoryBean has
 	 * been fully initialized. It must not rely on state created during
 	 * initialization; of course, it can still use such state if available.
-	 * <p><b>NOTE:</b> Autowiring will simply ignore FactoryBeans that return
+	 * <p><b>注意:</b> Autowiring will simply ignore FactoryBeans that return
 	 * {@code null} here. Therefore it is highly recommended to implement
 	 * this method properly, using the current state of the FactoryBean.
 	 * @return the type of object that this FactoryBean creates,
@@ -121,14 +121,14 @@ public interface FactoryBean<T> {
 	 * Is the object managed by this factory a singleton? That is,
 	 * will {@link #getObject()} always return the same object
 	 * (a reference that can be cached)?
-	 * <p><b>NOTE:</b> If a FactoryBean indicates to hold a singleton object,
+	 * <p><b>注意:</b> If a FactoryBean indicates to hold a singleton object,
 	 * the object returned from {@code getObject()} might get cached
 	 * by the owning BeanFactory. Hence, do not return {@code true}
 	 * unless the FactoryBean always exposes the same reference.
 	 * <p>The singleton status of the FactoryBean itself will generally
 	 * be provided by the owning BeanFactory; usually, it has to be
 	 * defined as singleton there.
-	 * <p><b>NOTE:</b> This method returning {@code false} does not
+	 * <p><b>注意:</b> This method returning {@code false} does not
 	 * necessarily indicate that returned objects are independent instances.
 	 * An implementation of the extended {@link SmartFactoryBean} interface
 	 * may explicitly indicate independent instances through its

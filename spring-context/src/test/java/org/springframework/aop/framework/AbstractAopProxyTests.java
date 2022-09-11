@@ -439,7 +439,7 @@ public abstract class AbstractAopProxyTests {
 
 		assertThatExceptionOfType(Exception.class).isThrownBy(() -> {
 				ITestBean tb = (ITestBean) aop.getProxy();
-				// Note: exception param below isn't used
+				// 注意: exception param below isn't used
 				tb.exceptional(expectedException);
 			}).matches(expectedException::equals);
 	}

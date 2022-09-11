@@ -125,7 +125,7 @@ public abstract class Jackson2CodecSupport {
 	 * {@link Class}. This is useful when you want to deviate from the
 	 * {@link #getObjectMapper() default} ObjectMapper or have the
 	 * {@code ObjectMapper} vary by {@code MediaType}.
-	 * <p><strong>Note:</strong> Use of this method effectively turns off use of
+	 * <p><strong>注意:</strong> Use of this method effectively turns off use of
 	 * the default {@link #getObjectMapper() ObjectMapper} and supported
 	 * {@link #getMimeTypes() MimeTypes} for the given class. Therefore it is
 	 * important for the mappings configured here to

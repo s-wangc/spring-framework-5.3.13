@@ -77,7 +77,7 @@ import org.springframework.util.StringUtils;
  * autodetected by JtaTransactionManager, provided that the "autodetectTransactionManager"
  * flag is set to "true" (which it is by default).
  *
- * <p>Note: Support for the JTA TransactionManager interface is not required by Java EE.
+ * <p>注意: Support for the JTA TransactionManager interface is not required by Java EE.
  * Almost all Java EE servers expose it, but do so as extension to EE. There might be some
  * issues with compatibility, despite the TransactionManager interface being part of JTA.
  * As a consequence, Spring provides various vendor-specific PlatformTransactionManagers,
@@ -1113,7 +1113,7 @@ public class JtaTransactionManager extends AbstractPlatformTransactionManager
 			throw new TransactionSystemException("JTA failure on registerSynchronization", ex);
 		}
 		catch (Exception ex) {
-			// Note: JBoss throws plain RuntimeException with RollbackException as cause.
+			// 注意: JBoss throws plain RuntimeException with RollbackException as cause.
 			if (ex instanceof RollbackException || ex.getCause() instanceof RollbackException) {
 				logger.debug("Participating in existing JTA transaction that has been marked for rollback: " +
 						"cannot register Spring after-completion callbacks with outer JTA transaction - " +

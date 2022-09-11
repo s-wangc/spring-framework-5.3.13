@@ -147,7 +147,7 @@ public class MappingJackson2MessageConverter implements SmartMessageConverter, B
 	/**
 	 * Specify the name of the JMS message property that carries the type id for the
 	 * contained object: either a mapped id value or a raw Java class name.
-	 * <p>默认值是none. <b>NOTE: This property needs to be set in order to allow
+	 * <p>默认值是none. <b>注意: This property needs to be set in order to allow
 	 * for converting from an incoming message to a Java object.</b>
 	 * @see #setTypeIdMappings
 	 */

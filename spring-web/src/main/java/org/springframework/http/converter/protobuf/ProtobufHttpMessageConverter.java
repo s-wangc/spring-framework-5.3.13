@@ -267,7 +267,7 @@ public class ProtobufHttpMessageConverter extends AbstractHttpMessageConverter<M
 	/**
 	 * Set the "X-Protobuf-*" HTTP headers when responding with a message of
 	 * content type "application/x-protobuf"
-	 * <p><b>Note:</b> <code>outputMessage.getBody()</code> should not have been called
+	 * <p><b>注意:</b> <code>outputMessage.getBody()</code> should not have been called
 	 * before because it writes HTTP headers (making them read only).</p>
 	 */
 	private void setProtoHeader(HttpOutputMessage response, Message message) {

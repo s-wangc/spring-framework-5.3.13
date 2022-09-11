@@ -33,7 +33,7 @@ import org.springframework.core.annotation.AliasFor;
  * serving as form-backing beans. <b>Declared at the type level</b>, applying
  * to the model attributes that the annotated handler class operates on.
  *
- * <p><b>NOTE:</b> Session attributes as indicated using this annotation
+ * <p><b>注意:</b> Session attributes as indicated using this annotation
  * correspond to a specific handler's model attributes, getting transparently
  * stored in a conversational session. Those attributes will be removed once
  * the handler indicates completion of its conversational session. Therefore,
@@ -46,7 +46,7 @@ import org.springframework.core.annotation.AliasFor;
  * Alternatively, consider using the attribute management capabilities of the
  * generic {@link org.springframework.web.context.request.WebRequest} interface.
  *
- * <p><b>NOTE:</b> When using controller interfaces (e.g. for AOP proxying),
+ * <p><b>注意:</b> When using controller interfaces (e.g. for AOP proxying),
  * make sure to consistently put <i>all</i> your mapping annotations &mdash;
  * such as {@code @RequestMapping} and {@code @SessionAttributes} &mdash; on
  * the controller <i>interface</i> rather than on the implementation class.

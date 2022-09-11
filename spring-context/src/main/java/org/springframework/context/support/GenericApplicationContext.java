@@ -303,7 +303,7 @@ public class GenericApplicationContext extends AbstractApplicationContext implem
 	/**
 	 * Return the underlying bean factory of this context,
 	 * available for registering bean definitions.
-	 * <p><b>NOTE:</b> You need to call {@link #refresh()} to initialize the
+	 * <p><b>注意:</b> You need to call {@link #refresh()} to initialize the
 	 * bean factory and its contained beans with application context semantics
 	 * (autodetecting BeanFactoryPostProcessors, etc).
 	 * @return the internal bean factory (as DefaultListableBeanFactory)

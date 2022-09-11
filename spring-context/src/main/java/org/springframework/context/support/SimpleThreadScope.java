@@ -30,7 +30,7 @@ import org.springframework.lang.Nullable;
 /**
  * A simple thread-backed {@link Scope} implementation.
  *
- * <p><b>NOTE:</b> This thread scope is not registered by default in common contexts.
+ * <p><b>注意:</b> This thread scope is not registered by default in common contexts.
  * Instead, you need to explicitly assign it to a scope key in your setup, either through
  * {@link org.springframework.beans.factory.config.ConfigurableBeanFactory#registerScope}
  * or through a {@link org.springframework.beans.factory.config.CustomScopeConfigurer} bean.
@@ -67,7 +67,7 @@ public class SimpleThreadScope implements Scope {
 	@Override
 	public Object get(String name, ObjectFactory<?> objectFactory) {
 		Map<String, Object> scope = this.threadScope.get();
-		// NOTE: Do NOT modify the following to use Map::computeIfAbsent. For details,
+		// 注意: Do NOT modify the following to use Map::computeIfAbsent. For details,
 		// see https://github.com/spring-projects/spring-framework/issues/25801.
 		Object scopedObject = scope.get(name);
 		if (scopedObject == null) {

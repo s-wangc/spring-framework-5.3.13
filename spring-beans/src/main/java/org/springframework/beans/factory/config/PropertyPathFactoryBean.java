@@ -139,7 +139,7 @@ public class PropertyPathFactoryBean implements FactoryBean<Object>, BeanNameAwa
 
 	/**
 	 * Specify the type of the result from evaluating the property path.
-	 * <p>Note: This is not necessary for directly specified target objects
+	 * <p>注意: This is not necessary for directly specified target objects
 	 * or singleton target beans, where the type can be determined through
 	 * introspection. Just specify this in case of a prototype target,
 	 * provided that you need matching by type (for example, for autowiring).

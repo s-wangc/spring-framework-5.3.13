@@ -89,7 +89,7 @@ public interface ServerRequest {
 	/**
 	 * Get a {@code UriBuilderComponents} from the URI associated with this
 	 * {@code ServerRequest}.
-	 * <p><strong>Note:</strong> as of 5.1 this method ignores {@code "Forwarded"}
+	 * <p><strong>注意:</strong> as of 5.1 this method ignores {@code "Forwarded"}
 	 * and {@code "X-Forwarded-*"} headers that specify the
 	 * client-originated address. Consider using the {@code ForwardedHeaderFilter}
 	 * to extract and use, or to discard such headers.
@@ -277,7 +277,7 @@ public interface ServerRequest {
 	/**
 	 * Get the form data from the body of the request if the Content-Type is
 	 * {@code "application/x-www-form-urlencoded"} or an empty map otherwise.
-	 * <p><strong>Note:</strong> calling this method causes the request body to
+	 * <p><strong>注意:</strong> calling this method causes the request body to
 	 * be read and parsed in full, and the resulting {@code MultiValueMap} is
 	 * cached so that this method is safe to call more than once.
 	 */
@@ -286,7 +286,7 @@ public interface ServerRequest {
 	/**
 	 * Get the parts of a multipart request if the Content-Type is
 	 * {@code "multipart/form-data"} or an empty map otherwise.
-	 * <p><strong>Note:</strong> calling this method causes the request body to
+	 * <p><strong>注意:</strong> calling this method causes the request body to
 	 * be read and parsed in full, and the resulting {@code MultiValueMap} is
 	 * cached so that this method is safe to call more than once.
 	 */
@@ -294,7 +294,7 @@ public interface ServerRequest {
 
 	/**
 	 * Get the web exchange that this request is based on.
-	 * <p>Note: Manipulating the exchange directly (instead of using the methods provided on
+	 * <p>注意: Manipulating the exchange directly (instead of using the methods provided on
 	 * {@code ServerRequest} and {@code ServerResponse}) can lead to irregular results.
 	 * @since 5.1
 	 */
@@ -317,7 +317,7 @@ public interface ServerRequest {
 	 * }</pre>
 	 * <p>This method works with conditional GET/HEAD requests, but
 	 * also with conditional POST/PUT/DELETE requests.
-	 * <p><strong>Note:</strong> you can use either
+	 * <p><strong>注意:</strong> you can use either
 	 * this {@code #checkNotModified(Instant)} method; or
 	 * {@link #checkNotModified(String)}. If you want enforce both
 	 * a strong entity tag and a Last-Modified value,
@@ -351,7 +351,7 @@ public interface ServerRequest {
 	 * }</pre>
 	 * <p>This method works with conditional GET/HEAD requests, but
 	 * also with conditional POST/PUT/DELETE requests.
-	 * <p><strong>Note:</strong> you can use either
+	 * <p><strong>注意:</strong> you can use either
 	 * this {@link #checkNotModified(Instant)} method; or
 	 * {@code #checkNotModified(String)}. If you want enforce both
 	 * a strong entity tag and a Last-Modified value,

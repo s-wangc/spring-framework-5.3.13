@@ -152,7 +152,7 @@ public interface WebRequest extends RequestAttributes {
 	 * }</pre>
 	 * <p>This method works with conditional GET/HEAD requests, but
 	 * also with conditional POST/PUT/DELETE requests.
-	 * <p><strong>Note:</strong> you can use either
+	 * <p><strong>注意:</strong> you can use either
 	 * this {@code #checkNotModified(long)} method; or
 	 * {@link #checkNotModified(String)}. If you want enforce both
 	 * a strong entity tag and a Last-Modified value,
@@ -187,7 +187,7 @@ public interface WebRequest extends RequestAttributes {
 	 *   model.addAttribute(...);
 	 *   return "myViewName";
 	 * }</pre>
-	 * <p><strong>Note:</strong> you can use either
+	 * <p><strong>注意:</strong> you can use either
 	 * this {@code #checkNotModified(String)} method; or
 	 * {@link #checkNotModified(long)}. If you want enforce both
 	 * a strong entity tag and a Last-Modified value,
@@ -221,7 +221,7 @@ public interface WebRequest extends RequestAttributes {
 	 * }</pre>
 	 * <p>This method works with conditional GET/HEAD requests, but
 	 * also with conditional POST/PUT/DELETE requests.
-	 * <p><strong>Note:</strong> The HTTP specification recommends
+	 * <p><strong>注意:</strong> The HTTP specification recommends
 	 * setting both ETag and Last-Modified values, but you can also
 	 * use {@code #checkNotModified(String)} or
 	 * {@link #checkNotModified(long)}.

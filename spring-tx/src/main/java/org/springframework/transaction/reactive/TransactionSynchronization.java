@@ -103,7 +103,7 @@ public interface TransactionSynchronization {
 	 * <i>after</i> the main transaction has <i>successfully</i> committed.
 	 * <p>Can e.g. commit further operations that are supposed to follow on a successful
 	 * commit of the main transaction, like confirmation messages or emails.
-	 * <p><b>NOTE:</b> The transaction will have been committed already, but the
+	 * <p><b>注意:</b> The transaction will have been committed already, but the
 	 * transactional resources might still be active and accessible. As a consequence,
 	 * any data access code triggered at this point will still "participate" in the
 	 * original transaction, allowing to perform some cleanup (with no commit following
@@ -120,7 +120,7 @@ public interface TransactionSynchronization {
 	/**
 	 * Invoked after transaction commit/rollback.
 	 * Can perform resource cleanup <i>after</i> transaction completion.
-	 * <p><b>NOTE:</b> The transaction will have been committed or rolled back already,
+	 * <p><b>注意:</b> The transaction will have been committed or rolled back already,
 	 * but the transactional resources might still be active and accessible. As a
 	 * consequence, any data access code triggered at this point will still "participate"
 	 * in the original transaction, allowing to perform some cleanup (with no commit

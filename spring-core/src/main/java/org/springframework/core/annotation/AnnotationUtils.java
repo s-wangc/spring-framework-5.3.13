@@ -547,7 +547,7 @@ public abstract class AnnotationUtils {
 	 * <li>Recursively search through all interfaces that the given class declares.
 	 * <li>Recursively search through the superclass hierarchy of the given class.
 	 * </ol>
-	 * <p>Note: in this context, the term <em>recursively</em> means that the search
+	 * <p>注意: in this context, the term <em>recursively</em> means that the search
 	 * process continues by returning to step #1 with the current interface,
 	 * annotation, or superclass as the class to look for annotations on.
 	 * @param clazz the class to look for annotations on
@@ -662,7 +662,7 @@ public abstract class AnnotationUtils {
 	 * {@code clazz}.
 	 * <p>The supplied {@link Class} may represent any type.
 	 * <p>Meta-annotations will <em>not</em> be searched.
-	 * <p>Note: This method does <strong>not</strong> determine if the annotation
+	 * <p>注意: This method does <strong>not</strong> determine if the annotation
 	 * is {@linkplain java.lang.annotation.Inherited inherited}.
 	 * @param annotationType the annotation type to look for
 	 * @param clazz the class to check for the annotation on
@@ -773,7 +773,7 @@ public abstract class AnnotationUtils {
 	 * <p>Equivalent to calling {@link #getAnnotationAttributes(Annotation, boolean, boolean)}
 	 * with the {@code classValuesAsString} and {@code nestedAnnotationsAsMap} parameters
 	 * set to {@code false}.
-	 * <p>Note: This method actually returns an {@link AnnotationAttributes} instance.
+	 * <p>注意: This method actually returns an {@link AnnotationAttributes} instance.
 	 * However, the {@code Map} signature has been preserved for binary compatibility.
 	 * @param annotation the annotation to retrieve the attributes for
 	 * @return the Map of annotation attributes, with attribute names as keys and
@@ -790,7 +790,7 @@ public abstract class AnnotationUtils {
 	 * Retrieve the given annotation's attributes as a {@link Map}.
 	 * <p>Equivalent to calling {@link #getAnnotationAttributes(Annotation, boolean, boolean)}
 	 * with the {@code nestedAnnotationsAsMap} parameter set to {@code false}.
-	 * <p>Note: This method actually returns an {@link AnnotationAttributes} instance.
+	 * <p>注意: This method actually returns an {@link AnnotationAttributes} instance.
 	 * However, the {@code Map} signature has been preserved for binary compatibility.
 	 * @param annotation the annotation to retrieve the attributes for
 	 * @param classValuesAsString whether to convert Class references into Strings (for

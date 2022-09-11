@@ -79,7 +79,7 @@ public class TransactionalAnnotatedConfigClassWithAtConfigurationTests extends
 
 	@Before
 	public void compareDataSources() throws Exception {
-		// NOTE: the two DataSource instances ARE the same!
+		// 注意: the two DataSource instances ARE the same!
 		assertThat(dataSourceViaInjection).isSameAs(dataSourceFromTxManager);
 	}
 

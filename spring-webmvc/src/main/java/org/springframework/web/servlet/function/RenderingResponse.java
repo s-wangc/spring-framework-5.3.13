@@ -75,7 +75,7 @@ public interface RenderingResponse extends ServerResponse {
 		/**
 		 * Add the supplied attribute to the model using a
 		 * {@linkplain org.springframework.core.Conventions#getVariableName generated name}.
-		 * <p><em>Note: Empty {@link Collection Collections} are not added to
+		 * <p><em>注意: Empty {@link Collection Collections} are not added to
 		 * the model when using this method because we cannot correctly determine
 		 * the true convention name. View code should check for {@code null} rather
 		 * than for empty collections.</em>

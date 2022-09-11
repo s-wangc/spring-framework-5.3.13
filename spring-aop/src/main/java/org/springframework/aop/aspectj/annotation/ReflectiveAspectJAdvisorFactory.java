@@ -78,7 +78,7 @@ public class ReflectiveAspectJAdvisorFactory extends AbstractAspectJAdvisorFacto
 	private static final Comparator<Method> adviceMethodComparator;
 
 	static {
-		// Note: although @After is ordered before @AfterReturning and @AfterThrowing,
+		// 注意: although @After is ordered before @AfterReturning and @AfterThrowing,
 		// an @After advice method will actually be invoked after @AfterReturning and
 		// @AfterThrowing methods due to the fact that AspectJAfterAdvice.invoke(MethodInvocation)
 		// invokes proceed() in a `try` block and only invokes the @After advice method

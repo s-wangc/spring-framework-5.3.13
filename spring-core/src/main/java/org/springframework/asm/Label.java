@@ -492,7 +492,7 @@ public class Label {
    * method follows the control flow graph to find all the blocks that are reachable from the
    * current basic block WITHOUT following any jsr target.
    *
-   * <p>Note: a precondition and postcondition of this method is that all labels must have a null
+   * <p>注意: a precondition and postcondition of this method is that all labels must have a null
    * {@link #nextListElement}.
    *
    * @param subroutineId the id of the subroutine starting with the basic block corresponding to
@@ -527,7 +527,7 @@ public class Label {
    * corresponding to the return from this subroutine, when called from the given caller basic
    * block.
    *
-   * <p>Note: a precondition and postcondition of this method is that all labels must have a null
+   * <p>注意: a precondition and postcondition of this method is that all labels must have a null
    * {@link #nextListElement}.
    *
    * @param subroutineCaller a basic block that ends with a jsr to the basic block corresponding to

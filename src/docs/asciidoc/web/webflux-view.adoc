@@ -351,7 +351,7 @@ The following example shows how to set a custom render function:
 	}
 ----
 
-NOTE: Setting the `sharedEngine` property to `false` is required when using non-thread-safe
+注意: Setting the `sharedEngine` property to `false` is required when using non-thread-safe
 script engines with templating libraries not designed for concurrency, such as Handlebars or
 React running on Nashorn. In that case, Java SE 8 update 60 is required, due to
 https://bugs.openjdk.java.net/browse/JDK-8076099[this bug], but it is generally

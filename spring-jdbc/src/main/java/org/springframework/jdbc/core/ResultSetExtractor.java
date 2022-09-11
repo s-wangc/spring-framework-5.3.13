@@ -34,7 +34,7 @@ import org.springframework.lang.Nullable;
  * mapping one result object per row instead of one result object for
  * the entire ResultSet.
  *
- * <p>Note: In contrast to a {@link RowCallbackHandler}, a ResultSetExtractor
+ * <p>注意: In contrast to a {@link RowCallbackHandler}, a ResultSetExtractor
  * object is typically stateless and thus reusable, as long as it doesn't
  * access stateful resources (such as output streams when streaming LOB
  * contents) or keep result state within the object.

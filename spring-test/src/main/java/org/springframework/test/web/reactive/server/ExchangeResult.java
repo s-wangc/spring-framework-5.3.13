@@ -159,7 +159,7 @@ public class ExchangeResult {
 
 	/**
 	 * Return the raw request body content written through the request.
-	 * <p><strong>Note:</strong> If the request content has not been consumed
+	 * <p><strong>注意:</strong> If the request content has not been consumed
 	 * for any reason yet, use of this method will trigger consumption.
 	 * @throws IllegalStateException if the request body is not been fully written.
 	 */
@@ -201,7 +201,7 @@ public class ExchangeResult {
 
 	/**
 	 * Return the raw request body content written to the response.
-	 * <p><strong>Note:</strong> If the response content has not been consumed
+	 * <p><strong>注意:</strong> If the response content has not been consumed
 	 * yet, use of this method will trigger consumption.
 	 * @throws IllegalStateException if the response is not been fully read.
 	 */

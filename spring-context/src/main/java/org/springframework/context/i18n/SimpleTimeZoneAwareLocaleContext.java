@@ -25,7 +25,7 @@ import org.springframework.lang.Nullable;
  * Simple implementation of the {@link TimeZoneAwareLocaleContext} interface,
  * always returning a specified {@code Locale} and {@code TimeZone}.
  *
- * <p>Note: Prefer the use of {@link SimpleLocaleContext} when only setting
+ * <p>注意: Prefer the use of {@link SimpleLocaleContext} when only setting
  * a Locale but no TimeZone.
  *
  * @author Juergen Hoeller

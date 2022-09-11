@@ -83,7 +83,7 @@ public abstract class StoredProcedure extends SqlCall {
 	 * will always be used to provide input values. In addition to this, any parameter declared
 	 * as {@code SqlOutParameter} where a non-null input value is provided will also be used
 	 * as an input parameter.
-	 * <b>Note: Calls to declareParameter must be made in the same order as
+	 * <b>注意: Calls to declareParameter must be made in the same order as
 	 * they appear in the database's stored procedure parameter list.</b>
 	 * <p>Names are purely used to help mapping.
 	 * @param param the parameter object

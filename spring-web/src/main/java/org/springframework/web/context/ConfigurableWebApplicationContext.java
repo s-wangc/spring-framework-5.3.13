@@ -27,7 +27,7 @@ import org.springframework.lang.Nullable;
  * Supported by {@link ContextLoader} and
  * {@link org.springframework.web.servlet.FrameworkServlet}.
  *
- * <p>Note: The setters of this interface need to be called before an
+ * <p>注意: The setters of this interface need to be called before an
  * invocation of the {@link #refresh} method inherited from
  * {@link org.springframework.context.ConfigurableApplicationContext}.
  * They do not cause an initialization of the context on their own.

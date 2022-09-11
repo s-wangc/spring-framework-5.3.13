@@ -46,14 +46,14 @@ import org.springframework.core.annotation.AliasFor;
  * </li>
  * </ul>
  *
- * <p><strong>Note:</strong> This annotation can be used both at the class and
+ * <p><strong>注意:</strong> This annotation can be used both at the class and
  * at the method level. In most cases, at the method level applications will
  * prefer to use one of the HTTP method specific variants
  * {@link GetMapping @GetMapping}, {@link PostMapping @PostMapping},
  * {@link PutMapping @PutMapping}, {@link DeleteMapping @DeleteMapping}, or
  * {@link PatchMapping @PatchMapping}.</p>
  *
- * <p><b>NOTE:</b> When using controller interfaces (e.g. for AOP proxying),
+ * <p><b>注意:</b> When using controller interfaces (e.g. for AOP proxying),
  * make sure to consistently put <i>all</i> your mapping annotations - such as
  * {@code @RequestMapping} and {@code @SessionAttributes} - on
  * the controller <i>interface</i> rather than on the implementation class.

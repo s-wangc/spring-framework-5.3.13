@@ -29,7 +29,7 @@ AOP is used in the Spring Framework to:
   <<data-access.adoc#transaction-declarative, declarative transaction management>>.
 * Let users implement custom aspects, complementing their use of OOP with AOP.
 
-NOTE: If you are interested only in generic declarative services or other pre-packaged
+注意: If you are interested only in generic declarative services or other pre-packaged
 declarative middleware services such as pooling, you do not need to work directly with
 Spring AOP, and can skip most of this chapter.
 
@@ -207,7 +207,7 @@ interprets the same annotations as AspectJ 5, using a library supplied by Aspect
 for pointcut parsing and matching. The AOP runtime is still pure Spring AOP, though, and
 there is no dependency on the AspectJ compiler or weaver.
 
-NOTE: Using the AspectJ compiler and weaver enables use of the full AspectJ language and
+注意: Using the AspectJ compiler and weaver enables use of the full AspectJ language and
 is discussed in <<aop-using-aspectj>>.
 
 
@@ -316,7 +316,7 @@ other class. They can also contain pointcut, advice, and introduction (inter-typ
 declarations.
 
 .Autodetecting aspects through component scanning
-NOTE: You can register aspect classes as regular beans in your Spring XML configuration,
+注意: You can register aspect classes as regular beans in your Spring XML configuration,
 via `@Bean` methods in `@Configuration` classes, or have Spring autodetect them through
 classpath scanning -- the same as any other Spring-managed bean. However, note that the
 `@Aspect` annotation is not sufficient for autodetection in the classpath. For that
@@ -324,7 +324,7 @@ purpose, you need to add a separate `@Component` annotation (or, alternatively, 
 stereotype annotation that qualifies, as per the rules of Spring's component scanner).
 
 .Advising aspects with other aspects?
-NOTE: In Spring AOP, aspects themselves cannot be the targets of advice from other
+注意: In Spring AOP, aspects themselves cannot be the targets of advice from other
 aspects. The `@Aspect` annotation on a class marks it as an aspect and, hence, excludes
 it from auto-proxying.
 
@@ -770,7 +770,7 @@ sub-packages:
 	this(com.xyz.service.AccountService)
 ----
 +
-NOTE: 'this' is more commonly used in a binding form. See the section on <<aop-advice>>
+注意: 'this' is more commonly used in a binding form. See the section on <<aop-advice>>
 for how to make the proxy object available in the advice body.
 
 * Any join point (method execution only in Spring AOP) where the target object
@@ -781,7 +781,7 @@ implements the `AccountService` interface:
 	target(com.xyz.service.AccountService)
 ----
 +
-NOTE: 'target' is more commonly used in a binding form. See the <<aop-advice>> section
+注意: 'target' is more commonly used in a binding form. See the <<aop-advice>> section
 for how to make the target object available in the advice body.
 
 * Any join point (method execution only in Spring AOP) that takes a single parameter
@@ -792,7 +792,7 @@ and where the argument passed at runtime is `Serializable`:
 	args(java.io.Serializable)
 ----
 +
-NOTE: 'args' is more commonly used in a binding form. See the <<aop-advice>> section
+注意: 'args' is more commonly used in a binding form. See the <<aop-advice>> section
 for how to make the method arguments available in the advice body.
 +
 Note that the pointcut given in this example is different from `execution(*
@@ -808,7 +808,7 @@ parameter of type `Serializable`.
 	@target(org.springframework.transaction.annotation.Transactional)
 ----
 +
-NOTE: You can also use '@target' in a binding form. See the <<aop-advice>> section for
+注意: You can also use '@target' in a binding form. See the <<aop-advice>> section for
 how to make the annotation object available in the advice body.
 
 * Any join point (method execution only in Spring AOP) where the declared type of the
@@ -819,7 +819,7 @@ target object has an `@Transactional` annotation:
 	@within(org.springframework.transaction.annotation.Transactional)
 ----
 +
-NOTE: You can also use '@within' in a binding form. See the <<aop-advice>> section for
+注意: You can also use '@within' in a binding form. See the <<aop-advice>> section for
 how to make the annotation object available in the advice body.
 
 * Any join point (method execution only in Spring AOP) where the executing method has an
@@ -830,7 +830,7 @@ how to make the annotation object available in the advice body.
 	@annotation(org.springframework.transaction.annotation.Transactional)
 ----
 +
-NOTE: You can also use '@annotation' in a binding form. See the <<aop-advice>> section
+注意: You can also use '@annotation' in a binding form. See the <<aop-advice>> section
 for how to make the annotation object available in the advice body.
 
 * Any join point (method execution only in Spring AOP) which takes a single parameter,
@@ -841,7 +841,7 @@ and where the runtime type of the argument passed has the `@Classified` annotati
 	@args(com.xyz.security.Classified)
 ----
 +
-NOTE: You can also use '@args' in a binding form. See the <<aop-advice>> section
+注意: You can also use '@args' in a binding form. See the <<aop-advice>> section
 how to make the annotation object(s) available in the advice body.
 
 * Any join point (method execution only in Spring AOP) on a Spring bean named
@@ -1015,7 +1015,7 @@ You can declare it by using the `@AfterReturning` annotation:
 	}
 ----
 
-NOTE: You can have multiple advice declarations (and other members as well),
+注意: You can have multiple advice declarations (and other members as well),
 all inside the same aspect. We show only a single advice declaration in these
 examples to focus the effect of each one.
 
@@ -1227,7 +1227,7 @@ calling `proceed()` on the `ProceedingJoinPoint` causes the underlying method to
 The `proceed` method can also pass in an `Object[]`. The values in the array are used
 as the arguments to the method execution when it proceeds.
 
-NOTE: The behavior of `proceed` when called with an `Object[]` is a little different than
+注意: The behavior of `proceed` when called with an `Object[]` is a little different than
 the behavior of `proceed` for around advice compiled by the AspectJ compiler. For around
 advice written using the traditional AspectJ language, the number of arguments passed to
 `proceed` must match the number of arguments passed to the around advice (not the number
@@ -1585,7 +1585,7 @@ the `argNames` attribute:
   optimization to remove unused local variables is not  applied by your compiler. In
   other words, you should encounter no difficulties by building with this flag on.
 +
-NOTE: If an @AspectJ aspect has been compiled by the AspectJ compiler (ajc) even without the
+注意: If an @AspectJ aspect has been compiled by the AspectJ compiler (ajc) even without the
 debug information, you need not add the `argNames` attribute, as the compiler
 retain the needed information.
 
@@ -1742,7 +1742,7 @@ you would write the following:
 [[aop-instantiation-models]]
 === Aspect Instantiation Models
 
-NOTE: This is an advanced topic. If you are just starting out with AOP, you can safely skip
+注意: This is an advanced topic. If you are just starting out with AOP, you can safely skip
 it until later.
 
 By default, there is a single instance of each aspect within the application
@@ -2801,7 +2801,7 @@ main action happens in the `doConcurrentOperation` around advice method. We try 
 proceed. If we fail with a `PessimisticLockingFailureException`, we try again,
 unless we have exhausted all of our retry attempts.
 
-NOTE: This class is identical to the one used in the @AspectJ example, but with the
+注意: This class is identical to the one used in the @AspectJ example, but with the
 annotations removed.
 
 The corresponding Spring configuration is as follows:
@@ -3497,7 +3497,7 @@ configuration aspect. The following example shows how to use the `depends-on` at
 	</bean>
 ----
 
-NOTE: Do not activate `@Configurable` processing through the bean configurer aspect unless you
+注意: Do not activate `@Configurable` processing through the bean configurer aspect unless you
 really mean to rely on its semantics at runtime. In particular, make sure that you do
 not use `@Configurable` on bean classes that are registered as regular Spring beans
 with the container. Doing so results in double initialization, once through the
@@ -3649,7 +3649,7 @@ configuration. The following example shows how to use `<include/>` elements:
 	</aop:aspectj-autoproxy>
 ----
 
-NOTE: Do not be misled by the name of the `<aop:aspectj-autoproxy/>` element. Using it
+注意: Do not be misled by the name of the `<aop:aspectj-autoproxy/>` element. Using it
 results in the creation of Spring AOP proxies. The @AspectJ style of aspect
 declaration is being used here, but the AspectJ runtime is not involved.
 
@@ -3698,7 +3698,7 @@ profiling tool, we are going to switch on a simple profiling aspect that lets us
 quickly get some performance metrics. We can then apply a finer-grained profiling
 tool to that specific area immediately afterwards.
 
-NOTE: The example presented here uses XML configuration. You can also configure and
+注意: The example presented here uses XML configuration. You can also configure and
 use @AspectJ with <<beans-java, Java configuration>>. Specifically, you can use the
 `@EnableLoadTimeWeaving` annotation as an alternative to `<context:load-time-weaver/>`
 (see <<aop-aj-ltw-spring, below>> for details).
@@ -3946,7 +3946,7 @@ Admittedly, the example is simplistic. However, the basics of the LTW support in
 have all been introduced in the earlier example, and the rest of this section explains
 the "`why`" behind each bit of configuration and usage in detail.
 
-NOTE: The `ProfilingAspect` used in this example may be basic, but it is quite useful. It is a
+注意: The `ProfilingAspect` used in this example may be basic, but it is quite useful. It is a
 nice example of a development-time aspect that developers can use during development
 and then easily exclude from builds of the application being deployed
 into UAT or production.

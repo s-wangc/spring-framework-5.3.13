@@ -140,7 +140,7 @@ public interface NamedParameterJdbcOperations {
 	/**
 	 * Query given SQL to create a prepared statement from SQL,
 	 * reading the ResultSet with a ResultSetExtractor.
-	 * <p>Note: In contrast to the JdbcOperations method with the same signature,
+	 * <p>注意: In contrast to the JdbcOperations method with the same signature,
 	 * this query variant always uses a PreparedStatement. It is effectively
 	 * equivalent to a query call with an empty parameter Map.
 	 * @param sql the SQL query to execute
@@ -178,7 +178,7 @@ public interface NamedParameterJdbcOperations {
 	/**
 	 * Query given SQL to create a prepared statement from SQL,
 	 * reading the ResultSet on a per-row basis with a RowCallbackHandler.
-	 * <p>Note: In contrast to the JdbcOperations method with the same signature,
+	 * <p>注意: In contrast to the JdbcOperations method with the same signature,
 	 * this query variant always uses a PreparedStatement. It is effectively
 	 * equivalent to a query call with an empty parameter Map.
 	 * @param sql the SQL query to execute
@@ -217,7 +217,7 @@ public interface NamedParameterJdbcOperations {
 	/**
 	 * Query given SQL to create a prepared statement from SQL,
 	 * mapping each row to a Java object via a RowMapper.
-	 * <p>Note: In contrast to the JdbcOperations method with the same signature,
+	 * <p>注意: In contrast to the JdbcOperations method with the same signature,
 	 * this query variant always uses a PreparedStatement. It is effectively
 	 * equivalent to a query call with an empty parameter Map.
 	 * @param sql the SQL query to execute

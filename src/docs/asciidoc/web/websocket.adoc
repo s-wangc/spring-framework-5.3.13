@@ -199,7 +199,7 @@ Undertow (and WildFly).
 
 
 
-NOTE: A request to overcome the preceding limitation in the Java WebSocket API has been
+注意: A request to overcome the preceding limitation in the Java WebSocket API has been
 created and can be followed at
 https://github.com/eclipse-ee4j/websocket-api/issues/211[eclipse-ee4j/websocket-api#211].
 Tomcat, Undertow, and WebSphere provide their own API alternatives that
@@ -298,7 +298,7 @@ The following example shows the XML configuration equivalent of the preceding ex
 	</beans>
 ----
 
-NOTE: For client-side WebSocket configuration, you should use `WebSocketContainerFactoryBean`
+注意: For client-side WebSocket configuration, you should use `WebSocketContainerFactoryBean`
 (XML) or `ContainerProvider.getWebSocketContainer()` (Java configuration).
 
 For Jetty, you need to supply a pre-configured Jetty `WebSocketServerFactory` and plug
@@ -662,7 +662,7 @@ The following example shows how to do so in Java configuration:
 
 The XML namespace provides a similar option through the `<websocket:sockjs>` element.
 
-NOTE: During initial development, do enable the SockJS client `devel` mode that prevents
+注意: During initial development, do enable the SockJS client `devel` mode that prevents
 the browser from caching SockJS requests (like the iframe) that would otherwise
 be cached. For details on how to enable it see the
 https://github.com/sockjs/sockjs-client/[SockJS client] page.
@@ -679,7 +679,7 @@ heartbeat is sent after 25 seconds, assuming no other messages were sent on that
 connection. This 25-second value is in line with the following
 https://tools.ietf.org/html/rfc6202[IETF recommendation] for public Internet applications.
 
-NOTE: When using STOMP over WebSocket and SockJS, if the STOMP client and server negotiate
+注意: When using STOMP over WebSocket and SockJS, if the STOMP client and server negotiate
 heartbeats to be exchanged, the SockJS heartbeats are disabled.
 
 The Spring SockJS support also lets you configure the `TaskScheduler` to
@@ -707,7 +707,7 @@ to the response. Since Spring's SockJS Service supports server-sent heartbeats (
 25 seconds by default), that means a client disconnect is usually detected within that
 time period (or earlier, if messages are sent more frequently).
 
-NOTE: As a result, network I/O failures can occur because a client has disconnected, which
+注意: As a result, network I/O failures can occur because a client has disconnected, which
 can fill the log with unnecessary stack traces. Spring makes a best effort to identify
 such network failures that represent client disconnects (specific to each server) and log
 a minimal message by using the dedicated log category, `DISCONNECTED_CLIENT_LOG_CATEGORY`
@@ -781,7 +781,7 @@ The following example shows how to create a SockJS client and connect to a SockJ
   sockJsClient.doHandshake(new MyWebSocketHandler(), "ws://example.com:8080/sockjs");
 ----
 
-NOTE: SockJS uses JSON formatted arrays for messages. By default, Jackson 2 is used and needs
+注意: SockJS uses JSON formatted arrays for messages. By default, Jackson 2 is used and needs
 to be on the classpath. Alternatively, you can configure a custom implementation of
 `SockJsMessageCodec` and configure it on the `SockJsClient`.
 
@@ -1012,7 +1012,7 @@ The following example shows the XML configuration equivalent of the preceding ex
 	</beans>
 ----
 
-NOTE: For the built-in simple broker, the `/topic` and `/queue` prefixes do not have any special
+注意: For the built-in simple broker, the `/topic` and `/queue` prefixes do not have any special
 meaning. They are merely a convention to differentiate between pub-sub versus point-to-point
 messaging (that is, many subscribers versus one consumer). When you use an external broker,
 check the STOMP page of the broker to understand what kind of STOMP destinations and
@@ -1434,7 +1434,7 @@ stores them in memory, and broadcasts messages to connected clients that have ma
 destinations. The broker supports path-like destinations, including subscriptions
 to Ant-style destination patterns.
 
-NOTE: Applications can also use dot-separated (rather than slash-separated) destinations.
+注意: Applications can also use dot-separated (rather than slash-separated) destinations.
 See <<websocket-stomp-destination-separator>>.
 
 If configured with a task scheduler, the simple broker supports
@@ -1537,7 +1537,7 @@ and then forwards all messages received from the broker to clients through their
 WebSocket sessions. Essentially, it acts as a "`relay`" that forwards messages
 in both directions.
 
-NOTE: Add `io.projectreactor.netty:reactor-netty` and `io.netty:netty-all`
+注意: Add `io.projectreactor.netty:reactor-netty` and `io.netty:netty-all`
 dependencies to your project for TCP connection management.
 
 Furthermore, application components (such as HTTP request handling methods,
@@ -1564,7 +1564,7 @@ connections created on behalf of clients. This is exposed in both the XML namesp
 and Java configuration as the `clientLogin` and `clientPasscode` properties with default
 values of `guest` and `guest`.
 
-NOTE: The STOMP broker relay always sets the `login` and `passcode` headers on every `CONNECT`
+注意: The STOMP broker relay always sets the `login` and `passcode` headers on every `CONNECT`
 frame that it forwards to the broker on behalf of clients. Therefore, WebSocket clients
 need not set those headers. They are ignored. As the <<websocket-stomp-authentication>>
 section explains, WebSocket clients should instead rely on HTTP authentication to protect
@@ -1729,7 +1729,7 @@ Spring ignores authorization headers at the STOMP protocol level, assumes that
 the user is already authenticated at the HTTP transport level, and expects that
 the WebSocket or SockJS session contain the authenticated user.
 
-NOTE: Spring Security provides
+注意: Spring Security provides
 https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#websocket[WebSocket sub-protocol authorization]
 that uses a `ChannelInterceptor` to authorize messages based on the user header in them.
 Also, Spring Session provides a
@@ -1762,7 +1762,7 @@ Instead, it does allow sending query parameters that you can use to send a token
 but that has its own drawbacks (for example, the token may be inadvertently
 logged with the URL in server logs).
 
-NOTE: The preceding limitations are for browser-based clients and do not apply to the
+注意: The preceding limitations are for browser-based clients and do not apply to the
 Spring Java-based STOMP client, which does support sending headers with both
 WebSocket and SockJS requests.
 
@@ -1879,7 +1879,7 @@ setting the `broadcast` attribute to false, as the following example shows:
 	}
 ----
 
-NOTE: While user destinations generally imply an authenticated user, it is not strictly required.
+注意: While user destinations generally imply an authenticated user, it is not strictly required.
 A WebSocket session that is not associated with an authenticated user
 can subscribe to a user destination. In such cases, the `@SendToUser` annotation
 behaves exactly the same as with `broadcast=false` (that is, targeting only the
@@ -1911,7 +1911,7 @@ public class TradeServiceImpl implements TradeService {
 }
 ----
 
-NOTE: When you use user destinations with an external message broker, you should check the broker
+注意: When you use user destinations with an external message broker, you should check the broker
 documentation on how to manage inactive queues, so that, when the user session is
 over, all unique user queues are removed. For example, RabbitMQ creates auto-delete
 queues when you use destinations such as `/exchange/amq.direct/position-updates`.
@@ -2012,7 +2012,7 @@ have been sent from the client or it may be automatically generated when the
 WebSocket session is closed. In some cases, this event is published more than once
 per session. Components should be idempotent with regard to multiple disconnect events.
 
-NOTE: When you use a full-featured broker, the STOMP "`broker relay`" automatically reconnects the
+注意: When you use a full-featured broker, the STOMP "`broker relay`" automatically reconnects the
 "`system`" connection if broker becomes temporarily unavailable. Client connections,
 however, are not automatically reconnected. Assuming heartbeats are enabled, the client
 typically notices the broker is not responding within 10 seconds. Clients need to
@@ -2158,7 +2158,7 @@ when initializing the <<websocket-stomp-handle-broker-relay>> which ensures a
 heartbeat is forwarded to the broker also when only messages with a non-broker
 destination are sent.
 
-NOTE: When you use `WebSocketStompClient` for performance tests to simulate thousands
+注意: When you use `WebSocketStompClient` for performance tests to simulate thousands
 of clients from the same machine, consider turning off heartbeats, since each
 connection schedules its own heartbeat tasks and that is not optimized for
 a large number of clients running on the same machine.

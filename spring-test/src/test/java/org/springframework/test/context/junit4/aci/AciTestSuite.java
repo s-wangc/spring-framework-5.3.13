@@ -38,7 +38,7 @@ import org.springframework.test.context.junit4.aci.xml.MultipleInitializersXmlCo
  * @since 3.2
  */
 @RunWith(Suite.class)
-// Note: the following 'multi-line' layout is for enhanced code readability.
+// 注意: the following 'multi-line' layout is for enhanced code readability.
 @SuiteClasses({//
 	MultipleInitializersXmlConfigTests.class,//
 	SingleInitializerAnnotationConfigTests.class,//

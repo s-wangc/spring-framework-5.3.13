@@ -99,7 +99,7 @@ public class HibernateJpaVendorAdapter extends AbstractJpaVendorAdapter {
 	 * new connection handling mode {@code DELAYED_ACQUISITION_AND_HOLD} in that case
 	 * unless a user-specified connection handling mode property indicates otherwise;
 	 * switch this flag to {@code false} to avoid that interference.
-	 * <p><b>NOTE: For a persistence unit with transaction type JTA e.g. on WebLogic,
+	 * <p><b>注意: For a persistence unit with transaction type JTA e.g. on WebLogic,
 	 * the connection release mode will never be altered from its provider default,
 	 * i.e. not be forced to {@code DELAYED_ACQUISITION_AND_HOLD} by this flag.</b>
 	 * Alternatively, set Hibernate's "hibernate.connection.handling_mode"

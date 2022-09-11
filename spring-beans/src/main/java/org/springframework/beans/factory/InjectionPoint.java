@@ -87,7 +87,7 @@ public class InjectionPoint {
 
 	/**
 	 * Return the wrapped MethodParameter, if any.
-	 * <p>Note: Either MethodParameter or Field is available.
+	 * <p>注意: Either MethodParameter or Field is available.
 	 * @return the MethodParameter, or {@code null} if none
 	 */
 	@Nullable
@@ -97,7 +97,7 @@ public class InjectionPoint {
 
 	/**
 	 * Return the wrapped Field, if any.
-	 * <p>Note: Either MethodParameter or Field is available.
+	 * <p>注意: Either MethodParameter or Field is available.
 	 * @return the Field, or {@code null} if none
 	 */
 	@Nullable
@@ -163,7 +163,7 @@ public class InjectionPoint {
 
 	/**
 	 * Return the wrapped annotated element.
-	 * <p>Note: In case of a method/constructor parameter, this exposes
+	 * <p>注意: In case of a method/constructor parameter, this exposes
 	 * the annotations declared on the method or constructor itself
 	 * (i.e. at the method/constructor level, not at the parameter level).
 	 * Use {@link #getAnnotations()} to obtain parameter-level annotations in

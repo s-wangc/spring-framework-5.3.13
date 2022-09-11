@@ -47,7 +47,7 @@ public interface ConfigurablePropertyResolver extends PropertyResolver {
 	/**
 	 * Set the {@link ConfigurableConversionService} to be used when performing type
 	 * conversions on properties.
-	 * <p><strong>Note:</strong> as an alternative to fully replacing the
+	 * <p><strong>注意:</strong> as an alternative to fully replacing the
 	 * {@code ConversionService}, consider adding or removing individual
 	 * {@code Converter} instances by drilling into {@link #getConversionService()}
 	 * and calling methods such as {@code #addConverter}.

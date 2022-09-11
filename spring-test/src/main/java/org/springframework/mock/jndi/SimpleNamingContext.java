@@ -116,7 +116,7 @@ public class SimpleNamingContext implements Context {
 
 	/**
 	 * Look up the object with the given name.
-	 * <p>Note: Not intended for direct use by applications.
+	 * <p>注意: Not intended for direct use by applications.
 	 * Will be used by any standard InitialContext JNDI lookups.
 	 * @throws javax.naming.NameNotFoundException if the object could not be found
 	 */
@@ -153,7 +153,7 @@ public class SimpleNamingContext implements Context {
 
 	/**
 	 * Bind the given object to the given name.
-	 * Note: Not intended for direct use by applications
+	 * 注意: Not intended for direct use by applications
 	 * if setting up a JVM-level JNDI environment.
 	 * Use SimpleNamingContextBuilder to set up JNDI bindings then.
 	 * @see org.springframework.mock.jndi.SimpleNamingContextBuilder#bind

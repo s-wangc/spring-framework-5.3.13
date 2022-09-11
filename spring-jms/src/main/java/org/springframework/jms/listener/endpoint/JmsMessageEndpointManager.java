@@ -36,7 +36,7 @@ import org.springframework.lang.Nullable;
  * that gets converted into a provider-specific JCA 1.5 ActivationSpec
  * object for activating the endpoint.
  *
- * <p><b>NOTE:</b> This JCA-based endpoint manager supports standard JMS
+ * <p><b>注意:</b> This JCA-based endpoint manager supports standard JMS
  * {@link javax.jms.MessageListener} endpoints only. It does <i>not</i> support
  * Spring's {@link org.springframework.jms.listener.SessionAwareMessageListener}
  * variant, simply because the JCA endpoint management contract does not allow

@@ -47,7 +47,7 @@ import org.springframework.web.context.support.WebApplicationContextUtils;
  * Filter instances. Alternatively, consider standard Filter setup in combination
  * with looking up service beans from the Spring root application context.
  *
- * <p><b>NOTE:</b> The lifecycle methods defined by the Servlet Filter interface
+ * <p><b>注意:</b> The lifecycle methods defined by the Servlet Filter interface
  * will by default <i>not</i> be delegated to the target bean, relying on the
  * Spring application context to manage the lifecycle of that bean. Specifying
  * the "targetFilterLifecycle" filter init-param as "true" will enforce invocation
