@@ -136,7 +136,7 @@ public interface BeanFactory {
 	 * <p>Translates aliases back to the corresponding canonical bean name.
 	 * <p>将询问父工厂是否在此工厂实例中找不到bean.
 	 * @param name 要检索的bean的名称
-	 * @return an instance of the bean
+	 * @return 一个bean的实例
 	 * @throws NoSuchBeanDefinitionException if there is no bean with the specified name
 	 * @throws BeansException if the bean could not be obtained
 	 */
@@ -152,7 +152,7 @@ public interface BeanFactory {
 	 * <p>将询问父工厂是否在此工厂实例中找不到bean.
 	 * @param name 要检索的bean的名称
 	 * @param requiredType type the bean must match; can be an interface or superclass
-	 * @return an instance of the bean
+	 * @return 一个bean的实例
 	 * @throws NoSuchBeanDefinitionException if there is no such bean definition
 	 * @throws BeanNotOfRequiredTypeException if the bean is not of the required type
 	 * @throws BeansException 如果无法创建bean
@@ -166,7 +166,7 @@ public interface BeanFactory {
 	 * @param name 要检索的bean的名称
 	 * @param args arguments to use when creating a bean instance using explicit arguments
 	 * (only applied when creating a new instance as opposed to retrieving an existing one)
-	 * @return an instance of the bean
+	 * @return 一个bean的实例
 	 * @throws NoSuchBeanDefinitionException if there is no such bean definition
 	 * @throws BeanDefinitionStoreException if arguments have been given but
 	 * the affected bean isn't a prototype
@@ -202,7 +202,7 @@ public interface BeanFactory {
 	 * @param requiredType type the bean must match; can be an interface or superclass
 	 * @param args arguments to use when creating a bean instance using explicit arguments
 	 * (only applied when creating a new instance as opposed to retrieving an existing one)
-	 * @return an instance of the bean
+	 * @return 一个bean的实例
 	 * @throws NoSuchBeanDefinitionException if there is no such bean definition
 	 * @throws BeanDefinitionStoreException if arguments have been given but
 	 * the affected bean isn't a prototype

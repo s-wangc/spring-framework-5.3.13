@@ -224,7 +224,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 * @param requiredType the required type of the bean to retrieve
 	 * @param args arguments to use when creating a bean instance using explicit arguments
 	 * (only applied when creating a new instance as opposed to retrieving an existing one)
-	 * @return an instance of the bean
+	 * @return 一个bean的实例
 	 * @throws BeansException 如果无法创建bean
 	 */
 	public <T> T getBean(String name, @Nullable Class<T> requiredType, @Nullable Object... args)
@@ -241,7 +241,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 * (only applied when creating a new instance as opposed to retrieving an existing one)
 	 * @param typeCheckOnly whether the instance is obtained for a type check,
 	 * not for actual use
-	 * @return an instance of the bean
+	 * @return 一个bean的实例
 	 * @throws BeansException 如果无法创建bean
 	 */
 	@SuppressWarnings("unchecked")
