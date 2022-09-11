@@ -562,7 +562,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	 * <p>Differentiates between default bean instantiation, use of a
 	 * factory method, and autowiring a constructor.
 	 * @param beanName bean的名称
-	 * @param mbd the merged bean definition for the bean
+	 * @param mbd  bean的merged bean定义
 	 * @param args explicit arguments to use for constructor or factory method invocation
 	 * @return a new instance of the bean
 	 * @throws BeanCreationException 如果无法创建bean
@@ -690,7 +690,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	/**
 	 * Determine the target type for the given bean definition.
 	 * @param beanName bean的名称(用于错误处理)
-	 * @param mbd the merged bean definition for the bean
+	 * @param mbd  bean的merged bean定义
 	 * @param typesToMatch the types to match in case of internal type matching purposes
 	 * (also signals that the returned {@code Class} will never be exposed to application code)
 	 * @return the type for the bean if determinable, or {@code null} otherwise
@@ -717,7 +717,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	 * different creation strategies. As far as possible, we'll perform static
 	 * type checking to avoid creation of the target bean.
 	 * @param beanName bean的名称(用于错误处理)
-	 * @param mbd the merged bean definition for the bean
+	 * @param mbd  bean的merged bean定义
 	 * @param typesToMatch the types to match in case of internal type matching purposes
 	 * (also signals that the returned {@code Class} will never be exposed to application code)
 	 * @return the type for the bean if determinable, or {@code null} otherwise
@@ -974,7 +974,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	 * Obtain a reference for early access to the specified bean,
 	 * typically for the purpose of resolving a circular reference.
 	 * @param beanName bean的名称(用于错误处理)
-	 * @param mbd the merged bean definition for the bean
+	 * @param mbd  bean的merged bean定义
 	 * @param bean the raw bean instance
 	 * @return the object to expose as bean reference
 	 */
@@ -1106,7 +1106,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	/**
 	 * Apply MergedBeanDefinitionPostProcessors to the specified bean definition,
 	 * invoking their {@code postProcessMergedBeanDefinition} methods.
-	 * @param mbd the merged bean definition for the bean
+	 * @param mbd  bean的merged bean定义
 	 * @param beanType the actual type of the managed bean instance
 	 * @param beanName bean的名称
 	 * @see MergedBeanDefinitionPostProcessor#postProcessMergedBeanDefinition

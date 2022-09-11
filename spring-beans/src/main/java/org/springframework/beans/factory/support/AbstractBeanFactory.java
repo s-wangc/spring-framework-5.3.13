@@ -1690,7 +1690,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 * a full FactoryBean creation as performed by this implementation should be used
 	 * as fallback.
 	 * @param beanName bean的名称
-	 * @param mbd the merged bean definition for the bean
+	 * @param mbd  bean的merged bean定义
 	 * @param allowInit if initialization of the FactoryBean is permitted if the type
 	 * cannot be determined another way
 	 * @return the type for the bean if determinable, otherwise {@code ResolvableType.NONE}
@@ -1755,7 +1755,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 * If no type found, a full FactoryBean creation as performed by this implementation
 	 * should be used as fallback.
 	 * @param beanName bean的名称
-	 * @param mbd the merged bean definition for the bean
+	 * @param mbd  bean的merged bean定义
 	 * @return the type for the bean if determinable, or {@code null} otherwise
 	 * @see org.springframework.beans.factory.FactoryBean#getObjectType()
 	 * @see #getBean(String)
@@ -1995,7 +1995,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 * in case of a child definition.
 	 * <p>All bean retrieval methods delegate to this method for actual bean creation.
 	 * @param beanName bean的名称
-	 * @param mbd the merged bean definition for the bean
+	 * @param mbd  bean的merged bean定义
 	 * @param args explicit arguments to use for constructor or factory method invocation
 	 * @return a new instance of the bean
 	 * @throws BeanCreationException 如果无法创建bean
