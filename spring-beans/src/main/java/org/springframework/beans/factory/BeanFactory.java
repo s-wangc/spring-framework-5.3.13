@@ -135,7 +135,7 @@ public interface BeanFactory {
 	 * returned objects in the case of Singleton beans.
 	 * <p>Translates aliases back to the corresponding canonical bean name.
 	 * <p>将询问父工厂是否在此工厂实例中找不到bean.
-	 * @param name the name of the bean to retrieve
+	 * @param name 要检索的bean的名称
 	 * @return an instance of the bean
 	 * @throws NoSuchBeanDefinitionException if there is no bean with the specified name
 	 * @throws BeansException if the bean could not be obtained
@@ -150,7 +150,7 @@ public interface BeanFactory {
 	 * the result correctly, as can happen with {@link #getBean(String)}.
 	 * <p>Translates aliases back to the corresponding canonical bean name.
 	 * <p>将询问父工厂是否在此工厂实例中找不到bean.
-	 * @param name the name of the bean to retrieve
+	 * @param name 要检索的bean的名称
 	 * @param requiredType type the bean must match; can be an interface or superclass
 	 * @return an instance of the bean
 	 * @throws NoSuchBeanDefinitionException if there is no such bean definition
@@ -163,7 +163,7 @@ public interface BeanFactory {
 	 * 返回指定bean的一个实例, 该实例可以是共享的, 也可以是独立的.
 	 * <p>Allows for specifying explicit constructor arguments / factory method arguments,
 	 * overriding the specified default arguments (if any) in the bean definition.
-	 * @param name the name of the bean to retrieve
+	 * @param name 要检索的bean的名称
 	 * @param args arguments to use when creating a bean instance using explicit arguments
 	 * (only applied when creating a new instance as opposed to retrieving an existing one)
 	 * @return an instance of the bean

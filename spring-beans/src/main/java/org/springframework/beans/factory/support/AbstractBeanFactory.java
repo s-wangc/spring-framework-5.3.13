@@ -220,7 +220,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 
 	/**
 	 * 返回指定bean的一个实例, 该实例可以是共享的, 也可以是独立的.
-	 * @param name the name of the bean to retrieve
+	 * @param name 要检索的bean的名称
 	 * @param requiredType the required type of the bean to retrieve
 	 * @param args arguments to use when creating a bean instance using explicit arguments
 	 * (only applied when creating a new instance as opposed to retrieving an existing one)
@@ -235,7 +235,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 
 	/**
 	 * 返回指定bean的一个实例, 该实例可以是共享的, 也可以是独立的.
-	 * @param name the name of the bean to retrieve
+	 * @param name 要检索的bean的名称
 	 * @param requiredType the required type of the bean to retrieve
 	 * @param args arguments to use when creating a bean instance using explicit arguments
 	 * (only applied when creating a new instance as opposed to retrieving an existing one)
