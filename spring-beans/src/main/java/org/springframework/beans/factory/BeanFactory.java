@@ -129,7 +129,7 @@ public interface BeanFactory {
 
 
 	/**
-	 * Return an instance, which may be shared or independent, of the specified bean.
+	 * 返回指定bean的一个实例, 该实例可以是共享的, 也可以是独立的.
 	 * <p>This method allows a Spring BeanFactory to be used as a replacement for the
 	 * Singleton or Prototype design pattern. Callers may retain references to
 	 * returned objects in the case of Singleton beans.
@@ -143,7 +143,7 @@ public interface BeanFactory {
 	Object getBean(String name) throws BeansException;
 
 	/**
-	 * Return an instance, which may be shared or independent, of the specified bean.
+	 * 返回指定bean的一个实例, 该实例可以是共享的, 也可以是独立的.
 	 * <p>Behaves the same as {@link #getBean(String)}, but provides a measure of type
 	 * safety by throwing a BeanNotOfRequiredTypeException if the bean is not of the
 	 * required type. This means that ClassCastException can't be thrown on casting
@@ -160,7 +160,7 @@ public interface BeanFactory {
 	<T> T getBean(String name, Class<T> requiredType) throws BeansException;
 
 	/**
-	 * Return an instance, which may be shared or independent, of the specified bean.
+	 * 返回指定bean的一个实例, 该实例可以是共享的, 也可以是独立的.
 	 * <p>Allows for specifying explicit constructor arguments / factory method arguments,
 	 * overriding the specified default arguments (if any) in the bean definition.
 	 * @param name the name of the bean to retrieve
@@ -192,7 +192,7 @@ public interface BeanFactory {
 	<T> T getBean(Class<T> requiredType) throws BeansException;
 
 	/**
-	 * Return an instance, which may be shared or independent, of the specified bean.
+	 * 返回指定bean的一个实例, 该实例可以是共享的, 也可以是独立的.
 	 * <p>Allows for specifying explicit constructor arguments / factory method arguments,
 	 * overriding the specified default arguments (if any) in the bean definition.
 	 * <p>This method goes into {@link ListableBeanFactory} by-type lookup territory
