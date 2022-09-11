@@ -527,7 +527,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 		}
 
 		try {
-			// Give BeanPostProcessors a chance to return a proxy instead of the target bean instance.
+			// 让BeanPostProcessors有机会返回代理而不是目标bean实例.
 			Object bean = resolveBeforeInstantiation(beanName, mbdToUse);
 			if (bean != null) {
 				return bean;
@@ -1021,7 +1021,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 			try {
 				// Mark this bean as currently in creation, even if just partially.
 				beforeSingletonCreation(beanName);
-				// Give BeanPostProcessors a chance to return a proxy instead of the target bean instance.
+				// 让BeanPostProcessors有机会返回代理而不是目标bean实例.
 				instance = resolveBeforeInstantiation(beanName, mbd);
 				if (instance == null) {
 					bw = createBeanInstance(beanName, mbd, null);
@@ -1076,7 +1076,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 		try {
 			// Mark this bean as currently in creation, even if just partially.
 			beforePrototypeCreation(beanName);
-			// Give BeanPostProcessors a chance to return a proxy instead of the target bean instance.
+			// 让BeanPostProcessors有机会返回代理而不是目标bean实例.
 			instance = resolveBeforeInstantiation(beanName, mbd);
 			if (instance == null) {
 				BeanWrapper bw = createBeanInstance(beanName, mbd, null);
