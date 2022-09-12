@@ -1953,7 +1953,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 
 	/**
 	 * Check if this bean factory contains a bean definition with the given name.
-	 * Does not consider any hierarchy this factory may participate in.
+	 * 不考虑该工厂可能参与的任何层次结构.
 	 * Invoked by {@code containsBean} when no cached singleton instance is found.
 	 * <p>Depending on the nature of the concrete bean factory implementation,
 	 * this operation might be expensive (for example, because of directory lookups

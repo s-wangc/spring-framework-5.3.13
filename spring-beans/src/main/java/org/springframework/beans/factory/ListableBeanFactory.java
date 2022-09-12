@@ -133,7 +133,7 @@ public interface ListableBeanFactory extends BeanFactory {
 	 * <p>Does consider objects created by FactoryBeans, which means that FactoryBeans
 	 * will get initialized. If the object created by the FactoryBean doesn't match,
 	 * the raw FactoryBean itself will be matched against the type.
-	 * <p>Does not consider any hierarchy this factory may participate in.
+	 * <p>不考虑该工厂可能参与的任何层次结构.
 	 * Use BeanFactoryUtils' {@code beanNamesForTypeIncludingAncestors}
 	 * to include beans in ancestor factories too.
 	 * <p>注意: Does <i>not</i> ignore singleton beans that have been registered
@@ -164,7 +164,7 @@ public interface ListableBeanFactory extends BeanFactory {
 	 * FactoryBean doesn't match, the raw FactoryBean itself will be matched against the
 	 * type. If "allowEagerInit" is not set, only raw FactoryBeans will be checked
 	 * (which doesn't require initialization of each FactoryBean).
-	 * <p>Does not consider any hierarchy this factory may participate in.
+	 * <p>不考虑该工厂可能参与的任何层次结构.
 	 * Use BeanFactoryUtils' {@code beanNamesForTypeIncludingAncestors}
 	 * to include beans in ancestor factories too.
 	 * <p>注意: Does <i>not</i> ignore singleton beans that have been registered
@@ -196,7 +196,7 @@ public interface ListableBeanFactory extends BeanFactory {
 	 * <p>Does consider objects created by FactoryBeans, which means that FactoryBeans
 	 * will get initialized. If the object created by the FactoryBean doesn't match,
 	 * the raw FactoryBean itself will be matched against the type.
-	 * <p>Does not consider any hierarchy this factory may participate in.
+	 * <p>不考虑该工厂可能参与的任何层次结构.
 	 * Use BeanFactoryUtils' {@code beanNamesForTypeIncludingAncestors}
 	 * to include beans in ancestor factories too.
 	 * <p>注意: Does <i>not</i> ignore singleton beans that have been registered
@@ -225,7 +225,7 @@ public interface ListableBeanFactory extends BeanFactory {
 	 * FactoryBean doesn't match, the raw FactoryBean itself will be matched against the
 	 * type. If "allowEagerInit" is not set, only raw FactoryBeans will be checked
 	 * (which doesn't require initialization of each FactoryBean).
-	 * <p>Does not consider any hierarchy this factory may participate in.
+	 * <p>不考虑该工厂可能参与的任何层次结构.
 	 * Use BeanFactoryUtils' {@code beanNamesForTypeIncludingAncestors}
 	 * to include beans in ancestor factories too.
 	 * <p>注意: Does <i>not</i> ignore singleton beans that have been registered
@@ -256,7 +256,7 @@ public interface ListableBeanFactory extends BeanFactory {
 	 * <p>Does consider objects created by FactoryBeans, which means that FactoryBeans
 	 * will get initialized. If the object created by the FactoryBean doesn't match,
 	 * the raw FactoryBean itself will be matched against the type.
-	 * <p>Does not consider any hierarchy this factory may participate in.
+	 * <p>不考虑该工厂可能参与的任何层次结构.
 	 * Use BeanFactoryUtils' {@code beansOfTypeIncludingAncestors}
 	 * to include beans in ancestor factories too.
 	 * <p>注意: Does <i>not</i> ignore singleton beans that have been registered
@@ -288,7 +288,7 @@ public interface ListableBeanFactory extends BeanFactory {
 	 * FactoryBean doesn't match, the raw FactoryBean itself will be matched against the
 	 * type. If "allowEagerInit" is not set, only raw FactoryBeans will be checked
 	 * (which doesn't require initialization of each FactoryBean).
-	 * <p>Does not consider any hierarchy this factory may participate in.
+	 * <p>不考虑该工厂可能参与的任何层次结构.
 	 * Use BeanFactoryUtils' {@code beansOfTypeIncludingAncestors}
 	 * to include beans in ancestor factories too.
 	 * <p>注意: Does <i>not</i> ignore singleton beans that have been registered
