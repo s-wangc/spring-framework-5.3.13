@@ -285,7 +285,7 @@ public interface WebClient {
 		 * Configure the codecs for the {@code WebClient} in the
 		 * {@link #exchangeStrategies(ExchangeStrategies) underlying}
 		 * {@code ExchangeStrategies}.
-		 * @param configurer the configurer to apply
+		 * @param configurer 要应用的configurer
 		 * @since 5.1.13
 		 */
 		Builder codecs(Consumer<ClientCodecConfigurer> configurer);
@@ -324,7 +324,7 @@ public interface WebClient {
 		/**
 		 * Apply the given {@code Consumer} to this builder instance.
 		 * <p>This can be useful for applying pre-packaged customizations.
-		 * @param builderConsumer the consumer to apply
+		 * @param builderConsumer 要应用的consumer
 		 */
 		Builder apply(Consumer<Builder> builderConsumer);
 

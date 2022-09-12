@@ -103,7 +103,7 @@ public interface RouterFunction<T extends ServerResponse> {
 	 * Filter all {@linkplain HandlerFunction handler functions} routed by this function with the given
 	 * {@linkplain HandlerFilterFunction filter function}.
 	 * @param <S> the filter return type
-	 * @param filterFunction the filter to apply
+	 * @param filterFunction 要应用的filter
 	 * @return the filtered routing function
 	 */
 	default <S extends ServerResponse> RouterFunction<S> filter(HandlerFilterFunction<T, S> filterFunction) {

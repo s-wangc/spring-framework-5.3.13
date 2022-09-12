@@ -245,7 +245,7 @@ public interface RSocketRequester extends Disposable {
 		 * Configure this builder through a {@code Consumer}. This enables
 		 * libraries such as Spring Security to provide shortcuts for applying
 		 * a set of related customizations.
-		 * @param configurer the configurer to apply
+		 * @param configurer 要应用的configurer
 		 */
 		RSocketRequester.Builder apply(Consumer<RSocketRequester.Builder> configurer);
 
@@ -341,7 +341,7 @@ public interface RSocketRequester extends Disposable {
 		 * Append additional metadata entries through a {@code Consumer}.
 		 * This enables libraries such as Spring Security to provide shortcuts
 		 * for applying a set of customizations.
-		 * @param configurer the configurer to apply
+		 * @param configurer 要应用的configurer
 		 * @throws IllegalArgumentException if not using composite metadata.
 		 */
 		RequestSpec metadata(Consumer<MetadataSpec<?>> configurer);

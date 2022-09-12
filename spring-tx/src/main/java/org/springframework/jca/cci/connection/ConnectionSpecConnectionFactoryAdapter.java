@@ -91,7 +91,7 @@ public class ConnectionSpecConnectionFactoryAdapter extends DelegatingConnection
 	 * The given ConnectionSpec will be applied to all subsequent
 	 * {@code getConnection()} calls on this ConnectionFactory proxy.
 	 * <p>This will override any statically specified "connectionSpec" property.
-	 * @param spec the ConnectionSpec to apply
+	 * @param spec 要应用的ConnectionSpec
 	 * @see #removeConnectionSpecFromCurrentThread
 	 */
 	public void setConnectionSpecForCurrentThread(ConnectionSpec spec) {
@@ -130,7 +130,7 @@ public class ConnectionSpecConnectionFactoryAdapter extends DelegatingConnection
 	 * method of the target ConnectionFactory, passing in the specified user credentials.
 	 * If the specified username is empty, it will simply delegate to the standard
 	 * {@code getConnection()} method of the target ConnectionFactory.
-	 * @param spec the ConnectionSpec to apply
+	 * @param spec 要应用的ConnectionSpec
 	 * @return the Connection
 	 * @see javax.resource.cci.ConnectionFactory#getConnection(javax.resource.cci.ConnectionSpec)
 	 * @see javax.resource.cci.ConnectionFactory#getConnection()

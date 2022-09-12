@@ -148,7 +148,7 @@ public class SimpleAliasRegistry implements AliasRegistry {
 	 * registry, applying the given {@link StringValueResolver} to them.
 	 * <p>The value resolver may for example resolve placeholders
 	 * in target bean names and even in alias names.
-	 * @param valueResolver the StringValueResolver to apply
+	 * @param valueResolver 要应用的StringValueResolver
 	 */
 	public void resolveAliases(StringValueResolver valueResolver) {
 		Assert.notNull(valueResolver, "StringValueResolver must not be null");

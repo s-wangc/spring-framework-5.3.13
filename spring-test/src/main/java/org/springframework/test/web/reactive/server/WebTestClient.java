@@ -165,7 +165,7 @@ public interface WebTestClient {
 	 * <pre>
 	 * mutate().apply(configurer).build();
 	 * </pre>
-	 * @param configurer the configurer to apply
+	 * @param configurer 要应用的configurer
 	 * @return the mutated test client
 	 */
 	WebTestClient mutateWith(WebTestClientConfigurer configurer);
@@ -278,7 +278,7 @@ public interface WebTestClient {
 
 		/**
 		 * Shortcut for pre-packaged customizations to the mock server setup.
-		 * @param configurer the configurer to apply
+		 * @param configurer 要应用的configurer
 		 */
 		<T extends B> T apply(MockServerConfigurer configurer);
 
@@ -471,7 +471,7 @@ public interface WebTestClient {
 		 * Configure the codecs for the {@code WebClient} in the
 		 * {@link #exchangeStrategies(ExchangeStrategies) underlying}
 		 * {@code ExchangeStrategies}.
-		 * @param configurer the configurer to apply
+		 * @param configurer 要应用的configurer
 		 * @since 5.1.13
 		 */
 		Builder codecs(Consumer<ClientCodecConfigurer> configurer);
@@ -507,7 +507,7 @@ public interface WebTestClient {
 		/**
 		 * Apply the given configurer to this builder instance.
 		 * <p>This can be useful for applying pre-packaged customizations.
-		 * @param configurer the configurer to apply
+		 * @param configurer 要应用的configurer
 		 */
 		Builder apply(WebTestClientConfigurer configurer);
 

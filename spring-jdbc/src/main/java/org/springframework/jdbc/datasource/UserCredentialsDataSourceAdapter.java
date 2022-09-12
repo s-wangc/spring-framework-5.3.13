@@ -127,8 +127,8 @@ public class UserCredentialsDataSourceAdapter extends DelegatingDataSource {
 	 * {@code getConnection()} calls on this DataSource proxy.
 	 * <p>This will override any statically specified user credentials,
 	 * that is, values of the "username" and "password" bean properties.
-	 * @param username the username to apply
-	 * @param password the password to apply
+	 * @param username 要应用的username
+	 * @param password 要应用的password
 	 * @see #removeCredentialsFromCurrentThread
 	 */
 	public void setCredentialsForCurrentThread(String username, String password) {

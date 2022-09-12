@@ -366,7 +366,7 @@ public final class WebHttpHandlerBuilder {
 	 * processing chain. This provides access to the request and response before
 	 * the entire chain and likewise the ability to observe the result of
 	 * the entire chain.
-	 * @param handlerDecorator the decorator to apply
+	 * @param handlerDecorator 要应用的decorator
 	 * @since 5.3
 	 */
 	public WebHttpHandlerBuilder httpHandlerDecorator(Function<HttpHandler, HttpHandler> handlerDecorator) {

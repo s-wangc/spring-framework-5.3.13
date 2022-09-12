@@ -105,7 +105,7 @@ public class PathMatchConfigurer {
 	 * {@code Predicate}. The prefix for the first matching predicate is used.
 	 * <p>Consider using {@link org.springframework.web.method.HandlerTypePredicate
 	 * HandlerTypePredicate} to group controllers.
-	 * @param prefix the prefix to apply
+	 * @param prefix 要应用的prefix
 	 * @param predicate a predicate for matching controller types
 	 * @since 5.1
 	 */

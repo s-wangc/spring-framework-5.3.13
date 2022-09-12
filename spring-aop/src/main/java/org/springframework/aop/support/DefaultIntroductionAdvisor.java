@@ -61,7 +61,7 @@ public class DefaultIntroductionAdvisor implements IntroductionAdvisor, ClassFil
 
 	/**
 	 * Create a DefaultIntroductionAdvisor for the given advice.
-	 * @param advice the Advice to apply
+	 * @param advice 要应用的Advice
 	 * @param introductionInfo the IntroductionInfo that describes
 	 * the interface to introduce (may be {@code null})
 	 */
@@ -82,7 +82,7 @@ public class DefaultIntroductionAdvisor implements IntroductionAdvisor, ClassFil
 
 	/**
 	 * Create a DefaultIntroductionAdvisor for the given advice.
-	 * @param advice the Advice to apply
+	 * @param advice 要应用的Advice
 	 * @param ifc the interface to introduce
 	 */
 	public DefaultIntroductionAdvisor(DynamicIntroductionAdvice advice, Class<?> ifc) {

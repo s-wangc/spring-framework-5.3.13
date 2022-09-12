@@ -198,7 +198,7 @@ public interface CodecConfigurer {
 		 * codecs. The consumer is applied to every default {@link Encoder},
 		 * {@link Decoder}, {@link HttpMessageReader} and {@link HttpMessageWriter}
 		 * instance.
-		 * @param codecConsumer the consumer to apply
+		 * @param codecConsumer 要应用的consumer
 		 * @since 5.3.4
 		 */
 		void configureDefaultCodec(Consumer<Object> codecConsumer);

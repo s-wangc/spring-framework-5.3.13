@@ -44,7 +44,7 @@ public class ExceptionHandlingWebHandler extends WebHandlerDecorator {
 	/**
 	 * Create an {@code ExceptionHandlingWebHandler} for the given delegate.
 	 * @param delegate the WebHandler delegate
-	 * @param handlers the WebExceptionHandlers to apply
+	 * @param handlers 要应用的WebExceptionHandlers
 	 */
 	public ExceptionHandlingWebHandler(WebHandler delegate, List<WebExceptionHandler> handlers) {
 		super(delegate);

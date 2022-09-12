@@ -54,7 +54,7 @@ public class BeanDefinitionVisitor {
 	/**
 	 * Create a new BeanDefinitionVisitor, applying the specified
 	 * value resolver to all bean metadata values.
-	 * @param valueResolver the StringValueResolver to apply
+	 * @param valueResolver 要应用的StringValueResolver
 	 */
 	public BeanDefinitionVisitor(StringValueResolver valueResolver) {
 		Assert.notNull(valueResolver, "StringValueResolver must not be null");

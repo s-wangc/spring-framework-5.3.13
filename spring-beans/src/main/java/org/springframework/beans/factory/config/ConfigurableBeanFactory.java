@@ -325,7 +325,7 @@ public interface ConfigurableBeanFactory extends HierarchicalBeanFactory, Single
 	 * factory, applying the given StringValueResolver to them.
 	 * <p>The value resolver may for example resolve placeholders
 	 * in target bean names and even in alias names.
-	 * @param valueResolver the StringValueResolver to apply
+	 * @param valueResolver 要应用的StringValueResolver
 	 * @since 2.5
 	 */
 	void resolveAliases(StringValueResolver valueResolver);

@@ -92,7 +92,7 @@ public class ReactorResourceFactory implements InitializingBean, DisposableBean 
 	 * Add a Consumer for configuring the global Reactor Netty resources on
 	 * startup. When this option is used, {@link #setUseGlobalResources} is also
 	 * enabled.
-	 * @param consumer the consumer to apply
+	 * @param consumer 要应用的consumer
 	 * @see #setUseGlobalResources(boolean)
 	 */
 	public void addGlobalResourcesConsumer(Consumer<HttpResources> consumer) {
