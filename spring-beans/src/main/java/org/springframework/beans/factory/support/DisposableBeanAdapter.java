@@ -357,7 +357,7 @@ class DisposableBeanAdapter implements DisposableBean, Runnable, Serializable {
 
 	/**
 	 * Check whether the given bean has any kind of destroy method to call.
-	 * @param bean the bean instance
+	 * @param bean bean实例
 	 * @param beanDefinition the corresponding bean definition
 	 */
 	public static boolean hasDestroyMethod(Object bean, RootBeanDefinition beanDefinition) {
@@ -415,7 +415,7 @@ class DisposableBeanAdapter implements DisposableBean, Runnable, Serializable {
 
 	/**
 	 * Check whether the given bean has destruction-aware post-processors applying to it.
-	 * @param bean the bean instance
+	 * @param bean bean实例
 	 * @param postProcessors the post-processor candidates
 	 */
 	public static boolean hasApplicableProcessors(Object bean, List<DestructionAwareBeanPostProcessor> postProcessors) {

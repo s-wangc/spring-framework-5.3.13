@@ -376,7 +376,7 @@ public class DefaultSingletonBeanRegistry extends SimpleAliasRegistry implements
 	 * (for example, a DisposableBean adapter for a singleton that does not
 	 * naturally implement Spring's DisposableBean interface).
 	 * @param beanName bean的名称
-	 * @param bean the bean instance
+	 * @param bean bean实例
 	 */
 	public void registerDisposableBean(String beanName, DisposableBean bean) {
 		synchronized (this.disposableBeans) {

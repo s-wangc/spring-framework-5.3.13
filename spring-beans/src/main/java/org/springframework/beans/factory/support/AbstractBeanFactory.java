@@ -1917,7 +1917,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 * registering its DisposableBean interface and/or the given destroy method
 	 * to be called on factory shutdown (if applicable). Only applies to singletons.
 	 * @param beanName bean的名称
-	 * @param bean the bean instance
+	 * @param bean bean实例
 	 * @param mbd bean的bean definition
 	 * @see RootBeanDefinition#isSingleton
 	 * @see RootBeanDefinition#getDependsOn

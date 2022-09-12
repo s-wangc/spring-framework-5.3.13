@@ -98,7 +98,7 @@ public class StaticListableBeanFactory implements ListableBeanFactory {
 	 * Add a new singleton bean.
 	 * <p>Will overwrite any existing instance for the given name.
 	 * @param name bean的名称
-	 * @param bean the bean instance
+	 * @param bean bean实例
 	 */
 	public void addBean(String name, Object bean) {
 		this.beans.put(name, bean);

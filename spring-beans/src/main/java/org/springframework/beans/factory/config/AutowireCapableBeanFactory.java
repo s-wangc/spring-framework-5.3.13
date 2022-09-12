@@ -233,7 +233,7 @@ public interface AutowireCapableBeanFactory extends BeanFactory {
 	 * @param existingBean the existing bean instance
 	 * @param autowireMode by name or type, using the constants in this interface
 	 * @param dependencyCheck whether to perform a dependency check for object
-	 * references in the bean instance
+	 * references in bean实例
 	 * @throws BeansException if wiring failed
 	 * @see #AUTOWIRE_BY_NAME
 	 * @see #AUTOWIRE_BY_TYPE

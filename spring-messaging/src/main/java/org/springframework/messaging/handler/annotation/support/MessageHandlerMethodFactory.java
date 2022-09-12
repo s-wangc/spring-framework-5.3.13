@@ -35,7 +35,7 @@ public interface MessageHandlerMethodFactory {
 	/**
 	 * Create the {@link InvocableHandlerMethod} that is able to process the specified
 	 * method endpoint.
-	 * @param bean the bean instance
+	 * @param bean bean实例
 	 * @param method the method to invoke
 	 * @return an {@link InvocableHandlerMethod} suitable for that method
 	 */

@@ -47,7 +47,7 @@ public class AnnotationBeanWiringInfoResolver implements BeanWiringInfoResolver 
 
 	/**
 	 * Build the {@link BeanWiringInfo} for the given {@link Configurable} annotation.
-	 * @param beanInstance the bean instance
+	 * @param beanInstance bean实例
 	 * @param annotation the Configurable annotation found on the bean class
 	 * @return 解析后的BeanWiringInfo
 	 */

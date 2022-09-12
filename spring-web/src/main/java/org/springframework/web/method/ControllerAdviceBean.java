@@ -85,7 +85,7 @@ public class ControllerAdviceBean implements Ordered {
 
 	/**
 	 * Create a {@code ControllerAdviceBean} using the given bean instance.
-	 * @param bean the bean instance
+	 * @param bean bean实例
 	 */
 	public ControllerAdviceBean(Object bean) {
 		Assert.notNull(bean, "Bean must not be null");
