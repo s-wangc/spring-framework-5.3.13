@@ -541,7 +541,7 @@ public class SchedulerFactoryBean extends SchedulerAccessor implements FactoryBe
 
 	/**
 	 * Initialize the given SchedulerFactory, applying locally defined Quartz properties to it.
-	 * @param schedulerFactory the SchedulerFactory to initialize
+	 * @param schedulerFactory 要初始化的SchedulerFactory
 	 */
 	private void initSchedulerFactory(StdSchedulerFactory schedulerFactory) throws SchedulerException, IOException {
 		Properties mergedProps = new Properties();

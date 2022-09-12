@@ -31,7 +31,7 @@ public interface SmartRequestBuilder extends RequestBuilder {
 	/**
 	 * Apply request post processing. Typically that means invoking one or more
 	 * {@link org.springframework.test.web.servlet.request.RequestPostProcessor org.springframework.test.web.servlet.request.RequestPostProcessors}.
-	 * @param request the request to initialize
+	 * @param request 要初始化的request
 	 * @return the request to use, either the one passed in or a wrapped one
 	 */
 	MockHttpServletRequest postProcessRequest(MockHttpServletRequest request);

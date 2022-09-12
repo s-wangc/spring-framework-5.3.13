@@ -26,7 +26,7 @@ public interface MessageHeaderInitializer {
 
 	/**
 	 * Initialize the given {@code MessageHeaderAccessor}.
-	 * @param headerAccessor the MessageHeaderAccessor to initialize
+	 * @param headerAccessor 要初始化的MessageHeaderAccessor
 	 */
 	void initHeaders(MessageHeaderAccessor headerAccessor);
 

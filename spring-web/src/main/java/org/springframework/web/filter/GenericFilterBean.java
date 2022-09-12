@@ -247,7 +247,7 @@ public abstract class GenericFilterBean implements Filter, BeanNameAware, Enviro
 	 * Initialize the BeanWrapper for this GenericFilterBean,
 	 * possibly with custom editors.
 	 * <p>This default implementation is empty.
-	 * @param bw the BeanWrapper to initialize
+	 * @param bw 要初始化的BeanWrapper
 	 * @throws BeansException if thrown by BeanWrapper methods
 	 * @see org.springframework.beans.BeanWrapper#registerCustomEditor
 	 */

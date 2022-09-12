@@ -186,7 +186,7 @@ public interface ConfigurableBeanFactory extends HierarchicalBeanFactory, Single
 	/**
 	 * Initialize the given PropertyEditorRegistry with the custom editors
 	 * that have been registered with this BeanFactory.
-	 * @param registry the PropertyEditorRegistry to initialize
+	 * @param registry 要初始化的PropertyEditorRegistry
 	 */
 	void copyRegisteredEditorsTo(PropertyEditorRegistry registry);
 

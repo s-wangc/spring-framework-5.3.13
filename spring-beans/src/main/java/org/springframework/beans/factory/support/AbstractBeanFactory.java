@@ -1277,7 +1277,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 * and populate bean instances.
 	 * <p>默认实现委托给{@link #registerCustomEditors}.
 	 * 可以在子类中重写.
-	 * @param bw the BeanWrapper to initialize
+	 * @param bw 要初始化的BeanWrapper
 	 */
 	protected void initBeanWrapper(BeanWrapper bw) {
 		bw.setConversionService(getConversionService());
@@ -1290,7 +1290,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 * <p>To be called for BeanWrappers that will create and populate bean
 	 * instances, and for SimpleTypeConverter used for constructor argument
 	 * and factory method type conversion.
-	 * @param registry the PropertyEditorRegistry to initialize
+	 * @param registry 要初始化的PropertyEditorRegistry
 	 */
 	protected void registerCustomEditors(PropertyEditorRegistry registry) {
 		if (registry instanceof PropertyEditorRegistrySupport) {

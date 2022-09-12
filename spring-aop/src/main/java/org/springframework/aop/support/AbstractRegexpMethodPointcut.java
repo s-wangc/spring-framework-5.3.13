@@ -163,7 +163,7 @@ public abstract class AbstractRegexpMethodPointcut extends StaticMethodMatcherPo
 	 * Can be invoked multiple times.
 	 * <p>This method will be invoked from the {@link #setPatterns} method,
 	 * and also on deserialization.
-	 * @param patterns the patterns to initialize
+	 * @param patterns 要初始化的patterns
 	 * @throws IllegalArgumentException in case of an invalid pattern
 	 */
 	protected abstract void initPatternRepresentation(String[] patterns) throws IllegalArgumentException;
@@ -173,7 +173,7 @@ public abstract class AbstractRegexpMethodPointcut extends StaticMethodMatcherPo
 	 * Can be invoked multiple times.
 	 * <p>This method will be invoked from the {@link #setExcludedPatterns} method,
 	 * and also on deserialization.
-	 * @param patterns the patterns to initialize
+	 * @param patterns 要初始化的patterns
 	 * @throws IllegalArgumentException in case of an invalid pattern
 	 */
 	protected abstract void initExcludedPatternRepresentation(String[] patterns) throws IllegalArgumentException;
