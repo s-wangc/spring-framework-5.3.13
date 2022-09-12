@@ -201,7 +201,7 @@ public class InitDestroyAnnotationBeanPostProcessor
 			// Happens after deserialization, during destruction...
 			return buildLifecycleMetadata(clazz);
 		}
-		// Quick check on the concurrent map first, with minimal locking.
+		// 首先快速检查并发映射, 使用最少的锁.
 		LifecycleMetadata metadata = this.lifecycleMetadataCache.get(clazz);
 		if (metadata == null) {
 			synchronized (this.lifecycleMetadataCache) {

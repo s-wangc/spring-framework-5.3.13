@@ -45,7 +45,7 @@ public class SimpleSpringPreparerFactory extends AbstractSpringPreparerFactory {
 
 	@Override
 	protected ViewPreparer getPreparer(String name, WebApplicationContext context) throws TilesException {
-		// Quick check on the concurrent map first, with minimal locking.
+		// 首先快速检查并发映射, 使用最少的锁.
 		ViewPreparer preparer = this.sharedPreparers.get(name);
 		if (preparer == null) {
 			synchronized (this.sharedPreparers) {
