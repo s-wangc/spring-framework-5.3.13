@@ -105,7 +105,7 @@ public class PathResourceResolver extends AbstractResourceResolver {
 	 * <p>The default implementation checks if there is a readable
 	 * {@code Resource} for the given path relative to the location.
 	 * @param resourcePath the path to the resource
-	 * @param location the location to check
+	 * @param location 要检查的location
 	 * @return the resource, or empty {@link Mono} if none found
 	 */
 	protected Mono<Resource> getResource(String resourcePath, Resource location) {
@@ -147,7 +147,7 @@ public class PathResourceResolver extends AbstractResourceResolver {
 	 * resources exists and is readable. The default implementation also verifies
 	 * the resource is either under the location relative to which it was found or
 	 * is under one of the {@link #setAllowedLocations allowed locations}.
-	 * @param resource the resource to check
+	 * @param resource 要检查的resource
 	 * @param location the location relative to which the resource was found
 	 * @return "true" if resource is in a valid location, "false" otherwise.
 	 */

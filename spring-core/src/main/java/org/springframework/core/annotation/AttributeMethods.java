@@ -99,7 +99,7 @@ final class AttributeMethods {
 	/**
 	 * Determine if values from the given annotation can be safely accessed without
 	 * causing any {@link TypeNotPresentException TypeNotPresentExceptions}.
-	 * @param annotation the annotation to check
+	 * @param annotation 要检查的annotation
 	 * @return {@code true} if all values are present
 	 * @see #validate(Annotation)
 	 */

@@ -31,7 +31,7 @@ public interface VersionStrategy extends VersionPathStrategy {
 
 	/**
 	 * Determine the version for the given resource.
-	 * @param resource the resource to check
+	 * @param resource 要检查的resource
 	 * @return the version (never {@code null})
 	 */
 	String getResourceVersion(Resource resource);

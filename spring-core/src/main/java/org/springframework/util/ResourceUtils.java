@@ -264,7 +264,7 @@ public abstract class ResourceUtils {
 	/**
 	 * Determine whether the given URL points to a resource in the file system,
 	 * i.e. has protocol "file", "vfsfile" or "vfs".
-	 * @param url the URL to check
+	 * @param url 要检查的URL
 	 * @return whether the URL has been identified as a file system URL
 	 */
 	public static boolean isFileURL(URL url) {
@@ -276,7 +276,7 @@ public abstract class ResourceUtils {
 	/**
 	 * Determine whether the given URL points to a resource in a jar file.
 	 * i.e. has protocol "jar", "war, ""zip", "vfszip" or "wsjar".
-	 * @param url the URL to check
+	 * @param url 要检查的URL
 	 * @return whether the URL has been identified as a JAR URL
 	 */
 	public static boolean isJarURL(URL url) {
@@ -289,7 +289,7 @@ public abstract class ResourceUtils {
 	/**
 	 * Determine whether the given URL points to a jar file itself,
 	 * that is, has protocol "file" and ends with the ".jar" extension.
-	 * @param url the URL to check
+	 * @param url 要检查的URL
 	 * @return whether the URL has been identified as a JAR file URL
 	 * @since 4.1
 	 */

@@ -173,7 +173,7 @@ public abstract class ReflectionUtils {
 
 	/**
 	 * Obtain an accessible constructor for the given class and parameters.
-	 * @param clazz the clazz to check
+	 * @param clazz 要检查的clazz
 	 * @param parameterTypes the parameter types of the desired constructor
 	 * @return the constructor reference
 	 * @throws NoSuchMethodException if no such constructor exists
@@ -544,7 +544,7 @@ public abstract class ReflectionUtils {
 	/**
 	 * Determine whether the given method is a CGLIB 'renamed' method,
 	 * following the pattern "CGLIB$methodName$0".
-	 * @param renamedMethod the method to check
+	 * @param renamedMethod 要检查的method
 	 */
 	public static boolean isCglibRenamedMethod(Method renamedMethod) {
 		String name = renamedMethod.getName();
@@ -764,7 +764,7 @@ public abstract class ReflectionUtils {
 
 	/**
 	 * Determine whether the given field is a "public static final" constant.
-	 * @param field the field to check
+	 * @param field 要检查的field
 	 */
 	public static boolean isPublicStaticFinal(Field field) {
 		int modifiers = field.getModifiers();
@@ -823,7 +823,7 @@ public abstract class ReflectionUtils {
 
 		/**
 		 * Determine whether the given method matches.
-		 * @param method the method to check
+		 * @param method 要检查的method
 		 */
 		boolean matches(Method method);
 
@@ -864,7 +864,7 @@ public abstract class ReflectionUtils {
 
 		/**
 		 * Determine whether the given field matches.
-		 * @param field the field to check
+		 * @param field 要检查的field
 		 */
 		boolean matches(Field field);
 

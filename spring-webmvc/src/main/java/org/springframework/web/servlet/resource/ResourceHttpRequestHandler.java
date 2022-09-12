@@ -767,7 +767,7 @@ public class ResourceHttpRequestHandler extends WebContentGenerator
 	 * <li>{@link MediaTypeFactory#getMediaType(String)}
 	 * </ol>
 	 * @param request the current request
-	 * @param resource the resource to check
+	 * @param resource 要检查的resource
 	 * @return the corresponding media type, or {@code null} if none found
 	 */
 	@Nullable

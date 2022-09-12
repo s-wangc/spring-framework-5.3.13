@@ -60,7 +60,7 @@ public abstract class ObjectUtils {
 	/**
 	 * Return whether the given throwable is a checked exception:
 	 * that is, neither a RuntimeException nor an Error.
-	 * @param ex the throwable to check
+	 * @param ex 要检查的throwable
 	 * @return whether the throwable is a checked exception
 	 * @see java.lang.Exception
 	 * @see java.lang.RuntimeException
@@ -73,7 +73,7 @@ public abstract class ObjectUtils {
 	/**
 	 * Check whether the given exception is compatible with the specified
 	 * exception types, as declared in a throws clause.
-	 * @param ex the exception to check
+	 * @param ex 要检查的exception
 	 * @param declaredExceptions the exception types declared in the throws clause
 	 * @return whether the given exception is compatible
 	 */
@@ -94,7 +94,7 @@ public abstract class ObjectUtils {
 	/**
 	 * Determine whether the given object is an array:
 	 * either an Object array or a primitive array.
-	 * @param obj the object to check
+	 * @param obj 要检查的object
 	 */
 	public static boolean isArray(@Nullable Object obj) {
 		return (obj != null && obj.getClass().isArray());
@@ -103,7 +103,7 @@ public abstract class ObjectUtils {
 	/**
 	 * Determine whether the given array is empty:
 	 * i.e. {@code null} or of zero length.
-	 * @param array the array to check
+	 * @param array 要检查的array
 	 * @see #isEmpty(Object)
 	 */
 	public static boolean isEmpty(@Nullable Object[] array) {
@@ -122,7 +122,7 @@ public abstract class ObjectUtils {
 	 * </ul>
 	 * <p>If the given object is non-null and not one of the aforementioned
 	 * supported types, this method returns {@code false}.
-	 * @param obj the object to check
+	 * @param obj 要检查的object
 	 * @return {@code true} if the object is {@code null} or <em>empty</em>
 	 * @since 4.2
 	 * @see Optional#isPresent()

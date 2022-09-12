@@ -66,7 +66,7 @@ public abstract class AspectJProxyUtils {
 
 	/**
 	 * Determine whether the given Advisor contains an AspectJ advice.
-	 * @param advisor the Advisor to check
+	 * @param advisor 要检查的Advisor
 	 */
 	private static boolean isAspectJAdvice(Advisor advisor) {
 		return (advisor instanceof InstantiationModelAwarePointcutAdvisor ||

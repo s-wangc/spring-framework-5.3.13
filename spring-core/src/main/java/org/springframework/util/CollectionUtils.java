@@ -54,7 +54,7 @@ public abstract class CollectionUtils {
 	/**
 	 * Return {@code true} if the supplied Collection is {@code null} or empty.
 	 * Otherwise, return {@code false}.
-	 * @param collection the Collection to check
+	 * @param collection 要检查的Collection
 	 * @return whether the given Collection is empty
 	 */
 	public static boolean isEmpty(@Nullable Collection<?> collection) {
@@ -64,7 +64,7 @@ public abstract class CollectionUtils {
 	/**
 	 * Return {@code true} if the supplied Map is {@code null} or empty.
 	 * Otherwise, return {@code false}.
-	 * @param map the Map to check
+	 * @param map 要检查的Map
 	 * @return whether the given Map is empty
 	 */
 	public static boolean isEmpty(@Nullable Map<?, ?> map) {
@@ -160,7 +160,7 @@ public abstract class CollectionUtils {
 
 	/**
 	 * Check whether the given Iterator contains the given element.
-	 * @param iterator the Iterator to check
+	 * @param iterator 要检查的Iterator
 	 * @param element the element to look for
 	 * @return {@code true} if found, {@code false} otherwise
 	 */
@@ -178,7 +178,7 @@ public abstract class CollectionUtils {
 
 	/**
 	 * Check whether the given Enumeration contains the given element.
-	 * @param enumeration the Enumeration to check
+	 * @param enumeration 要检查的Enumeration
 	 * @param element the element to look for
 	 * @return {@code true} if found, {@code false} otherwise
 	 */
@@ -198,7 +198,7 @@ public abstract class CollectionUtils {
 	 * Check whether the given Collection contains the given element instance.
 	 * <p>Enforces the given instance to be present, rather than returning
 	 * {@code true} for an equal element as well.
-	 * @param collection the Collection to check
+	 * @param collection 要检查的Collection
 	 * @param element the element to look for
 	 * @return {@code true} if found, {@code false} otherwise
 	 */
@@ -298,7 +298,7 @@ public abstract class CollectionUtils {
 
 	/**
 	 * Determine whether the given Collection only contains a single unique object.
-	 * @param collection the Collection to check
+	 * @param collection 要检查的Collection
 	 * @return {@code true} if the collection contains a single reference or
 	 * multiple references to the same instance, {@code false} otherwise
 	 */
@@ -322,7 +322,7 @@ public abstract class CollectionUtils {
 
 	/**
 	 * Find the common element type of the given Collection, if any.
-	 * @param collection the Collection to check
+	 * @param collection 要检查的Collection
 	 * @return the common element type, or {@code null} if no clear
 	 * common type has been found (or the collection was empty)
 	 */

@@ -127,7 +127,7 @@ public class ProxyProcessorSupport extends ProxyConfig implements Ordered, BeanC
 	 * therefore not to be considered as a reasonable proxy interface.
 	 * <p>If no reasonable proxy interface is found for a given bean, it will get
 	 * proxied with its full target class, assuming that as the user's intention.
-	 * @param ifc the interface to check
+	 * @param ifc 要检查的interface
 	 * @return whether the given interface is just a container callback
 	 */
 	protected boolean isConfigurationCallbackInterface(Class<?> ifc) {
@@ -140,7 +140,7 @@ public class ProxyProcessorSupport extends ProxyConfig implements Ordered, BeanC
 	 * and therefore not to be considered as a reasonable proxy interface.
 	 * <p>If no reasonable proxy interface is found for a given bean, it will get
 	 * proxied with its full target class, assuming that as the user's intention.
-	 * @param ifc the interface to check
+	 * @param ifc 要检查的interface
 	 * @return whether the given interface is an internal language interface
 	 */
 	protected boolean isInternalLanguageInterface(Class<?> ifc) {

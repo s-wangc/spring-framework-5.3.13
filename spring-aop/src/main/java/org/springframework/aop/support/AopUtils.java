@@ -61,7 +61,7 @@ public abstract class AopUtils {
 	 * Check whether the given object is a JDK dynamic proxy or a CGLIB proxy.
 	 * <p>This method additionally checks if the given object is an instance
 	 * of {@link SpringProxy}.
-	 * @param object the object to check
+	 * @param object 要检查的object
 	 * @see #isJdkDynamicProxy
 	 * @see #isCglibProxy
 	 */
@@ -75,7 +75,7 @@ public abstract class AopUtils {
 	 * <p>This method goes beyond the implementation of
 	 * {@link Proxy#isProxyClass(Class)} by additionally checking if the
 	 * given object is an instance of {@link SpringProxy}.
-	 * @param object the object to check
+	 * @param object 要检查的object
 	 * @see java.lang.reflect.Proxy#isProxyClass
 	 */
 	public static boolean isJdkDynamicProxy(@Nullable Object object) {
@@ -87,7 +87,7 @@ public abstract class AopUtils {
 	 * <p>This method goes beyond the implementation of
 	 * {@link ClassUtils#isCglibProxy(Object)} by additionally checking if
 	 * the given object is an instance of {@link SpringProxy}.
-	 * @param object the object to check
+	 * @param object 要检查的object
 	 * @see ClassUtils#isCglibProxy(Object)
 	 */
 	public static boolean isCglibProxy(@Nullable Object object) {
@@ -120,7 +120,7 @@ public abstract class AopUtils {
 	 * Select an invocable method on the target type: either the given method itself
 	 * if actually exposed on the target type, or otherwise a corresponding method
 	 * on one of the target type's interfaces or on the target type itself.
-	 * @param method the method to check
+	 * @param method 要检查的method
 	 * @param targetType the target type to search methods on (typically an AOP proxy)
 	 * @return a corresponding invocable method on the target type
 	 * @throws IllegalStateException if the given method is not invocable on the given
@@ -262,7 +262,7 @@ public abstract class AopUtils {
 	 * Can the given advisor apply at all on the given class?
 	 * This is an important test as it can be used to optimize
 	 * out a advisor for a class.
-	 * @param advisor the advisor to check
+	 * @param advisor 要检查的advisor
 	 * @param targetClass class we're testing
 	 * @return whether the pointcut can apply on any method
 	 */
@@ -274,7 +274,7 @@ public abstract class AopUtils {
 	 * Can the given advisor apply at all on the given class?
 	 * <p>This is an important test as it can be used to optimize out a advisor for a class.
 	 * This version also takes into account introductions (for IntroductionAwareMethodMatchers).
-	 * @param advisor the advisor to check
+	 * @param advisor 要检查的advisor
 	 * @param targetClass class we're testing
 	 * @param hasIntroductions whether or not the advisor chain for this bean includes
 	 * any introductions

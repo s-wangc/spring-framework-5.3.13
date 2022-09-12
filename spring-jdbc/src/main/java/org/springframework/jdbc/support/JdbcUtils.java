@@ -422,7 +422,7 @@ public abstract class JdbcUtils {
 	 * the JDBC 2.0 batch mechanism or simply in a traditional one-by-one fashion.
 	 * <p>Logs a warning if the "supportsBatchUpdates" methods throws an exception
 	 * and simply returns {@code false} in that case.
-	 * @param con the Connection to check
+	 * @param con 要检查的Connection
 	 * @return whether JDBC 2.0 batch updates are supported
 	 * @see java.sql.DatabaseMetaData#supportsBatchUpdates()
 	 */

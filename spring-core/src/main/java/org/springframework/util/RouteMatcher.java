@@ -46,7 +46,7 @@ public interface RouteMatcher {
 	 * Whether the given {@code route} contains pattern syntax which requires
 	 * the {@link #match(String, Route)} method, or if it is a regular String
 	 * that could be compared directly to others.
-	 * @param route the route to check
+	 * @param route 要检查的route
 	 * @return {@code true} if the given {@code route} represents a pattern
 	 */
 	boolean isPattern(String route);

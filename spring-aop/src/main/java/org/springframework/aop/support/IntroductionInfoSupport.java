@@ -66,7 +66,7 @@ public class IntroductionInfoSupport implements IntroductionInfo, Serializable {
 
 	/**
 	 * Check whether the specified interfaces is a published introduction interface.
-	 * @param ifc the interface to check
+	 * @param ifc 要检查的interface
 	 * @return whether the interface is part of this introduction
 	 */
 	public boolean implementsInterface(Class<?> ifc) {

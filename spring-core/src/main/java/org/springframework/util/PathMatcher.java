@@ -41,7 +41,7 @@ public interface PathMatcher {
 	 * <p>If the return value is {@code false}, then the {@link #match}
 	 * method does not have to be used because direct equality comparisons
 	 * on the static path Strings will lead to the same result.
-	 * @param path the path to check
+	 * @param path 要检查的path
 	 * @return {@code true} if the given {@code path} represents a pattern
 	 */
 	boolean isPattern(String path);

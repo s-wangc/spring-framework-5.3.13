@@ -230,7 +230,7 @@ public abstract class BeanUtils {
 	 * public constructor with arguments, or a single non-public constructor with arguments,
 	 * or simply a default constructor. Callers have to be prepared to resolve arguments
 	 * for the returned constructor's parameters, if any.
-	 * @param clazz the class to check
+	 * @param clazz 要检查的class
 	 * @throws IllegalStateException in case of no unique constructor found at all
 	 * @since 5.3
 	 * @see #findPrimaryConstructor
@@ -272,7 +272,7 @@ public abstract class BeanUtils {
 	 * returns the Java constructor corresponding to the Kotlin primary constructor
 	 * (as defined in the Kotlin specification). Otherwise, in particular for non-Kotlin
 	 * classes, this simply returns {@code null}.
-	 * @param clazz the class to check
+	 * @param clazz 要检查的class
 	 * @since 5.0
 	 * @see <a href="https://kotlinlang.org/docs/reference/classes.html#constructors">Kotlin docs</a>
 	 */
@@ -292,7 +292,7 @@ public abstract class BeanUtils {
 	 * <p>Checks {@code Class.getMethod} first, falling back to
 	 * {@code findDeclaredMethod}. This allows to find public methods
 	 * without issues even in environments with restricted Java security settings.
-	 * @param clazz the class to check
+	 * @param clazz 要检查的class
 	 * @param methodName the name of the method to find
 	 * @param paramTypes the parameter types of the method to find
 	 * @return the Method object, or {@code null} if not found
@@ -314,7 +314,7 @@ public abstract class BeanUtils {
 	 * declared on the given class or one of its superclasses. Will return a public,
 	 * protected, package access, or private method.
 	 * <p>Checks {@code Class.getDeclaredMethod}, cascading upwards to all superclasses.
-	 * @param clazz the class to check
+	 * @param clazz 要检查的class
 	 * @param methodName the name of the method to find
 	 * @param paramTypes the parameter types of the method to find
 	 * @return the Method object, or {@code null} if not found
@@ -340,7 +340,7 @@ public abstract class BeanUtils {
 	 * <p>Checks {@code Class.getMethods} first, falling back to
 	 * {@code findDeclaredMethodWithMinimalParameters}. This allows for finding public
 	 * methods without issues even in environments with restricted Java security settings.
-	 * @param clazz the class to check
+	 * @param clazz 要检查的class
 	 * @param methodName the name of the method to find
 	 * @return the Method object, or {@code null} if not found
 	 * @throws IllegalArgumentException if methods of the given name were found but
@@ -364,7 +364,7 @@ public abstract class BeanUtils {
 	 * declared on the given class or one of its superclasses. Will return a public,
 	 * protected, package access, or private method.
 	 * <p>Checks {@code Class.getDeclaredMethods}, cascading upwards to all superclasses.
-	 * @param clazz the class to check
+	 * @param clazz 要检查的class
 	 * @param methodName the name of the method to find
 	 * @return the Method object, or {@code null} if not found
 	 * @throws IllegalArgumentException if methods of the given name were found but
@@ -385,7 +385,7 @@ public abstract class BeanUtils {
 	/**
 	 * Find a method with the given method name and minimal parameters (best case: none)
 	 * in the given list of methods.
-	 * @param methods the methods to check
+	 * @param methods 要检查的methods
 	 * @param methodName the name of the method to find
 	 * @return the Method object, or {@code null} if not found
 	 * @throws IllegalArgumentException if methods of the given name were found but
@@ -650,7 +650,7 @@ public abstract class BeanUtils {
 	 * <p>See {@link #isSimpleValueType(Class)} for the definition of <em>simple
 	 * value type</em>.
 	 * <p>Used to determine properties to check for a "simple" dependency-check.
-	 * @param type the type to check
+	 * @param type 要检查的type
 	 * @return whether the given type represents a "simple" property
 	 * @see org.springframework.beans.factory.support.RootBeanDefinition#DEPENDENCY_CHECK_SIMPLE
 	 * @see org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#checkDependencies
@@ -666,7 +666,7 @@ public abstract class BeanUtils {
 	 * primitive wrapper, an enum, a String or other CharSequence, a Number, a
 	 * Date, a Temporal, a URI, a URL, a Locale, or a Class.
 	 * <p>{@code Void} and {@code void} are not considered simple value types.
-	 * @param type the type to check
+	 * @param type 要检查的type
 	 * @return whether the given type represents a "simple" value type
 	 * @see #isSimpleProperty(Class)
 	 */

@@ -295,7 +295,7 @@ public abstract class DataSourceUtils {
 	/**
 	 * Determine whether the given JDBC Connection is transactional, that is,
 	 * bound to the current thread by Spring's transaction facilities.
-	 * @param con the Connection to check
+	 * @param con 要检查的Connection
 	 * @param dataSource the DataSource that the Connection was obtained from
 	 * (may be {@code null})
 	 * @return whether the Connection is transactional

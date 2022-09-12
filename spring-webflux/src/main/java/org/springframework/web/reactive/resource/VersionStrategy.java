@@ -59,7 +59,7 @@ public interface VersionStrategy {
 
 	/**
 	 * Determine the version for the given resource.
-	 * @param resource the resource to check
+	 * @param resource 要检查的resource
 	 * @return the resource version
 	 */
 	Mono<String> getResourceVersion(Resource resource);

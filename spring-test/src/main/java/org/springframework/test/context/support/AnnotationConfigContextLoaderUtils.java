@@ -100,7 +100,7 @@ public abstract class AnnotationConfigContextLoaderUtils {
 	 * <li>must be {@code static}</li>
 	 * <li>must be annotated or meta-annotated with {@code @Configuration}</li>
 	 * </ul>
-	 * @param clazz the class to check
+	 * @param clazz 要检查的class
 	 * @return {@code true} if the supplied class meets the candidate criteria
 	 */
 	private static boolean isDefaultConfigurationClassCandidate(@Nullable Class<?> clazz) {

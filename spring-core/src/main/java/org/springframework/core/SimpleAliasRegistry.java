@@ -95,7 +95,7 @@ public class SimpleAliasRegistry implements AliasRegistry {
 
 	/**
 	 * Determine whether the given name has the given alias registered.
-	 * @param name the name to check
+	 * @param name 要检查的name
 	 * @param alias the alias to look for
 	 * @since 4.2.1
 	 */

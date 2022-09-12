@@ -115,7 +115,7 @@ public class ResponseStatusExceptionHandler implements WebExceptionHandler {
 	 * Determine the HTTP status for the given exception.
 	 * <p>As of 5.3 this method always returns {@code null} in which case
 	 * {@link #determineRawStatusCode(Throwable)} is used instead.
-	 * @param ex the exception to check
+	 * @param ex 要检查的exception
 	 * @return the associated HTTP status, if any
 	 * @deprecated as of 5.3 in favor of {@link #determineRawStatusCode(Throwable)}.
 	 */

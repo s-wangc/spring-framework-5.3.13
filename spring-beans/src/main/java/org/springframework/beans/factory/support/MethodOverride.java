@@ -98,7 +98,7 @@ public abstract class MethodOverride implements BeanMetadataElement {
 	 * Subclasses must override this to indicate whether they <em>match</em> the
 	 * given method. This allows for argument list checking as well as method
 	 * name checking.
-	 * @param method the method to check
+	 * @param method 要检查的method
 	 * @return whether this override matches the given method
 	 */
 	public abstract boolean matches(Method method);

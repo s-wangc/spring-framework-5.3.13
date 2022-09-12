@@ -100,7 +100,7 @@ public class InstanceFilter<T> {
 	/**
 	 * Determine if the specified {@code instance} matches one of the candidates.
 	 * <p>If the candidates collection is {@code null}, returns {@code false}.
-	 * @param instance the instance to check
+	 * @param instance 要检查的instance
 	 * @param candidates a list of candidates
 	 * @return {@code true} if the instance match or the candidates collection is null
 	 */

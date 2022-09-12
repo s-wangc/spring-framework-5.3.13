@@ -261,7 +261,7 @@ public final class Conventions {
 	 * <p>Will return the class of the given value, except when encountering a
 	 * JDK proxy, in which case it will determine the 'primary' interface
 	 * implemented by that proxy.
-	 * @param value the value to check
+	 * @param value 要检查的value
 	 * @return the class to use for naming a variable
 	 */
 	private static Class<?> getClassForValue(Object value) {

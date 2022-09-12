@@ -215,7 +215,7 @@ public abstract class StringUtils {
 
 	/**
 	 * Trim leading and trailing whitespace from the given {@code String}.
-	 * @param str the {@code String} to check
+	 * @param str 要检查的{@code String}
 	 * @return the trimmed {@code String}
 	 * @see java.lang.Character#isWhitespace
 	 */
@@ -241,7 +241,7 @@ public abstract class StringUtils {
 	/**
 	 * Trim <i>all</i> whitespace from the given {@code String}:
 	 * leading, trailing, and in between characters.
-	 * @param str the {@code String} to check
+	 * @param str 要检查的{@code String}
 	 * @return the trimmed {@code String}
 	 * @see java.lang.Character#isWhitespace
 	 */
@@ -263,7 +263,7 @@ public abstract class StringUtils {
 
 	/**
 	 * Trim leading whitespace from the given {@code String}.
-	 * @param str the {@code String} to check
+	 * @param str 要检查的{@code String}
 	 * @return the trimmed {@code String}
 	 * @see java.lang.Character#isWhitespace
 	 */
@@ -281,7 +281,7 @@ public abstract class StringUtils {
 
 	/**
 	 * Trim trailing whitespace from the given {@code String}.
-	 * @param str the {@code String} to check
+	 * @param str 要检查的{@code String}
 	 * @return the trimmed {@code String}
 	 * @see java.lang.Character#isWhitespace
 	 */
@@ -299,7 +299,7 @@ public abstract class StringUtils {
 
 	/**
 	 * Trim all occurrences of the supplied leading character from the given {@code String}.
-	 * @param str the {@code String} to check
+	 * @param str 要检查的{@code String}
 	 * @param leadingCharacter the leading character to be trimmed
 	 * @return the trimmed {@code String}
 	 */
@@ -317,7 +317,7 @@ public abstract class StringUtils {
 
 	/**
 	 * Trim all occurrences of the supplied trailing character from the given {@code String}.
-	 * @param str the {@code String} to check
+	 * @param str 要检查的{@code String}
 	 * @param trailingCharacter the trailing character to be trimmed
 	 * @return the trimmed {@code String}
 	 */
@@ -335,7 +335,7 @@ public abstract class StringUtils {
 
 	/**
 	 * Test if the given {@code String} matches the given single character.
-	 * @param str the {@code String} to check
+	 * @param str 要检查的{@code String}
 	 * @param singleCharacter the character to compare to
 	 * @since 5.2.9
 	 */
@@ -346,7 +346,7 @@ public abstract class StringUtils {
 	/**
 	 * Test if the given {@code String} starts with the specified prefix,
 	 * ignoring upper/lower case.
-	 * @param str the {@code String} to check
+	 * @param str 要检查的{@code String}
 	 * @param prefix the prefix to look for
 	 * @see java.lang.String#startsWith
 	 */
@@ -358,7 +358,7 @@ public abstract class StringUtils {
 	/**
 	 * Test if the given {@code String} ends with the specified suffix,
 	 * ignoring upper/lower case.
-	 * @param str the {@code String} to check
+	 * @param str 要检查的{@code String}
 	 * @param suffix the suffix to look for
 	 * @see java.lang.String#endsWith
 	 */
