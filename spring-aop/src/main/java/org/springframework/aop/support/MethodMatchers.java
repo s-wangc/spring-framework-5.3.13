@@ -86,7 +86,7 @@ public abstract class MethodMatchers {
 	 * {@link org.springframework.aop.IntroductionAwareMethodMatcher}
 	 * (if applicable).
 	 * @param mm the MethodMatcher to apply (may be an IntroductionAwareMethodMatcher)
-	 * @param method the candidate method
+	 * @param method 候选method
 	 * @param targetClass the target class
 	 * @param hasIntroductions {@code true} if the object on whose behalf we are
 	 * asking is the subject on one or more introductions; {@code false} otherwise

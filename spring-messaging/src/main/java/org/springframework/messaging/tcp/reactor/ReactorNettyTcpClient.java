@@ -200,7 +200,7 @@ public class ReactorNettyTcpClient<P> implements TcpOperations<P> {
 	 * {@link TcpConnectionHandler} which may implement sub-interfaces such as
 	 * {@link org.springframework.messaging.simp.stomp.StompTcpConnectionHandler}
 	 * that expose further information.
-	 * @param tcpClient the candidate TcpClient
+	 * @param tcpClient 候选TcpClient
 	 * @param handler the handler for the TCP connection
 	 * @return the same handler or an updated instance
 	 */

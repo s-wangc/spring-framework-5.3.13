@@ -394,7 +394,7 @@ public class ModelAttributeMethodProcessor implements HandlerMethodArgumentResol
 	 * @param parameter the method parameter declaration
 	 * @param targetType target类型
 	 * @param fieldName field的名称
-	 * @param value the candidate value
+	 * @param value 候选value
 	 * @since 5.1
 	 * @see #validateIfApplicable(WebDataBinder, MethodParameter)
 	 * @see SmartValidator#validateValue(Class, String, Object, Errors, Object...)

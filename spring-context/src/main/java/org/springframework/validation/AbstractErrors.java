@@ -226,7 +226,7 @@ public abstract class AbstractErrors implements Errors, Serializable {
 	/**
 	 * Check whether the given FieldError matches the given field.
 	 * @param field the field that we are looking up FieldErrors for
-	 * @param fieldError the candidate FieldError
+	 * @param fieldError 候选FieldError
 	 * @return whether the FieldError matches the given field
 	 */
 	protected boolean isMatchingFieldError(String field, FieldError fieldError) {

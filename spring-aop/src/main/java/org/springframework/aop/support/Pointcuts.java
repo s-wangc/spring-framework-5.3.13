@@ -67,7 +67,7 @@ public abstract class Pointcuts {
 	/**
 	 * Perform the least expensive check for a pointcut match.
 	 * @param pointcut the pointcut to match
-	 * @param method the candidate method
+	 * @param method 候选method
 	 * @param targetClass the target class
 	 * @param args arguments to the method
 	 * @return whether there's a runtime match

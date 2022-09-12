@@ -188,8 +188,8 @@ public class SimpleAliasRegistry implements AliasRegistry {
 	 * Check whether the given name points back to the given alias as an alias
 	 * in the other direction already, catching a circular reference upfront
 	 * and throwing a corresponding IllegalStateException.
-	 * @param name the candidate name
-	 * @param alias the candidate alias
+	 * @param name 候选name
+	 * @param alias 候选alias
 	 * @see #registerAlias
 	 * @see #hasAlias
 	 */
