@@ -126,7 +126,7 @@ public class SimpleRemoteSlsbInvokerInterceptor extends AbstractRemoteSlsbInvoke
 
 	/**
 	 * Return an EJB component instance to delegate the call to.
-	 * <p>The default implementation delegates to {@link #newSessionBeanInstance}.
+	 * <p>默认实现委托给{@link #newSessionBeanInstance}.
 	 * @return the EJB component instance
 	 * @throws NamingException if thrown by JNDI
 	 * @throws InvocationTargetException if thrown by the create method
@@ -148,7 +148,7 @@ public class SimpleRemoteSlsbInvokerInterceptor extends AbstractRemoteSlsbInvoke
 
 	/**
 	 * Release the given EJB instance.
-	 * <p>The default implementation delegates to {@link #removeSessionBeanInstance}.
+	 * <p>默认实现委托给{@link #removeSessionBeanInstance}.
 	 * @param ejb the EJB component instance to release
 	 * @see #removeSessionBeanInstance
 	 */

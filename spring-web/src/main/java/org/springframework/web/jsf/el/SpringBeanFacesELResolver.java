@@ -142,7 +142,7 @@ public class SpringBeanFacesELResolver extends ELResolver {
 
 	/**
 	 * Retrieve the web application context to delegate bean name resolution to.
-	 * <p>The default implementation delegates to FacesContextUtils.
+	 * <p>默认实现委托给FacesContextUtils.
 	 * @param elContext the current JSF ELContext
 	 * @return the Spring web application context (never {@code null})
 	 * @see org.springframework.web.jsf.FacesContextUtils#getRequiredWebApplicationContext

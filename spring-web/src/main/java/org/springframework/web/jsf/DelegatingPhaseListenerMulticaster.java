@@ -97,7 +97,7 @@ public class DelegatingPhaseListenerMulticaster implements PhaseListener {
 
 	/**
 	 * Retrieve the Spring BeanFactory to delegate bean name resolution to.
-	 * <p>The default implementation delegates to {@code getWebApplicationContext}.
+	 * <p>默认实现委托给{@code getWebApplicationContext}.
 	 * Can be overridden to provide an arbitrary ListableBeanFactory reference to
 	 * resolve against; usually, this will be a full Spring ApplicationContext.
 	 * @param facesContext the current JSF context
@@ -110,7 +110,7 @@ public class DelegatingPhaseListenerMulticaster implements PhaseListener {
 
 	/**
 	 * Retrieve the web application context to delegate bean name resolution to.
-	 * <p>The default implementation delegates to FacesContextUtils.
+	 * <p>默认实现委托给FacesContextUtils.
 	 * @param facesContext the current JSF context
 	 * @return the Spring web application context (never {@code null})
 	 * @see FacesContextUtils#getRequiredWebApplicationContext

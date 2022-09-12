@@ -259,7 +259,7 @@ public abstract class AbstractCachingViewResolver extends WebApplicationObjectSu
 
 	/**
 	 * Create the actual View object.
-	 * <p>The default implementation delegates to {@link #loadView}.
+	 * <p>默认实现委托给{@link #loadView}.
 	 * This can be overridden to resolve certain view names in a special fashion,
 	 * before delegating to the actual {@code loadView} implementation
 	 * provided by the subclass.

@@ -423,7 +423,7 @@ public class ModelAttributeMethodProcessor implements HandlerMethodArgumentResol
 
 	/**
 	 * Whether to raise a fatal bind exception on validation errors.
-	 * <p>The default implementation delegates to {@link #isBindExceptionRequired(MethodParameter)}.
+	 * <p>默认实现委托给{@link #isBindExceptionRequired(MethodParameter)}.
 	 * @param binder the data binder used to perform data binding
 	 * @param parameter the method parameter declaration
 	 * @return {@code true} if the next method parameter is not of type {@link Errors}

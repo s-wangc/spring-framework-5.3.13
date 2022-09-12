@@ -115,7 +115,7 @@ public abstract class AbstractRemoteSlsbInvokerInterceptor extends AbstractSlsbI
 
 	/**
 	 * Determine whether the given RMI exception indicates a connect failure.
-	 * <p>The default implementation delegates to RmiClientInterceptorUtils.
+	 * <p>默认实现委托给RmiClientInterceptorUtils.
 	 * @param ex the RMI exception to check
 	 * @return whether the exception should be treated as connect failure
 	 * @see org.springframework.remoting.rmi.RmiClientInterceptorUtils#isConnectFailure

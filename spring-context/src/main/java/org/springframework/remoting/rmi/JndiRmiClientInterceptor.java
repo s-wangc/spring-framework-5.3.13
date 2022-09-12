@@ -401,7 +401,7 @@ public class JndiRmiClientInterceptor extends JndiObjectLocator implements Metho
 
 	/**
 	 * Apply the given AOP method invocation to the given {@link RmiInvocationHandler}.
-	 * <p>The default implementation delegates to {@link #createRemoteInvocation}.
+	 * <p>默认实现委托给{@link #createRemoteInvocation}.
 	 * @param methodInvocation the current AOP method invocation
 	 * @param invocationHandler the RmiInvocationHandler to apply the invocation to
 	 * @return the invocation result

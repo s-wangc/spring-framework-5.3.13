@@ -239,7 +239,7 @@ public class MBeanRegistrationSupport {
 	/**
 	 * Called when an MBean is registered under the given {@link ObjectName}. Allows
 	 * subclasses to perform additional processing when an MBean is registered.
-	 * <p>The default implementation delegates to {@link #onRegister(ObjectName)}.
+	 * <p>默认实现委托给{@link #onRegister(ObjectName)}.
 	 * @param objectName the actual {@link ObjectName} that the MBean was registered with
 	 * @param mbean the registered MBean instance
 	 */

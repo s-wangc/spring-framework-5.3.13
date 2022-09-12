@@ -116,7 +116,7 @@ public interface Advised extends TargetClassAware {
 
 	/**
 	 * Return the number of advisors applying to this proxy.
-	 * <p>The default implementation delegates to {@code getAdvisors().length}.
+	 * <p>默认实现委托给{@code getAdvisors().length}.
 	 * @since 5.3.1
 	 */
 	default int getAdvisorCount() {

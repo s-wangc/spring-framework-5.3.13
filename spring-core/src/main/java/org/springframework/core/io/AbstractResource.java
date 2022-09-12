@@ -200,7 +200,7 @@ public abstract class AbstractResource implements Resource {
 
 	/**
 	 * Determine the File to use for timestamp checking.
-	 * <p>The default implementation delegates to {@link #getFile()}.
+	 * <p>默认实现委托给{@link #getFile()}.
 	 * @return the File to use for timestamp checking (never {@code null})
 	 * @throws FileNotFoundException if the resource cannot be resolved as
 	 * an absolute file path, i.e. is not available in a file system
