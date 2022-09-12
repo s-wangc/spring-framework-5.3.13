@@ -1961,7 +1961,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 * just amounts to a local hash lookup: The operation is therefore part of the
 	 * public interface there. The same implementation can serve for both this
 	 * template method and the public interface method in that case.
-	 * @param beanName the name of the bean to look for
+	 * @param beanName 要查找的bean的名称
 	 * @return if this bean factory contains a bean definition with the given name
 	 * @see #containsBean
 	 * @see org.springframework.beans.factory.ListableBeanFactory#containsBeanDefinition

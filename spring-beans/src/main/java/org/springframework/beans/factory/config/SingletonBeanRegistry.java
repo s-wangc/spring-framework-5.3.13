@@ -66,7 +66,7 @@ public interface SingletonBeanRegistry {
 	 * defined by a bean definition that already been created, in a raw fashion.
 	 * <p><b>注意:</b> This lookup method is not aware of FactoryBean prefixes or aliases.
 	 * You need to resolve the canonical bean name first before obtaining the singleton instance.
-	 * @param beanName the name of the bean to look for
+	 * @param beanName 要查找的bean的名称
 	 * @return the registered singleton object, or {@code null} if none found
 	 * @see ConfigurableListableBeanFactory#getBeanDefinition
 	 */
@@ -89,7 +89,7 @@ public interface SingletonBeanRegistry {
 	 * instance or created by bean definition), also checking ancestor factories.
 	 * <p><b>注意:</b> This lookup method is not aware of FactoryBean prefixes or aliases.
 	 * You need to resolve the canonical bean name first before checking the singleton status.
-	 * @param beanName the name of the bean to look for
+	 * @param beanName 要查找的bean的名称
 	 * @return if this bean factory contains a singleton instance with the given name
 	 * @see #registerSingleton
 	 * @see org.springframework.beans.factory.ListableBeanFactory#containsBeanDefinition

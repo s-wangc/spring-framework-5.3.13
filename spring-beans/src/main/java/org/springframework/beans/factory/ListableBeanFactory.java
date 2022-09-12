@@ -62,7 +62,7 @@ public interface ListableBeanFactory extends BeanFactory {
 	 * <p>Does not consider any hierarchy this factory may participate in,
 	 * and ignores any singleton beans that have been registered by
 	 * other means than bean definitions.
-	 * @param beanName the name of the bean to look for
+	 * @param beanName 要查找的bean的名称
 	 * @return if this bean factory contains a bean definition with the given name
 	 * @see #containsBean
 	 */
