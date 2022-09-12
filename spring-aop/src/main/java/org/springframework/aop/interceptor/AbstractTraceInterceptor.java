@@ -174,7 +174,7 @@ public abstract class AbstractTraceInterceptor implements MethodInterceptor, Ser
 	 * instance is enabled. Subclasses can override this to apply the
 	 * interceptor in other cases as well.
 	 * @param invocation the {@code MethodInvocation} being traced
-	 * @param logger the {@code Log} instance to check
+	 * @param logger 要检查的{@code Log}实例
 	 * @see #invokeUnderTrace
 	 * @see #isLogEnabled
 	 */
@@ -186,7 +186,7 @@ public abstract class AbstractTraceInterceptor implements MethodInterceptor, Ser
 	 * Determine whether the given {@link Log} instance is enabled.
 	 * <p>Default is {@code true} when the "trace" level is enabled.
 	 * Subclasses can override this to change the level under which 'tracing' occurs.
-	 * @param logger the {@code Log} instance to check
+	 * @param logger 要检查的{@code Log}实例
 	 */
 	protected boolean isLogEnabled(Log logger) {
 		return logger.isTraceEnabled();

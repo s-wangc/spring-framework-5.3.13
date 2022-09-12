@@ -277,7 +277,7 @@ public interface HibernateOperations {
 
 	/**
 	 * Check whether the given object is in the Session cache.
-	 * @param entity the persistence instance to check
+	 * @param entity 要检查的persistence实例
 	 * @return whether the given object is in the Session cache
 	 * @throws DataAccessException if there is a Hibernate error
 	 * @see org.hibernate.Session#contains
