@@ -343,7 +343,7 @@ public interface ConfigurableBeanFactory extends HierarchicalBeanFactory, Single
 
 	/**
 	 * Determine whether the bean with the given name is a FactoryBean.
-	 * @param name the name of the bean to check
+	 * @param name 依赖bean的名称
 	 * @return whether the bean is a FactoryBean
 	 * ({@code false} means the bean exists but is not a FactoryBean)
 	 * @throws NoSuchBeanDefinitionException 如果没有具有给定名称的bean

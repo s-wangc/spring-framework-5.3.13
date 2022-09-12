@@ -431,7 +431,7 @@ public class DefaultSingletonBeanRegistry extends SimpleAliasRegistry implements
 	/**
 	 * Determine whether the specified dependent bean has been registered as
 	 * dependent on the given bean or on any of its transitive dependencies.
-	 * @param beanName the name of the bean to check
+	 * @param beanName 依赖bean的名称
 	 * @param dependentBeanName the name of the dependent bean
 	 * @since 4.0
 	 */
@@ -467,7 +467,7 @@ public class DefaultSingletonBeanRegistry extends SimpleAliasRegistry implements
 
 	/**
 	 * Determine whether a dependent bean has been registered for the given name.
-	 * @param beanName the name of the bean to check
+	 * @param beanName 依赖bean的名称
 	 */
 	protected boolean hasDependentBean(String beanName) {
 		return this.dependentBeanMap.containsKey(beanName);

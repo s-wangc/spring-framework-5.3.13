@@ -556,7 +556,7 @@ public class MBeanExporter extends MBeanRegistrationSupport implements MBeanExpo
 	/**
 	 * Return whether the specified bean definition should be considered as lazy-init.
 	 * @param beanFactory the bean factory that is supposed to contain the bean definition
-	 * @param beanName the name of the bean to check
+	 * @param beanName 依赖bean的名称
 	 * @see org.springframework.beans.factory.config.ConfigurableListableBeanFactory#getBeanDefinition
 	 * @see org.springframework.beans.factory.config.BeanDefinition#isLazyInit
 	 */
