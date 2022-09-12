@@ -39,7 +39,7 @@ public final class ObjectNameManager {
 	 * Retrieve the {@code ObjectName} instance corresponding to the supplied name.
 	 * @param objectName the {@code ObjectName} in {@code ObjectName} or
 	 * {@code String} format
-	 * @return the {@code ObjectName} instance
+	 * @return {@code ObjectName}实例
 	 * @throws MalformedObjectNameException in case of an invalid object name specification
 	 * @see ObjectName#ObjectName(String)
 	 * @see ObjectName#getInstance(String)
@@ -58,7 +58,7 @@ public final class ObjectNameManager {
 	/**
 	 * Retrieve the {@code ObjectName} instance corresponding to the supplied name.
 	 * @param objectName the {@code ObjectName} in {@code String} format
-	 * @return the {@code ObjectName} instance
+	 * @return {@code ObjectName}实例
 	 * @throws MalformedObjectNameException in case of an invalid object name specification
 	 * @see ObjectName#ObjectName(String)
 	 * @see ObjectName#getInstance(String)
@@ -73,7 +73,7 @@ public final class ObjectNameManager {
 	 * @param domainName the domain name for the {@code ObjectName}
 	 * @param key the key for the single property in the {@code ObjectName}
 	 * @param value the value for the single property in the {@code ObjectName}
-	 * @return the {@code ObjectName} instance
+	 * @return {@code ObjectName}实例
 	 * @throws MalformedObjectNameException in case of an invalid object name specification
 	 * @see ObjectName#ObjectName(String, String, String)
 	 * @see ObjectName#getInstance(String, String, String)
@@ -89,7 +89,7 @@ public final class ObjectNameManager {
 	 * and the supplied key/name properties.
 	 * @param domainName the domain name for the {@code ObjectName}
 	 * @param properties the properties for the {@code ObjectName}
-	 * @return the {@code ObjectName} instance
+	 * @return {@code ObjectName}实例
 	 * @throws MalformedObjectNameException in case of an invalid object name specification
 	 * @see ObjectName#ObjectName(String, java.util.Hashtable)
 	 * @see ObjectName#getInstance(String, java.util.Hashtable)

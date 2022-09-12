@@ -290,7 +290,7 @@ public class UrlBasedViewResolver extends ViewResolverSupport
 	 * be called here: They will be automatically applied afterwards, provided
 	 * that an {@link #setApplicationContext ApplicationContext} is available.
 	 * @param viewName the name of the view to build
-	 * @return the View instance
+	 * @return View实例
 	 * @see #getViewClass()
 	 * @see #applyLifecycleMethods
 	 */

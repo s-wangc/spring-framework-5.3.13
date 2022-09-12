@@ -473,7 +473,7 @@ public class ScriptFactoryPostProcessor implements SmartInstantiationAwareBeanPo
 	 * @param beanName the name of the scripted bean
 	 * @param scriptSourceLocator the script source locator
 	 * @param resourceLoader the ResourceLoader to use (if necessary)
-	 * @return the ScriptSource instance
+	 * @return ScriptSource实例
 	 */
 	protected ScriptSource convertToScriptSource(String beanName, String scriptSourceLocator,
 			ResourceLoader resourceLoader) {

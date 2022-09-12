@@ -318,7 +318,7 @@ public abstract class AbstractView implements View, BeanNameAware, ApplicationCo
 	 * @param exchange the current exchange
 	 * @param model a combined output Map (never {@code null}), with dynamic values
 	 * taking precedence over static attributes
-	 * @return the {@code RequestContext} instance
+	 * @return {@code RequestContext}实例
 	 * @see #setRequestContextAttribute
 	 */
 	protected RequestContext createRequestContext(ServerWebExchange exchange, Map<String, Object> model) {

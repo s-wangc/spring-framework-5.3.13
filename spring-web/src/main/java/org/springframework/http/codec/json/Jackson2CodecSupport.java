@@ -105,7 +105,7 @@ public abstract class Jackson2CodecSupport {
 
 	/**
 	 * Configure the default ObjectMapper instance to use.
-	 * @param objectMapper the ObjectMapper instance
+	 * @param objectMapper ObjectMapper实例
 	 * @since 5.3.4
 	 */
 	public void setObjectMapper(ObjectMapper objectMapper) {

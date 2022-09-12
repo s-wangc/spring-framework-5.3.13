@@ -538,7 +538,7 @@ public class UrlBasedViewResolver extends AbstractCachingViewResolver implements
 	 * <li>InitializingBean's {@code afterPropertiesSet}
 	 * </ul>
 	 * @param viewName the name of the view to retrieve
-	 * @return the View instance
+	 * @return View实例
 	 * @throws Exception if the view couldn't be resolved
 	 * @see #buildView(String)
 	 * @see org.springframework.context.ApplicationContextAware#setApplicationContext
@@ -561,7 +561,7 @@ public class UrlBasedViewResolver extends AbstractCachingViewResolver implements
 	 * first, before setting further properties themselves. {@code loadView}
 	 * will then apply Spring lifecycle methods at the end of this process.
 	 * @param viewName the name of the view to build
-	 * @return the View instance
+	 * @return View实例
 	 * @throws Exception if the view couldn't be resolved
 	 * @see #loadView(String, java.util.Locale)
 	 */

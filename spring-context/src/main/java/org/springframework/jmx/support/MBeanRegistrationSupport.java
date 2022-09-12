@@ -124,7 +124,7 @@ public class MBeanRegistrationSupport {
 	/**
 	 * Actually register the MBean with the server. The behavior when encountering
 	 * an existing MBean can be configured using {@link #setRegistrationPolicy}.
-	 * @param mbean the MBean instance
+	 * @param mbean MBean实例
 	 * @param objectName the suggested ObjectName for the MBean
 	 * @throws JMException if the registration failed
 	 */

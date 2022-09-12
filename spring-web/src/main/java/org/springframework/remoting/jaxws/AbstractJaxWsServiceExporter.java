@@ -175,7 +175,7 @@ public abstract class AbstractJaxWsServiceExporter implements BeanFactoryAware, 
 	/**
 	 * Create the actual Endpoint instance.
 	 * @param bean the service object to wrap
-	 * @return the Endpoint instance
+	 * @return Endpoint实例
 	 * @see Endpoint#create(Object)
 	 * @see Endpoint#create(String, Object)
 	 */

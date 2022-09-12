@@ -330,7 +330,7 @@ public class SimpleMappingExceptionResolver extends AbstractHandlerExceptionReso
 	 * @param viewName the name of the error view
 	 * @param ex the exception that got thrown during handler execution
 	 * @param request current HTTP request (useful for obtaining metadata)
-	 * @return the ModelAndView instance
+	 * @return ModelAndView实例
 	 */
 	protected ModelAndView getModelAndView(String viewName, Exception ex, HttpServletRequest request) {
 		return getModelAndView(viewName, ex);
@@ -342,7 +342,7 @@ public class SimpleMappingExceptionResolver extends AbstractHandlerExceptionReso
 	 * 可以在子类中重写.
 	 * @param viewName the name of the error view
 	 * @param ex the exception that got thrown during handler execution
-	 * @return the ModelAndView instance
+	 * @return ModelAndView实例
 	 * @see #setExceptionAttribute
 	 */
 	protected ModelAndView getModelAndView(String viewName, Exception ex) {

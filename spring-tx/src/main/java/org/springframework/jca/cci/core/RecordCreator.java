@@ -58,7 +58,7 @@ public interface RecordCreator {
 	 * <i>output</i> Record creator, it should return an <i>empty</i> Record instance.
 	 * @param recordFactory the CCI RecordFactory (never {@code null}, but not guaranteed to be
 	 * supported by the connector: its create methods might throw NotSupportedException)
-	 * @return the Record instance
+	 * @return Record实例
 	 * @throws ResourceException if thrown by a CCI method, to be auto-converted
 	 * to a DataAccessException
 	 * @throws DataAccessException in case of custom exceptions

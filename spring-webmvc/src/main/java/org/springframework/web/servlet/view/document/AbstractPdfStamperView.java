@@ -79,7 +79,7 @@ public abstract class AbstractPdfStamperView extends AbstractUrlBasedView {
 	 * Read the raw PDF resource into an iText PdfReader.
 	 * <p>The default implementation resolve the specified "url" property
 	 * as ApplicationContext resource.
-	 * @return the PdfReader instance
+	 * @return PdfReader实例
 	 * @throws IOException if resource access failed
 	 * @see #setUrl
 	 */

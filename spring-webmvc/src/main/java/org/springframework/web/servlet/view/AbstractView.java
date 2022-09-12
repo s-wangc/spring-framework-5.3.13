@@ -356,7 +356,7 @@ public abstract class AbstractView extends WebApplicationObjectSupport implement
 	 * @param request current HTTP request
 	 * @param model combined output Map (never {@code null}),
 	 * with dynamic values taking precedence over static attributes
-	 * @return the RequestContext instance
+	 * @return RequestContext实例
 	 * @see #setRequestContextAttribute
 	 * @see org.springframework.web.servlet.support.RequestContext
 	 */

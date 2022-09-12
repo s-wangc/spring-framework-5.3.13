@@ -444,7 +444,7 @@ public class XStreamMarshaller extends AbstractMarshaller implements BeanClassLo
 	/**
 	 * Construct an XStream instance, either using one of the
 	 * standard constructors or creating a custom subclass.
-	 * @return the {@code XStream} instance
+	 * @return {@code XStream}实例
 	 */
 	protected XStream constructXStream() {
 		return new XStream(this.reflectionProvider, getDefaultDriver(), new ClassLoaderReference(this.beanClassLoader),
@@ -481,7 +481,7 @@ public class XStreamMarshaller extends AbstractMarshaller implements BeanClassLo
 
 	/**
 	 * Configure the XStream instance with this marshaller's bean properties.
-	 * @param xstream the {@code XStream} instance
+	 * @param xstream {@code XStream}实例
 	 */
 	protected void configureXStream(XStream xstream) {
 		if (this.converters != null) {
@@ -632,7 +632,7 @@ public class XStreamMarshaller extends AbstractMarshaller implements BeanClassLo
 	/**
 	 * Template to allow for customizing the given {@link XStream}.
 	 * <p>默认实现为空.
-	 * @param xstream the {@code XStream} instance
+	 * @param xstream {@code XStream}实例
 	 */
 	protected void customizeXStream(XStream xstream) {
 	}

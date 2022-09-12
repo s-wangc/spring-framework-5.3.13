@@ -362,7 +362,7 @@ public abstract class ResourceUtils {
 	 * Create a URI instance for the given URL,
 	 * replacing spaces with "%20" URI encoding first.
 	 * @param url the URL to convert into a URI instance
-	 * @return the URI instance
+	 * @return URI实例
 	 * @throws URISyntaxException if the URL wasn't a valid URI
 	 * @see java.net.URL#toURI()
 	 */
@@ -374,7 +374,7 @@ public abstract class ResourceUtils {
 	 * Create a URI instance for the given location String,
 	 * replacing spaces with "%20" URI encoding first.
 	 * @param location the location String to convert into a URI instance
-	 * @return the URI instance
+	 * @return URI实例
 	 * @throws URISyntaxException if the location wasn't a valid URI
 	 */
 	public static URI toURI(String location) throws URISyntaxException {

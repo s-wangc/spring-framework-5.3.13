@@ -187,7 +187,7 @@ public class ThreadPoolExecutorFactoryBean extends ExecutorConfigurationSupport
 	 * <p>A LinkedBlockingQueue instance will be created for a positive
 	 * capacity value; a SynchronousQueue else.
 	 * @param queueCapacity the specified queue capacity
-	 * @return the BlockingQueue instance
+	 * @return BlockingQueue实例
 	 * @see java.util.concurrent.LinkedBlockingQueue
 	 * @see java.util.concurrent.SynchronousQueue
 	 */

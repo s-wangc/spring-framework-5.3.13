@@ -154,7 +154,7 @@ public abstract class MessageSourceSupport {
 	 * Create a {@code MessageFormat} for the given message and Locale.
 	 * @param msg the message to create a {@code MessageFormat} for
 	 * @param locale the Locale to create a {@code MessageFormat} for
-	 * @return the {@code MessageFormat} instance
+	 * @return {@code MessageFormat}实例
 	 */
 	protected MessageFormat createMessageFormat(String msg, Locale locale) {
 		return new MessageFormat(msg, locale);

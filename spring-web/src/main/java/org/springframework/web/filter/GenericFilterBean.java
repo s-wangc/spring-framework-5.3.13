@@ -304,7 +304,7 @@ public abstract class GenericFilterBean implements Filter, BeanNameAware, Enviro
 	 * <p>Takes the FilterConfig's ServletContext by default.
 	 * If initialized as bean in a Spring application context,
 	 * it falls back to the ServletContext that the bean factory runs in.
-	 * @return the ServletContext instance
+	 * @return ServletContext实例
 	 * @throws IllegalStateException if no ServletContext is available
 	 * @see javax.servlet.GenericServlet#getServletContext()
 	 * @see javax.servlet.FilterConfig#getServletContext()

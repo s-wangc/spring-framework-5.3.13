@@ -73,7 +73,7 @@ public interface WebFluxConfigurer {
 	 * <p>The configured path matching options will be used for mapping to
 	 * annotated controllers and also
 	 * {@link #addResourceHandlers(ResourceHandlerRegistry) static resources}.
-	 * @param configurer the {@link PathMatchConfigurer} instance
+	 * @param configurer {@link PathMatchConfigurer}实例
 	 */
 	default void configurePathMatching(PathMatchConfigurer configurer) {
 	}

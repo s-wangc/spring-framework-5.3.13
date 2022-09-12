@@ -41,7 +41,7 @@ public interface ObjectNamingStrategy {
 	 * returned {@code ObjectName}
 	 * @param beanKey the key associated with this bean in the beans map
 	 * passed to the {@code MBeanExporter}
-	 * @return the {@code ObjectName} instance
+	 * @return {@code ObjectName}实例
 	 * @throws MalformedObjectNameException if the resulting {@code ObjectName} is invalid
 	 */
 	ObjectName getObjectName(Object managedBean, @Nullable String beanKey) throws MalformedObjectNameException;

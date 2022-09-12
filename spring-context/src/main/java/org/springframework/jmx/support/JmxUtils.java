@@ -210,7 +210,7 @@ public abstract class JmxUtils {
 	 * managed resources based on the template value supplied by a
 	 * {@link org.springframework.jmx.export.naming.ObjectNamingStrategy}.
 	 * @param objectName the original JMX ObjectName
-	 * @param managedResource the MBean instance
+	 * @param managedResource MBean实例
 	 * @return an ObjectName with the MBean identity added
 	 * @throws MalformedObjectNameException in case of an invalid object name specification
 	 * @see org.springframework.util.ObjectUtils#getIdentityHexString(Object)

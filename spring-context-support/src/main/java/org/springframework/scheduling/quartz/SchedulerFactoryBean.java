@@ -654,7 +654,7 @@ public class SchedulerFactoryBean extends SchedulerAccessor implements FactoryBe
 	 * method. Can be overridden for custom Scheduler creation.
 	 * @param schedulerFactory the factory to create the Scheduler with
 	 * @param schedulerName the name of the scheduler to create
-	 * @return the Scheduler instance
+	 * @return Scheduler实例
 	 * @throws SchedulerException if thrown by Quartz methods
 	 * @see #afterPropertiesSet
 	 * @see org.quartz.SchedulerFactory#getScheduler
