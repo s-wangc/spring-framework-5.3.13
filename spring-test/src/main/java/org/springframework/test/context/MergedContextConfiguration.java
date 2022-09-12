@@ -110,7 +110,7 @@ public class MergedContextConfiguration implements Serializable {
 	 * @param locations the merged context resource locations
 	 * @param classes the merged annotated classes
 	 * @param activeProfiles the merged active bean definition profiles
-	 * @param contextLoader the resolved {@code ContextLoader}
+	 * @param contextLoader 解析后的{@code ContextLoader}
 	 */
 	public MergedContextConfiguration(Class<?> testClass, String[] locations, Class<?>[] classes,
 			String[] activeProfiles, ContextLoader contextLoader) {
@@ -126,7 +126,7 @@ public class MergedContextConfiguration implements Serializable {
 	 * @param classes the merged annotated classes
 	 * @param contextInitializerClasses the merged context initializer classes
 	 * @param activeProfiles the merged active bean definition profiles
-	 * @param contextLoader the resolved {@code ContextLoader}
+	 * @param contextLoader 解析后的{@code ContextLoader}
 	 */
 	public MergedContextConfiguration(Class<?> testClass, String[] locations, Class<?>[] classes,
 			@Nullable Set<Class<? extends ApplicationContextInitializer<?>>> contextInitializerClasses,
@@ -143,7 +143,7 @@ public class MergedContextConfiguration implements Serializable {
 	 * @param classes the merged annotated classes
 	 * @param contextInitializerClasses the merged context initializer classes
 	 * @param activeProfiles the merged active bean definition profiles
-	 * @param contextLoader the resolved {@code ContextLoader}
+	 * @param contextLoader 解析后的{@code ContextLoader}
 	 * @param cacheAwareContextLoaderDelegate a cache-aware context loader
 	 * delegate with which to retrieve the parent context
 	 * @param parent the parent configuration or {@code null} if there is no parent
@@ -188,7 +188,7 @@ public class MergedContextConfiguration implements Serializable {
 	 * @param activeProfiles the merged active bean definition profiles
 	 * @param propertySourceLocations the merged {@code PropertySource} locations
 	 * @param propertySourceProperties the merged {@code PropertySource} properties
-	 * @param contextLoader the resolved {@code ContextLoader}
+	 * @param contextLoader 解析后的{@code ContextLoader}
 	 * @param cacheAwareContextLoaderDelegate a cache-aware context loader
 	 * delegate with which to retrieve the parent context
 	 * @param parent the parent configuration or {@code null} if there is no parent
@@ -225,7 +225,7 @@ public class MergedContextConfiguration implements Serializable {
 	 * @param propertySourceLocations the merged {@code PropertySource} locations
 	 * @param propertySourceProperties the merged {@code PropertySource} properties
 	 * @param contextCustomizers the context customizers
-	 * @param contextLoader the resolved {@code ContextLoader}
+	 * @param contextLoader 解析后的{@code ContextLoader}
 	 * @param cacheAwareContextLoaderDelegate a cache-aware context loader
 	 * delegate with which to retrieve the parent context
 	 * @param parent the parent configuration or {@code null} if there is no parent

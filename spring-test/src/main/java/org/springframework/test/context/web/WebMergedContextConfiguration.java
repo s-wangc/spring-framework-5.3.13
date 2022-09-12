@@ -91,7 +91,7 @@ public class WebMergedContextConfiguration extends MergedContextConfiguration {
 	 * @param propertySourceLocations the merged {@code PropertySource} locations
 	 * @param propertySourceProperties the merged {@code PropertySource} properties
 	 * @param resourceBasePath the resource path to the root directory of the web application
-	 * @param contextLoader the resolved {@code ContextLoader}
+	 * @param contextLoader 解析后的{@code ContextLoader}
 	 * @param cacheAwareContextLoaderDelegate a cache-aware context loader
 	 * delegate with which to retrieve the parent context
 	 * @param parent the parent configuration or {@code null} if there is no parent
@@ -127,7 +127,7 @@ public class WebMergedContextConfiguration extends MergedContextConfiguration {
 	 * @param propertySourceProperties the merged {@code PropertySource} properties
 	 * @param contextCustomizers the context customizers
 	 * @param resourceBasePath the resource path to the root directory of the web application
-	 * @param contextLoader the resolved {@code ContextLoader}
+	 * @param contextLoader 解析后的{@code ContextLoader}
 	 * @param cacheAwareContextLoaderDelegate a cache-aware context loader
 	 * delegate with which to retrieve the parent context
 	 * @param parent the parent configuration or {@code null} if there is no parent

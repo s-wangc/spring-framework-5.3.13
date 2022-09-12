@@ -48,7 +48,7 @@ public final class BindMarkersFactoryResolver {
 	 * Retrieve a {@link BindMarkersFactory} by inspecting {@link ConnectionFactory}
 	 * and its metadata.
 	 * @param connectionFactory the connection factory to inspect
-	 * @return the resolved {@link BindMarkersFactory}
+	 * @return 解析后的{@link BindMarkersFactory}
 	 * @throws NoBindMarkersFactoryException if no {@link BindMarkersFactory} can be resolved
 	 */
 	public static BindMarkersFactory resolve(ConnectionFactory connectionFactory) {

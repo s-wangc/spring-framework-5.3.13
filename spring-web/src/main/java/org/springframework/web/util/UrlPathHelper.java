@@ -192,7 +192,7 @@ public class UrlPathHelper {
 	 * request attribute with the key {@link #PATH_ATTRIBUTE} for subsequent
 	 * access via {@link #getResolvedLookupPath(ServletRequest)}.
 	 * @param request the current request
-	 * @return the resolved path
+	 * @return 解析后的path
 	 * @since 5.3
 	 */
 	public String resolveAndCacheLookupPath(HttpServletRequest request) {

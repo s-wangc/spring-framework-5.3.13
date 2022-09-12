@@ -140,7 +140,7 @@ public class InterfaceBasedMBeanInfoAssembler extends AbstractConfigurableMBeanI
 	 * Resolve the given class names into Class objects.
 	 * @param classNames the class names to resolve
 	 * @param beanKey the bean key that the class names are associated with
-	 * @return the resolved Class
+	 * @return 解析后的Class
 	 */
 	private Class<?>[] resolveClassNames(String[] classNames, String beanKey) {
 		Class<?>[] classes = new Class<?>[classNames.length];

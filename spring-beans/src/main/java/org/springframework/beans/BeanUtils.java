@@ -439,7 +439,7 @@ public abstract class BeanUtils {
 	 * <p>If no method can be found, then {@code null} is returned.
 	 * @param signature the method signature as String representation
 	 * @param clazz the class to resolve the method signature against
-	 * @return the resolved Method
+	 * @return 解析后的Method
 	 * @see #findMethod
 	 * @see #findMethodWithMinimalParameters
 	 */

@@ -49,7 +49,7 @@ public class AnnotationBeanWiringInfoResolver implements BeanWiringInfoResolver 
 	 * Build the {@link BeanWiringInfo} for the given {@link Configurable} annotation.
 	 * @param beanInstance the bean instance
 	 * @param annotation the Configurable annotation found on the bean class
-	 * @return the resolved BeanWiringInfo
+	 * @return 解析后的BeanWiringInfo
 	 */
 	protected BeanWiringInfo buildWiringInfo(Object beanInstance, Configurable annotation) {
 		if (!Autowire.NO.equals(annotation.autowire())) {

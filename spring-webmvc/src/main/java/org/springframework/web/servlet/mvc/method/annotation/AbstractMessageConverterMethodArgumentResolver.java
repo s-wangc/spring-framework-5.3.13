@@ -279,7 +279,7 @@ public abstract class AbstractMessageConverterMethodArgumentResolver implements 
 
 	/**
 	 * Adapt the given argument against the method parameter, if necessary.
-	 * @param arg the resolved argument
+	 * @param arg 解析后的argument
 	 * @param parameter the method parameter descriptor
 	 * @return the adapted argument, or the original resolved argument as-is
 	 * @since 4.3.5

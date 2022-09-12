@@ -102,7 +102,7 @@ class BeanDefinitionValueResolver {
 	 * <li>An ordinary object or {@code null}, in which case it's left alone.
 	 * @param argName the name of the argument that the value is defined for
 	 * @param value the value object to resolve
-	 * @return the resolved object
+	 * @return 解析后的object
 	 */
 	@Nullable
 	public Object resolveValueIfNecessary(Object argName, @Nullable Object value) {
@@ -230,7 +230,7 @@ class BeanDefinitionValueResolver {
 	/**
 	 * Evaluate the given value as an expression, if necessary.
 	 * @param value the candidate value (may be an expression)
-	 * @return the resolved value
+	 * @return 解析后的value
 	 */
 	@Nullable
 	protected Object evaluate(TypedStringValue value) {

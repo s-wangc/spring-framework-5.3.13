@@ -197,7 +197,7 @@ public class MethodInvoker {
 	 * <p>The default implementations uses {@code ClassUtils.forName},
 	 * using the thread context class loader.
 	 * @param className the class name to resolve
-	 * @return the resolved Class
+	 * @return 解析后的Class
 	 * @throws ClassNotFoundException if the class name was invalid
 	 */
 	protected Class<?> resolveClassName(String className) throws ClassNotFoundException {

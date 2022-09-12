@@ -102,7 +102,7 @@ public abstract class AbstractBeanDefinitionParser implements BeanDefinitionPars
 	 * @param definition the bean definition to be registered
 	 * @param parserContext 封装解析过程当前状态的对象;
 	 * provides access to a {@link org.springframework.beans.factory.support.BeanDefinitionRegistry}
-	 * @return the resolved id
+	 * @return 解析后的id
 	 * @throws BeanDefinitionStoreException if no unique name could be generated
 	 * for the given bean definition
 	 */

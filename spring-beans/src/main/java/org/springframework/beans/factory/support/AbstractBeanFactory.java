@@ -1612,7 +1612,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 * potentially resolving it as an expression.
 	 * @param value 要检查的value
 	 * @param beanDefinition the bean definition that the value comes from
-	 * @return the resolved value
+	 * @return 解析后的value
 	 * @see #setBeanExpressionResolver
 	 */
 	@Nullable

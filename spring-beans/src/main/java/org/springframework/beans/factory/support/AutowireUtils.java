@@ -125,7 +125,7 @@ abstract class AutowireUtils {
 	 * e.g. an {@link ObjectFactory} value to its actual object result.
 	 * @param autowiringValue the value to resolve
 	 * @param requiredType the type to assign the result to
-	 * @return the resolved value
+	 * @return 解析后的value
 	 */
 	public static Object resolveAutowiringValue(Object autowiringValue, Class<?> requiredType) {
 		if (autowiringValue instanceof ObjectFactory && !requiredType.isInstance(autowiringValue)) {

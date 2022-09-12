@@ -146,7 +146,7 @@ public class ResolvableMethod {
 
 
 	/**
-	 * Return the resolved method.
+	 * Return 解析后的method.
 	 */
 	public Method method() {
 		return this.method;

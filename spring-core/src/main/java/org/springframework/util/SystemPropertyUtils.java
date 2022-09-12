@@ -56,7 +56,7 @@ public abstract class SystemPropertyUtils {
 	 * Resolve {@code ${...}} placeholders in the given text, replacing them with
 	 * corresponding system property values.
 	 * @param text the String to resolve
-	 * @return the resolved String
+	 * @return 解析后的String
 	 * @throws IllegalArgumentException if there is an unresolvable placeholder
 	 * @see #PLACEHOLDER_PREFIX
 	 * @see #PLACEHOLDER_SUFFIX
@@ -71,7 +71,7 @@ public abstract class SystemPropertyUtils {
 	 * value are ignored and passed through unchanged if the flag is set to {@code true}.
 	 * @param text the String to resolve
 	 * @param ignoreUnresolvablePlaceholders whether unresolved placeholders are to be ignored
-	 * @return the resolved String
+	 * @return 解析后的String
 	 * @throws IllegalArgumentException if there is an unresolvable placeholder
 	 * @see #PLACEHOLDER_PREFIX
 	 * @see #PLACEHOLDER_SUFFIX

@@ -51,7 +51,7 @@ public abstract class ServletContextPropertyUtils {
 	 * servlet context init parameter or system property values.
 	 * @param text the String to resolve
 	 * @param servletContext the servletContext to use for lookups.
-	 * @return the resolved String
+	 * @return 解析后的String
 	 * @throws IllegalArgumentException if there is an unresolvable placeholder
 	 * @see SystemPropertyUtils#PLACEHOLDER_PREFIX
 	 * @see SystemPropertyUtils#PLACEHOLDER_SUFFIX
@@ -68,7 +68,7 @@ public abstract class ServletContextPropertyUtils {
 	 * @param text the String to resolve
 	 * @param servletContext the servletContext to use for lookups.
 	 * @param ignoreUnresolvablePlaceholders flag to determine is unresolved placeholders are ignored
-	 * @return the resolved String
+	 * @return 解析后的String
 	 * @throws IllegalArgumentException if there is an unresolvable placeholder and the flag is false
 	 * @see SystemPropertyUtils#PLACEHOLDER_PREFIX
 	 * @see SystemPropertyUtils#PLACEHOLDER_SUFFIX
