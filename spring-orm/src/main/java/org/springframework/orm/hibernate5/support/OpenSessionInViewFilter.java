@@ -50,7 +50,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
  * transactions via {@link org.springframework.orm.hibernate5.HibernateTransactionManager}
  * as well as for non-transactional execution (if configured appropriately).
  *
- * <p><b>NOTE</b>: This filter will by default <i>not</i> flush the Hibernate Session,
+ * <p><b>注意</b>: This filter will by default <i>not</i> flush the Hibernate Session,
  * with the flush mode set to {@code FlushMode.MANUAL}. It assumes to be used
  * in combination with service layer transactions that care for the flushing: The
  * active transaction manager will temporarily change the flush mode to

@@ -132,7 +132,7 @@ public interface LobCreator extends Closeable {
 	 * Close this LobCreator session and free its temporarily created BLOBs and CLOBs.
 	 * Will not need to do anything if using PreparedStatement's standard methods,
 	 * but might be necessary to free database resources if using proprietary means.
-	 * <p><b>NOTE</b>: Needs to be invoked after the involved PreparedStatements have
+	 * <p><b>注意</b>: Needs to be invoked after the involved PreparedStatements have
 	 * been executed or the affected O/R mapping sessions have been flushed.
 	 * Otherwise, the database resources for the temporary BLOBs might stay allocated.
 	 */

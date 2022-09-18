@@ -79,7 +79,7 @@ public interface SmartContextLoader extends ContextLoader {
 	 * <em>generate</em> default configuration locations, or <em>detect</em>
 	 * default configuration classes if the supplied values are {@code null}
 	 * or empty.
-	 * <p><b>Note</b>: in contrast to a standard {@code ContextLoader}, a
+	 * <p><b>注意</b>: in contrast to a standard {@code ContextLoader}, a
 	 * {@code SmartContextLoader} <b>must</b> <em>preemptively</em> verify that
 	 * a generated or detected default actually exists before setting the corresponding
 	 * {@code locations} or {@code classes} property in the supplied

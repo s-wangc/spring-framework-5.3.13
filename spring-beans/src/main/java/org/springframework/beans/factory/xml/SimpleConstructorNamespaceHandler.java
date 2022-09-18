@@ -49,7 +49,7 @@ import org.springframework.util.StringUtils;
  * argument and, rather than being the concrete value, it contains the name of
  * the bean that will be considered as a parameter.
  *
- * <b>Note</b>: This implementation supports only named parameters - there is no
+ * <b>注意</b>: This implementation supports only named parameters - there is no
  * support for indexes or types. Further more, the names are used as hints by
  * the container which, by default, does type introspection.
  *
