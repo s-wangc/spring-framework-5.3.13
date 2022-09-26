@@ -293,6 +293,7 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 	 */
 	@Override
 	public int loadBeanDefinitions(Resource resource) throws BeanDefinitionStoreException {
+		// xml read step02: 将Resource包装为EncodedResource
 		return loadBeanDefinitions(new EncodedResource(resource));
 	}
 
@@ -308,6 +309,7 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 			logger.trace("Loading XML bean definitions from " + encodedResource);
 		}
 
+        // xml read step03: 检测是否存在循环导入
 		Set<EncodedResource> currentResources = this.resourcesCurrentlyBeingLoaded.get();
 
 		if (!currentResources.add(encodedResource)) {
@@ -316,6 +318,7 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 		}
 
 		try (InputStream inputStream = encodedResource.getResource().getInputStream()) {
+			// xml read step04: 获取Resource的InputStream
 			InputSource inputSource = new InputSource(inputStream);
 			if (encodedResource.getEncoding() != null) {
 				inputSource.setEncoding(encodedResource.getEncoding());
@@ -371,6 +374,7 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 			throws BeanDefinitionStoreException {
 
 		try {
+			// xml read step05: 获取Xml资源的Document对象
 			Document doc = doLoadDocument(inputSource, resource);
 			int count = registerBeanDefinitions(doc, resource);
 			if (logger.isDebugEnabled()) {
@@ -484,8 +488,11 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 	 */
 	public int registerBeanDefinitions(Document doc, Resource resource) throws BeanDefinitionStoreException {
 		BeanDefinitionDocumentReader documentReader = createBeanDefinitionDocumentReader();
+		// xml read step06: 获取当前Bean注册表中已有的bean数量
 		int countBefore = getRegistry().getBeanDefinitionCount();
+		// xml read step07: 创建好一个XmlReaderContext, 开始注册bean定义
 		documentReader.registerBeanDefinitions(doc, createReaderContext(resource));
+		// xml read step08: 计算本次解析到底注册了多少个bean
 		return getRegistry().getBeanDefinitionCount() - countBefore;
 	}
 
