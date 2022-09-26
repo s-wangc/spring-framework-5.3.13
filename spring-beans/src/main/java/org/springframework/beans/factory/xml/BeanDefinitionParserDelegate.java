@@ -403,6 +403,7 @@ public class BeanDefinitionParserDelegate {
 	 */
 	@Nullable
 	public BeanDefinitionHolder parseBeanDefinitionElement(Element ele, @Nullable BeanDefinition containingBean) {
+		// xml parse step16: 解析bean标签的id和name属性; 其中name属性可以被拆分为数组
 		String id = ele.getAttribute(ID_ATTRIBUTE);
 		String nameAttr = ele.getAttribute(NAME_ATTRIBUTE);
 
@@ -412,6 +413,7 @@ public class BeanDefinitionParserDelegate {
 			aliases.addAll(Arrays.asList(nameArr));
 		}
 
+		// xml parse step17: 如果这个bean元素没有id, 则我们从name属性拆分出的数组取第一个元素作为id
 		String beanName = id;
 		if (!StringUtils.hasText(beanName) && !aliases.isEmpty()) {
 			beanName = aliases.remove(0);
@@ -421,12 +423,14 @@ public class BeanDefinitionParserDelegate {
 			}
 		}
 
+		// xml parse step18: 如果这个bean不是作为property元素的子元素而存在的嵌套bean定义, 则检查名称和别名是否被使用过了
 		if (containingBean == null) {
 			checkNameUniqueness(beanName, aliases, ele);
 		}
 
 		AbstractBeanDefinition beanDefinition = parseBeanDefinitionElement(ele, beanName, containingBean);
 		if (beanDefinition != null) {
+			// xml parse step30: 检查beanName的设置, 根据这个bean是不是包含在其他bean内部的bean来分别采用不用的bean生成策略
 			if (!StringUtils.hasText(beanName)) {
 				try {
 					if (containingBean != null) {
@@ -455,6 +459,7 @@ public class BeanDefinitionParserDelegate {
 				}
 			}
 			String[] aliasesArray = StringUtils.toStringArray(aliases);
+			// xml parse step31: 使用bean定义、beanName、别名创建一个BeanDefinitionHolder
 			return new BeanDefinitionHolder(beanDefinition, beanName, aliasesArray);
 		}
 
@@ -489,6 +494,7 @@ public class BeanDefinitionParserDelegate {
 	public AbstractBeanDefinition parseBeanDefinitionElement(
 			Element ele, String beanName, @Nullable BeanDefinition containingBean) {
 
+		// xml parse step19: 解析的时候往parseState里面push一个条目
 		this.parseState.push(new BeanEntry(beanName));
 
 		String className = null;
@@ -501,19 +507,36 @@ public class BeanDefinitionParserDelegate {
 		}
 
 		try {
+			// xml parse step20: 根据bean的class属性和parent属性创建一个BeanDefinition对象
+			// 此处创建的是一个GenericBeanDefinition, 不再是老版本中的RootBeanDefinition/ChildBeanDefinition
+			// 创建好之后设置parent, 根据是否有classloader来决定设置className还是设置beanClass
 			AbstractBeanDefinition bd = createBeanDefinition(className, parent);
 
+			// xml parse step21: 解析bean标签上的各种属性(singleton、scope、abstract、lazy-init、autowire、depends-on、
+			// autowire-candidate、primary、init-method、destroy-method、factory-method、factory-bean)
+			// scope属性要特殊一点, 如果是作为其他bean属性存在的内部bean, 其scope强制保持与外部bean一致
+			// lazy-init属性也要特殊一点, 因为lazy-init存在全局默认设置, 所以如果当前设置是默认值, 就从全局默认设置取
+			// init-method属性还顺势影响到了enforceInitMethod设置
+			// destroy-method还顺势影响到了enforceDestroyMethod设置
 			parseBeanDefinitionAttributes(ele, beanName, containingBean, bd);
+			// xml parse step22: 解析bean标签的description子标签
 			bd.setDescription(DomUtils.getChildElementValueByTagName(ele, DESCRIPTION_ELEMENT));
 
+			// xml parse step23: 解析bean标签的meta子标签
 			parseMetaElements(ele, bd);
+			// xml parse step24: 解析bean标签的lookup-method子标签
 			parseLookupOverrideSubElements(ele, bd.getMethodOverrides());
+			// xml parse step25: 解析bean标签的replaced-method子标签
 			parseReplacedMethodSubElements(ele, bd.getMethodOverrides());
 
+			// xml parse step26: 解析bean标签的constructor-arg子标签
 			parseConstructorArgElements(ele, bd);
+			// xml parse step27: 解析bean标签的property子标签
 			parsePropertyElements(ele, bd);
+			// xml parse step28: 解析bean标签的qualifier子标签
 			parseQualifierElements(ele, bd);
 
+			// xml parse step29: 把bean标签所属的Resource和Source都记录一下
 			bd.setResource(this.readerContext.getResource());
 			bd.setSource(extractSource(ele));
 
@@ -545,9 +568,11 @@ public class BeanDefinitionParserDelegate {
 	public AbstractBeanDefinition parseBeanDefinitionAttributes(Element ele, String beanName,
 			@Nullable BeanDefinition containingBean, AbstractBeanDefinition bd) {
 
+		// 如果存在singleton属性, 则报告一个错误, 因为现在开始使用scope属性来替代singleton了
 		if (ele.hasAttribute(SINGLETON_ATTRIBUTE)) {
 			error("Old 1.x 'singleton' attribute in use - upgrade to 'scope' declaration", ele);
 		}
+		// 如果不存在singleton, 但是存在scope, 则设置
 		else if (ele.hasAttribute(SCOPE_ATTRIBUTE)) {
 			bd.setScope(ele.getAttribute(SCOPE_ATTRIBUTE));
 		}
@@ -556,24 +581,29 @@ public class BeanDefinitionParserDelegate {
 			bd.setScope(containingBean.getScope());
 		}
 
+		// 解析并设置abstract属性
 		if (ele.hasAttribute(ABSTRACT_ATTRIBUTE)) {
 			bd.setAbstract(TRUE_VALUE.equals(ele.getAttribute(ABSTRACT_ATTRIBUTE)));
 		}
 
+		// 解析并设置lazy-init属性
 		String lazyInit = ele.getAttribute(LAZY_INIT_ATTRIBUTE);
 		if (isDefaultValue(lazyInit)) {
 			lazyInit = this.defaults.getLazyInit();
 		}
 		bd.setLazyInit(TRUE_VALUE.equals(lazyInit));
 
+		// 解析并设置autowire设置
 		String autowire = ele.getAttribute(AUTOWIRE_ATTRIBUTE);
 		bd.setAutowireMode(getAutowireMode(autowire));
 
+		// 解析并设置depends-on设置
 		if (ele.hasAttribute(DEPENDS_ON_ATTRIBUTE)) {
 			String dependsOn = ele.getAttribute(DEPENDS_ON_ATTRIBUTE);
 			bd.setDependsOn(StringUtils.tokenizeToStringArray(dependsOn, MULTI_VALUE_ATTRIBUTE_DELIMITERS));
 		}
 
+		// 解析并设置autowire-candidate属性
 		String autowireCandidate = ele.getAttribute(AUTOWIRE_CANDIDATE_ATTRIBUTE);
 		if (isDefaultValue(autowireCandidate)) {
 			String candidatePattern = this.defaults.getAutowireCandidates();
@@ -586,10 +616,12 @@ public class BeanDefinitionParserDelegate {
 			bd.setAutowireCandidate(TRUE_VALUE.equals(autowireCandidate));
 		}
 
+		// 解析并设置primary属性
 		if (ele.hasAttribute(PRIMARY_ATTRIBUTE)) {
 			bd.setPrimary(TRUE_VALUE.equals(ele.getAttribute(PRIMARY_ATTRIBUTE)));
 		}
 
+		// 解析并设置init-method属性
 		if (ele.hasAttribute(INIT_METHOD_ATTRIBUTE)) {
 			String initMethodName = ele.getAttribute(INIT_METHOD_ATTRIBUTE);
 			bd.setInitMethodName(initMethodName);
@@ -599,6 +631,7 @@ public class BeanDefinitionParserDelegate {
 			bd.setEnforceInitMethod(false);
 		}
 
+		// 解析并设置destroy-method属性
 		if (ele.hasAttribute(DESTROY_METHOD_ATTRIBUTE)) {
 			String destroyMethodName = ele.getAttribute(DESTROY_METHOD_ATTRIBUTE);
 			bd.setDestroyMethodName(destroyMethodName);
@@ -608,9 +641,11 @@ public class BeanDefinitionParserDelegate {
 			bd.setEnforceDestroyMethod(false);
 		}
 
+		// 解析并设置factory-method属性
 		if (ele.hasAttribute(FACTORY_METHOD_ATTRIBUTE)) {
 			bd.setFactoryMethodName(ele.getAttribute(FACTORY_METHOD_ATTRIBUTE));
 		}
+		// 解析并设置factory-bean属性
 		if (ele.hasAttribute(FACTORY_BEAN_ATTRIBUTE)) {
 			bd.setFactoryBeanName(ele.getAttribute(FACTORY_BEAN_ATTRIBUTE));
 		}
@@ -1396,6 +1431,9 @@ public class BeanDefinitionParserDelegate {
 
 		BeanDefinitionHolder finalDefinition = originalDef;
 
+		// xml parse step33: 首先根据自定义属性进行装饰. 这里其实可以发现bean标签中可以存在其他命名空间的属性, 这个规定很奇怪, 要研究下是什么意思
+		// 网上的资料说属性的命名空间时独立的, 如果没有使用命名空间则表示不属于任何命名空间
+		// 根据属性来装饰的好像少见, 目前似乎只有一个测试用例用到了, 就是用来设置一个属性的
 		// 首先根据自定义属性进行装饰.
 		NamedNodeMap attributes = ele.getAttributes();
 		for (int i = 0; i < attributes.getLength(); i++) {
@@ -1403,6 +1441,7 @@ public class BeanDefinitionParserDelegate {
 			finalDefinition = decorateIfRequired(node, finalDefinition, containingBd);
 		}
 
+		// xml parse step34: 然后本剧自定义嵌套元素进行装饰. 这种装饰方式就用得比较多了
 		// 基于自定义嵌套元素进行装饰.
 		NodeList children = ele.getChildNodes();
 		for (int i = 0; i < children.getLength(); i++) {

@@ -115,14 +115,17 @@ public class DefaultBeanDefinitionDocumentReader implements BeanDefinitionDocume
 	 */
 	@SuppressWarnings("deprecation")  // for Environment.acceptsProfiles(String...)
 	protected void doRegisterBeanDefinitions(Element root) {
+		// xml parse step01: 将上下文中的代理缓存起来
 		// 任何嵌套的<beans>元素都会导致该方法的递归.
 		// 为了正确地传播和保存<beans> default-*属性, 请跟踪当前(parent)代理, 该代理可能为空.
 		// 创建带有对父代理引用的新(子)代理以实现回退, 然后最终将新的(child)代理, 并带有对父代理
 		// 的引用, 以实现回退, 然后最终将this.delegate重置为其原始(父)引用.
-		// 此行为模拟了一堆代理, 单实际上并不需要代理.
+		// 此行为模拟了一堆代理, 但实际上并不需要代理.
 		BeanDefinitionParserDelegate parent = this.delegate;
 		this.delegate = createDelegate(getReaderContext(), root, parent);
 
+		// xml parse step04: 如果当前标签的命名空间时默认命名空间, 先读取profile值(因为这是xml文件, profile的配置文件表达式在xml中不受支持,
+		// 因为里面存在&这些符号), 只有手动读取profile了
 		if (this.delegate.isDefaultNamespace(root)) {
 			String profileSpec = root.getAttribute(PROFILE_ATTRIBUTE);
 			if (StringUtils.hasText(profileSpec)) {
@@ -140,17 +143,24 @@ public class DefaultBeanDefinitionDocumentReader implements BeanDefinitionDocume
 			}
 		}
 
+		// xml parse step05: 进行xml处理的前置操作
 		preProcessXml(root);
+		// xml parse step06: 开始解析bean定义
 		parseBeanDefinitions(root, this.delegate);
+		// xml parse step37: 进行xml处理的后置操作
 		postProcessXml(root);
 
+		// xml parse step38: 把代理放回原位, 恢复现场
 		this.delegate = parent;
 	}
 
 	protected BeanDefinitionParserDelegate createDelegate(
 			XmlReaderContext readerContext, Element root, @Nullable BeanDefinitionParserDelegate parentDelegate) {
 
+		// xml parse step02: 使用原来的上下文创建一个新的代理(保证上下文不会随着代理的改变而改变)
 		BeanDefinitionParserDelegate delegate = new BeanDefinitionParserDelegate(readerContext);
+		// xml parse step03: 从父代理和root标签获取当前代理的初始化值(有限使用当前root标签的值, 如果当前root标签的值为默认值则看父代理, 如果没有父代理则为默认值)
+		// xml读取有一个细节: 只要xsd文件中定义了默认值, 即使标签中实际上没有写值, 调用获取属性的方法时也能获取到一个值(默认值)
 		delegate.initDefaults(root, parentDelegate);
 		return delegate;
 	}
@@ -161,10 +171,12 @@ public class DefaultBeanDefinitionDocumentReader implements BeanDefinitionDocume
 	 * @param root 文档的DOM root元素
 	 */
 	protected void parseBeanDefinitions(Element root, BeanDefinitionParserDelegate delegate) {
+		// xml parse step07: 首先判断一下root元素是不是默认命名空间, 如果不是默认命名空间就直接走解析自定义元素的流程
 		if (delegate.isDefaultNamespace(root)) {
 			NodeList nl = root.getChildNodes();
 			for (int i = 0; i < nl.getLength(); i++) {
 				Node node = nl.item(i);
+				// xml parse step08: 如果root标签时默认命名空间, 则循环遍历其子元素; 如果子元素是默认命名空间, 则解析默认命名空间, 否则解析自定义元素
 				if (node instanceof Element) {
 					Element ele = (Element) node;
 					if (delegate.isDefaultNamespace(ele)) {
@@ -182,15 +194,19 @@ public class DefaultBeanDefinitionDocumentReader implements BeanDefinitionDocume
 	}
 
 	private void parseDefaultElement(Element ele, BeanDefinitionParserDelegate delegate) {
+		// xml parse step09: 解析import标签
 		if (delegate.nodeNameEquals(ele, IMPORT_ELEMENT)) {
 			importBeanDefinitionResource(ele);
 		}
+		// xml parse step13: 解析alias标签(解析alias标签中的name和alias属性, 只要这两个属性都不为空, 就把别名注册到工厂中)
 		else if (delegate.nodeNameEquals(ele, ALIAS_ELEMENT)) {
 			processAliasRegistration(ele);
 		}
+		// xml parse step14: 解析bean标签
 		else if (delegate.nodeNameEquals(ele, BEAN_ELEMENT)) {
 			processBeanDefinition(ele, delegate);
 		}
+		// xml parse step36: 解析beans标签, 其实这就是递归了
 		else if (delegate.nodeNameEquals(ele, NESTED_BEANS_ELEMENT)) {
 			// recurse
 			doRegisterBeanDefinitions(ele);
@@ -201,18 +217,23 @@ public class DefaultBeanDefinitionDocumentReader implements BeanDefinitionDocume
 	 * 解析一个"import"元素, 并将bean定义从给定的资源加载到bean工厂中.
 	 */
 	protected void importBeanDefinitionResource(Element ele) {
+		// xml parse step10: 如果import元素的resource元素值为空, 则return
 		String location = ele.getAttribute(RESOURCE_ATTRIBUTE);
 		if (!StringUtils.hasText(location)) {
 			getReaderContext().error("Resource location must not be empty", ele);
 			return;
 		}
 
+		// xml parse step11: 使用environment中的值替换resource中的placeholder
 		// 解析系统属性: e.g. "${user.dir}"
 		location = getReaderContext().getEnvironment().resolveRequiredPlaceholders(location);
 
 		Set<Resource> actualResources = new LinkedHashSet<>(4);
 
-		// 发现该位置是绝对URI还是相对URI
+		// xml parse step12: 先判断一下resource是绝对URI还是相对URI; 不管是绝对还是相对, 最后都调用reader的loadBeanDefinitions来加载bean定义
+		// 加载bean定义的时候还传入了一个Set记录我们到底加载了多少个xml资源
+		// 发现该位置是绝对URI还是相对URI, 避免单条import路径的循环加载
+		// 意思就是说这个操作只是为了防止循环加载, 不是为了防止重复加载
 		boolean absoluteLocation = false;
 		try {
 			absoluteLocation = ResourcePatternUtils.isUrl(location) || ResourceUtils.toURI(location).isAbsolute();
@@ -295,10 +316,14 @@ public class DefaultBeanDefinitionDocumentReader implements BeanDefinitionDocume
 	 * 处理给定的bean元素, 解析bean定义并将其注册到registry.
 	 */
 	protected void processBeanDefinition(Element ele, BeanDefinitionParserDelegate delegate) {
+		// xml parse step15: 解析bean标签得到一个BeanDefinitionHolder
 		BeanDefinitionHolder bdHolder = delegate.parseBeanDefinitionElement(ele);
 		if (bdHolder != null) {
+			// xml parse step32: BeanDefinitionHolder创建好了之后就开始装饰这个bean
+			// (根据逻辑来看, 只有bean标签才会进行装饰, 自定义标签时不会进行装饰的)
 			bdHolder = delegate.decorateBeanDefinitionIfRequired(ele, bdHolder);
 			try {
+				// xml parse step35: 把经过装饰的BeanDefinitionHolder注册到工厂中
 				// 注册到最后一个装饰实例.
 				BeanDefinitionReaderUtils.registerBeanDefinition(bdHolder, getReaderContext().getRegistry());
 			}
