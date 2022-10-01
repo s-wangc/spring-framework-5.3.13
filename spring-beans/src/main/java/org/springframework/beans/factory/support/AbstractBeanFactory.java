@@ -200,6 +200,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 
 	@Override
 	public Object getBean(String name) throws BeansException {
+		// get bean step01: 调用同一的doGetBean方法
 		return doGetBean(name, null, null, false);
 	}
 
@@ -241,9 +242,11 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 			String name, @Nullable Class<T> requiredType, @Nullable Object[] args, boolean typeCheckOnly)
 			throws BeansException {
 
+		// get bean step02: 去掉工厂引用前缀, 并且将别名解析为beanName
 		String beanName = transformedBeanName(name);
 		Object beanInstance;
 
+		// get bean step03: 检查一下该beanName是否存在单例实例
 		// 主动检查singleton缓存中是否有手动注册的singleton.
 		Object sharedInstance = getSingleton(beanName);
 		if (sharedInstance != null && args == null) {
@@ -256,16 +259,20 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 					logger.trace("Returning cached instance of singleton bean '" + beanName + "'");
 				}
 			}
+			// get bean step12: 如果我们获取到了这样的单例实例并且参数为null, 我们就需要通过这个单例实例获取一个bean实例了
 			beanInstance = getObjectForBeanInstance(sharedInstance, name, beanName, null);
 		}
 
 		else {
+			// get bean step26: 如果共享实例不存在或者参数不为空
+			// 先判断一下原型实例是否正在创建中, 如果是的话就抛出异常
 			// 如果我们已经创建了这个bean实例, 则会失败:
 			// 我们假设在循环引用中.
 			if (isPrototypeCurrentlyInCreation(beanName)) {
 				throw new BeanCurrentlyInCreationException(beanName);
 			}
 
+			// get bean step27: 如果当前层级的工厂不存在合适的bean定义, 就去检查父工厂
 			// 检查这个工厂是是否存在bean定义.
 			BeanFactory parentBeanFactory = getParentBeanFactory();
 			if (parentBeanFactory != null && !containsBeanDefinition(beanName)) {
@@ -288,6 +295,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 				}
 			}
 
+			// get bean step28: 如果这个bean是为了类型检查而获取的, 那么直接将其标记为创建中(这样会删除合并bean定义缓存)
 			if (!typeCheckOnly) {
 				markBeanAsCreated(beanName);
 			}
@@ -298,9 +306,11 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 				if (requiredType != null) {
 					beanCreation.tag("beanType", requiredType::toString);
 				}
+				// get bean step29: 获取合并bean定义, 并验证一下这个定义有没有毛病
 				RootBeanDefinition mbd = getMergedLocalBeanDefinition(beanName);
 				checkMergedBeanDefinition(mbd, beanName, args);
 
+				// get bean step30: 注册一下dependentBeanMap和dependenciesForBeanMap缓存, 并实例化所依赖的bean
 				// 保证当前bean所依赖的bean的初始化.
 				String[] dependsOn = mbd.getDependsOn();
 				if (dependsOn != null) {
@@ -320,6 +330,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 					}
 				}
 
+				// get bean step31: 如果是单例那么就先从缓存中获取, 获取不到就创建一个, 创建完在执行各种回调
 				// 创建bean实例.
 				if (mbd.isSingleton()) {
 					sharedInstance = getSingleton(beanName, () -> {
@@ -336,6 +347,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 					beanInstance = getObjectForBeanInstance(sharedInstance, name, beanName, mbd);
 				}
 
+				// get bean step32: 直接创建一个并执行各种回调
 				else if (mbd.isPrototype()) {
 					// 这是一个prototype -> 创建一个新的实例.
 					Object prototypeInstance = null;
@@ -349,6 +361,8 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 					beanInstance = getObjectForBeanInstance(prototypeInstance, name, beanName, mbd);
 				}
 
+				// get bean step33: 如果不是singleton, 也不是prototype, 那么说明是其他自定义作用域, 需要特殊处理
+				// 调用其他作用域实现来判断是否需要新创建对象, 如果需要新创建的话就调用传入的代码创建一个
 				else {
 					String scopeName = mbd.getScope();
 					if (!StringUtils.hasLength(scopeName)) {
@@ -386,6 +400,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 			}
 		}
 
+		// get bean step34: 对bean实例进行自适应(如果类型不是我们想要的就进行类型转换)
 		return adaptBeanInstance(name, beanInstance, requiredType);
 	}
 
@@ -1783,34 +1798,46 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	protected Object getObjectForBeanInstance(
 			Object beanInstance, String name, String beanName, @Nullable RootBeanDefinition mbd) {
 
+		// get bean step13: 首先我们根据name来判断一下这个被获取的bean是一个工厂吗?
 		// 如果bean不是工厂, 不要让调用代码尝试接触对工厂的引用.
 		if (BeanFactoryUtils.isFactoryDereference(name)) {
+			// get bean step14: 如果我们想要的bean是一个工厂, 那么我们先判断一下获取到的共享实例是什么?
+			// 如果是一个NullBean直接返回去就好了
+			// 如果根据name判断出来是一个工厂, 实例上共享实例又不是FactoryBean的实现, 那就说明这个配置有问题, 直接抛出异常就可以了
 			if (beanInstance instanceof NullBean) {
 				return beanInstance;
 			}
 			if (!(beanInstance instanceof FactoryBean)) {
 				throw new BeanIsNotAFactoryException(beanName, beanInstance.getClass());
 			}
+			// get bean step15: 如果上面都搞完了还没有问题的话就设置一下BeanDefinition里面的isFactoryBean属性, 然后直接把东西抛出去
 			if (mbd != null) {
 				mbd.isFactoryBean = true;
 			}
 			return beanInstance;
 		}
 
+		// get bean step16: 如果我们根据name来判断这个bean不是一个工厂引用, 并且这个bean也不是FactoryBean, 那就直接抛出去吧
 		// 现在我们有了bean实例, 它可能是一个普通bean或一个FactoryBean.
 		// 如果它是FactoryBean, 我们使用它来创建一个bean实例, 除非调用者实际上想要一个对工厂的引用.
 		if (!(beanInstance instanceof FactoryBean)) {
 			return beanInstance;
 		}
 
+		// get bean step17: 如果最终这个bean是一个FactoryBean实现, 并且BeanDefinition也不是null,
+		// 那我们就设置一下BeanDefinition里面的isFactoryBean属性
 		Object object = null;
 		if (mbd != null) {
 			mbd.isFactoryBean = true;
 		}
 		else {
+			// get bean step18: 如果BeanDefinition为null, 那我们试着从工厂bean缓存中获取一个工厂bean
 			object = getCachedObjectForFactoryBean(beanName);
 		}
 		if (object == null) {
+			// get bean step19: 如果我们没有获取到工厂bean的话, 直接把传入的bean实例作为工厂bean就好了.
+			// 然后我们检查一下这个工厂中到底存不存在这个名称的bean定义, 存在的话就直接拿出一个merged RootBeanDefinition来.
+			// 取出来也仅仅只是想判断一下isSynthetic
 			// 从工厂返回bean实例.
 			FactoryBean<?> factory = (FactoryBean<?>) beanInstance;
 			// 缓存从FactoryBean获取的对象, 如果它是singleton.
@@ -1818,6 +1845,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 				mbd = getMergedLocalBeanDefinition(beanName);
 			}
 			boolean synthetic = (mbd != null && mbd.isSynthetic());
+			// get bean step20: 从FactoryBean中获取对象
 			object = getObjectFromFactoryBean(factory, beanName, !synthetic);
 		}
 		return object;
