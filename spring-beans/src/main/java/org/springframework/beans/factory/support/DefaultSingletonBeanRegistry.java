@@ -169,20 +169,28 @@ public class DefaultSingletonBeanRegistry extends SimpleAliasRegistry implements
 	 */
 	@Nullable
 	protected Object getSingleton(String beanName, boolean allowEarlyReference) {
+		// get bean step04: 检查现有的单例缓存中是否存在现成的单例实例
 		// 快速检查现有实例, 无需完整的singleton锁
 		Object singletonObject = this.singletonObjects.get(beanName);
+		// get bean step05: 如果现有的单例缓存中没有现成的单例实例, 并且这个单例还在创建中, 那我们就把这个创建中的实例哪里出来
 		if (singletonObject == null && isSingletonCurrentlyInCreation(beanName)) {
 			singletonObject = this.earlySingletonObjects.get(beanName);
+			// get bean step06: 如果这个创建中的单例实例其实为null, 并且传入的参数指定要创建早期引用的话, 那我们就给单例缓存Map加一个锁
 			if (singletonObject == null && allowEarlyReference) {
 				synchronized (this.singletonObjects) {
+					// get bean step07: 在别的线程释放了singletonObjects的锁之后再去从单例缓存中取一遍
 					// 在完整singleton锁内一致创建早期引用
 					singletonObject = this.singletonObjects.get(beanName);
+					// get bean step08: 如果得到锁之后去取对象还是取不到, 那就说明我们需要自己动手来创建一个了
 					if (singletonObject == null) {
+						// get bean step09: 如果从创建中的缓存里面去取还是取不到的话, 我们就看一下单例工厂中有没有我们要的这个bean的工厂
 						singletonObject = this.earlySingletonObjects.get(beanName);
 						if (singletonObject == null) {
 							ObjectFactory<?> singletonFactory = this.singletonFactories.get(beanName);
+							// get bean step10: 如果我们在单例工厂缓存中找到了我们要的东西, 那我们就调用工厂的getObject()方法创建一个对象
 							if (singletonFactory != null) {
 								singletonObject = singletonFactory.getObject();
+								// get bean step11: 使用单例工厂获取到对象之后, 就把这个对象放到创建中缓存里面, 然后从单例工厂缓存中删掉, 最后返回这个创建中的实例就好了
 								this.earlySingletonObjects.put(beanName, singletonObject);
 								this.singletonFactories.remove(beanName);
 							}
