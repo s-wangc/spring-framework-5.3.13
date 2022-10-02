@@ -485,8 +485,10 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 		}
 		RootBeanDefinition mbdToUse = mbd;
 
+		// create bean step01: 解析beanClass
 		// 确保此时bean类已实际解析, 如果动态解析的类不能存储在共享合并bean定义中, 则克隆bean定义.
 		Class<?> resolvedClass = resolveBeanClass(mbd, beanName);
+		// create bean step02: 复制一个RootBeanDefinition并设置其beanClass
 		if (resolvedClass != null && !mbd.hasBeanClass() && mbd.getBeanClassName() != null) {
 			mbdToUse = new RootBeanDefinition(mbd);
 			mbdToUse.setBeanClass(resolvedClass);
@@ -494,6 +496,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 
 		// 准备方法覆盖.
 		try {
+			// create bean step03: 解析是否要覆盖的方法是否存在重载的情况, 避免后面做无所谓的参数类型检查
 			mbdToUse.prepareMethodOverrides();
 		}
 		catch (BeanDefinitionValidationException ex) {
@@ -502,6 +505,9 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 		}
 
 		try {
+			// create bean step04: 调用InstantiationAwareBeanPostProcessor的postProcessBeforeInstantiation
+			// 或postProcessAfterInitialization方法, 如果这些方法返回了东西, 就把他们返回的东西作为bean实例
+			// 这一步其实是给AOP使用的
 			// 让BeanPostProcessors有机会返回代理而不是目标bean实例.
 			Object bean = resolveBeforeInstantiation(beanName, mbdToUse);
 			if (bean != null) {
@@ -514,6 +520,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 		}
 
 		try {
+			// create bean step05: 经过了上一步的代理操作之后, 如果还没有return的话, 说明不需要代理, 需要我们自己来创建了
 			Object beanInstance = doCreateBean(beanName, mbdToUse, args);
 			if (logger.isTraceEnabled()) {
 				logger.trace("Finished creating instance of bean '" + beanName + "'");
