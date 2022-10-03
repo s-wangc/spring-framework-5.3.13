@@ -52,15 +52,15 @@ import org.springframework.util.StringValueResolver;
 public interface ConfigurableBeanFactory extends HierarchicalBeanFactory, SingletonBeanRegistry {
 
 	/**
-	 * Scope identifier for the standard singleton scope: {@value}.
-	 * <p>Custom scopes can be added via {@code registerScope}.
+	 * 标准singleton scope的scope标识符: {@value}.
+	 * <p>自定义scope可以通过{@code registerScope}添加.
 	 * @see #registerScope
 	 */
 	String SCOPE_SINGLETON = "singleton";
 
 	/**
-	 * Scope identifier for the standard prototype scope: {@value}.
-	 * <p>Custom scopes can be added via {@code registerScope}.
+	 * 标准prototype scope的scope标识符: {@value}.
+	 * <p>自定义scope可以通过{@code registerScope}添加.
 	 * @see #registerScope
 	 */
 	String SCOPE_PROTOTYPE = "prototype";
@@ -251,27 +251,27 @@ public interface ConfigurableBeanFactory extends HierarchicalBeanFactory, Single
 	int getBeanPostProcessorCount();
 
 	/**
-	 * Register the given scope, backed by the given Scope implementation.
+	 * 注册给定的scope, 由给定的scope实现支持.
 	 * @param scopeName scope标识符
-	 * @param scope the backing Scope implementation
+	 * @param scope 支持Scope实现
 	 */
 	void registerScope(String scopeName, Scope scope);
 
 	/**
-	 * Return the names of all currently registered scopes.
-	 * <p>This will only return the names of explicitly registered scopes.
-	 * Built-in scopes such as "singleton" and "prototype" won't be exposed.
-	 * @return the array of scope names, or an empty array if none
+	 * 返回所有当前注册scope的名称.
+	 * <p>这将只返回显式注册的scope的名称.
+	 * 内置的scope, 如"singleton"和"prototype"不会被公开.
+	 * @return scope名称的数组, 如果没有则为空数组
 	 * @see #registerScope
 	 */
 	String[] getRegisteredScopeNames();
 
 	/**
-	 * Return the Scope implementation for the given scope name, if any.
-	 * <p>This will only return explicitly registered scopes.
-	 * Built-in scopes such as "singleton" and "prototype" won't be exposed.
+	 * 返回给定scope名的Scope实现(如果有的话).
+	 * <p>这将只返回显式注册的scope.
+	 * 内置的scope, 如"singleton"和"prototype"不会被公开.
 	 * @param scopeName scope的名称
-	 * @return the registered Scope implementation, or {@code null} if none
+	 * @return 注册的Scope实现, 如果没有则使用{@code null}
 	 * @see #registerScope
 	 */
 	@Nullable
