@@ -343,7 +343,7 @@ public interface HibernateOperations {
 	/**
 	 * Persist the given transient instance.
 	 * @param entity the transient instance to persist
-	 * @return the generated identifier
+	 * @return generated标识符
 	 * @throws DataAccessException in case of Hibernate errors
 	 * @see org.hibernate.Session#save(Object)
 	 */
@@ -353,7 +353,7 @@ public interface HibernateOperations {
 	 * Persist the given transient instance.
 	 * @param entityName the name of the persistent entity
 	 * @param entity the transient instance to persist
-	 * @return the generated identifier
+	 * @return generated标识符
 	 * @throws DataAccessException in case of Hibernate errors
 	 * @see org.hibernate.Session#save(String, Object)
 	 */

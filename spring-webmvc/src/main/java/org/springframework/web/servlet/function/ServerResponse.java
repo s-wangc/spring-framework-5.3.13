@@ -542,7 +542,7 @@ public interface ServerResponse {
 
 		/**
 		 * Add an SSE "id" line.
-		 * @param id the event identifier
+		 * @param id event标识符
 		 * @return this builder
 		 */
 		SseBuilder id(String id);

@@ -62,7 +62,7 @@ public interface RequestAttributes {
 	/**
 	 * Return the value for the scoped attribute of the given name, if any.
 	 * @param name attribute的名称
-	 * @param scope the scope identifier
+	 * @param scope scope标识符
 	 * @return the current attribute value, or {@code null} if not found
 	 */
 	@Nullable
@@ -72,7 +72,7 @@ public interface RequestAttributes {
 	 * Set the value for the scoped attribute of the given name,
 	 * replacing an existing value (if any).
 	 * @param name attribute的名称
-	 * @param scope the scope identifier
+	 * @param scope scope标识符
 	 * @param value the value for the attribute
 	 */
 	void setAttribute(String name, Object value, int scope);
@@ -84,13 +84,13 @@ public interface RequestAttributes {
 	 * need to <i>execute</i> a registered destruction callback in this case,
 	 * since the object will be destroyed by the caller (if appropriate).
 	 * @param name attribute的名称
-	 * @param scope the scope identifier
+	 * @param scope scope标识符
 	 */
 	void removeAttribute(String name, int scope);
 
 	/**
 	 * Retrieve the names of all attributes in the scope.
-	 * @param scope the scope identifier
+	 * @param scope scope标识符
 	 * @return the attribute names as String array
 	 */
 	String[] getAttributeNames(int scope);
@@ -114,7 +114,7 @@ public interface RequestAttributes {
 	 * (or even the entire session) might not survive web app restarts.
 	 * @param name the name of the attribute to register the callback for
 	 * @param callback the destruction callback to be executed
-	 * @param scope the scope identifier
+	 * @param scope scope标识符
 	 */
 	void registerDestructionCallback(String name, Runnable callback, int scope);
 
