@@ -364,24 +364,31 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 				// get bean step33: 如果不是singleton, 也不是prototype, 那么说明是其他自定义作用域, 需要特殊处理
 				// 调用其他作用域实现来判断是否需要新创建对象, 如果需要新创建的话就调用传入的代码创建一个
 				else {
+					// 获取当前这个bean定义的scope
 					String scopeName = mbd.getScope();
 					if (!StringUtils.hasLength(scopeName)) {
 						throw new IllegalStateException("No scope name defined for bean '" + beanName + "'");
 					}
+					// 判断一下当前这个bean所需要的scope是否有注册过, 没有注册过就抛出异常
 					Scope scope = this.scopes.get(scopeName);
 					if (scope == null) {
 						throw new IllegalStateException("No Scope registered for scope name '" + scopeName + "'");
 					}
 					try {
+						// 调用这个scope的get方法, 传入一个objectFactory, 以便在需要创建一个新bean的时候进行创建
 						Object scopedInstance = scope.get(beanName, () -> {
+							// 执行创建前钩子函数
 							beforePrototypeCreation(beanName);
 							try {
+								// 进行创建工作
 								return createBean(beanName, mbd, args);
 							}
 							finally {
+								// 执行创建后回调
 								afterPrototypeCreation(beanName);
 							}
 						});
+						// 对FactoryBean进行特殊处理(判断是直接返回FactoryBean还是返回FactoryBean创建的实例)
 						beanInstance = getObjectForBeanInstance(scopedInstance, name, beanName, mbd);
 					}
 					catch (IllegalStateException ex) {
@@ -1023,9 +1030,11 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	public void registerScope(String scopeName, Scope scope) {
 		Assert.notNull(scopeName, "Scope identifier must not be null");
 		Assert.notNull(scope, "Scope must not be null");
+		// 不允许注册名为singleton、prototype的Scope
 		if (SCOPE_SINGLETON.equals(scopeName) || SCOPE_PROTOTYPE.equals(scopeName)) {
 			throw new IllegalArgumentException("Cannot replace existing scopes 'singleton' and 'prototype'");
 		}
+		// 把Scope放入到Map当中(判断是否发生了作用域替换)
 		Scope previous = this.scopes.put(scopeName, scope);
 		if (previous != null && previous != scope) {
 			if (logger.isDebugEnabled()) {
