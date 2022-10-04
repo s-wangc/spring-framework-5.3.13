@@ -160,7 +160,7 @@ public abstract class AbstractAutoProxyCreator extends ProxyProcessorSupport
 
 	/**
 	 * Specify the {@link AdvisorAdapterRegistry} to use.
-	 * <p>Default is the global {@link AdvisorAdapterRegistry}.
+	 * <p>默认是全局{@link AdvisorAdapterRegistry}.
 	 * @see org.springframework.aop.framework.adapter.GlobalAdvisorAdapterRegistry
 	 */
 	public void setAdvisorAdapterRegistry(AdvisorAdapterRegistry advisorAdapterRegistry) {

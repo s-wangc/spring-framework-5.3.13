@@ -40,7 +40,7 @@ public class AdvisorAdapterRegistrationManager implements BeanPostProcessor {
 
 	/**
 	 * Specify the AdvisorAdapterRegistry to register AdvisorAdapter beans with.
-	 * Default is the global AdvisorAdapterRegistry.
+	 * 默认是全局AdvisorAdapterRegistry.
 	 * @see GlobalAdvisorAdapterRegistry
 	 */
 	public void setAdvisorAdapterRegistry(AdvisorAdapterRegistry advisorAdapterRegistry) {

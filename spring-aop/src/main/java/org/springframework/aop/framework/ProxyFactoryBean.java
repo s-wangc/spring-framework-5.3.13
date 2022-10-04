@@ -200,7 +200,7 @@ public class ProxyFactoryBean extends ProxyCreatorSupport
 
 	/**
 	 * 指定要使用的AdvisorAdapterRegistry.
-	 * Default is the global AdvisorAdapterRegistry.
+	 * 默认是全局AdvisorAdapterRegistry.
 	 * @see org.springframework.aop.framework.adapter.GlobalAdvisorAdapterRegistry
 	 */
 	public void setAdvisorAdapterRegistry(AdvisorAdapterRegistry advisorAdapterRegistry) {
