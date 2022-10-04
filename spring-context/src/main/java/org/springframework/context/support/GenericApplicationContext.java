@@ -368,7 +368,7 @@ public class GenericApplicationContext extends AbstractApplicationContext implem
 	/**
 	 * Register a bean from the given bean class, optionally providing explicit
 	 * constructor arguments for consideration in the autowiring process.
-	 * @param beanClass the class of the bean
+	 * @param beanClass bean的class
 	 * @param constructorArgs custom argument values to be fed into Spring's
 	 * constructor resolution algorithm, resolving either all arguments or just
 	 * specific ones, with the rest to be resolved through regular autowiring
@@ -383,7 +383,7 @@ public class GenericApplicationContext extends AbstractApplicationContext implem
 	 * Register a bean from the given bean class, optionally providing explicit
 	 * constructor arguments for consideration in the autowiring process.
 	 * @param beanName the name of the bean (may be {@code null})
-	 * @param beanClass the class of the bean
+	 * @param beanClass bean的class
 	 * @param constructorArgs custom argument values to be fed into Spring's
 	 * constructor resolution algorithm, resolving either all arguments or just
 	 * specific ones, with the rest to be resolved through regular autowiring
@@ -435,7 +435,7 @@ public class GenericApplicationContext extends AbstractApplicationContext implem
 	 * obtaining a new instance (typically declared as a lambda expression or
 	 * method reference), optionally customizing its bean definition metadata
 	 * (again typically declared as a lambda expression).
-	 * @param beanClass the class of the bean
+	 * @param beanClass bean的class
 	 * @param supplier a callback for creating an instance of the bean
 	 * @param customizers one or more callbacks for customizing the factory's
 	 * {@link BeanDefinition}, e.g. setting a lazy-init or primary flag
@@ -456,7 +456,7 @@ public class GenericApplicationContext extends AbstractApplicationContext implem
 	 * <p>This method can be overridden to adapt the registration mechanism for
 	 * all {@code registerBean} methods (since they all delegate to this one).
 	 * @param beanName the name of the bean (may be {@code null})
-	 * @param beanClass the class of the bean
+	 * @param beanClass bean的class
 	 * @param supplier a callback for creating an instance of the bean (in case
 	 * of {@code null}, resolving a public constructor to be autowired instead)
 	 * @param customizers one or more callbacks for customizing the factory's

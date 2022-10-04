@@ -120,7 +120,7 @@ public class MetadataMBeanInfoAssembler extends AbstractReflectiveMBeanInfoAssem
 	/**
 	 * Used for autodetection of beans. Checks to see if the bean's class has a
 	 * {@code ManagedResource} attribute. If so it will add it list of included beans.
-	 * @param beanClass the class of the bean
+	 * @param beanClass bean的class
 	 * @param beanName the name of the bean in the bean factory
 	 */
 	@Override

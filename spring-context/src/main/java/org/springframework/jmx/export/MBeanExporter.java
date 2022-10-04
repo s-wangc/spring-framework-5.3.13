@@ -1068,7 +1068,7 @@ public class MBeanExporter extends MBeanRegistrationSupport implements MBeanExpo
 		/**
 		 * Called during the autodetection process to decide whether
 		 * or not a bean should be included.
-		 * @param beanClass the class of the bean
+		 * @param beanClass bean的class
 		 * @param beanName bean的名称
 		 */
 		boolean include(Class<?> beanClass, String beanName);

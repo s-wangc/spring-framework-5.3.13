@@ -141,7 +141,7 @@ public class AnnotatedBeanDefinitionReader {
 	/**
 	 * Register a bean from the given bean class, deriving its metadata from
 	 * class-declared annotations.
-	 * @param beanClass the class of the bean
+	 * @param beanClass bean的class
 	 */
 	public void registerBean(Class<?> beanClass) {
 		doRegisterBean(beanClass, null, null, null, null);
@@ -150,7 +150,7 @@ public class AnnotatedBeanDefinitionReader {
 	/**
 	 * Register a bean from the given bean class, deriving its metadata from
 	 * class-declared annotations.
-	 * @param beanClass the class of the bean
+	 * @param beanClass bean的class
 	 * @param name an explicit name for the bean
 	 * (or {@code null} for generating a default bean name)
 	 * @since 5.2
@@ -162,7 +162,7 @@ public class AnnotatedBeanDefinitionReader {
 	/**
 	 * Register a bean from the given bean class, deriving its metadata from
 	 * class-declared annotations.
-	 * @param beanClass the class of the bean
+	 * @param beanClass bean的class
 	 * @param qualifiers specific qualifier annotations to consider,
 	 * in addition to qualifiers at the bean class level
 	 */
@@ -174,7 +174,7 @@ public class AnnotatedBeanDefinitionReader {
 	/**
 	 * Register a bean from the given bean class, deriving its metadata from
 	 * class-declared annotations.
-	 * @param beanClass the class of the bean
+	 * @param beanClass bean的class
 	 * @param name an explicit name for the bean
 	 * (or {@code null} for generating a default bean name)
 	 * @param qualifiers specific qualifier annotations to consider,
@@ -191,7 +191,7 @@ public class AnnotatedBeanDefinitionReader {
 	 * Register a bean from the given bean class, deriving its metadata from
 	 * class-declared annotations, using the given supplier for obtaining a new
 	 * instance (possibly declared as a lambda expression or method reference).
-	 * @param beanClass the class of the bean
+	 * @param beanClass bean的class
 	 * @param supplier a callback for creating an instance of the bean
 	 * (may be {@code null})
 	 * @since 5.0
@@ -204,7 +204,7 @@ public class AnnotatedBeanDefinitionReader {
 	 * Register a bean from the given bean class, deriving its metadata from
 	 * class-declared annotations, using the given supplier for obtaining a new
 	 * instance (possibly declared as a lambda expression or method reference).
-	 * @param beanClass the class of the bean
+	 * @param beanClass bean的class
 	 * @param name an explicit name for the bean
 	 * (or {@code null} for generating a default bean name)
 	 * @param supplier a callback for creating an instance of the bean
@@ -218,7 +218,7 @@ public class AnnotatedBeanDefinitionReader {
 	/**
 	 * Register a bean from the given bean class, deriving its metadata from
 	 * class-declared annotations.
-	 * @param beanClass the class of the bean
+	 * @param beanClass bean的class
 	 * @param name an explicit name for the bean
 	 * (or {@code null} for generating a default bean name)
 	 * @param supplier a callback for creating an instance of the bean
@@ -236,7 +236,7 @@ public class AnnotatedBeanDefinitionReader {
 	/**
 	 * Register a bean from the given bean class, deriving its metadata from
 	 * class-declared annotations.
-	 * @param beanClass the class of the bean
+	 * @param beanClass bean的class
 	 * @param name an explicit name for the bean
 	 * @param qualifiers specific qualifier annotations to consider, if any,
 	 * in addition to qualifiers at the bean class level
