@@ -597,7 +597,7 @@ public class MimeType implements Comparable<MimeType>, Serializable {
 		// Rely on default serialization, just initialize state after deserialization.
 		ois.defaultReadObject();
 
-		// Initialize transient fields.
+		// transient字段进行初始化.
 		String charsetName = getParameter(PARAM_CHARSET);
 		if (charsetName != null) {
 			this.resolvedCharset = Charset.forName(unquote(charsetName));

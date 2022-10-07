@@ -162,7 +162,7 @@ public abstract class ConcurrencyThrottleSupport implements Serializable {
 		// Rely on default serialization, just initialize state after deserialization.
 		ois.defaultReadObject();
 
-		// Initialize transient fields.
+		// transient字段进行初始化.
 		this.logger = LogFactory.getLog(getClass());
 		this.monitor = new Object();
 	}

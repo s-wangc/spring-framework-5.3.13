@@ -1251,7 +1251,7 @@ public abstract class AbstractPlatformTransactionManager implements PlatformTran
 		// 依赖默认序列化; 只需在反序列化后初始化状态.
 		ois.defaultReadObject();
 
-		// Initialize transient fields.
+		// transient字段进行初始化.
 		this.logger = LogFactory.getLog(getClass());
 	}
 
