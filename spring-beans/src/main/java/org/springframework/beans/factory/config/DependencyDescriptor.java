@@ -437,7 +437,7 @@ public class DependencyDescriptor extends InjectionPoint implements Serializable
 	//---------------------------------------------------------------------
 
 	private void readObject(ObjectInputStream ois) throws IOException, ClassNotFoundException {
-		// Rely on default serialization; just initialize state after deserialization.
+		// 依赖默认序列化; 只需在反序列化后初始化状态.
 		ois.defaultReadObject();
 
 		// Restore reflective handles (which are unfortunately not serializable)

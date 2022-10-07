@@ -532,7 +532,7 @@ public class AdvisedSupport extends ProxyConfig implements Advised {
 	//---------------------------------------------------------------------
 
 	private void readObject(ObjectInputStream ois) throws IOException, ClassNotFoundException {
-		// Rely on default serialization; just initialize state after deserialization.
+		// 依赖默认序列化; 只需在反序列化后初始化状态.
 		ois.defaultReadObject();
 
 		// Initialize transient fields.
