@@ -556,9 +556,12 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 
 		// 实例化bean.
 		BeanWrapper instanceWrapper = null;
+		// create bean step06: 如果这个bean是singleton, 那么我们就从FactoryBean的BeanWrapper缓存中取出一个BeanWrapper
+		// 为什么singleton才从缓存中取呢? 因为只有singleton才有缓存下来的比较, prototype没有缓存的必要
 		if (mbd.isSingleton()) {
 			instanceWrapper = this.factoryBeanInstanceCache.remove(beanName);
 		}
+		// create bean step07: 如果我们没有从缓存中获取到, 那么我们就自己重新创建一个
 		if (instanceWrapper == null) {
 			instanceWrapper = createBeanInstance(beanName, mbd, args);
 		}
@@ -1136,19 +1139,23 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	 * @see #instantiateBean
 	 */
 	protected BeanWrapper createBeanInstance(String beanName, RootBeanDefinition mbd, @Nullable Object[] args) {
+		// create bean step08: 首先我们要解析出bean的Class对象
 		// 确保此时bean类以及实际解析.
 		Class<?> beanClass = resolveBeanClass(mbd, beanName);
 
+		// create bean step09: 如果解析得到的Class不是public的, 并且bean定义不允许访问非public的构造函数和方法, 那么就抛出异常, 创建失败
 		if (beanClass != null && !Modifier.isPublic(beanClass.getModifiers()) && !mbd.isNonPublicAccessAllowed()) {
 			throw new BeanCreationException(mbd.getResourceDescription(), beanName,
 					"Bean class isn't public, and non-public access not allowed: " + beanClass.getName());
 		}
 
+		// create bean step10: 如果这个bean定义存在instanceSupplier, 则使用instanceSupplier来创建一个BeanWrapper
 		Supplier<?> instanceSupplier = mbd.getInstanceSupplier();
 		if (instanceSupplier != null) {
 			return obtainFromSupplier(instanceSupplier, beanName);
 		}
 
+		// create bean step11: 如果这个bean定义存在工厂方法, 则使用工厂方法来创建一个BeanWrapper
 		if (mbd.getFactoryMethodName() != null) {
 			return instantiateUsingFactoryMethod(beanName, mbd, args);
 		}
