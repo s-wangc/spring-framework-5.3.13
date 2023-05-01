@@ -84,7 +84,7 @@ public class DependencyDescriptor extends InjectionPoint implements Serializable
 	/**
 	 * Create a new descriptor for a method or constructor parameter.
 	 * Considers the dependency as 'eager'.
-	 * @param methodParameter the MethodParameter to wrap
+	 * @param methodParameter 要包装的MethodParameter
 	 * @param required whether the dependency is required
 	 */
 	public DependencyDescriptor(MethodParameter methodParameter, boolean required) {
@@ -93,7 +93,7 @@ public class DependencyDescriptor extends InjectionPoint implements Serializable
 
 	/**
 	 * Create a new descriptor for a method or constructor parameter.
-	 * @param methodParameter the MethodParameter to wrap
+	 * @param methodParameter 要包装的MethodParameter
 	 * @param required whether the dependency is required
 	 * @param eager whether this dependency is 'eager' in the sense of
 	 * eagerly resolving potential target beans for type matching
@@ -115,7 +115,7 @@ public class DependencyDescriptor extends InjectionPoint implements Serializable
 	/**
 	 * Create a new descriptor for a field.
 	 * Considers the dependency as 'eager'.
-	 * @param field the field to wrap
+	 * @param field 要包装的field
 	 * @param required whether the dependency is required
 	 */
 	public DependencyDescriptor(Field field, boolean required) {
@@ -124,7 +124,7 @@ public class DependencyDescriptor extends InjectionPoint implements Serializable
 
 	/**
 	 * Create a new descriptor for a field.
-	 * @param field the field to wrap
+	 * @param field 要包装的field
 	 * @param required whether the dependency is required
 	 * @param eager whether this dependency is 'eager' in the sense of
 	 * eagerly resolving potential target beans for type matching

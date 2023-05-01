@@ -50,7 +50,7 @@ public abstract class AbstractMultipartHttpServletRequest extends HttpServletReq
 
 	/**
 	 * Wrap the given HttpServletRequest in a MultipartHttpServletRequest.
-	 * @param request the request to wrap
+	 * @param request 要包装的request
 	 */
 	protected AbstractMultipartHttpServletRequest(HttpServletRequest request) {
 		super(request);

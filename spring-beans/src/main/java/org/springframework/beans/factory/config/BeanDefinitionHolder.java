@@ -49,7 +49,7 @@ public class BeanDefinitionHolder implements BeanMetadataElement {
 
 	/**
 	 * 创建一个新的BeanDefinitionHolder.
-	 * @param beanDefinition the BeanDefinition to wrap
+	 * @param beanDefinition 要包装的BeanDefinition
 	 * @param beanName the name of the bean, as specified for the bean definition
 	 */
 	public BeanDefinitionHolder(BeanDefinition beanDefinition, String beanName) {
@@ -58,7 +58,7 @@ public class BeanDefinitionHolder implements BeanMetadataElement {
 
 	/**
 	 * 创建一个新的BeanDefinitionHolder.
-	 * @param beanDefinition the BeanDefinition to wrap
+	 * @param beanDefinition 要包装的BeanDefinition
 	 * @param beanName the name of the bean, as specified for the bean definition
 	 * @param aliases alias names for the bean, or {@code null} if none
 	 */

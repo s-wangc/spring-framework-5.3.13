@@ -46,7 +46,7 @@ public class MessageSourceAccessor {
 	/**
 	 * Create a new MessageSourceAccessor, using LocaleContextHolder's locale
 	 * as default locale.
-	 * @param messageSource the MessageSource to wrap
+	 * @param messageSource 要包装的MessageSource
 	 * @see org.springframework.context.i18n.LocaleContextHolder#getLocale()
 	 */
 	public MessageSourceAccessor(MessageSource messageSource) {
@@ -56,7 +56,7 @@ public class MessageSourceAccessor {
 
 	/**
 	 * Create a new MessageSourceAccessor, using the given default locale.
-	 * @param messageSource the MessageSource to wrap
+	 * @param messageSource 要包装的MessageSource
 	 * @param defaultLocale the default locale to use for message access
 	 */
 	public MessageSourceAccessor(MessageSource messageSource, Locale defaultLocale) {

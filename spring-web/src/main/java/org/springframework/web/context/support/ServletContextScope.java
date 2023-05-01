@@ -56,7 +56,7 @@ public class ServletContextScope implements Scope, DisposableBean {
 
 	/**
 	 * Create a new Scope wrapper for the given ServletContext.
-	 * @param servletContext the ServletContext to wrap
+	 * @param servletContext 要包装的ServletContext
 	 */
 	public ServletContextScope(ServletContext servletContext) {
 		Assert.notNull(servletContext, "ServletContext must not be null");

@@ -42,7 +42,7 @@ public class WebRequestHandlerInterceptorAdapter implements AsyncHandlerIntercep
 
 	/**
 	 * Create a new WebRequestHandlerInterceptorAdapter for the given WebRequestInterceptor.
-	 * @param requestInterceptor the WebRequestInterceptor to wrap
+	 * @param requestInterceptor 要包装的WebRequestInterceptor
 	 */
 	public WebRequestHandlerInterceptorAdapter(WebRequestInterceptor requestInterceptor) {
 		Assert.notNull(requestInterceptor, "WebRequestInterceptor must not be null");

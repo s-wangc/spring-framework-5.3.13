@@ -51,7 +51,7 @@ public class InjectionPoint {
 
 	/**
 	 * Create an injection point descriptor for a method or constructor parameter.
-	 * @param methodParameter the MethodParameter to wrap
+	 * @param methodParameter 要包装的MethodParameter
 	 */
 	public InjectionPoint(MethodParameter methodParameter) {
 		Assert.notNull(methodParameter, "MethodParameter must not be null");
@@ -60,7 +60,7 @@ public class InjectionPoint {
 
 	/**
 	 * Create an injection point descriptor for a field.
-	 * @param field the field to wrap
+	 * @param field 要包装的field
 	 */
 	public InjectionPoint(Field field) {
 		Assert.notNull(field, "Field must not be null");
