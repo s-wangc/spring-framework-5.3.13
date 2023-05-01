@@ -23,13 +23,10 @@ import org.springframework.core.ResolvableType;
 import org.springframework.lang.Nullable;
 
 /**
- * A BeanDefinition describes a bean instance, which has property values,
- * constructor argument values, and further information supplied by
- * concrete implementations.
+ * BeanDefinition描述了一个bean实例, 该实例具有属性值、构造函数参数值以及由具体实现提供的进一步信息.
  *
- * <p>This is just a minimal interface: The main intention is to allow a
- * {@link BeanFactoryPostProcessor} to introspect and modify property values
- * and other bean metadata.
+ * <p>这只是一个最小的接口: 主要目的是允许{@link BeanFactoryPostProcessor}内省和修改属性值和
+ * 其他bean元数据.
  *
  * @author Juergen Hoeller
  * @author Rob Harrop
@@ -41,16 +38,16 @@ import org.springframework.lang.Nullable;
 public interface BeanDefinition extends AttributeAccessor, BeanMetadataElement {
 
 	/**
-	 * Scope identifier for the standard singleton scope: {@value}.
-	 * <p>Note that extended bean factories might support further scopes.
+	 * 标准singleton scope的scope标识符: {@value}.
+	 * <p>请注意, 扩展的bean工厂可能支持进一步的scope.
 	 * @see #setScope
 	 * @see ConfigurableBeanFactory#SCOPE_SINGLETON
 	 */
 	String SCOPE_SINGLETON = ConfigurableBeanFactory.SCOPE_SINGLETON;
 
 	/**
-	 * Scope identifier for the standard prototype scope: {@value}.
-	 * <p>Note that extended bean factories might support further scopes.
+	 * 标准prototype scope的scope标识符: {@value}.
+	 * <p>请注意, 扩展的bean工厂可能支持进一步的scope.
 	 * @see #setScope
 	 * @see ConfigurableBeanFactory#SCOPE_PROTOTYPE
 	 */
